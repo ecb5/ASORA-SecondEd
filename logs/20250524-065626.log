@@ -1,0 +1,19 @@
+INFO    : Building target latex
+INFO    : PreTeXt source passed schema validation.
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/output/latex.
+INFO    : XSL conversion of /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx by /home/ecb5/.ptx/2.13.5/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/ecb5/.ptx/2.13.5/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : converting /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx to LaTeX as /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/output/latex/main.tex
+INFO    : XSL conversion of /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx by /home/ecb5/.ptx/2.13.5/core/xsl/pretext-latex.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/ecb5/.ptx/2.13.5/core/xsl/pretext-latex.xsl
+INFO    : Removing temporary directory /tmp/ptx-2efhrcr2
+INFO    : 
+Success! Run `pretext view` to see the results.
+
+INFO    : 

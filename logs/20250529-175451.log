@@ -1,0 +1,19 @@
+INFO    : Building target web
+ERROR   : XInclude Error caused build to fail:
+ERROR   : /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/LimDerivIntFTC.ptx:169:9:FATAL:PARSER:ERR_NAME_REQUIRED: error parsing attribute name
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/LimDerivIntFTC.ptx:169:9:FATAL:PARSER:ERR_INTERNAL_ERROR: internal error: xmlParseStartTag: problem parsing attributes
+
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/LimDerivIntFTC.ptx:169:9:FATAL:PARSER:ERR_GT_REQUIRED: Couldn't find end of Start Tag xref line 168
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/LimDerivIntFTC.ptx:170:21:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 166 and xref
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/LimDerivIntFTC.ptx:176:11:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: section line 69 and p
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/LimDerivIntFTC.ptx:632:13:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: chapter line 1 and section
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:39:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/LimDerivIntFTC.ptx, and no fallback was found
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+CRITICAL: Failed to build.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

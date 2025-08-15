@@ -1,0 +1,27 @@
+INFO    : Building target print
+INFO    : PreTeXt source passed schema validation.
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/output/print.
+INFO    : discovering source file's directory name: /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source
+INFO    : verifying and expanding input directory: /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/../generated-assets
+INFO    : input directory expanded to absolute path: /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/generated-assets
+INFO    : verifying and expanding input directory: /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/../assets
+INFO    : input directory expanded to absolute path: /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/assets
+INFO    : XSL conversion of /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx by /home/ecb5/.ptx/2.13.5/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/ecb5/.ptx/2.13.5/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : converting /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx to LaTeX as /tmp/ptx-p_248tp8/main.tex
+INFO    : XSL conversion of /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx by /home/ecb5/.ptx/2.13.5/core/xsl/pretext-latex.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+WARNING : * PTX:WARNING:    An <xref> wants to use custom text to describe the target, but no custom text was provided as the content of the "xref".
+INFO    : *              located within: "IVTandEVT-SupremumAndEVT" (xml:id), "The Supremum and the Extreme Value Theorem" (title)
+INFO    : successful application of /home/ecb5/.ptx/2.13.5/core/xsl/pretext-latex.xsl
+INFO    : Removing temporary directory /tmp/ptx-p_248tp8
+INFO    : Removing temporary directory /tmp/ptx-ksg446d9
+INFO    : 
+Success! Run `pretext view` to see the results.
+
+INFO    : 

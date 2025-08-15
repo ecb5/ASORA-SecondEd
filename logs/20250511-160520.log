@@ -1,0 +1,8 @@
+ERROR   : A project already exists in `/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition` (it contains the file `project.ptx`).
+ERROR   : No new project will be generated.
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

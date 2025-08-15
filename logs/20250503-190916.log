@@ -1,0 +1,190 @@
+INFO    : Building target web
+INFO    : PreTeXt source passed schema validation.
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/output/web.
+WARNING : Node.js must be installed to build CSS files.  Please install node.js and npm.
+ Will try to use prebuilt CSS files instead.
+WARNING : Cannot find npm.  Will try to use prebuilt CSS files instead.
+WARNING : Unable to install npm packages to build css files.  Non-default CSS themes require node.js and npm to be installed.  See https://pretextbook.org/doc/guide/html/node-and-npm.html
+WARNING : 
+INFO    : discovering source file's directory name: /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source
+INFO    : verifying and expanding input directory: /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/../generated-assets
+INFO    : input directory expanded to absolute path: /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/generated-assets
+INFO    : verifying and expanding input directory: /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/../assets
+INFO    : input directory expanded to absolute path: /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/assets
+INFO    : Runestone Services via online CDN query: version 7.6.1
+INFO    : Downloading Runestone Services, version 7.6.1
+INFO    : Extracting Runestone Services from archive file
+INFO    : XSL conversion of /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx by /home/ecb5/.ptx/2.13.5/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : messages from the log for XSL processing:
+ERROR   : * PTX:ERROR: the @xml:id value "Continuity-AddProb" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "Continuity-AnalyticDef" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "Continuity-DefLimit" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "Continuity-DerivativeAfterthought" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "SequencesAndContinuity" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "conj_ContImplyDiff" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "cor_PosDerivIncFunc1" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "cor_PosDerivIncFunc2" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "cor_limit-by-sequences" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "def_continuity" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "def_derivative" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "def_limit" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "example_HeavisideNotContinuous" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "example_SqrtContinuous" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "lem_BoundedAwayFromZero" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "prob_extended_sqrt_is_continuous_at_zero" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "thm_CalcLimits" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "thm_ContComp" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "thm_ContSumProd" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "thm_DiffImpCont" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "thm_FermatsTheorem" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "thm_LimDefOfContinuity" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "thm_MVT" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "thm_Rolle_s_Theorem" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+ERROR   : * PTX:ERROR: the @xml:id value "thm_SqueezeTheoremFunctions" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : successful application of /home/ecb5/.ptx/2.13.5/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Node.js not available. Relying on prebuilt default-modern.
+INFO    : converting /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx to HTML in /tmp/ptx-imy1zwab
+INFO    : XSL conversion of /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx by /home/ecb5/.ptx/2.13.5/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+ERROR   : * PTX:ERROR: the @xml:id value "Continuity-AddProb" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "Continuity-AddProb" (xml:id), "Additional Problems" (title)
+INFO    : *              located within: "Continuity-AddProb" (xml:id), "Additional Problems" (title)
+ERROR   : * PTX:ERROR: the @xml:id value "Continuity-AnalyticDef" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "Continuity-AnalyticDef" (xml:id), "An Analytic Definition of Continuity" (title)
+INFO    : *              located within: "Continuity-AnalyticDef" (xml:id), "An Analytic Definition of Continuity" (title)
+ERROR   : * PTX:ERROR: the @xml:id value "Continuity-DefLimit" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "Continuity-DefLimit" (xml:id), "The Definition of the Limit of a Function" (title)
+INFO    : *              located within: "Continuity-DefLimit" (xml:id), "The Definition of the Limit of a Function" (title)
+ERROR   : * PTX:ERROR: the @xml:id value "Continuity-DerivativeAfterthought" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "Continuity-DerivativeAfterthought" (xml:id), "The Derivative, An Afterthought" (title)
+INFO    : *              located within: "Continuity-DerivativeAfterthought" (xml:id), "The Derivative, An Afterthought" (title)
+ERROR   : * PTX:ERROR: the @xml:id value "SequencesAndContinuity" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "SequencesAndContinuity" (xml:id), "Sequences and Continuity" (title)
+INFO    : *              located within: "SequencesAndContinuity" (xml:id), "Sequences and Continuity" (title)
+ERROR   : * PTX:ERROR: the @xml:id value "conj_ContImplyDiff" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "conj_ContImplyDiff" (xml:id)
+INFO    : *              located within: "conj_ContImplyDiff" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "cor_PosDerivIncFunc1" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "cor_PosDerivIncFunc1" (xml:id)
+INFO    : *              located within: "cor_PosDerivIncFunc1" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "cor_PosDerivIncFunc2" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "cor_PosDerivIncFunc2" (xml:id)
+INFO    : *              located within: "cor_PosDerivIncFunc2" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "cor_limit-by-sequences" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "cor_limit-by-sequences" (xml:id)
+INFO    : *              located within: "cor_limit-by-sequences" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "def_continuity" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "def_continuity" (xml:id)
+INFO    : *              located within: "def_continuity" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "def_derivative" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "def_derivative" (xml:id), "The Derivative" (title)
+INFO    : *              located within: "def_derivative" (xml:id), "The Derivative" (title)
+ERROR   : * PTX:ERROR: the @xml:id value "def_limit" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "def_limit" (xml:id)
+INFO    : *              located within: "def_limit" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "example_HeavisideNotContinuous" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "example_HeavisideNotContinuous" (xml:id)
+INFO    : *              located within: "example_HeavisideNotContinuous" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "example_SqrtContinuous" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "example_SqrtContinuous" (xml:id)
+INFO    : *              located within: "example_SqrtContinuous" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "lem_BoundedAwayFromZero" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "lem_BoundedAwayFromZero" (xml:id)
+INFO    : *              located within: "lem_BoundedAwayFromZero" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "prob_extended_sqrt_is_continuous_at_zero" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "prob_extended_sqrt_is_continuous_at_zero" (xml:id)
+INFO    : *              located within: "prob_extended_sqrt_is_continuous_at_zero" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "thm_CalcLimits" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "thm_CalcLimits" (xml:id)
+INFO    : *              located within: "thm_CalcLimits" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "thm_ContComp" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "thm_ContComp" (xml:id)
+INFO    : *              located within: "thm_ContComp" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "thm_ContSumProd" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "thm_ContSumProd" (xml:id)
+INFO    : *              located within: "thm_ContSumProd" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "thm_DiffImpCont" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "thm_DiffImpCont" (xml:id)
+INFO    : *              located within: "thm_DiffImpCont" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "thm_FermatsTheorem" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "thm_FermatsTheorem" (xml:id), "Fermat's   Theorem" (title)
+INFO    : *              located within: "thm_FermatsTheorem" (xml:id), "Fermat's   Theorem" (title)
+ERROR   : * PTX:ERROR: the @xml:id value "thm_LimDefOfContinuity" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "thm_LimDefOfContinuity" (xml:id)
+INFO    : *              located within: "thm_LimDefOfContinuity" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "thm_MVT" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "thm_MVT" (xml:id)
+INFO    : *              located within: "thm_MVT" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "thm_Rolle_s_Theorem" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "thm_Rolle_s_Theorem" (xml:id)
+INFO    : *              located within: "thm_Rolle_s_Theorem" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "thm_SqueezeTheoremFunctions" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "thm_SqueezeTheoremFunctions" (xml:id)
+INFO    : *              located within: "thm_SqueezeTheoremFunctions" (xml:id)
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/ecb5/.ptx/2.13.5/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /tmp/ptx-imy1zwab
+INFO    : Removing temporary directory /tmp/ptx-c0hednv4
+INFO    : 
+Success! Run `pretext view` to see the results.
+
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

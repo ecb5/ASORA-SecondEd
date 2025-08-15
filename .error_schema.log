@@ -1,0 +1,5 @@
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:78:0:ERROR:RELAXNGV:RELAXNG_ERR_NOELEM: Expecting an element mrow, got nothing
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:78:0:ERROR:RELAXNGV:RELAXNG_ERR_INVALIDATTR: Invalid attribute id for element mdn
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:73:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element p has extra content: xref
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:72:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element blockquote, got p
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:72:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element p there

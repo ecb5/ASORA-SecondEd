@@ -880,7 +880,7 @@
       <p>
         You might want to break this up into two cases where
         <m>a</m> is rational or irrational.  Show that no choice
-        of <m>\delta>0</m> will work for <m>\eps=|\,a|</m>.  Note
+        of <m>\delta>0</m> will work for <m>\eps=\abs{a}</m>.  Note
         that <xref
         ref="thm_IrrationalBetweenIrrationals"></xref> of
         <xref ref="NumbersRealRational"></xref> will

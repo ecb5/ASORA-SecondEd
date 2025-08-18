@@ -745,7 +745,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "Expanding Simple Power Series by Algebraic Methods",
-  "body": " Expanding Simple Power Series by Algebraic Methods  We call the power series expansions we ll see in this section simple because all that is needed to generate them is prior knowledge of a few series (e.g.,the Geometric Series , the sine and cosine series , the exponential series , the Binomial Series ), and a creative use of algebra. In particular Taylor s Theorem is not needed. We assume that you are familiar with the use of Taylor s Theorem from your Calculus course.  As we saw in the last section, it can be particularly fruitful to expand a function as a power series centered at . Unfortunately, this isn t always possible. For example, it is not possible to expand the function about zero. (Why not?)  However we are not confined to expanding about zero. Consider that the following is a power series for expanded about . Of course, there are still questions that need to be resolved. For example, for which values of is this series a valid representation of the function we started with? We will explore this in , but for now at least we have a representation which seems reasonable.    Let .     Represent as a power series expanded about . That is, as a power series of the form .           Represent as a power series expanded about by integrating your solution to part (a).                     Let and use equation to represent as a power series expanded about .    Let be a real number. Represent as power series expanded about . Notice there is no restriction on . What happens if ?    Let be a real number. Represent as a power series expanded about . What happens if here?     Let be a real number. Use the power series expansions to obtain the power series representation   This result will come into play in the next section.         "
+  "body": " Expanding Simple Power Series by Algebraic Methods  We call the power series expansions we ll see in this section simple because all that is needed to generate them is prior knowledge of a few series (e.g.,the Geometric Series , the sine and cosine series , the exponential series , the Binomial Series ), and a creative use of algebra. In particular Taylor s Theorem is not needed. We assume that you are familiar with the use of Taylor s Theorem from your Calculus course.  As we saw in the last section, it can be particularly fruitful to expand a function as a power series centered at . Unfortunately, this isn t always possible. For example, it is not possible to expand the function about zero. (Why not?)  But we are not confined to expanding about zero. Consider that the following is a power series for expanded about  . Of course, there are still questions that need to be resolved. Chief among these is the question, For which values of is this series a valid representation of the function we started with? We will explore this in . For now we will content ourselves with having a representation which seems reasonable.    Let .     Represent as a power series expanded about . That is, as a power series of the form .           Represent as a power series expanded about by integrating your solution to part (a).                     Let and use equation to represent as a power series expanded about .    Let be a real number. Represent as power series expanded about . Notice there is no restriction on . What happens if ?    Let be a real number. Represent as a power series expanded about . What happens if ?     Let be a real number. Use the power series expansions to obtain the power series representation   This result will come into play in the next section.         "
 },
 {
   "id": "PROBLEMOneOverXTayl",
@@ -766,9 +766,9 @@ var ptx_lunr_docs = [
   "body": " Let and use equation to represent as a power series expanded about .  "
 },
 {
-  "id": "SECTIONPowSerWOTaylor-7",
+  "id": "PROBLEMExpTaylAta",
   "level": "2",
-  "url": "SECTIONPowSerWOTaylor.html#SECTIONPowSerWOTaylor-7",
+  "url": "SECTIONPowSerWOTaylor.html#PROBLEMExpTaylAta",
   "type": "Problem",
   "number": "3.3.3",
   "title": "",
@@ -781,7 +781,7 @@ var ptx_lunr_docs = [
   "type": "Problem",
   "number": "3.3.4",
   "title": "",
-  "body": " Let be a real number. Represent as a power series expanded about . What happens if here?  "
+  "body": " Let be a real number. Represent as a power series expanded about . What happens if ?  "
 },
 {
   "id": "PROBLEMSinExpandedAta",
@@ -799,7 +799,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Taylor’s Formula",
-  "body": " Taylor s Formula  As we saw in the previous chapter, representing functions as power series was a fruitful strategy for mathematicans in the eighteenth century (as it still is). Differentiating and integrating power series term by term was relatively easy, seemed to work, and led to many applications. Furthermore, power series representations for all of the elementary functions could be obtained if one was clever enough.  However, cleverness is an unreliable tool. Is there some systematic way to find a power series for a given function? To be sure, there were nagging questions: If we can find a power series, how do we know that the series we ve created represents the function we started with? Even worse, is it possible for a function to have more than one power series representation centered at a given value This uniqueness issue is addressed by the following theorem.   Taylor s Formula    Taylor s Formula If , then , where represents the derivative of evaluated at .    A few comments about Taylor s Formula are in order. Notice that we did not start with a function and derive its series representation. Instead we defined  to be the series we wrote down. This assumes that the expression actually has meaning (that it converges). At this point we have every reason to expect that it does, however expectation is not proof so we note that this is an assumption, not an established truth. Similarly, the idea that we can differentiate an infinite polynomial term-by-term as we would a finite polynomial is also assumed. As before, we follow in the footsteps of our 18th century forebears in making these assumptions. For now.     Taylor s Formula Prove Taylor s Formula .    The zeroth derivative (the function itself) at is given by . Differentiate to obtain the other terms.    From Taylor s Formula we see that if we do start with the function then no matter how we obtain its power series, the result will always be the same. The series   is called the Taylor series for expanded about (or centered at) . Although this systematic machine for obtaining power series for a function seems to have been known to a number of mathematicians in the early 1700s, Brook Taylor (1685 1731) was the first to publish this result in his Methodus Incrementorum (1715). The special case when was included by Colin Maclaurin (1698 1746) in his Treatise of Fluxions (1742). Thus when , the series is often called the Maclaurin Series for .   A postage stamp from the Netherlands honoring Brook Taylor and Colin Maclaurin  Taylor, Brook portrait of  Maclauring, Colin portrait of   A postage stamp with images of Taylor and Maclaurin and their formulas.     Taylor s Formula drill problems   Use Taylor s formula to find the Taylor series of the given function expanded about the given point .      ,        ,        ,        ,        ,      The prime notation for the derivative was not used by Taylor, Maclaurin or their contemporaries. It was introduced by Joseph Louis Lagrange in his 1779 work Thèorie des Fonctions Analytiques . In that work, Lagrange sought to get rid of Leibniz infinitesimals and base Calculus on the power series idea. His idea was that by representing every function as a power series, Calculus could be done algebraically by manipulating power series and examining various aspects of the series representation instead of appealing to the controversial notion of infinitesimals. He implicitly assumed that every continuous function could be replaced with its power series representation.  That is, he wanted to think of the Taylor series as a great big polynomial, because polynomials are easy to work with. It was a very simple, yet exceedingly clever and far-reaching idea. Since , for example, why not just define the exponential to be the series and work with the series. After all, the series is just a very long polynomial.  This idea did not come out of nowhere. Particular infinite series, such as the Geometric series had been known and studied for many years. Later, in the 18th century Leonhard Euler used infinite series to solve many problems, and some of his solutions are still quite breath taking when you first see them .  Taking his cue from the Taylor series    Joseph-Louis Lagrange  Lagrange, Joseph-Louis portrait of      Lagrange observed that the coefficient of provides the th derivative of at (divided by ). Modifying formula to suit his purpose, Lagrange supposed that every differentiable function could be represented as .  If we regard the parameter as a variable then is the derivative of at , and generally .  Lagrange dubbed his function the fonction dérivée from which we get the modern name derivative .    Let be a fixed number. We saw in that the power series of expanded about is given by                   Apply Lagrange's idea to show that .      Now compute by directly by differentiating. Do you get the same result?       In , you determined the power series expansion Apply Lagrange s idea to determine the th derivative of . Compare with the results you get from differentiating directly.       Taylor s series for  series Taylor s series expansion of , and  Taylor s series for  Taylor s series for Use Taylor s formula to obtain the Taylor series for the functions , sin , and cos expanded about .    Apply Lagrange s idea to determine the derivative of . Compare this to the answer you would obtain using methods from your Calculus course.    In the last section you determined the power series expansion of about . Apply Lagrange's idea to show that every derivative of is given by .      In the last section, you determined the power series expansion for about . Use this and Lagrange's idea to show that the derivative of is .    All in all, Lagrange s idea was very clever and insightful. It s only real flaw is that its fundamental, underlying assumption is not true. It turns out that not every differentiable function can be represented as a Taylor series. This was demonstrated very dramatically by Augustin Cauchy s famous counter-example .  This function is actually infinitely differentiable everywhere but its Maclaurin series (that is, its Taylor series with ) does not converge to (except, trivially, at the origin) because all of its derivatives at the origin are equal to zero. That is .  To begin with, let s compute a few derivatives when . .  As you can see the calculations are already getting a little complicated and we ve only taken the second derivative.  Conceptually, it is not difficult to compute these derivatives using the tools you learned in Calculus but the formulas involved do become complicated rather quickly. Some care must be taken to avoid error. To streamline things a bit we take , and define so that .  Cauchy s Counterexample, Part 1  Cauchy, Augustin Cauchy s counterexample part 1   In this problem and in  is the function defined in equation .  To simplify the notation we make the following definitions: and .     Find in terms of .    You are differentiating with respect to , not .      Use induction on to show that is a polynomial for all .     Unfortunately everything we ve done so far only gives us the derivatives we need when is not zero, and we need the derivatives when  is zero. To find these we need to get back to very basic ideas.  Let s assume for the moment that we know that and recall that .  We can close the deal with the following problem.  Cauchy s Counterexample, Part 2  Cauchy, Augustin Cauchy s counterexample part 2    Let be a nonnegative integer. Show that .    Induction and a dash of L Hôpital's rule should do the trick.      Prove that for any polynomial .      Let be as in equation and show that for every nonnegative integer , .     This example showed that while it was fruitful to exploit Taylor series representations of various functions, basing the foundations of Calculus on power series was not a sound idea.  While Lagrange s approach wasn't totally successful, it was a major step away from infinitesimals and toward the modern approach. We still use aspects of it today. For instance we still use his prime notation ( ) to denote the derivative.  Turning Lagrange s idea on its head it is clear that if we know how to compute derivatives, we can use this machine to obtain a power series when we are not clever enough to obtain the series in other (typically shorter) ways. For example, consider Newton s binomial series when . Originally, we obtained this series by extending the binomial theorem to non-integer exponents. Taylor s formula provides a more systematic way to obtain this series: and in general since .  Using Taylor s formula we obtain the series which agrees with equation in the previous chapter.     Taylor s Formula use to obtain the general binomial series Use Taylor s formula to obtain the general binomial series     As you can see, Taylor s machine will produce the power series for a function (if it has one), but is tedious to perform. We will find, generally, that this tediousness can be an obstacle to understanding. In many cases it will be better to be clever if we can. This is usually shorter. However, it is comforting to have Taylor s formula available as a last resort.  The existence of a Taylor series is addressed (to some degree) by the following.     Taylor s Theorem If are all continuous on an interval containing and , then . The last term in this expression, , is called the Integral Form of the Remainder of the Taylor series.    Before we address the proof, notice that the -th degree polynomial resembles the Taylor series and, in fact, is called the  -th degree Taylor polynomial of about .  says that a function can be written as the sum of this polynomial and a specific integral which we will analyze in the next chapter. We will get the proof started and leave the formal induction proof as an exercise.  Notice that the case when is really a restatement of the Fundamental Theorem of Calculus. Specifically, the FTC says which we can rewrite as to provide the anchor step for our induction.  To derive the case where , we use integration by parts. If we let we obtain .     Taylor s Theorem Provide a formal induction proof for .    "
+  "body": " Taylor s Formula  As we saw in , representing functions as power series was a fruitful strategy for mathematicans in the eighteenth century (as it still is). Differentiating and integrating power series term by term was relatively easy, seemed to work, and led to many applications. Furthermore, power series representations for all of the elementary functions could be obtained if one was clever enough. However, cleverness is an unreliable tool. It would be better to have some systematic way to find a power series for a given function that doesn t rely on being sufficiently cleve.  To be sure, there were nagging questions. For example. even if we can find a power series representation of some function, how do we know that the series we ve created represents the function we started with? Even worse, is it possible for a function to have more than one power series representation centered at a given value This uniqueness issue is addressed by the following theorem.   Taylor s Formula    Taylor s Formula If , then , where represents the derivative of evaluated at .    A few comments about Taylor s Formula are in order. Notice that we did not start with a function and derive its series representation. Instead we defined  to be the series we wrote down. This assumes that the expression actually has meaning (that it converges). At this point we have every reason to expect that it does, however expectation is not proof so we note that this is an assumption, not an established truth. We ve also assumed that we can differentiate an infinite polynomial term-by-term as we would a finite polynomial. As before, we follow in the footsteps of our 18th century forebears in making these assumptions. For now.     Taylor s Formula Prove Taylor s Formula .    The zeroth derivative (the function itself) at is given by . Differentiate to obtain the other terms.    From Taylor s Formula we see that if we do start with the function then no matter how we obtain its power series, the result will always be the same. The series   is called the Taylor series for expanded about (or centered at) . Although this systematic machine for obtaining power series for a function seems to have been known to a number of mathematicians in the early 1700s, Brook Taylor (1685 1731) was the first to publish this result in his Methodus Incrementorum (1715). The special case when was included by Colin Maclaurin (1698 1746) in his Treatise of Fluxions (1742). Thus when , the series is often called the Maclaurin Series for .   A postage stamp from the Netherlands honoring Brook Taylor and Colin Maclaurin  Taylor, Brook portrait of  Maclauring, Colin portrait of   A postage stamp with images of Taylor and Maclaurin and their formulas.     Taylor s Formula drill problems   Use Taylor s formula to find the Taylor series of the given function expanded about the given point .      ,        ,        ,        ,        ,      The prime notation for the derivative was not used by Taylor, Maclaurin or their contemporaries. It was introduced by Joseph Louis Lagrange in his 1779 work Thèorie des Fonctions Analytiques . In that work, Lagrange sought to get rid of Leibniz infinitesimals and base Calculus on the power series idea. His idea was that by representing every function as a power series, Calculus could be done algebraically by manipulating power series and examining various aspects of the series representation instead of appealing to the controversial notion of infinitesimals. He implicitly assumed that every continuous function could be replaced with its power series representation.   Joseph-Louis Lagrange  Lagrange, Joseph-Louis portrait of      That is, he wanted to think of the Taylor series as a great big polynomial, because polynomials are easy to work with. It was a very simple, yet exceedingly clever and far-reaching idea. Since , for example, why not just define the exponential to be the series and work with the series. After all, the series is just a very long polynomial.  This idea did not come out of nowhere. Particular infinite series, such as the Geometric Series had been known and studied for many years. Later, in the 18th century Leonhard Euler used infinite series to solve many problems, and some of his solutions are still quite breath taking when you first see them .  Taking his cue from the Taylor series Lagrange observed that the coefficient of provides the th derivative of at (divided by ). Modifying formula to suit his purpose, Lagrange supposed that every differentiable function could be represented as .  In that case is the derivative of at , and generally .  Lagrange dubbed his function the fonction dérivée from which we get the modern name derivative .    Let be a fixed number. We saw in that the power series of expanded about is given by                   Apply Lagrange's idea to show that .      Now compute by directly by differentiating. Do you get the same result?      Taylor s series for  series Taylor s series expansion of , and  Taylor s series for  Taylor s series for   In , you determined the power series expansion      Apply Lagrange s idea to determine the th derivative of . Compare with the results you get from differentiating directly.      Compute the Taylor series of expanded about . Then use Lagrange s idea to determine the th derivative of . Compare with the results you get from differentiating directly.      In you determined the power series expansion of about . Apply Lagrange's idea to show that every derivative of is given by .      In part (b) of you determined the power series expansion of about . Apply Lagrange's idea to show that the derivative of is .     All in all, Lagrange s idea was very clever and insightful. It s only real flaw is that its fundamental, underlying assumption is not true. It turns out that not every differentiable function can be represented as a Taylor series. This was demonstrated very dramatically by Augustin Cauchy s famous counter-example .  This function is actually infinitely differentiable everywhere but its Maclaurin series (that is, its Taylor series with ) does not converge to (except, trivially, at the origin) because all of its derivatives at the origin are equal to zero. That is .  To begin with, let s compute a few derivatives when . .  As you can see the calculations are already getting a little complicated and we ve only taken the second derivative.  Conceptually, it is not difficult to compute these derivatives using the tools you learned in Calculus but the formulas involved do become complicated rather quickly. Some care must be taken to avoid error. To streamline things a bit we take , and define so that .  Cauchy s Counterexample, Part 1  Cauchy, Augustin Cauchy s counterexample part 1   In this problem and in  is the function defined in equation .  To simplify the notation we make the following definitions: and .     Find in terms of .    You are differentiating with respect to , not .      Use induction on to show that is a polynomial for all .     Unfortunately everything we ve done so far only gives us the derivatives we need when is not zero, and we need the derivatives when  is zero. To find these we need to get back to very basic ideas.  Let s assume for the moment that we know that and recall that .  We can close the deal with the following problem.  Cauchy s Counterexample, Part 2  Cauchy, Augustin Cauchy s counterexample part 2    Let be a nonnegative integer. Show that .    Induction and a dash of L Hôpital's rule should do the trick.      Prove that for any polynomial .      Let be as in equation and show that for every nonnegative integer , .     This example showed that while it was fruitful to exploit Taylor series representations of various functions, basing the foundations of Calculus on power series was not a sound idea.  While Lagrange s approach wasn't totally successful, it was a major step away from infinitesimals and toward the modern approach. We still use aspects of it today. For instance we still use his prime notation ( ) to denote the derivative.  Turning Lagrange s idea on its head it is clear that if we know how to compute derivatives, we can use this machine to obtain a power series when we are not clever enough to obtain the series in other (typically shorter) ways. For example, consider Newton s binomial series when . Originally, we obtained this series by extending the binomial theorem to non-integer exponents. Taylor s formula provides a more systematic way to obtain this series: and in general since .  Using Taylor s formula we obtain the series which agrees with equation in the previous chapter.     Taylor s Formula use to obtain the general binomial series Use Taylor s formula to obtain the general binomial series     As you can see, Taylor s machine will produce the power series for a function (if it has one), but is tedious to perform. We will find, generally, that this tediousness can be an obstacle to understanding. In many cases it will be better to be clever if we can. This is usually shorter. However, it is comforting to have Taylor s formula available as a last resort.  The existence of a Taylor series is addressed (to some degree) by the following.     Taylor s Theorem If are all continuous on an interval containing and , then . The last term in this expression, , is called the Integral Form of the Remainder of the Taylor series.    Before we address the proof, notice that the -th degree polynomial resembles the Taylor series and, in fact, is called the  -th degree Taylor polynomial of about .  says that a function can be written as the sum of this polynomial and a specific integral which we will analyze in the next chapter. We will get the proof started and leave the formal induction proof as an exercise.  Notice that the case when is really a restatement of the Fundamental Theorem of Calculus. Specifically, the FTC says which we can rewrite as to provide the anchor step for our induction.  To derive the case where , we use integration by parts. If we let we obtain .     Taylor s Theorem Provide a formal induction proof for .    "
 },
 {
   "id": "TaylorSeriesThm",
@@ -856,74 +856,47 @@ var ptx_lunr_docs = [
   "body": "prime notation "
 },
 {
-  "id": "PowerSeriesQuestions-TaylorsFormula-15",
+  "id": "PowerSeriesQuestions-TaylorsFormula-12",
   "level": "2",
-  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-15",
+  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-12",
   "type": "Figure",
   "number": "4.1.5",
   "title": "",
   "body": " Joseph-Louis Lagrange  Lagrange, Joseph-Louis portrait of     "
 },
 {
-  "id": "PowerSeriesQuestions-TaylorsFormula-18",
+  "id": "PowerSeriesQuestions-TaylorsFormula-17",
   "level": "2",
-  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-18",
+  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-17",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "derivative "
 },
 {
-  "id": "PowerSeriesQuestions-TaylorsFormula-19",
+  "id": "PowerSeriesQuestions-TaylorsFormula-18",
   "level": "2",
-  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-19",
+  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-18",
   "type": "Problem",
   "number": "4.1.6",
   "title": "",
   "body": "  Let be a fixed number. We saw in that the power series of expanded about is given by                   Apply Lagrange's idea to show that .      Now compute by directly by differentiating. Do you get the same result?    "
 },
 {
-  "id": "PowerSeriesQuestions-TaylorsFormula-20",
+  "id": "PowerSeriesQuestions-TaylorsFormula-19",
   "level": "2",
-  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-20",
+  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-19",
   "type": "Problem",
   "number": "4.1.7",
   "title": "",
-  "body": "  In , you determined the power series expansion Apply Lagrange s idea to determine the th derivative of . Compare with the results you get from differentiating directly.   "
-},
-{
-  "id": "PowerSeriesQuestions-TaylorsFormula-21",
-  "level": "2",
-  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-21",
-  "type": "Problem",
-  "number": "4.1.8",
-  "title": "",
-  "body": "   Taylor s series for  series Taylor s series expansion of , and  Taylor s series for  Taylor s series for Use Taylor s formula to obtain the Taylor series for the functions , sin , and cos expanded about .   "
-},
-{
-  "id": "PowerSeriesQuestions-TaylorsFormula-23",
-  "level": "2",
-  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-23",
-  "type": "Problem",
-  "number": "4.1.9",
-  "title": "",
-  "body": "  In the last section you determined the power series expansion of about . Apply Lagrange's idea to show that every derivative of is given by .   "
-},
-{
-  "id": "PowerSeriesQuestions-TaylorsFormula-24",
-  "level": "2",
-  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-24",
-  "type": "Problem",
-  "number": "4.1.10",
-  "title": "",
-  "body": "  In the last section, you determined the power series expansion for about . Use this and Lagrange's idea to show that the derivative of is .   "
+  "body": " Taylor s series for  series Taylor s series expansion of , and  Taylor s series for  Taylor s series for   In , you determined the power series expansion      Apply Lagrange s idea to determine the th derivative of . Compare with the results you get from differentiating directly.      Compute the Taylor series of expanded about . Then use Lagrange s idea to determine the th derivative of . Compare with the results you get from differentiating directly.      In you determined the power series expansion of about . Apply Lagrange's idea to show that every derivative of is given by .      In part (b) of you determined the power series expansion of about . Apply Lagrange's idea to show that the derivative of is .    "
 },
 {
   "id": "DRILLCauchyCounterPartI",
   "level": "2",
   "url": "PowerSeriesQuestions-TaylorsFormula.html#DRILLCauchyCounterPartI",
   "type": "Problem",
-  "number": "4.1.11",
+  "number": "4.1.8",
   "title": "Cauchy’s Counterexample, Part 1.",
   "body": "Cauchy s Counterexample, Part 1  Cauchy, Augustin Cauchy s counterexample part 1   In this problem and in  is the function defined in equation .  To simplify the notation we make the following definitions: and .     Find in terms of .    You are differentiating with respect to , not .      Use induction on to show that is a polynomial for all .    "
 },
@@ -932,16 +905,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "PowerSeriesQuestions-TaylorsFormula.html#PROBLEMCauchyCounterPartII",
   "type": "Problem",
-  "number": "4.1.12",
+  "number": "4.1.9",
   "title": "Cauchy’s Counterexample, Part 2.",
   "body": "Cauchy s Counterexample, Part 2  Cauchy, Augustin Cauchy s counterexample part 2    Let be a nonnegative integer. Show that .    Induction and a dash of L Hôpital's rule should do the trick.      Prove that for any polynomial .      Let be as in equation and show that for every nonnegative integer , .    "
 },
 {
-  "id": "PowerSeriesQuestions-TaylorsFormula-39",
+  "id": "PowerSeriesQuestions-TaylorsFormula-34",
   "level": "2",
-  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-39",
+  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-34",
   "type": "Problem",
-  "number": "4.1.13",
+  "number": "4.1.10",
   "title": "",
   "body": "   Taylor s Formula use to obtain the general binomial series Use Taylor s formula to obtain the general binomial series    "
 },
@@ -950,16 +923,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "PowerSeriesQuestions-TaylorsFormula.html#TaylorsTheorem",
   "type": "Theorem",
-  "number": "4.1.14",
+  "number": "4.1.11",
   "title": "",
   "body": "   Taylor s Theorem If are all continuous on an interval containing and , then . The last term in this expression, , is called the Integral Form of the Remainder of the Taylor series.   "
 },
 {
-  "id": "PowerSeriesQuestions-TaylorsFormula-46",
+  "id": "PowerSeriesQuestions-TaylorsFormula-41",
   "level": "2",
-  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-46",
+  "url": "PowerSeriesQuestions-TaylorsFormula.html#PowerSeriesQuestions-TaylorsFormula-41",
   "type": "Problem",
-  "number": "4.1.15",
+  "number": "4.1.12",
   "title": "",
   "body": "   Taylor s Theorem Provide a formal induction proof for .   "
 },

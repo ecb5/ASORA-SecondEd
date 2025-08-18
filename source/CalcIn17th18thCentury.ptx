@@ -2197,9 +2197,14 @@
   <title>Expanding Simple Power Series by Algebraic Methods</title>
   <p>
     We call the power series expansions we<rsq/>ll see in this section
-    <q>simple</q> because all that is needed to generate them is prior knowledge of a few series (e.g.,the
-    <xref ref="EQUATIONGeometricSeries" text="custom">Geometric
-    Series</xref>, the <xref ref="PROBLEMSinCosPwrSeries" text="custom">sine and cosine series</xref>, the <xref ref="EQUATIONExpSeries"  text="custom">exponential series</xref>, the <xref ref="eq_BinomialSeries" text="custom" >Binomial Series</xref>),  and a creative use of algebra. In particular <xref
+    <q>simple</q> because all that is needed to generate them is prior
+    knowledge of a few series (e.g.,the <xref
+    ref="EQUATIONGeometricSeries" text="custom">Geometric
+    Series</xref>, the <xref ref="PROBLEMSinCosPwrSeries"
+    text="custom">sine and cosine series</xref>, the <xref
+    ref="EQUATIONExpSeries" text="custom">exponential series</xref>,
+    the <xref ref="eq_BinomialSeries" text="custom" >Binomial
+    Series</xref>), and a creative use of algebra. In particular <xref
     ref="TaylorsTheorem" text="custom">Taylor<rsq/>s Theorem</xref> is
     not needed. We assume that you are familiar with the use of
     Taylor<rsq/>s Theorem from your Calculus course.
@@ -2214,21 +2219,22 @@
   </p>
 
   <p>
-    However we are not confined to expanding about zero.
-    Consider that the following
-    
+    But we are not confined to expanding about zero.  Consider that
+    the following is a power series for <m>f(x)=\frac{1}{x}</m>
+    expanded about <m>a=1</m>
+
     <me>
       \frac{1}{x}=\frac{1}{1+\left(x-1\right)}=\sum^{\infty}_{n=0}{-1^n{\left(x-1\right)}^n}
-    </me> 
+      </me>.
 
 
-    is a power series for <m>f(x)=\frac{1}{x}</m> expanded about
-    <m>a=1</m>.  Of course, there are still questions that need to be
-    resolved. For example, for which values of <m>x</m> is this series
-    a valid representation of the function we started with?  We will
-    explore this in <xref
-    ref="PowerSeriesQuestions-TaylorsFormula"></xref>, but for now at
-    least we have a representation which seems reasonable.
+      Of course, there are still questions that need to be
+    resolved. Chief among these is the question, <q>For which values
+    of <m>x</m> is this series a valid representation of the function
+    we started with?</q> We will explore this in <xref
+    ref="PowerSeriesQuestions-TaylorsFormula"></xref>. For now we will
+    content ourselves with having a representation which seems
+    reasonable.
   </p>
    
   <problem xml:id="PROBLEMOneOverXTayl">
@@ -2287,7 +2293,7 @@
     </p>
   </problem>
   
-  <problem>
+  <problem xml:id="PROBLEMExpTaylAta">
     <p>
       Let <m>a</m> be a real number.  Represent <m>e^x</m> as power
       series expanded about <m>a</m>.  Notice there is no restriction
@@ -2298,8 +2304,7 @@
 <problem>
   <p>
     Let <m>a</m> be a real number.  Represent <m>x^3+2x^2+3</m> as a
-    power series expanded about <m>a</m>.  What happens if <m>a=0</m>
-    here?
+    power series expanded about <m>a</m>.  What happens if <m>a=0</m>?
   </p>
 </problem>
   
@@ -2313,7 +2318,7 @@
 
     <mrow>
       \sin \left(x\right)=\sum^{\infty
-      }_{n=0}{\frac{{\left(-1\right)}^n}{\left(2n+1\right)!}x^{2n+1}}\amp{}\amp{} \left(x\right)=\sum^{\infty
+      }_{n=0}{\frac{{\left(-1\right)}^n}{\left(2n+1\right)!}x^{2n+1}}\amp{}\amp{} \cos\left(x\right)=\sum^{\infty
       }_{n=0}{\frac{{\left(-1\right)}^n}{\left(2n\right)!}x^{2n}}
     </mrow>
 

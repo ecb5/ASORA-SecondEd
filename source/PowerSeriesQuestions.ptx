@@ -5,21 +5,26 @@
 <section  xml:id="PowerSeriesQuestions-TaylorsFormula">
   <title>Taylor<rsq/>s Formula</title>
   <p>
-    As we saw in the previous chapter, representing functions as power
-    series was a fruitful strategy for mathematicans in the eighteenth
-    century (as it still is).  Differentiating and integrating power
-    series term by term was relatively easy, <em>seemed</em> to work,
-    and led to many applications.  Furthermore, power series
-    representations for all of the elementary functions could be
-    obtained if one was clever enough.
+    As we saw in <xref ref="SECTIONPowSerWOTaylor"></xref>,
+    representing functions as power series was a fruitful strategy for
+    mathematicans in the eighteenth century (as it still is).
+    Differentiating and integrating power series term by term was
+    relatively easy, <em>seemed</em> to work, and led to many
+    applications.  Furthermore, power series representations for all
+    of the elementary functions could be obtained if one was clever
+    enough. However, cleverness is an unreliable tool.  It would be
+    better to have some systematic way to find a power series for a
+    given function that doesn<rsq/>t rely on being sufficiently cleve.
   </p>
 
   <p>
-    However, cleverness is an unreliable tool.
-    Is there some systematic way to find a power series for a given function?
-    To be sure, there were nagging questions: If we can find a power series,
-    how do we know that the series we<rsq/>ve created represents the function we started with?
-    Even worse, is it possible for a function to have more than one power series representation centered at a given value <m>a?</m> This uniqueness issue is addressed by the following theorem.
+    To be sure, there were nagging questions. For example. even if we
+    can find a power series representation of some function, how do we
+    know that the series we<rsq/>ve created represents the function we
+    started with?  Even worse, is it possible for a function to have
+    more than one power series representation centered at a given
+    value <m>a?</m> This uniqueness issue is addressed by the
+    following theorem.
   </p>
 
   <theorem xml:id="TaylorSeriesThm">
@@ -44,9 +49,9 @@
     <m>\sum_{n=0}^\infty a_n(x-a)^n</m> actually has meaning (that it
     converges).  At this point we have every reason to expect that it
     does, however expectation is not proof so we note that this is an
-    assumption, not an established truth.  Similarly, the idea that we
-    can differentiate an infinite polynomial term-by-term as we would
-    a finite polynomial is also assumed.  As before, we follow in the
+    assumption, not an established truth.  We<rsq/>ve also assumed
+    that we can differentiate an infinite polynomial term-by-term as
+    we would a finite polynomial.  As before, we follow in the
     footsteps of our 18th century forebears in making these
     assumptions.  For now.
   </p>
@@ -175,6 +180,15 @@
     replaced with its power series representation.
   </p>
 
+
+  <figure>
+    <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/" visual="mathshistory.st-andrews.ac.uk/Biographies/Lagrange/">Joseph-Louis Lagrange</url></caption>
+    <idx><h>Lagrange, Joseph-Louis</h><h>portrait of</h></idx>
+    <image width="35%" source="images/Lagrange.png" >
+      <shortdescription></shortdescription>
+    </image>
+  </figure>
+
   <p>
     That is, he wanted to think of the Taylor series as a
     <q>great big polynomial,</q>
@@ -187,11 +201,12 @@
 
   <p>
     This idea did not come out of nowhere. Particular infinite series,
-    such as the <xref ref="EQUATIONGeometricSeries" text="custom">Geometric series</xref> had been known and
-    studied for many years.  Later, in the 18th century Leonhard Euler
-    used infinite series to solve many problems, and some of his
-    solutions are still quite breath<ndash/>taking when you first see
-    them<nbsp /><xref ref="sandifer07__early_mathem_leonar_euler" />.
+    such as the <xref ref="EQUATIONGeometricSeries"
+    text="custom">Geometric Series</xref> had been known and studied
+    for many years.  Later, in the 18th century Leonhard Euler used
+    infinite series to solve many problems, and some of his solutions
+    are still quite breath<ndash/>taking when you first see them<nbsp
+    /><xref ref="sandifer07__early_mathem_leonar_euler" />.
   </p>
 
 
@@ -202,17 +217,6 @@
     <men xml:id="EQUATIONTaylorSeriesGeneric">
       f(x) = \sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n
     </men>
-  </p>
-
-  <figure>
-    <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/" visual="mathshistory.st-andrews.ac.uk/Biographies/Lagrange/">Joseph-Louis Lagrange</url></caption>
-    <idx><h>Lagrange, Joseph-Louis</h><h>portrait of</h></idx>
-    <image width="35%" source="images/Lagrange.png" >
-      <shortdescription></shortdescription>
-    </image>
-  </figure>
-
-  <p>
     Lagrange observed that the coefficient of <m>(x-a)^n</m> provides
     the <m>n</m>th derivative of <m>f</m> at <m>a</m> (divided by <m>n!</m>).
     Modifying <xref ref="EQUATIONTaylorSeriesGeneric" >formula</xref>
@@ -224,10 +228,8 @@
   </p>
 
   <p>
-    If we regard the parameter <m>a</m> as a variable then <m>g_1(a)</m>
-    is the derivative of <m>f</m> at <m>a</m>,
-    <m>f^{\prime\prime}(a)=2g_2(a)</m> and
-    generally
+    In that case <m>g_1(a)</m> is the derivative of <m>f</m> at
+    <m>a</m>, <m>f^{\prime\prime}(a)=2g_2(a)</m> and generally
     <me>
       f^{(n)}(a)=n! g_n(a)
       </me>.
@@ -289,9 +291,11 @@
   </problem>
   
   <problem>
-
-    <statement>
-
+    <idx><h><m>e^x</m></h><h>Taylor<rsq/>s series for</h></idx>
+    <idx><h>series</h><h>Taylor<rsq/>s series</h><h>expansion of <m>e^x, \sin x</m>, and <m>\cos x</m></h></idx>
+    <idx><h><m>\sin x</m></h><h>Taylor<rsq/>s series for</h></idx>
+    <idx><h><m>\cos x</m></h><h>Taylor<rsq/>s series for</h></idx>
+    <introduction>
       <p>
         In <xref ref="PROBLEMSinExpandedAta" ></xref>, you determined the power series
         expansion
@@ -317,306 +321,296 @@
             \left(a\right){\left(x-a\right)}^5+\cdots.
           </mrow>
         </md>
-        Apply Lagrange<rsq/>s idea to determine the <m>n</m>th
-        derivative of <m>\sin x</m>. Compare with the results you get
-        from differentiating <m>\sin x</m> directly.
       </p>
-    </statement>
-  </problem>
+    </introduction>
 
-  <problem>
-    <statement>
-      <p>
-        <idx><h><m>e^x</m></h><h>Taylor<rsq/>s series for</h></idx>
-        <idx><h>series</h><h>Taylor<rsq/>s series</h><h>expansion of <m>e^x, \sin x</m>, and <m>\cos x</m></h></idx>
-        <idx><h><m>\sin x</m></h><h>Taylor<rsq/>s series for</h></idx>
-        <idx><h><m>\cos x</m></h><h>Taylor<rsq/>s series for</h></idx>
-        Use Taylor<rsq/>s formula to obtain the Taylor series for the functions <m>e^x</m>,
-        sin <m>x</m>, and cos <m>x</m> expanded about <m>a</m>.
-      </p>
-    </statement>
-  </problem>
+    <task>
+      <statement>
+        <p>
+          Apply Lagrange<rsq/>s idea to determine the <m>n</m>th
+          derivative of <m>\sin x</m>. Compare with the results you get
+          from differentiating <m>\sin x</m> directly.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Compute the Taylor series of <m>\cos x</m> expanded about
+          <m>a</m>. Then use Lagrange<rsq/>s idea to determine the
+          <m>n</m>th derivative of <m>\sin x</m>. Compare with the
+          results you get from differentiating <m>\sin x</m> directly.
+        </p>
+        </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          In <xref ref="PROBLEMExpTaylAta"></xref> you
+          determined the power series expansion of <m>e^x</m> about
+          <m>a</m>.  Apply Lagrange's idea to show that every derivative
+          of <m>e^x</m> is given by <m>e^x</m>.
 
-  <p>
-
-    Apply
-    Lagrange<rsq/>s idea to determine the <m>n^{th}</m> derivative of
-    <m>\sin (x)</m>.  Compare this to the answer you would
-    obtain using methods from your Calculus course.
-
-  </p>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
 
 
-  <problem>     
+        <p>
+          In part (b) of <xref ref="PROBLEMOneOverXTayl" ></xref> you
+          determined the power series expansion of <m>\ln(x)</m>
+          about <m>a>0</m>. Apply Lagrange's idea to show that
+          the derivative of <m>\ln (x)</m> is <m>\frac{1}{x}</m>.
 
-    <statement>
+        </p>
+</statement>
+</task>
 
-      <p>
-        In the last section you determined the power series
-        expansion of <m>e^x</m> about <m>a</m>.  Apply Lagrange's
-        idea to show that every derivative of <m>e^x</m> is given by
-        <m>e^x</m>.
 
-      </p>
-
-    </statement>
-  </problem>
-
-  <problem>
-
-    <statement>
-
-      <p>
-        In the last section, you determined the power series
-        expansion for <m>\ln(x)</m> about <m>a>0</m>.  Use this and
-        Lagrange's idea to show that the derivative of <m>\ln
-        (x)</m> is <m>\frac{1}{x}</m>.
-
-      </p>
-
-    </statement>
   </problem>
 
 
-  <p>
-    All in all, Lagrange<rsq/>s idea was very clever and
-    insightful. It<rsq/>s only real flaw is that its fundamental,
-    underlying assumption is not true.  It turns out that not every
-    differentiable function can be represented as a Taylor series.
-    This was demonstrated very dramatically by Augustin
-    Cauchy<rsq/>s famous counter-example
-    <men xml:id="eq_CauchyCounterEx">
-      f(x) = \begin{cases} e^{-\frac{1}{x^2}}\amp  x\ne0\\ 0 \amp x=0 \end{cases}
-      </men>.
-  </p>
-
-  <p> 
-    This function is actually infinitely differentiable everywhere
-    but its Maclaurin series (that is, its Taylor series with
-    <m>a=0</m>) does not converge to <m>f</m> (except, trivially, at
-    the origin) because all of its derivatives at the origin are
-    equal to zero. That is <m>f^{(n)}(0) = 0, \forall\, n \in
-    \NN</m>.
-  </p>
-
-
-  <p>
-    To begin with, let<rsq/>s compute a few derivatives when <m>x
-    \neq 0</m>.
-    <md>
-      <mrow>f^{(0)}(x) \amp = e^{x^{-2}}</mrow>
-      <mrow>f^{(1)}(x) \amp = 2x^{-3}e^{-x^{-2}}</mrow>
-      <mrow>f^{(2)}(x) \amp = \left(4x^{-6}-6x^{-4}\right)e^{-x^{-2}}</mrow>
-      </md>.
-  </p>
-
-  <p>
-    As you can see the calculations are already getting a little complicated and we<rsq/>ve only taken the second derivative.
-  </p>
-  <p>
-    Conceptually, it is not difficult to compute these derivatives
-    using the tools you learned in Calculus but the formulas involved
-    do become complicated rather quickly.  Some care must be taken to
-    avoid error.
-
-    To streamline things a bit we take <m>y= x^{-1}</m>,
-    and define <m>p_2(x) = 4x^6-6x^4</m> so that
-    <me>
-      f^{(2)}(x) = p_2(x^{-1})e^{-x^{-2}} = p_2(y)e^{-y^2}
-      </me>.
-  </p>
-
-  <problem xml:id="DRILLCauchyCounterPartI"><title>Cauchy<rsq/>s Counterexample, Part 1</title>
-  <idx><h>Cauchy, Augustin</h><h>Cauchy<rsq/>s counterexample</h><h> part 1</h></idx>
-  <introduction>
     <p>
-      In this problem and in <xref
-      ref="PROBLEMCauchyCounterPartII"></xref> <m>f(x)</m> is the function defined in <xref ref="eq_CauchyCounterEx" >equation</xref>. 
+      All in all, Lagrange<rsq/>s idea was very clever and
+      insightful. It<rsq/>s only real flaw is that its fundamental,
+      underlying assumption is not true.  It turns out that not every
+      differentiable function can be represented as a Taylor series.
+      This was demonstrated very dramatically by Augustin
+      Cauchy<rsq/>s famous counter-example
+      <men xml:id="eq_CauchyCounterEx">
+        f(x) = \begin{cases} e^{-\frac{1}{x^2}}\amp  x\ne0\\ 0 \amp x=0 \end{cases}
+        </men>.
+    </p>
+
+    <p> 
+      This function is actually infinitely differentiable everywhere
+      but its Maclaurin series (that is, its Taylor series with
+      <m>a=0</m>) does not converge to <m>f</m> (except, trivially, at
+      the origin) because all of its derivatives at the origin are
+      equal to zero. That is <m>f^{(n)}(0) = 0, \forall\, n \in
+      \NN</m>.
+    </p>
+
+
+    <p>
+      To begin with, let<rsq/>s compute a few derivatives when <m>x
+      \neq 0</m>.
+      <md>
+        <mrow>f^{(0)}(x) \amp = e^{x^{-2}}</mrow>
+        <mrow>f^{(1)}(x) \amp = 2x^{-3}e^{-x^{-2}}</mrow>
+        <mrow>f^{(2)}(x) \amp = \left(4x^{-6}-6x^{-4}\right)e^{-x^{-2}}</mrow>
+        </md>.
+    </p>
+
+    <p>
+      As you can see the calculations are already getting a little complicated and we<rsq/>ve only taken the second derivative.
     </p>
     <p>
+      Conceptually, it is not difficult to compute these derivatives
+      using the tools you learned in Calculus but the formulas involved
+      do become complicated rather quickly.  Some care must be taken to
+      avoid error.
 
-      To simplify the notation we make the following definitions:
-      <m>y=x^{-1}</m> and <m>f^{(n)}(x) =p_n(y)e^{-y^2}</m>.
-
+      To streamline things a bit we take <m>y= x^{-1}</m>,
+      and define <m>p_2(x) = 4x^6-6x^4</m> so that
+      <me>
+        f^{(2)}(x) = p_2(x^{-1})e^{-x^{-2}} = p_2(y)e^{-y^2}
+        </me>.
     </p>
-  </introduction>
 
-  <task>
-    <statement>
+    <problem xml:id="DRILLCauchyCounterPartI"><title>Cauchy<rsq/>s Counterexample, Part 1</title>
+    <idx><h>Cauchy, Augustin</h><h>Cauchy<rsq/>s counterexample</h><h> part 1</h></idx>
+    <introduction>
       <p>
-        Find <m>p_{n+1}(y)</m> in terms of
-        <m>p_{n}(y)</m>. 
+        In this problem and in <xref
+        ref="PROBLEMCauchyCounterPartII"></xref> <m>f(x)</m> is the function defined in <xref ref="eq_CauchyCounterEx" >equation</xref>. 
       </p>
-    </statement>
-    <hint>
       <p>
-        You are differentiating with respect to <m>x</m>, not <m>y</m>.
+
+        To simplify the notation we make the following definitions:
+        <m>y=x^{-1}</m> and <m>f^{(n)}(x) =p_n(y)e^{-y^2}</m>.
+
       </p>
-    </hint>
-  </task>
-  <task>
-    <statement>
-      <p>
-        Use induction on <m>n</m> to show that <m>p_n(y)</m> is a polynomial for all <m>n\in\NN</m>.
-      </p>
-    </statement>
-  </task>
-  </problem>
+    </introduction>
 
-  <p>
-    Unfortunately everything we<rsq/>ve done so far only gives us the derivatives we need when <m>x</m> is <em>not</em> zero,
-    and we need the derivatives when <m>x</m> <em>is</em> zero.
-    To find these we need to get back to very basic ideas.
-  </p>
+    <task>
+      <statement>
+        <p>
+          Find <m>p_{n+1}(y)</m> in terms of
+          <m>p_{n}(y)</m>. 
+        </p>
+      </statement>
+      <hint>
+        <p>
+          You are differentiating with respect to <m>x</m>, not <m>y</m>.
+        </p>
+      </hint>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Use induction on <m>n</m> to show that <m>p_n(y)</m> is a polynomial for all <m>n\in\NN</m>.
+        </p>
+      </statement>
+    </task>
+    </problem>
 
-  <p>
-    Let<rsq/>s assume for the moment that we know that <m>f^{(n)}(0)=0</m> and recall that
-    <md>
-      <mrow>f^{(n+1)}(0) \amp = \limit{x}{0}{\frac{f^{(n)}(x)-f^{(n)}(0)}{x-0}}</mrow>
-      <mrow>f^{(n+1)}(0) \amp = \limit{x}{0}{x^{-1}p_n(x^{-1})e^{-x^{-2}}}</mrow>
-      <mrow>f^{(n+1)}(0) \amp = \limit{y}{\pm\infty}{\frac{yp_n(y)}{e^{y^2}}}</mrow>
-      </md>.
-  </p>
+    <p>
+      Unfortunately everything we<rsq/>ve done so far only gives us the derivatives we need when <m>x</m> is <em>not</em> zero,
+      and we need the derivatives when <m>x</m> <em>is</em> zero.
+      To find these we need to get back to very basic ideas.
+    </p>
 
-  <p>
-    We can close the deal with the following problem.
-  </p>
+    <p>
+      Let<rsq/>s assume for the moment that we know that <m>f^{(n)}(0)=0</m> and recall that
+      <md>
+        <mrow>f^{(n+1)}(0) \amp = \limit{x}{0}{\frac{f^{(n)}(x)-f^{(n)}(0)}{x-0}}</mrow>
+        <mrow>f^{(n+1)}(0) \amp = \limit{x}{0}{x^{-1}p_n(x^{-1})e^{-x^{-2}}}</mrow>
+        <mrow>f^{(n+1)}(0) \amp = \limit{y}{\pm\infty}{\frac{yp_n(y)}{e^{y^2}}}</mrow>
+        </md>.
+    </p>
 
-  <problem xml:id="PROBLEMCauchyCounterPartII"><title>Cauchy<rsq/>s Counterexample, Part 2</title>
-  <idx><h>Cauchy, Augustin</h><h>Cauchy<rsq/>s counterexample</h><h>part 2</h></idx>
+    <p>
+      We can close the deal with the following problem.
+    </p>
 
-  <task>
-    <statement>
-      <p>
-        Let <m>m</m> be a nonnegative integer.
-        Show that <m>\limit{y}{\pm\infty}{\frac{y^m}{e^{y^2}}}=0</m>. 
-      </p>
-    </statement>
-    <hint>
-      <p>
-        Induction and a dash of L<rsq/>H&#xf4;pital's rule should do the trick.
-      </p>
-    </hint>
-  </task>
-  <task>
-    <statement>
-      <p>
-        Prove that
-        <m>\limit{y}{\pm\infty}{\frac{q(y)}{e^{y^2}}}=0</m> for any
-        polynomial <m>q</m>.
-      </p>
-    </statement>
-  </task>
-  <task>
-    <statement>
-      <p>
-        Let <m>f(x)</m> be as in <xref ref="eq_CauchyCounterEx">equation</xref>
-        and show that for every nonnegative integer <m>n</m>, <m>f^{(n)}(0)=0</m>.
-      </p>
-    </statement>
-  </task>
-  </problem>
+    <problem xml:id="PROBLEMCauchyCounterPartII"><title>Cauchy<rsq/>s Counterexample, Part 2</title>
+    <idx><h>Cauchy, Augustin</h><h>Cauchy<rsq/>s counterexample</h><h>part 2</h></idx>
 
-  <p>
-    This example showed that while it was fruitful to exploit Taylor
-    series representations of various functions, basing the
-    foundations of Calculus on power series was not a sound idea.
-  </p>
+    <task>
+      <statement>
+        <p>
+          Let <m>m</m> be a nonnegative integer.
+          Show that <m>\limit{y}{\pm\infty}{\frac{y^m}{e^{y^2}}}=0</m>. 
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Induction and a dash of L<rsq/>H&#xf4;pital's rule should do the trick.
+        </p>
+      </hint>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Prove that
+          <m>\limit{y}{\pm\infty}{\frac{q(y)}{e^{y^2}}}=0</m> for any
+          polynomial <m>q</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Let <m>f(x)</m> be as in <xref ref="eq_CauchyCounterEx">equation</xref>
+          and show that for every nonnegative integer <m>n</m>, <m>f^{(n)}(0)=0</m>.
+        </p>
+      </statement>
+    </task>
+    </problem>
 
-  <p>
-    While Lagrange<rsq/>s approach wasn't totally successful, it was a
-    major step away from infinitesimals and toward the modern
-    approach.  We still use aspects of it today.  For instance we
-    still use his prime notation (<m>f^\prime</m>) to denote the
-    derivative.
-  </p>
+    <p>
+      This example showed that while it was fruitful to exploit Taylor
+      series representations of various functions, basing the
+      foundations of Calculus on power series was not a sound idea.
+    </p>
 
-  <p>
-    Turning Lagrange<rsq/>s idea on its head it is clear that if we know how to compute derivatives,
-    we can use this machine to obtain a power series when we are not <q>clever enough</q>
-    to obtain the series in other
-    (typically shorter)
-    ways.
-    For example,
-    consider Newton<rsq/>s binomial series when <m>\alpha=\frac{1}{2}</m>.
-    Originally, we obtained this series by extending the binomial theorem to non-integer exponents.
-    Taylor<rsq/>s formula provides a more systematic way to obtain this series:
-    <md>
-      <mrow>f(x)\amp =(1+x)^{\frac{1}{2}};\amp f(0)\amp =1</mrow>
-      <mrow>f^\prime(x)\amp =\frac{1}{2}(1+x)^{\frac{1}{2}-1};\amp  f^\prime(0)\amp =\frac{1}{2}</mrow>
-      <mrow>f^{\prime\prime}(x)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)(1+x)^{\frac{1}{2}-2}\amp f^{\prime\prime}(0)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)</mrow>
-    </md>
-    and in general since
-    <md>
-      <mrow>f^{(n)}(x)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)\cdots\left(\frac{1}{2}-(n-1)\right)(1+x)^{\frac{1}{2}-n}</mrow>
-      <intertext>we have</intertext>
-      <mrow>f^{(n)}(0)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)\cdots\left(\frac{1}{2}-(n-1)\right)</mrow>
-      </md>.
-  </p>
+    <p>
+      While Lagrange<rsq/>s approach wasn't totally successful, it was a
+      major step away from infinitesimals and toward the modern
+      approach.  We still use aspects of it today.  For instance we
+      still use his prime notation (<m>f^\prime</m>) to denote the
+      derivative.
+    </p>
 
-  <p>
-    Using Taylor<rsq/>s formula we obtain the series
+    <p>
+      Turning Lagrange<rsq/>s idea on its head it is clear that if we know how to compute derivatives,
+      we can use this machine to obtain a power series when we are not <q>clever enough</q>
+      to obtain the series in other
+      (typically shorter)
+      ways.
+      For example,
+      consider Newton<rsq/>s binomial series when <m>\alpha=\frac{1}{2}</m>.
+      Originally, we obtained this series by extending the binomial theorem to non-integer exponents.
+      Taylor<rsq/>s formula provides a more systematic way to obtain this series:
+      <md>
+        <mrow>f(x)\amp =(1+x)^{\frac{1}{2}};\amp f(0)\amp =1</mrow>
+        <mrow>f^\prime(x)\amp =\frac{1}{2}(1+x)^{\frac{1}{2}-1};\amp  f^\prime(0)\amp =\frac{1}{2}</mrow>
+        <mrow>f^{\prime\prime}(x)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)(1+x)^{\frac{1}{2}-2}\amp f^{\prime\prime}(0)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)</mrow>
+      </md>
+      and in general since
+      <md>
+        <mrow>f^{(n)}(x)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)\cdots\left(\frac{1}{2}-(n-1)\right)(1+x)^{\frac{1}{2}-n}</mrow>
+        <intertext>we have</intertext>
+        <mrow>f^{(n)}(0)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)\cdots\left(\frac{1}{2}-(n-1)\right)</mrow>
+        </md>.
+    </p>
 
-    <md>
-      <mrow>
-        \sum_{n=0}^\infty\frac{f^{(n)}(0)}{n!}x^n \amp{}= 1+\sum_{n=1}^\infty\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\cdots\left( \frac{1}{2}-(n-1)\right)}{n!}x^n
-      </mrow>
-      <mrow>
-        \amp{}= 1+\sum_{n=1}^\infty\frac{\prod_{j=0}^{n-1}\left(\frac{1}{2}-j\right)}{n!}x^n
-      </mrow>
+    <p>
+      Using Taylor<rsq/>s formula we obtain the series
 
-    </md>
-    which agrees with <xref ref="eq_BinomialSeries">equation</xref> in the previous chapter.
-  </p>
+      <md>
+        <mrow>
+          \sum_{n=0}^\infty\frac{f^{(n)}(0)}{n!}x^n \amp{}= 1+\sum_{n=1}^\infty\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\cdots\left( \frac{1}{2}-(n-1)\right)}{n!}x^n
+        </mrow>
+        <mrow>
+          \amp{}= 1+\sum_{n=1}^\infty\frac{\prod_{j=0}^{n-1}\left(\frac{1}{2}-j\right)}{n!}x^n
+        </mrow>
 
-  <problem>
-    <statement>
-      <p>
-        <idx><h>Taylor<rsq/>s Formula</h><h>use to obtain the general binomial series</h></idx>
-        Use Taylor<rsq/>s formula to obtain the general binomial series
-        <me>
-          (1+x)^\alpha=1+\sum_{n=1}^\infty\frac{\prod_{j=0}^{n-1}\left(\alpha-j\right)}{n!}x^n.{}
-        </me>
-      </p>
-    </statement>
-  </problem>
+      </md>
+      which agrees with <xref ref="eq_BinomialSeries">equation</xref> in the previous chapter.
+    </p>
+
+    <problem>
+      <statement>
+        <p>
+          <idx><h>Taylor<rsq/>s Formula</h><h>use to obtain the general binomial series</h></idx>
+          Use Taylor<rsq/>s formula to obtain the general binomial series
+          <me>
+            (1+x)^\alpha=1+\sum_{n=1}^\infty\frac{\prod_{j=0}^{n-1}\left(\alpha-j\right)}{n!}x^n.{}
+          </me>
+        </p>
+      </statement>
+    </problem>
 
 
-  <p>
-    As you can see, Taylor<rsq/>s <q>machine</q>
-    will produce the power series for a function
-    (if it has one),
-    but is tedious to perform.
-    We will find, generally,
-    that this tediousness can be an obstacle to understanding.
-    In many cases it will be better to be clever if we can.
-    This is usually shorter.
-    However, it is comforting to have Taylor<rsq/>s formula available as a last resort.
-  </p>
+    <p>
+      As you can see, Taylor<rsq/>s <q>machine</q>
+      will produce the power series for a function
+      (if it has one),
+      but is tedious to perform.
+      We will find, generally,
+      that this tediousness can be an obstacle to understanding.
+      In many cases it will be better to be clever if we can.
+      This is usually shorter.
+      However, it is comforting to have Taylor<rsq/>s formula available as a last resort.
+    </p>
 
-  <p>
-    The existence of a Taylor series is addressed
-    (to some degree)
-    by the following.
-  </p>
+    <p>
+      The existence of a Taylor series is addressed
+      (to some degree)
+      by the following.
+    </p>
 
-  <theorem xml:id="TaylorsTheorem">
-    <statement>
-      <p>
-        <idx><h>Taylor<rsq/>s Theorem</h></idx>
-        If <m>f^\prime, f^{\prime\prime}, \ldots, f^{(n+1)}</m> are all continuous on an interval containing <m>a</m> and <m>x</m>, then
-        <md>
-          <mrow>f(x)=f(a)+\amp{}\frac{f^{\prime}(a)}{1!}(x-a)+\frac{f^{\prime \prime}(a)}{2!}(x-a)^2 +</mrow>
-          <mrow>
-          \amp{}\cdots+\frac{f^{(n)}(a)}{n!}(x-a)^n + \frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{t}</mrow>
-          </md>.
-          The last term in this expression,
-          <me>\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{t}</me>,
-          is called the <term>Integral
-          Form of the Remainder</term> of the Taylor series.
-      </p>
-    </statement>
-  </theorem>
+    <theorem xml:id="TaylorsTheorem">
+      <statement>
+        <p>
+          <idx><h>Taylor<rsq/>s Theorem</h></idx>
+          If <m>f^\prime, f^{\prime\prime}, \ldots, f^{(n+1)}</m> are all continuous on an interval containing <m>a</m> and <m>x</m>, then
+          <md>
+            <mrow>f(x)=f(a)+\amp{}\frac{f^{\prime}(a)}{1!}(x-a)+\frac{f^{\prime \prime}(a)}{2!}(x-a)^2 +</mrow>
+            <mrow>
+            \amp{}\cdots+\frac{f^{(n)}(a)}{n!}(x-a)^n + \frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{t}</mrow>
+            </md>.
+            The last term in this expression,
+            <me>\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{t}</me>,
+            is called the <term>Integral
+            Form of the Remainder</term> of the Taylor series.
+        </p>
+      </statement>
+    </theorem>
 
     <p>
       Before we address the proof, notice that the <m>n</m>-th degree polynomial

@@ -2,14 +2,21 @@
   <title>Joseph Fourier: The Man Who Broke Calculus</title>
   <section><title>Joseph Fourier and His Series</title>
   <p>
-    Applying mathematics to physical problems such as heat flow in a solid body drew much attention in the latter part of the 1700's and the early part of the 1800's.
-    One of the people to attack the heat flow problem was
-  Jean Baptiste Joseph Fourier.  
+    Applying mathematics to physical problems such as heat flow in a
+    solid body drew much attention in the latter part of the 1700's
+    and the early part of the 1800's.  One of the people to attack the
+    heat flow problem was <url
+    href="https://mathshistory.st-andrews.ac.uk/Biographies/Fourier/"
+    visual="mathshistory.st-andrews.ac.uk/Biographies/Fourier/">Jean
+    Baptiste Joseph Fourier</url> (1768<ndash/>1839).
   </p>
 
   <figure>
-    <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Fourier/" visual="mathshistory.st-andrews.ac.uk/Biographies/Fourier/">Jean Baptiste Joseph Fourier</url></caption>
+    <caption>  Jean Baptiste Joseph Fourier  </caption>
+
     <idx><h>Fourier, Jean Baptiste Joseph</h><h>portrait of</h></idx>
+    <idx><h>Portraits</h><h>Fourier</h></idx>
+
     <image width="35%" source="images/Fourier.png" >
       <shortdescription></shortdescription>
     </image>
@@ -17,13 +24,13 @@
 
   <p>
     <idx><h>Fourier, Jean Baptiste Joseph</h></idx>
-    Fourier submitted a manuscript on
-the subject, <foreign>Sur la propagation de la chaleur</foreign>
-    (<em>On the Propagation of Heat</em>), to the <foreign>Institut
-    National des Sciences et des Arts</foreign> in 1807.  These ideas
-    were subsequently published in <foreign>La theorie analytique de
-    la chaleur</foreign> (<em>The Analytic Theory of Heat
-    (1822)</em>).
+
+    Fourier submitted a manuscript on the subject, <foreign>Sur la
+    propagation de la chaleur</foreign> (<pubtitle>On the Propagation of
+    Heat</pubtitle>), to the <foreign>Institut National des Sciences et des
+    Arts</foreign> in 1807.  These ideas were subsequently published
+    in <foreign>La theorie analytique de la chaleur</foreign> (<pubtitle>The
+    Analytic Theory of Heat (1822)</pubtitle>).
   </p>
 
   <p>
@@ -296,12 +303,12 @@ the subject, <foreign>Sur la propagation de la chaleur</foreign>
       The sketches below display the graphs of <m>S_N</m> when
     <m>N=1</m>, <m>N=2</m>, <m>N=5</m>, and <m>N=50</m>.
   </p>
-  <aside>
-    <title>Note to self</title>
-    <p>
-      Need to find a way to make all of these graphs live and interactive.
-    </p>
-  </aside>
+  <!-- <aside> -->
+  <!--   <title>Note to self</title> -->
+  <!--   <p> -->
+  <!--     Need to find a way to make all of these graphs live and interactive. -->
+  <!--   </p> -->
+  <!-- </aside> -->
 
   <sbsgroup widths="45% 45%" margins="auto" valign="middle">
     <sidebyside>
@@ -353,10 +360,11 @@ the subject, <foreign>Sur la propagation de la chaleur</foreign>
   <!-- </figure> -->
 
   <p>
-    As you can see, as we add more terms the partial sums ,
-    <m>S_N</m>, look more and more like the original function
+    As you can see, as we add more terms to <m>S_N</m> its graph looks
+    more and more like the original function
     <m>f(x)=\frac{1}{2}-\abs{x-\frac{1}{2}}</m>.  This would seem to
-    be strong evidence that series converges to the function and therefore 
+    be strong evidence that series converges to the function and
+    therefore
     <men xml:id="PDE_sol">
       f(x)=\frac{4}{\pi^2}\sum_{k=0}^\infty\frac{\left(-1\right)^k}{\left(2k+1\right)^2}\sin\left(\left(2k+1\right)\pi x\right)
       </men>.
@@ -482,24 +490,26 @@ Let
   assumed (falsely) that this could be extended to infinite series,
   because every time a power series converged to a function, that
   function happened to be continuous.  This never failed for power
-  series, so this example was a bit disconcerting as it is an
-  example of the sum of <em>infinitely many</em> continuous
-  functions which is, in this case, discontinuous.  Was it possible
-  that there was some power series which converged to a function
-  which was not continuous?  Even if there wasn't, what was the
-  difference between power series and this Fourier series?
+  series, so this example was a bit disconcerting as it is an example
+  of the sum of infinitely many continuous functions which is, in this
+  case, discontinuous.  Was it possible that there was some power
+  series which converged to a function which was not continuous?  Even
+  if there isn<rsq/>t, what is the difference between power series and
+  this Fourier series?
 </p>
 
 <p>
   Even more disconcerting is what happens if we  differentiate the series
+
   <me>
     \frac{4}{\pi}\sum_{k=0}^\infty\frac{\left(-1\right)^k}{\left(2k+1\right)} \cos\left(\left(2k+1\right)\pi x\right)
   </me>
-  term<ndash/>by<ndash/>term as before.
-  Given the above graph of this series, it appears that
-  the derivative of it should be constantly 0, except at <m>x=\frac{1}{2}</m>,
-  where the derivative wouldn't exist.
-  But when we perform the differentiation  term<ndash/>by<ndash/>term we obtain the series
+
+  term<ndash/>by<ndash/>term as before.  Given the above graph of this
+  series, it appears that the derivative of it should be constantly 0,
+  except at <m>x=\frac{1}{2}</m>, where the derivative doesn<rsq/>t exist.
+  But when we perform the differentiation term<ndash/>by<ndash/>term
+  we obtain the series
   <me>
     4\sum_{k=0}^\infty\left(-1\right)^{k+1}\sin\left(\left(2k+1\right)\pi x\right)
     </me>.
@@ -517,7 +527,7 @@ Let
     <!--     </interactive> -->
     <!--   </figure> -->
 
-    </p>
+</p>
     <image width="75%" source="images/FourierEx11-1.png" >
       <shortdescription></shortdescription>
     </image>
@@ -570,36 +580,43 @@ Let
       Could it be that everything we did in <xref ref="PowerSeriesQuestions"></xref> was bogus?
     </p>
 
-    <p>
-      Fortunately, the answer to that question is no.  Power series are
-      generally much more well<ndash/>behaved than Fourier series.
-      Whenever a power series converges, the function it converges to
-      will be continuous.  And, as long as one stays inside the interval
-      of convergence, power series can be differentiated and integrated
-      term<ndash/>by<ndash/>term.  Power series have something going for
-      them that your average Fourier series does not, but none of this
-      is any more obvious to us than it was to mathematicians at the
-      beginning of the nineteenth century.  What they (and we) did know
-      was that relying on intuition was perilous and that rigorous
-      formulations were needed to either justify or dismiss these
-      intuitions.  In some sense, the nineteenth century was the
-      <q>morning after</q> the mathematical party that went on
-      throughout the eighteenth century.
-    </p>
+    <aside>
+      <p>
+        We will prove all of these assertions in <xref ref="PowerSeriesRedux" ></xref>.
+      </p>
+      </aside>
+      <p>
+        Fortunately, the answer to that question is, <q>No.</q> Power
+        series are generally much more well<ndash/>behaved than
+        Fourier series.  Whenever a power series converges, the
+        function it converges to will be continuous.  And, as long as
+        one stays inside the interval of convergence, power series can
+        be differentiated and integrated term<ndash/>by<ndash/>term.
+        Power series have something going for them that your average
+        Fourier series does not, but none of this is any more obvious
+        to us than it was to mathematicians at the beginning of the
+        nineteenth century.  What they did (and we do) know was that
+        relying on intuition was perilous and that rigorous
+        formulations were needed to either justify or dismiss these
+        intuitions.  In some sense, the nineteenth century was the
+        <q>morning after</q> the mathematical party that went on
+        throughout the eighteenth century.
+      </p>
 
-    <problem xml:id="prob_Fourier_Series-orthogonality">
-      <idx><h><m>\cos (nx)</m></h><h>orthogonality of</h></idx>
-      <idx><h>orthogonality</h><h> of <m>\cos nx</m></h></idx>
-      <statement>
-        <p>
-          Let <m>n</m> and <m>m</m> be positive integers.
-          Show
-          <me>
-            \int_{x=0}^1\cos\left(n\pi x\right)\cos\left(m\pi x\right)\dx{ x}=\left\{ \begin{matrix}0\amp \text{ if } n\neq m\\ \frac{1}{2}\amp \text{ if } n=m \end{matrix} \right.
-            </me>.
-        </p>
-      </statement>
-    </problem>
+
+      <problem xml:id="prob_Fourier_Series-orthogonality">
+        <idx><h><m>\cos (nx)</m></h><h>orthogonality of</h></idx>
+        <idx><h>orthogonality</h><h> of <m>\cos nx</m></h></idx>
+        <statement>
+          <p>
+            Let <m>n</m> and <m>m</m> be positive integers.
+            Show
+            <me>
+              \int_{x=0}^1\cos\left(n\pi x\right)\cos\left(m\pi x\right)\dx{ x}=\left\{ \begin{matrix}0\amp \text{ if } n\neq m\\ \frac{1}{2}\amp \text{ if } n=m \end{matrix} \right.
+              </me>.
+          </p>
+        </statement>
+      </problem>
 
         <problem xml:id="prob_fouriercoef">
           <statement>

@@ -1014,6 +1014,10 @@ axioms.
 
       <figure  xml:id="FIGUREWilesPortrait">
         <caption>Andrew Wiles</caption>
+
+        <idx><h>Portraits</h><h>Wiles</h></idx>
+        <idx><h>Wiles, Andrew</h><h>portrait of</h></idx>
+
         <image source="images/Wiles.png" width="35%">
           <shortdescription>Portrait of Andrew Wiles</shortdescription>
         </image>

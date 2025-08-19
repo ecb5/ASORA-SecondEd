@@ -31,10 +31,13 @@
         <caption>
           Gottfried Wilhelm Leibniz
         </caption>
-          <idx><h>Leibniz, Gottfried Wilhelm</h><h>portrait of</h></idx>
-          <image width="35%" source="images/Leibniz.png" >
-            <shortdescription>Portrait of Gottfried Wilhelm Leibniz</shortdescription>
-          </image>
+
+        <idx><h>Leibniz, Gottfried Wilhelm</h><h>portrait of</h></idx>
+        <idx><h>Portraits</h><h>Leibniz</h></idx>
+
+        <image width="35%" source="images/Leibniz.png" >
+          <shortdescription>Portrait of Gottfried Wilhelm Leibniz</shortdescription>
+        </image>
       </figure>
       <aside>
         <title>
@@ -229,7 +232,10 @@
         <title>
         </title>
         <caption>Isaac Newton</caption>
+
         <idx><h>Newton, Isaac</h><h>portrait of</h></idx>
+        <idx><h>Portraits</h><h>Newton</h></idx>
+
         <image width="35%" source="images/Newton.png" >
           <shortdescription>Bust of Isaac Newton</shortdescription>
         </image>
@@ -629,7 +635,9 @@
         <caption>
           Johann Bernoulli
         </caption>
+
         <idx><h>Bernoulli, Johann</h><h>portrait of</h></idx>
+        <idx><h>Portraits</h><h>Johann Bernoulli</h></idx>
 
         <image width="35%" source="images/BernoulliJohann.png" >
           <shortdescription>Portrait of Johann Bernoulli</shortdescription>
@@ -637,9 +645,12 @@
       </figure>
 
       <p>
+        <idx><h>Bernoulli, Jacob</h></idx>
+        <idx><h>Newton, Isaac</h></idx>
+
         In addition to Johann<rsq/>s, solutions were obtained from
-        Newton, <idx><h>Newton, Isaac</h></idx> Leibniz, Johann<rsq/>s
-        brother Jacob Bernoulli, <idx><h>Bernoulli Jacob</h></idx> and
+        Newton,  Leibniz, Johann<rsq/>s
+        brother Jacob Bernoulli,  and
         the Marquis de l<rsq/>Hopital <xref
         ref="struik69__sourc_book_mathem" />.  At the time there was
         an ongoing and very vitriolic controversy raging over whether
@@ -1672,6 +1683,10 @@
 
 <figure  xml:id="FIGUREJamesGregoryPortrait">
   <caption>James Gregory</caption>
+
+  <idx><h>Portraits</h><h>Gregory</h></idx>
+  <idx><h>Gregory, James</h><h>portrait of</h></idx>
+
   <image source="images/JamesGregory.png" width="35%">
     <shortdescription>Portrait of James Gregory</shortdescription>
   </image>
@@ -2050,7 +2065,10 @@
 </p>
 <figure>
   <caption>Leonhard Euler</caption>
+
   <idx><h>Euler, Leonhard</h><h>portrait of</h></idx>
+  <idx><h>Portraits</h><h>Euler</h></idx>
+
   <image width="35%" source="images/Euler.png" >
     <shortdescription>Portrait of Euler</shortdescription>
   </image>

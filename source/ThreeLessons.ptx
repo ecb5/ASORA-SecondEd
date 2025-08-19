@@ -306,6 +306,10 @@
     </aside>
     <figure>
       <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Tartaglia/" visual="mathshistory.st-andrews.ac.uk/Biographies/Tartaglia/">Tartaglia </url>, <q>The Stutterer</q></caption>
+
+      <idx><h>Portraits</h><h>Tartaglia</h></idx>
+      <idx><h>Tartaglia</h><h>portrait of</h></idx>
+
       <image width="35%" source="images/Tartaglia.png" >
         <shortdescription>Portrait of Tartaglia</shortdescription>
       </image>
@@ -320,7 +324,10 @@
 
     <figure>
       <caption>Girolomo Cardano</caption>
-      <idx><h>Cardano, Girolomo</h></idx>
+
+      <idx><h>Cardano, Girolomo</h><h>portrait of</h></idx>
+      <idx><h>Portraits</h><h>Cardano</h></idx>
+
       <image width="35%" source="images/Cardan.png" >
         <shortdescription>Portrait of Cardano</shortdescription>
       </image>
@@ -504,9 +511,13 @@
       <caption>
         George Polya
       </caption>
-<image width="35%" source="images/Polya.png" >
-  <shortdescription></shortdescription>
-</image>
+
+      <idx><h>Portraits</h><h>Polya</h></idx>
+      <idx><h>Polya, George</h><h>portrait of</h></idx>
+
+      <image width="35%" source="images/Polya.png" >
+        <shortdescription></shortdescription>
+      </image>
     </figure>
 
     <p>

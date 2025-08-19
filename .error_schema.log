@@ -1,5 +1,5 @@
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:215:0:ERROR:RELAXNGV:RELAXNG_ERR_NOELEM: Expecting an element nbsp, got nothing
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:215:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element blockquote, got p
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:215:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element p there
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:238:0:ERROR:RELAXNGV:RELAXNG_ERR_NOELEM: Expecting an element nbsp, got nothing
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:298:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element idx, got introduction
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:426:0:ERROR:RELAXNGV:RELAXNG_ERR_NOELEM: Expecting an element sidebyside, got nothing
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:426:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sage, got sbsgroup
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:426:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element sbsgroup there
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:501:0:ERROR:RELAXNGV:RELAXNG_ERR_NOELEM: Expecting an element nbsp, got nothing
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:501:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element blockquote, got p

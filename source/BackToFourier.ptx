@@ -76,6 +76,7 @@
       </aside> 
       <figure>
         <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/" visual="mathshistory.st-andrews.ac.uk/Biographies/Cantor/">Georg Cantor</url> </caption>
+        <idx><h>Portraits</h><h>Cantor</h></idx>
         <idx><h>Cantor, Georg</h><h>portrait of</h></idx>
         <image width="35%" source="images/Cantor.png">
           <shortdescription>Portrait of Georg Cantor</shortdescription>
@@ -1486,6 +1487,9 @@
 
       <figure  xml:id="FIGURELebesgue">
         <caption>Henri Lebesgue</caption>
+        <idx><h>Portraits</h><h>Lebesgue</h></idx>
+        <idx><h>Lebesgue, Henri</h><h>portrait of</h></idx>
+
         <image source="images/Lebesgue.png" width="35%">
           <shortdescription>Portrait of Henri Lebesgue</shortdescription>
         </image>
@@ -1597,6 +1601,10 @@
   <figure  xml:id="FIGUREGiuseppeVitali">
     <caption>  <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Vitali/" visual="mathshistory.st-andrews.ac.uk/Biographies/Vitali/">
     Giuseppe Vitali</url> (1875-1932)</caption>
+
+    <idx><h>Portraits</h><h>Vitali</h></idx>
+    <idx><h>Vitali, Giuseppe</h><h>portrait of</h> </idx>
+
     <image source="images/Vitali.png" width="35%">
       <shortdescription>Portrait of Giuseppe Vitali</shortdescription>
     </image>
@@ -1692,7 +1700,10 @@
    </p>
    <figure>
      <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/" visual="mathshistory.st-andrews.ac.uk/Biographies/Dedekind/">Richard Dedekind</url></caption>
+
      <idx><h>Dedekind, Richard</h><h>portrait of</h></idx>
+     <idx><h>Portraits</h><h>Dedekind</h></idx>
+
      <image width="35%" source="images/Dedekind.png" >
        <shortdescription>Portrait of Richard Dedekind</shortdescription>
      </image>
@@ -1951,8 +1962,12 @@
 
    <figure  xml:id="FIGURERussellPortrait">
      <caption>Bertrand Russell</caption>
+
+     <idx><h>Portraits</h><h>Russell</h></idx>
+     <idx><h>Russell, Bertrand</h><h>portrait of</h></idx>
+     
      <image source="images/Russell.png" width="35%">
-       <shortdescription>Portrait of Bertrand Russel</shortdescription>
+       <shortdescription>Portrait of Bertrand Russell</shortdescription>
      </image>
    </figure>
 
@@ -2038,6 +2053,10 @@
 
   <figure  xml:id="FIGUREHilbertPortrait">
     <caption>David Hilbert</caption>
+
+    <idx><h>Portraits</h><h>Hilbert</h></idx>
+    <idx><h>David Hilbert</h><h>portrait of</h></idx>
+
     <image source="images/Hilbert.png" width="35%">
       <shortdescription>Portrait of Hilbert</shortdescription>
     </image>
@@ -2092,7 +2111,10 @@
         <caption>
           Kurt Gödel
         </caption>
+
+        <idx><h>Portraits</h><h>Gödel</h></idx>
         <idx><h>Gödel, Kurt</h><h>portrait of</h></idx>
+
         <image  source="images/Godel.png" >
           <shortdescription>Portrait of Kurt Gödel</shortdescription>
         </image>
@@ -2100,6 +2122,10 @@
 
       <figure  xml:id="FIGURECohenPortrait">
       <caption>Paul Cohen</caption>
+
+      <idx><h>Portraits</h><h>Cohen</h></idx>
+      <idx><h>Cohen, Paul</h><h>portrait of</h></idx>     
+
       <image source="images/Cohen.png">
         <shortdescription>Portrait of Paul Cohen</shortdescription>
       </image>

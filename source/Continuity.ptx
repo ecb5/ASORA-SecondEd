@@ -145,7 +145,10 @@
     <figure>
       <title></title>
       <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/" visual="mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/">Karl Weierstrass</url> (1815<ndash/>1897)</caption>
+
       <idx><h>Weierstrass, Karl</h><h>portrait of</h></idx>
+      <idx><h>Portraits</h><h>Weierstrass</h></idx>
+
       <image width="35%" source="images/Weierstrass.png" >
         <shortdescription>Portrait of Karl Weierstrass</shortdescription>
       </image>
@@ -234,7 +237,10 @@
     <figure>
       <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Bolzano/" visual="mathshistory.st-andrews.ac.uk/Biographies/Bolzano/">Bernhard Bolzano</url>(1781<ndash/>1848)
       </caption>
+
       <idx><h>Bolzano, Bernhard</h><h>portrait of</h></idx>
+      <idx><h>Portraits</h><h>Bolzano</h></idx>
+
       <image width="35%" source="images/Bolzano.png" >
         <shortdescription>Portrait of Bernhard Bolzano</shortdescription>
       </image>
@@ -399,12 +405,12 @@
       formulation suits our needs in a particular application.
     </p>
 
-    <aside>
-      <title>Note to self</title>
-      <p>
-        This figure should be animated. 
-      </p>
-    </aside>
+    <!-- <aside> -->
+    <!--   <title>Note to self</title> -->
+    <!--   <p> -->
+    <!--     This figure should be animated.  -->
+    <!--   </p> -->
+    <!-- </aside> -->
 
 
     <sbsgroup widths="45% 45%" margins="auto" valign="middle">
@@ -671,7 +677,10 @@
     </p>
     <figure>
       <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Halmos/" visual="mathshistory.st-andrews.ac.uk/Biographies/Halmos/">Paul Halmos</url></caption>
+
       <idx><h>Halmos, Paul</h><h>portrait of</h></idx>
+      <idx><h>Portraits</h><h>Halmos</h></idx>
+
       <image width="35%" source="images/Halmos.png" >
         <shortdescription>Portrait of Paul Halmos</shortdescription>
       </image>
@@ -991,12 +1000,12 @@
       picture of this situation is below though, as always, the
       formal proof will not rely on the diagram.
     </p>
-    <aside>
-      <title>Note to self</title>
-      <p>
-        This figure should be animated. 
-      </p>
-    </aside>
+    <!-- <aside> -->
+    <!--   <title>Note to self</title> -->
+    <!--   <p> -->
+    <!--     This figure should be animated.  -->
+    <!--   </p> -->
+    <!-- </aside> -->
 
     <image width="37%" source="images/Ch5fig6.png" >
       <shortdescription></shortdescription>

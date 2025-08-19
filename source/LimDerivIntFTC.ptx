@@ -2091,6 +2091,10 @@ your Calculus course.
 
   <figure  xml:id="FIGUREDarbouxPortrait">
     <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Darboux/" visual="mathshistory.st-andrews.ac.uk/Biographies/Darboux/">Jean Gaston Darboux</url></caption>
+
+    <idx><h>Portraits</h><h>Darboux</h></idx>
+    <idx><h>Darboux, Jean</h><h>portrait of</h></idx>
+
     <image source="images/Darboux.png" width="35%">
       <shortdescription></shortdescription>
     </image>
@@ -2314,6 +2318,10 @@ your Calculus course.
 
         <figure >
           <caption>Lejeune Dirichlet</caption>
+
+          <idx><h>Portraits</h><h>Dirichelet</h></idx>
+          <idx><h>Dirichelet, Lejeune</h><h>portrait of</h></idx>
+
           <image source="images/Dirichlet.png" width="35%">
             <shortdescription>Portrait of Dirichlet</shortdescription>
           </image>

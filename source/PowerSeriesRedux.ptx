@@ -56,6 +56,10 @@
     </p>
     <figure  xml:id="FIGUREAbelPortrait">
       <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Abel/" visual="mathshistory.st-andrews.ac.uk/Biographies/Darboux/">Niels Henrik Abel</url></caption>
+
+      <idx><h>Portraits</h><h>Abel</h></idx>
+      <idx><h>Abel, Niels Henrik</h><h>portrait of</h></idx>
+
       <image source="images/Abel.png" width="35%">
         <shortdescription></shortdescription>
       </image>

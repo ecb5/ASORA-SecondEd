@@ -457,7 +457,7 @@
         </me>
       </p>
       <aside>
-        <title>Comment</title>
+        
         <p>
           Take particular note in these proofs that our choice of
           <m>\delta</m> guarantees that <m>\delta\gt0</m>. This is

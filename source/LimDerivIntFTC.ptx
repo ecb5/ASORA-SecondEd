@@ -195,7 +195,7 @@
         \limit{x}{a}{f(x)} = f(a)</m>.  
       </p> 
       <aside>
-        <title>Comment</title> 
+         
         <p>
           This presumes that <m>a</m> is an
           <term>accumulation point</term> of the domain of <m>f</m> (<xref
@@ -1391,7 +1391,7 @@ your Calculus course.
       </men>
   </p>
   <aside>
-    <title>Comment</title>
+    
     <p>
       We said that <xref ref="EQUATIONFTCIntDiffer" >equation</xref>
       uses Leibniz<rsq/> notation but this is not entirely

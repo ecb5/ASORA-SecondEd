@@ -407,7 +407,7 @@
       </p>
 
       <aside>
-        <title>Comment</title>
+        
         <p>
           Notice that we must explicitly assume uniform convergence.
           This is because we have not <em>yet</em>
@@ -600,7 +600,7 @@
         the basis of the proof.
       </p>
       <aside>
-        <title>Comment</title>
+        
         <p>
           But the converse isn't nearly as clear.  In fact, it isn't
           true in the rational numbers.
@@ -1419,7 +1419,7 @@
       convergence, and our cavalier approach from <xref
       ref="CalcIn17th18thCentury"></xref> is justified,
       <alert>EXCEPT</alert> for one issue.  If you go back to <xref
-      ref="PROBLEMResultsFromHarmonicSeries"></xref> of <xref
+      ref="PROBLEMResultsFromGeometricSeries"></xref> of <xref
       ref="CalcIn17th18thCentury"></xref>, you see that we used
       the geometric series to obtain the series, <m>\arctan x
       =\sum_{n=0}^\infty(-1)^n\frac{1}{2n+1}x^{2n+1}</m>.  We

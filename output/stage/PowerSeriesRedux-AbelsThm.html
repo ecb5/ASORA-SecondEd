@@ -180,10 +180,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ThreeLessons_lesson-three.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Lesson Three</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="NumbersRealRational.html" class="internal"><span class="codenumber">2</span> <span class="title">Numbers, Real <span class="process-math">\(\left(\RR\right)\)</span> and Rational <span class="process-math">\(\left(\QQ\right)\)</span></span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="NumbersRealRational-AddProbs.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Additional Problems</span></a></div></li></ul>
-</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="NumbersRealRational.html" class="internal"><span class="codenumber">2</span> <span class="title">Numbers, Real <span class="process-math">\(\left(\RR\right)\)</span> and Rational <span class="process-math">\(\left(\QQ\right)\)</span></span></a></div></li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="CalcIn17th18thCentury.html" class="internal"><span class="codenumber">3</span> <span class="title">Calculus in the 17th and 18th Centuries</span></a></div>
 <ul class="structural toc-item-list">
@@ -326,9 +323,9 @@ a_nx^n\)</span> has a radius of convergence <span class="process-math">\(r\)</sp
 \sum_{n=0}^\infty a_n\frac{x^{n+1}}{n+1}\)</span> for <span class="process-math">\(x\in(-r,r)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesRedux-AbelsThm-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="PowerSeriesRedux-AbelsThm-3">
-<div class="para">Thus power series are very well behaved within their interval of convergence, and our cavalier approach from <a href="CalcIn17th18thCentury.html" class="internal" title="Chapter 3: Calculus in the 17th and 18th Centuries">Chapter 3</a> is justified, <em class="alert">EXCEPT</em> for one issue.  If you go back to <a href="ExponentAdditionProperty.html#PROBLEMResultsFromHarmonicSeries" class="xref" data-knowl="./knowl/xref/PROBLEMResultsFromHarmonicSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 3.2.13">Problem 3.2.13</a> of <a href="CalcIn17th18thCentury.html" class="internal" title="Chapter 3: Calculus in the 17th and 18th Centuries">Chapter 3</a>, you see that we used the geometric series to obtain the series, <span class="process-math">\(\arctan x
+<div class="para">Thus power series are very well behaved within their interval of convergence, and our cavalier approach from <a href="CalcIn17th18thCentury.html" class="internal" title="Chapter 3: Calculus in the 17th and 18th Centuries">Chapter 3</a> is justified, <em class="alert">EXCEPT</em> for one issue.  If you go back to <a href="ExponentAdditionProperty.html#PROBLEMResultsFromGeometricSeries" class="xref" data-knowl="./knowl/xref/PROBLEMResultsFromGeometricSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 3.2.13">Problem 3.2.13</a> of <a href="CalcIn17th18thCentury.html" class="internal" title="Chapter 3: Calculus in the 17th and 18th Centuries">Chapter 3</a>, you see that we used the geometric series to obtain the series, <span class="process-math">\(\arctan x
 =\sum_{n=0}^\infty(-1)^n\frac{1}{2n+1}x^{2n+1}\text{.}\)</span>  We substituted <span class="process-math">\(x=1\)</span> into this to obtain <span class="process-math">\(\frac{\pi}{4}=\sum_{n=0}^\infty(-1)^n\frac{1}{2n+1}\text{.}\)</span> Unfortunately, our integration was only guaranteed on a closed subinterval of the interval <span class="process-math">\((-1,1)\)</span> where the convergence was uniform and we substituted in <span class="process-math">\(x=1\text{.}\)</span>  We “danced on the boundary” in other places as well, including when we said that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/CalcIn17th18thCentury.html ./knowl/xref/PROBLEMResultsFromHarmonicSeries.html ./knowl/xref/CalcIn17th18thCentury.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/CalcIn17th18thCentury.html ./knowl/xref/PROBLEMResultsFromGeometricSeries.html ./knowl/xref/CalcIn17th18thCentury.html">
 \begin{equation*}
 \frac{\pi}{4}=\int_{x=0}^1\sqrt{1-x^2}\dx{x}=1+\sum_{n=1}^\infty\left(\frac{\prod_{j=0}^{n-1}\left(\frac{1}{2}-j\right)}{n!}\text{ } \right)\left(\frac{\left(-1\right)^n}{2n+1}\right)\text{.}
 \end{equation*}

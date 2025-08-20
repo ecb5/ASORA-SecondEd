@@ -1081,7 +1081,7 @@
     </me>.
 </p>
 <aside>
-  <title>Comment</title>
+  
   <p>
     When we say <q>formal manipulations</q> we mean that we will
     perform purely algebraic operations on an given expression
@@ -1123,7 +1123,7 @@
       </md>
     </p>
     <aside>
-      <title>Comment</title>
+      
       <p>
         A few seconds of thought should convince you that the
         solution of this problem is <m>y(x) = e^x</m>.  We
@@ -1530,7 +1530,7 @@
   </statement>
 </problem>
 
-<problem xml:id="PROBLEMResultsFromHarmonicSeries">
+<problem xml:id="PROBLEMResultsFromGeometricSeries">
   <idx><h>series</h><h>Geometric series</h><h>used to derive arctangent series</h></idx>
   <idx><h>series</h><h><m>\tan^{-1}x</m></h></idx>
   <task>

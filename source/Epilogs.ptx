@@ -988,9 +988,10 @@ axioms.
       and gives us nothing new for our efforts, why do it at all?
     </p>
 
-    <aside><title>
-      Andrew Wiles
-    </title>
+    <aside>
+      <title>
+        Andrew Wiles
+      </title>
     <p>
       The man who proved <url href="https://mathshistory.st-andrews.ac.uk/HistTopics/Fermat's_last_theorem/" visual="mathshistory.st-andrews.ac.uk/HistTopics/Fermat's_last_theorem/">Fermat's Last Theorem</url>.
     </p>
@@ -1042,8 +1043,10 @@ axioms.
         <q>dark corners</q> of mathematics.
         It had to be explored.
       </p>
-      <aside><title>
-        Measure Zero Sets </title>
+      <aside>
+        <title>
+          Measure Zero Sets 
+        </title>
         <p>
           See <xref ref="THEOREMMeasureZero"></xref>
           of <xref ref="BackToFourier"></xref>.
@@ -1799,7 +1802,7 @@ natural numbers, all else is the work of man.</q>
   </problem>
 
   <aside>
-    <title>Comment</title>
+    
     <p>
       We will not address this issue here, but you should give
       some thought to how this might be accomplished.
@@ -1843,7 +1846,7 @@ natural numbers, all else is the work of man.</q>
     by H. A. Thurston<xref ref="thurston56__number_system" />.
   </p>
   <aside>
-    <title>Comment</title>
+    
 
     <p>
       Thurston first builds <m>\RR</m> as we<rsq/>ve indicated in
@@ -1887,7 +1890,7 @@ natural numbers, all else is the work of man.</q>
     satisfied.
   </p>
   <aside>
-    <title>Comment</title>
+    
     <p>
       <q>Clear</q> does not mean <q>easy to do</q> as we will see.
     </p>
@@ -1977,7 +1980,7 @@ natural numbers, all else is the work of man.</q>
         A set of positive rational numbers is called a <term>cut</term> if
       </p>
       <aside>
-        <title>Comment</title>
+        
         <p>
           Take special notice that we are not using the negative
           rational numbers or zero to build our cuts.  The reason for
@@ -2535,11 +2538,11 @@ true:
 </definition>
 
 <aside>
-<title>Comment</title>
-<p>
-  Notice also that the fifth case refers to the addition as
-  defined in the second case.
-</p>
+
+  <p>
+    Notice also that the fifth case refers to the addition as
+    defined in the second case.
+  </p>
 </aside>
 <p>
   But wait!  In the second and fourth cases of our definition
@@ -2688,7 +2691,7 @@ true:
   the following theorem which we state without proof.
 </p>
 <aside>
-  <title>Comment</title>
+  
 
   <p>
     In fact, not proving this result seems to be standard in real

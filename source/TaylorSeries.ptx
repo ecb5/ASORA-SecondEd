@@ -403,7 +403,7 @@
           </me>.
       </p>
       <aside>
-        <title>Comment</title>
+        
         <p>
           We have not mentioned the Intermediate Value Theorem until
           now and the citation we<rsq/>ve given is from <xref
@@ -756,7 +756,7 @@
         <m>x\in(-1,0).</m>
       </p>
       <aside>
-        <title>Comment</title>
+        
 
         <p>   
           Strictly speaking we only need to show this for <m>x\in(-1,-1/2).

@@ -28,9 +28,9 @@
     <p>
       If 
       <me>
-        \sum_{n=0}^\infty(a_n\cos n\pi x\,+b_n\sin n\pi x)
+        \sum_{n=0}^\infty(a_n\cos n\pi x + b_n\sin n\pi x)
       </me>
-      converges to <m>f</m> uniformly on the interval <m>(0,1)</m>
+      converges to <m>f</m> uniformly on the interval <m>[0,1]</m>
       then <mdash/> because of the uniform convergence <mdash/>
       Fourier<rsq/>s term<ndash/>by<ndash/>term integration is
       perfectly legitimate. Moreover the coefficients will of
@@ -441,11 +441,13 @@
     <title>The Rise of Set Theory</title>
 
     <p>
-      Cantor<rsq/>s work led an re<ndash/>examination of the
-      foundations of mathematics, one where mathematical ideas were
-      recast in the language of sets. Nowadays we do this naturally,
-      so it doesn<rsq/>t seem profound, but recasting mathematics in terms of <term>Set Theory</term> has fundamentally shaped our modern
-      approach.  We<rsq/>ve already seen this in <xref
+      Cantor<rsq/>s work was instrumental in the
+      re<ndash/>examination of the foundations of mathematics, one
+      where mathematical ideas were recast in the language of
+      sets. Nowadays we do this naturally, so it doesn<rsq/>t seem
+      profound, but recasting mathematics in terms of <term>Set
+      Theory</term> has fundamentally shaped our modern approach.
+      We<rsq/>ve already seen this in <xref
       ref="def_accumulation-point"></xref>, <xref
       ref="PROBLEMAccumulationPoint"></xref>, and <xref
       ref="def_derived-set"></xref> where we recast Cantor<rsq/>s
@@ -556,15 +558,15 @@
     <definition xml:id="DEFINITIONOpenSet">
       <title>Open Sets</title>
 
+      <idx><h>Definition</h><h>open set</h></idx>    
+      <idx><h>open set</h><h>definition</h></idx>    
+
       <statement>
         <p>
-          <idx><h>Definition</h><h>open set</h></idx>    
-          <idx><h>open set</h><h>definition</h></idx>    
           A set <m>S</m> of real numbers is
-          open if its complement <m>S^c=\RR-S</m> is closed.
+          open if its complement <m>S^C=\RR-S</m> is closed.
         </p>
-
-</statement>
+      </statement>
     </definition>
 
     <problem>
@@ -572,15 +574,16 @@
 
         <p>
           Show that a set <m>S</m> is open if and only if for all
-          <m>c\in S</m> there is an <m>\eps >0</m> such that
-          <m>\left(c-\eps ,c+\eps \right)\subset S</m>
+          <m>a\in S</m> there is an <m>\eps >0</m> such that
+          <m>\left(a-\eps ,a+\eps \right)\subset S</m>
         </p>
 
       </statement>
       <hint>
         <p>
-          Notice that  <m>c\in S</m> is not a limit point of
-          <m>S^C</m>. What does <xref ref="PROBLEMAccumulationPoint" ></xref> tell you?
+          Notice that if <m>S^C</m> is closed then  <m>a\in S</m> is not a limit point of
+          <m>S^C</m>. What does <xref ref="PROBLEMAccumulationPoint"
+          ></xref> tell you?
         </p>
       </hint>
       </problem>
@@ -598,7 +601,7 @@
               <m> \emptyset</m>
             </li>
             <li>
-              <m>\bigcup^{\infty }_{n=1}{S_n}</m> where each
+              <m>\displaystyle\bigcup^{\infty }_{n=1}{S_n}</m> where each
               <m>S_n</m> is an open set.
             </li>
           </ul>
@@ -677,11 +680,17 @@
       <!--   condition when stated in terms of open sets. -->
       <!-- </p> -->
       <problem>
-        <p>
-          Show that <m>f</m> is continuous on <m>D</m> if and only if
-          <m>f</m> satisfies the following condition: for any open set
-          of real numbers <m>V</m>, <m>f^{-1}(V)</m> is open.
-        </p>
+<p>
+  Show that <m>f(x)</m> is continuous at <m>x=a</m> if and only if for
+  every open set <m>V</m> containing <m>f(a)</m> there is an open set
+  <m>U</m> containing <m>a</m> with <m>f(U)\subset{V}</m>.
+</p>
+
+<!-- <p> -->
+<!--   Show that <m>f</m> is continuous on <m>D</m> if and only if -->
+<!--   <m>f</m> satisfies the following condition: for any open set -->
+<!--   of real numbers <m>V</m>, <m>f^{-1}(V)</m> is open. -->
+<!-- </p> -->
       </problem>
       <p>
 
@@ -708,7 +717,8 @@
         definitions for limits in terms of open sets is that it can be
         generalized beyond the realm of real numbers to sets where the
         distance between points is either irrelevant or not even possible
-        to determine.  With this in mind, in 1914, Felix Hausdorff
+        to determine.  With this in mind, in 1914, 
+        <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Hausdorff/" >Felix Hausdorff</url>
         (1868<ndash/>1942) defined what it means for a general set to have a
         topology based solely on sets and not relying on formulating a
         distance between its elements. Given an arbitrary nonempty set
@@ -717,9 +727,7 @@
         <q>open</q> sets.  The modern rendition of Hausdorff's definition of
         a topology says that <m>\tau </m> must satisfy the following
         axioms.
-      </p>
-      <p>
-        
+          
         <ul>
           <li>
             <p>
@@ -738,38 +746,45 @@
           </li>
         </ul>
 
-      </p>
+        </p>
+
+        <figure  xml:id="FIGUREHausdorffPortrait">
+          <caption>Felix Hausdorff</caption>
+          <image source="images/Hausdorff.png" width="35%">
+            <shortdescription>Portrait of Felix Hausdorff</shortdescription>
+          </image>
+        </figure>
 
 
-      <p>
-        Hausdorff actually added an extra ``separation'' axiom.
-      </p>
-      <p>
-        
-        <ul>
-          <li>
-            <p>
-              For any two elements <m>x,y</m> of <m>S</m>, there must exist two disjoint open sets <m>U_x</m> and <m>U_y</m> with <m>x\in U_x</m> and <m>y\in U_y</m>.
-            </p>
-          </li>
-        </ul>
+        <p>
+          Hausdorff actually added an extra <q>separation</q> axiom.
+        </p>
+        <p>
+          
+          <ul>
+            <li>
+              <p>
+                For any two elements <m>x,y</m> of <m>S</m>, there must exist two disjoint open sets <m>U_x</m> and <m>U_y</m> with <m>x\in U_x</m> and <m>y\in U_y</m>.
+              </p>
+            </li>
+          </ul>
 
-      </p>
-      <p>
-        Nowadays, a topological space (that is a set with a topology
-        defined on it) which has this extra property is called a
-        Hausdorff space.
-      </p>
-      <p>
-        This relatively simple idea generalizes our notion of open
-        sets of real numbers and can be applied to a wide range of
-        sets. We won't get into this, but we note that if we have a
-        function <m>f:S\to T</m> from one topological space into
-        another, we can define concepts like continuity by insisting
-        that the preimage of any open set in the topology on <m>T</m>
-        must be open in the topology on <m>S</m>.  It would be hard to
-        overstate the impact of this on modern mathematics.
-      </p>
+        </p>
+        <p>
+          Nowadays, a topological space (that is a set with a topology
+          defined on it) which has this extra property is called a
+          Hausdorff space.
+        </p>
+        <p>
+          This relatively simple idea generalizes our notion of open
+          sets of real numbers and can be applied to a wide range of
+          sets. We won't get into this, but we note that if we have a
+          function <m>f:S\to T</m> from one topological space into
+          another, we can define concepts like continuity by insisting
+          that the preimage of any open set in the topology on <m>T</m>
+          must be open in the topology on <m>S</m>.  It would be hard to
+          overstate the impact of this on modern mathematics.
+        </p>
 
   </section>
 
@@ -1400,8 +1415,8 @@
         beyond that. However the existence of non<ndash/>integrable
         functions suggests the question, can the integral be defined in
         such a way as to capture all of the intuitive features known to
-        17th century mathematician and which allows us to integrate
-        something as bizarre seeming as the Dirichlet Function?
+        17th century mathematicians and which allows us to integrate
+        something as seemingly bizarre as the Dirichlet Function?
       </p>
 </introduction>
 <subsection xml:id="SUBSECTIONStieltjesInt">
@@ -1663,7 +1678,7 @@
    <p>
      After employing his ideas on infinite sets of real numbers to
      study trigonometric series, Cantor gravitated toward applying
-     his ideas to sets in general.  For example, Once Cantor showed
+     his ideas to sets in general.  For example, once he showed
      that there were two types of infinity (countable and
      uncountable), the following question was natural, <q>Do all
      uncountable sets have the same cardinality?</q>
@@ -1925,12 +1940,12 @@
        </statement>
        <hint>
          <p>
-           Let <m>Y=Y_0</m>.  If <m>X-Y_0</m> is an infinite set,
+           Let <m>Y=Y_0</m>.  Since <m>X-Y_0</m> is an infinite set,
            then by the previous problem it contains a countably
-           infinite set <m>Y_1</m>.  Likewise if <m>X-(Y_0\cup
+           infinite set <m>Y_1</m>.  Likewise since <m>X-(Y_0\cup
            Y_1)</m> is infinite it also contains an infinite set
-           <m>Y_2</m>.  Again, if <m>X-(Y_0\cup Y_1\cup Y_2)</m> is
-           an infinite set then it contains an infinite set
+           <m>Y_2</m>.  Again, since <m>X-(Y_0\cup Y_1\cup Y_2)</m> is
+           a countably infinite set then it contains a countably infinite set
            <m>Y_3</m>, etc.  For <m>n=1, 2, 3,\ldots </m>, let
            <m>f_n:Y_{n-1}\rightarrow Y_n</m> be a one<ndash/>to<ndash/>one
            correspondence and define <m>f:X\rightarrow X-Y</m> by
@@ -1978,8 +1993,8 @@
      <xref ref="SECTIONRiseSetTheory" ></xref>.  The idea was that set
      theory was to be a unifying theme of mathematics but
      Russell<rsq/>s paradox set the mathematical world on its ear
-     because it showed that the  naive understanding of a 
-     as just a collection of objects leads to logical difficulties.
+     because it showed that the naive understanding of a set as just a
+     collection of objects leads to logical difficulties.
    </p>
 
    <fact>

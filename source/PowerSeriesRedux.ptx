@@ -99,7 +99,7 @@
           limit of continuous functions is continuous</h></idx>
 
           Find the flaw in the following <q>proof</q> that  if  <m>f_1, f_2, f_3, f_4 \ldots</m> are all continuous
-          at <m>a</m> and  <m>f=\sum_{n=1}^\infty f_n</m> is also continuous at <m>a</m>.
+          at <m>a</m> then  <m>f=\sum_{n=1}^\infty f_n</m> is also continuous at <m>a</m>.
         </p>
         <p>
           Let
@@ -315,7 +315,10 @@
       the convergence cannot be uniform on <m>(-\infty,\infty),</m> as
       the function <m>f</m> is not continuous.  This never happens
       with a power series, since they converge to continuous functions
-      whenever they converge. Although it is not yet obvious that power series<rsq/> converge uniformly, we will soon see that they do and that uniform convergence is what guarantees that they converge to continuous functions. We will also see that uniform
+      whenever they converge. Although it is not yet obvious that
+      power series converge uniformly, we will soon see that they do
+      and that uniform convergence is what guarantees that they
+      converge to continuous functions. We will also see that uniform
       convergence is what allows us to integrate and differentiate a
       power series term by term.
     </p>
@@ -1398,7 +1401,7 @@
 
 
   <section xml:id="PowerSeriesRedux-AbelsThm">
-    <title>Boundary Issues and Abel's Theorem</title>
+    <title>Boundary Issues and Abel<rsq/>s Theorem</title>
     <p>
       Summarizing our results, we see that any power series <m>\sum
       a_nx^n</m> has a radius of convergence <m>r</m> such that
@@ -1495,10 +1498,8 @@
     </p>
 
     <theorem xml:id="AbelsTheorem">
+      <title>Abel<rsq/>s Theorem</title>
       <statement>
-        <p>
-          <alert>Abel's Theorem</alert>
-        </p>
         <p>
           <idx><h>Abel, Niels Henrik</h><h>Abel's Theorem</h></idx>
 
@@ -1621,7 +1622,8 @@
       </statement>
       <hint>
         <p>
-          Consider <m>\sum a_n\left(-x\right)^n</m>.
+          Apply Abel<rsq/>s Theorem to  <m>\sum
+          a_n\left(-x\right)^n=\sum (-1)^nx^n</m>.
         </p>
       </hint>
     </problem>

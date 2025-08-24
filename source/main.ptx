@@ -6,7 +6,7 @@
 
 
   <book xml:id="ASORA">
-    <title>A Contextual Introduction to Real Analysis: How we Got from There to Here</title>
+    <title>A Contextual Introduction to Real Analysis: How We Got From There To Here</title>
     <xi:include href="./frontmatter.ptx" />
 
     <part xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="AskingQuestions">

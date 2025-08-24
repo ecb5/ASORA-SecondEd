@@ -114,17 +114,17 @@
         intuition we have gained from finite sums.
       </p>
 
-      <p>
-        <idx>
-          <h>Cantor, Georg</h><h>and the modern view of mathematics</h>
-        </idx>
+      <!-- <p> -->
+      <!--   <idx> -->
+      <!--     <h>Cantor, Georg</h><h>and the modern view of mathematics</h> -->
+      <!--   </idx> -->
 
-        <!-- The converse of the question above: If <m>c_n=d_n=0</m>, is it -->
-        <!-- necessarily true that <me>\sum_{n=0}^\infty\left(c_n\cos n\pi -->
-        <!-- x\,+d_n\sin n\pi x\right) = 0</me>, is even more interesting, as -->
-        <!-- we will soon see.  The answer to this seemingly basic question -->
-        <!-- leads to some very profound results. -->
-      </p>
+      <!--   The converse of the question above: If <m>c_n=d_n=0</m>, is it -->
+      <!--   necessarily true that <me>\sum_{n=0}^\infty\left(c_n\cos n\pi -->
+      <!--   x\,+d_n\sin n\pi x\right) = 0</me>, is even more interesting, as -->
+      <!--   we will soon see.  The answer to this seemingly basic question -->
+      <!--   leads to some very profound results. -->
+      <!-- </p> -->
       
       <p>
         Answering this question led Cantor to study the
@@ -802,7 +802,7 @@
     </p>
 
     <theorem xml:id="thm_WeakNIP">
-      <idx><h>Nested Interval Property (NIP)</h><h>weak form</h></idx>
+      <idx><h>Nested Interval Property</h><h>weak form</h></idx>
       <statement>
         <p>
           Let <m>\left(\left[a_n, b_n\right]\right)_{n=1}^\infty</m>
@@ -826,7 +826,7 @@
     </proof>
 
     <problem>
-      <idx><h>Nested Interval Property (NIP)</h><h>weak form</h></idx> 
+      <idx><h>Nested Interval Property</h><h>weak form</h></idx> 
       <statement>
         <p>
           Suppose <m>\limit{n}{\infty}{\abs{b_n-a_n}}>0</m>.  Show
@@ -1917,51 +1917,52 @@
    <problem>
      <idx><h>countable sets</h><h>deleting a countable subset</h></idx> 
 
-     <introduction>
+
+     <statement>
+
        <p>
          Suppose <m>X</m> is an uncountable set and <m>Y\subset X</m>
          is countably infinite.  
-       </p>
-     </introduction>
-     <task>
-       <statement>
-         <p>
-           Prove that <m>X</m> and <m>X-Y</m> are both uncountable
-           sets.
-         </p>
-       </statement>
-     </task>
-     <task>
-       <statement>
-         <p>
-           Prove that <m>X</m> and <m>X-Y</m> have the same
+
+
+         <!-- <task> -->
+         <!--   <statement> -->
+         <!--     <p> -->
+         <!--       Prove that <m>X</m> and <m>X-Y</m> are both uncountable -->
+         <!--       sets. -->
+         <!--     </p> -->
+         <!--   </statement> -->
+         <!-- </task> -->
+
+         Prove that <m>X</m> and <m>X-Y</m> have the same
            cardinality.
          </p>
-       </statement>
-       <hint>
-         <p>
-           Let <m>Y=Y_0</m>.  Since <m>X-Y_0</m> is an infinite set,
-           then by the previous problem it contains a countably
-           infinite set <m>Y_1</m>.  Likewise since <m>X-(Y_0\cup
-           Y_1)</m> is infinite it also contains an infinite set
-           <m>Y_2</m>.  Again, since <m>X-(Y_0\cup Y_1\cup Y_2)</m> is
-           a countably infinite set then it contains a countably infinite set
-           <m>Y_3</m>, etc.  For <m>n=1, 2, 3,\ldots </m>, let
-           <m>f_n:Y_{n-1}\rightarrow Y_n</m> be a one<ndash/>to<ndash/>one
-           correspondence and define <m>f:X\rightarrow X-Y</m> by
-           <me>
-             f(x) =
-             \begin{cases}
-             f_n(x), \amp \text{ if }  x\in Y_n, n=0,1,2,\ldots\\
-             x, \amp \text{ if }  x\in X-(\cup_{n=0}^\infty Y_n ) 
-             \end{cases}
-             </me>.
-         </p>
-         <p>
-           Show that <m>f</m> is one<ndash/>to<ndash/>one and onto.
-         </p>
-       </hint>
-     </task>
+
+</statement>
+
+     <hint>
+       <p>
+         Let <m>Y=Y_0</m>.  Since <m>X-Y_0</m> is an infinite set,
+         then by the previous problem it contains a countably
+         infinite set <m>Y_1</m>.  Likewise since <m>X-(Y_0\cup
+         Y_1)</m> is infinite it also contains a countably infinite set
+         <m>Y_2</m>.  Again, since <m>X-(Y_0\cup Y_1\cup Y_2)</m> is
+         a countably infinite set then it contains a countably infinite set
+         <m>Y_3</m>, etc.  For <m>n=1, 2, 3,\ldots </m>, let
+         <m>f_n:Y_{n-1}\rightarrow Y_n</m> be a one<ndash/>to<ndash/>one
+         correspondence and define <m>f:X\rightarrow X-Y</m> by
+         <me>
+           f(x) =
+           \begin{cases}
+           f_n(x), \amp \text{ if }  x\in Y_n, n=0,1,2,\ldots\\
+           x, \amp \text{ if }  x\in X-\left(\cup_{n=0}^\infty Y_n \right) 
+           \end{cases}
+           </me>.
+       </p>
+       <p>
+         Show that <m>f</m> is one<ndash/>to<ndash/>one and onto.
+       </p>
+     </hint>
    </problem>
 
 
@@ -2070,7 +2071,7 @@
     <caption>David Hilbert</caption>
 
     <idx><h>Portraits</h><h>Hilbert</h></idx>
-    <idx><h>David Hilbert</h><h>portrait of</h></idx>
+    <idx><h>Hilbert, David</h><h>portrait of</h></idx>
 
     <image source="images/Hilbert.png" width="35%">
       <shortdescription>Portrait of Hilbert</shortdescription>

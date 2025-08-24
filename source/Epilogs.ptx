@@ -5,14 +5,14 @@
     Galileo)</title>
 
     <p>
-      <alert>Interlocuters</alert>:<em> Salviati, Sagredo,
+      <alert>Interlocuters</alert>: <em>Salviati, Sagredo,
       and Simplicio; Three Friends of Galileo Galilei</em>
     </p>
     <p> <alert>Setting</alert>: Three friends meet in a garden for
     lunch in Renaissance Italy.  Prior to their meal they discuss
     the book
     <pubtitle>
-      A Contextual Introduction to Real Analysis: How we Got from There to Here
+      A Contextual Introduction to Real Analysis: How We Got From There To Here
     </pubtitle>
     .
     How they obtained a copy is not clear.
@@ -281,7 +281,7 @@ We seem to find ourselves in Archimedes<rsq/> predicament: We have no place to s
   Let us consider further.
   You said earlier that we all know what numbers are, and I agree.
   But perhaps your statement needs to be more precisely formulated.
-  Suppose we say instead that we all know what numbers need> to be?
+  Suppose we say instead that we all know what numbers need to be?
   Or that we know what we want numbers to be?
 </p>
 
@@ -998,7 +998,7 @@ axioms.
     </aside>
     <p>
       <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Wiles/" visual="mathshistory.st-andrews.ac.uk/Biographies/Wiles/">Andrew Wiles</url> has compared
-      doing mathematics has been compared to entering a dark room. At
+      doing mathematics to entering a dark room. At
       first you are lost.  The layout of the room and furniture are
       unknown so you fumble about for a bit and slowly get a sense of
       your immediate environs, perhaps a vague notion of the
@@ -1033,7 +1033,7 @@ axioms.
       <p>
         This is what happened in the late nineteenth century.  The real
         numbers had been used since the Pythagoreans learned that
-        <m>\sqrt{2}</m> was irrational.  But really, most calculuations
+        <m>\sqrt{2}</m> was irrational.  But really, most calculations
         were (and still are) done with just the rational numbers.
         Moreover, since <m>\QQ</m> forms a <q>set of measure
         zero,</q>
@@ -1260,7 +1260,7 @@ linearly ordered number field.
   Then <mdash /> at last <mdash /> we would use <m>\QQ</m> to
   define the real numbers <m>(\RR)</m>, show that these
   satisfy the field axioms and also have the other properties
-  we expect: <xref ref="def_continuity" text="custom">Continuity</xref>, the <xref ref="NIP" text="custom">Nested Interval Property</xref> , the
+  we expect:  The <xref ref="NIP" text="custom">Nested Interval Property</xref> , the
   <xref ref="def_LeastUpperBound" text="custom">Least Upper Bound Property</xref>, the <xref ref="BolzanoWeierstrass" text="custom">Bolzano<ndash/>Weierstrass Theorem</xref>,
   the <xref ref="thm_Cauchy-_Converge" text="custom">convergence of all Cauchy sequences</xref>, and <xref ref="def_NumberField" text="custom">linear
   ordering</xref>.
@@ -1682,8 +1682,9 @@ natural numbers, all else is the work of man.</q>
     <statement>
 
       <p>
-        Let <m>x</m> and <m>y</m> be real numbers (that is, let them be sets of equivalent Cauchy sequences  in <m>\QQ</m>).
-        If <m>(s_n)</m> and <m>(t_n)</m> are in <m>x</m> and
+        Let <m>x</m> and <m>y</m> be real numbers (that is, let them
+        be sets of equivalent Cauchy sequences in <m>\QQ</m>).  Prove
+        that if <m>(s_n)</m> and <m>(t_n)</m> are in <m>x</m> and
         <m>(\sigma_n)</m> and <m>(\tau_n)</m> are in <m>y</m> then
         <me>
           (s_n+\tau_n)_{n=1}^\infty \equiv (\sigma_n+t_n)_{n=1}^\infty
@@ -1730,8 +1731,10 @@ natural numbers, all else is the work of man.</q>
     <p>
       Since any other sequences taken from <m>0^*</m> and
       <m>x</m> respectively, will yield a sum equivalent to
-      <m>x</m> (see <xref
-      ref="prob_EquivalentCauchySequences"></xref>) we
+      <m>x</m>
+      <!-- (see <xref -->
+      <!-- ref="prob_CauchyAdditionWellDefined"></xref>)  -->
+      we
       conclude that
       <me>
         0^*+x=x
@@ -2424,30 +2427,29 @@ only if <m>\xi</m> and <m>\nu</m> are the same number.
 
 <p>
   Notice that by definition a negative real number is denoted
-  with the dash (<sq><m>-</m></sq>) in front.  That is <m>\chi</m> is
-  positive while <m>-\chi</m> is negative.  Thus if <m>A</m>
-is any real number then one of the following is
-true:
+  with the dash (<lsq/><m>-</m><rsq/>) in front.   Thus if <m>A</m>
+  is any real number then one of the following is
+  true:
 
-<ol>
-  <li>
-    <p>
-      <m>A=\chi</m> for some <m>\chi\in\RR</m> (<m>A</m> is positive)
-</p>
-</li>
+  <ol>
+    <li>
+      <p>
+        <m>A=\chi</m> where  <m>\chi</m> is a cut as defined in <xref ref="def_dedekind-cuts" ></xref>  (<m>A</m> is positive)
+      </p>
+    </li>
 
-<li>
-  <p>
-    <m>A=-\chi</m> for some <m>\chi\in\RR</m> (<m>A</m> is negative)
-</p>
-</li>
+    <li>
+      <p>
+        <m>A=-\chi</m> where  <m>\chi</m> is a cut as defined in <xref ref="def_dedekind-cuts" ></xref> (<m>A</m> is negative)
+      </p>
+    </li>
 
-<li>
-  <p>
-    <m>A=0</m>.
-</p>
-</li>
-</ol>
+    <li>
+      <p>
+        <m>A=0</m>.
+      </p>
+    </li>
+  </ol>
 </p>
 
 <p>

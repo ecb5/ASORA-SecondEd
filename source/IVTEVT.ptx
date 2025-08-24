@@ -144,7 +144,7 @@
     </p>
 
     <problem>
-      <idx><h>Nested Interval Property (NIP)</h><h>endpoints</h></idx>
+      <idx><h>Nested Interval Property</h><h>endpoints</h></idx>
       <statement>
         <p>
           Let <m>(x_n), (y_n)</m> be sequences as in the <xref ref="NIP" text="custom">NIP</xref>. Show
@@ -177,8 +177,9 @@
     </p>
 
     <problem>
-      <idx><h>Least Upper Bound Property (LUBP)</h><h>implies the
+      <idx><h>Least Upper Bound Property</h><h>implies the
       existence of irrational numbers</h></idx>
+      <idx><h>LUBP</h><see>Least Upper Bound Property</see></idx>
 
       <task>
         <statement>
@@ -232,7 +233,7 @@
     <theorem xml:id="thm_ConvergeToC">
       <statement>
         <p>
-          <idx><h>Nested Interval Property (NIP)</h><h>endpoints</h></idx> 
+          <idx><h>Nested Interval Property</h><h>endpoints</h></idx> 
           <idx><h>limit</h><h>of interval endpoints in the NIP</h></idx>
 
           Suppose that we have two sequences <m>\left(x_n\right)</m>
@@ -250,7 +251,7 @@
     <problem>
       <statement>
         <p>
-          <idx><h>Nested Interval Property (NIP)</h><h>endpoints</h></idx>
+          <idx><h>Nested Interval Property</h><h>endpoints</h></idx>
 
           Prove <xref ref="thm_ConvergeToC"></xref>.
         </p>
@@ -413,9 +414,9 @@
     <problem>
       <statement>
         <p>
-          <idx><h>Nested Interval Property (NIP)</h><h>square roots of
+          <idx><h>Nested Interval Property</h><h>square roots of
           integers, and</h></idx>
-          <idx><h>Nested Interval Property (NIP)</h><h>implies the
+          <idx><h>Nested Interval Property</h><h>implies the
           existence of square roots of integers</h></idx>
 
           Turn the above outline into a formal proof of <xref
@@ -706,7 +707,7 @@
 
 
   <section xml:id="IVTandEVT-BWT">
-    <title>The Bolzano-Weierstrass Theorem</title>
+    <title>The Bolzano<ndash/>Weierstrass Theorem</title>
     <p>
       Once we introduced the <xref ref="NIP" text="custom">Nested Interval Property</xref>, the <xref ref="IntermediateValueTheorem" text="custom">Intermediate Value Theorem</xref>  followed pretty
       readily.  The proof of <xref ref="thm_EVT" text="custom">Extreme Value Theorem</xref> takes a bit more work.  First we
@@ -886,12 +887,14 @@
     </p>
 
     <theorem xml:id="BolzanoWeierstrass">
+      <title>The Bolzano<ndash/>Weierstrass Theorem</title>
+
+      <idx><h>Bolzano<ndash/>Weierstrass Theorem</h></idx>  
+      <idx><h>BWT</h><see>Bolzano<ndash/>Weierstrass Theorem</see></idx>  
+
       <statement>
+
         <p>
-          <alert>The Bolzano-Weierstrass Theorem</alert>
-        </p>
-        <p>
-          <idx><h>Bolzano-Weierstrass Theorem</h></idx>  
           Let <m>\left(x_n\right)</m> be a sequence of real numbers such
           that <m>x_n\in[\,a,b]</m>, <m>\forall</m> <m>n</m>.  Then
           there exists <m>c\in[\,a,b]</m> and a subsequence
@@ -925,7 +928,7 @@
     </p>
 
     <p>
-      The Bolzano-Weierstrass Theorem says that no matter how <q>random</q>
+      The Bolzano<ndash/>Weierstrass Theorem says that no matter how <q>random</q>
       the sequence <m>\left(x_n\right)</m> may be,
       as long as it is bounded then some part of it must converge.
       This is very useful when one has some process which produces a <q>random</q>
@@ -933,7 +936,7 @@
     </p>
 
     <proof>
-      <title>Sketch of a Proof of the Bolzano-Weierstrass Theorem</title>
+      <title>Sketch of a Proof of the Bolzano<ndash/>Weierstrass Theorem</title>
       <p>
         Suppose we have our sequence <m>\left(x_n\right)</m> such that
         <m>x_n\in[a,b]</m>, <m>\forall</m> <m>n</m>.
@@ -1038,8 +1041,10 @@
     <problem>
       <statement>
         <p>
-          <idx><h>Bolzano-Weierstrass Theorem (BWT)</h></idx>
-          Turn the ideas of the above outline into a formal proof of the Bolzano-Weierstrass Theorem.
+
+          <idx><h>Bolzano<ndash/>Weierstrass Theorem</h></idx>
+
+          Turn the ideas of the above outline into a formal proof of the Bolzano<ndash/>Weierstrass Theorem.
         </p>
       </statement>
     </problem>
@@ -1047,10 +1052,24 @@
     <problem>
       <statement>
         <p>
-          <idx><h>Bolzano-Weierstrass Theorem (BWT)</h><h>implies that a  continuous functions on a closed set is bounded</h></idx>
-          <idx><h>continuous functions</h><h>on a closed set, and the Bolzano-Weierstrass Theorem</h></idx>
-          <idx><h>continuity</h><h>Bolzano-Weierstrass Theorem implies a continuous function on a closed set is bounded</h></idx>
-          Use the Bolzano-Weierstrass Theorem to complete the proof of <xref ref="thm_CompactBounded"></xref>.
+
+          <idx>
+            <h>Bolzano<ndash/>Weierstrass Theorem</h>
+            <h>implies that a continuous functions on a closed set is
+            bounded</h>
+          </idx>
+          <idx>
+            <h>continuous functions</h>
+            <h>on a closed, bounded interval, and the Bolzano<ndash/>Weierstrass
+            Theorem</h>
+          </idx>
+          <idx>
+            <h>continuity</h>
+            <h>Bolzano<ndash/>Weierstrass Theorem implies a continuous
+            function on a closed set is bounded</h>
+          </idx>
+
+          Use the Bolzano<ndash/>Weierstrass Theorem to complete the proof of <xref ref="thm_CompactBounded"></xref>.
         </p>
       </statement>
     </problem>
@@ -1119,8 +1138,8 @@
     <definition xml:id="def_LeastUpperBound">
       <title>Least Upper Bound Property (<term>LUBP</term>)</title>
 
-      <idx><h>Least Upper Bound Property (LUBP)</h></idx>
-      <idx><h>Definition</h><h>Least Upper Bound Property (LUBP)</h></idx>
+      <idx><h>Least Upper Bound Property</h></idx>
+      <idx><h>Definition</h><h>Least Upper Bound Property</h></idx>
 
       <statement>
         <p>
@@ -1190,7 +1209,7 @@
     </p>
 
     <theorem xml:id="thm_LUB"><title>The Least Upper Bound Property (<term>LUBP</term>)</title>
-    <idx><h>Least Upper Bound Property (LUBP)</h></idx> 
+    <idx><h>Least Upper Bound Property</h></idx> 
     <statement>
       <p>
         Let <m>S</m> be a non<ndash/>empty subset of
@@ -1264,9 +1283,10 @@
     </proof>
 
     <problem>
+      <idx><h>Nested Interval Property</h><h>implies the LUBP</h></idx>
+      <idx><h>NIP</h><see>Nested Interval Property</see></idx>
       <statement>
         <p>
-          <idx><h>Nested Interval Property (NIP)</h><h>implies the LUBP</h></idx>
           Complete the above ideas to provide a formal proof of <xref ref="thm_LUB"></xref>.
         </p>
       </statement>
@@ -1388,7 +1408,7 @@
         then for any positive integer <m>n</m>,
         <m>s-\frac{1}{n}</m> is not an upper bound of <m>f[\,a,b]</m>.
         Thus there exists <m>x_n\in[\,a,b]</m> with<m>\,s-\frac{1}{n}\lt f(x_n)\leq s</m>.
-        Now, by the Bolzano-Weierstrass Theorem,
+        Now, by the Bolzano<ndash/>Weierstrass Theorem,
         <m>\left(x_n\right)</m> has a convergent subsequence<m>\,\left(x_{n_k}\right)</m> converging to some <m>c\in[\,a,b]</m>.
         Using the continuity of <m>f</m> at <m>c</m>,
         you should be able to show that <m>f(c)=s</m>.
@@ -1418,16 +1438,23 @@
       the completeness of the real number system.
       In point of fact,
       most modern textbooks use the LUBP as the axiom of completeness and prove all other formulations as theorems.
-      We will finish this section by showing that either the Bolzano-Weierstrass Theorem or the LUBP can be used to prove the <xref ref="NIP" text="custom">NIP</xref>. This says that they are all equivalent and that any one of them could be taken as the completeness axiom.
+      We will finish this section by showing that either the Bolzano<ndash/>Weierstrass Theorem or the LUBP can be used to prove the <xref ref="NIP" text="custom">NIP</xref>. This says that they are all equivalent and that any one of them could be taken as the completeness axiom.
     </p>
 
     <problem>
       <statement>
         <p>
-          <idx><h>Bolzano-Weierstrass Theorem (BWT)</h><h>implies the NIP</h></idx>
-          Use the Bolzano-Weierstrass Theorem to prove the NIP. That is,
-          assume that the Bolzano-Weierstrass Theorem holds and suppose we have two sequences of real numbers,
-          <m>\left(x_n\right)</m> and <m>\left(y_n\right)</m>, satisfying:
+
+          <idx>
+            <h>Bolzano<ndash/>Weierstrass Theorem</h>
+            <h>implies the NIP</h>
+          </idx>
+
+          Use the Bolzano<ndash/>Weierstrass Theorem to prove the NIP. That
+          is, assume that the Bolzano<ndash/>Weierstrass Theorem holds and
+          suppose we have two sequences of real numbers,
+          <m>\left(x_n\right)</m> and <m>\left(y_n\right)</m>,
+          satisfying:
           <ol>
             <li>
               <p>
@@ -1462,8 +1489,8 @@
     </problem>
 
     <p>
-      Since the Bolzano-Weierstrass Theorem and the Nested Interval Property are equivalent,
-      it follows that the Bolzano-Weierstrass Theorem will not work for the rational number system.
+      Since the Bolzano<ndash/>Weierstrass Theorem and the Nested Interval Property are equivalent,
+      it follows that the Bolzano<ndash/>Weierstrass Theorem will not work for the rational number system.
     </p>
 
     <problem>
@@ -1478,7 +1505,7 @@
     <problem>
       <statement>
         <p>
-          <idx><h>Least Upper Bound Property (LUBP)</h><h>implies the Nested Interval Property (NIP)</h></idx>
+          <idx><h>Least Upper Bound Property</h><h>implies the Nested Interval Property</h></idx>
           Use the Least Upper Bound Property to prove the Nested Interval Property.
           That is, assume that every non-empty subset of the real numbers which is bounded above has a least upper bound;
           and suppose that we have two sequences of real numbers
@@ -1527,7 +1554,7 @@
     <problem>
       <statement>
         <p>
-          <idx><h>Least Upper Bound Property (LUBP)</h><h>doesn't hold in <m>\QQ</m></h></idx>
+          <idx><h>Least Upper Bound Property</h><h>doesn't hold in <m>\QQ</m></h></idx>
           Since the LUBP is equivalent to the <xref ref="NIP" text="custom">NIP</xref> it does not hold for the rational number system.
           Demonstrate this by finding a non-empty set of rational numbers which is bounded above,
           but whose supremum is an irrational number.
@@ -1561,7 +1588,7 @@
     </theorem>
 
     <problem>
-      <idx><h>Least Upper Bound Property (LUBP)</h><h>implies the Archimedean Property</h></idx>
+      <idx><h>Least Upper Bound Property</h><h>implies the Archimedean Property</h></idx>
       <idx><h>Archimedean Property</h><h>and LUBP</h></idx>
       <statement>
         <p>
@@ -1616,7 +1643,7 @@
     <problem>
       <statement>
         <p>
-          <idx><h>Least Upper Bound Property (LUBP)</h><h>identifying suprema and infima</h></idx>
+          <idx><h>Least Upper Bound Property</h><h>identifying suprema and infima</h></idx>
           Find the least upper bound (supremum) and greatest lower bound (infimum) of the following sets of real numbers, if they exist. (If one does not exist then say so.)
 
           <ol marker="(a)">
@@ -1663,7 +1690,7 @@
     <problem>
       <statement>
         <p>
-          <idx><h>Least Upper Bound Property (LUBP)</h></idx>
+          <idx><h>Least Upper Bound Property</h></idx>
           <idx><h><m>b</m> is an upper bound of <m>S\subseteq \RR</m> if and only if <m>-b</m> is a lower bound of <m>-S</m></h></idx>
           Let <m>S\subseteq\RR</m> and let <m>T=\{-x|\,x\in S\}</m>.
 

@@ -630,10 +630,10 @@
         So any convergent sequence is automatically Cauchy.  For the
         real number system, the converse is also true and, in fact, is
         equivalent to any of our completeness axioms: the <xref ref="NIP" text="custom">NIP</xref>, the
-        <xref ref="BolzanoWeierstrass" text="custom">Bolzano-Weierstrass Theorem</xref>, or the <xref ref="thm_LUB" text="custom">LUB Property</xref>.  Thus, this
+        <xref ref="BolzanoWeierstrass" text="custom">Bolzano<ndash/>Weierstrass Theorem</xref>, or the <xref ref="thm_LUB" text="custom">LUB Property</xref>.  Thus, this
         could have been taken as our completeness axiom and we could
         have used it to prove the others.  One of the most convenient
-        ways to prove this converse is to use the Bolzano-Weierstrass
+        ways to prove this converse is to use the Bolzano<ndash/>Weierstrass
         Theorem.  To do that, we must first show that a Cauchy
         sequence must be bounded.  This result is reminiscent of the
         fact that a convergent sequence is bounded (<xref
@@ -692,7 +692,7 @@
         <title>Sketch of Proof</title>
         <p>
           We know that <m>\left(s_n\right)</m> <m></m>is bounded, so
-          by the Bolzano-Weierstrass Theorem, it has a convergent
+          by the Bolzano<ndash/>Weierstrass Theorem, it has a convergent
           subsequence <m>\left(s_{n_k}\right)</m> converging to some
           real number <m>s</m>.  We have
           <m>|s_n-s|=|s_n-s_{n_k}+s_{n_k}-s|\leq|s_n-s_{n_k}\mathopen|+|s_{n_k}-s|</m>.
@@ -716,7 +716,7 @@
       <p>
         From <xref ref="thm_Converge-_Cauchy"></xref> we see
         that every Cauchy sequence converges in <m>\RR</m>.  Moreover
-        the proof of this fact depends on the Bolzano-Weierstrass
+        the proof of this fact depends on the Bolzano<ndash/>Weierstrass
         Theorem which, as we have seen, is equivalent to our
         completeness axiom, the Nested Interval Property.  What this
         means is that if there is a Cauchy sequence which does not
@@ -763,7 +763,7 @@
         and <xref
         ref="prob_Cauchy_sequences_Cauchy_implies_NIP"></xref> tell us
         that the following are equivalent: the Nested Interval
-        Property, the Bolzano-Weierstrass Theorem, the Least Upper
+        Property, the Bolzano<ndash/>Weierstrass Theorem, the Least Upper
         Bound Property, and the convergence of Cauchy sequences.  Thus
         any one of these could have been taken as the completeness
         axiom of the real number system and then used to prove the

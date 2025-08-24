@@ -693,240 +693,238 @@
       </p>
 
       <p>
-        <idx><h>Bernoulli, Johann</h><h><foreign>"Tanquam ex ungue
-        leonem"</foreign></h></idx> Newton submitted his solution
+        Newton submitted his solution
         anonymously, presumably to avoid more controversy.
         Nevertheless the methods he used were so distinctively
         Newton<rsq/>s that Bernoulli is said to have exclaimed
         <q><foreign>Tanquam ex ungue leonem</foreign>.</q>
       </p>
-<p>
-</p>
 
-<aside>
-  <title>
-    Translation: <foreign>Tanquam ex ungue leonem</foreign>
-  </title>
-  <p>
-    <q>I know the lion by his claw.</q>
-  </p>
-</aside> 
+      <aside>
+        <title>
+          Translation: <foreign>Tanquam ex ungue leonem</foreign>
+        </title>
 
-<p>
-  <idx><h>Brachistochrone problem, the</h><h>Bernoulli<rsq/>s solution</h></idx>
+        <p>
+          <q>I know the lion by his claw.</q>
+        </p>
+      </aside> 
 
-  Newton<rsq/>s solution was clever but it doesn<rsq/>t provide any
-  insights we<rsq/>ll be interested in so we will focus on
-  Bernoulli<rsq/>s ingenious solution which starts, interestingly
-  enough, with Snell<rsq/>s Law of Refraction.  He begins by
-  considering the stratified medium in the following figure, where an
-  object travels with velocities <m>v_1, v_2, v_3, \ldots</m> in
-  the various layers.
-</p>
-<figure xml:id="brachfig2">
-  <caption>
-  </caption>
-  <image width="55%" source="images/brachfig2-1.png" >
-    <shortdescription></shortdescription>
-  </image>
-</figure>
+      <p>
+        <idx><h>Brachistochrone problem, the</h><h>Bernoulli<rsq/>s solution</h></idx>
 
-<p>
-  By repeatedly applying Snell<rsq/>s Law he concluded that the fastest path must satisfy
-  <me>
-    \frac{\sin \theta_1}{v_1}=\frac{\sin \theta_2}{v_2}=\frac{\sin\theta_3}{v_3}=\cdots
-    </me>.
-</p>
+        Newton<rsq/>s solution was clever but it doesn<rsq/>t provide any
+        insights we<rsq/>ll be interested in so we will focus on
+        Bernoulli<rsq/>s ingenious solution which starts, interestingly
+        enough, with Snell<rsq/>s Law of Refraction.  He begins by
+        considering the stratified medium in the following figure, where an
+        object travels with velocities <m>v_1, v_2, v_3, \ldots</m> in
+        the various layers.
+      </p>
+      <figure xml:id="brachfig2">
+        <caption>
+        </caption>
+        <image width="55%" source="images/brachfig2-1.png" >
+          <shortdescription></shortdescription>
+        </image>
+      </figure>
 
-<p>
-  In other words, the ratio of the sine of the angle that the
-  curve makes with the vertical and the speed remains constant
-  along this fastest path.
-</p>
+      <p>
+        By repeatedly applying Snell<rsq/>s Law he concluded that the fastest path must satisfy
+        <me>
+          \frac{\sin \theta_1}{v_1}=\frac{\sin \theta_2}{v_2}=\frac{\sin\theta_3}{v_3}=\cdots
+          </me>.
+      </p>
 
-<p>
-  If we think of a continuously changing medium as stratified
-  into infinitesimal layers and extend Snell<rsq/>s law to an object
-  whose speed is constantly changing,
-  then along the fastest path,
-  the ratio of the sine of the angle that the curve<rsq/>s tangent makes with the vertical,
-  <m>\alpha</m>, and the speed,
-  <m>v</m>, must remain constant,
-  <me>
-    \frac{\sin\alpha}{v}=c
-    </me>
-    as in <xref ref="snellfig4"></xref> below.
-</p>
+      <p>
+        In other words, the ratio of the sine of the angle that the
+        curve makes with the vertical and the speed remains constant
+        along this fastest path.
+      </p>
 
-<figure xml:id="snellfig4">
-  <caption>
-  </caption>
-  <image width="40%" source="images/snellfig4-1.png">
-    <shortdescription></shortdescription>
-  </image>
-</figure>
+      <p>
+        If we think of a continuously changing medium as stratified
+        into infinitesimal layers and extend Snell<rsq/>s law to an object
+        whose speed is constantly changing,
+        then along the fastest path,
+        the ratio of the sine of the angle that the curve<rsq/>s tangent makes with the vertical,
+        <m>\alpha</m>, and the speed,
+        <m>v</m>, must remain constant,
+        <me>
+          \frac{\sin\alpha}{v}=c
+        </me>
+        as in <xref ref="snellfig4"></xref> below.
+      </p>
+
+      <figure xml:id="snellfig4">
+        <caption>
+        </caption>
+        <image width="40%" source="images/snellfig4-1.png">
+          <shortdescription></shortdescription>
+        </image>
+      </figure>
 
 
-<p>
-  If we include the horizontal and vertical axes and let <m>P</m>
-  denote the position of the bead at a particular time then we have
-  the following picture.
-</p>
-<figure xml:id="snellfig5">
+      <p>
+        If we include the horizontal and vertical axes and let <m>P</m>
+        denote the position of the bead at a particular time then we have
+        the following picture.
+      </p>
+      <figure xml:id="snellfig5">
 
-  <caption>
-  </caption>
-  <image width="55%" source="images/snellfig5-1.png" >
-    <shortdescription></shortdescription>
-  </image>
-</figure>
+        <caption>
+        </caption>
+        <image width="55%" source="images/snellfig5-1.png" >
+          <shortdescription></shortdescription>
+        </image>
+      </figure>
 
-<p>
-  In <xref ref="snellfig5"></xref>, <m>s</m> denotes the length that
-  the bead has traveled down to point <m>P</m> (that is, the arc
-  length of the curve from the origin to that point) and <m>a</m>
-  denotes the tangential component of the acceleration due to gravity
-  <m>g</m>.  Since  acceleration is the rate of change of velocity with
-  respect to time we see that
-  <me>
-  \dfdx{v}{t}=a
-  </me>.
-</p>
+      <p>
+        In <xref ref="snellfig5"></xref>, <m>s</m> denotes the length that
+        the bead has traveled down to point <m>P</m> (that is, the arc
+        length of the curve from the origin to that point) and <m>a</m>
+        denotes the tangential component of the acceleration due to gravity
+        <m>g</m>.  Since  acceleration is the rate of change of velocity with
+        respect to time we see that
+        <me>
+          \dfdx{v}{t}=a
+          </me>.
+      </p>
 
-<p>
-  To get a sense of how physical problems were approached using
-  Leibniz<rsq/>s Calculus we will use the above equation to show that
-  <m>v=\sqrt{2gy}</m>.
-</p>
+      <p>
+        To get a sense of how physical problems were approached using
+        Leibniz<rsq/>s Calculus we will use the above equation to show that
+        <m>v=\sqrt{2gy}</m>.
+      </p>
 
-<p>
-  By similar triangles we have 
-  <m>\frac{a}{g}=\frac{\dx{ y}}{\dx{ s}}</m>.  
-  As a student of Leibniz, Bernoulli would have regarded 
-  <m>\frac{\dx{ y}}{\dx{ s}}</m> as a fraction so
+      <p>
+        By similar triangles we have 
+        <m>\frac{a}{g}=\frac{\dx{ y}}{\dx{ s}}</m>.  
+        As a student of Leibniz, Bernoulli would have regarded 
+        <m>\frac{\dx{ y}}{\dx{ s}}</m> as a fraction so
 
-  <md>
-    <mrow>a\dx{ s} \amp = g\dx{ y}</mrow>
-    <intertext>
-      and since acceleration is the rate of change of velocity we have
-    </intertext>
-    <mrow>\frac{\dx{ v}}{\dx{ t}}\dx{ s} \amp = g\dx{ y}.</mrow>
-    <intertext>
+        <md>
+          <mrow>a\dx{ s} \amp = g\dx{ y}</mrow>
+          <intertext>
+            and since acceleration is the rate of change of velocity we have
+          </intertext>
+          <mrow>\frac{\dx{ v}}{\dx{ t}}\dx{ s} \amp = g\dx{ y}.</mrow>
+          <intertext>
 
-    Again, 18th century European mathematicians regarded <m>\dx{ v}, \dx{ t}</m>, and <m>\dx{ s}</m> as infinitesimally small numbers which nevertheless obey all of the usual rules of algebra. Thus we can rearrange the above to get</intertext>
+          Again, 18th century European mathematicians regarded <m>\dx{ v}, \dx{ t}</m>, and <m>\dx{ s}</m> as infinitesimally small numbers which nevertheless obey all of the usual rules of algebra. Thus we can rearrange the above to get</intertext>
 
-    <mrow>\frac{\dx{ s}}{\dx{ t}}\dx{ v} \amp = g\dx{ y}.</mrow>
-    <intertext>Since <m>\frac{\dx{ s}}{\dx{ t}}</m> is the rate of change of position with respect to time it is, in fact, the velocity of the bead. That is</intertext>
-    <mrow>v\dx{ v} \amp = g\dx{ y}.</mrow>
-    <intertext>Bernoulli would have interpreted this as a statement that two rectangles of height <m>v</m> and <m>g</m>, with respective widths <m>\dx{ v}</m> and <m>\dx{ y}</m> have equal area. Summing (integrating) all such rectangles we get:</intertext>
-    <mrow>\int{}v\dx{ v} \amp = \int{}g\dx{ y}</mrow>
-    <mrow>\frac{v^2}{2} \amp = gy</mrow>
-  </md>
-  or
-  <men xml:id="eq_brach_vel">
-    v=\sqrt{2gy}
-    </men>.
-</p>
+          <mrow>\frac{\dx{ s}}{\dx{ t}}\dx{ v} \amp = g\dx{ y}.</mrow>
+          <intertext>Since <m>\frac{\dx{ s}}{\dx{ t}}</m> is the rate of change of position with respect to time it is, in fact, the velocity of the bead. That is</intertext>
+          <mrow>v\dx{ v} \amp = g\dx{ y}.</mrow>
+          <intertext>Bernoulli would have interpreted this as a statement that two rectangles of height <m>v</m> and <m>g</m>, with respective widths <m>\dx{ v}</m> and <m>\dx{ y}</m> have equal area. Summing (integrating) all such rectangles we get:</intertext>
+          <mrow>\int{}v\dx{ v} \amp = \int{}g\dx{ y}</mrow>
+          <mrow>\frac{v^2}{2} \amp = gy</mrow>
+        </md>
+        or
+        <men xml:id="eq_brach_vel">
+          v=\sqrt{2gy}
+          </men>.
+      </p>
 
-<p>
-  You are undoubtedly uncomfortable with the cavalier
-  manipulation of infinitesimal quantities you<rsq/>ve just
-  witnessed, so we<rsq/>ll pause for a moment now to compare a
-  modern development of <xref
-  ref="eq_brach_vel">equation</xref> to Bernoulli<rsq/>s.  As
-  before we begin with the equation:
-  <md>
-    <mrow>\frac{a}{g}\amp = \dfdx{y}{s}</mrow>
+      <p>
+        You are undoubtedly uncomfortable with the cavalier
+        manipulation of infinitesimal quantities you<rsq/>ve just
+        witnessed, so we<rsq/>ll pause for a moment now to compare a
+        modern development of <xref
+        ref="eq_brach_vel">equation</xref> to Bernoulli<rsq/>s.  As
+        before we begin with the equation:
+        <md>
+          <mrow>\frac{a}{g}\amp = \dfdx{y}{s}</mrow>
 
-    <mrow>a \amp = g\dfdx{y}{s}.</mrow>
+          <mrow>a \amp = g\dfdx{y}{s}.</mrow>
 
-    <intertext>
-      Moreover, since acceleration is the derivative of velocity this is the same as:
-    </intertext>
+          <intertext>
+            Moreover, since acceleration is the derivative of velocity this is the same as:
+          </intertext>
 
-    <mrow>\dfdx{v}{t} \amp = g\dfdx{y}{s}.</mrow>
+          <mrow>\dfdx{v}{t} \amp = g\dfdx{y}{s}.</mrow>
 
-    <intertext>
-      Now observe that by the Chain Rule <m>\dfdx{v}{t} =
-      \dfdx{v}{s}\dfdx{s}{t}</m>. The physical interpretation
-      of this formula is that velocity will depend on
-      <m>s</m>, how far down the wire the bead has moved, but
-      that the distance traveled will depend on how much time
-      has elapsed. Therefore
-    </intertext>
+          <intertext>
+            Now observe that by the Chain Rule <m>\dfdx{v}{t} =
+            \dfdx{v}{s}\dfdx{s}{t}</m>. The physical interpretation
+            of this formula is that velocity will depend on
+            <m>s</m>, how far down the wire the bead has moved, but
+            that the distance traveled will depend on how much time
+            has elapsed. Therefore
+          </intertext>
 
-    <mrow>\dfdx{v}{s}\dfdx{s}{t} \amp = g\dfdx{y}{s}</mrow>
-    <intertext>or</intertext>
-    <mrow>\dfdx{s}{t}\dfdx{v}{s} \amp = g\dfdx{y}{s}</mrow>
-    <intertext>and since <m>\dfdx{s}{t} = v</m> we have</intertext>
-    <mrow>v\dfdx{v}{s} \amp = g\dfdx{y}{s}</mrow>
-    <intertext>Integrating both sides with respect to <m>s</m> gives:</intertext>
-    <mrow>\int{}v\dfdx{v}{s}d s \amp = g\int{}\dfdx{y}{s}d s</mrow>
-    <mrow>\int{}vd v \amp = g\int{}d y</mrow>
-    <intertext>and integrating gives</intertext>
-    <mrow>\frac{v^2}{2} \amp = gy</mrow>
-  </md>
-  as before.
-</p>
+          <mrow>\dfdx{v}{s}\dfdx{s}{t} \amp = g\dfdx{y}{s}</mrow>
+          <intertext>or</intertext>
+          <mrow>\dfdx{s}{t}\dfdx{v}{s} \amp = g\dfdx{y}{s}</mrow>
+          <intertext>and since <m>\dfdx{s}{t} = v</m> we have</intertext>
+          <mrow>v\dfdx{v}{s} \amp = g\dfdx{y}{s}</mrow>
+          <intertext>Integrating both sides with respect to <m>s</m> gives:</intertext>
+          <mrow>\int{}v\dfdx{v}{s}d s \amp = g\int{}\dfdx{y}{s}d s</mrow>
+          <mrow>\int{}vd v \amp = g\int{}d y</mrow>
+          <intertext>and integrating gives</intertext>
+          <mrow>\frac{v^2}{2} \amp = gy</mrow>
+        </md>
+        as before.
+      </p>
 
-<p>
-  In effect, in the modern formulation we have traded the
-  simplicity and elegance of differentials for a comparatively
-  cumbersome repeated use of the Chain Rule.  No doubt you
-  noticed when taking Calculus that in the differential
-  notation of Leibniz,<idx><h>Leibniz, Gottfried
-  Wilhelm</h></idx> the Chain Rule looks like <q>canceling</q>
-  an expression in the top and bottom of a fraction:
-  <m>\dfdx{y}{u}\dfdx{u}{x} = \dfdx{y}{x}</m>.  This is
-  because for 18th century mathematicians, that is exactly
-  what it was.
-</p>
+      <p>
+        In effect, in the modern formulation we have traded the
+        simplicity and elegance of differentials for a comparatively
+        cumbersome repeated use of the Chain Rule.  No doubt you
+        noticed when taking Calculus that in the differential
+        notation of Leibniz,<idx><h>Leibniz, Gottfried
+        Wilhelm</h></idx> the Chain Rule looks like <q>canceling</q>
+        an expression in the top and bottom of a fraction:
+        <m>\dfdx{y}{u}\dfdx{u}{x} = \dfdx{y}{x}</m>.  This is
+        because for 18th century mathematicians, that is exactly
+        what it was.
+      </p>
 
-<p>
-  To put it another way, 18th century mathematicians wouldn<rsq/>t
-  have recognized a need for what we call the Chain Rule because
-  this operation was a triviality for them.  Just reduce the
-  fraction.  This begs the question: Why did we abandon such a
-  clear and simple interpretation of our symbols in favor of the
-  comparatively more cumbersome modern interpretation?  This is
-  one of the questions we will try to answer in this course.
-</p>
+      <p>
+        To put it another way, 18th century mathematicians wouldn<rsq/>t
+        have recognized a need for what we call the Chain Rule because
+        this operation was a triviality for them.  Just reduce the
+        fraction.  This begs the question: Why did we abandon such a
+        clear and simple interpretation of our symbols in favor of the
+        comparatively more cumbersome modern interpretation?  This is
+        one of the questions we will try to answer in this course.
+      </p>
 
-<p>
-  Returning to the Brachistochrone problem we observe that
-  <mdn>
-    <mrow number="no">\frac{\sin\alpha}{v} \amp = c</mrow>
-    <intertext>and since <m>\sin\alpha = \frac{d x}{d s}</m>   we see that</intertext>
-    <mrow number="no">\frac{\frac{d x}{d s}}{\sqrt{2gy}} \amp = c</mrow>
-    <mrow number="no">\frac{d x}{\sqrt{2gy(ds)^2}} \amp = c</mrow>
-    <mrow xml:id="eq_Brachistochrone">\frac{d x}{\sqrt{2gy\left[(d x)^2+(d y)^2\right]}} \amp = c</mrow>
-    </mdn>.
-</p>
+      <p>
+        Returning to the Brachistochrone problem we observe that
+        <mdn>
+          <mrow number="no">\frac{\sin\alpha}{v} \amp = c</mrow>
+          <intertext>and since <m>\sin\alpha = \frac{d x}{d s}</m>   we see that</intertext>
+          <mrow number="no">\frac{\frac{d x}{d s}}{\sqrt{2gy}} \amp = c</mrow>
+          <mrow number="no">\frac{d x}{\sqrt{2gy(ds)^2}} \amp = c</mrow>
+          <mrow xml:id="eq_Brachistochrone">\frac{d x}{\sqrt{2gy\left[(d x)^2+(d y)^2\right]}} \amp = c</mrow>
+          </mdn>.
+      </p>
 
-<p>
-  Bernoulli was then able to solve this differential
-  equation.
-</p>
+      <p>
+        Bernoulli was then able to solve this differential
+        equation.
+      </p>
 
-<problem>
-  <idx><h>Brachistochrone problem, the</h></idx>
-  <statement>
-    <p>
-      Show that the equations <m>x=\frac{\phi-\sin
-      \phi}{4gc^2},\,y=\frac{1-\cos \phi}{4gc^2}</m> satisfy
-      equation <xref ref="eq_Brachistochrone">equation</xref>.
-      Bernoulli recognized this solution to be an inverted
-      cycloid, the curve traced by a fixed point on a circle
-      as the circle rolls along a horizontal surface.
-    </p>
-  </statement>
-</problem>
+      <problem>
+        <idx><h>Brachistochrone problem, the</h></idx>
+        <statement>
+          <p>
+            Show that the equations <m>x=\frac{\phi-\sin
+            \phi}{4gc^2},\,y=\frac{1-\cos \phi}{4gc^2}</m> satisfy
+            equation <xref ref="eq_Brachistochrone">equation</xref>.
+            Bernoulli recognized this solution to be an inverted
+            cycloid, the curve traced by a fixed point on a circle
+            as the circle rolls along a horizontal surface.
+          </p>
+        </statement>
+      </problem>
 
-<p>
-  This illustrates the state of Calculus in the late 1600s
-  and early 1700s; the foundations of the subject were a
-  bit shaky but there was no denying its power.
-</p>
+      <p>
+        This illustrates the state of Calculus in the late 1600s
+        and early 1700s; the foundations of the subject were a
+        bit shaky but there was no denying its power.
+      </p>
     </subsection>
   </section>
 
@@ -1532,7 +1530,7 @@
 
 <problem xml:id="PROBLEMResultsFromGeometricSeries">
   <idx><h>series</h><h>Geometric series</h><h>used to derive arctangent series</h></idx>
-  <idx><h>series</h><h><m>\tan^{-1}x</m></h></idx>
+  <idx><h>series</h><h>of <m>\arctan x</m></h></idx>
   <task>
     <statement>
       <p>

@@ -759,6 +759,28 @@
     </hint>
   </problem>
 
+  <problem xml:id="prob_series-geometric">
+    <idx><h>series</h><h>Geometric series</h><h>convergence/divergence conditions for</h></idx>
+    <task>
+      <statement>
+        <p>
+          Prove that if <m>x\neq 1</m>, then
+          <me>
+            1+x+x^2+\cdots+x^n=\frac{1-x^{n+1}}{1-x}
+            </me>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Use (a) to prove that if <m>|x|\lt 1</m>, then
+          <m>\limit{n}{\infty}{\left(\sum_{j=0}^nx^j\right)}=\frac{1}{1-x}</m>.
+        </p>
+      </statement>
+    </task>
+  </problem>
+
   <problem>
     <idx><h>sequences</h><h>definition of divergence</h></idx>
     <idx><h>convergence</h><h>definition of nonconvergence of a sequence</h></idx>
@@ -833,26 +855,99 @@
     </task>
   </problem>
 
-    </section>
-
-
-
-
-
-    <section xml:id="LimitAsPrimary">
-      <title>The Limit as a Primary Tool</title>
+  <problem>
+    <idx><h>sequences</h><h>difference of</h></idx>
+    <idx><h>limit</h><h>of the difference of sequences</h></idx>
+    <statement>
       <p>
-        As you saw in the <xref ref="SeqRealNum"
-        text="custom">previous section</xref> the formal definition of
-        the convergence of a sequence is meant to capture rigorously
-        our intuitive understanding of convergence.  However, the
-        definition itself is an unwieldy tool. If only there were some
-        way to be rigorous without having to run back to the
-        definition each time.  Fortunately, there is a way.  If we can
-        use the definition to prove some general rules about limits
-        then we could use these rules whenever they apply and be
-        assured that everything was still rigorous.  A number of these
-        should look familiar from Calculus.
+        Prove that if <m>\limit{n}{\infty}{s_n}=s</m> and
+        <m>\limit{n}{\infty}{\left(s_n-t_n\right)}=0</m>, then
+        <m>\limit{n}{\infty}{t_n}=s</m>.
+      </p>
+    </statement>
+  </problem>
+
+  <problem>
+    <idx><h>sequences</h><h>lower and upper bounds for</h></idx>
+    <task>
+      <statement>
+        <p>
+          Prove that if <m>\limit{n}{\infty}{s_n}=s</m> and <m>s\lt
+          t</m>, then there exists a real number <m>N</m> such that if
+          <m>n>N</m> then <m>s_n\lt t</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Prove that if <m>\limit{n}{\infty}{s_n}=s</m> and <m>r\lt
+          s</m>, then there exists a real number <m>M</m> such that if
+          <m>n>M</m> then <m>r\lt s_n</m>.
+        </p>
+      </statement>
+    </task>
+  </problem>
+
+  <problem xml:id="prob_RatioTest">
+    <title>The Ratio Test</title>
+    <idx><h>sequences</h><h>Ratio Test for</h></idx>
+
+    <introduction>
+      <p>
+        Suppose <m>\left(s_n\right)</m> is a sequence of positive numbers such that
+        <me>
+          \limit{n}{\infty}{\left(\frac{s_{n+1}}{s_n}\right)}=L
+          </me>.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Prove that if <m>L\lt 1</m>, then
+          <m>\limit{n}{\infty}{s_n}=0</m>.  
+        </p>
+      </statement>
+      <hint> 
+        <p>
+          Choose <m>R</m> with <m>L\lt R\lt 1</m>.  By the
+          previous problem, <m>\exists</m> <m>N</m> such that if
+          <m>n>N</m>, then <m>\frac{s_{n+1}}{s_n}\lt R</m>.  Let
+          <m>n_0>N</m> be fixed and show <m>s_{n_0+k}\lt R^ks_{n_0}</m>.
+          Conclude that <m>\lim_{k\rightarrow\infty}s_{n_0+k}=0</m> and
+          let <m>n=n_0+k</m>.
+        </p>
+      </hint>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Let <m>c</m> be a positive real number.  Prove
+          <m>\displaystyle\lim_{n\rightarrow\infty}\left(\frac{c^n}{n!}\right)=0</m>.
+        </p>
+      </statement>
+    </task>
+  </problem>
+</section>
+
+
+
+
+
+<section xml:id="LimitAsPrimary">
+  <title>The Limit as a Primary Tool</title>
+  <p>
+    As you saw in the <xref ref="SeqRealNum"
+    text="custom">previous section</xref> the formal definition of
+    the convergence of a sequence is meant to capture rigorously
+    our intuitive understanding of convergence.  However, the
+    definition itself is an unwieldy tool. If only there were some
+    way to be rigorous without having to run back to the
+    definition each time.  Fortunately, there is a way.  If we can
+    use the definition to prove some general rules about limits
+    then we could use these rules whenever they apply and be
+    assured that everything was still rigorous.  A number of these
+    should look familiar from Calculus.
       </p>
 
       <problem xml:id="PROBLEMLimConst">
@@ -1605,7 +1700,7 @@
               The sequence <m>\left(1-\frac1n\right)_{n=1}^\infty</m> gets larger and larger too,
               but it converges.
               What we meant to say was that the terms of the sequence
-              <m>\left(n\right)_{n=1}^\infty</m> become <em>arbitrarily</em>
+              <m>\left(n\right)_{n=1}^\infty</m> become <term>arbitrarily</term>
               large as <m>n</m> increases.
             </p>
 
@@ -1615,16 +1710,21 @@
             </p>
 
             <p>
-              To show divergence we must show that the sequence satisfies the <em>negation</em>
-              of the definition of convergence.
-              That is, we must show that for every <m>r\in\RR</m> there is an <m>\eps>0</m> such that for every <m>N\in\RR</m>,
-              there is an <m>n>N</m> with <m>\left|n-r\right|\ge\eps</m>.
+              To show divergence we must show that the sequence
+              satisfies the negation of the definition of convergence.
+              That is, we must show that for every <m>r\in\RR</m>
+              there is an <m>\eps>0</m> such that for every
+              <m>N\in\RR</m>, there is an <m>n>N</m> with
+              <m>\left|n-r\right|\ge\eps</m>.
             </p>
 
             <p>
-              So let <m>\eps=1</m>, and let <m>r\in\RR</m> be given.
+              So let <m>\eps=1</m>, and let <m>r\in\RR</m> be a positive real number.
               Let <m>N=r+2</m>.
-              Then for every <m>n>N</m> <m>\abs{n-r} > \abs{(r+2)-r}=2>1</m>.
+              Then for every <m>n>N</m> 
+
+              <me>\abs{n-r}=n-r\gt N-r = (r+2)-r=2\gt 1</me>.
+
               Therefore the sequence diverges.
             </p>
           </statement>
@@ -1642,30 +1742,34 @@
         <definition xml:id="def_DivToInf">
           <title>Divergence to Infinity</title>
 
+        
+          <idx><h>sequences</h><h>divergence<m>to \infty</m></h></idx>
+          <idx><h><m>\infty</m></h><h>positive infinity</h><h>divergence to</h></idx>
+          <idx><h><m>\infty</m></h><h>negative infinity</h><h>divergence to</h></idx>
+          <idx><h>Definition</h><h>divergence of a sequence to <m>\pm\infty</m></h></idx>
+          <idx><h>divergence of a sequence to <m>\pm\infty</m></h><h>definition</h></idx>
+          <idx><h><m>\infty</m></h><h>divergence to</h></idx>
+
           <statement>
             <p>
-              <idx><h>sequences</h><h>divergence<m>to \infty</m></h></idx>
-              <idx><h><m>\infty</m></h><h>positive infinity</h><h>divergence to</h></idx>
-              <idx><h>Definition</h><h>divergence of a sequence to <m>\pm\infty</m></h></idx>
-              <idx><h>divergence of a sequence to <m>\pm\infty</m></h><h>definition</h></idx>
 
               A sequence, <m>\left(a_n\right)_{n=1}^\infty</m>, <term>diverges to positive infinity </term> if for every real number <m>r</m>, there is a real number <m>N</m> such that <m>n>N\imp a_n>r</m>.
             </p>
 
             <p>
-              <idx><h><m>\infty</m></h><h>negative infinity</h><h>divergence to</h></idx>
               A sequence, <m>\left(a_n\right)_{n=1}^\infty</m>,
               <term>diverges to negative infinity </term>
               if for every real number <m>r</m>,
               there is a real number <m>N</m> such that <m>n>N\imp a_n\lt r</m>.
             </p>
 
+
             <p>
-              <idx><h><m>\infty</m></h><h>divergence to</h></idx>
               A sequence is said to <term>diverge to infinity</term>
               if it diverges to either positive or negative infinity.
             </p>
           </statement>
+
         </definition>
 
         <p>
@@ -1870,175 +1974,175 @@
 
 
 
-      <section>
-        <title>Additional Problems</title>
-        <problem>
-          <idx><h>convergence</h><h> of a sequence</h><h>implies the convergence of the absolute sequence</h></idx>
-          <statement>
-            <p>
-              Prove that if <m>\limit{n}{\infty}{s_n}=s</m> then
-              <m>\limit{n}{\infty}{\abs{s_n}}=\abs{s}</m>.  Prove that the
-              converse is true when <m>s=0</m>, but it is not necessarily
-              true otherwise.
-            </p>
-          </statement>
-        </problem>
+      <!-- <section> -->
+      <!--   <title>Additional Problems</title> -->
+      <!--   <problem> -->
+      <!--     <idx><h>convergence</h><h> of a sequence</h><h>implies the convergence of the absolute sequence</h></idx> -->
+      <!--     <statement> -->
+      <!--       <p> -->
+      <!--         Prove that if <m>\limit{n}{\infty}{s_n}=s</m> then -->
+      <!--         <m>\limit{n}{\infty}{\abs{s_n}}=\abs{s}</m>.  Prove that the -->
+      <!--         converse is true when <m>s=0</m>, but it is not necessarily -->
+      <!--         true otherwise. -->
+      <!--       </p> -->
+      <!--     </statement> -->
+      <!--   </problem> -->
 
-        <problem>
-          <idx><h>sequences</h><h>limit is unique</h></idx>
-          <task>
-            <statement>
-              <p>
-                Let <m>\left(s_n\right)</m> and <m>\left(t_n\right)</m> be
-                sequences with <m>s_n\leq t_n,\forall n</m>.  Suppose
-                <m>\limit{n}{\infty}{s_n}=s</m> and
-                <m>\limit{n}{\infty}{t_n}=t</m>.
+      <!--   <problem> -->
+      <!--     <idx><h>sequences</h><h>limit is unique</h></idx> -->
+      <!--     <task> -->
+      <!--       <statement> -->
+      <!--         <p> -->
+      <!--           Let <m>\left(s_n\right)</m> and <m>\left(t_n\right)</m> be -->
+      <!--           sequences with <m>s_n\leq t_n,\forall n</m>.  Suppose -->
+      <!--           <m>\limit{n}{\infty}{s_n}=s</m> and -->
+      <!--           <m>\limit{n}{\infty}{t_n}=t</m>. -->
 
-                Prove <m>s\leq t</m>. 
-              </p>
-            </statement>
-            <hint>
-              <p>
-                Assume for contradiction, that <m>s>t</m> and use the
-                definition of convergence with <m>\eps=\frac{s-t}{2}</m>
-                to produce an <m>n</m> with <m>s_n>t_n</m>.
-              </p>
-            </hint>
-          </task>
-          <task>
-            <statement>
-              <p>
-                Prove that if a sequence converges, then its limit is
-                unique.  That is, prove that if
-                <m>\limit{n}{\infty}{s_n}=s</m> and
-                <m>\limit{n}{\infty}{s_n}=t</m>, then <m>s=t</m>.
-              </p>
-            </statement>
-          </task>
-        </problem>
+      <!--           Prove <m>s\leq t</m>. -->
+      <!--         </p> -->
+      <!--       </statement> -->
+      <!--       <hint> -->
+      <!--         <p> -->
+      <!--           Assume for contradiction, that <m>s>t</m> and use the -->
+      <!--           definition of convergence with <m>\eps=\frac{s-t}{2}</m> -->
+      <!--           to produce an <m>n</m> with <m>s_n>t_n</m>. -->
+      <!--         </p> -->
+      <!--       </hint> -->
+      <!--     </task> -->
+      <!--     <task> -->
+      <!--       <statement> -->
+      <!--         <p> -->
+      <!--           Prove that if a sequence converges, then its limit is -->
+      <!--           unique.  That is, prove that if -->
+      <!--           <m>\limit{n}{\infty}{s_n}=s</m> and -->
+      <!--           <m>\limit{n}{\infty}{s_n}=t</m>, then <m>s=t</m>. -->
+      <!--         </p> -->
+      <!--       </statement> -->
+      <!--     </task> -->
+      <!--   </problem> -->
 
-        <problem>
-          <idx><h>sequences</h><h>if the sequence <m>\left(s_n\right)</m> is bounded then
-          <m>\limit{n}{\infty}{\left(\frac{s_n}{n}\right)}=0</m></h></idx> 
-          <statement>
-            <p>
-              Prove that if the sequence <m>\left(s_n\right)</m> is
-              bounded then
-              <m>\limit{n}{\infty}{\left(\frac{s_n}{n}\right)}=0</m>.
-            </p>
-          </statement>
-        </problem>
+      <!--   <problem> -->
+      <!--     <idx><h>sequences</h><h>if the sequence <m>\left(s_n\right)</m> is bounded then -->
+      <!--     <m>\limit{n}{\infty}{\left(\frac{s_n}{n}\right)}=0</m></h></idx> -->
+      <!--     <statement> -->
+      <!--       <p> -->
+      <!--         Prove that if the sequence <m>\left(s_n\right)</m> is -->
+      <!--         bounded then -->
+      <!--         <m>\limit{n}{\infty}{\left(\frac{s_n}{n}\right)}=0</m>. -->
+      <!--       </p> -->
+      <!--     </statement> -->
+      <!--   </problem> -->
 
-        <problem xml:id="prob_series-geometric">
-          <idx><h>series</h><h>Geometric series</h><h>convergence/divergence conditions for</h></idx>
-          <task>
-            <statement>
-              <p>
-                Prove that if <m>x\neq 1</m>, then
-                <me>
-                  1+x+x^2+\cdots+x^n=\frac{1-x^{n+1}}{1-x}
-                  </me>.
-              </p>
-            </statement>
-          </task>
-          <task>
-            <statement>
-              <p>
-                Use (a) to prove that if <m>|x|\lt 1</m>, then
-                <m>\limit{n}{\infty}{\left(\sum_{j=0}^nx^j\right)}=\frac{1}{1-x}</m>.
-              </p>
-            </statement>
-          </task>
-        </problem>
+      <!--   <problem xml:id="prob_series-geometric"> -->
+      <!--     <idx><h>series</h><h>Geometric series</h><h>convergence/divergence conditions for</h></idx> -->
+      <!--     <task> -->
+      <!--       <statement> -->
+      <!--         <p> -->
+      <!--           Prove that if <m>x\neq 1</m>, then -->
+      <!--           <me> -->
+      <!--             1+x+x^2+\cdots+x^n=\frac{1-x^{n+1}}{1-x} -->
+      <!--             </me>. -->
+      <!--         </p> -->
+      <!--       </statement> -->
+      <!--     </task> -->
+      <!--     <task> -->
+      <!--       <statement> -->
+      <!--         <p> -->
+      <!--           Use (a) to prove that if <m>|x|\lt 1</m>, then -->
+      <!--           <m>\limit{n}{\infty}{\left(\sum_{j=0}^nx^j\right)}=\frac{1}{1-x}</m>. -->
+      <!--         </p> -->
+      <!--       </statement> -->
+      <!--     </task> -->
+      <!--   </problem> -->
 
-        <problem>
-          <statement>
-            <p>
-              <idx><h>limit</h><h> of ratios of polynomials</h></idx>
-              Prove
-              <me>
-                \lim_{n\rightarrow\infty}\frac{a_0+a_1n+a_2n^2+
-                \cdots+a_kn^k}{b_0+b_1n+b_2n^2+\cdots+b_kn^k}=\frac{a_k}{b_k}
-                </me>, provided <m>b_k\neq 0</m>.
-            </p>
-            <p>
-              Notice division by zero is not an issue.  Since a polynomial
-              only has finitely many roots, the denominator will be
-              non-zero when <m>n</m> is sufficiently large.
-            </p>
-          </statement>
-        </problem>
+      <!--   <problem> -->
+      <!--     <statement> -->
+      <!--       <p> -->
+      <!--         <idx><h>limit</h><h> of ratios of polynomials</h></idx> -->
+      <!--         Prove -->
+      <!--         <me> -->
+      <!--           \lim_{n\rightarrow\infty}\frac{a_0+a_1n+a_2n^2+ -->
+      <!--           \cdots+a_kn^k}{b_0+b_1n+b_2n^2+\cdots+b_kn^k}=\frac{a_k}{b_k} -->
+      <!--           </me>, provided <m>b_k\neq 0</m>. -->
+      <!--       </p> -->
+      <!--       <p> -->
+      <!--         Notice division by zero is not an issue.  Since a polynomial -->
+      <!--         only has finitely many roots, the denominator will be -->
+      <!--         non-zero when <m>n</m> is sufficiently large. -->
+      <!--       </p> -->
+      <!--     </statement> -->
+      <!--   </problem> -->
 
-        <problem>
-          <idx><h>sequences</h><h>difference of</h></idx>
-          <idx><h>limit</h><h>of the difference of sequences</h></idx>
-          <statement>
-            <p>
-              Prove that if <m>\limit{n}{\infty}{s_n}=s</m> and
-              <m>\limit{n}{\infty}{\left(s_n-t_n\right)}=0</m>, then
-              <m>\limit{n}{\infty}{t_n}=s</m>.
-            </p>
-          </statement>
-        </problem>
+      <!--   <problem> -->
+      <!--     <idx><h>sequences</h><h>difference of</h></idx> -->
+      <!--     <idx><h>limit</h><h>of the difference of sequences</h></idx> -->
+      <!--     <statement> -->
+      <!--       <p> -->
+      <!--         Prove that if <m>\limit{n}{\infty}{s_n}=s</m> and -->
+      <!--         <m>\limit{n}{\infty}{\left(s_n-t_n\right)}=0</m>, then -->
+      <!--         <m>\limit{n}{\infty}{t_n}=s</m>. -->
+      <!--       </p> -->
+      <!--     </statement> -->
+      <!--   </problem> -->
 
-        <problem>
-          <idx><h>sequences</h><h>lower and upper bounds for</h></idx>
-          <task>
-            <statement>
-              <p>
-                Prove that if <m>\limit{n}{\infty}{s_n}=s</m> and <m>s\lt
-                t</m>, then there exists a real number <m>N</m> such that if
-                <m>n>N</m> then <m>s_n\lt t</m>.
-              </p>
-            </statement>
-          </task>
-          <task>
-            <statement>
-              <p>
-                Prove that if <m>\limit{n}{\infty}{s_n}=s</m> and <m>r\lt
-                s</m>, then there exists a real number <m>M</m> such that if
-                <m>n>M</m> then <m>r\lt s_n</m>.
-              </p>
-            </statement>
-          </task>
-        </problem>
+      <!--   <problem> -->
+      <!--     <idx><h>sequences</h><h>lower and upper bounds for</h></idx> -->
+      <!--     <task> -->
+      <!--       <statement> -->
+      <!--         <p> -->
+      <!--           Prove that if <m>\limit{n}{\infty}{s_n}=s</m> and <m>s\lt -->
+      <!--           t</m>, then there exists a real number <m>N</m> such that if -->
+      <!--           <m>n>N</m> then <m>s_n\lt t</m>. -->
+      <!--         </p> -->
+      <!--       </statement> -->
+      <!--     </task> -->
+      <!--     <task> -->
+      <!--       <statement> -->
+      <!--         <p> -->
+      <!--           Prove that if <m>\limit{n}{\infty}{s_n}=s</m> and <m>r\lt -->
+      <!--           s</m>, then there exists a real number <m>M</m> such that if -->
+      <!--           <m>n>M</m> then <m>r\lt s_n</m>. -->
+      <!--         </p> -->
+      <!--       </statement> -->
+      <!--     </task> -->
+      <!--   </problem> -->
 
-        <problem xml:id="prob_RatioTest">
-          <idx><h>sequences</h><h>Ratio Test for</h></idx>
-          <introduction>
-            <p>
-              Suppose <m>\left(s_n\right)</m> is a sequence of positive numbers such that
-              <me>
-                \limit{n}{\infty}{\left(\frac{s_{n+1}}{s_n}\right)}=L
-                </me>.
-            </p>
-          </introduction>
-          <task>
-            <statement>
-              <p>
-                Prove that if <m>L\lt 1</m>, then
-                <m>\limit{n}{\infty}{s_n}=0</m>.  
-              </p>
-            </statement>
-            <hint> 
-              <p>
-                Choose <m>R</m> with <m>L\lt R\lt 1</m>.  By the
-                previous problem, <m>\exists</m> <m>N</m> such that if
-                <m>n>N</m>, then <m>\frac{s_{n+1}}{s_n}\lt R</m>.  Let
-                <m>n_0>N</m> be fixed and show <m>s_{n_0+k}\lt R^ks_{n_0}</m>.
-                Conclude that <m>\lim_{k\rightarrow\infty}s_{n_0+k}=0</m> and
-                let <m>n=n_0+k</m>.
-              </p>
-            </hint>
-          </task>
-          <task>
-            <statement>
-              <p>
-                Let <m>c</m> be a positive real number.  Prove
-                <m>\displaystyle\lim_{n\rightarrow\infty}\left(\frac{c^n}{n!}\right)=0</m>.
-            </p>
-          </statement>
-        </task>
-      </problem>
-    </section>
+      <!--   <problem xml:id="prob_RatioTest"> -->
+      <!--     <idx><h>sequences</h><h>Ratio Test for</h></idx> -->
+      <!--     <introduction> -->
+      <!--       <p> -->
+      <!--         Suppose <m>\left(s_n\right)</m> is a sequence of positive numbers such that -->
+      <!--         <me> -->
+      <!--           \limit{n}{\infty}{\left(\frac{s_{n+1}}{s_n}\right)}=L -->
+      <!--           </me>. -->
+      <!--       </p> -->
+      <!--     </introduction> -->
+      <!--     <task> -->
+      <!--       <statement> -->
+      <!--         <p> -->
+      <!--           Prove that if <m>L\lt 1</m>, then -->
+      <!--           <m>\limit{n}{\infty}{s_n}=0</m>.   -->
+      <!--         </p> -->
+      <!--       </statement> -->
+      <!--       <hint>  -->
+      <!--         <p> -->
+      <!--           Choose <m>R</m> with <m>L\lt R\lt 1</m>.  By the -->
+      <!--           previous problem, <m>\exists</m> <m>N</m> such that if -->
+      <!--           <m>n>N</m>, then <m>\frac{s_{n+1}}{s_n}\lt R</m>.  Let -->
+      <!--           <m>n_0>N</m> be fixed and show <m>s_{n_0+k}\lt R^ks_{n_0}</m>. -->
+      <!--           Conclude that <m>\lim_{k\rightarrow\infty}s_{n_0+k}=0</m> and -->
+      <!--           let <m>n=n_0+k</m>. -->
+      <!--         </p> -->
+      <!--       </hint> -->
+      <!--     </task> -->
+      <!--     <task> -->
+      <!--       <statement> -->
+      <!--         <p> -->
+      <!--           Let <m>c</m> be a positive real number.  Prove -->
+      <!--           <m>\displaystyle\lim_{n\rightarrow\infty}\left(\frac{c^n}{n!}\right)=0</m>. -->
+      <!--         </p> -->
+      <!--       </statement> -->
+      <!--     </task> -->
+      <!--   </problem> -->
+      <!-- </section> -->
 </chapter>

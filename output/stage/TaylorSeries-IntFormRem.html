@@ -221,7 +221,6 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="SeqRealNum.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Sequences of Real Numbers</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="LimitAsPrimary.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Limit as a Primary Tool</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="DivergentSeq.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Divergence</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="Convergence-5.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Additional Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
@@ -330,13 +329,14 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para logical" id="TaylorSeries-IntFormRem-3">
 <div class="para">When we say that <span class="process-math">\(f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n\)</span> for a particular value of <span class="process-math">\(x\text{,}\)</span> what we mean is that the sequence of partial sums</div>
 <div class="displaymath process-math" id="TaylorSeries-IntFormRem-3-3">
-\begin{alignat*}{1}
-\amp\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)_{n=0}^\infty\\
-\amp= \left(f(a), f(a)+\frac{f^{\prime}(a)}{1!}(x-a),f(a)
-+\frac{f^{\prime}(a)}{1!}(x-a)+\frac{f^{\prime\prime}(a)}{2!}(x-a)^2,\ldots\right)
-\end{alignat*}
+\begin{align*}
+\amp{} \left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)_{n=0}^\infty\\
+\amp{}\ \ \ \ \ \ \ \ \ \ \ \  = \left(f(a),
+f(a)+\frac{f^{\prime}(a)}{1!}(x-a),\right. \\
+\amp{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \left.{}f(a) +\frac{f^{\prime}(a)}{1!}(x-a)+\frac{f^{\prime\prime}(a)}{2!}(x-a)^2,\ldots\right)
+\end{align*}
 </div>
-<div class="para">converges to the number <span class="process-math">\(f(x)\text{.}\)</span> Note that the index in the summation was changed to <span class="process-math">\(j\)</span> to allow <span class="process-math">\(n\)</span> to represent the index of the sequence of partial sums. As intimidating as this may look, bear in mind that for a fixed real number <span class="process-math">\(x\text{,}\)</span> this is still a sequence of real numbers so, that saying <span class="process-math">\(f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n\)</span> means that <span class="process-math">\(\lim_{n\rightarrow\infty}\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)=f(x)\)</span> and in the previous chapter we developed some tools to examine this phenomenon. In particular, we know that <span class="process-math">\(\lim_{n\rightarrow\infty}\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)=f(x)\)</span> is equivalent to</div>
+<div class="para">converges to the number <span class="process-math">\(f(x)\text{.}\)</span> Note that the index in the summation was changed to <span class="process-math">\(j\)</span> to allow <span class="process-math">\(n\)</span> to represent the index of the sequence of partial sums. As intimidating as this may look, bear in mind that for a fixed real number <span class="process-math">\(x\text{,}\)</span> this is still a sequence of real numbers so, that saying <span class="process-math">\(f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n\)</span> means that <span class="process-math">\(\limitt{n}{\infty}{\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)}=f(x)\)</span> and in the previous chapter we developed some tools to examine this phenomenon. In particular, we know that <span class="process-math">\(\limitt{n}{\infty}{\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)}=f(x)\)</span> is equivalent to</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \lim_{n\rightarrow\infty}\Biggl[f(x)-\left(\sum_{j=0}^n \frac{f^{(j)}(a)}{j!}(x-a)^j\right)\Biggr]=0\text{.}
@@ -345,7 +345,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="TaylorSeries-IntFormRem-4">
-<div class="para">We have seen an example of this already.  <a href="Convergence-5.html#prob_series-geometric" class="xref" data-knowl="./knowl/xref/prob_series-geometric.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 6.4.4">Problem 6.4.4</a> of the last chapter basically had you show that the geometric series, <span class="process-math">\(1+x+x^2+x^3+\cdots\)</span> converges to <span class="process-math">\(\frac{1}{1-x}\text{,}\)</span>for <span class="process-math">\(|x|\lt 1\)</span> by showing that</div>
+<div class="para">We have seen an example of this already. In <a href="SeqRealNum.html#prob_series-geometric" class="xref" data-knowl="./knowl/xref/prob_series-geometric.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 6.1.13">Problem 6.1.13</a> you had to show that the geometric series, <span class="process-math">\(1+x+x^2+x^3+\cdots\)</span> converges to <span class="process-math">\(\frac{1}{1-x}\text{,}\)</span>for <span class="process-math">\(|x|\lt 1\)</span> by showing that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/prob_series-geometric.html">
 \begin{equation*}
 \limit{n}{\infty}{\Biggl[\frac{1}{1-x}-\left(\sum_{j=0}^nx^j\right)\Biggr]=0}\text{.}
@@ -362,52 +362,61 @@ eBookConfig.enable_chatcodes =  false;
 f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)\text{,}
 \end{equation*}
 </div>
-<div class="para">this form is not easy to work with. Fortunately, a number of alternate versions of this remainder are available. We will explore some of those in this chapter.</div>
+<div class="para">it is not easy to work with it in this form. Fortunately, a number of alternate forms of this remainder are available.  We will explore some of those in this chapter.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="TaylorSeries-IntFormRem-7">
-<div class="para">Recall the result from <a href="PowerSeriesQuestions-TaylorsFormula.html#TaylorsTheorem" class="xref" data-knowl="./knowl/xref/TaylorsTheorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.11: Taylor’s Theorem">Theorem 4.1.11</a> from <a href="PowerSeriesQuestions.html" class="internal" title="Chapter 4: Questions Concerning Power Series">Chapter 4</a>,</div>
+<div class="para">Recall  from <a href="PowerSeriesQuestions-TaylorsFormula.html#TaylorsTheorem" class="xref" data-knowl="./knowl/xref/TaylorsTheorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.11: Taylor’s Theorem">Theorem 4.1.11</a> from <a href="PowerSeriesQuestions.html" class="internal" title="Chapter 4: Questions Concerning Power Series">Chapter 4</a> that,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/TaylorsTheorem.html ./knowl/xref/PowerSeriesQuestions.html" id="TaylorSeries-IntFormRem-7-3">
 \begin{align*}
-f(x)=f(a)+\frac{f^{\,\prime}(a)}{1!}(x-a)+\frac{f^{\,\prime\prime}(a)}{2!}(x-a)^2\amp +\cdots+\frac{f^{(n)}(a)}{n!}(x-a)^n\\
-\amp +\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\text{.}
+f(x)=f(a)+\frac{f^{\,\prime}(a)}{1!}(x-a)+\frac{f^{\,\prime\prime}(a)}{2!}(x-a)^2\amp{} +\cdots+\frac{f^{(n)}(a)}{n!}(x-a)^n\\
+\amp{} +\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{t}\amp{}\amp{}
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">or</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/TaylorsTheorem.html ./knowl/xref/PowerSeriesQuestions.html" id="EQUATIONIntFormRem1">
+\begin{equation}
+f(x)=\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)+\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{t}\text{.}\tag{2}
+\end{equation}
 </div>
-<div class="para logical" id="TaylorSeries-IntFormRem-8">
-<div class="para">We can use this by rewriting it as</div>
-<div class="displaymath process-math">
+<div class="para">which we can        rewrite as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/TaylorsTheorem.html ./knowl/xref/PowerSeriesQuestions.html">
 \begin{equation*}
 f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)=\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="TaylorSeries-IntFormRem-9">
 <div class="para">The expression</div>
-<div class="displaymath process-math" id="EQUATIONIntFormRemainder">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/TaylorsTheorem.html ./knowl/xref/PowerSeriesQuestions.html" id="EQUATIONIntFormRemainder">
 \begin{equation}
-\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\tag{2}
+\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\tag{3}
 \end{equation}
 </div>
-<div class="para">is called the <dfn class="terminology">integral form of the remainder for the Taylor series</dfn> of <span class="process-math">\(f(x)\text{,}\)</span> and the Taylor series will converge to <span class="process-math">\(f(x)\)</span> exactly when the sequence</div>
-<div class="displaymath process-math">
+<div class="para">is called the <dfn class="terminology">Integral Form</dfn> of the remainder of the Taylor series of <span class="process-math">\(f(x)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="TaylorSeries-IntFormRem-8">
+<div class="para">Clearly, the Taylor series will converge to <span class="process-math">\(f(x)\)</span> exactly when</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EQUATIONIntFormRemainder.html ./knowl/xref/EQUATIONIntFormRemainder.html">
 \begin{equation*}
 \limit{n}{\infty}{\left(\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{t}
-\right)}=0\text{.}
+\right)}=0 \text{.}
 \end{equation*}
 </div>
-<div class="para">This form of the remainder is often easier to handle than the original <span class="process-math">\(f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)\)</span> and we can use it to obtain some general results.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">The <a href="TaylorSeries-IntFormRem.html#EQUATIONIntFormRemainder" class="xref" data-knowl="./knowl/xref/EQUATIONIntFormRemainder.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3">Integral Form</a> of the remainder is usually easier to work with than the original form:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EQUATIONIntFormRemainder.html ./knowl/xref/EQUATIONIntFormRemainder.html">
+\begin{equation*}
+f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)
+\end{equation*}
 </div>
-<article class="theorem theorem-like" id="thm_TaylorSeries"><h3 class="heading">
+<div class="para">and we can use the <a href="TaylorSeries-IntFormRem.html#EQUATIONIntFormRemainder" class="xref" data-knowl="./knowl/xref/EQUATIONIntFormRemainder.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3">Integral Form</a> to obtain some conditions which guarantee the convergence of particular Taylor series such as the following.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="THEOREMTaylorSeriesBnd"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="thm_TaylorSeries-1-1">
-<dfn class="terminology">Taylor’s series</dfn><div class="autopermalink" data-description="Paragraph"><a href="#thm_TaylorSeries-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para logical" id="thm_TaylorSeries-1-2">
-<div class="para"> If there exists a real number <span class="process-math">\(B\)</span> such that <span class="process-math">\(|f^{(n+1)}(t)|\leq B\)</span> for all nonnegative integers <span class="process-math">\(n\)</span> and for all <span class="process-math">\(t\)</span> on an interval containing <span class="process-math">\(a\)</span> and <span class="process-math">\(x\text{,}\)</span> then</div>
+<div class="para logical" id="THEOREMTaylorSeriesBnd-2-1">
+<div class="para">If there exists a real number <span class="process-math">\(B\)</span> such that <span class="process-math">\(|f^{(n+1)}(t)|\leq B\)</span> for all nonnegative integers <span class="process-math">\(n\)</span> and for all <span class="process-math">\(t\)</span> on an interval containing <span class="process-math">\(a\)</span> and <span class="process-math">\(x\text{,}\)</span> then</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \lim_{n\rightarrow\infty}\left(\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\right)=0
@@ -419,9 +428,9 @@ f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)=\frac{1}{n!}\int_{t=a
 f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n.{}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm_TaylorSeries-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#THEOREMTaylorSeriesBnd-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 7.1.1"><a href="#thm_TaylorSeries" title="Copy heading and permalink for Theorem 7.1.1" aria-label="Copy heading and permalink for Theorem 7.1.1">🔗</a></div></article><div class="para" id="TaylorSeries-IntFormRem-11">In order to prove this, it might help to first prove the following.<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Theorem 7.1.1"><a href="#THEOREMTaylorSeriesBnd" title="Copy heading and permalink for Theorem 7.1.1" aria-label="Copy heading and permalink for Theorem 7.1.1">🔗</a></div></article><div class="para" id="TaylorSeries-IntFormRem-10">In order to prove this, it might help to first prove the following.<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="lemma theorem-like" id="lemma_TriangleForIntegral"><h3 class="heading">
 <span class="type">Lemma</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
@@ -435,39 +444,39 @@ f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n.{}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#lemma_TriangleForIntegral-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Lemma 7.1.2"><a href="#lemma_TriangleForIntegral" title="Copy heading and permalink for Lemma 7.1.2" aria-label="Copy heading and permalink for Lemma 7.1.2">🔗</a></div></article><article class="problem example-like" id="TaylorSeries-IntFormRem-13"><h3 class="heading">
+<div class="autopermalink" data-description="Lemma 7.1.2"><a href="#lemma_TriangleForIntegral" title="Copy heading and permalink for Lemma 7.1.2" aria-label="Copy heading and permalink for Lemma 7.1.2">🔗</a></div></article><article class="problem example-like" id="TaylorSeries-IntFormRem-12"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="TaylorSeries-IntFormRem-13-1-1"> Prove <a href="TaylorSeries-IntFormRem.html#lemma_TriangleForIntegral" class="xref" data-knowl="./knowl/xref/lemma_TriangleForIntegral.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 7.1.2">Lemma 7.1.2</a>.<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="TaylorSeries-IntFormRem-12-1-1"> Prove <a href="TaylorSeries-IntFormRem.html#lemma_TriangleForIntegral" class="xref" data-knowl="./knowl/xref/lemma_TriangleForIntegral.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 7.1.2">Lemma 7.1.2</a>.<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="TaylorSeries-IntFormRem-13-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="TaylorSeries-IntFormRem-13-2-1">
-<span class="process-math">\(-|f(t)|\leq f(t)\leq|f(t)|\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="solutions"><details id="TaylorSeries-IntFormRem-12-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="TaylorSeries-IntFormRem-12-2-1">
+<span class="process-math">\(-|f(t)|\leq f(t)\leq|f(t)|\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 7.1.3.1"><a href="#TaylorSeries-IntFormRem-13-2" title="Copy heading and permalink for Hint 7.1.3.1" aria-label="Copy heading and permalink for Hint 7.1.3.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 7.1.3.1"><a href="#TaylorSeries-IntFormRem-12-2" title="Copy heading and permalink for Hint 7.1.3.1" aria-label="Copy heading and permalink for Hint 7.1.3.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Problem 7.1.3"><a href="#TaylorSeries-IntFormRem-13" title="Copy heading and permalink for Problem 7.1.3" aria-label="Copy heading and permalink for Problem 7.1.3">🔗</a></div></article><article class="problem example-like" id="TaylorSeries-IntFormRem-14"><h3 class="heading">
+<div class="autopermalink" data-description="Problem 7.1.3"><a href="#TaylorSeries-IntFormRem-12" title="Copy heading and permalink for Problem 7.1.3" aria-label="Copy heading and permalink for Problem 7.1.3">🔗</a></div></article><article class="problem example-like" id="TaylorSeries-IntFormRem-13"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="TaylorSeries-IntFormRem-14-1-1"> Prove <a href="TaylorSeries-IntFormRem.html#thm_TaylorSeries" class="xref" data-knowl="./knowl/xref/thm_TaylorSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.1.1">Theorem 7.1.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="TaylorSeries-IntFormRem-13-1-1"> Prove <a href="TaylorSeries-IntFormRem.html#THEOREMTaylorSeriesBnd" class="xref" data-knowl="./knowl/xref/THEOREMTaylorSeriesBnd.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.1.1">Theorem 7.1.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="TaylorSeries-IntFormRem-14-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para logical" id="TaylorSeries-IntFormRem-14-2-1">
-<div class="para">You might want to use <a href="Convergence-5.html#prob_RatioTest" class="xref" data-knowl="./knowl/xref/prob_RatioTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 6.4.8">Problem 6.4.8</a> of <a href="Convergence.html" class="internal" title="Chapter 6: Convergence of Sequences and Series">Chapter 6</a>.  Also there are two cases to consider: <span class="process-math">\(a\lt x\)</span> and <span class="process-math">\(x\lt a\)</span> (the case <span class="process-math">\(x=a\)</span> is trivial).  You will find that this is true in general.  This is why we will often indicate that <span class="process-math">\(t\)</span> is between <span class="process-math">\(a\)</span> and <span class="process-math">\(x\)</span> as in the theorem.  In the case <span class="process-math">\(x\lt a\text{,}\)</span> notice that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/prob_RatioTest.html ./knowl/xref/Convergence.html" id="TaylorSeries-IntFormRem-14-2-1-10">
+<div class="solutions"><details id="TaylorSeries-IntFormRem-13-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para logical" id="TaylorSeries-IntFormRem-13-2-1">
+<div class="para">You might want to use <a href="SeqRealNum.html#prob_RatioTest" class="xref" data-knowl="./knowl/xref/prob_RatioTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 6.1.19: The Ratio Test">Problem 6.1.19</a> of <a href="Convergence.html" class="internal" title="Chapter 6: Convergence of Sequences and Series">Chapter 6</a>.  Also there are two cases to consider: <span class="process-math">\(a\lt x\)</span> and <span class="process-math">\(x\lt a\)</span> (the case <span class="process-math">\(x=a\)</span> is trivial).  You will find that this is true in general.  This is why we will often indicate that <span class="process-math">\(t\)</span> is between <span class="process-math">\(a\)</span> and <span class="process-math">\(x\)</span> as in the theorem.  In the case <span class="process-math">\(x\lt a\text{,}\)</span> notice that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/prob_RatioTest.html ./knowl/xref/Convergence.html" id="TaylorSeries-IntFormRem-13-2-1-10">
 \begin{align*}
 \left|\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\right|\amp =\left|(-1)^{n+1}\int_{t=x}^af^{(n+1)}(t)(t-x)^n\dx{ t}\right|\\
 \amp =\left|\int_{t=x}^af^{(n+1)}(t)(t-x)^n\dx{ t}\right|.
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 7.1.4.1"><a href="#TaylorSeries-IntFormRem-14-2" title="Copy heading and permalink for Hint 7.1.4.1" aria-label="Copy heading and permalink for Hint 7.1.4.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 7.1.4.1"><a href="#TaylorSeries-IntFormRem-13-2" title="Copy heading and permalink for Hint 7.1.4.1" aria-label="Copy heading and permalink for Hint 7.1.4.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Problem 7.1.4"><a href="#TaylorSeries-IntFormRem-14" title="Copy heading and permalink for Problem 7.1.4" aria-label="Copy heading and permalink for Problem 7.1.4">🔗</a></div></article><article class="problem example-like" id="prob_Taylor_Series-using"><h3 class="heading">
+<div class="autopermalink" data-description="Problem 7.1.4"><a href="#TaylorSeries-IntFormRem-13" title="Copy heading and permalink for Problem 7.1.4" aria-label="Copy heading and permalink for Problem 7.1.4">🔗</a></div></article><article class="problem example-like" id="prob_Taylor_Series-using"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="introduction" id="prob_Taylor_Series-using-1"><div class="para" id="prob_Taylor_Series-using-1-1">Use <a href="TaylorSeries-IntFormRem.html#thm_TaylorSeries" class="xref" data-knowl="./knowl/xref/thm_TaylorSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.1.1">Theorem 7.1.1</a> to prove that for any real number <span class="process-math">\(x\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_Taylor_Series-using-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="prob_Taylor_Series-using-1"><div class="para" id="prob_Taylor_Series-using-1-1">Use <a href="TaylorSeries-IntFormRem.html#THEOREMTaylorSeriesBnd" class="xref" data-knowl="./knowl/xref/THEOREMTaylorSeriesBnd.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.1.1">Theorem 7.1.1</a> to prove that for any real number <span class="process-math">\(x\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_Taylor_Series-using-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="prob_Taylor_Series-using-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="prob_Taylor_Series-using-2-1-1">
@@ -481,18 +490,18 @@ f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n.{}
 <div class="para" id="prob_Taylor_Series-using-c-1-1">
 <span class="process-math">\(\displaystyle e^x=\sum_{n=0}^\infty\frac{x^n}{n!}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_Taylor_Series-using-c-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 7.1.5.c"><a href="#prob_Taylor_Series-using-c" title="Copy heading and permalink for Task 7.1.5.c" aria-label="Copy heading and permalink for Task 7.1.5.c">🔗</a></div></article><div class="autopermalink" data-description="Problem 7.1.5"><a href="#prob_Taylor_Series-using" title="Copy heading and permalink for Problem 7.1.5" aria-label="Copy heading and permalink for Problem 7.1.5">🔗</a></div></article><div class="para logical" id="TaylorSeries-IntFormRem-16">
-<div class="para">Part (c) of <a href="TaylorSeries-IntFormRem.html#prob_Taylor_Series-using" class="xref" data-knowl="./knowl/xref/prob_Taylor_Series-using.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 7.1.5">Problem 7.1.5</a>  shows that the Taylor series of <span class="process-math">\(e^x\)</span> expanded at zero converges to <span class="process-math">\(e^x\)</span> for any real number <span class="process-math">\(x\text{.}\)</span>  <a href="TaylorSeries-IntFormRem.html#thm_TaylorSeries" class="xref" data-knowl="./knowl/xref/thm_TaylorSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.1.1">Theorem 7.1.1</a> can be used in a similar fashion to show that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/prob_Taylor_Series-using.html ./knowl/xref/thm_TaylorSeries.html">
+<div class="autopermalink" data-description="Task 7.1.5.c"><a href="#prob_Taylor_Series-using-c" title="Copy heading and permalink for Task 7.1.5.c" aria-label="Copy heading and permalink for Task 7.1.5.c">🔗</a></div></article><div class="autopermalink" data-description="Problem 7.1.5"><a href="#prob_Taylor_Series-using" title="Copy heading and permalink for Problem 7.1.5" aria-label="Copy heading and permalink for Problem 7.1.5">🔗</a></div></article><div class="para logical" id="TaylorSeries-IntFormRem-15">
+<div class="para">Part (c) of <a href="TaylorSeries-IntFormRem.html#prob_Taylor_Series-using" class="xref" data-knowl="./knowl/xref/prob_Taylor_Series-using.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 7.1.5">Problem 7.1.5</a>  shows that the Taylor series of <span class="process-math">\(e^x\)</span> expanded at zero converges to <span class="process-math">\(e^x\)</span> for any real number <span class="process-math">\(x\text{.}\)</span>  <a href="TaylorSeries-IntFormRem.html#THEOREMTaylorSeriesBnd" class="xref" data-knowl="./knowl/xref/THEOREMTaylorSeriesBnd.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.1.1">Theorem 7.1.1</a> can be used in a similar fashion to show that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/prob_Taylor_Series-using.html ./knowl/xref/THEOREMTaylorSeriesBnd.html">
 \begin{equation*}
 e^x=\sum_{n=0}^\infty\frac{e^a(x-a)^n}{n!}
 \end{equation*}
 </div>
 <div class="para">for any real numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(x\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="TaylorSeries-IntFormRem-17">
+<div class="para logical" id="TaylorSeries-IntFormRem-16">
 <div class="para">Recall that <a href="CalcIn17th18thCentury.html" class="internal" title="Chapter 3: Calculus in the 17th and 18th Centuries">Chapter 3</a> we showed that if we define the function <span class="process-math">\(E(x)\)</span> by the power series <span class="process-math">\(\sum_{n=0}^\infty\frac{x^n}{n!}\)</span> then <span class="process-math">\(E(x+y)=E(x)E(y)\text{.}\)</span> This, of course, is just the familiar addition property of integer exponents extended to any real number. In <a href="CalcIn17th18thCentury.html" class="internal" title="Chapter 3: Calculus in the 17th and 18th Centuries">Chapter 3</a> we had to <em class="emphasis">assume</em> that defining <span class="process-math">\(E(x)\)</span> as a series was meaningful because we did not address the convergence of the series in that chapter. Now that we know the series converges for any real number we see that the definition</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/CalcIn17th18thCentury.html ./knowl/xref/CalcIn17th18thCentury.html">
 \begin{equation*}
@@ -500,28 +509,28 @@ f(x) = e^x = \sum_{n=0}^\infty\frac{x^n}{n!}
 \end{equation*}
 </div>
 <div class="para">is in fact valid.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="TaylorSeries-IntFormRem-18">Assuming that we can differentiate this series term–by–term it is straightforward to show that <span class="process-math">\(f^\prime(x) = f(x)\text{.}\)</span> (We can, but that proof will have to wait for a few more chapters.)<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="TaylorSeries-IntFormRem-17">Assuming that we can differentiate this series term–by–term it is straightforward to show that <span class="process-math">\(f^\prime(x) = f(x)\text{.}\)</span> (We can, but that proof will have to wait for a few more chapters.)<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="TaylorSeries-IntFormRem-19">Along with Taylor’s formula this can then be used to show that <span class="process-math">\(e^{a+b}=e^ae^b\)</span> more elegantly than the rather cumbersome proof in <a href="ExponentAdditionProperty.html#eq_ExponentAdditionProperty" class="xref" data-knowl="./knowl/xref/eq_ExponentAdditionProperty.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 16">equation (16)</a>, as the following problem shows.<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="TaylorSeries-IntFormRem-18">Along with Taylor’s formula this can then be used to show that <span class="process-math">\(e^{a+b}=e^ae^b\)</span> more elegantly than the rather cumbersome proof in <a href="ExponentAdditionProperty.html#ExponentAdditionProperty-19-1" class="xref" data-knowl="./knowl/xref/eq_ExponentAdditionProperty.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 16">equation (16)</a>, as the following problem shows.<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="problem example-like" id="TaylorSeries-IntFormRem-20"><h3 class="heading">
+<article class="problem example-like" id="TaylorSeries-IntFormRem-19"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para logical" id="TaylorSeries-IntFormRem-20-1-1">
-<div class="para">  Expand <span class="process-math">\(e^x\)</span> about <span class="process-math">\(a\)</span>          using the <a href="TaylorSeries-IntFormRem.html#thm_TaylorSeries" class="xref" data-knowl="./knowl/xref/thm_TaylorSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.1.1">Taylor series expansion</a>  to show that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm_TaylorSeries.html">
+<div class="para logical" id="TaylorSeries-IntFormRem-19-1-1">
+<div class="para">  Expand <span class="process-math">\(e^x\)</span> about <span class="process-math">\(a\)</span>          using the <a href="TaylorSeries-IntFormRem.html#THEOREMTaylorSeriesBnd" class="xref" data-knowl="./knowl/xref/THEOREMTaylorSeriesBnd.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.1.1">Taylor series expansion</a>  to show that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/THEOREMTaylorSeriesBnd.html">
 \begin{equation*}
 e^{a+x}=e^a\cdot e^x\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-20-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-19-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 7.1.6"><a href="#TaylorSeries-IntFormRem-20" title="Copy heading and permalink for Problem 7.1.6" aria-label="Copy heading and permalink for Problem 7.1.6">🔗</a></div></article><div class="para logical" id="TaylorSeries-IntFormRem-21">
+<div class="autopermalink" data-description="Problem 7.1.6"><a href="#TaylorSeries-IntFormRem-19" title="Copy heading and permalink for Problem 7.1.6" aria-label="Copy heading and permalink for Problem 7.1.6">🔗</a></div></article><div class="para logical" id="TaylorSeries-IntFormRem-20">
 <div class="para">
-<a href="TaylorSeries-IntFormRem.html#thm_TaylorSeries" class="xref" data-knowl="./knowl/xref/thm_TaylorSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.1.1">Theorem 7.1.1</a> is a nice “first step” toward a rigorous theory of the convergence of Taylor series, but it is not applicable in all cases. For example, consider the function <span class="process-math">\(f(x)=\sqrt{1+x}\text{.}\)</span> As we saw in <a href="CalcIn17th18thCentury.html" class="internal" title="Chapter 3: Calculus in the 17th and 18th Centuries">Chapter 3</a>, <a href="ExponentAdditionProperty.html#prob_SqrtSeriesProb" class="xref" data-knowl="./knowl/xref/prob_SqrtSeriesProb.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 3.2.19">Problem 3.2.19</a>, this function’s Maclaurin series (the binomial series for <span class="process-math">\(\left(1+x\right)^{1/2})\)</span>appears to be converging to the function for <span class="process-math">\(x\in(-1,1)\text{.}\)</span> While this is, in fact, true, the above proposition does not apply. If we consider the derivatives of <span class="process-math">\(f(t)=(1+t)^{1/2}\text{,}\)</span> we obtain:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm_TaylorSeries.html ./knowl/xref/CalcIn17th18thCentury.html ./knowl/xref/prob_SqrtSeriesProb.html" id="TaylorSeries-IntFormRem-21-9">
+<a href="TaylorSeries-IntFormRem.html#THEOREMTaylorSeriesBnd" class="xref" data-knowl="./knowl/xref/THEOREMTaylorSeriesBnd.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.1.1">Theorem 7.1.1</a> is a nice “first step” toward a rigorous theory of the convergence of Taylor series, but it is not applicable in all cases.  For example, consider the function <span class="process-math">\(f(x)=\sqrt{1+x}\text{.}\)</span>  As we saw in <a href="ExponentAdditionProperty.html#prob_SqrtSeriesProb" class="xref" data-knowl="./knowl/xref/prob_SqrtSeriesProb.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 3.2.19">Problem 3.2.19</a>, this function’s Maclaurin series (the binomial series for <span class="process-math">\(\left(1+x\right)^{1/2})\)</span> appears to be converging to the function for <span class="process-math">\(x\in(-1,1)\text{.}\)</span>  While this is true, the above proposition does not apply. We can see this by finding a general formula for the derivatives of <span class="process-math">\(f(t)=(1+t)^{1/2}\)</span> as follows.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/THEOREMTaylorSeriesBnd.html ./knowl/xref/prob_SqrtSeriesProb.html" id="TaylorSeries-IntFormRem-20-9">
 \begin{align*}
 f^\prime(t)\amp =\frac{1}{2}(1+t)^{\frac{1}{2}-1}\\
 f^{\prime\prime}(t)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)(1+t)^{\frac{1}{2}-2}\\
@@ -530,26 +539,26 @@ f^{\prime\prime\prime}(t)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{
 f^{(n+1)}(t)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right) \cdots\left(\frac{1}{2}-n\right)(1+t)^{\frac{1}{2}-(n+1)}\text{.}
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="TaylorSeries-IntFormRem-22">
+<div class="para logical" id="TaylorSeries-IntFormRem-21">
 <div class="para">Notice that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\left|f^{(n+1)}(0)\right|=\frac{1}{2}\left(1-\frac{1}{2}\right)\left(2-\frac{1}{2}\right)\cdots\left(n-\frac{1}{2}\right)\text{.}
+\abs{f^{(n+1)}(0)}=\frac{1}{2}\left(1-\frac{1}{2}\right)\left(2-\frac{1}{2}\right)\cdots\left(n-\frac{1}{2}\right)\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="TaylorSeries-IntFormRem-23">
-<div class="para">Since this sequence grows without bound as <span class="process-math">\(n\rightarrow\infty\text{,}\)</span> then there is no chance for us to find a number <span class="process-math">\(B\)</span> to act as a bound for all of the derivatives of <span class="process-math">\(f\)</span> on any interval containing 0 and<span class="process-math">\(\)</span> <span class="process-math">\(x\text{,}\)</span> and so the hypothesis of <a href="TaylorSeries-IntFormRem.html#thm_TaylorSeries" class="xref" data-knowl="./knowl/xref/thm_TaylorSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.1.1">Theorem 7.1.1</a> will never be satisfied.  We need a more delicate argument to prove that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm_TaylorSeries.html">
+<div class="para logical" id="TaylorSeries-IntFormRem-22">
+<div class="para">Since this sequence grows without bound as <span class="process-math">\(n\rightarrow\infty\text{,}\)</span> there is no bound for all of the derivatives of <span class="process-math">\(f\)</span> on any interval containing <span class="process-math">\(0\)</span> and <span class="process-math">\(x\text{,}\)</span> and so the hypothesis of <a href="TaylorSeries-IntFormRem.html#THEOREMTaylorSeriesBnd" class="xref" data-knowl="./knowl/xref/THEOREMTaylorSeriesBnd.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.1.1">Theorem 7.1.1</a> will never be satisfied on an interval containing zero.  We need a more delicate argument to prove that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/THEOREMTaylorSeriesBnd.html">
 \begin{equation*}
 \sqrt{1+x}=1+\frac{1}{2}x+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}x^2+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)}{3!}x^3+\cdots
 \end{equation*}
 </div>
-<div class="para">is valid for <span class="process-math">\(x\in(-1,1)\text{.}\)</span> To accomplish this task, we will need to express the remainder of the Taylor series differently. Fortunately, there are at least two such alternate forms.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">is valid for <span class="process-math">\(x\in(-1,1)\text{.}\)</span>  To accomplish that task, we will need to express the remainder of the Taylor series differently.  Fortunately there are at least two more forms the remainder available.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Section 7.1: The Integral Form of the Remainder"><a href="#TaylorSeries-IntFormRem" title="Copy heading and permalink for Section 7.1: The Integral Form of the Remainder" aria-label="Copy heading and permalink for Section 7.1: The Integral Form of the Remainder">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">

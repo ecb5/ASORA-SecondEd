@@ -221,7 +221,6 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="SeqRealNum.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Sequences of Real Numbers</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="LimitAsPrimary.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Limit as a Primary Tool</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="DivergentSeq.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Divergence</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="Convergence-5.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Additional Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -352,7 +351,7 @@ f(a)=a_0+a_1(a-a)+a_2(a-a)^2+\cdots=a_0\text{.}
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/THEOREMTaylorPoly.html" id="PowerSeriesQuestions-TaylorsFormula-7-3">
 \begin{align}
 \sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n=f(a)+\amp{}f^\prime(a)(x-a)+\frac{f^{\prime\prime}(a)}{2!}(x-a)^2\notag\\
-\amp{}+\frac{f^{\prime\prime\prime}(a)}{3!}(x-a)^3+\cdots\tag{19}
+\amp{}+\frac{f^{\prime\prime\prime}(a)}{3!}(x-a)^3+\cdots\tag{20}
 \end{align}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-TaylorsFormula-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -396,10 +395,10 @@ f(a)=a_0+a_1(a-a)+a_2(a-a)^2+\cdots=a_0\text{.}
 <div class="para">Taking his cue from the Taylor series</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EQUATIONTaylorSeriesGeneric.html" id="EQUATIONTaylorSeriesGeneric">
 \begin{equation}
-f(x) = \sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n\tag{20}
+f(x) = \sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n\tag{21}
 \end{equation}
 </div>
-<div class="para">Lagrange observed that the coefficient of <span class="process-math">\((x-a)^n\)</span> provides the <span class="process-math">\(n\)</span>th derivative of <span class="process-math">\(f\)</span> at <span class="process-math">\(a\)</span> (divided by <span class="process-math">\(n!\)</span>). Modifying <a href="PowerSeriesQuestions-TaylorsFormula.html#EQUATIONTaylorSeriesGeneric" class="xref" data-knowl="./knowl/xref/EQUATIONTaylorSeriesGeneric.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 20">formula (20)</a> to suit his purpose, Lagrange supposed that every differentiable function could be represented as</div>
+<div class="para">Lagrange observed that the coefficient of <span class="process-math">\((x-a)^n\)</span> provides the <span class="process-math">\(n\)</span>th derivative of <span class="process-math">\(f\)</span> at <span class="process-math">\(a\)</span> (divided by <span class="process-math">\(n!\)</span>). Modifying <a href="PowerSeriesQuestions-TaylorsFormula.html#EQUATIONTaylorSeriesGeneric" class="xref" data-knowl="./knowl/xref/EQUATIONTaylorSeriesGeneric.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 21">formula (21)</a> to suit his purpose, Lagrange supposed that every differentiable function could be represented as</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EQUATIONTaylorSeriesGeneric.html">
 \begin{equation*}
 f(x) = \sum_{n=0}^\infty g_n(a)(x-a)^n\text{.}
@@ -471,7 +470,7 @@ f^{(n)}(a)=n! g_n(a)\text{.}
 <div class="para">All in all, Lagrange’s idea was very clever and insightful. It’s only real flaw is that its fundamental, underlying assumption is not true.  It turns out that not every differentiable function can be represented as a Taylor series. This was demonstrated very dramatically by Augustin Cauchy’s famous counter-example</div>
 <div class="displaymath process-math" id="eq_CauchyCounterEx">
 \begin{equation}
-f(x) = \begin{cases} e^{-\frac{1}{x^2}}\amp  x\ne0\\ 0 \amp x=0 \end{cases}\text{.}\tag{21}
+f(x) = \begin{cases} e^{-\frac{1}{x^2}}\amp  x\ne0\\ 0 \amp x=0 \end{cases}\text{.}\tag{22}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-TaylorsFormula-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -507,7 +506,7 @@ f^{(2)}(x) = p_2(x^{-1})e^{-x^{-2}} = p_2(y)e^{-y^2}\text{.}
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Cauchy’s Counterexample, Part 1.</span>
 </h3>
 <div class="introduction" id="DRILLCauchyCounterPartI-3">
-<div class="para" id="DRILLCauchyCounterPartI-3-1">In this problem and in <a href="PowerSeriesQuestions-TaylorsFormula.html#PROBLEMCauchyCounterPartII" class="xref" data-knowl="./knowl/xref/PROBLEMCauchyCounterPartII.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 4.1.9: Cauchy’s Counterexample, Part 2">Problem 4.1.9</a> <span class="process-math">\(f(x)\)</span> is the function defined in <a href="PowerSeriesQuestions-TaylorsFormula.html#eq_CauchyCounterEx" class="xref" data-knowl="./knowl/xref/eq_CauchyCounterEx.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 21">equation (21)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#DRILLCauchyCounterPartI-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="DRILLCauchyCounterPartI-3-1">In this problem and in <a href="PowerSeriesQuestions-TaylorsFormula.html#PROBLEMCauchyCounterPartII" class="xref" data-knowl="./knowl/xref/PROBLEMCauchyCounterPartII.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 4.1.9: Cauchy’s Counterexample, Part 2">Problem 4.1.9</a> <span class="process-math">\(f(x)\)</span> is the function defined in <a href="PowerSeriesQuestions-TaylorsFormula.html#eq_CauchyCounterEx" class="xref" data-knowl="./knowl/xref/eq_CauchyCounterEx.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 22">equation (22)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#DRILLCauchyCounterPartI-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="DRILLCauchyCounterPartI-3-2">To simplify the notation we make the following definitions: <span class="process-math">\(y=x^{-1}\)</span> and <span class="process-math">\(f^{(n)}(x) =p_n(y)e^{-y^2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DRILLCauchyCounterPartI-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -553,7 +552,7 @@ f^{(n+1)}(0) \amp = \limit{y}{\pm\infty}{\frac{yp_n(y)}{e^{y^2}}}\text{.}
 <div class="para" id="PROBLEMCauchyCounterPartII-4-1-1">Prove that <span class="process-math">\(\limit{y}{\pm\infty}{\frac{q(y)}{e^{y^2}}}=0\)</span> for any polynomial <span class="process-math">\(q\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMCauchyCounterPartII-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Task 4.1.9.b"><a href="#PROBLEMCauchyCounterPartII-4" title="Copy heading and permalink for Task 4.1.9.b" aria-label="Copy heading and permalink for Task 4.1.9.b">🔗</a></div></article><article class="task exercise-like" id="PROBLEMCauchyCounterPartII-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="PROBLEMCauchyCounterPartII-5-1-1">Let <span class="process-math">\(f(x)\)</span> be as in <a href="PowerSeriesQuestions-TaylorsFormula.html#eq_CauchyCounterEx" class="xref" data-knowl="./knowl/xref/eq_CauchyCounterEx.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 21">equation (21)</a> and show that for every nonnegative integer <span class="process-math">\(n\text{,}\)</span> <span class="process-math">\(f^{(n)}(0)=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMCauchyCounterPartII-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="PROBLEMCauchyCounterPartII-5-1-1">Let <span class="process-math">\(f(x)\)</span> be as in <a href="PowerSeriesQuestions-TaylorsFormula.html#eq_CauchyCounterEx" class="xref" data-knowl="./knowl/xref/eq_CauchyCounterEx.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 22">equation (22)</a> and show that for every nonnegative integer <span class="process-math">\(n\text{,}\)</span> <span class="process-math">\(f^{(n)}(0)=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMCauchyCounterPartII-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Task 4.1.9.c"><a href="#PROBLEMCauchyCounterPartII-5" title="Copy heading and permalink for Task 4.1.9.c" aria-label="Copy heading and permalink for Task 4.1.9.c">🔗</a></div></article><div class="autopermalink" data-description="Problem 4.1.9: Cauchy’s Counterexample, Part 2"><a href="#PROBLEMCauchyCounterPartII" title="Copy heading and permalink for Problem 4.1.9: Cauchy’s Counterexample, Part 2" aria-label="Copy heading and permalink for Problem 4.1.9: Cauchy’s Counterexample, Part 2">🔗</a></div></article><div class="para" id="PowerSeriesQuestions-TaylorsFormula-30">This example showed that while it was fruitful to exploit Taylor series representations of various functions, basing the foundations of Calculus on power series was not a sound idea.<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-TaylorsFormula-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -588,7 +587,7 @@ f^{(n)}(0)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)\cdots\left(\frac{1}{2}-(n-
 \amp{}= 1+\sum_{n=1}^\infty\frac{\prod_{j=0}^{n-1}\left(\frac{1}{2}-j\right)}{n!}x^n
 \end{align*}
 </div>
-<div class="para">which agrees with <a href="ExponentAdditionProperty.html#eq_BinomialSeries" class="xref" data-knowl="./knowl/xref/eq_BinomialSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 18">equation (18)</a> in the previous chapter.</div>
+<div class="para">which agrees with <a href="ExponentAdditionProperty.html#eq_BinomialSeries" class="xref" data-knowl="./knowl/xref/eq_BinomialSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 19">equation (19)</a> in the previous chapter.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-TaylorsFormula-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="problem example-like" id="PowerSeriesQuestions-TaylorsFormula-34"><h3 class="heading">
@@ -631,14 +630,14 @@ f(x)=f(a)+\amp{}\frac{f^{\prime}(a)}{1!}(x-a)+\frac{f^{\prime \prime}(a)}{2!}(x-
 <div class="para">Before we address the proof, notice that the <span class="process-math">\(n\)</span>th degree polynomial</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/TaylorsTheorem.html ./knowl/xref/TaylorSeries.html" id="EQUATIONNthDegTaylPoly">
 \begin{equation}
-f(a)+\frac{f^{\prime}(a)}{1!}(x-a)+\frac{f^{\,\prime\prime}(a)}{2!}(x-a)^2+\cdots+\frac{f^{(n)}(a)}{n!}(x-a)^n\tag{22}
+f(a)+\frac{f^{\prime}(a)}{1!}(x-a)+\frac{f^{\,\prime\prime}(a)}{2!}(x-a)^2+\cdots+\frac{f^{(n)}(a)}{n!}(x-a)^n\tag{23}
 \end{equation}
 </div>
 <div class="para">resembles the Taylor series and, in fact, is called the <dfn class="terminology"><span class="process-math">\(\boldsymbol n\)</span>th degree Taylor polynomial of <span class="process-math">\(f\)</span> about <span class="process-math">\(\boldsymbol a\)</span></dfn>.  <a href="PowerSeriesQuestions-TaylorsFormula.html#TaylorsTheorem" class="xref" data-knowl="./knowl/xref/TaylorsTheorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.11: Taylor’s Theorem">Theorem 4.1.11</a> says that a function can be written as the sum of this polynomial and a specific integral which we will analyze in <a href="TaylorSeries.html" class="internal" title='Chapter 7: A "Tayl" of Three Remainders'>Chapter 7</a> where we will get the proof started and leave the formal induction proof as an exercise.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-TaylorsFormula-38" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="PowerSeriesQuestions-TaylorsFormula-39">
-<div class="para">Notice that when <span class="process-math">\(n=0\)</span> <a href="PowerSeriesQuestions-TaylorsFormula.html#EQUATIONNthDegTaylPoly" class="xref" data-knowl="./knowl/xref/EQUATIONNthDegTaylPoly.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 22">equation (22)</a> is really a restatement of the <dfn class="terminology">Fundamental Theorem of Calculus</dfn>:</div>
+<div class="para">Notice that when <span class="process-math">\(n=0\)</span> <a href="PowerSeriesQuestions-TaylorsFormula.html#EQUATIONNthDegTaylPoly" class="xref" data-knowl="./knowl/xref/EQUATIONNthDegTaylPoly.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 23">equation (23)</a> is really a restatement of the <dfn class="terminology">Fundamental Theorem of Calculus</dfn>:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EQUATIONNthDegTaylPoly.html">
 \begin{equation*}
 \int_{t=a}^xf^\prime(t)\dx{t}=f(x)-f(a)\text{.}

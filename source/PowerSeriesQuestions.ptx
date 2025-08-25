@@ -377,6 +377,83 @@
 
 
     <p>
+
+      As we observed in <xref
+      ref="CalcIn17th18thCentury-NewtLeibStart" ></xref> Leibniz and
+      his peers would have regarded the expression <m>\dfdx{z}{x}
+      </m> as a fraction (of differentials) so that the formula
+      
+      <men xml:id="EQUATIONChainRuleLeibniz">
+        \dfdx{z}{y}\dfdx{y}{x}=\dfdx{z}{x}
+      </men> 
+
+      could be obtained by simply canceling the <m>\dx{y}</m> that appears
+      in the numerator and denominator, just as we did in <xref
+      ref="CalcIn17th18thCentury-NewtLeibStart" ></xref>.
+      Mathematicians of that era would have regarded this operation as
+      basic algebra.
+    </p>
+    <p>
+      Eighteenth and nineteenth century arithmetic primers used the
+      phrase <q>chain rule</q> to describe the daisy<ndash/>chain of
+      symbolic cancellations that occurs when we convert
+      units. For example, to convert yards to inches we compute
+      <me>
+        \left(2\cancel{\text{ yards}}\right)\left(3\frac{\cancel{\text{feet}}}{\cancel{\text{yard}}}\right)\left(12\frac{\text{inches}}{\cancel{\text{foot}}}\right)=72\text{ inches}
+        </me>.
+    </p>
+<p>
+  Since  the cancellations in  <xref ref="EQUATIONChainRuleLeibniz" >equation</xref> appeared to be just  another example of the older <q>chain rule</q> the name was adopted in this context as well. 
+</p>
+
+    <p>
+      Letting <m>z=f(y)</m> and <m>y=g(x)</m> and 
+      using Lagrange<rsq/>s  prime notation we see that in modern form the chain rule for Calculus is:
+
+      <me>\dfdx{z}{x}=\underbrace{f^\prime\left(g\left(x\right)\right)}_{\dfdx{z}{y}}\underbrace{g^\prime(x)}_{\dfdx{y}{x}{}}=\left(f\circ
+        g\right)^\prime\left(x\right)</me> 
+
+        In his <foreign>Théorie des  fonctions analytiques</foreign> (1797)
+        Lagrange  provided a derivation of the Chain Rule in these more 
+        modern terms.   The following problem captures his idea. 
+
+
+    </p>
+     
+    <problem>
+      <introduction>
+        <p>
+
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Expand <m>y=g(x)</m> as a power series expanded about <m>a</m>.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Expand <m>f(y)</m> as a power series expanded about <m>y=g(a)</m> and substitute your answer from part (a) for <m>y</m>.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Show that the coefficient of the linear term <m>(x-a)</m> in part (b) is given by
+            <me>f^\prime\left(g\left(a\right)\right)g^\prime(a)</me> 
+          </p>
+        </statement>
+      </task>
+
+    </problem>
+
+
+
+    <p>
       All in all, Lagrange<rsq/>s idea was very clever and
       insightful. It<rsq/>s only real flaw is that its fundamental,
       underlying assumption is not true.  It turns out that not every

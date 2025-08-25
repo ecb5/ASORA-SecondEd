@@ -367,14 +367,14 @@ x}\)</span> is relatively easy compared to computing <span class="process-math">
 <div class="para">Dividing by <span class="process-math">\(1-x\)</span> gives us the power series representation</div>
 <div class="displaymath process-math" id="EQUATIONGeometricSeries">
 \begin{equation}
-\frac{1}{1-x}=1+x+x^2+\cdots\text{,}\tag{14}
+\frac{1}{1-x}=1+x+x^2+\cdots\text{,}\tag{15}
 \end{equation}
 </div>
 <div class="para">which is known as the <dfn class="terminology">Geometric Series</dfn>.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ExponentAdditionProperty-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ExponentAdditionProperty-8">
-<div class="para">For each value of <span class="process-math">\(x\)</span> a <dfn class="terminology">power series</dfn> reduces to a different ordinary (numerical) <dfn class="terminology">series</dfn>. For example, if we substitute <span class="process-math">\(x=\frac{1}{10}\)</span> into the left side of <a href="ExponentAdditionProperty.html#EQUATIONGeometricSeries" class="xref" data-knowl="./knowl/xref/EQUATIONGeometricSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 14">equation (14)</a>, we obtain the (numerical) <dfn class="terminology">series</dfn>
+<div class="para">For each value of <span class="process-math">\(x\)</span> a <dfn class="terminology">power series</dfn> reduces to a different ordinary (numerical) <dfn class="terminology">series</dfn>. For example, if we substitute <span class="process-math">\(x=\frac{1}{10}\)</span> into the left side of <a href="ExponentAdditionProperty.html#EQUATIONGeometricSeries" class="internal" title="Equation 15">equation (15)</a>, we obtain the (numerical) <dfn class="terminology">series</dfn>
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EQUATIONGeometricSeries.html" id="ExponentAdditionProperty-8-7">
 \begin{align*}
@@ -412,7 +412,7 @@ x}\)</span> is relatively easy compared to computing <span class="process-math">
 <div class="autopermalink" data-description="Paragraph"><a href="#ExponentAdditionProperty-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ExponentAdditionProperty-11">
-<div class="para">There are other issues with these formal manipulations too. Substituting <span class="process-math">\(x=1\)</span> or <span class="process-math">\(x=2\)</span> into <a href="ExponentAdditionProperty.html#EQUATIONGeometricSeries" class="xref" data-knowl="./knowl/xref/EQUATIONGeometricSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 14">equation (14)</a> yields the questionable results</div>
+<div class="para">There are other issues with these formal manipulations too. Substituting <span class="process-math">\(x=1\)</span> or <span class="process-math">\(x=2\)</span> into <a href="ExponentAdditionProperty.html#EQUATIONGeometricSeries" class="internal" title="Equation 15">equation (15)</a> yields the questionable results</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EQUATIONGeometricSeries.html">
 \begin{equation*}
 \frac{1}{0}=1+1+1+\cdots \text{  and  } \frac{1}{-1}=1+2+2^2+\cdots\text{.}
@@ -485,7 +485,7 @@ y=\sum_{n=0}^\infty\frac{a_0}{n!}x^n
 <div class="para">Using the initial condition <span class="process-math">\(y(0)=1\text{,}\)</span> we get <span class="process-math">\(1=a_0(1+0+\frac{1}{2!}0^2+\cdots)=a_0\text{.}\)</span>  Thus the solution to the initial problem is <span class="process-math">\(y=\sum_{n=0}^\infty\frac{1}{n!}x^n\text{.}\)</span>  Let’s call this function <span class="process-math">\(E(x)\text{.}\)</span>  Then by definition</div>
 <div class="displaymath process-math" id="EQUATIONExpSeries">
 \begin{equation}
-E(x)=\sum_{n=0}^\infty\frac{1}{n!}x^n=1+\frac{x^1}{1!}+\frac{x^2}{2!}+\frac{x^3}{3!}+\,\ldots\text{.}\tag{15}
+E(x)=\sum_{n=0}^\infty\frac{1}{n!}x^n=1+\frac{x^1}{1!}+\frac{x^2}{2!}+\frac{x^3}{3!}+\,\ldots\text{.}\tag{16}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ExponentAdditionProperty-15-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -502,7 +502,7 @@ E(x)=\sum_{n=0}^\infty\frac{1}{n!}x^n=1+\frac{x^1}{1!}+\frac{x^2}{2!}+\frac{x^3}
 <div class="para">To see this we multiply the two series together, so we have</div>
 <div class="displaymath process-math" id="ExponentAdditionProperty-19-1">
 \begin{align}
-E(x)E(y) =\amp \left(\sum_{n=0}^\infty\frac{1}{n!}x^n\right)\left(\sum_{n=0}^\infty\frac{1}{n!}y^n\right)\tag{16}\\
+E(x)E(y) =\amp \left(\sum_{n=0}^\infty\frac{1}{n!}x^n\right)\left(\sum_{n=0}^\infty\frac{1}{n!}y^n\right)\tag{17}\\
 =\amp \left(\frac{x^0}{0!}+\frac{x^1}{1!}+\frac{x^2}{2!}+\frac{x^3}{3!}+\,\ldots\right)\left(\frac{y^0}{0!}+\frac{y^1}{1!}+\frac{y^2}{2!}+\frac{y^3}{3!}+\,\ldots\right)\notag\\
 =\amp \frac{x^0}{0!}\frac{y^0}{0!}+\frac{x^0}{0!}\frac{y^1}{1!}+\frac{x^1}{1!}\frac{y^0}{0!}+\frac{x^0}{0!}\frac{y^2}{2!}+\frac{x^1}{1!}\frac{y^1}{1!}+\frac{x^2}{2!}\frac{y^0}{0!}\notag\\
 \amp{}\ \ \         +\frac{x^0}{0!}\frac{y^3}{3!}+\frac{x^1}{1!}\frac{y^2}{2!}+\frac{x^2}{2!}\frac{y^1}{1!}+\frac{x^3}{3!}\frac{y^0}{0!}+\,\ldots\notag\\
@@ -521,7 +521,7 @@ E(x)E(y) =\amp \left(\sum_{n=0}^\infty\frac{1}{n!}x^n\right)\left(\sum_{n=0}^\in
 <div class="para">so that, finally</div>
 <div class="displaymath process-math" id="ExponentAdditionProperty-19-2">
 \begin{equation}
-E(x)E(y) =  E(x+y)\text{.}\tag{17}
+E(x)E(y) =  E(x+y)\text{.}\tag{18}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ExponentAdditionProperty-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -640,7 +640,7 @@ e^{-\frac{x^2}{2}}\dx{x} \amp =\frac{1}{\sqrt{2\pi}}
 <div class="para">Show that if <span class="process-math">\(y=\sum_{n=0}^\infty a_nx^n\)</span> satisfies the differential equation</div>
 <div class="displaymath process-math" id="EQUATIONSinCosDiffeq">
 \begin{equation}
-\frac{\dx^2y}{\dx{ x}^2}=-y\text{,}\tag{18}
+\frac{\dx^2y}{\dx{ x}^2}=-y\text{,}\tag{19}
 \end{equation}
 </div>
 <div class="para">then</div>
@@ -660,7 +660,7 @@ y=a_0+a_1x-\amp{}\frac{1}{2!}a_0x^2-\frac{1}{3!}a_1x^3+\frac{1}{4!}a_0x^4+\frac{
 </div>
 <div class="autopermalink" data-description="Task 3.2.10.a"><a href="#PROBLEMSinPwrSeries-3" title="Copy heading and permalink for Task 3.2.10.a" aria-label="Copy heading and permalink for Task 3.2.10.a">🔗</a></div></article><article class="task exercise-like" id="PROBLEMSinPwrSeries-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para logical" id="PROBLEMSinPwrSeries-4-1-1">
-<div class="para">Since <span class="process-math">\(y=\sin x\)</span> also satisfies <a href="ExponentAdditionProperty.html#EQUATIONSinCosDiffeq" class="xref" data-knowl="./knowl/xref/EQUATIONSinCosDiffeq.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 18">equation (18)</a>, we see that</div>
+<div class="para">Since <span class="process-math">\(y=\sin x\)</span> also satisfies <a href="ExponentAdditionProperty.html#EQUATIONSinCosDiffeq" class="internal" title="Equation 19">equation (19)</a>, we see that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EQUATIONSinCosDiffeq.html" id="PROBLEMSinPwrSeries-4-1-1-3">
 \begin{align*}
 \sin x=a_0+a_1x-\frac{1}{2!}a_0x^2-\amp{}\frac{1}{3!}a_1x^3+\frac{1}{4!}a_0x^4+\frac{1}{5!}a_1x^5\\
@@ -735,7 +735,7 @@ c(x,N)=\sum_{n=0}^N\frac{\left(-1\right)^n}{\left(2n\right)!}x^{2n}
 </h3>
 <article class="task exercise-like" id="PROBLEMResultsFromGeometricSeries-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para logical" id="PROBLEMResultsFromGeometricSeries-3-1-1">
-<div class="para">Use the <a href="ExponentAdditionProperty.html#EQUATIONGeometricSeries" class="xref" data-knowl="./knowl/xref/EQUATIONGeometricSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 14">Geometric series</a> to obtain a power series for</div>
+<div class="para">Use the <a href="ExponentAdditionProperty.html#EQUATIONGeometricSeries" class="internal" title="Equation 15">Geometric series</a> to obtain a power series for</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EQUATIONGeometricSeries.html">
 \begin{equation*}
 f(x)=\frac{1}{1+x}\text{,}
@@ -792,7 +792,7 @@ x=x-\frac{1}{3}x^3+\frac{1}{5}x^5-\cdots
 </h3>
 <article class="task exercise-like" id="PROBLEMLnSeriesFromGeoSeries-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para logical" id="PROBLEMLnSeriesFromGeoSeries-3-1-1">
-<div class="para">Use the <a href="ExponentAdditionProperty.html#EQUATIONGeometricSeries" class="xref" data-knowl="./knowl/xref/EQUATIONGeometricSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 14">Geometric series</a> to obtain the power series</div>
+<div class="para">Use the <a href="ExponentAdditionProperty.html#EQUATIONGeometricSeries" class="internal" title="Equation 15">Geometric series</a> to obtain the power series</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EQUATIONGeometricSeries.html" id="PROBLEMLnSeriesFromGeoSeries-3-1-1-2">
 \begin{align*}
 \ln \left(1+x\right)\amp =x-\frac{1}{2}x^2+\frac{1}{3}x^3-\cdots\\
@@ -823,7 +823,7 @@ x=x-\frac{1}{3}x^3+\frac{1}{5}x^5-\cdots
 <div class="autopermalink" data-description="Task 3.2.15.c"><a href="#PROBLEMLnSeriesFromGeoSeries-5" title="Copy heading and permalink for Task 3.2.15.c" aria-label="Copy heading and permalink for Task 3.2.15.c">🔗</a></div></article><div class="autopermalink" data-description="Problem 3.2.15"><a href="#PROBLEMLnSeriesFromGeoSeries" title="Copy heading and permalink for Problem 3.2.15" aria-label="Copy heading and permalink for Problem 3.2.15">🔗</a></div></article><article class="problem example-like" id="ExponentAdditionProperty-42"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="ExponentAdditionProperty-42-1-1">Use the <a href="ExponentAdditionProperty.html#EQUATIONGeometricSeries" class="xref" data-knowl="./knowl/xref/EQUATIONGeometricSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 14">Geometric series</a> to find a power series representation for <span class="process-math">\(\frac{2x}{1+x^2}\text{.}\)</span>  Integrate this to obtain a power series representation for <span class="process-math">\(\ln\left(1+x^2\right)\)</span> and compare your answer to part (b) of the previous problem. (This shows that there may be more than one way to obtain a power series representation.)<div class="autopermalink" data-description="Paragraph"><a href="#ExponentAdditionProperty-42-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ExponentAdditionProperty-42-1-1">Use the <a href="ExponentAdditionProperty.html#EQUATIONGeometricSeries" class="internal" title="Equation 15">Geometric series</a> to find a power series representation for <span class="process-math">\(\frac{2x}{1+x^2}\text{.}\)</span>  Integrate this to obtain a power series representation for <span class="process-math">\(\ln\left(1+x^2\right)\)</span> and compare your answer to part (b) of the previous problem. (This shows that there may be more than one way to obtain a power series representation.)<div class="autopermalink" data-description="Paragraph"><a href="#ExponentAdditionProperty-42-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Problem 3.2.16"><a href="#ExponentAdditionProperty-42" title="Copy heading and permalink for Problem 3.2.16" aria-label="Copy heading and permalink for Problem 3.2.16">🔗</a></div></article><div class="para logical" id="ExponentAdditionProperty-43">
 <div class="para">The power series for arctangent was known by <a class="external" href="https://mathshistory.st-andrews.ac.uk/Biographies/Gregory/" target="_blank">James Gregory</a> (1638-1675) and it is sometimes referred to as “Gregory’s series.” Leibniz independently discovered <span class="process-math">\(\frac{\pi}{4}=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\cdots\)</span> by examining the area of a circle.  Though it gives us a means for approximating <span class="process-math">\(\pi\)</span> to any desired accuracy, the power series converges too slowly to be of any practical use.  For example, if we compute the sum of the first <span class="process-math">\(1000\)</span> terms we get</div>
@@ -921,7 +921,7 @@ n!=\prod_{j=1}^{n}j\text{.}
 <div class="para">or</div>
 <div class="displaymath process-math" id="eq_BinomialSeries">
 \begin{equation}
-\left(1+x\right)^{\frac{1}{2}}=1+\frac{1}{2}x+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}x^2+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)}{3!}x^3+\cdots\text{.}\tag{19}
+\left(1+x\right)^{\frac{1}{2}}=1+\frac{1}{2}x+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}x^2+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)}{3!}x^3+\cdots\text{.}\tag{20}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ExponentAdditionProperty-54" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1089,7 +1089,7 @@ S2(N)=4\left(\sum_{n=0}^N\frac{(-1)^n\,\,}{2n+1}\right)\text{.}
 \left(1-x\right)^{-k}\)</span> by<div class="autopermalink" data-description="Paragraph"><a href="#ExponentAdditionProperty-65-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="ExponentAdditionProperty-65-5"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="ExponentAdditionProperty-65-5-1-1">Differentiating the <a href="ExponentAdditionProperty.html#EQUATIONGeometricSeries" class="xref" data-knowl="./knowl/xref/EQUATIONGeometricSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 14">Geometric series</a> <span class="process-math">\(\left(k-1\right)\)</span> times.<div class="autopermalink" data-description="Paragraph"><a href="#ExponentAdditionProperty-65-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ExponentAdditionProperty-65-5-1-1">Differentiating the <a href="ExponentAdditionProperty.html#EQUATIONGeometricSeries" class="internal" title="Equation 15">Geometric series</a> <span class="process-math">\(\left(k-1\right)\)</span> times.<div class="autopermalink" data-description="Paragraph"><a href="#ExponentAdditionProperty-65-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Task 3.2.23.a"><a href="#ExponentAdditionProperty-65-5" title="Copy heading and permalink for Task 3.2.23.a" aria-label="Copy heading and permalink for Task 3.2.23.a">🔗</a></div></article><article class="task exercise-like" id="ExponentAdditionProperty-65-6"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="ExponentAdditionProperty-65-6-1-1">Applying the binomial series.<div class="autopermalink" data-description="Paragraph"><a href="#ExponentAdditionProperty-65-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1112,7 +1112,7 @@ S2(N)=4\left(\sum_{n=0}^N\frac{(-1)^n\,\,}{2n+1}\right)\text{.}
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Leonhard Euler<div class="autopermalink" data-description="Figure 3.2.24"><a href="#ExponentAdditionProperty-67" title="Copy heading and permalink for Figure 3.2.24" aria-label="Copy heading and permalink for Figure 3.2.24">🔗</a></div></figcaption></figure><article class="problem example-like" id="ExponentAdditionProperty-68"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Basel Problem.</span>
 </h3>
-<div class="introduction" id="ExponentAdditionProperty-68-3"><div class="para" id="ExponentAdditionProperty-68-3-1">Recall that in <a href="ExponentAdditionProperty.html#PROBLEMSinCosPwrSeries" class="xref" data-knowl="./knowl/xref/PROBLEMSinCosPwrSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 3.2.11">Problem 3.2.11</a> we developed a power series representation of the function  <span class="process-math">\(\sin x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ExponentAdditionProperty-68-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="ExponentAdditionProperty-68-3"><div class="para" id="ExponentAdditionProperty-68-3-1">Recall that in <a href="ExponentAdditionProperty.html#PROBLEMSinCosPwrSeries" class="internal" title="Problem 3.2.11">Problem 3.2.11</a> we developed a power series representation of the function  <span class="process-math">\(\sin x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ExponentAdditionProperty-68-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="ExponentAdditionProperty-68-4"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="ExponentAdditionProperty-68-4-1-1">Show that the power series for <span class="process-math">\(\frac{\sin x}{x}\)</span> is given by <span class="process-math">\(1-\frac{1}{3!}x^2+\frac{1}{5!}x^4-\cdots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ExponentAdditionProperty-68-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>

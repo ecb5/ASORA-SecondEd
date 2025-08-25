@@ -803,22 +803,32 @@
         As a student of Leibniz, Bernoulli would have regarded 
         <m>\frac{\dx{ y}}{\dx{ s}}</m> as a fraction so
 
-        <md>
-          <mrow>a\dx{ s} \amp = g\dx{ y}</mrow>
-          <intertext>
-            and since acceleration is the rate of change of velocity we have
-          </intertext>
-          <mrow>\frac{\dx{ v}}{\dx{ t}}\dx{ s} \amp = g\dx{ y}.</mrow>
-          <intertext>
+        <me>
+          a\dx{s}  = g\dx{y}
+        </me>
+        and since acceleration is the rate of change of velocity we have
+        
+        <men xml:id="EQUATIONDifferentialDemo">
+          \frac{\dx{ v}}{\dx{ t}}\dx{ s}  = g\dx{ y}
+          </men>.
 
-          Again, 18th century European mathematicians regarded <m>\dx{ v}, \dx{ t}</m>, and <m>\dx{ s}</m> as infinitesimally small numbers which nevertheless obey all of the usual rules of algebra. Thus we can rearrange the above to get</intertext>
+        In the seventeenth, eighteenth, and even well into the
+        nineteenth centuries, European mathematicians regarded
+        <m>\dx{ v}, \dx{ t}</m>, and <m>\dx{ s}</m> as
+          infinitesimally small numbers which nevertheless obey all
+          of the usual rules of algebra. Thus they would simply  rearrange <xref ref="EQUATIONDifferentialDemo">equation</xref>,  to get
 
-          <mrow>\frac{\dx{ s}}{\dx{ t}}\dx{ v} \amp = g\dx{ y}.</mrow>
-          <intertext>Since <m>\frac{\dx{ s}}{\dx{ t}}</m> is the rate of change of position with respect to time it is, in fact, the velocity of the bead. That is</intertext>
-          <mrow>v\dx{ v} \amp = g\dx{ y}.</mrow>
-          <intertext>Bernoulli would have interpreted this as a statement that two rectangles of height <m>v</m> and <m>g</m>, with respective widths <m>\dx{ v}</m> and <m>\dx{ y}</m> have equal area. Summing (integrating) all such rectangles we get:</intertext>
-          <mrow>\int{}v\dx{ v} \amp = \int{}g\dx{ y}</mrow>
-          <mrow>\frac{v^2}{2} \amp = gy</mrow>
+          <me>
+          \frac{\dx{s}}{\dx{t}}\dx{ v}  = g\dx{y}
+          </me>.
+          Since <m>\frac{\dx{ s}}{\dx{ t}}</m> is the rate of change of position with respect to time it is, in fact, the velocity of the bead. That is
+          <me>v\dx{ v}  = g\dx{ y}</me>.
+
+          Bernoulli would have interpreted this as a statement that two rectangles of height <m>v</m> and <m>g</m>, with respective widths <m>\dx{ v}</m> and <m>\dx{ y}</m> have equal area. Summing (integrating) all such rectangles we g
+          et:
+          <md>
+            <mrow>\int{}v\dx{ v} \amp = \int{}g\dx{ y}</mrow>
+            <mrow>\frac{v^2}{2} \amp = gy</mrow>
         </md>
         or
         <men xml:id="eq_brach_vel">
@@ -873,11 +883,11 @@
         cumbersome repeated use of the Chain Rule.  No doubt you
         noticed when taking Calculus that in the differential
         notation of Leibniz,<idx><h>Leibniz, Gottfried
-        Wilhelm</h></idx> the Chain Rule looks like <q>canceling</q>
-        an expression in the top and bottom of a fraction:
+        Wilhelm</h></idx> the Chain Rule looks like we are simply <q>canceling</q>
+        a factor in the top and bottom of a fraction:
         <m>\dfdx{y}{u}\dfdx{u}{x} = \dfdx{y}{x}</m>.  This is
         because for 18th century mathematicians, that is exactly
-        what it was.
+        what it was, and Leibniz designed his notation to reflect that viewpoint.
       </p>
 
       <p>

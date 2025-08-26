@@ -329,7 +329,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para"> Suppose <span class="process-math">\(f\)</span> is a function such that <span class="process-math">\(f^{(n+1)}(t)\)</span> is continuous on an interval containing <span class="process-math">\(a\)</span> and <span class="process-math">\(x\text{.}\)</span> Then</div>
 <div class="displaymath process-math" id="EQUATIONCauchyFormRemainder">
 \begin{equation}
-f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)=\frac{f^{\, (n+1)}(c)}{n!}(x-c)^n(x-a)\tag{8}
+f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)=\frac{f^{\, (n+1)}(c)}{n!}(x-c)^n(x-a)\tag{9}
 \end{equation}
 </div>
 <div class="para">where <span class="process-math">\(c\)</span> is some number between <span class="process-math">\(a\)</span> and <span class="process-math">\(x\text{.}\)</span>
@@ -412,7 +412,7 @@ f(x)=
 \begin{cases}
 x\sin\left(\frac{1}{x}\right),\amp \text{if } x\neq 0,\\
 0, \amp \text{ if } x=0 
-\end{cases} \text{.}\tag{9}
+\end{cases} \text{.}\tag{10}
 \end{align}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-CauchyFormRem-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -420,7 +420,7 @@ x\sin\left(\frac{1}{x}\right),\amp \text{if } x\neq 0,\\
 <div class="para" id="TaylorSeries-CauchyFormRem-13">Is this function continuous at 0?  Near zero its graph looks like this:<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-CauchyFormRem-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="TaylorSeries-CauchyFormRem-14"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Ch5fig4.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><a href="TaylorSeries-CauchyFormRem.html#TaylorSeries-CauchyFormRem-12-3" class="internal" title="Equation 9">Formula (9)</a> near <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" data-description="Figure 7.3.5: "><a href="#TaylorSeries-CauchyFormRem-14" title="Copy heading and permalink for Figure 7.3.5: " aria-label="Copy heading and permalink for Figure 7.3.5: ">🔗</a></div></figcaption></figure><div class="para" id="TaylorSeries-CauchyFormRem-15">But this graph must be taken with a grain of salt as <span class="process-math">\(\sin
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.3.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><a href="TaylorSeries-CauchyFormRem.html#TaylorSeries-CauchyFormRem-12-3" class="internal" title="Equation 10">Formula (10)</a> near <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" data-description="Figure 7.3.5: "><a href="#TaylorSeries-CauchyFormRem-14" title="Copy heading and permalink for Figure 7.3.5: " aria-label="Copy heading and permalink for Figure 7.3.5: ">🔗</a></div></figcaption></figure><div class="para" id="TaylorSeries-CauchyFormRem-15">But this graph must be taken with a grain of salt as <span class="process-math">\(\sin
 \left(\frac{1}{x}\right)\)</span> oscillates infinitely often as <span class="process-math">\(x\)</span> nears zero.<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-CauchyFormRem-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="TaylorSeries-CauchyFormRem-16">No matter what your guess may be, it is clear that it is hard to analyze such a function armed with only an intuitive notion of continuity.  We will revisit this example in the next chapter.<div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-CauchyFormRem-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>

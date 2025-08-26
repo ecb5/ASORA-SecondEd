@@ -381,14 +381,14 @@
       As we observed in <xref
       ref="CalcIn17th18thCentury-NewtLeibStart" ></xref> Leibniz and
       his peers would have regarded the expression <m>\dfdx{z}{x}
-      </m> as a fraction (of differentials) so that the formula
+      </m> as a fraction (of differentials) so they would have derived the formula
       
       <men xml:id="EQUATIONChainRuleLeibniz">
         \dfdx{z}{y}\dfdx{y}{x}=\dfdx{z}{x}
       </men> 
 
-      could be obtained by simply canceling the <m>\dx{y}</m> that appears
-      in the numerator and denominator, just as we did in <xref
+      by simply canceling the <m>\dx{y}</m> that appears in the
+      numerator and denominator, just as we did in <xref
       ref="CalcIn17th18thCentury-NewtLeibStart" ></xref>.
       Mathematicians of that era would have regarded this operation as
       basic algebra.
@@ -455,7 +455,7 @@
 
     <p>
       All in all, Lagrange<rsq/>s idea was very clever and
-      insightful. It<rsq/>s only real flaw is that its fundamental,
+      insightful. It<rsq/>s only real flaw is that the fundamental,
       underlying assumption is not true.  It turns out that not every
       differentiable function can be represented as a Taylor series.
       This was demonstrated very dramatically by Augustin
@@ -692,7 +692,9 @@
     </theorem>
 
     <p>
-      Before we address the proof, notice that the <m>n</m>th degree polynomial
+      The proof of <xref ref="TaylorsTheorem" ></xref> will be by
+      <term>Mathematical Induction</term> but before we address the
+      proof, notice that the <m>n</m>th degree polynomial
       <men xml:id="EQUATIONNthDegTaylPoly">
         f(a)+\frac{f^{\prime}(a)}{1!}(x-a)+\frac{f^{\,\prime\prime}(a)}{2!}(x-a)^2+\cdots+\frac{f^{(n)}(a)}{n!}(x-a)^n
       </men>
@@ -701,14 +703,16 @@
       about <m>\boldsymbol a</m></term>.  <xref
       ref="TaylorsTheorem"></xref> says that a function can be written
       as the sum of this polynomial and a specific integral which we
-      will analyze in <xref ref="TaylorSeries" ></xref> where we will
-      get the proof started and leave the formal induction proof as an
-      exercise.
+      will analyze in <xref ref="TaylorSeries" ></xref>. 
     </p>
 
     <p>
-      Notice that when <m>n=0</m> <xref
-      ref="EQUATIONNthDegTaylPoly">equation</xref> is really a
+      We will
+      get the proof started and leave the formal induction proof as an
+      exercise.
+      To begin the induction
+      notice that when <m>n=0</m> <xref
+      ref="EQUATIONNthDegTaylPoly">equation</xref> is  a
       restatement of the <term>Fundamental Theorem of Calculus</term>:
       <me>
         \int_{t=a}^xf^\prime(t)\dx{t}=f(x)-f(a)
@@ -718,8 +722,19 @@
         <me>
           f(x)=f(a)+\frac{1}{0!}\int_{t=a}^xf^\prime(t)(x-t)^0\dx{t}
         </me>
-        in order to provide the anchor step for our induction.
+        in order to provide the anchor step (when <m>n=0</m>) for our induction.
     </p>
+    <aside>
+      <title>The Fundamental Theorem of Calculus</title>
+
+      <p>
+        Strictly speaking, this proof will not be complete until we
+        prove the <term>Fundamental Theorem of Calculus</term> in
+        <xref ref="SECTIONFTC" ></xref>, but you should be familiar
+        with it from your Calculus course.
+      </p>
+    </aside>
+
 
     <p>
       To derive the case where <m>n=1</m>,
@@ -752,16 +767,16 @@
   <section  xml:id="PowerSeriesQuestions-SeriesAnomalies">
     <title>Series Anomalies</title>
     <p>
-      Up to this point, we have been somewhat frivolous in our approach
-      to series.  This approach mirrors the approach of the eighteenth
-      century mathematicians who ingeniously exploited Calculus and
-      series to provide mathematical and physical results which were
-      virtually unobtainable before.  Mathematicans were eager to push
-      these techniques as far as they could to obtain their results and
-      they often showed good intuition regarding what was mathematically
-      acceptable and what was not.  However, as the envelope was pushed
-      further and further, substantial questions about the validity of
-      their methods surfaced.
+      Until we began this chapter our approach to series mirrored that
+      of the eighteenth century mathematicians. By exploiting the
+      ideas of Calculus and power series they ingeniously derived
+      mathematical results which were virtually unobtainable before.
+      Mathematicans were eager to push these techniques as far as they
+      could to obtain their results and they often showed good
+      intuition regarding what was mathematically acceptable and what
+      was not.  However, as the envelope was pushed further and
+      further, substantial questions about the validity of their
+      methods surfaced.
     </p>
 
     <p>
@@ -873,11 +888,11 @@
     <p>
       <idx><h>Riemann, Bernhard</h></idx>
 
-      A generalization of the following result was stated and proved by
       <url
-          href="https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/"
-          visual="mathshistory.st-andrews.ac.uk/Biographies/Riemann/">Bernhard
-      Riemann</url>  (1826<ndash/>1866) in 1854.
+      href="https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/"
+      visual="mathshistory.st-andrews.ac.uk/Biographies/Riemann/">Bernhard
+      Riemann</url> (1826<ndash/>1866) stated and proved a
+      generalization of the following theorem in 1854.
     </p>
 
 

@@ -229,7 +229,6 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="TaylorSeries-IntFormRem.html" class="internal"><span class="codenumber">7.1</span> <span class="title">The Integral Form of the Remainder</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="TaylorSeries-LagrFormRem.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Lagrange’s Form of the Remainder</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="TaylorSeries-CauchyFormRem.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Cauchy’s Form of the Remainder</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="TaylorSeries-AddProb.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Additional Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -418,13 +417,13 @@ I=\int^b_{x=a}{f(x)\dx{x}}
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/DEFINITIONRiemannIntegral.html ./knowl/xref/EQUATIONCauchyIntAsLim.html" id="EQUATIONCauchyIntAsLim">
 \begin{equation}
 \int_a^bf(x)\dx{x} =
-\limit{\norm{P}}{0}{\sum^{n-1}_{k=0}{f\left(x_k\right)\left(x_{k+1}-x_k\right)}}\tag{14}
+\limit{\norm{P}}{0}{\sum^{n-1}_{k=0}{f\left(x_k\right)\left(x_{k+1}-x_k\right)}}\tag{15}
 \end{equation}
 </div>
-<div class="para">but in our (the authors’) opinions this notatation serves to hide the important ideas rather than elucidate them because the limit in <a href="SECTIONDefiningIntegral.html#EQUATIONCauchyIntAsLim" class="internal" title="Equation 14">equation (14)</a> is very different from the ones we’ve encountered before.</div>
+<div class="para">but in our (the authors’) opinions this notatation serves to hide the important ideas rather than elucidate them because the limit in <a href="SECTIONDefiningIntegral.html#EQUATIONCauchyIntAsLim" class="internal" title="Equation 15">equation (15)</a> is very different from the ones we’ve encountered before.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SUBSECTIONCauchyRiemannInt-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SUBSECTIONCauchyRiemannInt-13">In the past, when we had limits like <span class="process-math">\(\limitt{x}{2}{\frac{x^2-4}{x-2}}\)</span> we only had to think about letting the single variable <span class="process-math">\(x\)</span> get “close to” <span class="process-math">\(2\text{.}\)</span> But the limit in <a href="SECTIONDefiningIntegral.html#EQUATIONCauchyIntAsLim" class="internal" title="Equation 14">equation (14)</a> is far more complex. It asks us to simultaneously think about all possible partitions with the property that <span class="process-math">\(\norm{P}\lt\delta{}\)</span> and  what is happening when <span class="process-math">\(\norm{P} \rightarrow 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SUBSECTIONCauchyRiemannInt-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SUBSECTIONCauchyRiemannInt-13">In the past, when we had limits like <span class="process-math">\(\limitt{x}{2}{\frac{x^2-4}{x-2}}\)</span> we only had to think about letting the single variable <span class="process-math">\(x\)</span> get “close to” <span class="process-math">\(2\text{.}\)</span> But the limit in <a href="SECTIONDefiningIntegral.html#EQUATIONCauchyIntAsLim" class="internal" title="Equation 15">equation (15)</a> is far more complex. It asks us to simultaneously think about all possible partitions with the property that <span class="process-math">\(\norm{P}\lt\delta{}\)</span> and  what is happening when <span class="process-math">\(\norm{P} \rightarrow 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SUBSECTIONCauchyRiemannInt-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="SUBSECTIONCauchyRiemannInt-14">Because of these issues we will use an equivalent formulation of the definite integral. One which makes use of a concepts we’ve already familiar with: the <a href="IVTandEVT-SupremumAndEVT.html#thm_LUB" class="xref" data-knowl="./knowl/xref/thm_LUB.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.4.3: The Least Upper Bound Property (LUBP)">least upper bound</a> and <a href="IVTandEVT-SupremumAndEVT.html#PROBLEMGreatestLowerBound" class="xref" data-knowl="./knowl/xref/PROBLEMGreatestLowerBound.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 9.4.17">greatest lower bound</a> properties of the real number system.    <div class="autopermalink" data-description="Paragraph"><a href="#SUBSECTIONCauchyRiemannInt-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -678,14 +677,14 @@ D(x)=
 <div class="para">Let <span class="process-math">\(\eps \gt 0\)</span> be given.  Since <span class="process-math">\(f\left(x\right)\)</span> is continuous at each point in <span class="process-math">\([a,b]\text{,}\)</span> we can choose a <span class="process-math">\(\delta &gt;0\)</span> such that if</div>
 <div class="displaymath process-math" id="EQUATIONUniContFlaw1">
 \begin{equation}
-\left|x-y\right|\lt \delta \text{,}\tag{15}
+\left|x-y\right|\lt \delta \text{,}\tag{16}
 \end{equation}
 </div>
 <div class="para">then</div>
 <div class="displaymath process-math" id="EQUATIONUniContFlaw2">
 \begin{equation}
 \left|f\left(x\right)-f\left(y\right)\right|\lt
-\frac{\eps }{b-a} \text{.}\tag{16}
+\frac{\eps }{b-a} \text{.}\tag{17}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#THEOREMContImpIntProof-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>

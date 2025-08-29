@@ -229,7 +229,6 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="TaylorSeries-IntFormRem.html" class="internal"><span class="codenumber">7.1</span> <span class="title">The Integral Form of the Remainder</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="TaylorSeries-LagrFormRem.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Lagrange’s Form of the Remainder</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="TaylorSeries-CauchyFormRem.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Cauchy’s Form of the Remainder</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="TaylorSeries-AddProb.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Additional Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -387,10 +386,10 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para logical" id="PowerSeriesQuestions-SeriesAnomalies-17">
 <div class="para"> To set the stage, consider the <dfn class="terminology">Harmonic Series</dfn>
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-\sum_{n=1}^\infty\frac{1}{n}=1+\frac{1}{2}+\frac{1}{3}+\cdots\text{.}
-\end{equation*}
+<div class="displaymath process-math" id="EQUATIONHarmonicSeries">
+\begin{equation}
+\sum_{n=1}^\infty\frac{1}{n}=1+\frac{1}{2}+\frac{1}{3}+\cdots\text{.}\tag{26}
+\end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -421,7 +420,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="PowerSeriesQuestions-SeriesAnomalies-20">This says that if we add enough terms of <span class="process-math">\(-\frac{1}{2}-\frac{1}{4}-\frac{1}{6}-\cdots\)</span> we can make such a sum as small as we wish and if we add enough terms of <span class="process-math">\(1+\frac{1}{3}+\frac{1}{5}+\cdots\)</span> we can make such a sum as large as we wish. This provides us with the general outline of the proof. The trick is to add just enough positive terms until the sum is just greater than <span class="process-math">\(a\text{.}\)</span> Then we start to add on negative terms until the sum is just less than <span class="process-math">\(a\text{.}\)</span> Picking up where we left off with the positive terms, we add on just enough positive terms until we are just above <span class="process-math">\(a\)</span> again. We then add on negative terms until we are below <span class="process-math">\(a\text{.}\)</span> In essence, we are bouncing back and forth around <span class="process-math">\(a\text{.}\)</span> If we do this carefully, then we can get this rearrangement to converge to <span class="process-math">\(a\text{.}\)</span> The notation in the proof below gets a bit hairy, but keep this general idea in mind as you read through it.<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="PowerSeriesQuestions-SeriesAnomalies-20">This says that if we add enough terms of <span class="process-math">\(-\frac{1}{2}-\frac{1}{4}-\frac{1}{6}-\cdots\)</span> we can make such a sum as large as we wish (and negative) and if we add enough terms of <span class="process-math">\(1+\frac{1}{3}+\frac{1}{5}+\cdots\)</span> we can make such a sum as large as we wish (and positive).  Those facts provide us with the general outline of the proof.  The trick is to add just enough positive terms until the sum is just greater than <span class="process-math">\(a\text{.}\)</span>  Then we start to add on negative terms until the sum is just less than <span class="process-math">\(a\text{.}\)</span>  Picking up where we left off with the positive terms, we add on just enough positive terms until we are just above <span class="process-math">\(a\)</span> again.  We then add on negative terms until we are below <span class="process-math">\(a\text{.}\)</span>  In essence, we are bouncing back and forth around <span class="process-math">\(a\text{.}\)</span>  If we do this carefully, then we can get this rearrangement to converge to <span class="process-math">\(a\text{.}\)</span>  The notation in the proof below gets a bit hairy, but keep this general idea in mind as you read through it.<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="PowerSeriesQuestions-SeriesAnomalies-21">
 <div class="para">Let <span class="process-math">\(O_1\)</span> be the first odd integer such that <span class="process-math">\(1+\frac{1}{3}+\frac{1}{5}+\cdots+\frac{1}{O_1}&gt;a\text{.}\)</span> Now choose <span class="process-math">\(E_1\)</span> to be the first even integer such that</div>
@@ -470,17 +469,17 @@ a\lt
 <div class="para">Furthermore, since</div>
 <div class="displaymath process-math" id="PowerSeriesQuestions-SeriesAnomalies-25-1">
 \begin{align*}
-1+\frac{1}{3}+\frac{1}{5}+\amp{}\cdots+\frac{1}{O_1}-\frac{1}{2}-\frac{1}{4}-
+a\gt 1+\frac{1}{3}+\frac{1}{5}+\amp{}\cdots+\frac{1}{O_1}-\frac{1}{2}-\frac{1}{4}-
 \frac{1}{6}-\\
 \amp{}\cdots-\frac{1}{E_1}+\frac{1}{O_1+2}+\frac{1}{O_1+4}+\\
-\amp{}\cdots+ \frac{1}{O_2-2}\lt a
+\amp{}\cdots+ \frac{1}{O_2-2}
 \end{align*}
 </div>
 <div class="para">we have</div>
 <div class="displaymath process-math" id="PowerSeriesQuestions-SeriesAnomalies-25-2">
 \begin{align*}
-\amp{}\left|1+\frac{1}{3}+\frac{1}{5}+\cdots+\frac{1}{O_1}-\frac{1}{2}-\frac{1}{4}- \frac{1}{6}-\cdots\right.\\
-\amp \left.-\frac{1}{E_1}+\frac{1}{O_1+2}+\frac{1}{O_1+4}+\cdots+ \frac{1}{O_2}-a\right|\lt \frac{1}{O_2}
+\frac{1}{O_2} \gt \left|1+\frac{1}{3}+\frac{1}{5}+\right.\amp{}\cdots+\frac{1}{O_1}-\frac{1}{2}-\frac{1}{4}- \frac{1}{6}-\\
+\amp\cdots \left.-\frac{1}{E_1}+\frac{1}{O_1+2}+\frac{1}{O_1+4}+\cdots+ \frac{1}{O_2}-a\right|
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -489,10 +488,9 @@ a\lt
 <div class="para">In a similar fashion choose <span class="process-math">\(E_2\)</span> to be the first even integer such that</div>
 <div class="displaymath process-math" id="PowerSeriesQuestions-SeriesAnomalies-26-2">
 \begin{align*}
-1+\frac{1}{3}+\frac{1}{5}+\cdots\amp +\frac{1}{O_1}-\frac{1}{2}- \frac{1}{4}-\frac{1}{6}-\\
-\amp \cdots -\frac{1}{E_1}+ \frac{1}{O_1+2}+\frac{1}{O_1+4}+\\
-\amp \cdots+\frac{1}{O_2}-\frac{1}{E_1+2}-\frac{1}{E_1+4}-\\
-\amp \cdots-\frac{1}{E_2}\lt a\text{.}
+a\gt 1+\frac{1}{3}+\frac{1}{5}+\cdots\amp +\frac{1}{O_1}-\frac{1}{2}- \frac{1}{4}-\frac{1}{6}-\\
+\cdots\amp{} -\frac{1}{E_1}+ \frac{1}{O_1+2}+\frac{1}{O_1+4}+\\
+\cdots\amp{}+\frac{1}{O_2}-\frac{1}{E_1+2}-\frac{1}{E_1+4}- \cdots{}-\frac{1}{E_2}\text{.}
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -501,22 +499,22 @@ a\lt
 <div class="para">Since</div>
 <div class="displaymath process-math" id="PowerSeriesQuestions-SeriesAnomalies-27-1">
 \begin{align*}
-1+\frac{1}{3}+\frac{1}{5} +\cdots\amp{}+\frac{1}{O_1}-\frac{1}{2}- \frac{1}{4}-\frac{1}{6}-\\
+a\lt 1+\frac{1}{3}+\frac{1}{5} +\cdots\amp{}+\frac{1}{O_1}-\frac{1}{2}- \frac{1}{4}-\frac{1}{6}-\\
 \cdots\amp{}-\frac{1}{E_1}+ \frac{1}{O_1+2}+\frac{1}{O_1+4}+\\
-\cdots\amp{}+\frac{1}{O_2}- \frac{1}{E_1+2}-\frac{1}{E_1+4}-\cdots-\frac{1}{E_2-2}&gt;a
+\cdots\amp{}+\frac{1}{O_2}- \frac{1}{E_1+2}-\frac{1}{E_1+4}-\cdots-\frac{1}{E_2-2}
 \end{align*}
 </div>
-<div class="para">then</div>
+<div class="para">we see that</div>
 <div class="displaymath process-math" id="PowerSeriesQuestions-SeriesAnomalies-27-2">
 \begin{align*}
+\frac{1}{E_2} \gt{}
 \left|1+\frac{1}{3}\right.+\frac{1}{5}+
 \amp \cdots+\frac{1}{O_1}-\frac{1}{2}-
 \frac{1}{4}-\frac{1}{6}-\\
 \amp{}\cdots-\frac{1}{E_1} +\frac{1}{O_1+2}+\frac{1}{O_1+4}+\\
 \amp{}\cdots+\frac{1}{O_2}-
 \frac{1}{E_1+2}-\frac{1}{E_1+4}-\\
-\amp{}\cdots-\left.\frac{1}{E_2}-a\right|
-\lt \frac{1}{E_2}.
+\amp{}\cdots-\left.\frac{1}{E_2}-a\right|.
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -536,22 +534,21 @@ a\lt 1+\frac{1}{3} +\frac{1}{5}+
 <div class="para">and notice that</div>
 <div class="displaymath process-math" id="PowerSeriesQuestions-SeriesAnomalies-28-3">
 \begin{align*}
-\left|1+\frac{1}{3}\right.
+\frac{1}{O_3}\gt          \left|1+\frac{1}{3}\right.
 +\frac{1}{5}+\amp{}\cdots+\frac{1}{O_1}-\frac{1}{2}-\frac{1}{4}-\frac{1}{6}-\\
 \amp
 \cdots-\frac{1}{E_1}+\frac{1}{O_1+2}+\frac{1}{O_1+4}+\\
 \amp \cdots+ \frac{1}{O_2}+
 -\frac{1}{E_1+2}-\frac{1}{E_1+4}-\\
 \amp{}\cdots-\frac{1}{E_2}+\frac{1}{O_2+2}+
-\frac{1}{O_2+4}+\cdots+\left.\frac{1}{O_3}-a\right|\\
-\amp \lt \frac{1}{O_3}\text{.}
+\frac{1}{O_2+4}+\cdots+\left.\frac{1}{O_3}-a\right|\text{.}
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="PowerSeriesQuestions-SeriesAnomalies-29">
-<div class="para">Continue defining <span class="process-math">\(O_k\)</span> and <span class="process-math">\(E_k\)</span> in this fashion. Since <span class="process-math">\(\lim_{k\rightarrow\infty}\frac{1}{O_k}=\,\lim_{k\rightarrow\infty} \frac{1}{E_k}=0\text{,}\)</span> it is evident that the partial sums</div>
-<div class="displaymath process-math" id="PowerSeriesQuestions-SeriesAnomalies-29-4">
+<div class="para">Continue defining <span class="process-math">\(O_k\)</span> and <span class="process-math">\(E_k\)</span> in this fashion for <span class="process-math">\(k\ge 4\text{.}\)</span> Since <span class="process-math">\(\limit{k}{\infty}{\frac{1}{O_k}}=\limit{k}{\infty}{\frac{1}{E_k}}=0\text{,}\)</span> it is evident that the partial sums</div>
+<div class="displaymath process-math" id="PowerSeriesQuestions-SeriesAnomalies-29-5">
 \begin{align*}
 1+\frac{1}{3} +\frac{1}{5}+\amp{}\cdots+\frac{1}{O_1}-\frac{1}{2}-\frac{1}{4}-\frac{1}{6}-\\
 \amp \cdots-\frac{1}{E_1}+\frac{1}{O_1+2}+\frac{1}{O_1+4}+\\
@@ -560,7 +557,7 @@ a\lt 1+\frac{1}{3} +\frac{1}{5}+
 \end{align*}
 </div>
 <div class="para">and</div>
-<div class="displaymath process-math" id="PowerSeriesQuestions-SeriesAnomalies-29-5">
+<div class="displaymath process-math" id="PowerSeriesQuestions-SeriesAnomalies-29-6">
 \begin{align*}
 1+\frac{1}{3}\amp
 +\frac{1}{5}+\cdots+\frac{1}{O_1}-\frac{1}{2}-\frac{1}{4}-
@@ -572,7 +569,7 @@ a\lt 1+\frac{1}{3} +\frac{1}{5}+
 \end{align*}
 </div>
 <div class="para">must converge to <span class="process-math">\(a\text{.}\)</span> Furthermore, it is evident that every partial sum of the rearrangement</div>
-<div class="displaymath process-math" id="PowerSeriesQuestions-SeriesAnomalies-29-7">
+<div class="displaymath process-math" id="PowerSeriesQuestions-SeriesAnomalies-29-8">
 \begin{align*}
 1+\frac{1}{3} +\frac{1}{5}+\amp\cdots+\frac{1}{O_1}-\frac{1}{2}-\frac{1}{4}- \frac{1}{6}-\\
 \amp{}-\cdots-\frac{1}{E_1}+\frac{1}{O_1+2}+\frac{1}{O_1+4}+\cdots+ \frac{1}{O_2}+\cdots
@@ -582,45 +579,37 @@ a\lt 1+\frac{1}{3} +\frac{1}{5}+
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="PowerSeriesQuestions-SeriesAnomalies-30">The next two problems are similar to the above, but notationally are easier since we don’t need to worry about converging to an actual number. We only need to make the rearrangement grow (or shrink in the case of <a href="PowerSeriesQuestions-SeriesAnomalies.html#prob_RearrangeDivToNegInf" class="internal" title="Problem 4.2.5">Problem 4.2.5</a>) without bound.<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="PowerSeriesQuestions-SeriesAnomalies-30">The two parts of the <a href="PowerSeriesQuestions-SeriesAnomalies.html#DRILLprob_RearrangeDivToInf" class="internal" title="Problem 4.2.4">next problem</a> are extentions of <a href="PowerSeriesQuestions-SeriesAnomalies.html#thm_rearrangements" class="internal" title="Theorem 4.2.3">Theorem 4.2.3</a> but they are a bit simpler notationally since we don’t need to worry about converging to an actual number.  We only need to make the rearrangement increase or decrease without bound.<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="problem example-like" id="PowerSeriesQuestions-SeriesAnomalies-31"><h3 class="heading">
+<article class="problem example-like" id="DRILLprob_RearrangeDivToInf"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para logical" id="PowerSeriesQuestions-SeriesAnomalies-31-2-1">
+<div class="introduction" id="DRILLprob_RearrangeDivToInf-2"><div class="para logical" id="DRILLprob_RearrangeDivToInf-2-1">
 <div class="para">Show that there is a rearrangement of the <dfn class="terminology">Alternating Harmonic Series</dfn>,</div>
 <div class="displaymath process-math">
 \begin{equation*}
 1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\cdots
 \end{equation*}
 </div>
-<div class="para">which diverges to <span class="process-math">\(\infty\text{.}\)</span>
+<div class="para">which:</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#DRILLprob_RearrangeDivToInf-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="DRILLprob_RearrangeDivToInf-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="DRILLprob_RearrangeDivToInf-3-1-1">Diverges to <span class="process-math">\(\infty\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DRILLprob_RearrangeDivToInf-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-31-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 4.2.4.a"><a href="#DRILLprob_RearrangeDivToInf-3" title="Copy heading and permalink for Task 4.2.4.a" aria-label="Copy heading and permalink for Task 4.2.4.a">🔗</a></div></article><article class="task exercise-like" id="DRILLprob_RearrangeDivToInf-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="DRILLprob_RearrangeDivToInf-4-1-1">Diverges to <span class="process-math">\(-\infty\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DRILLprob_RearrangeDivToInf-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 4.2.4"><a href="#PowerSeriesQuestions-SeriesAnomalies-31" title="Copy heading and permalink for Problem 4.2.4" aria-label="Copy heading and permalink for Problem 4.2.4">🔗</a></div></article><article class="problem example-like" id="prob_RearrangeDivToNegInf"><h3 class="heading">
-<span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h3>
-<div class="para logical" id="prob_RearrangeDivToNegInf-2-1">
-<div class="para">Show that there is a rearrangement of <dfn class="terminology">Alternating Harmonic Series</dfn>,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\cdots
-\end{equation*}
+<div class="autopermalink" data-description="Task 4.2.4.b"><a href="#DRILLprob_RearrangeDivToInf-4" title="Copy heading and permalink for Task 4.2.4.b" aria-label="Copy heading and permalink for Task 4.2.4.b">🔗</a></div></article><div class="autopermalink" data-description="Problem 4.2.4"><a href="#DRILLprob_RearrangeDivToInf" title="Copy heading and permalink for Problem 4.2.4" aria-label="Copy heading and permalink for Problem 4.2.4">🔗</a></div></article><div class="para" id="PowerSeriesQuestions-SeriesAnomalies-32">It is fun to know that we can rearrange some series to make them add up to anything we like but there is a more fundamental idea at play here.  That the negative terms of the Alternating Harmonic Series diverge to negative infinity and the positive terms diverge to positive infinity make the convergence of the alternating series very special.<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">which diverges to <span class="process-math">\(-\infty\text{.}\)</span>
+<div class="para" id="PowerSeriesQuestions-SeriesAnomalies-33">Consider what happens when we sum the series.  We start with <span class="process-math">\(1\text{.}\)</span> This is a positive term so our sum is starting to increase without bound.  Next we add <span class="process-math">\(-1/2\)</span> which is a negative terms so our sum has turned around and is now starting to decrease without bound.  Then another positive term is added: increasing without bound.  Then another negative term: decreasing.  And so on.  The convergence of the alternating Harmonic Series is the result of a delicate balance between a tendency to run off to positive infinity and back to negative infinity.  When viewed in this light it is not really too surprising that rearranging the terms can destroy this delicate balance.<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#prob_RearrangeDivToNegInf-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="PowerSeriesQuestions-SeriesAnomalies-34">Naturally, the alternating Harmonic Series is not the only such series. Any such series is said to <dfn class="terminology">converge conditionally</dfn> — the condition being the specific arrangement of the terms.<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-34" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 4.2.5"><a href="#prob_RearrangeDivToNegInf" title="Copy heading and permalink for Problem 4.2.5" aria-label="Copy heading and permalink for Problem 4.2.5">🔗</a></div></article><div class="para" id="PowerSeriesQuestions-SeriesAnomalies-33">It is fun to know that we can rearrange some series to make them add up to anything we like but there is a more fundamental idea at play here.  That the negative terms of the alternating Harmonic Series diverge to negative infinity and the positive terms diverge to positive infinity make the convergence of the alternating series very special.<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="PowerSeriesQuestions-SeriesAnomalies-35">To stir the pot a bit more, some series do satisfy the commutative property.  More specifically, one can show that any rearrangement of the series <span class="process-math">\(1-\frac{1}{2^2}+\frac{1}{3^2}-\cdots\)</span> must converge to the same value as the original series (which happens to be <span class="process-math">\(\int_{x=0}^1\frac{\text{ ln }
+(1+x)}{x}dx\approx.8224670334\)</span>).  Why does one series behave so nicely whereas the other does not?<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="PowerSeriesQuestions-SeriesAnomalies-34">Consider, first we add <span class="process-math">\(1\text{.}\)</span> This is one of the positive terms so our sum is starting to increase without bound. Next we add <span class="process-math">\(-1/2\)</span> which is one of the negative terms so our sum has turned around and is now starting to decrease without bound. Then another positive term is added: increasing without bound. Then another negative term: decreasing. And so on. The convergence of the alternating Harmonic Series is the result of a delicate balance between a tendency to run off to positive infinity and back to negative infinity. When viewed in this light it is not really too surprising that rearranging the terms can destroy this delicate balance.<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-34" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="PowerSeriesQuestions-SeriesAnomalies-35">Naturally, the alternating Harmonic Series is not the only such series. Any such series is said to converge “conditionally” — the condition being the specific arrangement of the terms.<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="PowerSeriesQuestions-SeriesAnomalies-36">To stir the pot a bit more, some series do satisfy the commutative property. More specifically, one can show that any rearrangement of the series <span class="process-math">\(1-\frac{1}{2^2}+\frac{1}{3^2}-\cdots\)</span> must converge to the same value as the original series (which happens to be <span class="process-math">\(\int_{x=0}^1\frac{\text{ ln } (1+x)}{x}dx\approx.8224670334\)</span>). Why does one series behave so nicely whereas the other does not?<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="PowerSeriesQuestions-SeriesAnomalies-37">Issues such as these and, more generally, the validity of using the infinitely small and infinitely large certainly existed in the 1700s, but they were overshadowed by the utility of the Calculus. Indeed, foundational questions raised by the above examples, while certainly interesting and of importance, did not significantly deter the exploitation of Calculus in studying physical phenomena. However, the envelope eventually was pushed to the point that not even the most practically oriented mathematician could avoid the foundational issues.<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-37" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="PowerSeriesQuestions-SeriesAnomalies-36">Issues such as these and, more generally, the validity of using the infinitely small and infinitely large certainly existed in the 1700s, but they were overshadowed by the utility of the Calculus. Indeed, foundational questions raised by the above examples, while certainly interesting and of importance, did not significantly deter the exploitation of Calculus in studying physical phenomena. However, the envelope eventually was pushed to the point that not even the most practically oriented mathematician could avoid the foundational issues.<div class="autopermalink" data-description="Paragraph"><a href="#PowerSeriesQuestions-SeriesAnomalies-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Section 4.2: Series Anomalies"><a href="#PowerSeriesQuestions-SeriesAnomalies" title="Copy heading and permalink for Section 4.2: Series Anomalies" aria-label="Copy heading and permalink for Section 4.2: Series Anomalies">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">

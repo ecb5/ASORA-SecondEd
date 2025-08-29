@@ -518,12 +518,12 @@
       </problem>
 
       <p>
-        The above results say that a power series can be
-        differentiated and integrated term-by-term as long as the
-        convergence is uniform.  Fortunately it is, in general, true
-        that when a power series converges the convergence of it and
-        its integrated and differentiated series is also uniform
-        (almost).
+        Taken together the above results say that a power series can
+        be differentiated and integrated term<ndash/>by<ndash/>term as
+        long as the convergence is uniform.  Fortunately it is in
+        general true that when a power series converges the
+        convergence of it and its integrated and differentiated series
+        is also uniform (almost).
       </p>
 
       <p>

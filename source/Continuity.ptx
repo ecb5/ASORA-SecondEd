@@ -1,23 +1,24 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="Continuity">
-  <title>Continuity: What It Isn't and What It Is</title>
+  <title>Continuity: What It Isn<rsq/>t and What It Is</title>
 
 
   <section  xml:id="Continuity-AnalyticDef">
     <title>An Analytic Definition of Continuity</title>
     <p>
       Before the invention of Calculus, the notion of continuity was
-      treated intuitively if it was treated at all.  At first pass, it
-      seems a very simple idea based solidly in our experience of the
-      real world.  Standing on the bank we see a river flow past us
-      continuously, not by tiny jerks.  Even when the flow might seem
-      at first to be discontinuous, as when it drops precipitously
-      over a cliff, a closer examination shows that it really is not.
-      As the water approaches the cliff it speeds up.  When it finally
-      goes over it accelerates very quickly but no matter how fast it
-      goes it moves continuously, moving from here to there by
-      occupying every point in between.  This is continuous motion.
-      It never disappears over there and instantaneously reappears
-      over here.  That would be discontinuous motion.
+      treated intuitively if it was treated at all. This was
+      reasonable because at first pass it seems to be a very simple
+      idea based solidly in our experience of the real world.
+      Standing on the bank we see a river flow past us continuously,
+      not by tiny jerks.  Even when the flow might seem at first to be
+      discontinuous, as when it drops precipitously over a cliff, a
+      closer examination shows that it really is not.  As the water
+      approaches the cliff it speeds up.  When it finally goes over it
+      accelerates very quickly but no matter how fast it goes it moves
+      continuously, moving from here to there by occupying every point
+      in between.  This is continuous motion.  It never disappears
+      over there and instantaneously reappears over here.  That would
+      be discontinuous motion.
     </p>
 
     <p>
@@ -32,7 +33,7 @@
 
     <p>
       If the stone passes through discrete points it must be doing so
-      by teeny tiny little jerks, mustn't it?  Otherwise how would it
+      by teeny tiny little jerks, mustn<rsq/>t it?  Otherwise how would it
       get from one point to the next?  Is it possible that motion in
       the real world, much like motion in a movie, is really composed
       of tiny jerks from one point to the next but that these tiny
@@ -44,30 +45,30 @@
       If so, then the real world is more like the rational number line
       (<m>\QQ</m>) from <xref ref="NumbersRealRational"></xref>
       than the real number line (<m>\RR</m>).  In that case, motion
-      really consists of jumping discretely over the <q>missing</q>
+      really consists of jumping discretely over the missing
       points (like <m>\sqrt{2}</m>) as we move from here to there.
       That may seem like a bizarre idea to you <mdash /> it does to us
       as well <mdash /> but the idea of continuous motion is equally
-      bizarre.  It's just a little harder to see why since it is so
+      bizarre.  It<rsq/>s just a little harder to see why since it is so
       familiar.
     </p>
 
     <p>
       The real world will be what it is regardless of what we believe
       it to be, but fortunately in mathematics we are not constrained
-      to live in it.  So we won't even try.  We will simply postulate
+      to live in it.  So we won<rsq/>t even try.  We will simply postulate
       that no such jerkiness exists; that all motion is continuous.
     </p>
 
     <p>
-      However we <em>are</em> constrained to live with the logical
-      consequences of our assumptions, once they are made.  These will
-      lead us into some very deep waters indeed.
+      However we are constrained to live with the logical consequences
+      of our assumptions, once they are made.  These will lead us into
+      some very deep waters indeed.
     </p>
 
     <p>
       The intuitive treatment of continuity was maintained throughout
-      the 1700's as it was not generally perceived that a truly
+      the 1700<rsq/>s as it was not generally perceived that a truly
       rigorous definition was necessary.  Consider the following
       definition given by Euler in 1748.
     </p>
@@ -93,7 +94,11 @@
 
     <figure>
       <caption>
-      </caption>
+        Graph of       
+        <m>
+          \frac{4}{\pi}\sum_{k=0}^\infty\frac{\left(-1\right)^k}{\left(2k+1\right)} \cos \left(\left(2k+1\right)\pi x\right)
+        </m>
+    </caption>
       <image width="75%" source="images/Ch5fig1.png" >
         <shortdescription></shortdescription>
       </image>
@@ -103,7 +108,7 @@
       This function went against Euler<rsq/>s notion of what continuous
       functions should be.  Here, an infinite sum of continuous cosine
       curves provided a single expression which resulted in a
-      <q>discontinuous</q> curve.  But as we've seen this didn't
+      <q>discontinuous</q> curve.  But as we<rsq/>ve seen this didn<rsq/>t
       happen with power series and an intuitive notion of continuity
       is inadequate to explain the difference.  Even more perplexing
       is the following situation.  Intuitively, one would think that a
@@ -115,10 +120,10 @@
 
     <figure>
       <caption>
-
+        Graph of <m>f(x)=x^{2/3}</m>.
       </caption>
       <image width="75%" source="images/Ch5fig2.png" >
-        <shortdescription></shortdescription>
+        <shortdescription>A curve coming down from  the left and from the  right  to a sharp corner at the origin.</shortdescription>
       </image>
     </figure>
 
@@ -142,9 +147,27 @@
 
 
 
+
+    
+
+
+    <p>
+      <idx><h>Weierstrass, Karl</h></idx>
+
+      Surprisingly, in <m>1872</m>, <url
+      href="https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/"
+      visual="mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/">Karl
+      Weierstrass</url> (1815<ndash/>1897) showed that the above
+      conjecture is <alert>FALSE</alert>. He did this by displaying
+      the counterexample:
+      <me>
+        f(x)=\sum_{n=0}^\infty b^n\cos(a^n\pi x)
+        </me>.
+    </p>
+
     <figure>
       <title></title>
-      <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/" visual="mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/">Karl Weierstrass</url> (1815<ndash/>1897)</caption>
+      <caption>Karl Weierstrass</caption>
 
       <idx><h>Weierstrass, Karl</h><h>portrait of</h></idx>
       <idx><h>Portraits</h><h>Weierstrass</h></idx>
@@ -153,20 +176,6 @@
         <shortdescription>Portrait of Karl Weierstrass</shortdescription>
       </image>
     </figure>
-    
-
-
-    <p>
-
-      Surprisingly, in <m>1872</m>, Karl Weierstrass <idx><h>Weierstrass,
-      Karl</h></idx> showed that the above conjecture is
-      <alert>FALSE</alert>. He did this by displaying the
-      counterexample:
-      <me>
-        f(x)=\sum_{n=0}^\infty b^n\cos(a^n\pi x)
-        </me>.
-    </p>
-
     <p>
       Weierstrass showed that if <m>a</m> is an odd integer,
       <m>b\in(0,1)</m>, and <m>ab>1+\frac{3}{2}\pi</m>, then <m>f</m>
@@ -178,14 +187,14 @@
 
     <problem>
       <idx><h>Weierstrass, Karl</h><h>continuous, everywhere non-differentiable function</h></idx>
-      <idx><h>continuity</h><h>Weierstrass's continuous, but non-differentiable function</h></idx>
+      <idx><h>continuity</h><h>Weierstrass<rsq/> continuous, but non-differentiable function</h></idx>
       <task>
         <statement>
           <p>
             Given
             <m>f(x)=\sum_{n=0}^\infty\left(\frac{1}{2}\right)^n\cos\left(a^n\pi
             x\right)</m>, what is the smallest value of <m>a</m> for
-            which <m>f</m> satisfies Weierstrass' criterion to be
+            which <m>f</m> satisfies Weierstrass<rsq/> criterion to be
             continuous and nowhere differentiable.
           </p>
         </statement>
@@ -221,10 +230,14 @@
     </p>
 
     <p>
-      The first appearance of a definition of continuity which did not
-      rely on geometry or intuition was given in 1817 by Bernhard
-      Bolzano <idx><h>Bolzano, Bernhard</h></idx> in a paper published
-      in the Proceedings of the Prague Scientific Society entitled
+      <idx><h>Bolzano, Bernhard</h></idx>
+
+      The first definition of continuity which did not rely on
+      geometry or intuition was given in 1817 by <url
+      href="https://mathshistory.st-andrews.ac.uk/Biographies/Bolzano/"
+      visual="mathshistory.st-andrews.ac.uk/Biographies/Bolzano/">Bernhard
+      Bolzano</url> (1781<ndash/>1848) in a paper published in the
+      Proceedings of the Prague Scientific Society entitled
       <foreign>Rein analytischer Beweis des Lehrsatzes dass zwieschen
       je zwey Werthen, die ein entgegengesetztes Resultat gewaehren,
       wenigstens eine reele Wurzel der Gleichung liege</foreign>
@@ -235,11 +248,13 @@
 
 
     <figure>
-      <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Bolzano/" visual="mathshistory.st-andrews.ac.uk/Biographies/Bolzano/">Bernhard Bolzano</url>(1781<ndash/>1848)
+      <caption>
+        Bernhard Bolzano
       </caption>
 
       <idx><h>Bolzano, Bernhard</h><h>portrait of</h></idx>
       <idx><h>Portraits</h><h>Bolzano</h></idx>
+
 
       <image width="35%" source="images/Bolzano.png" >
         <shortdescription>Portrait of Bernhard Bolzano</shortdescription>
@@ -251,7 +266,7 @@
       proving the <xref ref="IntermediateValueTheorem"
       text="custom">Intermediate Value Theorem</xref>.  To do this he
       needs a completely analytic definition of continuity.  The
-      substance of Bolzano's idea is that if <m>f</m> is continuous at
+      substance of Bolzano<rsq/>s idea is that if <m>f</m> is continuous at
       a point <m>a</m> then <m>f(x)</m> should be <q>close to</q>
       <m>f(a)</m> whenever <m>x</m> is <q>close enough to</q>
       <m>a</m>.  More precisely, Bolzano said that <m>f</m> is
@@ -269,53 +284,55 @@
       <q><m>\abs{f(x)-f(a)}</m> can be made smaller than any given
       quantity provided we make <m>\abs{x-a}</m> sufficiently
       small.</q> But Bolzano stops short of saying that
-      <m>\abs{x-a}</m> is <em>infinitesimally</em> small. He says that
+      <m>\abs{x-a}</m> is infinitesimally small. He says that
       given <m>a</m>, we can choose <m>x</m> so that <m>\abs{x-a}</m>
       is smaller than any real number we could name, say <m>b</m>,
-      provided we name <m>b</m> <em>first</em>. But for any given
+      provided we name <m>b</m> first. But for any given
       choice of <m>x</m>, <m>\abs{x-a}</m>, and <m>b</m> are both
       still real numbers.  Possibly very small real numbers to be
       sure, but real numbers nonetheless.  Infinitesimals have no
-      place in Bolzano's construction.
+      place in Bolzano<rsq/>s construction.
     </p>
 
     <p>
       <idx><h>Bolzano, Bernhard</h></idx>
-      Bolzano's paper was not well known when Cauchy <idx><h>Cauchy,
+      Bolzano<rsq/>s paper was not well known when Cauchy <idx><h>Cauchy,
       Augustin</h></idx> proposed a similar definition in his
-      <em>Cours d'analyse</em><nbsp /><xref
+      <em>Cours d<rsq/>analyse</em><nbsp /><xref
       ref="bradley09__cauch_cours" /> of 1821 so it is usually Cauchy
-      who is credited with this definition, but even Cauchy's
+      who is credited with this definition, but even Cauchy<rsq/>s
       definition is not quite tight enough for modern standards.  It
       was Karl Weierstrass in 1859 who finally gave the modern
       definition.
     </p>
 
     <definition xml:id="def_continuity">
-      
       <title>Continuity at a Point</title>
+
+      <idx><h>continuity</h><h>at a point</h></idx>
+      <idx><h>Definition</h><h>continuity</h><h>at a point</h></idx> 
 
       <statement>
         <p>
-          <idx><h>continuity</h><h>at a point</h></idx>
-          <idx><h>Definition</h><h>continuity</h><h>at a point</h></idx> 
 
-          We say that a function <m>\boldsymbol{f}</m> is continuous
-          at <m>\boldsymbol{a}</m> provided that for any
-          <m>\eps>0</m>, there exists a <m>\delta>0</m> such that if
-          <m>\abs{x-a}\lt \delta</m> then <m>|f(x)-f(a)|\lt \eps</m>.
+          We say that a function <m>f</m> is continuous at the point
+          <m>a</m> provided that for any <m>\eps>0</m>, there exists a
+          <m>\delta>0</m> such that if <m>\abs{x-a}\lt \delta</m> then
+          <m>|f(x)-f(a)|\lt \eps</m>.
         </p>
       </statement>
     </definition>
 
     <p>
+      <idx><h>continuity</h><h>on an interval</h></idx>
+
       Notice that the definition of continuity of a function is done
-      point-by-point.  A function can certainly be continuous at some
-      points while discontinuous at others.  When we say that <m>f</m>
-      is continuous on an interval, then we mean that it is continuous
-      at every point of that interval and, in theory, we would need to
-      use the above definition to check continuity at each individual
-      point.
+      point<ndash/>by<ndash/>point so a function can certainly be
+      continuous at some points while discontinuous at others.  When
+      we say that <m>f</m> is <term>continuous on an interval</term>, then we mean
+      that it is continuous at every point of that interval and, in
+      theory, we would need to use the above definition to check
+      continuity at each individual point.
     </p>
 
     <p>
@@ -330,7 +347,7 @@
       comfortable with this definition, let alone use it to prove
       theorems such as the <xref ref="thm_EVT" text="custom">Extreme
       Value Theorem</xref> and <xref ref="IntermediateValueTheorem"
-      text="custom">Intermediate Value Theorem</xref>.  So let's go
+      text="custom">Intermediate Value Theorem</xref>.  So let<rsq/>s go
       slowly to develop a feel for it.
     </p>
 
@@ -485,9 +502,11 @@
     </proof>
 
     <problem>
+
+      <idx><h>continuity</h><h><m>f(x) = mx +b</m> is continuous everywhere</h></idx> 
+
       <statement>
         <p>
-          <idx><h>continuity</h><h><m>f(x) = mx +b</m> is continuous everywhere</h></idx> 
           Use the definition of continuity to show that if <m>m</m>
           and <m>b</m> are fixed (but unspecified) real numbers then
           the function
@@ -500,6 +519,7 @@
     </problem>
 
     <example>
+      <idx><h>continuity</h><h>of <m>f(x)=0</m> at zero</h></idx>
       <statement>
         <p>
           Use the definition of continuity to show that
@@ -536,9 +556,10 @@
     </p>
 
     <problem>
-      <idx><h>continuity</h><h>smaller <m>\delta</m>, bigger <m>\eps</m></h></idx>
+
       <idx><h>continuity</h><h>smaller <m>\delta</m> works in definition</h></idx>
       <idx><h>continuity</h><h>larger <m>\eps</m> works in definition</h></idx>
+
       <task>
         <statement>
           <p>
@@ -564,11 +585,11 @@
     </problem>
 
     <p>
-      It wasn't explicitly stated in the definition but when we say
+      It wasn<rsq/>t explicitly stated in the definition but when we say
       <q>if <m>\abs{x-a}\lt \delta</m> then <m>|f(x)-f(a)|\lt
       \eps</m>,</q> we should be restricting ourselves to <m>x</m>
       values which are in the domain of the function <m>f</m>,
-      otherwise <m>f(x)</m> doesn't make sense.  We didn't put it in
+      otherwise <m>f(x)</m> doesn<rsq/>t make sense.  We didn<rsq/>t put it in
       the definition because that definition was complicated enough
       without this technicality.  Also in the above examples, the
       functions were defined everywhere so it was a moot point.  We
@@ -608,7 +629,7 @@
 
     <p>
       Sometimes the <m>\delta</m> that will work for a particular
-      <m>\eps</m> is fairly obvious to see, especially after you've
+      <m>\eps</m> is fairly obvious to see, especially after you<rsq/>ve
       gained some experience.  This is the case in the above examples
       (at least after looking back at the proofs).  However, finding
       <m>\delta</m> is usually not so obvious and requires some
@@ -642,7 +663,7 @@
 
         <p>
           This seems to suggest that we should make <m>\delta=\eps</m>.
-          We're now ready for the formal proof.
+          We<rsq/>re now ready for the formal proof.
         </p>
       </statement>
     </example>
@@ -696,7 +717,7 @@
     <blockquote>
       <p>
         <q>
-          Don't just read it; fight it! Ask your own questions, look for
+          Don<rsq/>t just read it; fight it! Ask your own questions, look for
           your own examples, discover your own proofs. Is the hypothesis
           necessary? Is the converse true? What happens in the classical
           special case? What about the degenerate cases? Where does the
@@ -811,7 +832,7 @@
 <problem>
   <statement>
     <p>
-      <idx><h>Topologist's sine function</h><h>is continuous at zero</h></idx>
+      <idx><h>Topologist<rsq/>s sine function</h><h>is continuous at zero</h></idx>
       Use the definition of continuity to show that
       <me>
         f(x)= \begin{cases}
@@ -865,7 +886,15 @@
 </p>
 
 <problem>
-  <idx><h>continuity</h><h>of <m> D(x)= \begin{cases}x,\amp    \text{ if } x\text{ is rational } \\ 0,\amp \text{ if } x\text{ is irrational } \end{cases} </m></h></idx>
+
+  <idx><h>continuity</h>
+  <h>
+    of <m> D(x)= \begin{cases}x,\amp \text{ if } x\text{ is rational }
+    \\ 0,\amp \text{ if } x\text{ is irrational } \end{cases}</m>
+    using the definition
+  </h>
+  </idx>
+
   <task>
     <statement>
       <p>
@@ -887,19 +916,18 @@
     </statement>
     <hint>
       <p>
-        You might want to break this up into two cases where
-        <m>a</m> is rational or irrational.  Show that no choice
-        of <m>\delta>0</m> will work for <m>\eps=\abs{a}</m>.  Note
-        that <xref
-        ref="thm_IrrationalBetweenIrrationals"></xref> of
-        <xref ref="NumbersRealRational"></xref> will
-        probably help here.
+        You might want to break this up into the two cases where
+        <m>a</m> is rational or irrational.  Show that no choice of
+        <m>\delta>0</m> will work for <m>\eps=\abs{a}</m>.  Note that
+        <xref ref="thm_IrrationalBetweenIrrationals"></xref> of <xref
+        ref="NumbersRealRational"></xref> will probably help here.
       </p>
     </hint>
   </task>
 </problem>
 <problem>
   <idx><h>continuous functions</h><h>a constant function is continuous</h></idx>
+  <idx><h>continuity</h><h>of a constant function</h></idx>
 
   <statement>
     <p>
@@ -910,12 +938,15 @@
 </problem>
 
 <problem>
+
   <idx><h>continuous functions</h><h><m>\ln x</m> is continuous everywhere</h></idx>
+  <idx><h>continuity</h><h>of <m>\ln{x}</m></h></idx>
+
   <task>
     <statement>
       <p>
         Use the definition of continuity to prove that <m>\ln x</m>
-        is continuous at <m>1</m>.
+        is continuous at <m>x1</m>.
       </p>
     </statement>
     <hint>
@@ -978,16 +1009,18 @@
     </p>
 
     <theorem xml:id="thm_LimDefOfContinuity">
+
+      <idx><h>continuity</h><h>and sequences</h></idx>
+
       <statement>
-        <p>
-          <idx><h>continuity</h><h>via limits</h></idx>
-          The function <m>f</m> is continuous at <m>a</m> if and only
-          if <m>f</m> satisfies the following property:
-          <me>
-            \forall\text{ sequences } \left(x_n\right)\text{,  if }
-            \,\,\limit{n}{\infty}{x_n}=a \text{ then} \limit{n}{\infty}{f(x_n)}=f(a).
-          </me>
-        </p>
+      <p>
+        The function <m>f</m> is continuous at <m>a</m> if and only
+        if <m>f</m> satisfies the following property:
+        <me>
+          \forall\text{ sequences } \left(x_n\right)\text{,  if }
+          \,\,\limit{n}{\infty}{x_n}=a \text{ then} \limit{n}{\infty}{f(x_n)}=f(a).
+        </me>
+      </p>
       </statement>
     </theorem>
 
@@ -1014,11 +1047,11 @@
 
     <p>
       This theorem is especially useful for showing that a function
-      <m>f,</m> is not continuous at a point <m>a</m>; all we need to
+      <m>f,</m> is not continuous at a point <m>a</m>. All we need to
       do is exhibit a sequence <m>\left(x_n\right)</m> converging to
       <m>a</m> such that the sequence
       <m>\limit{n}{\infty}{f(x_n)}</m> does <em>not</em>
-      converge to <m>f(a)</m>.  Let's demonstrate this idea before we
+      converge to <m>f(a)</m>.  Let<rsq/>s demonstrate this idea before we
       tackle the proof of <xref
       ref="thm_LimDefOfContinuity"></xref>.
     </p>
@@ -1049,7 +1082,7 @@
         for which the sequence
         <m>\left(f\left(x_n\right)\right)</m> does not converge to
         <m>f(0)=0</m>.  For a function like this one, just about
-        any sequence will do, but let's use
+        any sequence will do, but let<rsq/>s use
         <m>\left(\frac{1}{n}\right)</m>, just because it is an old
         familiar friend.
       </p>
@@ -1067,7 +1100,7 @@
     <problem>
       <statement>
         <p>
-          <idx><h>continuity</h><h>Heaviside's function is not continuous at zero</h></idx> 
+          <idx><h>continuity</h><h>Heaviside<rsq/>s function is not continuous at zero</h></idx> 
           Use <xref ref="thm_LimDefOfContinuity"></xref> to
           show that
           <me>
@@ -1081,7 +1114,15 @@
     </problem>
 
     <problem>
-      <idx><h>continuity</h><h>of <m> D(x)= \begin{cases}x,\amp \text{ if } x\text{ is rational } \\ 0,\amp \text{ if } x\text{ is irrational } \end{cases} </m></h></idx>
+      <idx>
+        <h>continuity</h>
+        <h>
+          of <m> D(x)= \begin{cases}x,\amp \text{ if } x\text{ is
+          rational } \\ 0,\amp \text{ if } x\text{ is irrational }
+          \end{cases} </m> using sequences
+        </h>
+      </idx>
+
       <statement>
         <p>
           Use <xref ref="thm_LimDefOfContinuity"></xref> to show that
@@ -1089,21 +1130,21 @@
             D(x)= \begin{cases}
             x, \amp \text{ if } x\text{ is rational } \\
           0, \amp \text{ if } x\text{ is irrational } \end{cases}  </me>
-          is not continuous at <m>a\neq 0</m>.
+          is  continuous at <m>a= 0</m>.
         </p>
       </statement>
     </problem>
 
     <problem>
-      <title>Topologist's Sine Curve</title>
-      <idx><h>Topologist's sine function</h><h>modified version is not continuous at zero</h></idx>
+      <title>Topologist<rsq/>s Sine Curve</title>
+      <idx><h>Topologist<rsq/>s sine function</h><h>modified version is not continuous at zero</h></idx>
       <statement>
         <p>
-          The function <m>T(x)=\sin\left(\frac{1}{x}\right)</m> is
-          often called the topologist's sine curve.  Whereas <m>\sin
+          The function <m>\hat{T}(x)=\sin\left(\frac{1}{x}\right)</m> is
+          often called the topologist<rsq/>s sine curve.  Whereas <m>\sin
           x</m> has roots at <m>n\pi</m>, <m>n\in\ZZ</m> and
           oscillates infinitely often as <m>x\rightarrow\pm\infty</m>,
-          <m>T</m> has roots at <m>\frac{1}{n\pi},\,n\in\ZZ,\,n\neq
+          <m>\hat{T}</m> has roots at <m>\frac{1}{n\pi},\,n\in\ZZ,\,n\neq
           0</m>, and oscillates infinitely often as <m>x</m>
           approaches zero.  A rendition of the graph follows.
         </p>
@@ -1112,9 +1153,9 @@
         </image>
 
         <p>
-          Notice that <m>T</m> is not even defined at <m>x=0</m>.
-          We can extend <m>T</m> to be defined at 0 by simply
-          choosing a value for <m>T(0):</m>
+          Notice that <m>\hat{T}</m> is not even defined at <m>x=0</m>.
+          We can extend <m>\hat{T}</m> to be defined at <m>0</m> by simply
+          choosing a value at  <m>0</m>. Since this will be a new function we give it a new name.
           <me>
             T(x)= \begin{cases}
             \sin\left(\frac{1}{x}\right),\amp \text{ if } x\neq 0\\ 
@@ -1132,19 +1173,27 @@
     <proof>
       <title>Sketch of the Proof of <xref ref="thm_LimDefOfContinuity"></xref></title>
       <p>
-        We've seen how we can use <xref
-        ref="thm_LimDefOfContinuity"></xref>, now we need to
-        prove <xref ref="thm_LimDefOfContinuity"></xref>.  The
-        forward direction is fairly straightforward.  So we assume
+        We<rsq/>ve seen how we can use <xref
+        ref="thm_LimDefOfContinuity"></xref>, now we need to prove it.
+      </p>
+      <p>
+        The forward direction is fairly straightforward.  We assume
         that <m>f</m> is continuous at <m>a</m> and start with a
         sequence <m>\left(x_n\right)</m> which converges to <m>a</m>.
-        What is left to show is that
-        <m>\limit{n}{\infty}{f(x_n)}=f(a)</m>.  If you write
-        down the definitions of <m>f</m> being continuous at <m>a</m>,
-        <m>\limit{n}{\infty}{x_n}=a</m>, and
-        <m>\limit{n}{\infty}{f(x_n)}=f(a)</m>, you should be
-        able to get from what you are assuming to what you want to
-        conclude.
+        We now need  to show is that
+        <me>\limit{n}{\infty}{f(x_n)}=f(a)</me>, but that will follow from the 
+        definitions of  
+        <ol>
+          <li>
+            continuity at <m>a</m>,
+          </li>
+            <li>
+<m>\limit{n}{\infty}{x_n}=a</m>, and
+            </li>
+            <li>
+              <m>\limit{n}{\infty}{f(x_n)}=f(a)</m>.
+            </li>
+            </ol>
       </p>
 
       <p>
@@ -1152,18 +1201,25 @@
         contrapositive.  That is, we want to prove that if <m>f</m> is
         not continuous at <m>a</m> then we can construct a sequence
         <m>\left(x_n\right)</m> that converges to <m>a</m> but
-        <m>\left(f(x_n)\right)</m>does not converge to <m>f(a)</m>.
+        <m>\left(f(x_n)\right)</m> does not converge to <m>f(a)</m>.
+      </p>
+      <p>
+
         First we need to recognize what it means for <m>f</m> to not
-        be continuous at <m>a</m>.  This says that somewhere there
+        be continuous at <m>a</m>.  It means that somewhere there
         exists an <m>\eps>0</m>, such that no choice of
-        <m>\delta>0</m> will work for this.  That is, for any such
-        <m>\delta</m>, there will exist <m>x</m>, such that
-        <m>|\,x-a|\lt \delta</m>, but <m>|f(x)-f(a)|\geq\eps</m>.
-        With this in mind, if <m>\delta=1</m>, then there will exist
-        an <m>x_1</m> such that <m>|\,x_1-a|\lt 1</m>, but
-        <m>|f(x_1)-f(a)|\geq\eps</m>.  Similarly, if
-        <m>\delta=\frac{1}{2}</m>, then there will exist an <m>x_2</m>
-        such that <m>|\,x_2-a|\lt \frac{1}{2}</m>, but
+        <m>\delta>0</m> will work for that <m>\eps</m>.  More
+        formally, for any such <m>\delta</m>, there will exist
+        <m>x</m>, such that 
+        <me>\abs{x-a}\lt \delta,\text{ but
+        }\abs{f(x)-f(a)}\geq\eps.</me>
+      </p>
+      <p>
+        This means that if
+        <m>\delta=1</m>, then there will exist an <m>x_1</m> such that
+        <m>|\,x_1-a|\lt 1</m>, but <m>|f(x_1)-f(a)|\geq\eps</m>.
+        Similarly, if <m>\delta=\frac{1}{2}</m>, then there will exist
+        an <m>x_2</m> such that <m>|\,x_2-a|\lt \frac{1}{2}</m>, but
         <m>|\,f(x_2)-f(a)|\geq\eps</m>.  If we continue in this
         fashion, we will create a sequence <m>\left(x_n\right)</m>
         such that <m>|\,x_n-a|\lt \frac{1}{n}</m>, but
@@ -1174,8 +1230,9 @@
     <problem>
       <statement>
         <p>
-          <idx><h>continuity</h><h>via limits</h></idx>
-          <idx><h>limit</h><h><m>\limit{x}{a}{f(x)}=f(a)</m> implies <m>f(x)</m> is continuous</h></idx>
+          <idx><h>continuity</h><h>via sequences</h></idx>
+          <idx><h>limit</h><h>and sequences</h></idx>
+
           Turn the ideas of the previous two paragraphs into a formal proof of <xref ref="thm_LimDefOfContinuity"></xref>.
         </p>
       </statement>
@@ -1189,9 +1246,12 @@
     </p>
 
     <theorem xml:id="thm_ContSumProd">
+
+      <idx><h>continuous functions</h><h>sum of continuous functions is continuous</h></idx>
+      <idx><h>continuity</h><h>of a sum</h></idx>
+
       <statement>
         <p>
-          <idx><h>continuous functions</h><h>sum of continuous functions is continuous</h></idx>
           Suppose <m>f</m> and <m>g</m> are both continuous at <m>a</m>.
           Then <m>f+g</m> and <m>f\cdot g</m> are continuous at <m>a</m>.
         </p>
@@ -1229,8 +1289,10 @@
     </proof>
 
     <problem>
+
       <idx><h>continuous functions</h><h>the product of continuous
       functions is continuous</h></idx>
+      <idx><h>continuity</h><h>of a product</h></idx>
 
       <statement>
         <p>
@@ -1268,28 +1330,28 @@
     </p>
 
     <p>
-      Thus by definition, <m>\sum_{j=1}^\infty f_j</m> is continuous
-      at <m>a</m>.
+      Thus by <xref ref="def_continuity" ></xref>
+      <m>\sum_{j=1}^\infty f_j</m> is continuous at <m>a</m>.
     </p>
 
     <p>
       This argument seems to say that an infinite sum of continuous
       functions must be continuous (provided it converges).  However
       we know that the Fourier series
-      <me>
+      <m>
         \frac{4}{\pi}\sum_{k=0}^\infty\frac{\left(-1\right)^k}{\left(2k+1\right)}\cos\left(\left(2k+1\right)\pi x\right)
-      </me>
-      is a counterexample to this, as it is an infinite sum of
-      continuous functions which does not converge to a continuous
-      function.  Something fundamental seems to have gone wrong here.
-      Can you tell what it is?
+      </m>
+      is a counterexample as it is an infinite sum of continuous
+      functions which does not converge to a continuous function.
+      Something fundamental seems to have gone wrong here.  Can you
+      tell what it is?
     </p>
 
     <p>
       This is a question we will spend considerable time addressing in
       <xref ref="PowerSeriesRedux"></xref> (in particular, see
       <xref ref="prob_Cauchy_s_incorrect_proof"></xref>) so if
-      you don't see the difficulty, don't worry; you will.  In the
+      you don<rsq/>t see the difficulty, don<rsq/>t worry, you will.  In the
       meantime keep this problem tucked away in your consciousness.
       It is, as we said, fundamental.
     </p>
@@ -1320,7 +1382,9 @@
     </lemma>
 
     <problem>
+
       <idx><h>continuous functions</h><h>if <m>f</m> is continuouse and <m>f(a)\neq0</m> then <m>f</m> is bounded away from zero near a</h></idx>    
+      <idx><h>continuity</h><h>of a quotient</h></idx>
 
       <statement>
         <p>
@@ -1364,7 +1428,9 @@
     </problem>
 
     <theorem xml:id="thm_ContComp">
+
       <idx><h>continuous functions</h><h>the composition of continuous functions is continuous</h></idx>
+      <idx><h>continuity</h><h>of a composition</h></idx>
 
       <statement>
         <p>
@@ -1379,6 +1445,7 @@
     <problem>
       <idx><h>continuous functions</h><h>the composition of continuous
       functions is continuous</h></idx>
+      <idx><h>continuity</h><h>of a composition</h></idx>
 
       <introduction>
         <p>
@@ -1473,19 +1540,19 @@
       <m>\limit{n}{\infty}{\frac{n+1}{n}}=1</m>, then
       <m>\limit{n}{\infty}{e^{\left(\frac{n+1}{n}\right)}}=e</m>.
       This also illustrates a certain way of thinking about continuous
-      functions.  They are the ones where we can <q>commute</q> the
+      functions.  They are the ones where we can <term>commute</term> the
       function and a limit of a sequence.  Specifically, if <m>f</m> is
       continuous at <m>a</m> and <m>\limit{n}{\infty}{x_n}=a</m>,
       then
-      <m>\limit{n}{\infty}{f(x_n)}=f(a)=f\left(\limit{n}{\infty}{x_n}\right)</m>.
+      <me>\limit{n}{\infty}{f(x_n)}=f(a)=f\left(\limit{n}{\infty}{x_n}\right)</me>.
     </p>
 
     <problem>
-      <idx><h>continuity</h><h>via sequences</h></idx>
+      <idx><h>continuity</h></idx>
       <introduction>
         <p>
-          Compute the following limits.
-          Be sure to explain how continuity is involved.
+          Compute the following limits.  Be sure to explain how
+          continuity is involved.
         </p>
       </introduction>
       <task>
@@ -1512,16 +1579,20 @@
     </problem>
 
     <p>
-      Recall that Bolzano<rsq/>s motivation for providing an <xref ref="def_continuity" text="custom">analytic
-      definition of continuity</xref>      was to prove the <xref ref="IntermediateValueTheorem" >Intermediate Value
+      Recall that Bolzano<rsq/>s motivation for providing an <xref
+      ref="def_continuity" text="custom">analytic definition of
+      continuity</xref> was to prove the <xref
+      ref="IntermediateValueTheorem" text="custom">Intermediate Value
       Theorem</xref>.  We were motivated by the fact that we used the
-      Intermediate Value Theorem and the <xref ref="thm_EVT" text="custom">Extreme Value Theorem</xref> in the
-      derivation of Lagrange<rsq/>s and Cauchy<rsq/>s forms of the
-      remainder for Taylor Series.  Without rigorous proofs of these,
-      we have a gap in our understanding of convergence of a Taylor
-      series.  In the next chapter, we will close that gap.  In doing
-      so we will also need to explore the differences between the
-      rational number system and the real number system that we introduced in <xref ref="NumbersRealRational" ></xref>.
+      Intermediate Value Theorem and the <xref ref="thm_EVT"
+      text="custom">Extreme Value Theorem</xref> in the derivation of
+      Lagrange<rsq/>s and Cauchy<rsq/>s forms of the remainder for
+      Taylor Series.  Without rigorous proofs of these, we have a gap
+      in our understanding of convergence of a Taylor series.  In the
+      next chapter, we will close that gap.  In doing so we will also
+      need to explore the differences between the rational number
+      system and the real number system that we introduced in <xref
+      ref="NumbersRealRational" ></xref>.
 
       <!-- Our motive for rigorously defining continuity was to resolve the -->
       <!-- apparent discrepencies introduced by Fourier<rsq/>s work. But -->

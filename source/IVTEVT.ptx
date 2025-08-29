@@ -49,15 +49,15 @@
     <p>
       This sounds reasonable and it actually works for square roots,
       but consider the function <m>f(x)=x-\cos x</m>.  We know this is
-      a continuous function.  We also know that <m>f(0)=-1</m> and
-      <m>f(\frac{\pi}{2})=\frac{\pi}{2}</m>.  Thus according to the
-      <xref ref="IntermediateValueTheorem" text="custom">IVT</xref>,
-      there should be some number <m>c\in[\,0,\frac{\pi}{2}]</m>,
-      where <m>f(c)=0</m>.  The graph of <m>f(x)=x-\cos x</m> is show
-      below.
+      a continuous function (Why?).  We also know that <m>f(0)=-1</m>
+      and <m>f(\frac{\pi}{2})=\frac{\pi}{2}</m>.  Thus according to
+      the <xref ref="IntermediateValueTheorem"
+      text="custom">IVT</xref>, there should be some number
+      <m>c\in[\,0,\frac{\pi}{2}]</m>, where <m>f(c)=0</m>.  The graph
+      of <m>f(x)=x-\cos x</m> is shown below.
     </p>
 
-    <image width="37%" source="images/Ch6fig2.png" >
+    <image width="37%" source="images/Ch6fig2-1.png" >
       <shortdescription></shortdescription>
     </image>
 
@@ -65,27 +65,36 @@
       The situation is not as transparent as before.  What is this
       mysterious <m>c</m>  where the curve crosses the <m>x</m>
       axis?  Somehow we need to convey the idea that the real number
-      system is a continuum.  That is, it has no <q>holes</q> in it.
+      system is a continuum, that it is <term>complete</term>.  That is, it has no holes in it.
     </p>
 
     <p>
-      How about this?  Why don't we just say that it has no holes in
-      it?  Sometimes the simple answer works best!  But not in this
-      case. Just like with convergence and continuity, what we need is
-      a rigorous way to convey the idea that the real number system
-      does not have any holes, that it is <em>complete.</em> How are
-      we going to formulate a rigorous proof based on this statement?
+      How about this?  Why don<rsq/>t we just assume that it has no
+      holes in it?  Sometimes the simplest answer works best! We could
+      do that. More complicated statements have been taken as axioms
+      in the past. But how are we going to formulate a rigorous proof
+      based on the statement, <q>There are no holes in the real
+      numbers</q>?
+    </p>
+    <p>
+      Also, going back to the Greeks (and possibly further) the thrust
+      of mathematics has always been to keep our axioms as simple and
+      self<ndash/>evident as possible and to prove more complicated
+      statements from the axioms. If possible. So we<rsq/>d prefer to
+      make a simpler assumption (axiom) and use it to show that there
+      are no holes in the real numbers.
     </p>
 
     <p>
       We will see that there are several different, but equivalent
-      ways to convey this notion of completeness.  We will explore
-      some of them in this chapter.  For now we adopt the following as
-      our <term>Completeness Axiom</term> for the real number system.
+      assumptions we can make that will convey the notion of
+      <term>completeness</term>.  We will explore some of them in this
+      chapter.  For now we adopt the following as our
+      <term>Completeness Axiom</term> for the real number system.
     </p>
 
     <axiom xml:id="NIP">
-      <title>Nested Interval Property of the Real Number System (<term>NIP</term>)</title>
+      <title>Nested Interval Property of the Real Number System (NIP)</title>
       <idx><h>Completeness Axiom, (the NIP)</h></idx>    
       <statement>
         <p>
@@ -186,7 +195,7 @@
           <p>
             Find two sequences of rational numbers
             <m>\left(x_n\right)</m>and <m>\left(y_n\right)</m> which
-            satisfy properties 1-4 of the <xref ref="NIP" text="custom">NIP</xref>  and such that there is
+            satisfy all four properties of the <xref ref="NIP" text="custom">NIP</xref>  and such that there is
             no rational number <m>c</m> satisfying the conclusion of
             the <xref ref="NIP" text="custom">NIP</xref>.
           </p>
@@ -202,7 +211,7 @@
           <p>
             Find two sequences of rational numbers
             <m>\left(x_n\right)</m> and <m>\left(y_n\right)</m> which
-            satisfy properties 1-4 of the <xref ref="NIP" text="custom">NIP</xref>  and such that there is a
+            satisfy all four properties of the <xref ref="NIP" text="custom">NIP</xref>  and such that there is a
             rational number <m>c</m> satisfying the conclusion of the
             <xref ref="NIP" text="custom">NIP</xref>.
           </p>
@@ -213,21 +222,20 @@
     <p>
       You might find the name <q>Nested Interval Property</q> to be
       somewhat curious.  One way to think about this property is to
-      consider that we have a sequence of <q>nested closed
-      intervals</q>
-      <m>[\,x_1,y_1]\supseteq[\,x_2,y_2]\supseteq[\,x_3,y_3]\supseteq\cdots</m>
-      whose lengths <m>\,y_n-x_n</m> are <q>shrinking to <m>0</m>.</q>
+      consider that we have a sequence of nested closed intervals
+      <m>[x_1,y_1]\supseteq[x_2,y_2]\supseteq[x_3,y_3]\supseteq\cdots</m>
+      whose lengths <m>y_n-x_n</m> are shrinking to <m>0</m>.
       The conclusion is that the intersection of these intervals is
       non-empty and, in fact, consists of a single point.  That is,
-      <m>\bigcap_{n=1}^\infty[x_n,y_n]=\{c\}</m>.
+      <me>\bigcap_{n=1}^\infty[x_n,y_n]=\{c\}</me>.
     </p>
 
     <p>
-      It appears that the sequences <m>\left(x_n\right)</m> and
-      <m>\left(y_n\right)</m> in the <xref ref="NIP" text="custom">NIP</xref>  converge to <m>c</m>.
-      This is, in fact, true and can be proven rigorously.
-      In what follows,
-      this will prove to be a valuable piece of information.
+      Intuitively, the sequences <m>\left(x_n\right)</m> and
+      <m>\left(y_n\right)</m> in the <xref ref="NIP"
+      text="custom">NIP</xref> appear to converge to <m>c</m>.  This
+      is in fact, true and can be proven rigorously. This will prove
+      to be a valuable piece of information for us.
     </p>
 
     <theorem xml:id="thm_ConvergeToC">
@@ -260,7 +268,7 @@
     </problem>
 
     <p>
-      To illustrate the idea that the <xref ref="NIP" text="custom">NIP</xref>  <q>plugs the holes</q> in
+      To illustrate the idea that the <xref ref="NIP" text="custom">NIP</xref>  plugs the holes in
       the real line, we will prove the existence of square roots of
       nonnegative real numbers.
     </p>
@@ -280,24 +288,25 @@
       Notice that we can't just say, <q>Let <m>c=\sqrt{a}</m>,</q>
       since the idea is to show that this square root exists.  In
       fact, throughout this proof, we cannot really use a square root
-      symbol as we haven't yet proved that they (square roots) exist.
-      We will give the idea behind the proof as it illustrates how the
-      <xref ref="NIP" text="custom">NIP</xref>  is used.
+      symbol as we haven't yet proved that square roots exist.  The
+      idea behind the proof illustrates how the <xref ref="NIP"
+      text="custom">NIP</xref> is used in practice.
     </p>
 
     <proof>
       <title>Sketch of Proof</title>
       <p>
-        Our strategy is to construct two sequences which will
-        <q>narrow in</q> on the number <m>c</m> that we seek.  With
-        that in mind, we need to find a number <m>x_1</m> such that
-        <m>x_1^2\leq a</m> and a number <m>y_1</m> such that
-        <m>y_1^2\geq a</m>.  (Remember that we can't say
-        <m>\sqrt{x_1}</m> or<m>\sqrt{y_1}</m>.)  There are many
-        possibilities, but how about <m>x_1=0</m> and <m>y_1=a+1?</m>
-        You can check that these will satisfy <m>x_1^2\leq a\leq</m>
-        <m>y_1^2</m>.  Furthermore <m>x_1\leq y_1</m>.  This is the
-        starting point.
+        Our strategy is to construct two sequences which will narrow
+        in on the number <m>c</m> that we seek.  Observe that we need
+        to find a number <m>x_1</m> such that <m>x_1^2\leq a</m> and a
+        number <m>y_1</m> such that <m>y_1^2\geq a</m>.  (Remember
+        that we can't say <m>x_1\lt\sqrt{a}</m> and
+        <m>y_1\gt\sqrt{a}</m> since our goal is to show that
+        <m>\sqrt{a} </m> exists.)
+        There are many possibilities, but how about <m>x_1=0</m> and
+        <m>y_1=a+1?</m> You can check that these will satisfy
+        <m>x_1^2\leq a\leq</m> <m>y_1^2</m>.  Furthermore <m>x_1\leq
+        y_1</m>.  This is the starting point.
       </p>
 
       <p>
@@ -335,12 +344,18 @@
         in more specific terms, in either case we have the same
         results:
         <me>
-          x_1\leq x_2\leq y_2\leq y_1;\ \  x_1^2\leq a\leq y_1^2;\ \  x_2^2\leq a\leq y_2^2
-        </me>
-        and
-        <me>
-          y_2-x_2=\frac{1}{2}\left(y_1-x_1\right)
-          </me>.
+          x_1\leq x_2\leq y_2\leq y_1
+          </me>,
+          <me>
+            x_1^2\leq a\leq y_1^2
+            </me>,
+            <me>
+              x_2^2\leq a\leq y_2^2
+              </me>,
+              and
+              <me>
+                y_2-x_2=\frac{1}{2}\left(y_1-x_1\right)
+                </me>.
       </p>
 
       <p>
@@ -351,13 +366,29 @@
         <m>x_3=m_2</m> and <m>y_3=y_2</m>.  If <m>a\leq m_2^2</m>, we
         relabel <m>x_3=x_2</m> and <m>y_3=m_2</m>.  In either case, we
         end up with
-        <me>
-          x_1\leq x_2\leq x_3\leq y_3\leq y_2\leq y_1;\ \   x_1^2\leq a\leq y_1^2;\ \  x_2^2\leq a\leq y_2^2;\ \   x_3^2\leq a\leq y_3^2
-        </me>
-        and
-        <me>
-          y_3-x_3=\frac{1}{2}\left(y_2-x_2\right)=\frac{1}{2^2}\left(y_1-x_1\right)
-          </me>.
+
+        <md>
+          <mrow>
+            x_1\leq x_2\leq x_3\leq y_3\leq y_2\leq y_1
+            </mrow>
+            <mrow>
+              x_1^2\leq a\leq y_1^2,
+            </mrow>
+<mrow>
+  x_2^2\leq a\leq y_2^2,
+  </mrow>
+<mrow>
+  x_3^2\leq a\leq y_3^2,
+</mrow>
+            <intertext>
+              and
+            </intertext>
+            <mrow>
+              y_3-x_3=\frac{1}{2}\left(y_2-x_2\right)=\frac{1}{2^2}\left(y_1-x_1\right).
+            </mrow>
+
+        </md>
+
       </p>
 
       <p>
@@ -365,32 +396,37 @@
         <m>\left(x_n\right)</m>and <m>\left(y_n\right)</m> satisfying
         the following conditions:
 
-        <ol>
+        <dl>
           <li>
+            <title>Condition 1:</title>
             <p>
               <m>x_1\leq x_2\leq x_3\leq\ldots</m>
             </p>
           </li>
 
           <li>
+            <title>Condition 2:</title>
             <p>
               <m>y_1\geq y_2\geq y_3\geq\ldots</m>
             </p>
           </li>
 
           <li>
+            <title>Condition 3:</title>
             <p>
               <m>\forall</m> <m>n</m>, <m>x_n\leq y_n</m>
             </p>
           </li>
 
           <li>
+            <title>Condition 4:</title>
             <p>
               <m>\lim_{n\rightarrow\infty}\left(y_n-x_n\right)=\,\lim_{n\rightarrow\infty}\frac{1}{2^{n-1}}\left(y_1-x_1\right)=0</m>
             </p>
           </li>
 
           <li>
+            <title>Condition 5:</title>
             <p>
               These sequences also satisfy the following property:
               <me>
@@ -398,15 +434,15 @@
               </me>
             </p>
           </li>
-        </ol>
+        </dl>
       </p>
 
       <p>
-        Properties 1-4 tell us that <m>\left(x_n\right)</m>and
+        Conditions 1 through 4 tell us that <m>\left(x_n\right)</m>and
         <m>\left(y_n\right)</m> satisfy all of the conditions of the
         <xref ref="NIP" text="custom">NIP</xref>, so we can conclude that there must exist a real number
         <m>c</m> such that <m>x_n\leq c\leq y_n</m> for all <m>n</m>.
-        At this point, you should be able to use property 5. to show
+        At this point, you should be able to use Condition 5. to show
         that <m>c^2=a</m> as desired.
       </p>
     </proof>
@@ -426,195 +462,224 @@
     </problem>
 
     <p>
-      The bisection method we employed in the proof of <xref
-      ref="thm_SqrtsExist"></xref> is pretty typical of how we
-      will use the <xref ref="NIP" text="custom">NIP</xref>, as taking midpoints ensures that we will
-      create a sequence of <q>nested intervals.</q> We will employ
-      this strategy in the proofs of the <xref ref="IntermediateValueTheorem" text="custom">IVT</xref> and <xref ref="thm_EVT" text="custom">EVT</xref>. Deciding how to
-      relabel the endpoints of our intervals will be determined by
+      The bisection method we employed to prove <xref
+      ref="thm_SqrtsExist"></xref> is also pretty typical of how we
+      will use the <xref ref="NIP" text="custom">NIP</xref>, as taking
+      midpoints ensures that we will create a sequence of nested
+      intervals. We will employ this strategy in the proofs of the
+      <xref ref="IntermediateValueTheorem" text="custom">IVT</xref>
+      and <xref ref="thm_EVT" text="custom">EVT</xref>. Deciding how
+      to relabel the endpoints of our intervals will be determined by
       what we want to do with these two sequences of real numbers.
       This will typically lead to a fifth property, which will be
-      crucial in proving that the <m>c</m> guaranteed by the <xref ref="NIP" text="custom">NIP</xref>  does
-      what we want it to do.  Specifically, in the above example, we
-      always wanted our candidate for <m>\sqrt{a}</m> to be in the
-      interval <m>[\,x_n,y_n]</m>.  This judicious choice led to the
-      extra Property<nbsp />5: <m>\forall</m> <m>n,\,x_n^2\leq a\leq
-      y_n^2</m>.  In applying the <xref ref="NIP" text="custom">NIP</xref>  to prove the <xref ref="IntermediateValueTheorem" text="custom">IVT</xref> and <xref ref="thm_EVT" text="custom">EVT</xref>, we
-      will find that properties 1-4 will stay the same.  Property<nbsp
-      />5 is what will change based on the property we want <m>c</m>
-      to have.
+      crucial in proving that the <m>c</m> guaranteed by the <xref
+      ref="NIP" text="custom">NIP</xref> does what we want it to do.
+      Specifically, in the above example, we always wanted our
+      candidate for <m>\sqrt{a}</m> to be in the interval
+      <m>[\,x_n,y_n]</m>.  This judicious choice led to the extra
+      Condition 5: <m>\forall</m> <m>n,\,x_n^2\leq a\leq
+      y_n^2</m>.  In applying the <xref ref="NIP"
+      text="custom">NIP</xref> to prove the <xref
+      ref="IntermediateValueTheorem" text="custom">IVT</xref> and
+      <xref ref="thm_EVT" text="custom">EVT</xref>, Condition 5 is what
+      will change based on the property we want <m>c</m> to have.
     </p>
 
     <p>
-      Before we tackle the <xref ref="IntermediateValueTheorem" text="custom">IVT</xref> and <xref ref="thm_EVT" text="custom">EVT</xref>, let<rsq/>s use the <xref ref="NIP" text="custom">NIP</xref>  to address
-      an interesting question about the Harmonic Series.
       <idx><h>series</h><h>Harmonic Series</h><h>slow divergence
-      of</h></idx> Recall that the Harmonic Series,
+      of</h></idx>
+
+      Before we tackle the <xref ref="IntermediateValueTheorem"
+      text="custom">IVT</xref> and <xref ref="thm_EVT"
+      text="custom">EVT</xref>, let<rsq/>s use the <xref ref="NIP"
+      text="custom">NIP</xref> to address an interesting question
+      about the Harmonic Series.   Recall that the
+      Harmonic Series,
       <m>1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\cdots</m>, grows
-      without bound, that is,
+      without bound. That is,
       <m>\sum_{n=1}^\infty\frac{1}{n}=\infty</m>.  The question is how
       slowly does this series grow?  For example, how many terms would
-      it take before the series surpasses 100? 1000?  10000? 
+      it take before the series surpasses 100? Or 1000?  Or 10000?
     </p>
     <p>
-      Leonhard
-      Euler <idx><h>Euler, Leonhard</h></idx> decided to tackle this
-      problem in the following way.  Euler decided to consider the
-      <me>\limit{n}{\infty}{\left(\left(1+\frac{1}{2}+\frac{1}{3}+\cdots+
-      \frac{1}{n}\right)-\ln(n+1)\right)}</me>.
-      This limit is called Euler's constant and is denoted by
-      <m>\gamma</m>.  This says that for <m>n</m> large, we have
-      <m>1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\approx</m>ln<m>\left(n+1\right)+\gamma</m>.
-      If we could approximate <m>\gamma</m>, then we could replace the
-      inequality <m>1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\geq
-      100</m> with the more tractable inequality
-      ln<m>\left(n+1\right)+\gamma</m> <m>\geq 0</m> and solve for
-      <m>n</m> in this.  This should tell us roughly how many terms
-      would need to be added in the Harmonic Series to surpass 100.
-      Approximating <m>\gamma</m> with a computer is not too bad.  We
-      could make <m>n</m> as large as we wish in
-      <m>\left(1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\right)-</m>ln<m>\left(1+n\right)</m>
-      to make closer approximations for <m>\gamma</m>.  The real issue
-      is, <alert>HOW DO WE KNOW THAT</alert>
-      <me>
-        \limit{n}{\infty}{\left(\left(1+\frac{1}{2}+\frac{1}{3}+\cdots+
-        \frac{1}{n}\right)-\ln(n+1)\right)}
-      </me>
-      <alert>ACTUALLY EXISTS?</alert>
-    </p>
+      <idx><h>Euler, Leonhard</h></idx>
 
-    <p>
-      You might want to say that obviously it should, but let us point
-      out that as of the time we are writing this book it is not even
-      known if <m>\gamma</m> is rational or irrational.  So in our
-      opinion, the existence of this limit is not so obvious.  
-    </p>
-    <p>
-      This is
-      where the <xref ref="NIP" text="custom">NIP</xref> will come
-      into play. We will use it to show that this limit does in fact  
-      exist.  The details are in the following problem.
-    </p>
+      Leonhard Euler decided to tackle this problem in the following
+      way.  He decided to consider the
+      <men xml:id="EQUATIONEulerGamma">
+        \limit{n}{\infty}{\left[\left(1+\frac{1}{2}+\frac{1}{3}+\cdots+
+        \frac{1}{n}\right)-\ln(n+1)\right]} </men>.  This limit is
+        called Euler's constant and is traditionally denoted by
+        <m>\gamma</m>.  <xref ref="EQUATIONEulerGamma"
+        >Equation</xref> says that for very large values of <m>n</m>,
+        we have
+        <me>
+          1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\approx
+          \ln\left(n+1\right)+\gamma
+          </me>.
 
-    <problem>
-      <idx><h>Euler, Leonhard</h><h>Euler's constant
-      <m>(\gamma)</m></h><h>existence of</h></idx>
+          If we could approximate <m>\gamma</m>, then we could replace
+        the inequality
+        <m>1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\geq 100</m>
+        with the more tractable inequality
+        ln<m>\left(n+1\right)+\gamma</m> <m>\geq 0</m> and solve for
+        <m>n</m> in this.  This should tell us roughly how many terms
+        would need to be added in the Harmonic Series to surpass 100.
+        Approximating <m>\gamma</m> with a computer is not too bad.
+        We could make <m>n</m> as large as we wish in
+        <m>\left(1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\right)-</m>ln<m>\left(1+n\right)</m>
+        to make closer approximations for <m>\gamma</m>.  The real
+        issue is, how do we know that
 
-      <introduction>
-        <p>
-          The purpose of this problem is to show that
-          <me>
-            \lim_{n\rightarrow\infty}\left(\left(1+\frac{1}{2}+\frac{1}{3}+\cdots+ \frac{1}{n}\right)-\ln\left(n+1\right)\right)
+        <me>
+          \limit{n}{\infty}{\left[\left(1+\frac{1}{2}+\frac{1}{3}+\cdots+
+          \frac{1}{n}\right)-\ln(n+1)\right]}
           </me>
-          exists.
-        </p>
-      </introduction>
-      <task>
-        <statement>
-          <p>
-            Let
-            <m>x_n=\left(1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\right)-\ln\left(n+1
-            \right)</m>.  Use the following diagram to show
-            <me>
-              x_1\leq x_2\leq x_3\leq\cdots
-            </me>
-          </p>
-          <image width="84%" source="images/Ch6fig7.png" >
-            <shortdescription></shortdescription>
-          </image>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            Let
-            <m>z_n=\ln\left(n+1\right)-\left(\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n+1}
-            \right)</m>.  Use a similar diagram to show that
-            <m>z_1\leq z_2\leq z_3\leq\cdots</m>.
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            Let <m>y_n=1-z_n</m>.  Show that <m>\left(x_n\right)</m>
-            and <m>\left(y_n\right)</m> satisfy the hypotheses of the
-            nested interval property and use the <xref ref="NIP" text="custom">NIP</xref>  to conclude that
-            there is a real number <m>\gamma</m> such that
-            <m>x_n\leq\gamma\leq y_n</m> for all <m>n</m>.
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            Conclude that
-            <m>\lim_{n\rightarrow\infty}\left(\left(1+\frac{1}{2}+\frac{1}{3}+\cdots+
-            \frac{1}{n}\right)-\ln\left(n+1\right)\right)=\gamma</m>.
-          </p>
-        </statement>
-      </task>
-    </problem>
 
-    <problem>
-      <idx><h>Euler, Leonhard</h><h>Euler's constant
-      <m>(\gamma)</m></h><h>approximating</h></idx>
+          actually exists?  As of the time we are writing this book it
+          is not even known if <m>\gamma</m> is rational or
+          irrational.  So in our opinion, the existence of this limit
+          is not obvious.  And even if it were, a formal proof would
+          be required.
+    </p>
+    <p>
+      We will use the <xref ref="NIP" text="custom">NIP</xref> to show that this limit does in
+      fact exist.  The details are in the following problem.
+    </p>
 
-      <statement>
-        <p>
-          Use the fact that <m>x_n\leq\gamma\leq y_n</m> for all
-          <m>n</m> to approximate <m>\gamma</m> to three decimal
-          places.
-        </p>
-      </statement>
-    </problem>
+          <problem>
+            <idx><h>Euler, Leonhard</h><h>Euler's constant
+            <m>(\gamma)</m></h><h>existence of</h></idx>
 
-    <problem>
-      <idx><h>Euler, Leonhard</h><h>Euler's constant
-      <m>(\gamma)</m></h><h>slow convergence to</h></idx>
+            <!-- <introduction> -->
+            <!--   <p> -->
+            <!--     The purpose of this problem is to show that -->
+            <!--     <me> -->
+            <!--       \limit{n}{\infty}{\left[\left(1+\frac{1}{2}+\frac{1}{3}+\cdots+ \frac{1}{n}\right)-\ln\left(n+1\right)\right]} -->
+            <!--     </me> -->
+            <!--     exists. -->
+            <!--   </p> -->
+            <!-- </introduction> -->
+            <task>
+              <statement>
+                <p>
+                  Let
+                  <m>x_n=\left(1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\right)-\ln\left(n+1
+                  \right)</m>.  Use the following diagram to show
+                  <me>
+                    x_1\leq x_2\leq x_3\leq\cdots
+                  </me>
+                </p>
+                <image width="84%" source="images/Ch6fig7.png" >
+                  <shortdescription></shortdescription>
+                </image>
+              </statement>
+            </task>
+            <task>
+              <statement>
+                <p>
+                  Let
+                  <m>z_n=\ln\left(n+1\right)-\left(\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n+1}
+                  \right)</m>.  Use a similar diagram to show that
+                  <m>z_1\leq z_2\leq z_3\leq\cdots</m>.
+                </p>
+              </statement>
+            </task>
+            <task>
+              <statement>
+                <p>
+                  Let <m>y_n=1-z_n</m>.  Show that <m>\left(x_n\right)</m>
+                  and <m>\left(y_n\right)</m> satisfy the hypotheses of the
+                  nested interval property and use the <xref ref="NIP" text="custom">NIP</xref>  to conclude that
+                  there is a real number <m>\gamma</m> such that
+                  <m>x_n\leq\gamma\leq y_n</m> for all <m>n</m>.
+                </p>
+              </statement>
+            </task>
+            <task>
+              <statement>
+                <p>
+                  Conclude that
+                  <m>\limit{n}{\infty}{\left[\left(1+\frac{1}{2}+\frac{1}{3}+\cdots+
+                  \frac{1}{n}\right)-\ln\left(n+1\right)\right]}=\gamma</m>.
+                </p>
+              </statement>
+            </task>
+          </problem>
 
-      <task>
-        <statement>
-          <p>
-            Use the fact that for large <m>n</m>,
-            <m>1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\approx
-            \ln\left(n+1\right)+ \gamma</m> to determine approximately
-            how large <m>n</m> must be to make
-            <me>
-              1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\geq 100
-              </me>.
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            Suppose we have a supercomputer which can add 10 trillion
-            terms of the Harmonic Series per second.  Approximately
-            how many Earth Ages (the current age of the Earth) would
-            it take for this computer to sum the Harmonic Series until
-            it surpasses 100?
-          </p>
-        </statement>
-      </task>
-    </problem>
+          <!-- <problem> -->
+          <!--   <idx><h>Euler, Leonhard</h><h>Euler's constant -->
+          <!--   <m>(\gamma)</m></h><h>approximating</h></idx> -->
+
+          <!--   <statement> -->
+          <!--     <p> -->
+          <!--       Use the fact that <m>x_n\leq\gamma\leq y_n</m> for all -->
+          <!--       <m>n</m> to approximate <m>\gamma</m> to three decimal -->
+          <!--       places. -->
+          <!--     </p> -->
+          <!--   </statement> -->
+          <!-- </problem> -->
+
+          <problem>
+            <idx><h>Euler, Leonhard</h><h>Euler's constant
+            <m>(\gamma)</m></h><h>slow convergence to</h></idx>
+
+            <task>
+              <statement>
+                <p>
+                  Use the inequality <m>x_n\leq\gamma\leq y_n</m> for all
+                  <m>n</m> to approximate <m>\gamma</m> to three decimal
+                  places.
+
+                </p>
+</statement>
+            </task>
+
+            <task>
+              <statement>
+                <p>
+                  Use the fact that for large <m>n</m>,
+                  <m>1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\approx
+                  \ln\left(n+1\right)+ \gamma</m> to determine approximately
+                  how large <m>n</m> must be to make
+                  <me>
+                    1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}\geq 100
+                    </me>.
+                </p>
+              </statement>
+            </task>
+            <task>
+              <statement>
+                <p>
+                  Suppose we have a supercomputer which can add <m>10</m> trillion
+                  terms of the Harmonic Series per second.  Approximately
+                  how many times the current age of the Earth would
+                  it take for this computer to sum the Harmonic Series until
+                  it surpasses <m>100</m>?
+                </p>
+              </statement>
+            </task>
+          </problem>
   </section>
 
   <section xml:id="IVTandEVT-ProofOfIVT">
     <title>Proof of the Intermediate Value Theorem</title>
+
+    <idx><h>Intermediate Value Theorem (IVT)</h></idx> 
+
     <p>
-      We now have all of the tools we need to prove the <xref ref="IntermediateValueTheorem" text="custom">Intermediate
-      Value Theorem</xref> (<term>IVT</term>).
+      We now have all of the tools we need to prove the <xref
+      ref="IntermediateValueTheorem" text="custom">Intermediate Value
+      Theorem</xref> (<term>IVT</term>).
     </p>
 
     <theorem xml:id="IntermediateValueTheorem">
+      <title>Intermediate Value Theorem (IVT)</title>
+
+      <idx><h>Intermediate Value Theorem (IVT)</h></idx> 
+
       <statement>
         <p>
-          <term>Intermediate Value Theorem (IVT)</term>
-        </p>
-        <p>
-          <idx><h>Intermediate Value Theorem (IVT)</h></idx> 
-    
           Suppose <m>f(x)</m> is continuous on <m>[a,b]</m> and
           <m>v</m> is any real number between <m>f(a)</m> and
           <m>f(b)</m>.  Then there exists a real number
@@ -632,16 +697,32 @@
 
       <p>
         We will look at the case <m>f(a)\leq v\leq f(b)</m>.  Let
-        <m>x_1=a</m> and <m>y_1=b</m>, so we have <m>x_1\leq y_1</m>
-        and <m>f(x_1)\leq v\leq f(y_1)</m>.  Let <m>\,m_1</m> be the
+        <m>x_1=a</m> and <m>y_1=b</m>. So we have 
+
+        <me>
+          x_1\leq y_1\text{ and } f(x_1)\leq v\leq f(y_1)
+          </me>.  
+          Let <m>\,m_1</m> be the
         midpoint of <m>[\,x_1,y_1]</m> and notice that we have either
-        <m>f(m_1)\leq v</m> or <m>f(m_1)\geq v</m>.  If <m>f(m_1)\leq
+       
+        <me>
+f(m_1)\leq v\text{ or }f(m_1)\geq v
+</me>.  
+        If <m>f(m_1)\leq
         v</m> , then we relabel <m>x_2=m_1</m> and <m>y_2=y_1</m>.  If
         <m>f(m_1)\geq v</m> , then we relabel <m>x_2=x_1</m> and
-        <m>y_2=m_1</m>.  In either case, we end up with <m>x_1\leq
-        x_2\leq y_2\leq y_1</m>,
-        <m>y_2-x_2=\frac{1}{2}\left(y_1-x_1\right)</m>, <m>f(x_1)\leq
-        v\leq f(y_1)</m>, and <m>f(x_2)\leq v\leq f(y_2)</m>.
+        <m>y_2=m_1</m>.  In either case, we end up with 
+        <me>
+x_1\leq
+        x_2\leq y_2\leq y_1
+</me>,
+        <me>
+y_2-x_2=\frac{1}{2}\left(y_1-x_1\right)
+</me>, 
+<me>f(x_1)\leq
+v\leq f(y_1)
+</me>, and 
+<me>f(x_2)\leq v\leq f(y_2)</me>.
       </p>
 
       <p>

@@ -3,9 +3,11 @@
 
   <section  xml:id="TaylorSeries-IntFormRem">
     <title>The Integral Form of the Remainder</title>
-    <p>
-      Now that we have a rigorous definition of the convergence of a
-      sequence, let's apply this to Taylor series.  Recall that the
+
+    <idx><h>Remainder of the Taylor Series</h><h>Integral Form of</h></idx>  <p>
+
+    Now that we have a rigorous definition of the convergence of a
+      sequence, let<rsq/>s apply this to Taylor series.  Recall that the
       Taylor series of a function <m>f(x)</m> expanded about the point
       <m>a</m> is given by
       <me>
@@ -52,7 +54,7 @@
     </p>
 
     <p>
-      For the issue at hand (convergence of a Taylor series), we don't
+      For the issue at hand (convergence of a Taylor series), we don<rsq/>t
       need to analyze the series itself.  What we need to show is that
       the difference between the function and the <m>n</m>th partial
       sum converges to zero.  This difference is called the
@@ -69,6 +71,8 @@
     </p>
 
     <p>
+      <idx><h>Remainder of the Taylor Series</h><h>Integral Form of</h></idx>
+
       Recall  from <xref ref="TaylorsTheorem"></xref>
       from <xref ref="PowerSeriesQuestions"></xref> that,
       <md>
@@ -106,7 +110,7 @@
     </p>
 
     <theorem xml:id="THEOREMTaylorSeriesBnd">
-      <idx><h>series</h><h>Taylor's series</h></idx>
+      <idx><h>series</h><h>Taylor<rsq/>s series</h></idx>
       <statement>
         <p>
           If there exists a real number <m>B</m> such that
@@ -157,7 +161,7 @@
       <statement>
         <p>
           <idx>
-            <h>series</h><h>Taylor's series</h>
+            <h>series</h><h>Taylor<rsq/>s series</h>
             <h><m>f^{(n)}\lt B,\forall\  n\in\NN\imp</m> Taylor series converges</h>
           </idx>
           Prove <xref ref="THEOREMTaylorSeriesBnd"></xref>.  
@@ -223,14 +227,16 @@
     </p>
 
     <p>
-      Recall that <xref ref="CalcIn17th18thCentury"></xref>
-      we showed that if we define the function <m>E(x)</m> by the power series
-      <m>\sum_{n=0}^\infty\frac{x^n}{n!}</m> then <m>E(x+y)=E(x)E(y)</m>.
-      This, of course,
-      is just the familiar addition property of integer exponents extended to any real number.
-      In <xref ref="CalcIn17th18thCentury"></xref> we had to <em>assume</em>
-      that defining <m>E(x)</m> as a series was meaningful because we did not address the convergence of the series in that chapter.
-      Now that we know the series converges for any real number we see that the definition
+      Recall that in <xref ref="CalcIn17th18thCentury"></xref> we
+      showed that if we define the function <m>E(x)</m> by the power
+      series <m>\sum_{n=0}^\infty\frac{x^n}{n!}</m> then
+      <m>E(x+y)=E(x)E(y)</m>.  This, of course, is just the familiar
+      addition property of integer exponents extended to any real
+      number.  In <xref ref="CalcIn17th18thCentury"></xref> we had to
+      assume that defining <m>E(x)</m> as a series was meaningful
+      because we did not address the convergence of the series in that
+      chapter.  Now that we know the series converges for any real
+      number we see that the definition
       <me>
         f(x) = e^x = \sum_{n=0}^\infty\frac{x^n}{n!}
       </me>
@@ -247,12 +253,14 @@
     <p>
       Assuming that we can differentiate this series term<ndash/>by<ndash/>term it
       is straightforward to show that <m>f^\prime(x) = f(x)</m>. (We
-      can, but that proof will have to wait for a few more chapters.)
+      can, but that proof will have to wait  for <xref ref="PowerSeriesRedux-UnifConv"></xref>.) 
     </p>
     <p>
-      Along with Taylor's formula this can then be used to show that
-      <m>e^{a+b}=e^ae^b</m> more elegantly than the rather cumbersome proof in <xref ref="eq_ExponentAdditionProperty">equation</xref>,
-      as the following problem shows.
+      If term<ndash/>by<ndash/>term differentiation is valid we can
+      use Taylor<rsq/>s formula to show that <m>e^{a+b}=e^ae^b</m>
+      more elegantly than the rather cumbersome proof in <xref
+      ref="eq_ExponentAdditionProperty">equation</xref>, as the
+      following problem shows.
     </p>
 
     <problem>
@@ -269,23 +277,22 @@
     </problem>
 
     <p>
-      <xref ref="THEOREMTaylorSeriesBnd"></xref> is a nice <q>first
-      step</q> toward a rigorous theory of the convergence of Taylor
-      series, but it is not applicable in all cases.  For example,
-      consider the function <m>f(x)=\sqrt{1+x}</m>.  As we saw in
-      <xref ref="prob_SqrtSeriesProb"></xref>, this function<rsq/>s
-      Maclaurin series (the binomial series for
-      <m>\left(1+x\right)^{1/2})</m> appears to be converging to the
+      <xref ref="THEOREMTaylorSeriesBnd"></xref> is a nice first step
+      toward a rigorous theory of the convergence of Taylor series,
+      but it is not applicable in all cases.  For example, consider
+      the function <m>f(x)=\left(1+x\right)^{\frac12}</m>.  As we saw in <xref
+      ref="prob_SqrtSeriesProb"></xref>, the Maclaurin (binomial)
+      series for <m>\left(1+x\right)^{\frac12}</m> appears to be converging to the
       function for <m>x\in(-1,1)</m>.  While this is true, the above
       proposition does not apply. We can see this by finding a general
-      formula for the derivatives of <m>f(t)=(1+t)^{1/2}</m> as
+      formula for the derivatives of <m>f(x)=\left(1+x\right)^{\frac12}</m> as
       follows.
       <md>
-        <mrow>f^\prime(t)\amp =\frac{1}{2}(1+t)^{\frac{1}{2}-1}</mrow>
-        <mrow>f^{\prime\prime}(t)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)(1+t)^{\frac{1}{2}-2}</mrow>
-        <mrow>f^{\prime\prime\prime}(t)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2 \right)(1+t)^{\frac{1}{2}-3}</mrow>
+        <mrow>f^\prime(x)\amp =\frac{1}{2}(1+x)^{\frac{1}{2}-1}</mrow>
+        <mrow>f^{\prime\prime}(x)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)(1+x)^{\frac{1}{2}-2}</mrow>
+        <mrow>f^{\prime\prime\prime}(x)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2 \right)(1+x)^{\frac{1}{2}-3}</mrow>
         <mrow>\amp \vdots</mrow>
-        <mrow>f^{(n+1)}(t)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right) \cdots\left(\frac{1}{2}-n\right)(1+t)^{\frac{1}{2}-(n+1)}</mrow>
+        <mrow>f^{(n+1)}(x)\amp =\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right) \cdots\left(\frac{1}{2}-n\right)(1+x)^{\frac{1}{2}-(n+1)}</mrow>
         </md>.
     </p>
 
@@ -305,7 +312,7 @@
       an interval containing zero.  We need a more delicate argument
       to prove that
       <me>
-        \sqrt{1+x}=1+\frac{1}{2}x+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}x^2+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)}{3!}x^3+\cdots
+        \left(1+x\right)^{\frac12}=1+\frac{1}{2}x+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}x^2+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)}{3!}x^3+\cdots
       </me>
       is valid for <m>x\in(-1,1)</m>.  To accomplish that task, we
       will need to express the remainder of the Taylor series
@@ -318,20 +325,26 @@
 
 
   <section  xml:id="TaylorSeries-LagrFormRem">
-    <title>Lagrange's Form of the Remainder</title>
+    <title>Lagrange<rsq/>s Form of the Remainder</title>
+
+    <idx><h>Remainder of the Taylor Series</h><h>Lagrange Form of</h></idx>
+
     <p>
-      Joseph-Louis Lagrange
       <idx><h>Lagrange, Joseph-Louis</h></idx>
-      provided an alternate form for the remainder in Taylor series in his 1797 work <pubtitle>Th&#233;orie des functions analytiques.</pubtitle> Lagrange's form of the remainder is as follows.
+
+      Joseph<ndash/>Louis Lagrange 
+      provided an alternate form for the remainder of a Taylor series
+      in his 1797 work <pubtitle>Théorie des functions
+      analytiques</pubtitle> as
+      follows.
     </p>
 
     <theorem xml:id="thm_LagrangeRemainder">
+      <title>Lagrange<rsq/>s Form of the Remainder</title>
+      <idx><h>Remainder of the Taylor Series</h><h>Lagrange Form of</h></idx>
       <statement>
         <p>
-          <term>Lagrange's Form of the Remainder</term> 
-        </p>
-        <p>
-          <idx><h>Lagrange's form of the remainder</h></idx> 
+          <idx><h>Lagrange<rsq/>s form of the remainder</h></idx> 
           Suppose <m>f</m> is a function such that
           <m>f^{(n+1)}(t)</m> is continuous on an interval containing <m>a</m> and <m>x</m>.
           Then
@@ -345,13 +358,14 @@
 
     <proof>
       <p>
-        Note first that the result is true when <m>x=a</m> as both sides reduce to 0
-        (in that case <m>c=x=a</m>.)
-        We will prove the case where <m>a\lt x</m>;
-        the case <m>x\lt a</m> will be an exercise.
+        Note first that <xref ref="EQUATIONLagFormRemainder"
+        >equation</xref> is true when <m>x=a</m> as both sides reduce
+        to <m>0</m> (in that case <m>c=x=a</m>.)
       </p>
-
       <p>
+        We will prove the case
+        where <m>a\lt x</m>; the case <m>x\lt a</m> will be an
+        exercise.
         First, we already have
         <me>
           f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)=\frac{1}{n!} \int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}
@@ -361,95 +375,98 @@
           \int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}=\,\frac{f^{\,(n+1)}(c)}{n+1}(x-a)^{n+1}
         </me>
         for some <m>c</m> with <m>c\in[\,a,x]</m>.
-        To this end, let
-        <me>
-          M=\max_{a\le t\le x}\left(f^{(n+1)}(t)\right)
-        </me>
-        and
-        <me>
-          m=\min_{a\le t\le x}\left(f^{(n+1)}(t)\right)
-          </me>.
-      </p>
-
-      <p>
-        Note that for all <m>t\in[\,a,x]</m>,
-        we have <m>m\leq f^{(n+1)}(t)\leq M</m>.
-        Since <m>x-t\geq 0</m>, this gives us
-        <men xml:id="eq_LagRem1">
-          m\left(x-t\right)^n\leq f^{(n+1)}(t)(x-t)^n\leq M(x-t)^n
-        </men>
-        and so
-        <men xml:id="eq_LagRem2">
-          \int_{t=a}^xm\left(x-t\right)^n\dx{ t}\leq\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\leq \int_{t=a}^xM(x-t)^n\dx{ t}
-          </men>.
-      </p>
-
-      <p>
-        Computing the outside integrals, we have
-        <me>
-          m\int_{t=a}^x\left(x-t\right)^n\dx{ t}\leq\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\leq M\int_{t=a}^x(x-t)^n\dx{ t}
-        </me>
-        <men xml:id="eq_LagRem3">
-          m\frac{(x-a)^{n+1}}{n+1}\leq\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\leq M\frac{(x-a)^{n+1}}{n+1}
-        </men>
-        <me>
-          m\leq\frac{\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}}{\left(\frac{(x-a)^{n+1}}{n+1} \right)}\leq M
-          </me>.
-      </p>
-
-      <p>
-        Since
-        <me>
-          \frac{\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}}{\left(\frac{(x-a)^{n+1}}{n+1} \right)}
-        </me>
-        is a value that lies between the maximum and minimum of <m>f^{(n+1)}</m> on <m>[\,a,x]</m>,
-        then by the <xref ref="IntermediateValueTheorem" text="custom">Intermediate Value Theorem</xref>,
-        there must exist a number <m>c\in[\,a,x]</m> with
-        <me>
-          f^{(n+1)}(c)=\frac{\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}}{\left( \frac{(x-a)^{n+1}}{n+1}\right)}
-          </me>.
-      </p>
-      <aside>
-        
-        <p>
-          We have not mentioned the Intermediate Value Theorem until
-          now and the citation we<rsq/>ve given is from <xref
-          ref="IVTandEVT"></xref> which we have not yet reached. If it
-          feels like we are cheating, good. That means you feel the
-          need to conclusively justify every step in a proof before
-          going on to the next. This is exactly how you should feel.
-        </p>
-        <p>
-          However, sometimes the presentation of ideas can be made
-          clearer by taking them out of order. This is such a
-          case. We will return to, and prove, both the Intermediate
-          and Extreme Value Theorems in <xref
-          ref="IVTandEVT"></xref>.
-        </p>
-        <p>
-          So accept them as true for now, but
-          know that this proof is not concluded until the <xref ref="IntermediateValueTheorem" text="custom">Intermediate
-          Value Theorem</xref> has also been proved.
+          To this end, let
+          <me>
+            M=\max_{a\le t\le x}\left(f^{(n+1)}(t)\right)
+          </me>
+          and
+          <me>
+            m=\min_{a\le t\le x}\left(f^{(n+1)}(t)\right)
+            </me>.
         </p>
 
-      </aside>
+        <p>
+          Note that for all <m>t\in[\,a,x]</m>,
+          we have <m>m\leq f^{(n+1)}(t)\leq M</m>.
+          Since <m>x-t\geq 0</m>, this gives us
+          <men xml:id="eq_LagRem1">
+            m\left(x-t\right)^n\leq f^{(n+1)}(t)(x-t)^n\leq M(x-t)^n
+          </men>
+          and so
+          <men xml:id="eq_LagRem2">
+            \int_{t=a}^xm\left(x-t\right)^n\dx{ t}\leq\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\leq \int_{t=a}^xM(x-t)^n\dx{ t}
+            </men>.
+        </p>
 
-      <p>
-        This gives us
-        <me>
-          \int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}=\,\frac{f^{\,(n+1)}(c)}{n+1}(x-a)^{n+1}
-          </me>.
-      </p>
+        <p>
+          Computing the outside integrals, we have
+          <me>
+            m\int_{t=a}^x\left(x-t\right)^n\dx{ t}\leq\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\leq M\int_{t=a}^x(x-t)^n\dx{ t}
+          </me>
+          <men xml:id="eq_LagRem3">
+            m\frac{(x-a)^{n+1}}{n+1}\leq\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\leq M\frac{(x-a)^{n+1}}{n+1}
+          </men>
+          <me>
+            m\leq\frac{\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}}{\left(\frac{(x-a)^{n+1}}{n+1} \right)}\leq M
+            </me>.
+        </p>
 
-      <p>
-        And the result follows.
-      </p>
+        <p>
+          Since
+          <me>
+            \frac{\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}}{\left(\frac{(x-a)^{n+1}}{n+1} \right)}
+          </me>
+          is a value that lies between the maximum and minimum of <m>f^{(n+1)}</m> on <m>[\,a,x]</m>,
+          then by the <xref ref="IntermediateValueTheorem" text="custom">Intermediate Value Theorem</xref>,
+          there must exist a number <m>c\in[\,a,x]</m> with
+          <me>
+            f^{(n+1)}(c)=\frac{\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}}{\left( \frac{(x-a)^{n+1}}{n+1}\right)}
+            </me>.
+        </p>
+        <aside>
+          
+          <title>The Intermediate and Extreme Value Theorems</title>
+
+          <p>
+            We have not mentioned the <xref ref="IntermediateValueTheorem" text="custom">Intermediate Value Theorem</xref> until
+            now and the citation we<rsq/>ve given is from <xref
+            ref="IVTandEVT"></xref> which we have not yet reached. If it
+            feels like we are cheating, good. That means you feel the
+            need to conclusively justify every step in a proof before
+            going on to the next. This is exactly how you should feel.
+          </p>
+          <p>
+            However, sometimes the presentation of ideas can be made
+            clearer by taking them out of order. This is such a
+            case. We will return to, and prove, both the <xref ref="IntermediateValueTheorem" text="custom">Intermediate</xref>
+            and <xref ref="thm_EVT" text="custom">Extreme</xref> Value Theorems in <xref
+            ref="IVTandEVT"></xref>.
+          </p>
+          <p>
+            So accept them as true for now, but
+            know that this proof is not concluded until the <xref ref="IntermediateValueTheorem" text="custom">Intermediate
+            </xref> and  <xref ref="thm_EVT" text="custom">Extreme</xref> Value Theorems have also been proved.
+          </p>
+
+        </aside>
+
+        <p>
+          This gives us
+          <me>
+            \int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}=\,\frac{f^{\,(n+1)}(c)}{n+1}(x-a)^{n+1}
+            </me>.
+        </p>
+
+        <p>
+          And the result follows.
+        </p>
     </proof>
 
     <problem>
       <statement>
         <p>
-          <idx><h>Lagrange's form of the remainder</h><h><m>x\lt a</m></h></idx>
+          <idx><h>Lagrange<rsq/>s form of the remainder</h><h><m>x\lt a</m></h></idx>
+
           Prove <xref ref="thm_LagrangeRemainder"></xref> for the case where <m>x\lt a</m>. 
         </p>
       </statement>
@@ -474,19 +491,20 @@
       <idx><h>Extreme Value Theorem (EVT)</h></idx>
       <idx><h>Intermediate Value Theorem (IVT)</h></idx>
 
-      This is <em>not</em> Lagrange's proof.  He did not use the
-      integral form of the remainder.  However, this is similar to
-      Lagrange's proof in that he also used the <xref
+      This is not Lagrange<rsq/>s proof. In particular he did not use
+      the <xref ref="EQUATIONIntFormRemainder" text="custom">Integral
+      Form</xref> of the remainder.  However, this is similar to
+      Lagrange<rsq/>s proof in that he also used the <xref
       ref="IntermediateValueTheorem" text="custom">Intermediate Value
       Theorem</xref> (IVT) and <xref ref="thm_EVT"
-      text="custom">Extreme Value Theorem</xref> (EVT) much as we did
+      text="custom">Extreme Value Theorem</xref> (<term>EVT</term>) much as we did
       just now.
     </p>
     <p>
       <idx><h>Lagrange, Joseph-Louis</h></idx>
 
       In Lagrange<rsq/>s day, these were taken to be obviously true
-      for a continuous function and we have followed Lagrange's lead
+      for a continuous function and we have followed Lagrange<rsq/>s lead
       by assuming the <xref ref="IntermediateValueTheorem"
       text="custom">IVT</xref> and the <xref ref="thm_EVT"
       text="custom">EVT</xref>. However, in mathematics we need to
@@ -498,7 +516,7 @@
     </p>
 
     <p>
-      Also, a word of caution about this: Lagrange's form of the
+      Also, a word of caution about this: Lagrange<rsq/>s form of the
       remainder is <m>\frac{f^{\,(n+1)}(c)}{(n+1)!}</m>
       <m>(x-a)^{n+1}</m>, where <m>c</m> is some number between <m>a</m>
       and <m>x</m>.  The proof does not indicate what this <m>c</m>
@@ -523,20 +541,27 @@
       <task>
         <statement>
           <p>
-            Use the fact that
-            <m>\frac{1-(-x)^{n+1}}{1+x}=1-x+x^2-x^3+\cdots+(-x)^n</m> to
-            compute the remainder
-            <m>\frac{1}{1+x}-\left(1-x+x^2-x^3+\cdots+(-x)^n\right)</m>.
-            Specifically, compute this remainder when <m>x=1</m> and
-            conclude that the Taylor series does not converge to
-            <m>\frac{1}{1+x}</m> when <m>x=1</m>.
+            Use the identity
+            <me>\frac{1-(-x)^{n+1}}{1+x}=1-x+x^2-x^3+\cdots+(-x)^n</me>
+            to compute the remainder
+            <me>\frac{1}{1+x}-\left(1-x+x^2-x^3+\cdots+(-x)^n\right)</me>
+            exactly, in terms of <m>x</m>.
           </p>
         </statement>
       </task>
       <task>
         <statement>
           <p>
-            Compare the remainder in part a with the Lagrange form
+            Evaluate the remainder in part (a) when <m>x=1</m> and
+            explain how this shows that the Taylor series does not
+            converge to <m>\frac{1}{1+x}</m> when <m>x=1</m>.
+          </p>
+    </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Compare the remainder in part (a) with the Lagrange form
             of the remainder to determine what <m>c</m> is when
             <m>x=1</m>.
           </p>
@@ -553,15 +578,15 @@
             <me>
               \frac{(-1)^{n+1}(n+1)!}{(n+1)!(1+c)^{n+2}}=\frac{(-1)^{n+1}}{(1+c)^{n+2}}
             </me>
-            where <m>c\in[\,0,1]</m>.  It can be seen in part b that
-            <m>c\neq 0</m>.  Thus <m>1+c>1</m> and so by <xref
+            where <m>c\in[\,0,1]</m>.  Observe from part (c) that
+            <m>c\neq 0</m>.  Thus <m>1+c\gt1</m> and so by <xref
             ref="prob_sequences3"></xref> of <xref
             ref="Convergence"></xref>, the Lagrange remainder
             converges to <m>0</m> as <m>n\rightarrow\infty</m>.  This
-            argument would suggest that the Taylor series converges to
-            <m>\frac{1}{1+x}</m> for <m>x=1</m>.  However, we know from
-            part (a) that this is incorrect.  What is wrong with the
-            argument?
+            argument would suggest that the Taylor series does converge to
+            <m>\frac{1}{1+x}</m> for <m>x=1</m>.  However, we know
+            from part (a) that this is incorrect.  What is wrong with
+            the argument?
           </p>
         </statement>
       </task>
@@ -597,7 +622,7 @@
         then it suffices to show that the Lagrange form of the remainder converges to <m>0</m>.
         With this in mind, notice that
         <me>
-          f^{(n+1)}(t)=\left(\frac{1}{2}\right)\left(\frac{1}{2}-1\right)\cdots\left(\frac{1}{2}-n\right)\left(1+t\right)^{\frac{1}{2}-(n+1)}
+          f^{(n+1)}(x)=\left(\frac{1}{2}\right)\left(\frac{1}{2}-1\right)\cdots\left(\frac{1}{2}-n\right)\left(1+x\right)^{\frac{1}{2}-(n+1)}
         </me>
         and so the Lagrange form of the remainder is
         <me>
@@ -619,7 +644,7 @@
 
       <p>
         Since <m>\limitt{n}{\infty}{\frac{1}{2n+2}}=0=\limitt{n}{\infty}{0}</m>,
-        then by the Squeeze Theorem,
+        then by the <xref ref="thm_SqueezeTheorem" text="custom">Squeeze Theorem</xref>,
         <me>
           \lim_{n\rightarrow\infty}\abs{\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}}=0, \text{ so } \lim_{n\rightarrow\infty}\left(\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}\right)=0
           </me>.
@@ -657,9 +682,11 @@
     <p>
       To take care of the case where <m>-1\lt x\lt -\frac{1}{2}</m>,
       we will use yet another form of the remainder for Taylor series.
-      However before we tackle that,
-      we will use the Lagrange form of the remainder to address something mentioned in <xref ref="PowerSeriesQuestions"></xref>.
-      Recall that we noticed that the series representation
+      However before we tackle that, we will use the <xref
+      ref="thm_LagrangeRemainder" text="custom">Lagrange Form</xref>
+      of the remainder to resolve a puzzle that we mentioned in <xref
+      ref="PowerSeriesQuestions"></xref>.  Recall that we noticed that
+      the series representation
       <me>
         \frac{1}{1+x}=1-x+x^2-x^3+\cdots
       </me>
@@ -679,19 +706,25 @@
     </p>
 
     <problem>
-      <idx><h>Lagrange's form of the remainder</h><h> <m>\ln 2</m></h></idx>
+      <idx><h>Lagrange<rsq/>s form of the remainder</h><h> <m>\ln 2</m></h></idx>
       <task>
         <statement>
           <p>
-            Compute the Lagrange form of the remainder for the Maclaurin series for <m>\ln\left(1+x\right)</m>.
+            Compute the <xref ref="thm_LagrangeRemainder"
+            text="custom">Lagrange Form</xref> of the remainder for
+            the Maclaurin series of <m>\ln\left(1+x\right)</m>.
           </p>
         </statement>
       </task>
       <task>
         <statement>
           <p>
-            Show that when <m>x=1</m>,
-            the Lagrange form of the remainder converges to <m>0</m> and so the equation <m>\ln 2=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\cdots</m> is actually correct.
+            Show that when <m>x=1</m>, the Lagrange Form of the
+            remainder converges to <m>0</m> and so the equation
+            <me>
+            \ln 2=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\cdots
+            </me>
+            is actually correct.
           </p>
         </statement>
       </task>
@@ -702,8 +735,15 @@
 
 
   <section  xml:id="TaylorSeries-CauchyFormRem">
-    <title>Cauchy's Form of the Remainder</title>
-   
+    <title>Cauchy<rsq/>s Form of the Remainder</title>
+    <idx><h>Remainder of the Taylor Series</h><h>Cauchy Form of</h></idx>
+
+    <p>
+      In his 1823 work,
+      <foreign>Résumée des leçons données á l’ecole royale polytechnique sur le calcul infintésimal</foreign>, Augustin Cauchy
+      <idx><h>Cauchy, Augustin</h></idx>
+      provided another form of the remainder for Taylor series.
+    </p>
     <figure>
       <caption><url
                    href="https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/"
@@ -716,201 +756,119 @@
       <image width="35%" source="images/Cauchy.png" >
         <shortdescription></shortdescription>
       </image>
-      </figure>
-      <p>
-        In his 1823 work,
-        <foreign>Résumée des leçons données á l’ecole royale polytechnique sur le calcul infintésimal</foreign>, Augustin Cauchy
-        <idx><h>Cauchy, Augustin</h></idx>
-        provided another form of the remainder for Taylor series.
-      </p>
+    </figure>
 
-      <theorem xml:id="thm_CauchyRemainder">
-        <statement>
-          <p>
-            <term>Cauchy's Form of the Remainder</term>
-          </p>
-          <p>
-            <idx><h>sequences</h><h>Cauchy sequences</h><h>Cauchy's remainder</h></idx> 
-            Suppose <m>f</m> is a function such that
-            <m>f^{(n+1)}(t)</m> is continuous on an interval containing <m>a</m> and <m>x</m>.
-            Then
-            <men xml:id="EQUATIONCauchyFormRemainder">
-              f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)=\frac{f^{\, (n+1)}(c)}{n!}(x-c)^n(x-a)
-            </men>
-            where <m>c</m> is some number between <m>a</m> and <m>x</m>.
-          </p>
-        </statement>
-      </theorem>
+    <theorem xml:id="thm_CauchyRemainder">
+      <title>Cauchy<rsq/>s Form of the Remainder</title>
 
-      <problem>
-        <statement>
-          <p>
-            <idx><h>series</h><h>Taylor's series</h><h>Cauchy Remainder</h></idx>
-            Prove <xref ref="thm_CauchyRemainder"></xref>
-            using an argument similar to the one used in the proof of <xref ref="thm_LagrangeRemainder"></xref>.
-            Don't forget there are two cases to consider.
-          </p>
-        </statement>
-      </problem>
+      <idx><h>Remainder of the Taylor Series</h><h>Cauchy Form of</h></idx>
 
-      <p>
-        Using Cauchy's form of the remainder,
-        we can prove that the binomial series
-        <me>
-          1+\frac{1}{2}x+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}x^2+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)}{3!}x^3+\cdots
-        </me>
-        converges to <m>\sqrt{1+x}</m> for
-        <m>x\in(-1,0).</m>
-      </p>
-      <aside>
-        
-
-        <p>   
-          Strictly speaking we only need to show this for <m>x\in(-1,-1/2).
-          </m>In <xref ref="prob_Taylor_Series-Binomial_Series_and"></xref> 
-          we covered<m>x\in (-1/2,0)</m>.
+      <statement>
+        <p>
+          <idx><h>sequences</h><h>Cauchy sequences</h><h>Cauchy<rsq/>s remainder</h></idx> 
+          Suppose <m>f</m> is a function such that
+          <m>f^{(n+1)}(t)</m> is continuous on an interval containing <m>a</m> and <m>x</m>.
+          Then
+          <men xml:id="EQUATIONCauchyFormRemainder">
+            f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)=\frac{f^{\, (n+1)}(c)}{n!}(x-c)^n(x-a)
+          </men>
+          where <m>c</m> is some number between <m>a</m> and <m>x</m>.
         </p>
-      </aside> 
+      </statement>
+    </theorem>
 
-      <p>
-        With this in mind,
-        let <m>x</m> be a fixed number with
-        <m>-1\lt x\lt 0</m> and consider that the binomial series is the Maclaurin series for the function <m>f(x)=(1+x)^{\frac{1}{2}}</m>.
-        As we saw before,
-        <me>
-          f^{(n+1)}(t)=\left(\frac{1}{2}\right)\left(\frac{1}{2}-1\right)\cdots\left(\frac{1}{2}-n\right)\left(1+t\right)^{\frac{1}{2}-(n+1)}
-          </me>,
-
-          so the Cauchy form of the remainder is given by
-
-          
-          <me>
-            \frac{f^{\left(n+1\right)}\left(c\right)}{n!}{\left(x-c\right)}^n\left(x-0\right)=\frac{\left(\frac{1}{2}\right)\left(\frac{1}{2}-1\right)\dots
-            \left(\frac{1}{2}-n\right)}{n!}\frac{{\left(x-c\right)}^n}{{\left(1+c\right)}^{n+\frac{1}{2}}}\cdot
-            x
-          </me> 
-
-
-          where <m>c</m> is some number with <m>x\le c\le 0</m>.  Thus we have
-
-          
-          <me>
-            0\le
-            \left|\frac{f^{\left(n+1\right)}\left(c\right)}{n!}{\left(x-c\right)}^n\left(x-0\right)\right|=\left|\frac{\left(\frac{1}{2}\right)\left(\frac{1}{2}-1\right)\dots
-            \left(\frac{1}{2}-n\right)}{n!}\frac{{\left(x-c\right)}^n}{{\left(1+c\right)}^{n+\frac{1}{2}}}\cdot
-            x\right|
-          </me> 
-      </p>
-      <p>
-        Notice that if <m>-1\lt x\leq c</m>,<m></m> then <m>0\lt 1+x\leq 1+c</m>.
-        Thus <m>0\lt \frac{1}{1+c}\leq\frac{1}{1+x}</m> and <m>\frac{1}{\sqrt{1+c}}\leq\frac{1}{\sqrt{1+x}}</m>.
-        Thus we have
-        <me>
-          0\leq\left|\frac{\left(\frac{1}{2}\right)\left(\frac{1}{2}-1\right)\cdots\left(\frac{1}{2}-n\right)}{n!}\frac{(x-c)^nx}{(1+c)^{n+\frac{1}{2}}}\right|\leq\left(\frac{c-x}{1+c}\right)^n\frac{|\,x|}{\sqrt{1+x}}
-          </me>.
-      </p>
-
-      <problem>
-        <statement>
-          <p>
-            <idx><h>Binomial Series, the</h><h><m>g(c)=\frac{c-x}{1+c}</m> is increasing</h></idx>
-            <idx><h><m>g(c)=\frac{c-x}{1+c}</m> is increasing on <m>[x,0]</m></h></idx>
-            Suppose <m>-1\lt x\leq c\leq 0</m> and consider the function <m>g(c)=\frac{c-x}{1+c}</m>.
-            Show that on <m>[x,0]</m>,
-            <m>g</m> is increasing and use this to conclude that for <m>-1\lt x\leq c\leq 0</m>,
-            <me>
-              \frac{c-x}{1+c}\leq|x|
-              </me>.
-          </p>
-
-          <p>
-            Use this fact to finish the proof that the binomial series converges to
-            <m>\sqrt{1+x}</m> for <m>-1\lt x\lt 0</m>.
-          </p>
-        </statement>
-      </problem>
-
-
-
-
-
-
-      <p>
-        The proofs of both the Lagrange form and the Cauchy form of the
-        remainder for Taylor series made use of two crucial facts about
-        continuous functions.  First, we assumed the <xref ref="thm_EVT" text="custom">Extreme Value
-        Theorem</xref>: Any continuous function on a closed bounded interval
-        assumes its maximum and minimum somewhere on the interval.
-        Second, we assumed that any continuous function satisfied the
-        <xref ref="IntermediateValueTheorem" text="custom">Intermediate Value Theorem</xref>: If a continuous function takes on
-        two different values, then it must take on any value between
-        those two values.
-      </p>
-
-      <p>
-        Mathematicians in the late <m>1700</m>s and early <m>1800</m>s
-        typically considered these facts to be intuitively obvious.  This
-        was natural since our understanding of continuity at that time
-        was, solely, intuitive.  Intuition is a useful tool, but as we
-        have seen before it is also unreliable.  For example consider the
-        following function.
-        <mdn>
-          <mrow xml:id="xsin1x"> f(x)= 
-          \begin{cases}
-          x\sin\left(\frac{1}{x}\right),\amp \text{if } x\neq 0,\\
-          0, \amp \text{ if } x=0 
-          \end{cases} 
-          </mrow>
-          </mdn>.
-      </p>
-
-      <p>
-        Is this function continuous at 0?  Near zero its graph looks like
-        this: 
-      </p>
-
-      <figure>
-        <title>
-        </title>
-        <caption>
-          <xref ref="xsin1x">Formula</xref> near <m>0</m>.
-        </caption>
-        <image width="100%" source="images/Ch5fig4.png" > 
-          <shortdescription></shortdescription>
-        </image>
-      </figure>
-
-      <p>
-        But this graph must be taken with a grain of salt as <m>\sin
-        \left(\frac{1}{x}\right)</m> oscillates infinitely often as
-        <m>x</m> nears zero.
-      </p>
-
-      <p>
-        No matter what your guess may be, it is clear that it is hard to
-        analyze such a function armed with only an intuitive notion of
-        continuity.  We will revisit this example in the next chapter.
-      </p>
-
-      <p>
-        As with convergence, continuity is more subtle than it first appears.
-      </p>
-
-      <p>
-        We put convergence on solid ground by providing a completely
-        analytic definition in the previous chapter.  What we need to do
-        in the next chapter is provide a completely rigorous definition
-        for continuity.
-      </p>
-  </section>
-
-
-
-
-  <section  xml:id="TaylorSeries-AddProb">
-    <title>Additional Problems</title>
     <problem>
-      <idx><h>series</h><h>Taylor's series</h><h>drill problems</h></idx>
+      <statement>
+        <p>
+          <idx><h>series</h><h>Taylor<rsq/>s series</h><h>Cauchy Remainder</h></idx>
+          Prove <xref ref="thm_CauchyRemainder"></xref>
+          using an argument similar to the one used in the proof of <xref ref="thm_LagrangeRemainder"></xref>.
+          Don<rsq/>t forget there are two cases to consider.
+        </p>
+      </statement>
+    </problem>
+
+    <p>
+      Using Cauchy<rsq/>s form of the remainder,
+      we can prove that the binomial series
+      <me>
+        1+\frac{1}{2}x+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}x^2+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)}{3!}x^3+\cdots
+      </me>
+      converges to <m>\sqrt{1+x}</m> for
+      <m>x\in(-1,0).</m>
+    </p>
+    <aside>
+      
+
+      <p>   
+        Strictly speaking we only need to show this for <m>x\in(-1,-1/2)
+        </m>. We covered the case <m>x\in (-1/2,0)</m> in <xref ref="prob_Taylor_Series-Binomial_Series_and"></xref>. 
+        
+      </p>
+    </aside> 
+
+    <p>
+      With this in mind,
+      let <m>x</m> be a fixed number with
+      <m>-1\lt x\lt 0</m> and consider that the binomial series is the Maclaurin series for the function <m>f(x)=(1+x)^{\frac{1}{2}}</m>.
+      As we saw before,
+      <me>
+        f^{(n+1)}(t)=\left(\frac{1}{2}\right)\left(\frac{1}{2}-1\right)\cdots\left(\frac{1}{2}-n\right)\left(1+t\right)^{\frac{1}{2}-(n+1)}
+        </me>,
+
+        so the Cauchy form of the remainder is given by
+
+        
+        <me>
+          \frac{f^{\left(n+1\right)}\left(c\right)}{n!}{\left(x-c\right)}^n\left(x-0\right)=\frac{\left(\frac{1}{2}\right)\left(\frac{1}{2}-1\right)\dots
+          \left(\frac{1}{2}-n\right)}{n!}\frac{{\left(x-c\right)}^n}{{\left(1+c\right)}^{n+\frac{1}{2}}}\cdot
+          x
+        </me> 
+
+
+        where <m>c</m> is some number with <m>x\le c\le 0</m>.  Thus we have
+
+        
+        <me>
+          0\le
+          \left|\frac{f^{\left(n+1\right)}\left(c\right)}{n!}{\left(x-c\right)}^n\left(x-0\right)\right|=\left|\frac{\left(\frac{1}{2}\right)\left(\frac{1}{2}-1\right)\dots
+          \left(\frac{1}{2}-n\right)}{n!}\frac{{\left(x-c\right)}^n}{{\left(1+c\right)}^{n+\frac{1}{2}}}\cdot
+          x\right|
+        </me> 
+    </p>
+    <p>
+      Notice that if <m>-1\lt x\leq c</m>,<m></m> then <m>0\lt 1+x\leq 1+c</m>.
+      Thus <m>0\lt \frac{1}{1+c}\leq\frac{1}{1+x}</m> and <m>\frac{1}{\sqrt{1+c}}\leq\frac{1}{\sqrt{1+x}}</m>.
+      Thus we have
+      <me>
+        0\leq\left|\frac{\left(\frac{1}{2}\right)\left(\frac{1}{2}-1\right)\cdots\left(\frac{1}{2}-n\right)}{n!}\frac{(x-c)^nx}{(1+c)^{n+\frac{1}{2}}}\right|\leq\left(\frac{c-x}{1+c}\right)^n\frac{|\,x|}{\sqrt{1+x}}
+        </me>.
+    </p>
+
+    <problem>
+      <statement>
+        <p>
+          <idx><h>Binomial Series, the</h><h><m>g(c)=\frac{c-x}{1+c}</m> is increasing</h></idx>
+          <idx><h><m>g(c)=\frac{c-x}{1+c}</m> is increasing on <m>[x,0]</m></h></idx>
+          Suppose <m>-1\lt x\leq c\leq 0</m> and consider the function <m>g(c)=\frac{c-x}{1+c}</m>.
+          Show that on <m>[x,0]</m>,
+          <m>g</m> is increasing and use this to conclude that for <m>-1\lt x\leq c\leq 0</m>,
+          <me>
+            \frac{c-x}{1+c}\leq|x|
+            </me>.
+        </p>
+
+        <p>
+          Use this fact to finish the proof that the binomial series converges to
+          <m>\sqrt{1+x}</m> for <m>-1\lt x\lt 0</m>.
+        </p>
+      </statement>
+    </problem>
+
+
+
+    <problem>
+      <idx><h>series</h><h>Taylor<rsq/>s series</h><h>drill problems</h></idx>
       <introduction>
         <p>
           Find the <xref ref="EQUATIONIntFormRemainder"
@@ -918,8 +876,8 @@
           ref="EQUATIONLagFormRemainder" text="custom">Lagrange
           form</xref>, and <xref ref="EQUATIONCauchyFormRemainder"
           text="custom">Cauchy form</xref> of the remainder for Taylor
-          series for the following functions expanded about the given
-          values of <m>\,a</m>.
+          series of the following functions expanded about the given
+          values of <m>a</m>.
         </p>
       </introduction>
       <task>
@@ -963,14 +921,160 @@
             <m>f(x)=\cos x, a=\frac{\pi}{2}</m>
           </p>
         </statement>
-        <hint>
-          <p>
-            There are two cases depending on whether <m>n</m> is odd or even.
-          </p>
-</hint>
+        <!-- <hint> -->
+        <!--   <p> -->
+        <!--     There are two cases depending on whether <m>n</m> is odd or even. -->
+        <!--   </p> -->
+        <!-- </hint> -->
       </task>
     </problem>
+
+
+    <p>
+      The proofs of both the <xref ref="thm_LagrangeRemainder"
+      text="custom">Lagrange Form</xref> and the <xref
+      ref="thm_CauchyRemainder" text="custom">Cauchy Form</xref> of
+      the remainder of Taylor series made use of two crucial facts
+      about continuous functions.  First, we assumed the <xref
+      ref="thm_EVT" text="custom">Extreme Value Theorem</xref>: Any
+      continuous function on a closed bounded interval assumes its
+      maximum and minimum somewhere on the interval.  Second, we
+      assumed that any continuous function satisfied the <xref
+      ref="IntermediateValueTheorem" text="custom">Intermediate Value
+      Theorem</xref>: If a continuous function takes on two different
+      values, then it must take on any value between those two values.
+    </p>
+
+    <p>
+      Mathematicians in the late <m>1700</m>s and early <m>1800</m>s
+      typically considered these facts to be intuitively obvious.
+      This was natural since our understanding of continuity at that
+      time was solely intuitive.  Intuition is a useful tool but as we
+      have seen before it is also unreliable.  For example consider
+      the following function
+      <mdn>
+        <mrow xml:id="xsin1x"> f(x)= 
+        \begin{cases}
+        x\sin\left(\frac{1}{x}\right),\amp \text{if } x\neq 0,\\
+        0, \amp \text{ if } x=0 
+        \end{cases} 
+        </mrow>
+        </mdn>.
+    </p>
+
+    <p>
+      Is this function continuous at <m>0</m>?  Near zero its graph looks like
+      this: 
+    </p>
+
+    <figure>
+      <title>
+      </title>
+      <caption>
+        The graph of       
+        <m> f(x)= 
+        \begin{cases}
+        x\sin\left(\frac{1}{x}\right),\amp \text{if } x\neq 0 \\
+        0, \amp \text{ if } x=0 
+        \end{cases} 
+        </m>
+        near <m>0</m>.
+      </caption>
+      <image width="80%" source="images/Ch5fig4.png" > 
+        <shortdescription></shortdescription>
+      </image>
+    </figure>
+
+    <p>
+      It is impossible to show in the sketch but this graph oscillates infinitely often as
+      <m>x</m> nears zero.
+    </p>
+
+    <p>
+      No matter what your guess may be, it is clear that it is hard to
+      analyze such a function armed with only an intuitive notion of
+      continuity.  We will revisit this example in the next chapter.
+    </p>
+
+    <p>
+      As with convergence, continuity is more subtle than it first appears.
+    </p>
+
+    <p>
+      We put convergence on solid ground by providing a completely
+      analytic definition in the previous chapter.  What we need to do
+      in the next chapter is provide a completely rigorous definition
+      for continuity.
+    </p>
   </section>
+
+
+
+
+  <!--   <section  xml:id="TaylorSeries-AddProb"> -->
+  <!--     <title>Additional Problems</title> -->
+  <!--     <problem> -->
+  <!--       <idx><h>series</h><h>Taylor<rsq/>s series</h><h>drill problems</h></idx> -->
+  <!--       <introduction> -->
+  <!--         <p> -->
+  <!--           Find the <xref ref="EQUATIONIntFormRemainder" -->
+  <!--           text="custom">Integral form</xref>, <xref -->
+  <!--           ref="EQUATIONLagFormRemainder" text="custom">Lagrange -->
+  <!--           form</xref>, and <xref ref="EQUATIONCauchyFormRemainder" -->
+  <!--           text="custom">Cauchy form</xref> of the remainder for Taylor -->
+  <!--           series for the following functions expanded about the given -->
+  <!--           values of <m>\,a</m>. -->
+  <!--         </p> -->
+  <!--       </introduction> -->
+  <!--       <task> -->
+  <!--         <statement> -->
+  <!--           <p> -->
+  <!--             <m>f(x)=e^x</m>, <m>a=0</m> -->
+  <!--           </p> -->
+  <!--         </statement> -->
+  <!--       </task> -->
+  <!--       <task> -->
+  <!--         <statement> -->
+  <!--           <p> -->
+  <!--             <m>f(x)=\sqrt{x}</m>, <m>a=1</m> -->
+  <!--           </p> -->
+  <!--         </statement> -->
+  <!--       </task> -->
+  <!--       <task> -->
+  <!--         <statement> -->
+  <!--           <p> -->
+  <!--             <m>f(x)=(1+x)^\alpha</m>, <m>a=0</m> -->
+  <!--           </p> -->
+  <!--         </statement> -->
+  <!--       </task> -->
+  <!--       <task> -->
+  <!--         <statement> -->
+  <!--           <p> -->
+  <!--             <m>f(x)=\frac{1}{x}</m>, <m>a=3</m> -->
+  <!--           </p> -->
+  <!--         </statement> -->
+  <!--       </task> -->
+  <!--       <task> -->
+  <!--         <statement> -->
+  <!--           <p> -->
+  <!--             <m>f(x)=\ln x,\ a=2</m> -->
+  <!--           </p> -->
+  <!--         </statement> -->
+  <!--       </task> -->
+  <!--       <task> -->
+  <!--         <statement> -->
+  <!--           <p> -->
+  <!--             <m>f(x)=\cos x, a=\frac{\pi}{2}</m> -->
+  <!--           </p> -->
+  <!--         </statement> -->
+  <!--         <hint> -->
+  <!--           <p> -->
+  <!--             There are two cases depending on whether <m>n</m> is odd or even. -->
+  <!--           </p> -->
+  <!-- </hint> -->
+  <!--       </task> -->
+  <!--     </problem> -->
+  <!--   </section> -->
 
 
 </chapter>

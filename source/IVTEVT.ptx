@@ -53,7 +53,7 @@
       and <m>f(\frac{\pi}{2})=\frac{\pi}{2}</m>.  Thus according to
       the <xref ref="IntermediateValueTheorem"
       text="custom">IVT</xref>, there should be some number
-      <m>c\in[\,0,\frac{\pi}{2}]</m>, where <m>f(c)=0</m>.  The graph
+      <m>c\in[0,\frac{\pi}{2}]</m>, where <m>f(c)=0</m>.  The graph
       of <m>f(x)=x-\cos x</m> is shown below.
     </p>
 
@@ -99,8 +99,8 @@
       <statement>
         <p>
           Suppose we have two sequences of real numbers
-          <m>\left(x_n\right)</m>and <m>\left(y_n\right)</m> satisfying
-          the following conditions:
+          <m>\left(x_n\right)</m> and <m>\left(y_n\right)</m>
+          satisfying the following conditions:
         </p>
         <p>
           <ol>
@@ -152,7 +152,7 @@
       pass each other.  In fact, the following is true:
     </p>
 
-    <problem>
+    <problem xml:id="PROBLEMEndpointsNIP">
       <idx><h>Nested Interval Property</h><h>endpoints</h></idx>
       <statement>
         <p>
@@ -164,7 +164,7 @@
 
     <p>
       They are also coming together in the sense that
-      <m>\lim_{n\rightarrow\infty}\left(y_n-x_n\right)=0</m>.  The <xref ref="NIP" text="custom">NIP</xref> 
+      <m>\limit{n}{\infty}{\left(y_n-x_n\right)}=0</m>.  The <xref ref="NIP" text="custom">NIP</xref> 
       says that in this case there is a unique real number <m>c</m> in
       the middle of all of this: <m>x_n\leq c\leq y_n</m> for all
       <m>n\in\NN</m>.
@@ -195,9 +195,10 @@
           <p>
             Find two sequences of rational numbers
             <m>\left(x_n\right)</m>and <m>\left(y_n\right)</m> which
-            satisfy all four properties of the <xref ref="NIP" text="custom">NIP</xref>  and such that there is
-            no rational number <m>c</m> satisfying the conclusion of
-            the <xref ref="NIP" text="custom">NIP</xref>.
+            satisfy all four conditions of the <xref ref="NIP"
+            text="custom">NIP</xref> and such that there is no
+            rational number <m>c</m> satisfying the conclusion of the
+            <xref ref="NIP" text="custom">NIP</xref>.
           </p>
         </statement>
         <hint>
@@ -211,23 +212,27 @@
           <p>
             Find two sequences of rational numbers
             <m>\left(x_n\right)</m> and <m>\left(y_n\right)</m> which
-            satisfy all four properties of the <xref ref="NIP" text="custom">NIP</xref>  and such that there is a
-            rational number <m>c</m> satisfying the conclusion of the
-            <xref ref="NIP" text="custom">NIP</xref>.
+            satisfy all four conditions of the <xref ref="NIP"
+            text="custom">NIP</xref> and such that there is a rational
+            number <m>c</m> satisfying the conclusion of the <xref
+            ref="NIP" text="custom">NIP</xref>.
           </p>
         </statement>
       </task>
     </problem>
 
     <p>
-      You might find the name <q>Nested Interval Property</q> to be
-      somewhat curious.  One way to think about this property is to
-      consider that we have a sequence of nested closed intervals
-      <m>[x_1,y_1]\supseteq[x_2,y_2]\supseteq[x_3,y_3]\supseteq\cdots</m>
-      whose lengths <m>y_n-x_n</m> are shrinking to <m>0</m>.
-      The conclusion is that the intersection of these intervals is
-      non-empty and, in fact, consists of a single point.  That is,
-      <me>\bigcap_{n=1}^\infty[x_n,y_n]=\{c\}</me>.
+      You might find the name <term>Nested Interval Property</term> to
+      be somewhat curious since it doesn<rsq/>t explicitly identify
+      any intervals as such. But in light of <xref
+      ref="PROBLEMEndpointsNIP" ></xref> it should be clear that the
+      sequences <m>(x_n)</m> and <m>(y_n)</m> are the left and right
+      endpoints of a set of nested intervals
+      <m>[x_1,y_1]\supseteq[x_2,y_2]\supseteq[x_3,y_3]\supseteq\cdots</m>,
+      whose lengths <m>y_n-x_n</m> are shrinking to <m>0</m>.  The
+      conclusion says that the intersection of these intervals is
+      non<ndash/>empty and in fact, consists of a single point.  That
+      is, it says <me>\bigcap_{n=1}^\infty[x_n,y_n]=\{c\}</me>.
     </p>
 
     <p>
@@ -343,20 +348,27 @@
         the square root lies to half the size it was before.  Stated
         in more specific terms, in either case we have the same
         results:
-        <me>
-          x_1\leq x_2\leq y_2\leq y_1
-          </me>,
-          <me>
-            x_1^2\leq a\leq y_1^2
-            </me>,
-            <me>
-              x_2^2\leq a\leq y_2^2
-              </me>,
-              and
-              <me>
-                y_2-x_2=\frac{1}{2}\left(y_1-x_1\right)
-                </me>.
-      </p>
+
+        <md>
+
+          <mrow>
+            x_1\leq x_2\leq y_2\leq y_1,
+            \amp{}            \amp{}
+            x_1^2\leq a\leq y_1^2,
+            \amp{}\amp{}
+            x_2^2\leq a\leq y_2^2,
+          </mrow>
+          
+          <intertext>
+            and 
+          </intertext>
+
+          <mrow>
+            \amp{}
+            y_2-x_2=\frac{1}{2}\left(y_1-x_1\right).
+          </mrow>
+            </md>
+          </p>
 
       <p>
         Now we play the same game, but instead we start with the
@@ -367,19 +379,17 @@
         relabel <m>x_3=x_2</m> and <m>y_3=m_2</m>.  In either case, we
         end up with
 
+        <me>
+          x_1\leq x_2\leq x_3\leq y_3\leq y_2\leq y_1,
+        </me>
         <md>
           <mrow>
-            x_1\leq x_2\leq x_3\leq y_3\leq y_2\leq y_1
-            </mrow>
-            <mrow>
-              x_1^2\leq a\leq y_1^2,
-            </mrow>
-<mrow>
-  x_2^2\leq a\leq y_2^2,
-  </mrow>
-<mrow>
-  x_3^2\leq a\leq y_3^2,
-</mrow>
+            x_1^2\leq a\leq y_1^2,
+            \amp{}\amp{}
+            x_2^2\leq a\leq y_2^2,
+            \amp{}\amp{}
+            x_3^2\leq a\leq y_3^2,
+          </mrow>
             <intertext>
               and
             </intertext>
@@ -392,7 +402,7 @@
       </p>
 
       <p>
-        Continuing in this manner, we will produce two sequences,
+        Continuing in this manner, will produce two sequences,
         <m>\left(x_n\right)</m>and <m>\left(y_n\right)</m> satisfying
         the following conditions:
 
@@ -414,6 +424,8 @@
           <li>
             <title>Condition 3:</title>
             <p>
+
+
               <m>\forall</m> <m>n</m>, <m>x_n\leq y_n</m>
             </p>
           </li>
@@ -464,25 +476,27 @@
     <p>
       The bisection method we employed to prove <xref
       ref="thm_SqrtsExist"></xref> is also pretty typical of how we
-      will use the <xref ref="NIP" text="custom">NIP</xref>, as taking
-      midpoints ensures that we will create a sequence of nested
-      intervals. We will employ this strategy in the proofs of the
-      <xref ref="IntermediateValueTheorem" text="custom">IVT</xref>
-      and <xref ref="thm_EVT" text="custom">EVT</xref>. Deciding how
-      to relabel the endpoints of our intervals will be determined by
-      what we want to do with these two sequences of real numbers.
-      This will typically lead to a fifth property, which will be
-      crucial in proving that the <m>c</m> guaranteed by the <xref
-      ref="NIP" text="custom">NIP</xref> does what we want it to do.
+      will use the <xref ref="NIP" text="custom">NIP</xref>, as it
+      ensures that we will create a sequence of nested intervals with
+      meet all of the conditions specified in the <xref ref="NIP"
+      text="custom">NIP</xref>. We will employ this strategy in the
+      proofs of the <xref ref="IntermediateValueTheorem"
+      text="custom">IVT</xref> and <xref ref="thm_EVT"
+      text="custom">EVT</xref>. Deciding how to relabel the endpoints
+      of our intervals will be determined by what we want to do with
+      these two sequences of real numbers.  This will typically lead
+      to a fifth property, which will be crucial in proving that the
+      <m>c</m> guaranteed by the <xref ref="NIP"
+      text="custom">NIP</xref> does what we want it to do.
       Specifically, in the above example, we always wanted our
       candidate for <m>\sqrt{a}</m> to be in the interval
       <m>[\,x_n,y_n]</m>.  This judicious choice led to the extra
-      Condition 5: <m>\forall</m> <m>n,\,x_n^2\leq a\leq
-      y_n^2</m>.  In applying the <xref ref="NIP"
-      text="custom">NIP</xref> to prove the <xref
-      ref="IntermediateValueTheorem" text="custom">IVT</xref> and
-      <xref ref="thm_EVT" text="custom">EVT</xref>, Condition 5 is what
-      will change based on the property we want <m>c</m> to have.
+      Condition 5: <m>\forall</m> <m>n,\,x_n^2\leq a\leq y_n^2</m>.
+      In applying the <xref ref="NIP" text="custom">NIP</xref> to
+      prove the <xref ref="IntermediateValueTheorem"
+      text="custom">IVT</xref> and <xref ref="thm_EVT"
+      text="custom">EVT</xref>, Condition 5 is what will change based
+      on the property we want <m>c</m> to have.
     </p>
 
     <p>
@@ -743,31 +757,32 @@ v\leq f(y_1)
     </proof>
 
     <problem>
-      <statement>
+      <idx><h>Intermediate Value Theorem (IVT)</h><h>the case <m>f(a)\leq v\leq f(b)</m></h></idx>
+      <task>
+        <statement>
+          <p>
+            Turn the ideas of the previous paragraphs into a formal
+            proof of the <xref ref="IntermediateValueTheorem"
+            text="custom">IVT</xref> for the case <m>f(a)\leq v\leq
+            f(b)</m>.
+          </p>
+        </statement>
+      </task>
+
+      <task>
         <p>
-          <idx><h>Intermediate Value Theorem (IVT)</h><h>the case
-          <m>f(a)\leq v\leq f(b)</m></h></idx>
-
-          Turn the ideas of the previous paragraphs into a formal
-          proof of the <xref ref="IntermediateValueTheorem" text="custom">IVT</xref> for the case <m>f(a)\leq v\leq f(b)</m>.
+          The most straightforward way to handle the case <m>f(a)\geq
+          v\geq f(b)</m> is to modify the proof you created in part
+          (a).  the case.  However, there is a sneakier way.
         </p>
-      </statement>
-    </problem>
 
-    <problem>
-      <statement>
         <p>
-          <idx><h>Intermediate Value Theorem (IVT)</h><h>the case
-          <m>f(a)\geq v\geq f(b)</m></h></idx>
+          To prove the case <m>f(a)\geq v\geq f(b)</m> apply the
+          result in part (a) to the function <m>-f</m>. Be sure you explain why this is sufficient.
 
-          We can modify the proof of the case <m>f(a)\leq v\leq
-          f(b)</m> into a proof of the <xref ref="IntermediateValueTheorem" text="custom">IVT</xref> for the case <m>f(a)\geq
-          v\geq f(b)</m>.  However, there is a sneakier way to prove
-          this case by applying the case we have proven  to the function <m>-f</m>.  Do
-          this to prove the <xref ref="IntermediateValueTheorem" text="custom">IVT</xref> for the case <m>f(a)\geq v\geq
-          f(b)</m>.
         </p>
-      </statement>
+
+      </task>
     </problem>
 
     <problem>
@@ -790,10 +805,13 @@ v\leq f(y_1)
   <section xml:id="IVTandEVT-BWT">
     <title>The Bolzano<ndash/>Weierstrass Theorem</title>
     <p>
-      Once we introduced the <xref ref="NIP" text="custom">Nested Interval Property</xref>, the <xref ref="IntermediateValueTheorem" text="custom">Intermediate Value Theorem</xref>  followed pretty
-      readily.  The proof of <xref ref="thm_EVT" text="custom">Extreme Value Theorem</xref> takes a bit more work.  First we
-      need to show that a function that satisfies the conditions of the
-      <xref ref="thm_EVT" text="custom">EVT</xref> is bounded.
+      The <xref ref="IntermediateValueTheorem"
+      text="custom">Intermediate Value Theorem</xref> followed pretty
+      readily once we introduced the <xref ref="NIP"
+      text="custom">Nested Interval Property</xref>.  The proof of
+      <xref ref="thm_EVT" text="custom">Extreme Value Theorem</xref>
+      takes a bit more work.  First we need the result of <xref
+      ref="thm_CompactBounded" ></xref> below.
     </p>
 
     <theorem xml:id="thm_CompactBounded">
@@ -815,24 +833,27 @@ v\leq f(y_1)
       This says that for any positive integer <m>n</m>,
       there must exist <m>x_n\in[a,b]</m> such that <m>\abs{f(x_n)}>n</m>.
       (Otherwise <m>n</m> would be a bound for <m>f</m>.)
-      <alert>IF</alert> the sequence <m>\left(x_n\right)</m> converged to something in <m>[\,a,b]</m>,
-      say <m>c</m>, then we would have our contradiction.
-      Indeed, we would have <m>\lim_{n\rightarrow\infty}x_n=c</m>.
-      By the continuity of <m>f</m> at <m>c</m> and <xref ref="thm_LimDefOfContinuity"></xref>
-      of <xref ref="Continuity"></xref>,
-      we would have <m>\lim_{n\rightarrow\infty}f(x_n)=f(c)</m>.
-      This would say that the sequence <m>\left(f(x_n)\right)</m> converges,
-      so by <xref ref="lemma_BoundedConvergent"></xref>
-      of <xref ref="Convergence"></xref>, it must be bounded.
-      This would provide our contradiction,
-      as we had <m>|f(x_n)|>n</m>, for all positive integers <m>n</m>. <alert>QED?</alert>
+    </p>
+    <p>
+      <alert>IF</alert> the sequence <m>\left(x_n\right)</m> converges
+      to, say <m>c\in[a,b]</m>, then we would have our contradiction.
+      Indeed, we would have <m>\limit{n}{\infty}{x_n}=c</m>, and by
+      the continuity of <m>f</m> at <m>c</m> and <xref
+      ref="thm_LimDefOfContinuity"></xref> we would have
+      <m>\limit{n}{\infty}{f(x_n)}=f(c)</m> which implies that the
+      sequence <m>\left(f(x_n)\right)</m> converges. So by <xref
+      ref="lemma_BoundedConvergent"></xref> the sequence
+      <m>\left(f(x_n)\right)</m> must be bounded.  This would provide
+      our contradiction since, by construction
+      <m>\abs{f(x_n)}\gt{}n</m>, for all positive integers
+      <m>n</m>. <alert>QED?</alert>
     </p>
 
     <p>
-      This would all work well except for one little problem.
+      This would work well except for one little problem.
       The way it was constructed,
       there is no reason to expect the sequence
-      <m>\left(x_n\right)</m> to converge to anything and we can't make such an assumption.
+      <m>\left(x_n\right)</m> to converge to anything
       That is why we emphasized the <alert>IF</alert> above.
       Fortunately, this idea can be salvaged.
       While it is true that the sequence
@@ -946,8 +967,8 @@ v\leq f(y_1)
       <statement>
         <p>
           <idx><h>sequences</h><h>all subsequences of a convergent sequence converge</h></idx>
-          Suppose <m>\lim_{n\rightarrow\infty}x_n=c</m>.
-          Prove that <m>\lim_{k\rightarrow\infty}x_{n_k}=c</m> for any subsequence
+          Suppose <m>\limit{n}{\infty}{x_n}=c</m>.
+          Prove that <m>\limit{k}{\infty}{x_{n_k}}=c</m> for any subsequence
           <m>\left(x_{n_k}\right)</m> of <m>\left(x_n\right)</m>. 
         </p>
       </statement>
@@ -959,10 +980,10 @@ v\leq f(y_1)
     </problem>
 
     <p>
-      A very important theorem about subsequences was introduced by Bernhard Bolzano 
       <idx><h>Bolzano, Bernhard</h></idx>
-      and, later, independently proven 
       <idx><h>Weierstrass, Karl</h></idx>
+
+      A very important theorem about subsequences was introduced by Bernhard Bolzano and was later proven independently 
       by Karl Weierstrass.
       Basically, this theorem says that any bounded sequence of real numbers has a convergent subsequence.
     </p>
@@ -980,7 +1001,7 @@ v\leq f(y_1)
           that <m>x_n\in[\,a,b]</m>, <m>\forall</m> <m>n</m>.  Then
           there exists <m>c\in[\,a,b]</m> and a subsequence
           <m>\left(x_{n_k}\right)</m>, such that
-          <m>\lim_{k\rightarrow\infty}x_{n_k}=c</m>.
+          <m>\limit{k}{\infty}{x_{n_k}}=c</m>.
         </p>
       </statement>
     </theorem>
@@ -997,48 +1018,60 @@ v\leq f(y_1)
       <me>
         \left((-1)^{2k}\right)=\left(1,1,1,\ldots\right)
       </me>
-      converges to <m>1</m>.
-      This is not the only convergent subsequence,
-      as <m>\left((-1)^{2k+1}\right)=(-1,-1,-1,\,\ldots)</m> converges to <m>-1</m>.
-      Notice that if the sequence is unbounded, then all bets are off;
-      the sequence may have a convergent subsequence or it may not.
-      The sequences <m>\left(\left((-1)^n+1\right)n\right)</m> and
-      <m>\left(n\right)</m> represent these possibilities as the first has,
-      for example,
-      <m>\left(\left((-1)^{2k+1}+1\right)(2k+1)\right)=(0,0,0,\,\ldots)</m> and the second one has none.
+      converges to <m>1</m>.  This is not the only convergent
+      subsequence. For example, the subsequence
+      <me>
+        \left((-1)^{2k+1}\right)=(-1,-1,-1,\,\ldots)
+      </me>
+      also converges to <m>-1</m>.  Notice that if the sequence is
+      unbounded, then all bets are off. The sequence may have a
+      convergent subsequence or it may not.  The sequences
+
+      <md>
+        <mrow>
+          \left(\left((-1)^n+1\right)n\right) \amp{}\amp{}\text{ and }
+          \amp{}\amp{}\left(n\right)
+        </mrow>
+</md>
+
+represent these possibilities as the first
+contains for example, the convergent subsequence
+<m>\left(\left((-1)^{2k+1}+1\right)(2k+1)\right)=(0,0,0,\ldots)</m>
+and all subsequences of the the second diverge to infinity.
     </p>
 
     <p>
-      The Bolzano<ndash/>Weierstrass Theorem says that no matter how <q>random</q>
-      the sequence <m>\left(x_n\right)</m> may be,
-      as long as it is bounded then some part of it must converge.
-      This is very useful when one has some process which produces a <q>random</q>
-      sequence such as what we had in the idea of the alleged proof in <xref ref="thm_CompactBounded"></xref>.
+      The Bolzano<ndash/>Weierstrass Theorem says that no matter how 
+      the sequence <m>\left(x_n\right)</m> is produced,
+      as long as it is bounded then it contains a  convergent subsequence.
+      This can be very useful. In particular the sequence <m>(x_n)</m> that appears in our Alleged Proof
+      is bounded since <m>x_n\in [a,b]\  \forall \ n\in\NN</m>. So it contains a convegent subsequence.
     </p>
 
     <proof>
       <title>Sketch of a Proof of the Bolzano<ndash/>Weierstrass Theorem</title>
       <p>
         Suppose we have our sequence <m>\left(x_n\right)</m> such that
-        <m>x_n\in[a,b]</m>, <m>\forall</m> <m>n</m>.
-        To find our <m>c</m> for the subsequence to converge to we will use the <xref ref="NIP" text="custom">NIP</xref>. Since we are already using
-        <m>\left(x_n\right)</m> as our original sequence,
-        we will need to use different letters in setting ourselves up for the <xref ref="NIP" text="custom">NIP</xref>. With this in mind,
-        let <m>a_1=a</m> and <m>b_1=b</m>,
-        and notice that <m>x_n\in[a_1,b_1]</m> for infinitely many <m>n</m>.
-        (This is, in fact true for all <m>n</m>,
-        but you'll see why we said it the way we did.)
-        Let <m>m_1</m> be the midpoint of
-        <m>[a_1,b_1]</m> and notice that either
-        <m>x_n\in[a_1,m_1]</m> for infinitely many <m>n</m> or
-        <m>x_n\in[m_1,b_1]</m> for infinitely many <m>n</m>.
-        If <m>x_n\in[a_1,m_1]</m> for infinitely many <m>n</m>,
-        then we relabel <m>a_2=a_1</m> and <m>b_2=m_1</m>.
-        If <m>x_n\in[m_1,b_1]</m> for infinitely many <m>n</m>,
-        then relabel <m>a_2=m_1</m> and <m>b_2=b_1</m>.
-        In either case, we get <m>a_1\leq a_2\leq b_2\leq b_1</m>,
-        <m>b_2-a_2=\frac{1}{2}\left(b_1-a_1\right)</m>,
-        and <m>x_n\in[a_2,b_2]</m> for infinitely many <m>n</m>.
+        <m>x_n\in[a,b]</m>, <m>\forall</m> <m>n</m>, as in the Alleged
+        Proof above.  To find our <m>c</m> for the subsequence to
+        converge to we will use the <xref ref="NIP"
+        text="custom">NIP</xref>. Since we are already using
+        <m>\left(x_n\right)</m> as our original sequence, we will need
+        to use different letters in setting ourselves up for the <xref
+        ref="NIP" text="custom">NIP</xref>. With this in mind, let
+        <m>a_1=a</m> and <m>b_1=b</m>, and notice that
+        <m>x_n\in[a_1,b_1]</m> for infinitely many <m>n</m>.  (This
+        is, in fact true for all <m>n</m>, but you'll see why we said
+        it the way we did.)  Let <m>m_1</m> be the midpoint of
+        <m>[a_1,b_1]</m> and notice that either <m>x_n\in[a_1,m_1]</m>
+        for infinitely many <m>n</m> or <m>x_n\in[m_1,b_1]</m> for
+        infinitely many <m>n</m>.  If <m>x_n\in[a_1,m_1]</m> for
+        infinitely many <m>n</m>, then we relabel <m>a_2=a_1</m> and
+        <m>b_2=m_1</m>.  If <m>x_n\in[m_1,b_1]</m> for infinitely many
+        <m>n</m>, then relabel <m>a_2=m_1</m> and <m>b_2=b_1</m>.  In
+        either case, we get <m>a_1\leq a_2\leq b_2\leq b_1</m>,
+        <m>b_2-a_2=\frac{1}{2}\left(b_1-a_1\right)</m>, and
+        <m>x_n\in[a_2,b_2]</m> for infinitely many <m>n</m>.
       </p>
 
       <p>
@@ -1125,7 +1158,8 @@ v\leq f(y_1)
 
           <idx><h>Bolzano<ndash/>Weierstrass Theorem</h></idx>
 
-          Turn the ideas of the above outline into a formal proof of the Bolzano<ndash/>Weierstrass Theorem.
+          Turn the ideas of the above outline into a formal proof of
+          the Bolzano<ndash/>Weierstrass Theorem.
         </p>
       </statement>
     </problem>
@@ -1172,7 +1206,7 @@ v\leq f(y_1)
       consider the continuous function <m>f(x)=</m>tan<m>^{-1}x</m> defined on the (unbounded) interval <m>\left(-\infty,\infty\right)</m>.
     </p>
 
-    <image width="75%" source="images/Ch6fig8.png" >
+    <image width="75%" source="images/Ch6fig8-1.png" >
       <shortdescription></shortdescription>
     </image>
 
@@ -1289,8 +1323,10 @@ v\leq f(y_1)
       However, for non-empty sets which are bounded above, we have the following.
     </p>
 
-    <theorem xml:id="thm_LUB"><title>The Least Upper Bound Property (<term>LUBP</term>)</title>
+    <theorem xml:id="thm_LUB">
+      <title>The Least Upper Bound Property (<term>LUBP</term>)</title>
     <idx><h>Least Upper Bound Property</h></idx> 
+
     <statement>
       <p>
         Let <m>S</m> be a non<ndash/>empty subset of
@@ -1461,15 +1497,15 @@ v\leq f(y_1)
     </p>
 
     <theorem xml:id="thm_EVT">
+      <title>Extreme Value Theorem (EVT)</title>
+
+      <idx><h>Extreme Value Theorem (EVT)</h></idx> 
+
       <statement>
         <p>
-          <alert>Extreme Value Theorem (<term>EVT</term>)</alert>
-        </p>
-        <p>
-          <idx><h>Extreme Value Theorem (EVT)</h></idx> 
-          Suppose <m>f</m> is continuous on <m>[\,a,b]</m>.
-          Then there exists <m>c,d\in[\,a,b]</m> such that <m>f(d)\leq f(x)\leq f(c)</m>,
-          for all <m>x\in[\,a,b]</m>.
+          Suppose <m>f</m> is continuous on <m>[a,b]</m>.
+          Then there exists <m>c,d\in[a,b]</m> such that <m>f(d)\leq f(x)\leq f(c)</m>,
+          for all <m>x\in[a,b]</m>.
         </p>
       </statement>
     </theorem>
@@ -1481,15 +1517,15 @@ v\leq f(y_1)
         To this end,
         recall that <xref ref="thm_CompactBounded"></xref>
         tells us that <m>f[\,a,b]=\{f(x)|\,x\in[\,a,b]\}</m> is a bounded set.
-        By the LUBP, <m>f[\,a,b]</m> must have a least upper bound which we will label <m>s</m>,
-        so that <m>s=\sup f[\,a,b]</m>.
-        This says that <m>s\geq f(x)</m>,for all <m>x\in[\,a,b]</m>.
+        By the <xref ref="thm_LUB" text="custom">LUBP</xref>, <m>f[a,b]</m> must have a least upper bound which we will label <m>s</m>,
+        so that <m>s=\sup f[a,b]</m>.
+        This says that <m>s\geq f(x)</m>,for all <m>x\in[a,b]</m>.
         All we need to do now is find a <m>c\in[\,a,b]</m> with <m>f(c)=s</m>.
         With this in mind, notice that since <m>s=\sup f[\,a,b]</m>,
         then for any positive integer <m>n</m>,
         <m>s-\frac{1}{n}</m> is not an upper bound of <m>f[\,a,b]</m>.
         Thus there exists <m>x_n\in[\,a,b]</m> with<m>\,s-\frac{1}{n}\lt f(x_n)\leq s</m>.
-        Now, by the Bolzano<ndash/>Weierstrass Theorem,
+        Now, by the <xref ref="BolzanoWeierstrass" text="custom">Bolzano<ndash/>Weierstrass Theorem</xref>,
         <m>\left(x_n\right)</m> has a convergent subsequence<m>\,\left(x_{n_k}\right)</m> converging to some <m>c\in[\,a,b]</m>.
         Using the continuity of <m>f</m> at <m>c</m>,
         you should be able to show that <m>f(c)=s</m>.
@@ -1508,18 +1544,30 @@ v\leq f(y_1)
     </problem>
 
     <p>
-      Notice that we used the <xref ref="NIP" text="custom">NIP</xref>  to prove both the Bolzano-Weierstrass Theorem and the LUBP. This is really unavoidable,
-      as it turns out that all of those statements are equivalent in the sense that any one of them can be taken as the completeness axiom for the real number system and the others proved as theorems.
-      This is not uncommon in mathematics,
-      as people tend to gravitate toward ideas that suit the particular problem they are working on.
-      In this case,
-      people realized at some point that they needed some sort of completeness property for the real number system to prove various theorems.
-      Each individual's formulation of completeness fit in with his understanding of the problem at hand.
-      Only in hindsight do we see that they were really talking about the same concept:
-      the completeness of the real number system.
-      In point of fact,
-      most modern textbooks use the LUBP as the axiom of completeness and prove all other formulations as theorems.
-      We will finish this section by showing that either the Bolzano<ndash/>Weierstrass Theorem or the LUBP can be used to prove the <xref ref="NIP" text="custom">NIP</xref>. This says that they are all equivalent and that any one of them could be taken as the completeness axiom.
+      Notice that we used the <xref ref="NIP" text="custom">NIP</xref>
+      to prove both the Bolzano-Weierstrass Theorem and the <xref
+      ref="thm_LUB" text="custom">LUBP</xref>. This is really
+      unavoidable, as it turns out that all of those statements are
+      equivalent in the sense that any one of them can be taken as the
+      completeness axiom for the real number system and the others
+      proved as theorems.  This is not uncommon in mathematics, as
+      people tend to gravitate toward ideas that suit the particular
+      problem they are working on.  In this case, people realized at
+      some point that they needed some sort of completeness property
+      for the real number system to prove various theorems.  Each
+      individual's formulation of completeness fit in with his
+      understanding of the problem at hand.  Only in hindsight do we
+      see that they were really talking about the same concept: the
+      completeness of the real number system.  In point of fact, most
+      modern textbooks use the LUBP as the axiom of completeness and
+      prove all other formulations as theorems.  We will finish this
+      section by showing that either the <xref
+      ref="BolzanoWeierstrass"
+      text="custom">Bolzano<ndash/>Weierstrass Theorem</xref> or the
+      <xref ref="thm_LUB" text="custom">LUBP</xref> can be used to
+      prove the <xref ref="NIP" text="custom">NIP</xref>. This says
+      that they are all equivalent and that any one of them could be
+      taken as the completeness axiom.
     </p>
 
     <problem>

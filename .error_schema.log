@@ -1,4 +1,4 @@
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:773:0:ERROR:RELAXNGV:RELAXNG_ERR_NOELEM: Expecting an element nbsp, got nothing
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:1696:0:ERROR:RELAXNGV:RELAXNG_ERR_NOELEM: Expecting an element nbsp, got nothing
 /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:679:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element chapter has extra content: section
 /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:1:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element part has extra content: chapter
 /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:24:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element book has extra content: part

@@ -43,7 +43,9 @@
 
     <aside>
       <title>Sequence vs. Series</title>
+      
       <idx><h>Sequence vs. Series</h></idx>
+
       <p>
         We assume that you are familiar with the distinction between a
         sequence and a series from your Calculus course. However, for
@@ -236,9 +238,9 @@
 </p>
 
 <problem xml:id="prob_absolute_value">
+  <idx><h>absolute value</h></idx>
   <statement>
     <p>
-      <idx><h>absolute value</h></idx>
       Let <m>a</m> and <m>b</m> be real numbers with <m>b>0</m>.
       Prove <m>|a|\lt b</m> if and only if <m>-b\lt a\lt b</m>.
     </p>
@@ -327,9 +329,11 @@
 </p>
 
 <problem>
+
+  <idx><h>convergence</h><h>of a sequence</h><h>convergence to zero drill</h></idx>
+
   <introduction>
     <p>
-      <idx><h>convergence</h><h>of a sequence</h><h>convergence to zero drill</h></idx>
       Use <xref ref="def_ConvergeToZero" ></xref>  to prove the following.
     </p>
   </introduction>
@@ -410,10 +414,12 @@
 </p>
 
 <problem>
+
+  <idx><h>convergence</h><h>of a sequence</h><h>convergence to zero drill</h></idx>
+
   <statement>
     <p>
-    
-      <idx><h>convergence</h><h>of a sequence</h><h>convergence to zero drill</h></idx>
+      
 
       Use <xref ref="def_ConvergeToZero" ></xref>  to prove that
       <me>
@@ -424,7 +430,9 @@
 </problem>
 
 <problem xml:id="prob_sequences3">
+  
   <idx><h>limit</h><h><m>\limit{n}{\infty}{b^n}=0</m> if <m>-1\lt b\lt 1</m></h></idx>
+
   <introduction>
     <p>
       Let <m>b</m> be a nonzero real number with <m>|b|\lt 1</m> and let <m>\eps>0</m>.
@@ -502,14 +510,16 @@
 
 
   <problem xml:id="prob_sequences-not_converge_to_zero">
+
+    <idx><h>limit</h><h>definition of non-existence</h></idx>
+
     <task>
-      <statement>
-        <p>
-          <idx><h>limit</h><h>definition of non-existence</h></idx>
-          Negate <xref ref="def_ConvergeToZero" ></xref> to provide a formal
-          definition for <m>\limitt{n}{\infty}{s_n}\neq 0</m>.
-        </p>
-        </statement>
+    <statement>
+      <p>
+        Negate <xref ref="def_ConvergeToZero" ></xref> to provide a formal
+        definition for <m>\limitt{n}{\infty}{s_n}\neq 0</m>.
+      </p>
+    </statement>
     </task>
     <!-- <problem xml:id="prob_sequences4"> -->
     <!--   <idx><h>limit</h><h>definition of non-existence</h></idx> -->
@@ -746,9 +756,10 @@
     <statement>
       <p>
         <idx><h>limit</h><h><m>\limit{n}{\infty}{b^{\left(\frac{1}{n}\right)}}=1</m> if <m>b>0</m></h></idx>
-        Let <m>b>0</m>.
-        Use <xref ref="def_ConvergenceOfASequence" ></xref>  to prove
-        <m>\limitt{n}{\infty}{b^{\left(\frac{1}{n}\right)}}=1</m>. 
+
+        Let <m>b>0</m>.  Use <xref ref="def_ConvergenceOfASequence"
+        ></xref> to prove
+        <m>\limitt{n}{\infty}{b^{\left(\frac{1}{n}\right)}}=1</m>.
       </p>
     </statement>
     <hint>
@@ -760,7 +771,9 @@
   </problem>
 
   <problem xml:id="prob_series-geometric">
+    
     <idx><h>series</h><h>Geometric series</h><h>convergence/divergence conditions for</h></idx>
+
     <task>
       <statement>
         <p>
@@ -782,8 +795,10 @@
   </problem>
 
   <problem>
+    
     <idx><h>sequences</h><h>definition of divergence</h></idx>
     <idx><h>convergence</h><h>definition of nonconvergence of a sequence</h></idx>
+
     <task>
       <statement>
         <p>
@@ -811,7 +826,9 @@
   </problem>
   
   <problem>
+    
     <idx><h>convergence</h><h> of a sequence</h><h>implies the convergence of the absolute sequence</h></idx>
+
     <statement>
       <p>
         Prove that if <m>\limit{n}{\infty}{s_n}=s</m> then
@@ -823,7 +840,9 @@
   </problem>
 
   <problem>
+    
     <idx><h>sequences</h><h>limit is unique</h></idx>
+
     <task>
       <statement>
         <p>
@@ -856,8 +875,10 @@
   </problem>
 
   <problem>
+    
     <idx><h>sequences</h><h>difference of</h></idx>
     <idx><h>limit</h><h>of the difference of sequences</h></idx>
+
     <statement>
       <p>
         Prove that if <m>\limit{n}{\infty}{s_n}=s</m> and
@@ -868,7 +889,9 @@
   </problem>
 
   <problem>
+    
     <idx><h>sequences</h><h>lower and upper bounds for</h></idx>
+
     <task>
       <statement>
         <p>
@@ -891,6 +914,7 @@
 
   <problem xml:id="prob_RatioTest">
     <title>The Ratio Test</title>
+    
     <idx><h>sequences</h><h>Ratio Test for</h></idx>
 
     <introduction>
@@ -971,12 +995,15 @@
       </p>
 
       <lemma xml:id="Tri-RevTri-Ineq">
+        
         <idx><h>Triangle Inequalities</h></idx>
+        <idx><h>Triangle Inequalities</h><h>Triangle Inequality</h></idx>
+        <idx><h>Triangle Inequalities</h><h>Reverse Triangle Inequalitiy</h></idx>
+
         <statement>
           <p>
             <dl>
               <li xml:id="TriangleIneq">  <title>Triangle Inequality:</title>
-              <idx><h>Triangle Inequalities</h><h>Triangle Inequality</h></idx>
               <p>
                 Let <m>a</m> and <m>b</m> be real numbers.
                 Then
@@ -985,15 +1012,15 @@
                   </me>.
               </p>
               </li>
-              <li xml:id="InvTriangleIneq"> <title>Reverse Triangle Inequality:</title>
-              <idx><h>Triangle Inequalities</h><h>Reverse Triangle Inequalitiy</h></idx>
-              <p>
-                Let <m>a</m> and <m>b</m> be real numbers.
-                Then
-                <me>
-                  \abs{a}-\abs{b}\leq\abs{a-b}
-                </me>
-              </p>
+              <li xml:id="InvTriangleIneq"> 
+                <title>Reverse Triangle Inequality:</title>
+                <p>
+                  Let <m>a</m> and <m>b</m> be real numbers.
+                  Then
+                  <me>
+                    \abs{a}-\abs{b}\leq\abs{a-b}
+                  </me>
+                </p>
               </li>
             </dl>
           </p>
@@ -1062,9 +1089,11 @@
       </p>
 
       <problem>
+
+        <idx><h>sequences</h><h>termwise sums of</h></idx>
+
         <statement>
           <p>
-            <idx><h>sequences</h><h>termwise sums of</h></idx>
             Prove <xref ref="thm_SumOfSequences"></xref>.
           </p>
           <p>
@@ -1136,7 +1165,7 @@
         <!--       </me>. -->
         <!--       To make this whole thing less than <m>\eps</m>, -->
         <!--       it makes sense to make each part less than <m>\frac{\eps}{2}</m>. -->
-        
+
         <!--   </p> -->
         <!--   <p> -->
         <!--     Fortunately, we can do that as the definitions of  -->
@@ -1160,9 +1189,11 @@
       <theorem xml:id="thm_LimitOfProduct">
         <title>Limit of the Product of Sequences is the Product of the Limits</title>
 
+        <idx><h>limit</h><h> of a product of sequences</h></idx>
+        <idx><h>limit</h><h>products of</h></idx>
+
         <statement>
           <p>
-            <idx><h>limit</h><h>products of</h></idx>
             If <m>\limit{n}{\infty}{a_n}=a</m> and <m>\limit{n}{\infty}{b_n}=b</m>,
             then <m>\limit{n}{\infty}{\left(a_n b_n\right)}=a b</m>.
           </p>
@@ -1229,7 +1260,9 @@
         </p>
 
         <lemma xml:id="lemma_BoundedConvergent">
+          
           <idx><h>sequences</h><h>convergence</h><h> convergent sequences are bounded</h></idx>
+
           <statement>
             <p>
               <alert>A Convergent Sequence Is Bounded.</alert>
@@ -1243,7 +1276,9 @@
 
 
         <problem xml:id="prob_BoundedConvergent">
+          
           <idx><h>sequences</h><h>convergence</h><h> convergent sequences are bounded</h></idx>
+
           <statement>
             <p>
               Prove <xref ref="lemma_BoundedConvergent"></xref>. 
@@ -1268,7 +1303,9 @@
         </problem>
 
         <problem>
+          
           <idx><h>sequences</h><h>if the sequence <m>\left(s_n\right)</m> is bounded then
+
           <m>\limit{n}{\infty}{\left(\frac{s_n}{n}\right)}=0</m></h></idx> 
           <statement>
             <p>
@@ -1300,9 +1337,11 @@
 
 
         <problem>
+
+          <idx><h>sequences</h><h>termwise product of</h></idx>
+
           <statement>
             <p>
-              <idx><h>sequences</h><h>termwise product of</h></idx>
               Prove <xref ref="thm_LimitOfProduct"></xref>.
             </p>
           </statement>
@@ -1330,10 +1369,12 @@
         </corollary>
 
         <problem>
+
+          <idx><h>sequences</h><h>constant multiples of</h></idx>
+          <idx><h>limit</h><h>of a constant times a sequence</h></idx>
+
           <statement>
             <p>
-              <idx><h>sequences</h><h>constant multiples of</h></idx>
-              <idx><h>limit</h><h>of a constant times a sequence</h></idx>
               Prove  <xref ref="cor_1"> </xref>.
             </p>
           </statement>
@@ -1347,7 +1388,7 @@
         <theorem xml:id="thm_LimitOfQuotient">
           <title>Limit of the Quotient of Sequences is the Quotient of the Limits</title>
 
-          <idx><h>limit</h><h>quotients of</h></idx>
+          <idx><h>limit</h><h>of a quotient of sequences</h></idx>
 
           <statement>
             <p>
@@ -1364,9 +1405,11 @@
 
 
         <problem>
+
+          <idx><h>sequences</h><h>termwise quotient of</h></idx>
+
           <statement>
             <p>
-              <idx><h>sequences</h><h>termwise quotient of</h></idx>
               Prove <xref ref="thm_LimitOfQuotient"></xref>.
             </p>
 
@@ -1420,6 +1463,8 @@
           <problem>
 
             <idx><h>limit</h><h>identifing the theorems used in a limit</h></idx>
+            <idx><h>limit</h><h> of ratios of polynomials</h></idx>
+
             <task>
               <statement>
                 <p> 
@@ -1441,7 +1486,6 @@
             <task>
               <statement>
                 <p>
-                  <idx><h>limit</h><h> of ratios of polynomials</h></idx>
                   Prove that 
                   <me>
                     \lim_{n\rightarrow\infty}\frac{a_0+a_1n+a_2n^2+
@@ -1488,7 +1532,9 @@
           </theorem>
 
           <problem>
+            
             <idx><h>limit</h><h>Squeeze Theorem</h></idx>
+
             <statement>
               <p>
                 Prove the <xref ref="thm_SqueezeTheorem" text="custom">Squeeze Theorem for Sequences</xref>. 
@@ -1608,10 +1654,12 @@
       </p>
 
       <definition xml:id="thm_divergence_of_a_sequence">
+
+        <idx><h>sequences</h><h>divergence of</h></idx>
+        <idx><h>divergence</h><h> of a sequence</h></idx>
+
         <statement>
           <p>
-            <idx><h>sequences</h><h>divergence of</h></idx>
-            <idx><h>divergence</h><h> of a sequence</h></idx>
             A sequence of real numbers <m>\left(s_n\right)_{n=1}^\infty</m> diverges if it does not converge to any <m>a\in\RR</m>.
           </p>
         </statement>
@@ -1840,10 +1888,12 @@
               </p>
 
               <lemma xml:id="DivToInfImpDiv">
+
+                <idx><h>sequences</h><h>divergence to <m>\infty</m></h></idx>
+                <idx><h>divergence</h><h>divergence to infinity implies divergence</h></idx>
+
                 <statement>
                   <p>
-                    <idx><h>sequences</h><h>divergence to <m>\infty</m></h></idx>
-                    <idx><h>divergence</h><h>divergence to infinity implies divergence</h></idx>
                     Show that if <m>\left(a_n\right)_{n=1}^\infty</m> diverges to infinity then <m>\left(a_n\right)_{n=1}^\infty</m> diverges.
                   </p>
                 </statement>
@@ -1857,7 +1907,9 @@
 
 
               <problem>
+                
                 <idx><h>sequences</h><h>the sequence of positive integers diverges to infinity</h></idx>
+
                 <task>
                   <statement>
                     <p>
@@ -1899,7 +1951,9 @@
               </p>
 
               <problem>
+                
                 <idx><h>sequences</h><h>termwise sums of</h></idx>
+
                 <introduction>
                   <p>
                     Suppose <m>\limit{n}{\infty}{a_n}=\infty</m> and <m>\limit{n}{\infty}{b_n}=\infty</m>.
@@ -1940,7 +1994,9 @@
               </p>
 
               <problem>
+                
                 <idx><h>sequences</h><h>divergence to <m>\infty</m></h></idx>
+
                 <introduction>
                   <p>
                     Suppose <m>\limit{n}{\infty}{a_n}=\infty</m> and
@@ -1985,8 +2041,10 @@
 
 
               <problem>
+                
                 <idx><h>sequences</h><h>divergence of</h></idx>
                 <idx><h>sequences</h><h> divergence, but not to infinity</h></idx>
+
                 <introduction>
                   <p>
                     Show that each of the following sequences diverges.
@@ -2019,7 +2077,9 @@
 
 
               <problem>
+                
                 <idx><h>sequences</h><h>divergence, but not to infinity</h></idx>
+
                 <introduction>
                   <p>
                     Suppose that <m>\left(a_n\right)_{n=1}^\infty</m> diverges
@@ -2044,8 +2104,10 @@
               </problem>
 
               <problem>
+                
                 <idx><h>series</h><h>Geometric Sequence</h><h>divergence condition</h></idx>
                 <idx><h>sequences</h><h>Geometric</h></idx>
+
                 <statement>
                   <p>
                     Show that if <m>\abs{r}>1</m> then

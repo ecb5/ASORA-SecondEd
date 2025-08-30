@@ -12,15 +12,20 @@
               </p>
             </hint>
           </problem>
+          
           <theorem xml:id="thm_CauchyCriterion">
-          <statement>
-            <p> 
-              <m>\forall</m>, <m>\eps \gt 0</m>, <m>\exists</m>, <m>N</m>, such 
-              <m>\forall</m>. <m>\eps \gt 0</m>. <m>\exists</m>. <m>N</m>. such
-              <m>\forall</m>; <m>\eps \gt 0</m>; <m>\exists</m>; <m>N</m>; such
-              <m>\forall</m>: <m>\eps \gt 0</m>: <m>\exists</m>: <m>N</m>: such 
-            </p>
-          </statement>
+            <title>The Cauchy Criterion</title>
+
+            <idx><h>Cauchy Criterion, the</h></idx>
+
+            <statement>
+              <p> 
+                <m>\forall</m>, <m>\eps \gt 0</m>, <m>\exists</m>, <m>N</m>, such 
+                <m>\forall</m>. <m>\eps \gt 0</m>. <m>\exists</m>. <m>N</m>. such
+                <m>\forall</m>; <m>\eps \gt 0</m>; <m>\exists</m>; <m>N</m>; such
+                <m>\forall</m>: <m>\eps \gt 0</m>: <m>\exists</m>: <m>N</m>: such 
+              </p>
+            </statement>
           </theorem>
         </subsection>
       </section>

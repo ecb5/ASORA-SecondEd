@@ -81,11 +81,12 @@
     </p>
 
     <p>
+      <idx><h>Leibniz, Gottfried Wilhelm</h></idx>
+
       Surely you included <m>1</m>.  Almost surely you included
       <m>3/5</m>.  But what about <m>0?</m> <m>-1?</m> Does your
       definition include <m>\sqrt{2}?</m> Do you consider
-      <m>\dx{x}</m> a number?  Leibniz<idx><h>Leibniz, Gottfried
-      Wilhelm</h></idx> did.  Any of the others? (And, yes, they
+      <m>\dx{x}</m> a number?  Leibniz did.  Any of the others? (And, yes, they
       really are all <q>numbers.</q>)
     </p>
 
@@ -360,6 +361,7 @@
 
     <problem>
       <title>The Quadratic Formula</title>
+      
       <idx><h>Quadratic Formula</h><h>first proof</h></idx>
 
       <statement>
@@ -397,10 +399,11 @@
 
     <problem>
       <title>Another Derivation of the Quadratic Formula</title>
+
+      <idx><h>Quadratic Formula</h><h>second proof</h></idx>
+
       <statement>
         <p>
-          <idx><h>Quadratic Formula</h><h>second proof</h></idx>
-
           Here is yet another way to solve a quadratic equation.  Read
           the development below with pencil and paper handy.  Confirm
           all of the computations that are not completely transparent to
@@ -637,16 +640,19 @@
 
     <problem xml:id="PROBLEMFermLittl1">
       <title>Fermat<rsq/>s Little Theorem, step 1</title>
-      <statement>
-        <p>
-          <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
-          to</h><h>if a prime divides a product of two numbers then it
-          divides one of the factors</h></idx>
 
-          Let <m>p</m> be a prime number and <m>a, b</m> positive
-          integers such that <m>p\, | (a\cdot b)</m>.  Show that
-          <m>p\,|a</m> or <m>p\,|b</m>.
-        </p>
+      <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
+      to</h><h>if a prime divides a product of two numbers then it
+      divides one of the factors</h></idx>
+
+      <statement>
+      <p>
+
+
+        Let <m>p</m> be a prime number and <m>a, b</m> positive
+        integers such that <m>p\, | (a\cdot b)</m>.  Show that
+        <m>p\,|a</m> or <m>p\,|b</m>.
+      </p>
       </statement>
       <hint>
         <p>
@@ -661,12 +667,13 @@
 
     <problem xml:id="PROBLEMFermLittl2">
       <title>Fermat<rsq/>s Little Theorem, step 2</title>
+
+      <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
+      to</h><h>if a prime divides an arbitrary product then it divides
+      one of the factors</h></idx>
+
       <statement>
         <p>
-          <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
-          to</h><h>if a prime divides an arbitrary product then it
-          divides one of the factors</h></idx>
-
           Let <m>p</m> be a prime number and let <m>a_1, a_2, \ldots,
           a_n</m> be positive integers such that <m>p\,|\left(a_1\cdot
           a_2\cdot a_3\cdot\ldots\cdot a_n\right)</m>.
@@ -686,21 +693,22 @@
 
     <problem xml:id="PROBLEMFermLittl3">
       <title>Fermat<rsq/>s Little Theorem, step 3</title>
-      <statement>
-        <p>
-          <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
-          to</h><h>if <m>p</m> is prime then <m>p</m> divides <m>p
-          \choose{}k</m></h></idx>
 
-          Let <m>p</m> be a prime number and let <m>k</m> be an
-          integer with <m>1\le k\le p-1</m>.
-        </p>
-        <p>
-          Use <xref ref="PROBLEMFermLittl2" ></xref> to prove that
-          <m>p\left|{p \choose{}k}\right.</m>, where <m>{p
-          \choose{}k}</m> is the binomial coefficient
-          <m>\frac{p!}{k!(p-k)!}</m>.
-        </p>
+      <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
+      to</h><h>if <m>p</m> is prime then <m>p</m> divides <m>p
+      \choose{}k</m></h></idx>
+
+      <statement>
+      <p>
+        Let <m>p</m> be a prime number and let <m>k</m> be an
+        integer with <m>1\le k\le p-1</m>.
+      </p>
+      <p>
+        Use <xref ref="PROBLEMFermLittl2" ></xref> to prove that
+        <m>p\left|{p \choose{}k}\right.</m>, where <m>{p
+        \choose{}k}</m> is the binomial coefficient
+        <m>\frac{p!}{k!(p-k)!}</m>.
+      </p>
       </statement>
       <hint>
         <p>
@@ -717,7 +725,9 @@
 
     <theorem xml:id="thm_FermatsLittleTheorem">
       <title>Fermat<rsq/>s Little Theorem</title>
+    
       <idx><h>Fermat<rsq/>s Little Theorem</h></idx>
+
       <statement>
         <p>
           Let <m>p</m> be any prime number. Use <xref
@@ -729,10 +739,11 @@
 
     <problem xml:id="DRILLPROBLEMFermLittl4">
       <title>Fermat<rsq/>s Little Theorem, step 4</title>
+
+      <idx><h>Fermat<rsq/>s Little Theorem</h></idx>
+
       <statement>
         <p>
-          <idx><h>Fermat<rsq/>s Little Theorem</h></idx>
-
           Prove Fermat<rsq/>s Little Theorem. 
         </p>
       </statement>

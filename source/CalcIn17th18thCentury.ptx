@@ -87,14 +87,15 @@
       </p>
 
       <p>
+        <idx><h>Newton, Isaac</h></idx>
+
         The elegant and expressive notation Leibniz invented was so
         useful that it has been retained through the years despite
         some profound changes in the underlying concepts.  For
         example, Leibniz and his contemporaries would have viewed the
         symbol <m>\dfdx{y}{x}</m> as an actual quotient of
         infinitesimals, whereas today we define it via the limit
-        concept first suggested by Newton.  <idx><h>Newton,
-        Isaac</h></idx>
+        concept first suggested by Newton.
       </p>
 
       <p>
@@ -136,6 +137,7 @@
       <title>Leibniz<rsq/>s Approach to the Product Rule</title>
       <p>
         <idx><h>Leibniz, Gottfried Wilhelm</h></idx> 
+
         The explanation of the product rule using differentials is a
         bit more involved, but Leibniz expected that mathematicans
         would be fluent enough to derive it.  The product <m>p=xv</m>
@@ -185,17 +187,19 @@
       </p>
 
       <p>
+        <idx><h>Newton, Isaac</h></idx>
+
         You should feel some discomfort at the idea of simply tossing
         the product <m>\dx{ x}\,\dx{ v}</m> aside because it is
         <q>comparatively small.</q> This means you have been well
-        trained, and have thoroughly internalized Newton<rsq/>s
-        <idx><h>Newton, Isaac</h></idx> dictum<nbsp /><xref
-        ref="newton45__sir_isaac_two_treat_quadr" />: <q>The smallest
-        errors may not, in mathematical matters, be scorned.</q> It is
-        logically untenable to toss aside an expression just because
-        it is small.  Even less so should we be willing to ignore an
-        expression on the grounds that it is <q>infinitely smaller</q>
-        than another quantity which is itself <q>infinitely small.</q>
+        trained, and have thoroughly internalized Newton<rsq/>s dictum
+        <xref ref="newton45__sir_isaac_two_treat_quadr" />: <q>The
+        smallest errors may not, in mathematical matters, be
+        scorned.</q> It is logically untenable to toss aside an
+        expression just because it is small.  Even less so should we
+        be willing to ignore an expression on the grounds that it is
+        <q>infinitely smaller</q> than another quantity which is
+        itself <q>infinitely small.</q>
       </p>
 
       <p>
@@ -324,17 +328,19 @@
 
       <p>
         <idx><h>Lagrange, Joseph-Louis</h></idx>
+
         Notice that there is no mention of limits of difference
         quotients or derivatives.  In fact, the term derivative was
-        not coined until 1797, by Lagrange as we will see in <xref ref="PowerSeriesQuestions-TaylorsFormula"></xref> .  In a sense, these
-        topics were not necessary at the time, as Leibniz and Newton
-        both assumed that the curves they dealt with had tangent
-        lines and, in fact, Leibniz explicitly used the tangent line
-        to relate two differential quantities.  This was consistent
-        with the thinking of the time and for the duration of this
-        chapter we will also assume that all quantities are
-        differentiable.  As we will see later this assumption leads
-        to difficulties.
+        not coined until 1797, by Lagrange as we will see in <xref
+        ref="PowerSeriesQuestions-TaylorsFormula"></xref> .  In a
+        sense, these topics were not necessary at the time, as Leibniz
+        and Newton both assumed that the curves they dealt with had
+        tangent lines and, in fact, Leibniz explicitly used the
+        tangent line to relate two differential quantities.  This was
+        consistent with the thinking of the time and for the duration
+        of this chapter we will also assume that all quantities are
+        differentiable.  As we will see later this assumption leads to
+        difficulties.
       </p>
 
       <p>
@@ -478,10 +484,13 @@
       </problem>
 
       <problem>
+
+        <idx><h>differentiation</h><h>power rule with fractional
+        exponents</h></idx>
+
         <statement>
           <p>
-            <idx><h>differentiation</h><h>power rule with fractional
-            exponents</h></idx> Suppose <m>y=x^{\frac{p}{q}}</m> with
+            Suppose <m>y=x^{\frac{p}{q}}</m> with
             <m>q\neq 0</m>, where <m>p</m> and <m>q</m> are integers.
             Show that 
             <me>
@@ -584,6 +593,7 @@
       <p>
         <idx><h>Bernoulli, Johann</h> </idx> 
         <idx><h>Brachistochrone problem, the</h></idx>
+        
         To compare 18th century and modern techniques we will consider
         
         <url
@@ -609,11 +619,13 @@
 
 
       <p>
+        <idx><h>Bernoulli, Johann</h><h>Bernoulli<rsq/>s
+        challenge</h></idx>
+
         Bernoulli posed this <q>path of fastest descent</q> problem to
         challenge the mathematicians of Europe and used his solution
         to demonstrate the power of Leibniz<rsq/> Calculus as well as his
-        own ingenuity.  <idx><h>Bernoulli, Johann</h><h>Bernoulli<rsq/>s
-        challenge</h></idx>
+        own ingenuity.  
       </p>
 
       <blockquote>
@@ -878,16 +890,17 @@
       </p>
 
       <p>
+        <idx><h>Leibniz, Gottfried Wilhelm</h></idx>
+
         In effect, in the modern formulation we have traded the
         simplicity and elegance of differentials for a comparatively
         cumbersome repeated use of the Chain Rule.  No doubt you
-        noticed when taking Calculus that in the differential
-        notation of Leibniz,<idx><h>Leibniz, Gottfried
-        Wilhelm</h></idx> the Chain Rule looks like we are simply <q>canceling</q>
-        a factor in the top and bottom of a fraction:
-        <m>\dfdx{y}{u}\dfdx{u}{x} = \dfdx{y}{x}</m>.  This is
-        because for 18th century mathematicians, that is exactly
-        what it was, and Leibniz designed his notation to reflect that viewpoint.
+        noticed when taking Calculus that in the differential notation
+        of Leibniz, the Chain Rule looks like we are simply
+        <q>canceling</q> a factor in the top and bottom of a fraction:
+        <m>\dfdx{y}{u}\dfdx{u}{x} = \dfdx{y}{x}</m>.  This is because
+        for 18th century mathematicians, that is exactly what it was,
+        and Leibniz designed his notation to reflect that viewpoint.
       </p>
 
       <p>
@@ -918,6 +931,7 @@
 
       <problem>
         <idx><h>Brachistochrone problem, the</h></idx>
+
         <statement>
           <p>
             Show that the equations <m>x=\frac{\phi-\sin
@@ -964,8 +978,10 @@
     </p>
 
     <definition xml:id="def_PowerSeries">
+      
       <idx><h>power series</h><h>definition</h></idx>
       <idx><h>Definition</h><h>power series</h></idx>
+
       <statement>
         <p>
           A <term>power series centered at
@@ -1118,7 +1134,9 @@
 </p>
 
 <example>
+  
   <idx><h><m>e^x</m></h><h>as the solution of an Initial Value Problem</h></idx>
+
   <statement>
     <p>
       Solve the following Initial Value problem: Find
@@ -1278,8 +1296,10 @@
 </problem>
 
 <definition xml:id="def_e">
+  
   <idx><h><m>e^x</m></h><h>definition</h></idx>
   <idx><h>Definition</h><h><m>e^x</m></h></idx>
+
   <statement>
     <p>
       Let <m>E(1)</m> be denoted by the number <m>e</m>.
@@ -1402,7 +1422,9 @@
 
 
 <problem xml:id="PROBLEMSinPwrSeries">
+  
   <idx><h>series</h><h>solutions of <m>\frac{\dx^2y}{\dx{ x}^2}=-y</m></h></idx>
+
   <introduction>
     <p>
       The ability to express complex functions as <term>power
@@ -1469,6 +1491,7 @@
 </problem>
 
 <problem xml:id="PROBLEMSinCosPwrSeries">
+  
   <idx><h><m>\sin x</m></h><h>derivative of the power series representation</h></idx>
   <idx><h>differentiation</h><h>of <m>\sin x</m> as a power series</h></idx>
 
@@ -1536,8 +1559,10 @@
 </problem>
 
 <problem xml:id="PROBLEMResultsFromGeometricSeries">
+  
   <idx><h>series</h><h>Geometric series</h><h>used to derive arctangent series</h></idx>
   <idx><h>series</h><h>of <m>\arctan x</m></h></idx>
+
   <task>
     <statement>
       <p>
@@ -1598,8 +1623,10 @@
 </problem>
 
 <problem xml:id="PROBLEMLnSeriesFromGeoSeries">
+  
   <idx><h>series</h><h>Geometric series</h><h>alternating</h></idx>
   <idx><h>series</h><h>Geometric series</h><h>derivation of the series representation of <m>\ln(1+x)</m> from</h></idx>
+
   <task>
     <statement>
       <p>
@@ -1669,12 +1696,14 @@
 </problem>
 
 <p>
+  <idx><h>Leibniz, Gottfried Wilhelm</h></idx>
+
+
   The power series for arctangent was known by <url
   href="https://mathshistory.st-andrews.ac.uk/Biographies/Gregory/"
   visual="mathshistory.st-andrews.ac.uk/Biographies/Gregory/">James
   Gregory</url> (1638-1675) and it is sometimes referred to as
-  <q>Gregory<rsq/>s series.</q> Leibniz<idx><h>Leibniz, Gottfried
-  Wilhelm</h></idx> independently discovered
+  <q>Gregory<rsq/>s series.</q> Leibniz independently discovered
   <m>\frac{\pi}{4}=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\cdots</m> by
   examining the area of a circle.  Though it gives us a means for
   approximating <m>\pi</m> to any desired accuracy, the power series
@@ -1823,7 +1852,9 @@
 </p>
 
 <problem>
+  
   <idx><h>Binomial Series, the</h><h>squaring the</h></idx>
+
   <statement>
     <p>
       Consider the power series representation
@@ -1842,7 +1873,9 @@
 </problem>
 
 <problem xml:id="prob_SqrtSeriesProb">
+  
   <idx><h>series</h><h>graph the square root power series</h></idx>
+
   <statement>
     <p>
       Let
@@ -1868,7 +1901,9 @@
 </p>
 
 <problem>
+  
   <idx><h><m>\pi</m></h><h>first series expansion</h></idx>
+
   <statement>
     <p>
       Use the power series <m>\displaystyle
@@ -1896,7 +1931,9 @@
 </p>
 
 <problem>
+  
   <idx><h><m>\pi</m></h><h>second series expansion</h></idx>
+
   <statement>
     <p>
       <ol marker="(a)">
@@ -2020,9 +2057,11 @@
 </problem>
 
 <problem>
+  
   <idx><h>Binomial Series, the</h></idx>
   <idx><h>Binomial Series, the</h><h>as a power series centered at zero</h></idx>
   <idx><h>series</h><h>Geometric series</h><h>differentiating</h></idx>
+
   <introduction>
     <p>
       Let <m>k</m> be a positive integer.  Find the power
@@ -2080,6 +2119,7 @@
 </figure>
 
 <problem><title>The Basel Problem</title>
+
 <idx><h>Euler, Leonhard</h><h>Basel Problem, the</h></idx>
 
 <introduction>
@@ -2149,69 +2189,71 @@
 </task>
 </problem>
 
-<problem><title>Euler<rsq/>s Formula</title>
-<idx><h>Euler, Leonhard</h><h>Euler<rsq/>s Formula</h></idx>
+<problem>
+  <title>Euler<rsq/>s Formula</title>
 
-<task>
-  <statement>
-    <p>
-      Use the power series expansion of <m>e^x</m>, <m>\sin
-      x,</m> and <m>\cos x</m> to derive <term>Euler<rsq/>s
-      Formula</term>:
-      <me>
-        e^{i\theta} = \cos\theta+i\sin\theta.
-      </me>
-    </p>
-  </statement>
-</task>
-<task>
-  <statement>
-    <p>
-      Use Euler<rsq/>s formula to derive the
-      Addition/Subtraction formulas from Trigonometry:
-      <me>
-        \sin(\alpha\pm\beta) = \sin\alpha\cos\beta\pm\sin\beta\cos\alpha
-      </me>
-      <me>
-        \cos(\alpha\pm\beta) = \cos\alpha\cos\beta\mp\sin\alpha\sin\beta
-      </me>
-    </p>
-  </statement>
-</task>
-<task>
-  <statement>
-    <p>
-      Use Euler<rsq/>s formula to show that
-      <me>
-        \sin 2\theta = 2\cos\theta\sin\theta
-      </me>
-      <me>
-        \cos 2\theta =\cos^2\theta-\sin^2\theta
-      </me>
-    </p>
-  </statement>
-</task>
-<task>
-  <statement>
-    <p>
-      Use Euler<rsq/>s formula to show that
-      <me>
-        \sin 3\theta = 3\cos^2\theta\sin\theta-\sin^3\theta
-      </me>
-      <me>
-        \cos 3\theta=\cos^3\theta-3\cos\theta\sin^2\theta
-      </me>
-    </p>
-  </statement>
-</task>
-<task>
-  <statement>
-    <p>
-      Find a formula <m>\sin(n\theta)</m> and
-      <m>\cos(n\theta)</m> for any positive integer <m>n</m>.
-    </p>
-  </statement>
-</task>
+  <idx><h>Euler, Leonhard</h><h>Euler<rsq/>s Formula</h></idx>
+
+  <task>
+    <statement>
+      <p>
+        Use the power series expansion of <m>e^x</m>, <m>\sin
+        x,</m> and <m>\cos x</m> to derive <term>Euler<rsq/>s
+        Formula</term>:
+        <me>
+          e^{i\theta} = \cos\theta+i\sin\theta.
+        </me>
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Use Euler<rsq/>s formula to derive the
+        Addition/Subtraction formulas from Trigonometry:
+        <me>
+          \sin(\alpha\pm\beta) = \sin\alpha\cos\beta\pm\sin\beta\cos\alpha
+        </me>
+        <me>
+          \cos(\alpha\pm\beta) = \cos\alpha\cos\beta\mp\sin\alpha\sin\beta
+        </me>
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Use Euler<rsq/>s formula to show that
+        <me>
+          \sin 2\theta = 2\cos\theta\sin\theta
+        </me>
+        <me>
+          \cos 2\theta =\cos^2\theta-\sin^2\theta
+        </me>
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Use Euler<rsq/>s formula to show that
+        <me>
+          \sin 3\theta = 3\cos^2\theta\sin\theta-\sin^3\theta
+        </me>
+        <me>
+          \cos 3\theta=\cos^3\theta-3\cos\theta\sin^2\theta
+        </me>
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Find a formula <m>\sin(n\theta)</m> and
+        <m>\cos(n\theta)</m> for any positive integer <m>n</m>.
+      </p>
+    </statement>
+  </task>
 </problem>
 
 </section>

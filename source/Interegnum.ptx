@@ -107,17 +107,20 @@
   </p>
 
   <problem xml:id="prob_HarmonicMotion">
+
+    <idx><h>Heat Equation, the</h></idx> 
+    <idx><h>Heat Equation, the</h><h>parameter <m>k</m> must be less
+    than zero</h></idx>
+
     <statement>
-      <p>
-        <idx><h>Heat Equation, the</h></idx> <idx><h>Heat Equation,
-        the</h><h>parameter <m>k</m> must be less than zero</h></idx>
-        Show that <m>T=Ce^{\rho^2kt}</m> satisfies the equation
-        <m>T^\prime=\rho^2k T</m>, where <m>C</m> is an arbitrary
-        constant, , and <m>\rho^2</m> is a physical constant called
-        the <term>thermal diffusivity</term>.  Use the physics of the
-        problem to show that if <m>u</m> is not constantly zero, then
-        <m>k\lt 0</m>.
-      </p>
+    <p>
+      Show that <m>T=Ce^{\rho^2kt}</m> satisfies the equation
+      <m>T^\prime=\rho^2k T</m>, where <m>C</m> is an arbitrary
+      constant, , and <m>\rho^2</m> is a physical constant called
+      the <term>thermal diffusivity</term>.  Use the physics of the
+      problem to show that if <m>u</m> is not constantly zero, then
+      <m>k\lt 0</m>.
+    </p>
     </statement>
     <hint>
       <p>
@@ -135,6 +138,7 @@
 
     <idx><h>Heat Equation, the</h></idx>
     <idx><h>Heat Equation, the</h><h>solving for <m>\xi(x)</m></h></idx>
+    
     <statement>
       <p>
         Show that <m>X=A\sin\left(px\right)+B\cos\left(px\right)</m>
@@ -149,7 +153,9 @@
   </problem>
 
   <problem>
+    
     <idx><h>Heat Equation, the</h><h>fundamental solutions of</h></idx>
+
     <statement>
       <p>
         Show that if <m>u_1</m> and <m>u_2</m> satisfy the equations
@@ -173,7 +179,9 @@
   </problem>
 
   <p>
+    
     <idx><h>Fourier, Jean Baptiste Joseph</h></idx>
+
     Putting all of these results together, Fourier surmised that the general solution to
 
     <md>
@@ -207,10 +215,10 @@
   </p>
 
   <problem xml:id="prob_SinOrthogonality">
+    <idx><h><m>\sin x</m></h><h>orthogonality of</h></idx>
+    <idx><h>orthogonality</h><h> of <m>\sin nx</m></h></idx>
     <statement>
       <p>
-        <idx><h><m>\sin x</m></h><h>orthogonality of</h></idx>
-        <idx><h>orthogonality</h><h> of <m>\sin nx</m></h></idx>
         Let <m>n</m> and <m>m</m> be positive integers.
         Show
         <me>
@@ -221,13 +229,16 @@
   </problem>
 
   <p>
-    Armed with the result from <xref ref="prob_SinOrthogonality"></xref>,
-    <idx><h>Fourier, Jean Baptiste Joseph</h></idx> Fourier could compute the coefficients <m>A_n</m> in the series representation
-    <m>f(x)=\sum_{n=1}^\infty A_n \sin\left(n\pi x\right)</m> in the following manner.
-    Since we are trying to find <m>A_n</m> for a particular
-    (albeit general)
-    <m>n</m>, we will temporarily change the index in the summation from <m>n</m> to <m>j</m>.
-    With this in mind, consider
+    <idx><h>Fourier, Jean Baptiste Joseph</h></idx>
+
+    Armed with the result from <xref
+    ref="prob_SinOrthogonality"></xref>, Fourier could compute the
+    coefficients <m>A_n</m> in the series representation
+    <m>f(x)=\sum_{n=1}^\infty A_n \sin\left(n\pi x\right)</m> in the
+    following manner.  Since we are trying to find <m>A_n</m> for a
+    particular (albeit general) <m>n</m>, we will temporarily change
+    the index in the summation from <m>n</m> to <m>j</m>.  With this
+    in mind, consider
     <md>
       <mrow>\int_{x=0}^1f(x)\sin\left(n\pi x\right)\dx{ x} \amp =\int_{x=0}^1\left(\sum_{j=1}^\infty A_j\text{ sin } \left(j\pi x\right)\right)\sin\left(n\pi x\right)\dx{ x}</mrow>
       <mrow>\amp =\sum_{j=1}^\infty A_j\int_{x=0}^1\sin\left(j\pi x\right)\sin\left(n\pi x\right)\dx{ x}</mrow>
@@ -261,9 +272,11 @@
     </example>
 
     <problem>
+
+      <idx><h>Fourier Series</h><h>sine series of an odd function</h></idx>
+
       <statement>
         <p>
-          <idx><h>Fourier Series</h><h>sine series of an odd function</h></idx>
           Let <m>n</m> be a positive integer.
           Show that if
           <me>
@@ -537,10 +550,12 @@ Let
     </p>
 
     <problem xml:id="prob_FourierDiverge">
+
+      <idx><h>Fourier Series</h></idx>
+      <idx><h>Fourier Series</h><h>divergent Fourier series example</h></idx>
+
       <statement>
         <p>
-          <idx><h>Fourier Series</h></idx>
-          <idx><h>Fourier Series</h><h>divergent Fourier series example</h></idx>
           Show that when <m>x=\frac{1}{4}</m>
 
           <md>
@@ -605,8 +620,10 @@ Let
 
 
       <problem xml:id="prob_Fourier_Series-orthogonality">
+        
         <idx><h><m>\cos (nx)</m></h><h>orthogonality of</h></idx>
         <idx><h>orthogonality</h><h> of <m>\cos nx</m></h></idx>
+
         <statement>
           <p>
             Let <m>n</m> and <m>m</m> be positive integers.
@@ -619,22 +636,25 @@ Let
       </problem>
 
         <problem xml:id="prob_fouriercoef">
+
+          <idx><h>Fourier Series</h><h>computing the coefficients</h></idx>
+
           <statement>
-            <p>
-              <idx><h>Fourier Series</h><h>computing the coefficients</h></idx>
-              Use the result of <xref ref="prob_Fourier_Series-orthogonality"></xref> to show that if
-              <me>
-                f(x)=\sum_{n=1}^\infty B_n\cos\left(n\pi x\right)
-              </me>
-              on <m>[0,1]</m>, then
-              <men xml:id="EQUATIONCosineCoeffFourier">
-                B_m=2\int_{x=0}^1f(x)\cos\left(m\pi x\right)\dx{ x}.{}
-              </men>
-            </p>
+          <p>
+            Use the result of <xref ref="prob_Fourier_Series-orthogonality"></xref> to show that if
+            <me>
+              f(x)=\sum_{n=1}^\infty B_n\cos\left(n\pi x\right)
+            </me>
+            on <m>[0,1]</m>, then
+            <men xml:id="EQUATIONCosineCoeffFourier">
+              B_m=2\int_{x=0}^1f(x)\cos\left(m\pi x\right)\dx{ x}.{}
+            </men>
+          </p>
           </statement>
         </problem>
 
         <problem>
+          
           <idx><h>Fourier Series</h><h>cosine series</h><h>the Fourier cosine series of <m>f(x)=x-\frac{1}{2}</m></h></idx>
           <statement>
             <p>
@@ -661,7 +681,9 @@ Let
           </problem>
 
           <problem>
+            
             <idx><h>Fourier Series</h><h>term by term differentiation of</h></idx>
+
             <task>
               <statement>
                 <p>

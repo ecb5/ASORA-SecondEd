@@ -110,7 +110,9 @@
     </p>
 
     <theorem xml:id="THEOREMTaylorSeriesBnd">
+    
       <idx><h>series</h><h>Taylor<rsq/>s series</h></idx>
+
       <statement>
         <p>
           If there exists a real number <m>B</m> such that
@@ -144,9 +146,11 @@
     </lemma>
 
     <problem>
+
+      <idx><h>Triangle Inequalities</h><h>for Integrals</h></idx>
+
       <statement>
         <p>
-          <idx><h>Triangle Inequalities</h><h>for Integrals</h></idx>
           Prove <xref ref="lemma_TriangleForIntegral"></xref>.
         </p>
       </statement>
@@ -158,12 +162,14 @@
     </problem>
 
     <problem>
+
+      <idx>
+        <h>series</h><h>Taylor<rsq/>s series</h>
+        <h><m>f^{(n)}\lt B,\forall\  n\in\NN\imp</m> Taylor series converges</h>
+      </idx>
+
       <statement>
         <p>
-          <idx>
-            <h>series</h><h>Taylor<rsq/>s series</h>
-            <h><m>f^{(n)}\lt B,\forall\  n\in\NN\imp</m> Taylor series converges</h>
-          </idx>
           Prove <xref ref="THEOREMTaylorSeriesBnd"></xref>.  
         </p>
       </statement>
@@ -264,11 +270,14 @@
     </p>
 
     <problem>
+
+      <idx><h><m>e^x</m></h><h><m>e^{a+b}=e^ae^b</m></h></idx>
+
       <statement>
         <p>
-          <idx><h><m>e^x</m></h><h><m>e^{a+b}=e^ae^b</m></h></idx>
-          <!-- Recall that if <m>f(x)=e^x</m> then <m>f^\prime(x) = e^x</m>. -->
-          Expand <m>e^x</m> about <m>a</m>          using the <xref ref="THEOREMTaylorSeriesBnd" text="custom">Taylor series expansion</xref>  to show that
+          Expand <m>e^x</m> about <m>a</m> using the <xref
+          ref="THEOREMTaylorSeriesBnd" text="custom">Taylor series
+          expansion</xref> to show that
           <me>
             e^{a+x}=e^a\cdot e^x
             </me>.
@@ -341,10 +350,12 @@
 
     <theorem xml:id="thm_LagrangeRemainder">
       <title>Lagrange<rsq/>s Form of the Remainder</title>
+    
       <idx><h>Remainder of the Taylor Series</h><h>Lagrange Form of</h></idx>
+      <idx><h>Lagrange<rsq/>s form of the remainder</h></idx> 
+
       <statement>
         <p>
-          <idx><h>Lagrange<rsq/>s form of the remainder</h></idx> 
           Suppose <m>f</m> is a function such that
           <m>f^{(n+1)}(t)</m> is continuous on an interval containing <m>a</m> and <m>x</m>.
           Then
@@ -463,10 +474,11 @@
     </proof>
 
     <problem>
+
+      <idx><h>Lagrange<rsq/>s form of the remainder</h><h><m>x\lt a</m></h></idx>
+
       <statement>
         <p>
-          <idx><h>Lagrange<rsq/>s form of the remainder</h><h><m>x\lt a</m></h></idx>
-
           Prove <xref ref="thm_LagrangeRemainder"></xref> for the case where <m>x\lt a</m>. 
         </p>
       </statement>
@@ -528,8 +540,10 @@
     </p>
 
     <problem>
+      
       <idx><h>series</h><h>Geometric series</h><h>as a Taylor series</h></idx>
       <idx><h>series</h><h>Geometric series</h></idx>
+
       <introduction>
         <p>
           This problem investigates the Taylor series representation
@@ -600,8 +614,10 @@
     </p>
 
     <theorem xml:id="thm_BinomialSeriesConverges">
+    
       <idx><h>series</h><h>Binomial Series, the</h></idx>
       <idx><h>Binomial Series, the</h><h>converges on the interval <m>[0,1]</m></h></idx>
+
       <statement>
         <p>
           The binomial series
@@ -671,9 +687,11 @@
     </p>
 
     <problem xml:id="prob_Taylor_Series-Binomial_Series_and">
+
+      <idx><h>series</h><h>Binomial Series, the</h><h>Binomial Series is a Taylor series</h></idx>
+
       <statement>
         <p>
-          <idx><h>series</h><h>Binomial Series, the</h><h>Binomial Series is a Taylor series</h></idx>
           Show that if <m>-\frac{1}{2}\leq x\leq c\leq 0</m>, then <m>|\frac{x}{1+c}|\leq 1</m> and modify the above proof to show that the binomial series converges to <m>\sqrt{1+x}</m> for <m>x\in\left[-\frac{1}{2},0\right]</m>.
         </p>
       </statement>
@@ -706,7 +724,9 @@
     </p>
 
     <problem>
+      
       <idx><h>Lagrange<rsq/>s form of the remainder</h><h> <m>\ln 2</m></h></idx>
+
       <task>
         <statement>
           <p>
@@ -736,13 +756,14 @@
 
   <section  xml:id="TaylorSeries-CauchyFormRem">
     <title>Cauchy<rsq/>s Form of the Remainder</title>
+    
     <idx><h>Remainder of the Taylor Series</h><h>Cauchy Form of</h></idx>
+    <idx><h>Cauchy, Augustin</h></idx>
 
     <p>
       In his 1823 work,
       <foreign>Résumée des leçons données á l’ecole royale polytechnique sur le calcul infintésimal</foreign>, Augustin Cauchy
-      <idx><h>Cauchy, Augustin</h></idx>
-      provided another form of the remainder for Taylor series.
+            provided another form of the remainder for Taylor series.
     </p>
     <figure>
       <caption><url
@@ -762,12 +783,12 @@
       <title>Cauchy<rsq/>s Form of the Remainder</title>
 
       <idx><h>Remainder of the Taylor Series</h><h>Cauchy Form of</h></idx>
+      <idx><h>sequences</h><h>Cauchy sequences</h><h>Cauchy<rsq/>s remainder</h></idx> 
 
       <statement>
         <p>
-          <idx><h>sequences</h><h>Cauchy sequences</h><h>Cauchy<rsq/>s remainder</h></idx> 
-          Suppose <m>f</m> is a function such that
-          <m>f^{(n+1)}(t)</m> is continuous on an interval containing <m>a</m> and <m>x</m>.
+              Suppose <m>f</m> is a function such that
+              <m>f^{(n+1)}(t)</m> is continuous on an interval containing <m>a</m> and <m>x</m>.
           Then
           <men xml:id="EQUATIONCauchyFormRemainder">
             f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)=\frac{f^{\, (n+1)}(c)}{n!}(x-c)^n(x-a)
@@ -778,9 +799,11 @@
     </theorem>
 
     <problem>
+
+      <idx><h>series</h><h>Taylor<rsq/>s series</h><h>Cauchy Remainder</h></idx>
+
       <statement>
         <p>
-          <idx><h>series</h><h>Taylor<rsq/>s series</h><h>Cauchy Remainder</h></idx>
           Prove <xref ref="thm_CauchyRemainder"></xref>
           using an argument similar to the one used in the proof of <xref ref="thm_LagrangeRemainder"></xref>.
           Don<rsq/>t forget there are two cases to consider.
@@ -846,10 +869,12 @@
     </p>
 
     <problem>
+
+      <idx><h>Binomial Series, the</h><h><m>g(c)=\frac{c-x}{1+c}</m> is increasing</h></idx>
+      <idx><h><m>g(c)=\frac{c-x}{1+c}</m> is increasing on <m>[x,0]</m></h></idx>
+
       <statement>
         <p>
-          <idx><h>Binomial Series, the</h><h><m>g(c)=\frac{c-x}{1+c}</m> is increasing</h></idx>
-          <idx><h><m>g(c)=\frac{c-x}{1+c}</m> is increasing on <m>[x,0]</m></h></idx>
           Suppose <m>-1\lt x\leq c\leq 0</m> and consider the function <m>g(c)=\frac{c-x}{1+c}</m>.
           Show that on <m>[x,0]</m>,
           <m>g</m> is increasing and use this to conclude that for <m>-1\lt x\leq c\leq 0</m>,
@@ -868,7 +893,9 @@
 
 
     <problem>
+      
       <idx><h>series</h><h>Taylor<rsq/>s series</h><h>drill problems</h></idx>
+
       <introduction>
         <p>
           Find the <xref ref="EQUATIONIntFormRemainder"

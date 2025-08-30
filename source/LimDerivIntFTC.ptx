@@ -93,9 +93,10 @@
       concept has become foundational to Calculus. 
     </p>
     <p>
+      <idx><h>Newton, Isaac</h></idx>
+
       To be sure, limits were always lurking in the background.  In
-      his attempts to justify his calculations, Newton <idx><h>Newton,
-      Isaac</h></idx> used what he called his doctrine of
+      his attempts to justify his calculations, Newton  used what he called his doctrine of
       <term>Ultimate Ratios</term>. For example, the ratio
       <m>\frac{(x+h)^2-x^2}{h} = \frac{2xh+h^2}{h} = 2x+h</m> becomes
       <m>2x</m> <term>ultimately</term>, or at the last instant of
@@ -104,8 +105,9 @@
       (<xref ref="grabiner81__origin_cauch_rigor_calculy"/>, p. 33).
     </p>
     <p>
-      Similarly Leibniz<rsq/>s<idx><h>Leibniz, Gottfried
-      Wilhelm</h></idx> <q>infinitely small</q> differentials <m>\dx{
+      <idx><h>Leibniz, Gottfried Wilhelm</h></idx>
+
+      Similarly Leibniz<rsq/>s <q>infinitely small</q> differentials <m>\dx{
       x}</m> and <m>\dx{ y}</m> can be seen as an attempt to get
       <q>arbitrarily close</q> to <m>x</m> and <m>y</m>, respectively.
       This is the idea at the heart of Calculus: to get arbitrarily
@@ -309,7 +311,9 @@
         ensure that <m>x\neq 1</m>.
       </p> 
       <problem>
+        
         <idx><h>limit</h><h><m>\limit{x}{a}{\frac{x^2-a^2}{x-a}}=2a</m></h></idx>
+
         <statement> 
           <p>
             Use the definition of a limit to verify that
@@ -319,8 +323,9 @@
       </problem>
 
       <problem>
-        <idx><h>limit</h><h>verifying
-        limits via continuity</h></idx>
+        
+        <idx><h>limit</h><h>verifying limits via continuity</h></idx>
+
         <introduction>
           <p> 
             Use the
@@ -442,9 +447,11 @@
       </p> 
 
       <theorem xml:id="thm_CalcLimits">
+
+        <idx><h>limit</h><h>properties of</h></idx>
+
         <statement>
           <p>
-            <idx><h>limit</h><h>properties of</h></idx>
             Suppose <m>\limit{x}{a}{f(x)}=L</m> and <m>\limit{x}{a}{g(x)}=M</m>, then
 
             <ol marker="(a)">
@@ -549,11 +556,13 @@
       </proof>
 
       <problem> 
+
+        <idx><h>limit</h><h>properties of</h></idx>
+        <idx><h>limit</h><h>verify limit laws from Calculus</h></idx>
+
         <statement> 
           <p> 
-            <idx><h>limit</h><h>properties
-            of</h></idx> <idx><h>limit</h><h>verify limit laws from
-            Calculus</h></idx> Prove parts (b) and (c) of <xref
+            Prove parts (b) and (c) of <xref
             ref="thm_CalcLimits"></xref>.  
           </p> 
         </statement>
@@ -563,12 +572,16 @@
         reformulation of the Squeeze Theorem.  
       </p> 
       <theorem xml:id="thm_SqueezeTheoremFunctions"> 
+        <title>Squeeze Theorem for Functions</title>
+
+        <idx><h>Squeeze Theorem</h><h>for functions</h></idx>
+
         <statement>
+          
+
+
           <p>
-            <alert>Squeeze Theorem for functions</alert> 
-          </p> 
-          <p>
-            <idx><h>Squeeze Theorem</h><h>for functions</h></idx> Suppose
+            Suppose
             <m>f(x)\le g(x) \le h(x)</m>, for <m>x</m> sufficiently close to
             <m>a</m> (but not equal to <m>a</m>).  If
             <m>\limit{x}{a}{f(x)}=L=\limit{x}{a}{h(x)}</m>, then
@@ -578,20 +591,22 @@
       </theorem>
 
       <problem> 
+
+        <idx><h>Squeeze Theorem</h><h>for functions</h></idx>
+
         <statement> 
           <p>
-            <idx><h>Squeeze Theorem</h><h>for
-            functions</h></idx> Prove the <xref
+            Prove the <xref
             ref="thm_SqueezeTheoremFunctions" text="custom">Squeeze
             Theorem for functions</xref>.  
           </p>
-        </statement>
-        <hint> 
-          <p> Use <xref
-          ref="thm_SqueezeTheorem"></xref>, the Squeeze Theorem for
-          sequences from <xref ref="Convergence"></xref>.  
-          </p>
-        </hint> 
+</statement>
+<hint> 
+  <p> Use <xref
+  ref="thm_SqueezeTheorem"></xref>, the Squeeze Theorem for
+  sequences from <xref ref="Convergence"></xref>.  
+  </p>
+</hint> 
       </problem> 
       <p> 
         Returning to <xref ref="EXAMPLESyncFunction"></xref> we see
@@ -605,8 +620,10 @@
         <shortdescription></shortdescription>
       </image>
       <problem>
+        
         <idx><h>limit</h><h><m>\limit{x}{0}{\textstyle\frac{\sin
-        x}{x}}=1</m></h></idx> 
+        x}{x}}=1</m></h></idx>
+
         <statement> 
           <p>
             Use the fact that <me>
@@ -759,7 +776,6 @@
     <title>The Derivative</title>
 
     <idx><h>differentiation</h><h>definition of the derivative</h></idx>
-    <!-- <idx><h>definition of the derivative</h></idx> -->
     <idx><h>Definition</h><h>derivative</h></idx>
 
     <statement>
@@ -828,7 +844,6 @@
     <title>The Derivative, An Alternative Definition</title>
 
     <idx><h>differentiation</h><h>definition of the derivative</h></idx>
-    <!-- <idx><h>definition of the derivative</h></idx> -->
     <idx><h>Definition</h><h>derivative</h></idx>
 
     <statement>
@@ -843,6 +858,7 @@
   </definition>
 
   <theorem xml:id="thm_DiffImpCont">
+  
     <idx><h>continuity</h><h>implied by differentiability</h></idx>
     <idx><h>differentiation</h><h>differentiability implies
     continuity</h></idx>
@@ -859,6 +875,7 @@
   </theorem>
 
   <problem> 
+    
     <idx><h>differentiation</h><h>differentiability implies
     continuity</h></idx>
 
@@ -957,6 +974,7 @@
 
   <theorem xml:id="thm_FermatsTheorem">
     <title>Fermat<rsq/>s   Theorem</title>
+  
     <idx><h>Fermat<rsq/>s Theorem</h></idx>
 
     <statement>
@@ -1033,7 +1051,9 @@
 
   <theorem xml:id="thm_MVT"> 
     <title>The Mean Value Theorem (<init>MVT</init>)</title>
+  
     <idx><h>Mean Value Theorem, the</h></idx>
+
     <statement> 
       <!-- <p>  -->
       <!--   <term>The Mean Value Theorem (<init>MVT</init>)</term> -->
@@ -1055,15 +1075,17 @@
   </p>
 
   <p>
-    
+    <idx><h>Newton, Isaac</h></idx>
+    <idx><h>Leibniz, Gottfried Wilhelm</h></idx>
+
     <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Rolle/"
          visual="mathshistory.st-andrews.ac.uk/Biographies/Rolle/">Michel
     Rolle</url> (1652<ndash/>1719) first stated the following theorem in
     1691.  Given this date and the nature of the theorem it would be
     reasonable to suppose that Rolle was one of the early developers of
     Calculus but this is not so.  In fact, Rolle was disdainful of both
-    Newton <idx><h>Newton, Isaac</h></idx> and
-    Leibniz<rsq/>s<idx><h>Leibniz, Gottfried Wilhelm</h></idx> versions
+    Newton  and
+    Leibniz<rsq/>s versions
     of Calculus, once deriding them as a collection of <q>ingenious
     fallacies.</q> It is a bit ironic that his theorem is so fundamental
     to the modern development of the Calculus he ridiculed.
@@ -1071,6 +1093,7 @@
 
   <theorem xml:id="thm_Rolle_s_Theorem">
     <title>Rolle<rsq/>s Theorem</title>
+  
     <idx><h>Rolle<rsq/>s Theorem</h></idx> 
     
     <statement> 
@@ -1187,7 +1210,9 @@
   </p>
 
   <problem> 
+    
     <idx><h>Mean Value Theorem, the</h></idx> 
+
     <statement> 
       <p> 
         Prove the <xref ref="thm_MVT" text="custom">Mean Value Theorem</xref>.  
@@ -1234,17 +1259,17 @@
   </proof>
 
   <problem>
+
+    <idx><h>differentiation</h><h>if <m>f^\prime\lt 0</m> on an
+    interval then <m>f</m> is decreasing</h></idx>
+
     <statement>
       <p>
-        <idx><h>differentiation</h><h>if <m>f^\prime\lt 0</m> on an
-        interval then <m>f</m> is decreasing</h></idx>
-
-
         Show that if <m>f^\prime(x) \lt 0</m> for every <m>x</m> in the
         interval <m>(a,b)</m> then <m>f</m> is decreasing on
         <m>(a,b)</m>.
       </p>
-    </statement>
+</statement>
   </problem>
 
   <corollary xml:id="cor_PosDerivIncFunc2">
@@ -1261,32 +1286,38 @@
   </corollary>
 
   <problem>
-    <statement>
-      <p>
-        <idx><h>differentiation</h><h><m>f^\prime(a)>0</m> implies
-        <m>f</m> is increasing nearby</h></idx>
 
-        Prove <xref ref="cor_PosDerivIncFunc2"></xref>.
-      </p>
+    <idx><h>differentiation</h><h><m>f^\prime(a)>0</m> implies
+    <m>f</m> is increasing nearby</h></idx>
+
+    <statement>
+    <p>
+      
+
+      Prove <xref ref="cor_PosDerivIncFunc2"></xref>.
+    </p>
     </statement>
   </problem>
 
   <problem>
+
+    <idx> <h>differentiation</h>
+    <h><m>f^\prime(a)\lt 0</m> implies <m>f</m> is decreasing
+    nearby</h>
+    </idx>
+
     <statement>
       <p>
-        <idx> <h>differentiation</h>
-        <h><m>f^\prime(a)\lt 0</m> implies <m>f</m> is decreasing nearby</h>
-        </idx>
         Prove the following.
       </p>
       <p>
-
         Suppose that <m>f</m> is differentiable on some interval
         <m>(a,b)</m>, and <m>f^\prime </m> is continuous on
         <m>(a,b)</m>. If <m>f^\prime(c)\lt 0</m> for some <m>c\in
         (a,b)</m> then there is an interval, <m>I\subset (a,b)</m>,
-        containing <m>c</m> such that for every <m>x, y</m> in <m>I</m>
-    where <m>x\ge y</m>, <m>f(x)\le f(y)</m>.  </p> </statement>
+        containing <m>c</m> such that for every <m>x, y</m> in
+      <m>I</m> where <m>x\ge y</m>, <m>f(x)\le f(y)</m>.  </p>
+    </statement>
   </problem>
 
   <problem xml:id="DRILLZeroDerivImpConst">
@@ -1524,6 +1555,8 @@ your Calculus course.
 
   <theorem xml:id="THEOREMFTCCauchy">
     <title>The Fundamental Theorem of Calculus (Cauchy)</title>
+
+    <idx><h>Fundamental Theorem of Calculus, The</h></idx>
 
     <p>
       Suppose <m>f\left(x\right)</m> is continuous on <m>[a,b]</m> and define

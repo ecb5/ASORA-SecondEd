@@ -88,11 +88,13 @@
   </p>
 
   <problem>
+
+    <idx><h><m>\QQ</m></h><h>rational numbers exist between rational numbers</h></idx>
+
     <statement>
-      <p>
-        <idx><h><m>\QQ</m></h><h>rational numbers exist between rational numbers</h></idx>
-        Let <m>a, b, c, d\in\NN</m> and find a rational number between <m>a/b</m> and <m>c/d</m>.
-      </p>
+    <p>
+      Let <m>a, b, c, d\in\NN</m> and find a rational number between <m>a/b</m> and <m>c/d</m>.
+    </p>
     </statement>
   </problem>
   
@@ -118,9 +120,11 @@
   </p>
 
   <theorem xml:id="thm_CommonDenominatorsExist">
+
+    <idx><h>common denominators</h></idx>
+
     <statement>
       <p>
-        <idx><h>common denominators</h></idx>
         Suppose <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m> are
         integers, with <m>b, d \neq 0</m>.
         There is a number <m>\alpha\in\QQ</m> such that <m>M\alpha=a/b</m> and
@@ -139,13 +143,16 @@
   </proof>
 
   <problem>
+
+    <idx><h>common denominators</h></idx>
+
     <statement>
-      <p>
-        <idx><h>common denominators</h></idx> Confirm that
-        <m>\alpha, M, \text{ and } N</m> as given in the proof of
-        <xref ref="thm_CommonDenominatorsExist"></xref>
-        satisfy the requirements of the theorem.
-      </p>
+    <p>
+      Confirm that
+      <m>\alpha, M, \text{ and } N</m> as given in the proof of
+      <xref ref="thm_CommonDenominatorsExist"></xref>
+      satisfy the requirements of the theorem.
+    </p>
     </statement>
   </problem>
 
@@ -177,6 +184,7 @@
 
   <p>
     <idx><h><m>\sqrt{2}</m></h><h>is irrational</h></idx> 
+
     Squares are simple.
     Two sets of parallel lines at right angles, all of the same length.
     What could be simpler?
@@ -248,7 +256,9 @@
   </p>
 
   <problem><title>Irrational Numbers</title>
+  
   <idx><h><m>\RR</m></h><h>irrational numbers drill, 5 parts</h></idx>
+
   <introduction>
     <p>
       Show that each of the following numbers is irrational:
@@ -292,7 +302,9 @@
   </problem>
 
   <problem>
+    
     <idx><h><m>\QQ</m></h><h>sums and products of rational and irrational numbers</h></idx>
+
     <introduction>
       <p>
         Determine if each of the following is always rational or always irrational. Justify your answers.
@@ -461,9 +473,11 @@
   </p>
 
   <theorem xml:id="thm_IrrationalBetweenIrrationals">
+
+    <idx><h><m>\RR</m></h><h>real numbers exist between real numbers</h></idx>
+
     <statement>
       <p>
-        <idx><h><m>\RR</m></h><h>real numbers exist between real numbers</h></idx>
         <ol marker="(a)">
           <li>
             <p>
@@ -492,6 +506,7 @@
     <statement>
       <p>
         <idx><h>Archimedean Property</h></idx>
+
         Given any two positive real numbers, <m>a</m> and <m>b</m>,
         there is a positive integer, <m>n</m> such that <m>na>b</m>.
       </p>
@@ -524,20 +539,21 @@
   </p>
 
   <p>
-    With the invention of Calculus,
-    mathematicians of the seventeenth century began to use objects which didn<rsq/>t satisfy the <term>Archimedean Property</term>
-    (in fact, so did Archimedes).
-    As we shall see in the next chapter,
-    when Leibniz wrote the first paper on his version of the Calculus,
-    he<idx><h>Leibniz, Gottfried Wilhelm</h><h>and infinitesimals</h></idx> followed this practice by explicitly laying out rules for manipulating infinitely small quantities
-    (infinitesimals).
-    These were taken to be actual numbers which are not zero and yet smaller than any real number.
-    The notation he used was <m>\dx{ x}</m>
-    (an infinitely small displacement in the <m>x</m> direction),
-    and <m>\dx{ y}</m>
-    (an infinitely small displacement in the <m>y</m> direction).
-    These symbols should look familiar to you.
-    They are the same <m>\dx{ y}</m> and <m>\dx{ x}</m> used to form the derivative symbol
+    <idx><h>Leibniz, Gottfried Wilhelm</h><h>and infinitesimals</h></idx>
+
+    With the invention of Calculus, mathematicians of the seventeenth
+    century began to use objects which didn<rsq/>t satisfy the
+    <term>Archimedean Property</term> (in fact, so did Archimedes).
+    As we shall see in the next chapter, when Leibniz wrote the first
+    paper on his version of the Calculus, he followed this practice by
+    explicitly laying out rules for manipulating infinitely small
+    quantities (infinitesimals).  These were taken to be actual
+    numbers which are not zero and yet smaller than any real number.
+    The notation he used was <m>\dx{ x}</m> (an infinitely small
+    displacement in the <m>x</m> direction), and <m>\dx{ y}</m> (an
+    infinitely small displacement in the <m>y</m> direction).  These
+    symbols should look familiar to you.  They are the same <m>\dx{
+    y}</m> and <m>\dx{ x}</m> used to form the derivative symbol
     <m>\dfdx{y}{x}</m> that you learned about in Calculus.
   </p>
 
@@ -549,15 +565,16 @@
   </p>
 
 <p>
+  <idx><h>Lagrange, Joseph-Louis</h></idx>
+
   When foundational issues came to the forefront,
   infinitesimals fell somewhat out of favor.
   You probably didn<rsq/>t use them very much in Calculus.
   Most of the time you probably used the prime notation,
   <m>f^\prime(x)</m> introduced by Lagrange
-<idx><h>Lagrange, Joseph-Louis</h></idx>
-in the eighteenth century.
-Some of the themes in this book are: Why differentials fell out of favor,
-what were they replaced with and how the modern notations you learned in Calculus evolved over time.
+  in the eighteenth century.
+  Some of the themes in this book are: Why differentials fell out of favor,
+  what were they replaced with and how the modern notations you learned in Calculus evolved over time.
 </p>
 
 <p>
@@ -619,23 +636,25 @@ and indicate how it can be used to prove part b.
 </p>
 
 <problem>
-<idx><h><m>\RR</m></h><h>products of rationals and irrationals</h></idx>
-<task>
-  <statement>
-    <p>
-      Prove that the product of a nonzero rational number and an
-      irrational number is irrational.
-</p>
-</statement>
-</task>
-<task>
-  <statement>
-    <p>
-      Use the result of part (a) to prove <xref
-      ref="thm_IrrationalBetweenIrrationals"></xref>.
-</p>
-</statement>
-</task>
+
+  <idx><h><m>\RR</m></h><h>products of rationals and irrationals</h></idx>
+
+  <task>
+    <statement>
+      <p>
+        Prove that the product of a nonzero rational number and an
+        irrational number is irrational.
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Use the result of part (a) to prove <xref
+        ref="thm_IrrationalBetweenIrrationals"></xref>.
+      </p>
+    </statement>
+  </task>
 </problem>
 
 <p>
@@ -657,15 +676,16 @@ and indicate how it can be used to prove part b.
 </p>
 
 <p>
-  Newton<idx><h>Newton, Isaac</h><h>foundation of Calculus</h></idx>
-  explicitly founded his version of Calculus on the assumption that we
-  can think of variable quantities as being generated by a continuous
-  motion.  If our number system has holes in it such continuous motion
-  is impossible because we have no way to jump over the gaps.  So
-  Newton simply postulated that there were no holes.  He filled in the
-  hole where <m>\sqrt{2}</m> should be.  He simply said, yes there is
-  a number there called <m>\sqrt{2}</m> and he did the same with all
-  of the other holes.
+  <idx><h>Newton, Isaac</h><h>foundation of Calculus</h></idx>
+
+  Newton explicitly founded his version of Calculus on the assumption
+  that we can think of variable quantities as being generated by a
+  continuous motion.  If our number system has holes in it such
+  continuous motion is impossible because we have no way to jump over
+  the gaps.  So Newton simply postulated that there were no holes.  He
+  filled in the hole where <m>\sqrt{2}</m> should be.  He simply said,
+  yes there is a number there called <m>\sqrt{2}</m> and he did the
+  same with all of the other holes.
 </p>
 
 <p>

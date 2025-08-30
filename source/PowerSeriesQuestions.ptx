@@ -27,7 +27,6 @@
       following theorem.
     </p>
 
-    <!-- <theorem xml:id="TaylorSeriesThm"> -->
     <theorem xml:id="THEOREMTaylorPoly">
       <title>Taylor<rsq/>s Formula</title>
 
@@ -58,9 +57,11 @@
     </p>
 
     <problem>
+
+      <idx><h>Taylor<rsq/>s Formula</h></idx>
+
       <statement>
         <p>
-          <idx><h>Taylor<rsq/>s Formula</h></idx>
           Prove <xref ref="THEOREMTaylorPoly"></xref>. 
         </p>
       </statement>
@@ -122,7 +123,9 @@
     </figure>
 
     <problem>
+      
       <idx><h>Taylor<rsq/>s Formula</h><h>drill problems </h></idx>
+
       <introduction>
         <p>
           Use <xref ref="THEOREMTaylorPoly" text="custom">Taylor<rsq/>s formula</xref> to find the Taylor series of the
@@ -298,10 +301,12 @@
     </problem>
     
     <problem>
+      
       <idx><h><m>e^x</m></h><h>Taylor<rsq/>s series for</h></idx>
       <idx><h>series</h><h>Taylor<rsq/>s series</h><h>expansion of <m>e^x, \sin x</m>, and <m>\cos x</m></h></idx>
       <idx><h><m>\sin x</m></h><h>Taylor<rsq/>s series for</h></idx>
       <idx><h><m>\cos x</m></h><h>Taylor<rsq/>s series for</h></idx>
+
       <task>
         <statement>
           <p>
@@ -519,7 +524,9 @@ Which obviously looks nothing like the older chain rule seen as
     </p>
 
     <problem xml:id="DRILLCauchyCounterPartI"><title>Cauchy<rsq/>s Counterexample, Part 1</title>
+    
     <idx><h>Cauchy, Augustin</h><h>Cauchy<rsq/>s counterexample</h><h> part 1</h></idx>
+
     <introduction>
       <p>
         In this problem and in <xref
@@ -575,6 +582,7 @@ Which obviously looks nothing like the older chain rule seen as
     </p>
 
     <problem xml:id="PROBLEMCauchyCounterPartII"><title>Cauchy<rsq/>s Counterexample, Part 2</title>
+    
     <idx><h>Cauchy, Augustin</h><h>Cauchy<rsq/>s counterexample</h><h>part 2</h></idx>
 
     <task>
@@ -660,14 +668,16 @@ Which obviously looks nothing like the older chain rule seen as
     </p>
 
     <problem>
+
+      <idx><h>Taylor<rsq/>s Formula</h><h>use to obtain the general binomial series</h></idx>
+
       <statement>
-        <p>
-          <idx><h>Taylor<rsq/>s Formula</h><h>use to obtain the general binomial series</h></idx>
-          Use Taylor<rsq/>s formula to obtain the general binomial series
-          <me>
-            (1+x)^\alpha=1+\sum_{n=1}^\infty\frac{\prod_{j=0}^{n-1}\left(\alpha-j\right)}{n!}x^n.{}
-          </me>
-        </p>
+      <p>
+        Use Taylor<rsq/>s formula to obtain the general binomial series
+        <me>
+          (1+x)^\alpha=1+\sum_{n=1}^\infty\frac{\prod_{j=0}^{n-1}\left(\alpha-j\right)}{n!}x^n.{}
+        </me>
+      </p>
       </statement>
     </problem>
 
@@ -770,9 +780,11 @@ Which obviously looks nothing like the older chain rule seen as
     </p>
 
     <problem>
+
+      <idx><h>Taylor<rsq/>s Theorem</h></idx>
+
       <statement>
         <p>
-          <idx><h>Taylor<rsq/>s Theorem</h></idx>
           Provide a formal induction proof for <xref ref="TaylorsTheorem"></xref>.
         </p>
       </statement>
@@ -880,6 +892,7 @@ Which obviously looks nothing like the older chain rule seen as
       <statement>
         <p>
           <idx><h>series</h><h>Taylor<rsq/>s series</h><h>used to approximate <m>\ln 2</m></h></idx>
+
           Use the fact that
           <me>
             1-\frac{1}{2}+\frac{1}{3}-\cdots+\frac{(-1)^{2k+1}}{2k}\leq\ln 2\leq 1-\frac{1}{2}+\frac{1}{3}-\cdots+\frac{(-1)^{2k+2}}{2k+1}
@@ -915,6 +928,7 @@ Which obviously looks nothing like the older chain rule seen as
 
     <figure  xml:id="FIGURERiemann">
       <caption>Bernhard Riemann</caption>
+      
       <idx><h>Portraits</h><h>Riemann</h></idx>
       <idx><h>Riemann, Bernhard</h><h>portrait of</h></idx>
 
@@ -924,7 +938,9 @@ Which obviously looks nothing like the older chain rule seen as
     </figure>
 
     <theorem xml:id="thm_rearrangements">
+    
       <idx><h>series</h><h>Alternating Harmonic Series</h><h>rearrangements of</h></idx>
+
       <statement>
         <p>
           Let <m>a</m> be any real number.
@@ -1194,7 +1210,9 @@ Which obviously looks nothing like the older chain rule seen as
     </p>
 
     <problem xml:id="DRILLprob_RearrangeDivToInf">
+      
       <idx><h>series</h><h>Alternating Harmonic Series</h><h>rearrangements of</h></idx>
+
       <introduction>
         <p>
           Show that there is a rearrangement of the <term>Alternating Harmonic Series</term>,

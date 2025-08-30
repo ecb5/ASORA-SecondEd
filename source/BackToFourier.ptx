@@ -17,12 +17,13 @@
     </p>
 
     <p>
+      <idx><h>Fourier, Jean Baptiste Joseph</h></idx> 
+
       But what can be said about the uniqueness of a trigonometric
       series?  If we can represent a function <m>f</m> as a general
       trigonometric series <me> f(x)=\sum_{n=0}^\infty(a_n\cos n\pi
       x\,+b_n\sin n\pi x) </me>, then must this be the Fourier series
       with the coefficients as determined by Fourier?
-    <idx><h>Fourier, Jean Baptiste Joseph</h></idx> 
     </p>
 
     <p>
@@ -76,8 +77,10 @@
       </aside> 
       <figure>
         <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/" visual="mathshistory.st-andrews.ac.uk/Biographies/Cantor/">Georg Cantor</url> </caption>
+
         <idx><h>Portraits</h><h>Cantor</h></idx>
         <idx><h>Cantor, Georg</h><h>portrait of</h></idx>
+
         <image width="35%" source="images/Cantor.png">
           <shortdescription>Portrait of Georg Cantor</shortdescription>
         </image>
@@ -136,31 +139,34 @@
 
       <theorem xml:id="thm_Cantor-uniqueness-of-trig-series">
         <title>Cantor</title>
-        <statement>
-          <p>
-            <idx>
-              <h>Cantor, Georg</h>
-            </idx> 
-            <idx>
-              <h>Cantor, Georg</h>
-              <h>uniqueness of Fourier series</h>
-              <h>first theorem on</h>
-            </idx> 
-            <idx>
-              <h>Fourier Series</h>
-              <h>Cantor<rsq/>s first theorem on uniqueness</h>
-            </idx>
-            If the trigonometric series
-            <me>
-              \sum_{n=0}^\infty\left(c_n\cos n\pi  x\,+d_n\sin n\pi x\right) = 0
-              </me>,
-          </p>
 
-          <p>
-            <q>with the exception of certain values of <m>x</m>,</q>
-            then all of its coefficients vanish.
-          </p>
-        </statement>
+        <idx>
+          <h>Cantor, Georg</h>
+        </idx> 
+        <idx>
+          <h>Cantor, Georg</h>
+          <h>uniqueness of Fourier series</h>
+          <h>first theorem on</h>
+        </idx> 
+        <idx>
+          <h>Fourier Series</h>
+          <h>Cantor<rsq/>s first theorem on uniqueness</h>
+          </idx>
+
+          <statement>
+            <p>
+
+              If the trigonometric series
+              <me>
+                \sum_{n=0}^\infty\left(c_n\cos n\pi  x\,+d_n\sin n\pi x\right) = 0
+                </me>,
+            </p>
+
+            <p>
+              <q>with the exception of certain values of <m>x</m>,</q>
+              then all of its coefficients vanish.
+            </p>
+          </statement>
       </theorem>
 
       <p>
@@ -193,9 +199,8 @@
           <h>Cantor, Georg</h>
           <h> uniqueness of Fourier series</h>
         <h>second theorem</h></idx>      
-
-        
         <idx>
+
           <h>Fourier Series</h>
           <h>Cantor<rsq/>s second theorem on uniqueness</h>
         </idx>
@@ -216,6 +221,7 @@
 
       <theorem xml:id="thm_Cantor-1871-b">
         <title>Cantor, (1871)</title>
+
         <idx>
           <h>Cantor, Georg</h>
           <h>uniqueness of Fourier series</h>
@@ -225,6 +231,7 @@
           <h>Fourier Series</h>
           <h>Cantor<rsq/>s third theorem on uniqueness</h>
         </idx>
+      
         <statement>
 
           <p>
@@ -259,10 +266,12 @@
       </p>
 
       <definition xml:id="def_accumulation-point">
+        
         <idx><h>Definition</h><h>accumulation points</h></idx>  
         <idx><h>accumulation points</h><h>definition</h></idx>  
         <idx><h>limit</h><h>accumulation points</h></idx>
         <idx><h>sets</h><h>accumulation points</h></idx> 
+
         <statement>
           <p>
             Let <m>S\subseteq \RR</m> and let <m>a</m> be a real number.
@@ -275,8 +284,10 @@
       </definition>
 
       <problem xml:id="PROBLEMAccumulationPoint">
+        
         <idx><h>limit</h><h>accumulation point</h></idx>
         <idx><h>sets</h><h>accumulation points</h></idx>
+
         <statement>
           <p>
             Let <m>S\subseteq\RR</m> and let <m>a</m> be a real number.
@@ -299,9 +310,11 @@
       </p>
 
       <definition xml:id="def_derived-set">
+        
         <idx><h>Definition</h><h>derived sets</h></idx>
         <idx><h>derived sets</h><h>definition</h></idx>
         <idx><h>sets</h><h>derived sets</h></idx>
+
         <statement>
           <p>
             Let <m>S\subseteq\RR</m>.  The set of all limit points of
@@ -321,7 +334,9 @@
       </p>
 
       <problem>
+        
         <idx><h>derived sets</h></idx>
+
         <statement>
           <p>
             Determine the derived set <m>S^\prime</m>, of each of the
@@ -373,9 +388,11 @@
       </problem>
 
       <problem>
+
+        <idx><h>derived sets</h></idx>
+
         <statement>
           <p>
-            <idx><h>derived sets</h></idx>
             Let <m>S\subseteq\RR</m>.
             <ol marker="(a)">
               <li>
@@ -420,10 +437,12 @@
       </p>
 
       <theorem xml:id="thm_Cantor-1871">
+      
         <idx>
           <h>Cantor, Georg</h>
           <h>fourth theorem on the uniqueness of Fourier series</h>
         </idx>
+
         <statement>
           <p>
             Let <m>S</m> be a subset of the real numbers with the
@@ -802,7 +821,9 @@
     </p>
 
     <theorem xml:id="thm_WeakNIP">
+
       <idx><h>Nested Interval Property</h><h>weak form</h></idx>
+
       <statement>
         <p>
           Let <m>\left(\left[a_n, b_n\right]\right)_{n=1}^\infty</m>
@@ -826,7 +847,9 @@
     </proof>
 
     <problem>
+
       <idx><h>Nested Interval Property</h><h>weak form</h></idx> 
+
       <statement>
         <p>
           Suppose <m>\limit{n}{\infty}{\abs{b_n-a_n}}>0</m>.  Show
@@ -852,6 +875,7 @@
 
     <theorem xml:id="thm_NoSeriesContainsAllReals">
       <title>Cantor, (1874)</title>
+    
       <idx>
         <h>Cantor, Georg</h>
         <h>first proof that <m>\RR</m> is uncountable</h>
@@ -861,6 +885,7 @@
         <h> is uncountable</h>
         <h>Cantor<rsq/>s first proof</h>
       </idx>
+
       <statement>
 
         <p>
@@ -1020,6 +1045,7 @@
 
     <p>
       <idx><h>cardinality</h><h>definition</h></idx>
+
       Such a match<ndash/>up is called a one<ndash/>to<ndash/>one
       correspondence.  In general, if two sets can be put in
       one<ndash/>to<ndash/>one correspondence then they are the same
@@ -1043,10 +1069,12 @@
     </p>
 
     <definition xml:id="def_CountableSets">
+      
       <idx><h>Definition</h><h>countable sets</h></idx>    
       <idx><h>countable sets</h><h>definition</h></idx>    
       <idx><h>cardinality</h><h>countable sets</h></idx>
       <idx><h>countable sets</h><h>defintion of</h></idx>
+
       <statement>
         <p>
           Any set which can be put into one<ndash/>to<ndash/>one correspondence with
@@ -1082,8 +1110,10 @@
     </p>
 
     <definition xml:id="def_EqualCardinality">
+      
       <idx><h>cardinality</h><h>definition</h></idx>
       <idx><h>Definition</h><h>cardinality</h></idx>
+
       <statement>
         <p>
           If two sets can be put into one<ndash/>to<ndash/>one correspondence then
@@ -1094,6 +1124,7 @@
 
     <p>
       <idx><h>infinite sets</h><h>uncountable</h></idx>
+
       With these two definitions in place we can see that <xref
       ref="thm_NoSeriesContainsAllReals"></xref> is nothing more nor
       less than the statement that <m>\RR{}</m> is not countably
@@ -1135,6 +1166,7 @@
 
 
     <problem>
+      
       <idx><h>countable sets</h><h>countable sets drill, 5 parts</h></idx>
       
       <introduction>
@@ -1183,7 +1215,9 @@
 
 
     <problem xml:id="prob_countable_sets_unions_of">
+      
       <idx><h>countable sets</h><h>unions and intersections of</h></idx>
+
       <introduction>
         <p>
           If we start with one or more countable sets it is rather
@@ -1248,7 +1282,9 @@
     </p>
 
     <theorem xml:id="thm_QisCountable">
+    
       <idx><h><m>\QQ</m></h><h> is countable</h></idx>
+
       <statement>
         <p>
           <m>\QQ</m> is countable.
@@ -1291,7 +1327,9 @@
     </proof>
 
     <problem>
+      
       <idx><h><m>\QQ</m></h><h>is countable</h></idx>
+
       <statement>
         <p>
           Prove <xref ref="thm_QisCountable"></xref>.
@@ -1339,7 +1377,9 @@
     </p>
 
     <problem>
+      
       <idx><h>sets</h><h>intervals are uncountable</h></idx>
+
       <task>
         <statement>
           <p>
@@ -1401,7 +1441,9 @@
     <introduction>
       <p>
         <idx><h>Dirichlet Function</h></idx>
-        Recall from <xref ref="PROBLEMDiricheletCountrExamp" ></xref> that the <term>Dirichlet Function</term>
+
+        Recall from <xref ref="PROBLEMDiricheletCountrExamp" ></xref>
+        that the <term>Dirichlet Function</term>
         <me> 
           D(x)=
           \begin{cases}
@@ -1502,6 +1544,7 @@
 
       <figure  xml:id="FIGURELebesgue">
         <caption>Henri Lebesgue</caption>
+        
         <idx><h>Portraits</h><h>Lebesgue</h></idx>
         <idx><h>Lebesgue, Henri</h><h>portrait of</h></idx>
 
@@ -1522,20 +1565,26 @@
 
       <theorem xml:id="THEOREMMeasureZero">
 
+        <idx><h>measure zero</h></idx>
+        <idx><h>zero measure</h><see>measure zero</see></idx>
+      
         <statement>
-
           <p>
             Let <m>S=\{s_1, s_2, s_3, \dots \}</m> be countably
-            infinite set of real numbers.  Let <m>\eps >0</m>.  There
-            is a collection of open intervals <m>(a_n,\ b_n)</m> with
-            <me>S\subset \bigcup^{\infty }_{n=1}{\left(a_n,\
-            b_n\right)}</me> and <me>\sum^{\infty
+            infinite set of real numbers.  Let <m>\eps \gt 0</m> be
+            given.  There is a collection of open intervals <m>(a_n,\
+            b_n)</m> with <me>S\subset \bigcup^{\infty
+            }_{n=1}{\left(a_n,\ b_n\right)}</me> and <me>\sum^{\infty
             }_{n=1}{\left(b_n-a_n\right)}=\eps </me>
 
           </p>
+          <p>
+            Such a set is said to have <term>measure zero</term>.
+          </p>
 
-    </statement>
-  </theorem>
+
+        </statement>
+      </theorem>
 
   <problem>
 
@@ -1741,7 +1790,9 @@
    </p>
 
    <problem>
+     
      <idx><h>series</h><h>Geometric series</h><h>
+
      <m>(0.\bar{9})</m> converges to <m>1</m></h></idx> 
      <statement>
        <p>
@@ -1780,12 +1831,13 @@
 
    <theorem xml:id="thm_CantorsTheorem">
      <title>Cantor<rsq/>s Theorem</title>
+   
      <idx>
        <h>Cantor, Georg</h>
        <h>Cantor<rsq/>s Theorem</h>
      </idx>
-     <statement>
 
+     <statement>
        <p>
          Let <m>S</m> be any set.  Then there is no one<ndash/>to<ndash/>one
          correspondence between <m>S</m> and <m>P(S)</m>, the set of
@@ -1805,9 +1857,11 @@
    </p>
 
    <problem xml:id="prob_PowerSet">
+     
      <idx><h>sets</h><h>power set</h></idx>
      <idx><h>sets</h><h>cardinality of a power set</h></idx>
      <idx><h>cardinality</h><h>of a power set</h></idx>
+
      <statement>
        <p>
          Prove: If <m>\abs{S}=n</m>, then <m>\abs{ P(S)}=2^n</m>.
@@ -1835,7 +1889,9 @@
 
    
    <problem>
+     
      <idx><h>Cantor, Georg</h><h>Cantor<rsq/>s Theorem</h></idx>
+
      <statement>
        <p>
          Remarkably, Cantor<rsq/>s Theorem holds for infinite sets
@@ -1888,6 +1944,7 @@
      <statement>
        <p>
          <idx><h>countable sets</h><h>countable union of finite sets</h></idx>
+
          Let <me>U_n=\left\{(a_1,a_2,a_3,\ldots)\ |\ a_j\in \left\{0,1\right\} \text{
          and } a_{n+1}=a_{n+2}=\cdots=0\right\}</me>.  Show that for each
          <m>n</m>, <m>U_n</m> is finite and use this to conclude that
@@ -1967,8 +2024,9 @@
 
 
    <p>
-     As we indicated before, Cantor<rsq/>s <idx><h>Cantor,
-     Georg</h></idx> work on infinite sets had a profound impact on
+     <idx><h>Cantor, Georg</h></idx>
+
+     As we indicated before, Cantor<rsq/>s  work on infinite sets had a profound impact on
      mathematics in the beginning of the twentieth century.  For
      example, in examining the proof of Cantor<rsq/>s Theorem, the
      eminent logician 
@@ -1999,8 +2057,9 @@
    </p>
 
    <fact>
-     <!-- <title>Russell<rsq/>s Paradox</title> -->
+     
      <idx><h>Russell<rsq/>s Paradox</h></idx>
+
      <p>
        Consider the set of all sets
        which are not elements of themselves.  We call this set <m>D</m>
@@ -2032,18 +2091,21 @@
   </p>
 
   <p>
+    <idx><h>Cantor, Georg</h></idx>
+
     Another place where Cantor<rsq/>s work had a profound influence in
-    modern logic comes from something we alluded to before.  We
-    showed before that the unit square <m>[0,1]\times [0,1]</m> had
-    the same cardinality as an uncountable subset of <m>\RR</m>.  In
-    fact, Cantor <idx><h>Cantor, Georg</h></idx> showed that the
-    unit square had the same cardinality as <m>\RR</m> itself and
-    was moved to advance the following in 1878.
+    modern logic comes from something we alluded to before.  We showed
+    before that the unit square <m>[0,1]\times [0,1]</m> had the same
+    cardinality as an uncountable subset of <m>\RR</m>.  In fact,
+    Cantor showed that the unit square had the same cardinality as
+    <m>\RR</m> itself and was moved to advance the following in 1878.
   </p>
 
   <conjecture>
     <title>The Continuum Hypothesis</title>
+    
     <idx><h>Continuum Hypothesis</h><h>original</h></idx> 
+
     <statement>
 
       <p>
@@ -2085,7 +2147,9 @@
 
   <conjecture>
     <title>The Generalized Continuum Hypothesis</title>
+    
     <idx><h>Continuum Hypothesis</h><h>generalized</h></idx>
+
     <statement>
 
       <p>

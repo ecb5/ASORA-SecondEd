@@ -853,97 +853,101 @@ axioms.
 <!-- </problem> -->
 
 <problem>
-<idx><h>number field</h><h><m>\QQ</m> is a field</h></idx>
-<introduction>
-  <p>
-    Consider the set of ordered pairs of integers:
-    <m>\left\{(x,y)|x, y \in \ZZ\right\}</m>,
-    and define addition and multiplication as follows:
-</p>
-<p>
-  <ul>
-    <li>
-<title>Addition:</title>
-<p>
-<m>(a,b)+(c,d) = (ad+bc, bd)</m>
-</p>
-</li>
-<li>
-<title>Multiplication:</title>
-<p>
-<m>(a,b)\cdot(c,d) = (ac, bd)</m>
-</p>
-</li>
-</ul>
-</p>
-</introduction>
-<task>
-  <statement>
+
+  <idx><h>number field</h><h><m>\QQ</m> is a field</h></idx>
+
+  <introduction>
     <p>
-      Show that this set with these operations forms a number field.
-</p>
-</statement>
-</task>
-<task>
-
-  <statement>
+      Consider the set of ordered pairs of integers:
+      <m>\left\{(x,y)|x, y \in \ZZ\right\}</m>,
+      and define addition and multiplication as follows:
+    </p>
     <p>
-      Which number field is this?
-</p>
+      <ul>
+        <li>
+          <title>Addition:</title>
+          <p>
+            <m>(a,b)+(c,d) = (ad+bc, bd)</m>
+          </p>
+        </li>
+        <li>
+          <title>Multiplication:</title>
+          <p>
+            <m>(a,b)\cdot(c,d) = (ac, bd)</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </introduction>
+  <task>
+    <statement>
+      <p>
+        Show that this set with these operations forms a number field.
+      </p>
+    </statement>
+  </task>
+  <task>
 
-</statement>
-<hint>
-  <p>
-    Add the convention that
-    <me>
-      (ab, ad) = (b,d)
-</me>
-</p>
-</hint>
+    <statement>
+      <p>
+        Which number field is this?
+      </p>
 
-</task>
+    </statement>
+    <hint>
+      <p>
+        Add the convention that
+        <me>
+          (ab, ad) = (b,d)
+        </me>
+      </p>
+    </hint>
+
+  </task>
 </problem>
 
 <problem>
-<idx><h>number field</h><h><m>\CC</m> is a field</h></idx>
-<introduction>
-  <p>
-    Consider the set of ordered pairs of real numbers,
-    <m>\left\{(x,y)|x, y\in\RR\right\}</m>,
-    and define addition and multiplication as follows:
-</p>
-<p>
-  <ul>
-    <li>
-<title>Addition:</title>
-<p>
-<m>(a,b)+(c,d) = (a+c, b+d)</m>
-</p>
-</li>
 
-<li>
-<title>Multiplication:</title>
-<p>
-  <m>(a,b)\cdot(c,d) = (ac- bd,ad+bc)</m>.
-</p>
-</li>
-</ul>
-</p>
-</introduction>
-<task>
-  <statement>
+  <idx><h>number field</h><h><m>\CC</m> is a field</h></idx>
+
+  <introduction>
     <p>
-      Show that this set with these operations forms a number field.
-</p>
-</statement>
-</task>
-<task>
-  <statement>
+      Consider the set of ordered pairs of real numbers,
+      <m>\left\{(x,y)|x, y\in\RR\right\}</m>,
+      and define addition and multiplication as follows:
+    </p>
     <p>
-      Which number field is this?
-</p>
-</statement>
-</task>
+      <ul>
+        <li>
+          <title>Addition:</title>
+          <p>
+            <m>(a,b)+(c,d) = (a+c, b+d)</m>
+          </p>
+        </li>
+
+        <li>
+          <title>Multiplication:</title>
+          <p>
+            <m>(a,b)\cdot(c,d) = (ac- bd,ad+bc)</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </introduction>
+  <task>
+    <statement>
+      <p>
+        Show that this set with these operations forms a number field.
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Which number field is this?
+      </p>
+    </statement>
+  </task>
 </problem>
 </section>
 
@@ -1031,13 +1035,14 @@ axioms.
       </p>
 
       <p>
+        <idx><h>measure zero</h></idx>
+
         This is what happened in the late nineteenth century.  The real
         numbers had been used since the Pythagoreans learned that
         <m>\sqrt{2}</m> was irrational.  But really, most calculations
         were (and still are) done with just the rational numbers.
         Moreover, since <m>\QQ</m> forms a <q>set of measure
         zero,</q>
-        <idx><h>measure zero</h></idx>
         it is clear that most of the real numbers had gone completely unused.
         The set of real numbers was thus one of those
         <q>dark corners</q> of mathematics.
@@ -1199,51 +1204,52 @@ axioms.
 </p>
 
 <problem>
-<idx><h>number field</h><h>linearly ordered</h></idx>
 
-<task>
-  <statement>
-    <p>
-Prove that the following must hold in any
-linearly ordered number field.
-</p>
-<p>
-  <ol>
-    <li>
+  <idx><h>number field</h><h>linearly ordered</h></idx>
+
+  <task>
+    <statement>
       <p>
-        <m>0\lt x</m> if and only if <m>-x\lt 0</m>.
-</p>
-</li>
+        Prove that the following must hold in any
+        linearly ordered number field.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>0\lt x</m> if and only if <m>-x\lt 0</m>.
+            </p>
+          </li>
 
-<li>
-  <p>
-    If <m>x\lt y</m> and <m>z\lt 0</m> then <m>y\cdot z\lt x\cdot z</m>.
-</p>
-</li>
+          <li>
+            <p>
+              If <m>x\lt y</m> and <m>z\lt 0</m> then <m>y\cdot z\lt x\cdot z</m>.
+            </p>
+          </li>
 
-<li>
-  <p>
-    For all <m>x\neq 0</m>, <m>0\lt x^2</m>.
-</p>
-</li>
+          <li>
+            <p>
+              For all <m>x\neq 0</m>, <m>0\lt x^2</m>.
+            </p>
+          </li>
 
-<li>
-  <p>
-    <m>0\lt 1</m>.
-</p>
-</li>
-</ol>
-</p>
-</statement>
-</task>
-<task>
-  <statement>
-    <p>
-      Show that the set of complex numbers (<m>\CC</m>) is
-      not a linearly ordered field.
-</p>
-</statement>
-</task>
+          <li>
+            <p>
+              <m>0\lt 1</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Show that the set of complex numbers (<m>\CC</m>) is
+        not a linearly ordered field.
+      </p>
+    </statement>
+  </task>
 </problem>
 
 <p>
@@ -1418,7 +1424,9 @@ natural numbers, all else is the work of man.</q>
   </p>
 
   <problem>
+    
     <idx><h><m>\RR</m></h><h>defining infinite decimal addition</h></idx>
+
     <statement>
       <p>
         Define addition on infinite decimals in a manner that is closed.
@@ -1477,11 +1485,12 @@ natural numbers, all else is the work of man.</q>
   </p>
 
   <p>
+    <idx><h>Dedekind, Richard</h></idx>
+
     But he did not lose his fascination with real analysis when
     he moved on.  Like many mathematicians of his time, he
     realized the need to build <m>\RR</m> from <m>\QQ</m>.  He
-    and his friend and mentor Richard Dedekind <idx><h>Dedekind,
-    Richard</h></idx> (who<rsq/>s approach we will see in the next
+    and his friend and mentor Richard Dedekind  (who<rsq/>s approach we will see in the next
     section) both found different ways to build <m>\RR</m> from
     <m>\QQ</m>.
   </p>
@@ -1552,6 +1561,7 @@ natural numbers, all else is the work of man.</q>
   </p>
 
   <definition xml:id="def_EquivCauchySeq">
+    
     <idx><h>sequences</h><h>equivalent Cauchy sequences</h></idx>
     <idx><h>Definition</h><h>equivalent Cauchy sequences</h></idx>
     <idx><h>equivalent Cauchy sequences</h><h>definition</h></idx>
@@ -1577,7 +1587,9 @@ natural numbers, all else is the work of man.</q>
   </definition>
 
   <problem xml:id="prob_EquivalentCauchySequences">
+    
     <idx><h>sequences</h><h>Cauchy sequences</h><h>equivalent</h></idx>
+
     <introduction>
       <p>
         Show that:
@@ -1607,6 +1619,7 @@ natural numbers, all else is the work of man.</q>
   </problem>
 
   <definition xml:id="def_RealsViaCauchy">
+    
     <idx><h>sequences</h><h>Cauchy sequences</h><h>real numbers as Cauchy sequences</h></idx>
     <idx><h>Definition</h><h>real numbers defined as Cauchy sequences</h></idx>
     <idx><h>Real numbers</h><h> as Cauchy sequences</h></idx>
@@ -1625,13 +1638,15 @@ natural numbers, all else is the work of man.</q>
   </p>
 
   <definition xml:id="def_AddTimesViaCauchy">
+    
     <idx><h>Definition</h><h>addition and multiplication of Cauchy sequences</h></idx>  
     <idx><h>addition of Cauchy sequences</h></idx>  
     <idx><h>multiplication of Cauchy sequences</h></idx>  
+    <idx><h>sequences</h><h>Cauchy sequences</h><h>addition and multiplication of</h></idx>
 
     <statement>
       <p>
-        <idx><h>sequences</h><h>Cauchy sequences</h><h>addition and multiplication of</h></idx>
+        
         If
         <me>
           x= \left\{\left.\left(s_n\right)_{k=1}^\infty \right| \left(s_n\right)_{k=1}^\infty \text{ is Cauchy in \(\QQ\) } \right\}
@@ -1677,8 +1692,10 @@ natural numbers, all else is the work of man.</q>
   </p>
 
   <problem xml:id="prob_CauchyAdditionWellDefined">
+    
     <idx><h>sequences</h><h>Cauchy sequences</h><h>addition of is well defined</h></idx>
     <idx><h><m>\RR</m></h><h>addition of Cauchy sequences</h></idx>
+
     <statement>
 
       <p>
@@ -1694,7 +1711,10 @@ natural numbers, all else is the work of man.</q>
   </problem>
 
   <theorem xml:id="thm_ZeroInCauchySequences">
+  
     <idx><h>sequences</h><h>Cauchy sequences</h><h>zero as a Cauchy sequence</h></idx>
+    <idx><h>zero</h><h>as a Cauchy sequence</h></idx>
+
     <statement>
       <p>
         Let <m>0^*</m> be the set of Cauchy sequences in
@@ -1743,8 +1763,10 @@ natural numbers, all else is the work of man.</q>
   </proof>
 
   <problem>
+    
     <idx><h><m>\RR</m></h><h>as Cauchy sequences</h><h>identify the multiplicative identity</h></idx>
     <idx><h><m>\RR</m></h><h>the number <m>1</m> as a Cauchy sequence</h></idx>
+
     <statement>
       <p>
         Identify the set of equivalent Cauchy sequences,
@@ -1757,6 +1779,7 @@ natural numbers, all else is the work of man.</q>
   </problem>
 
   <problem>
+    
     <idx><h><m>\RR</m></h><h>defined by Cauchy sequences</h></idx>
     <idx><h>number field</h><h>for Cauchy sequences</h></idx>
     <idx><h>sequences</h><h>Cauchy sequences</h><h>field axioms for</h></idx>
@@ -2127,7 +2150,9 @@ natural numbers, all else is the work of man.</q>
   </p>
 
   <theorem xml:id="thm_OrderingCuts">
+  
     <idx><h>Dedekind, Richard</h><h>Dedekind cuts</h><h>ordering of</h></idx>
+
     <statement>
       <p>
         Let <m>\alpha</m> and <m>\beta</m> be cuts.  Then
@@ -2138,8 +2163,10 @@ natural numbers, all else is the work of man.</q>
   </theorem>
 
   <problem>
+    
     <idx><h>Dedekind, Richard</h><h>Dedekind cuts</h><h>order properties</h></idx>
     <idx><h><m>\RR</m></h><h>ordering Dedekind cuts</h></idx>
+
     <statement>
       <p>
         Prove <xref ref="thm_OrderingCuts"></xref> and
@@ -2252,7 +2279,9 @@ natural numbers, all else is the work of man.</q>
 
     <theorem xml:id="thm_dedekind-cuts-closure">
     <title>Closure with Respect to Addition</title>
+    
     <idx><h>Dedekind, Richard</h><h>Dedekind cuts</h><h>closure of</h></idx>
+
     <statement>
       <p>
         If <m>\alpha</m> and <m>\beta</m> are cuts then
@@ -2346,13 +2375,15 @@ for some <m>x\in\alpha</m> and <m>y\in\beta</m>
 </proof>
 
 <problem>
-<idx><h>Dedekind, Richard</h><h>Dedekind cuts</h><h>multiplication of</h></idx>
-<statement>
-  <p>
-    Show that if <m>\alpha</m> and <m>\beta</m> are cuts
-    then <m>\alpha\cdot\beta</m> is also a cut.
-</p>
-</statement>
+
+  <idx><h>Dedekind, Richard</h><h>Dedekind cuts</h><h>multiplication of</h></idx>
+
+  <statement>
+    <p>
+      Show that if <m>\alpha</m> and <m>\beta</m> are cuts
+      then <m>\alpha\cdot\beta</m> is also a cut.
+    </p>
+  </statement>
 </problem>
 
 <p>
@@ -2567,6 +2598,7 @@ only if <m>\xi</m> and <m>\nu</m> are the same number.
 </p>
 
 <definition xml:id="def_CutSubtraction">
+  
   <idx><h>subtraction of Dedekind cuts</h></idx>
   <idx><h>Definition</h><h>subtraction of Dedekind cuts</h></idx>
 
@@ -2606,6 +2638,7 @@ only if <m>\xi</m> and <m>\nu</m> are the same number.
 </p>
 
 <definition xml:id="def_SubtractionOfCutsAsSets">
+  
   <idx><h>Dedekind cuts as sets</h></idx>
   <idx><h>Definition</h><h>Dedekind cuts as sets</h></idx>
 
@@ -2642,7 +2675,9 @@ only if <m>\xi</m> and <m>\nu</m> are the same number.
 </lemma>
 
 <problem>
+  
   <idx><h>Dedekind, Richard</h><h>Dedekind cuts</h><h>technical lemma for</h></idx>
+
   <statement>
     <p>
       Prove <xref ref="lem_Technical"></xref>.
@@ -2662,7 +2697,9 @@ only if <m>\xi</m> and <m>\nu</m> are the same number.
 </problem>
 
 <problem>
+  
   <idx><h>Dedekind, Richard</h><h>Dedekind cuts</h><h>subtraction of</h></idx>
+
   <statement>
     <p>
       Let <m>\alpha</m> and <m>\beta</m> be cuts with <m>\beta\lt
@@ -2703,8 +2740,10 @@ only if <m>\xi</m> and <m>\nu</m> are the same number.
 </aside>
 
 <theorem xml:id="thm_R-is-R">
+
   <idx><h><m>\RR</m></h><h>any complete, linearly ordered field is isomorphic to</h></idx>
   <idx><h>fields</h><h>any complete, linearly ordered field is isomorphic to <m>\RR</m>.</h></idx>
+
   <statement>
     <p>
       Any complete, linearly ordered field is isomorphic

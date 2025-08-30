@@ -186,8 +186,10 @@
     </p>
 
     <problem>
+      
       <idx><h>Weierstrass, Karl</h><h>continuous, everywhere non-differentiable function</h></idx>
       <idx><h>continuity</h><h>Weierstrass<rsq/> continuous, but non-differentiable function</h></idx>
+
       <task>
         <statement>
           <p>
@@ -276,29 +278,32 @@
     </p>
 
     <p>
+      <idx><h>Leibniz, Gottfried Wilhelm</h></idx>
+
       The language Bolzano uses is very similar to the language
-      Leibniz <idx><h>Leibniz, Gottfried Wilhelm</h></idx> used when
-      he postulated the existence of infinitesimally small numbers.
-      Leibniz said that infinitesimals are <q>smaller than any given
-      quantity but not zero.</q> Bolzano says that
+      Leibniz used when he postulated the existence of infinitesimally
+      small numbers.  Leibniz said that infinitesimals are <q>smaller
+      than any given quantity but not zero.</q> Bolzano says that
       <q><m>\abs{f(x)-f(a)}</m> can be made smaller than any given
       quantity provided we make <m>\abs{x-a}</m> sufficiently
       small.</q> But Bolzano stops short of saying that
-      <m>\abs{x-a}</m> is infinitesimally small. He says that
-      given <m>a</m>, we can choose <m>x</m> so that <m>\abs{x-a}</m>
-      is smaller than any real number we could name, say <m>b</m>,
-      provided we name <m>b</m> first. But for any given
-      choice of <m>x</m>, <m>\abs{x-a}</m>, and <m>b</m> are both
-      still real numbers.  Possibly very small real numbers to be
-      sure, but real numbers nonetheless.  Infinitesimals have no
-      place in Bolzano<rsq/>s construction.
+      <m>\abs{x-a}</m> is infinitesimally small. He says that given
+      <m>a</m>, we can choose <m>x</m> so that <m>\abs{x-a}</m> is
+      smaller than any real number we could name, say <m>b</m>,
+      provided we name <m>b</m> first. But for any given choice of
+      <m>x</m>, <m>\abs{x-a}</m>, and <m>b</m> are both still real
+      numbers.  Possibly very small real numbers to be sure, but real
+      numbers nonetheless.  Infinitesimals have no place in
+      Bolzano<rsq/>s construction.
     </p>
 
     <p>
       <idx><h>Bolzano, Bernhard</h></idx>
-      Bolzano<rsq/>s paper was not well known when Cauchy <idx><h>Cauchy,
-      Augustin</h></idx> proposed a similar definition in his
-      <em>Cours d<rsq/>analyse</em><nbsp /><xref
+      <idx><h>Cauchy, Augustin</h></idx>
+
+      Bolzano<rsq/>s paper was not well known when Cauchy
+       proposed a similar definition
+       in his <em>Cours d<rsq/>analyse</em><nbsp /><xref
       ref="bradley09__cauch_cours" /> of 1821 so it is usually Cauchy
       who is credited with this definition, but even Cauchy<rsq/>s
       definition is not quite tight enough for modern standards.  It
@@ -502,7 +507,6 @@
     </proof>
 
     <problem>
-
       <idx><h>continuity</h><h><m>f(x) = mx +b</m> is continuous everywhere</h></idx> 
 
       <statement>
@@ -519,7 +523,9 @@
     </problem>
 
     <example>
+      
       <idx><h>continuity</h><h>of <m>f(x)=0</m> at zero</h></idx>
+
       <statement>
         <p>
           Use the definition of continuity to show that
@@ -615,14 +621,16 @@
     </problem>
 
     <problem>
+
+      <idx><h><m>\sqrt{x}</m></h><h>is continuous at zero</h></idx> 
+
       <statement>
         <p>
-          <idx><h><m>\sqrt{x}</m></h><h>is continuous at zero</h></idx> 
           Use the definition of continuity to show that <m>f(x)=
           \sqrt{x}</m> is continuous at <m>a=0</m>.  How is this
           problem different from <xref
-          ref="prob_extended_sqrt_is_continuous_at_zero"></xref>?
-          How is it similar?
+          ref="prob_extended_sqrt_is_continuous_at_zero"></xref>?  How
+          is it similar?
         </p>
       </statement>
     </problem>
@@ -707,11 +715,13 @@
       </image>
     </figure>
     <p>
+      <idx><h>Halmos, Paul</h></idx>
+
       Now reverse this last statement.  <em>As</em> a trained reader,
       when you read the proof of a theorem it is <em>your</em>
       responsibility to find the scrapwork, to see how the proof works
       and understand it fully.  As the renowned mathematical expositor
-      Paul Halmos <idx><h>Halmos, Paul</h></idx> (1916-2006) said,
+      Paul Halmos  (1916-2006) said,
     </p>
 
     <blockquote>
@@ -734,7 +744,9 @@
 </p>
 
 <problem>
+  
   <idx><h><m>\sqrt{x}</m></h><h>is continuous at every positive real number</h></idx>
+
   <statement>
     <p>
       Use the definition of continuity to show that
@@ -745,7 +757,9 @@
 </problem>
 
 <problem>
+  
   <idx><h><m>\sin x</m></h><h>is continuous for <m>0\leq x\lt \frac{\pi}{2}</m></h></idx>
+
   <task>
     <statement>
       <p>
@@ -775,8 +789,10 @@
 
 
 <problem>
+  
   <idx><h>continuity</h><h><m>e^x</m> is continuous everywhere</h></idx>
   <idx><h>continuous functions</h><h><m>e^x</m> is continuous everywhere</h></idx>
+
   <task>
     <statement>
       <p>
@@ -830,9 +846,10 @@
 </p>
 
 <problem>
+  <idx><h>Topologist<rsq/>s sine function</h><h>is continuous at zero</h></idx>
+
   <statement>
     <p>
-      <idx><h>Topologist<rsq/>s sine function</h><h>is continuous at zero</h></idx>
       Use the definition of continuity to show that
       <me>
         f(x)= \begin{cases}
@@ -888,6 +905,7 @@
 <problem>
 
   <idx><h>continuity</h>
+
   <h>
     of <m> D(x)= \begin{cases}x,\amp \text{ if } x\text{ is rational }
     \\ 0,\amp \text{ if } x\text{ is irrational } \end{cases}</m>
@@ -926,6 +944,7 @@
   </task>
 </problem>
 <problem>
+  
   <idx><h>continuous functions</h><h>a constant function is continuous</h></idx>
   <idx><h>continuity</h><h>of a constant function</h></idx>
 
@@ -1098,9 +1117,11 @@
 
 
     <problem>
+
+      <idx><h>continuity</h><h>Heaviside<rsq/>s function is not continuous at zero</h></idx>
+
       <statement>
         <p>
-          <idx><h>continuity</h><h>Heaviside<rsq/>s function is not continuous at zero</h></idx> 
           Use <xref ref="thm_LimDefOfContinuity"></xref> to
           show that
           <me>
@@ -1114,6 +1135,7 @@
     </problem>
 
     <problem>
+      
       <idx>
         <h>continuity</h>
         <h>
@@ -1137,7 +1159,9 @@
 
     <problem>
       <title>Topologist<rsq/>s Sine Curve</title>
+      
       <idx><h>Topologist<rsq/>s sine function</h><h>modified version is not continuous at zero</h></idx>
+
       <statement>
         <p>
           The function <m>\hat{T}(x)=\sin\left(\frac{1}{x}\right)</m> is
@@ -1414,6 +1438,7 @@
     </p>
 
     <problem>
+      
       <idx><h>continuous functions</h><h>the quotient of continuous
       functions is continuous</h></idx>
 
@@ -1443,6 +1468,7 @@
     </theorem>
 
     <problem>
+      
       <idx><h>continuous functions</h><h>the composition of continuous
       functions is continuous</h></idx>
       <idx><h>continuity</h><h>of a composition</h></idx>
@@ -1482,7 +1508,9 @@
     </p>
 
     <problem>
+      
       <idx><h>continuity</h><h>drill problems</h></idx>
+
       <introduction>
         <p>
           Show that each of the following is a continuous function at
@@ -1522,7 +1550,9 @@
     </problem>
 
     <problem>
+      
       <idx><h>continuity</h><h><m>\sin e^x</m> is continuous everywhere</h></idx>
+
       <statement>
         <p>
           What allows us to conclude that
@@ -1548,7 +1578,9 @@
     </p>
 
     <problem>
+      
       <idx><h>continuity</h></idx>
+
       <introduction>
         <p>
           Compute the following limits.  Be sure to explain how

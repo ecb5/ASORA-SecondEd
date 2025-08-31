@@ -665,8 +665,11 @@
 
         <statement>
           <p>
+            <idx><h>Definition</h><h>image</h></idx>
             <idx><h>Definition</h><h>image</h><seealso>pre<ndash/>image</seealso></idx>
+            <idx><h>image</h><h>definition</h></idx>
             <idx><h>image</h><h>definition</h><seealso>pre<ndash/>image</seealso></idx>
+            <idx><h>pre<ndash/>image</h><h>definition</h></idx>
             <idx><h>pre<ndash/>image</h><h>definition</h><seealso>image</seealso></idx>
 
             Let <m>S\subset D</m>, we define the image of <m>S</m> by

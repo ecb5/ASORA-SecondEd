@@ -3,52 +3,58 @@
 
   <introduction>
     <title>Why Now?</title>
+    <!-- <p> -->
+    <!--   We briefly discussed the invention of Calculus by Newton and -->
+    <!--   Leibniz in <xref ref="CalcIn17th18thCentury" ></xref>.  In -->
+    <!--   subsequent examples and problems we have used the fundamental -->
+    <!--   notions of <term>limit</term>, <term>derivative</term> and -->
+    <!--   <term>integral</term> without going to the trouble of rigorously -->
+    <!--   defining these concepts  -->
+    <!-- </p> -->
+    <!-- <p> -->
+    <!--   We (the authors) made this choice primarily because   It is also a more historically accurate treatment. -->
+    <!-- </p> -->
+    <!-- <p> -->
+    <!--   For the most part rigor could be dispensed with in a Calculus -->
+    <!--   course because the underlying ideas of the <term>limit</term>, -->
+    <!--   the <term>derivative</term> and the <term>integral</term>, are -->
+    <!--   relatively intuitive. But an intuitive understanding is simply -->
+    <!--   not enough for our purposes here. We will need rigor. -->
+    <!-- </p> -->
+
     <p>
-      We briefly discussed the invention of Calculus by Newton and
-      Leibniz in <xref ref="CalcIn17th18thCentury" ></xref>.  In
-      subsequent examples and problems we have used the fundamental
-      notions of <term>limit</term>, <term>derivative</term> and
-      <term>integral</term> without going to the trouble of rigorously
-      defining these concepts because you should be familiar with
-      their usage from your Calculus course, even if the details of
-      their definitions are still a bit hazy. Which they probably are.
+      So far, we (the authors) have refrained from giving rigorous
+      definitions of the <term>derivative</term>, and the
+      <term>integral</term>. We simply assumed that you are familiar
+      with the use of these ideas from your Calculus course, even if
+      the details of their definitions are still a bit hazy.
     </p>
     <p>
-      We (the authors) made this choice primarily because we feel
+      We made this choice consciously, not because it is more
+      historically accurate (though it is), but because we feel
       strongly that it is better for beginners to learn to <q>play the
-      game</q> of analysis with rigor, using epsilons and deltas
-      before confronting all of the nuance and complexity of a fully
-      rigorous treatment of these ideas.  It is also a more
-      historically accurate treatment.
+      game</q> of rigorous analysis using epsilons and deltas in the
+      simpler domain of convergent sequences before confronting all of
+      the nuance and complexity of a fully rigorous treatment of the
+      <term>derivative</term> and, especially, the
+      <term>integral</term>.
     </p>
     <p>
-      For the most part rigor could be dispensed with in a Calculus
-      course because the underlying ideas of the <term>limit</term>,
-      the <term>derivative</term> and the <term>integral</term>, are
-      relatively intuitive. But an intuitive understanding is simply
-      not enough for our purposes here. We will need rigor.
+      Since the <term>derivative</term> and the <term>integral</term>
+      were known and had been used quite literally for centuries
+      before they were formally defined their definitions were never
+      meant to be intuitive. They were meant to be rigorous.  For that
+      reason the definitions do not exist to help us use these
+      ideas. They exist to establish a rigorous foundation for
+      Calculus, a foundation we can fall back on when the intuitive
+      approach is inadequate.
     </p>
     <p>
-      The formal definitions of these ideas were never meant to be
-      intuitive and they are not. They are intended to establish a
-      rigorous foundation for Calculus, a foundation we can fall back
-      on when an intuitive approach is inadequate.
-    </p>
-    <p>
-      So far, we have refrained from giving a rigorous account of
-      limits, derivatives, and integrals.  We (the authors)
-      consciously made this choice not because it is more historically
-      accurate (though it is), but because as we said above, we wanted
-      you to first become comfortable with <q>the game</q> of rigor
-      using epsilons and deltas.  As we said before, these definitions
-      were never meant to be intuitive, just rigorous.
-    </p>
-    <p>
-      However, by relying on your intuitive understanding of
-      derivatives and integrals from Calculus to accomplish our goal
-      of deriving the remainders for Taylor series we did bend the
-      rules a bit so now we need to circle back on these ideas from
-      Calculus and treat them rigorously.
+      Thus we did bend the rules a bit when we relied on your
+      intuitive understanding of derivatives and integrals to derive
+      the Tayor series and its various remainders. To correct this we
+      need to circle back and treat these ideas with the proper level
+      of rigor.
     </p>
 
     <!-- <p> -->
@@ -84,149 +90,247 @@
 
   <section xml:id="Continuity-DefLimit"> 
     <title> The Definition of the Limit of a Function </title>
+
+    <p> We<rsq/>ve already used the the notion of a limit and its
+    associated notation, <m>\limit{n}{\infty}{a_n}</m>, to analyze the
+    convergence and divergence of a sequence. And you<rsq/>ve almost
+    certainly encountered limits of functions before so it is tempting
+    for us (the authors) to assume that you are already
+    well<ndash/>versed in the limit concept and simply plow forward
+    with little discussion. We won<rsq/>t do that.
+    </p>
+
     <p>
-      Because these days the limit concept is generally regarded as
-      the starting point for Calculus, you might think it is a little
-      strange that we<rsq/>ve chosen to talk about continuity first.
-      But historically, the formal definition of a limit came after
-      the formal definition of continuity.   The limit 
-      concept has become foundational to Calculus. 
+      And it is probably tempting for you to
+      make the same assumption and skip the discussion you are about to
+      see. Don<rsq/>t do that. The limit concept is subtle. There is
+      more here than you probably believe and it is worth taking a few
+      moments to think about deeply.
+    </p>
+    <p>
+      The statement <m>\limit{n}{\infty}{2^{-n}}=0</m> has a very
+      precise meaning. It means that as <m>n</m> increases arbitrarily
+      (<m>\rightarrow \infty </m>) the elements of the sequence
+      <me>\left(2^{-0}, 2^{-1}, 2^{-2}, 2^{-3}, \cdots{}\right)</me>
+      get arbitrarily close to zero <m>(=0)</m>.  Notice that it does
+      not mean that <m>2^{-n}</m> is actually equal to zero for any
+      value of <m>n</m>. That is not true.
+    </p>
+    <p>
+      You might reasonably ask, <q>OK, but the notation
+      <lsq/> <m>=0</m> <rsq/> means that something is equal to
+      zero. What exactly is equal to zero?</q> The answer to that
+      question is as obvious as it is unhelpful.  It is the limit of
+      <m>2^{-n}</m> that is equal to zero.
+    </p>
+    <p>
+      Suppose the sequence <m>\left(a_n\right)_{n=1}^\infty </m>
+      converges to <m>a</m>.      In <xref ref="Convergence" ></xref> we usually said that 
+      <m>\limit{n}{\infty}{a_n}</m> <term>converged</term> to <m>a</m>
+      rather than saying that <m>\limit{n}{\infty}{a_n}</m> is equal
+      to <m>a</m>. Unfortunately this idea gets rendered notationally
+      as
+      <me>
+        \limit{n}{\infty}{a_n}=a 
+      </me> 
+      so when we read it aloud we tend to speak of equality rather
+      than convergence. This is not wrong <foreign>per se</foreign> but it can be confusing.
+    </p>
+    <p>
+      The limit concept is a deep and very abstract
+      idea and as we<rsq/>ve just seen the notation we<rsq/>ve
+      inherited (especially the way the equals sign is used) is more
+      befuddling than helpful, at least at first. 
+      We will proceed
+      slowly.
+    </p>
+    <!-- <p> -->
+    <!--   We introduced sequences first because the limit of a sequence (especially a sequence converging to zero) is the simplest kind of non<ndash/>trivial limit to understand.  In this section we<rsq/>ll expand <xref ref="def_ConvergenceOfASequence" ></xref> to the limits of functions -->
+
+    <!--   That<rsq/>s why we  -->
+    <!--   <xref ref="def_ConvergenceOfASequence" ></xref> we introduced  -->
+
+    <!--   say that In the context of the convergence of sequences and series (in <xref ref="Convergence" ></xref>) . In this section we<rsq/>ll expand <xref ref="def_ConvergenceOfASequence" ></xref> to the limits of functions, but we<rsq/>ll re<ndash/>use the same notation. This generally does not create any problems but it is worth noting that the notations   gelimit expand the concept, you might think it is a little -->
+    <!--   strange that we<rsq/>ve chosen to talk about continuity first. -->
+    <!--   But historically, the formal definition of a limit came after -->
+    <!--   the formal definition of continuity.   The limit  -->
+    <!--   concept has become foundational to Calculus.  -->
+    <!-- </p> -->
+    <p>
+      Speaking very loosely, when we evaluate the limit of the
+      sequence <m>\left( a_n\right)_{n=1}^\infty</m> we let <m>n</m>
+      get close to infinity. That is, we<rsq/>re interested in what
+      happens at the far right side of the sequence, even though there
+      is no <q>far right side.</q>
     </p>
     <p>
       <idx><h>Newton, Isaac</h></idx>
 
-      To be sure, limits were always lurking in the background.  In
-      his attempts to justify his calculations, Newton  used what he called his doctrine of
-      <term>Ultimate Ratios</term>. For example, the ratio
-      <m>\frac{(x+h)^2-x^2}{h} = \frac{2xh+h^2}{h} = 2x+h</m> becomes
-      <m>2x</m> <term>ultimately</term>, or at the last instant of
-      time before <m>h</m> becomes zero. Newton would have called
-      <m>h</m> an <q>evanescent quantity</q> or  <q>vanishing quantity</q>
-      (<xref ref="grabiner81__origin_cauch_rigor_calculy"/>, p. 33).
+      The limit concept has always been lurking in the background of Calculus.
+      In his attempts to justify his calculations, Newton used what he
+      called his doctrine of <term>Ultimate Ratios</term>. For
+      example, the ratio <m>\frac{(x+h)^2-x^2}{h} = \frac{2xh+h^2}{h}
+      = 2x+h</m> becomes <m>2x</m> <term>ultimately</term>, or at the
+      last instant  before <m>h</m> becomes zero. Newton would
+      have called <m>h</m> an <q>evanescent quantity</q> or
+      <q>vanishing quantity</q> (<xref
+      ref="grabiner81__origin_cauch_rigor_calculy"/>, p. 33). 
     </p>
+    <p>
+      You have seen this sort of expression before, usually with a limit symbol in front of it:
+   
+      <me>
+        \limit{h}{0}{\frac{(x+h)^2-x^2}{h}} =
+        \limit{h}{0}{\frac{2xh+h^2}{h}} = \limit{h}{0}{2x+h}=2x 
+        </me>.  
+
+        But notice that whereas in the limit of a sequence we were
+        letting <m>n</m> get close to infinity (which is not a number)
+        here we need to let <m>h</m> get infinitely close to zero
+        (which is a number). Notice that in evaluating the limit of
+        the sequence <m>(a_n)</m> <m>n</m> only took on integer values
+        whereas in evaluating the limit <m>
+        \limitt{h}{0}{\frac{(x+h)^2-x^2}{h}}</m> the limit parameter
+        <m>h</m> is simply close to zero. Hence it must be a real
+        number. Clearly these two limits, while related, are different
+        kinds of entities.
+    </p>
+
+
     <p>
       <idx><h>Leibniz, Gottfried Wilhelm</h></idx>
 
-      Similarly Leibniz<rsq/>s <q>infinitely small</q> differentials <m>\dx{
-      x}</m> and <m>\dx{ y}</m> can be seen as an attempt to get
-      <q>arbitrarily close</q> to <m>x</m> and <m>y</m>, respectively.
-      This is the idea at the heart of Calculus: to get arbitrarily
-      close to, say, <m>x</m> without actually reaching it.
+      Similarly Leibniz<rsq/> differentials (e.g. <m>\dx{x}</m> and
+      <m>\dx{y}</m>) can be seen as an attempt to get infinitely close
+      to <m>x</m> and <m>y</m> respectively, in much the same way that
+      <m>h</m> does in <m> \limitt{h}{0}{\frac{(x+h)^2-x^2}{h}}</m>.
+      Infinite closeness is the idea at the heart of
+      Calculus. Unfortunately it is very difficult to define
+      <q>infinite closeness</q> so to get around that difficulty we
+      instead we ask what happens to the expression
+      <m>\frac{(x+h)^2-x^2}{h}</m> as <m>h</m> gets
+      <term>arbitrarily</term> close to zero. Which is the meaning of
+      the notation: <m>\limitt{h}{0}{\frac{2xh+h^2}{h}}</m>.
     </p> 
     <p> 
       <idx><h>Lagrange, Joseph-Louis</h></idx>
       <idx><h>Cauchy, Augustin</h></idx> 
 
-      As we saw in <xref
-      ref="PowerSeriesQuestions"></xref>, 
-      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/" visual="mathshistory.st-andrews.ac.uk/Biographies/Lagrange/">Lagrange</url>
-      tried to avoid the
-      entire issue of <q>arbitrary closeness,</q> both in the limit
-      and differential forms when, in 1797, he attempted to found
-      Calculus on infinite series.  
-      Although
-      Lagrange<rsq/>s efforts failed, they set the stage for 
-      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/" visual="mathshistory.st-andrews.ac.uk/Biographies/Cauchy/">Cauchy</url>
-      to provide a definition of
-      derivative which in turn relied on his precise formulation of a
-      limit.  Consider the following example.
+      As we saw in <xref ref="PowerSeriesQuestions"></xref>, <url
+      href="https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/"
+      visual="mathshistory.st-andrews.ac.uk/Biographies/Lagrange/">Lagrange</url>
+      tried to avoid the entire issue of infinite closeness, both in
+      the limit and differential forms when, in 1797, he attempted to
+      make infinite series series the foundational concept in
+      Calculus.  Although Lagrange<rsq/>s efforts failed, they set the
+      stage for <url
+      href="https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/"
+      visual="mathshistory.st-andrews.ac.uk/Biographies/Cauchy/">Cauchy</url>
+      to provide a definition of derivative which in turn relied on
+      his precise formulation of a limit.  Consider the following
+      example.
+    </p>
+    <example xml:id="EXAMPLESyncFunction">
+      <p>
+        Suppose we wish to determine the slope of the tangent line
+        (derivative) of <m>f(x) = \sin x</m> at <m>x=0</m>.  We form
+        the usual difference quotient: <m>D(x)=\frac{\sin x - \sin
+        0}{x-0}</m>. Now consider the graph of this difference
+        quotient <me>D(x) =\frac{\sin x - \sin 0}{x-0}=\frac{\sin x
+        }{x}</me>.
       </p>
-      <example xml:id="EXAMPLESyncFunction">
-        <p>
-          We wish to determine the slope of the tangent line
-          (derivative) of <m>f(x) = \sin x</m> at <m>x=0</m> so we
-          form the usual difference quotient: <m>D(x)=\frac{\sin x -
-          \sin 0}{x-0}</m>. Now consider the graph of this difference
-          quotient <me>D(x) =\frac{\sin x - \sin 0}{x-0}=\frac{\sin x
-          }{x}</me>.
-        </p>
 
-        <image width="56%" source="images/SinGraph.png" > 
-          <shortdescription></shortdescription>
-        </image>
+      <figure xml:id="FIGURESyncFunc" > <caption>Graph of
+      <m>\displaystyle D(x)=\frac{\sin x }{x}</m></caption>
 
+      <image width="75%" source="images/SinGraph-1.png" > 
+        <shortdescription></shortdescription>
+      </image>
+      </figure>
+      <p> 
+        From the graph, it might first appear that <m>D(0) =1</m> but
+        we must be careful.  <m>D(0)</m> doesn<rsq/>t even exist!
+        Somehow we must convey the idea that <m>D(x)</m> will approach
+        <m>1</m> as <m>x</m> approaches <m>0</m>, even though the
+        function <m>D(x)=\frac{\sin x }{x}</m> is not defined at
+        <m>0</m>.  Cauchy<rsq/>s idea was that even if <m>D(0)</m> is
+        meaningless it must be that <m>\limit{x}{0}{D(x)}=1</m>
+        because we can make <m>D(x)</m> differ from <m>1</m> by as
+        little as we wish by taking <m>x</m> sufficiently close to
+        zero <nbsp/>(<xref ref="jahnke03__histor_analy"/>, p. 158).
+      </p> 
+    </example>
+    <p> 
+      <idx><h>Weierstrass, Karl</h></idx> 
+
+      
+      <url
+          href="https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/"
+          visual="mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/">Karl
+      Weierstrass</url> made these ideas precise in his lectures on
+      analysis at the University of Berlin (1859-60) and provided us
+      with our modern formulation of the limit.
+    </p>
+
+    <definition xml:id="def_limit">
+      <title>Limit</title> 
+
+      <idx><h>limit</h></idx> 
+      <idx><h>Definition</h><h>limit</h></idx> 
+
+      <statement> 
         <p> 
-          From the graph, it appears that <m>D(0) =1</m> but we must
-          be careful.  <m>D(0)</m> doesn<rsq/>t even exist!  Somehow
-          we must convey the idea that <m>D(x)</m> will approach
-          <m>1</m> as <m>x</m> approaches <m>0</m>, even though the
-          quotient <m>D(x)</m> is not defined at <m>0</m>.
-          Cauchy<rsq/>s idea was that the limit of <m>D(x)</m> would
-          equal <m>1</m> because we can make <m>D(x)</m> differ from 1
-          by as little as we wish by taking <m>x</m> sufficiently
-          close to zero <nbsp/>(<xref
-          ref="jahnke03__histor_analy"/>, p. 158).
-        </p> 
-      </example>
-      <p> 
-        <idx><h>Weierstrass, Karl</h></idx> 
+          We say <m>\limit{x}{a}{f(x)} =L</m> provided that for each
+          <m>\eps>0</m>, there exists <m>\delta>0</m> such that if
+          <m>0\lt \abs{x-a}\lt \delta</m> then <m>\abs{f(x)-L}\lt
+          \eps</m>.
+        </p>
+      </statement> 
+    </definition> 
+    <p> 
+      Before we delve into this, notice that it is very similar to the
+      definition of <xref ref="def_continuity"
+      text="custom">continuity at a point</xref>.
+      <!-- the definition of the continuity of -->
+      <!-- <m>f(x)</m> at <m>x=a</m>.  --> 
+      In fact we can readily see that <m>f</m>
+    is continuous at  <m>x=a</m>  if and only if 
+    <m>\limit{x}{a}{f(x)} = f(a)</m>.  
+    </p> 
+    <!-- <aside> -->
+    
+    <!--   <title>Accumulation Points</title> -->
 
-        
-        <url
-        href="https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/"
-        visual="mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/">Karl
-        Weierstrass</url> made these ideas precise in his lectures on
-        analysis at the University of Berlin (1859-60) and provided us
-        with our modern formulation.
-      </p>
-
-      <definition xml:id="def_limit">
-        <title>Limit</title> 
-
-        <idx><h>limit</h></idx> 
-        <idx><h>Definition</h><h>limit</h></idx> 
-
-        <statement> 
-          <p> 
-            We say <m>\limit{x}{a}{f(x)} =L</m> provided that for each
-            <m>\eps>0</m>, there exists <m>\delta>0</m> such that if
-            <m>0\lt \abs{x-a}\lt \delta</m> then <m>\abs{f(x)-L}\lt
-            \eps</m>.
-          </p>
-        </statement> 
-      </definition> 
-      <p> 
-        Before we delve into this, notice
-        that it is very similar to the  <xref ref="def_continuity"
-        text="custom">definition of continuity at a
-        point</xref>. 
-        <!-- the definition of the continuity of -->
-        <!-- <m>f(x)</m> at <m>x=a</m>.  --> 
-        In fact we can readily see that <m>f
-        \text{ is continuous at } x=a \text{ if and only if }
-        \limit{x}{a}{f(x)} = f(a)</m>.  
-      </p> 
-      <aside>
-         
-        <p>
-          This presumes that <m>a</m> is an
-          <term>accumulation point</term> of the domain of <m>f</m> (<xref
-          ref="def_accumulation-point"></xref>).  We will
-          discuss accumulation points in <xref
-          ref="BackToFourier"></xref>.  
-        </p> 
-      </aside> 
-      <p> 
-        There are two differences between this definition and the
-        definition of continuity and they are related.  The first is
-        that we replace the value <m>f(a)</m> with <m>L</m>.  This is
-        because the function may not be defined at <m>a</m>.  In a
-        sense the limiting value <m>L</m> is the value <m>f</m> would
-        have <em>if it were defined and continuous at <m>a</m>.</em>
-        The second is that we have replaced <me> \abs{x-a}\lt \delta
-        </me> with <me> 0\lt \abs{x-a}\lt \delta </me>.
-      </p>
-      <p>
-        Again, since <m>f</m> needn<rsq/>t be defined at <m>a</m>, we
-        will not even consider what happens when <m>x=a</m>.  This is
-        the only purpose for this change.
-      </p> 
-      <p>
-        As with the definition of the limit of a sequence, this
-        definition does not determine what <m>L</m> is, it only
-        verifies that your guess for the value of the limit is
-        correct.
-      </p> 
+    <!--   <p> -->
+    <!--     This presumes that <m>a</m> is an -->
+    <!--     <term>accumulation point</term> of the domain of <m>f</m> (<xref -->
+    <!--     ref="def_accumulation-point"></xref>).  We will -->
+    <!--     discuss accumulation points in <xref -->
+    <!--     ref="BackToFourier"></xref>.   -->
+    <!--   </p>  -->
+    <!-- </aside> --> 
+    <p> 
+      There are two differences between <xref ref="def_limit" ></xref>
+      and <xref ref="def_continuity" ></xref> and the differences are
+      related.  The first is that we in the definition of a limit
+      <m>L</m> plays the same role that <m>f(a)</m> played in the
+      definition of continuity.  This is because the function may not
+      be defined at <m>a</m>.  In a sense the limiting value <m>L</m>
+      is the value <m>f</m> would have <em>if it were defined and
+      continuous at <m>a</m>.</em> 
+    </p>
+    <p>
+      The second is that we have replaced <me> \abs{x-a}\lt \delta
+      </me> from continuity with <me> 0\lt \abs{x-a}\lt \delta </me>
+      in the limit definition.  Because <m>f</m> needn<rsq/>t be
+      defined at <m>a</m>, we don<rsq/>t consider what happens when
+      <m>x=a</m>.  This is the only purpose for this change.
+    </p> 
+    <p>
+      As with the definition of the limit of a sequence, this
+      definition does not determine what <m>L</m> is, it only verifies
+      that your guess for the value of the limit is correct.
+    </p> 
       <p> 
         Finally, a few comments on the differences and similiarities
         between this limit and the limit of a sequence are in order,
@@ -600,13 +704,13 @@
             ref="thm_SqueezeTheoremFunctions" text="custom">Squeeze
             Theorem for functions</xref>.  
           </p>
-</statement>
-<hint> 
-  <p> Use <xref
-  ref="thm_SqueezeTheorem"></xref>, the Squeeze Theorem for
-  sequences from <xref ref="Convergence"></xref>.  
-  </p>
-</hint> 
+        </statement>
+        <hint> 
+          <p> Use <xref
+          ref="thm_SqueezeTheorem"></xref>, the Squeeze Theorem for
+          sequences from <xref ref="Convergence"></xref>.  
+          </p>
+        </hint> 
       </problem> 
       <p> 
         Returning to <xref ref="EXAMPLESyncFunction"></xref> we see
@@ -1174,7 +1278,7 @@
     </p>
     <p>
       On the other hand, what does <xref
-      ref="thm_FermatsTheorem" text="custom">Fermat's Theorem</xref> say if one or
+      ref="thm_FermatsTheorem" text="custom">Fermat<rsq/>s Theorem</xref> say if one or
       both of these extrema is not at an endpoint?
     </p>
   </proof>
@@ -1870,7 +1974,7 @@ your Calculus course.
     </p>
 </introduction>
 <subsection xml:id="SUBSECTIONCauchyRiemannInt">
-  <title>Cauchy's Integral Definition</title>
+  <title>Cauchy<rsq/>s Integral Definition</title>
 
 
   <p>

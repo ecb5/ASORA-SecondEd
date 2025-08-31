@@ -193,7 +193,6 @@
 
       <idx><h>Least Upper Bound Property</h><h>implies the
       existence of irrational numbers</h></idx>
-      <idx><h>LUBP</h><see>Least Upper Bound Property</see></idx>
 
       <task>
         <statement>
@@ -1278,6 +1277,7 @@ and all subsequences of the the second diverge to infinity.
 
       <idx><h>Least Upper Bound Property</h></idx>
       <idx><h>Definition</h><h>Least Upper Bound Property</h></idx>
+      <idx><h>LUBP</h><see>Least Upper Bound Property</see></idx>
 
       <statement>
         <p>
@@ -1597,7 +1597,7 @@ and all subsequences of the the second diverge to infinity.
       <problem>
 
         <idx><h>Least Upper Bound Property</h></idx>
-        <idx><h>LUBP</h></idx>
+        <!-- <idx><h>LUBP</h></idx> -->
         <idx><h>Greatest Lower Bound Property</h></idx>
         <idx><h>GLBP</h></idx>
         <idx><h>Least Upper Bound Property</h><h>identifying suprema and infima</h></idx>
@@ -1794,7 +1794,7 @@ and all subsequences of the the second diverge to infinity.
               </ol>
             </p>
             <p>
-              Prove that there is a real number <m>c</m> such that <m>x_n\le c\le y_n</m>,
+              Prove that there is a unique real number <m>c</m> such that <m>x_n\le c\le y_n</m>,
               for all <m>n</m>.
             </p>
           </statement>
@@ -1849,16 +1849,15 @@ and all subsequences of the the second diverge to infinity.
 
               <li>
                 <p>
-                  <m>\displaystyle\lim_{n\rightarrow\infty}\left(y_n-x_n\right) = 0</m>.
+                  <m>\limit{n}{\infty}{\left(y_n-x_n\right)} = 0</m>.
                 </p>
               </li>
             </ol>
           </p>
 
           <p>
-            Prove that there exists a real number <m>c</m> such that <m>x_n\le c\le y_n</m>,
+            Prove that there is a unique real number <m>c</m> such that <m>x_n\le c\le y_n</m>,
             for all n.
-            (Again, the <m>c</m> will necessarily be unique, but don't worry about that.)
           </p>
         </statement>
         <hint>

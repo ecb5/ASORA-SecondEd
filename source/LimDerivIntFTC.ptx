@@ -367,9 +367,9 @@
       </p> 
 
       <p>
-        Before we look at the above
-        example, let<rsq/>s look at some algebraic examples to see the
-        <xref ref="def_limit" ></xref>  use.  
+        Before continuing with <xref ref="EXAMPLESyncFunction"
+        ></xref>, let<rsq/>s look at some simpler, algebraic examples
+        to see the <xref ref="def_limit" ></xref> in use.
       </p>
       <example>
         <statement>

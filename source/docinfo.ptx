@@ -4,7 +4,7 @@
 <!-- This is where you can define macros and other book-wide -->
 <!--  settings.                                              -->
 <docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
-
+  <math-package latex-name="cancel" mathjax-name="cancel"/>
   <macros>
     <!-- \def\theindex{} -->
     <!-- \def\subitem{\hangindent 40pt \hspace{20pt}} -->

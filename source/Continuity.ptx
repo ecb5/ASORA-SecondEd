@@ -321,8 +321,8 @@
         <p>
 
           We say that a function <m>f</m> is continuous at the point
-          <m>a</m> provided that for any <m>\eps>0</m>, there exists a
-          <m>\delta>0</m> such that if <m>\abs{x-a}\lt \delta</m> then
+          <m>a</m> provided that for each <m>\eps\gt0</m>, there exists a
+          <m>\delta\gt0</m> such that if <m>\abs{x-a}\lt \delta</m> then
           <m>|f(x)-f(a)|\lt \eps</m>.
         </p>
       </statement>

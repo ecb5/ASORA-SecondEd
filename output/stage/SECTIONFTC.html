@@ -320,16 +320,15 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">If you look back at our derivation of the Integral Form of the Remainder for Taylor Series (<a href="PowerSeriesQuestions-TaylorsFormula.html#TaylorsTheorem" class="xref" data-knowl="./knowl/xref/TaylorsTheorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.12: Taylor’s Theorem">Theorem 4.1.12</a>) you’ll see that the <a href="SECTIONFTC.html#THEOREMFTCCauchy" class="internal" title="Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)">Fundamental Theorem of Calculus</a> provided  our anchoring step:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/TaylorsTheorem.html ./knowl/xref/THEOREMFTCCauchy.html">
 \begin{equation*}
-f(x)=f(a)+\int_{t=a}^xf^\prime(t)\dx{t}=f(a)+\frac{1}{0!}f^{(1)}(t)(x-t)^0\dx{t}
+f(x)=f(a)+\int_{t=a}^xf^\prime(t)\dx{t}=f(a)+\frac{1}{0!}f^{(1)}(t)(x-t)^0\dx{t}\text{.}
 \end{equation*}
 </div>
-<div class="para">even though we had not yet proved it. In fact we still haven’t, but we assumed you were familiar with it from your Calculus course.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-3">The Fundamental Theorem of Calculus was understood (in at least the limited context of polynomials) before Newton and Leibniz invented Calculus. As a result neither of them dubbed it a “Fundamental Theorem.” For them it was simply one of those known results that their Calculus re–captured in a more elegant form than had previously been known. They both provided derivations of it via their versions of Calculus, but again neither of them dubbed it “The Fundamental Theorem” because for them it was a relatively obvious consequence of the way they thought about such things. Both considered it very natural and obvious that areas can be found by antidifferentiation.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-3">The Fundamental Theorem of Calculus was understood (in at least the limited context of polynomials) before Newton and Leibniz invented Calculus.      They both provided derivations of it via their versions of Calculus, but again neither of them dubbed it “The Fundamental Theorem.” That name was an innovation of twentieth century Calculus textbooks.  Both Newton and Leibniz considered it very natural and obvious that areas can be found by antidifferentiation.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="SECTIONFTC-4">
-<div class="para">Using the differential and integral notation that Leibniz invented and we still use today it is easy to see why. If we suppose that</div>
+<div class="para">Using the differential and integral notation that Leibniz invented (and we still use today) it is easy to see why. If we suppose that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EQUATIONFTCDifferentialEquality.html">
 \begin{equation*}
 \dfdx{Y}{x}=y\text{,}
@@ -338,22 +337,24 @@ f(x)=f(a)+\int_{t=a}^xf^\prime(t)\dx{t}=f(a)+\frac{1}{0!}f^{(1)}(t)(x-t)^0\dx{t}
 <div class="para">then it follows that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EQUATIONFTCDifferentialEquality.html" id="EQUATIONFTCDifferentialEquality">
 \begin{equation}
-y\dx{x}=\dx{Y} \text{.}\tag{12}
+y\dx{x}=\dx{Y} \text{.}\tag{13}
 \end{equation}
 </div>
-<div class="para">Notice that <a href="SECTIONFTC.html#EQUATIONFTCDifferentialEquality" class="internal" title="Equation 12">equation (12)</a> states that two differentials are equal. Thus it seems apparent that if we add (integrate) together all such differentials between <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=b\)</span> we have (again employing Leibniz’ notation)</div>
+<div class="para">Notice that <a href="SECTIONFTC.html#EQUATIONFTCDifferentialEquality" class="internal" title="Equation 13">equation (13)</a> states that two differentials are equal. Thus it seems apparent that if we add (integrate) together all such differentials between <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=b\)</span> we have (again employing Leibniz’ notation)</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EQUATIONFTCDifferentialEquality.html" id="EQUATIONFTCIntDiffer">
 \begin{equation}
-\int^b_{x=a}{y\dx{x}}=\int^b_{x=a}{\dx{Y}}\tag{13}
+\int^b_{x=a}{y\dx{x}}=\int^b_{x=a}{\dx{Y}}\tag{14}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="SECTIONFTC-5" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="SECTIONFTC-5-1">We said that <a href="SECTIONFTC.html#EQUATIONFTCIntDiffer" class="internal" title="Equation 13">equation (13)</a> uses Leibniz’ notation but this is not entirely correct. Fourier innovated the use of upper and lower indices on the integral sign to show the limits of the integration approximately 150 years later. Leibniz didn’t use them.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-5">
+<a href="SECTIONFTC.html#EQUATIONFTCIntDiffer" class="internal" title="Equation 14">Equation (14)</a> indicates that we are summing all of the respective differentials between <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-5-2">
-<a href="SECTIONFTC.html#EQUATIONFTCIntDiffer" class="internal" title="Equation 13">Equation (13)</a> indicates that we are summing all of the respective differentials between <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></aside></details><div class="para logical" id="SECTIONFTC-6">
+<details id="SECTIONFTC-6" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Aside<span class="colon heading-divison-mark heading-divison-mark__colon">:</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Integral Notation: Upper and Lower Indices.</span>
+</h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="SECTIONFTC-6-2">We said that <a href="SECTIONFTC.html#EQUATIONFTCIntDiffer" class="internal" title="Equation 14">equation (14)</a> uses Leibniz’ notation but this is not entirely correct. Fourier innovated the use of upper and lower indices on the integral sign to show the limits of the integration approximately 150 years later. Leibniz didn’t use them.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details><div class="para logical" id="SECTIONFTC-7">
 <div class="para">Since  a finite sum of finite differences collapses into the difference of the extremes:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -361,36 +362,36 @@ y\dx{x}=\dx{Y} \text{.}\tag{12}
 +\left(a_{n-1}-a_{n-2}\right)+\left(a_n-a_{n-1}\right)=a_n-a_1\text{.}
 \end{equation*}
 </div>
-<div class="para">Leibniz assumed that this is also true for an infinite sum of infinitesimals. This is the most intuitive understanding of the Fundamental Theorem of Calculus. In Leibniz’ notation it is</div>
+<div class="para">Leibniz assumed that this is also true for an infinite sum of infinitesimals. This is probably the most intuitive understanding of the Fundamental Theorem of Calculus. In Leibniz’ notation it is</div>
 <div class="displaymath process-math" id="EQUATIONFTCLeibniz">
 \begin{equation}
-\int^b_{x=a}{y\dx{x}}=\int^b_{x=a}{\dx{Y}}=Y\left(b\right)-Y(a)\text{.}\tag{14}
+\int^b_{x=a}{y\dx{x}}=\int^b_{x=a}{\dx{Y}}=Y\left(b\right)-Y(a)\text{.}\tag{15}
 \end{equation}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-7">For Leibniz, this is all so natural and obvious that when he wrote about it in his 1693 paper <i class="foreign">Supplementum geometriae dimensoriae, seu generalissima omnium tetragonismorum effectio per motum: similiterque multiplex constructio lineae ex data tangentium conditione</i>,     he called it a “supplementum” (supplement, or corollary) rather than something more  imposing — like the <dfn class="terminology">Fundamental Theorem of Calculus</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-8">For Leibniz, this is all so natural and obvious that when he wrote about it in his 1693 paper <i class="foreign">Supplementum geometriae dimensoriae, seu generalissima omnium tetragonismorum effectio per motum: similiterque multiplex constructio lineae ex data tangentium conditione</i>,     he called it a “supplementum” (supplement, or corollary) rather than something more  imposing — like the <dfn class="terminology">Fundamental Theorem of Calculus</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-8">Leibniz included a diagram to support this result, but he rather famously favored very complex diagrams in his publications.  We provide a simpler, more modern rendition below.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-9">Leibniz included a diagram to support this result, but he rather famously favored very complex diagrams in his publications.  We provide a simpler, more modern rendition below.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="FIGUREFTC"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;grid-template-columns:47.3684210526316% 47.3684210526316%;column-gap:5%;">
 <div class="sbspanel sbspanel--middle middle" style=""><img src="external/images/FTC1.png" class="contained"></div>
 <div class="sbspanel sbspanel--middle middle" style=""><img src="external/images/FTC2.png" class="contained"></div>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A visual interpretation of the Fundamental Theorem of Calculus as it was understood by Leibniz.  The relationship between the curves is that the function on the  left, <span class="process-math">\(y=y(x)\text{,}\)</span> is the  derivative of the function  on the right, <span class="process-math">\(Y=Y(x)\text{.}\)</span><div class="autopermalink" data-description="Figure 10.3.1"><a href="#FIGUREFTC" title="Copy heading and permalink for Figure 10.3.1" aria-label="Copy heading and permalink for Figure 10.3.1">🔗</a></div></figcaption></figure><div class="para" id="SECTIONFTC-10">In <a href="SECTIONFTC.html#FIGUREFTC" class="internal" title="Figure 10.3.1">Figure 10.3.1</a> the area of the infinitely thin rectangle on the left is given by <span class="process-math">\(y\dx{x}\)</span> and is numerically equal to the infinitely small length <span class="process-math">\(\dx{Y}\)</span> on the right.  Adding the areas on the left gives the area under the curve <span class="process-math">\(y(x)\)</span> between <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span>  The sum of the lengths on the right gives the length of the line segment, also between <span class="process-math">\(Y(a)\)</span> and <span class="process-math">\(Y(b)\text{:}\)</span> <span class="process-math">\(Y\left(b\right)-Y(a)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A visual interpretation of the Fundamental Theorem of Calculus as it was understood by Leibniz.  The relationship between the curves is that the function on the  left, <span class="process-math">\(y=y(x)\text{,}\)</span> is the  derivative of the function  on the right, <span class="process-math">\(Y=Y(x)\text{.}\)</span><div class="autopermalink" data-description="Figure 10.3.1"><a href="#FIGUREFTC" title="Copy heading and permalink for Figure 10.3.1" aria-label="Copy heading and permalink for Figure 10.3.1">🔗</a></div></figcaption></figure><div class="para" id="SECTIONFTC-11">In <a href="SECTIONFTC.html#FIGUREFTC" class="internal" title="Figure 10.3.1">Figure 10.3.1</a> the area of the infinitely thin rectangle on the left is given by <span class="process-math">\(y\dx{x}\)</span> and is numerically equal to the infinitely small length <span class="process-math">\(\dx{Y}\)</span> on the right.  Adding the areas on the left gives the area under the curve <span class="process-math">\(y(x)\)</span> between <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span>  The sum of the lengths on the right gives the length of the line segment, also between <span class="process-math">\(Y(a)\)</span> and <span class="process-math">\(Y(b)\text{:}\)</span> <span class="process-math">\(Y\left(b\right)-Y(a)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-11">Such an approach does not pass modern, or even 19th century, standards of rigor.  Even in the 17th century it was known that there are logical problems with interpreting an integral in terms of infinitiesimals. But the infinitesimal approach was adequate to the needs of the time so a closer investigation into the nature of the integral was left until infinitesimals were no longer sufficient.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-12">Such an approach does not pass modern, or even <span class="process-math">\(19\)</span>th century, standards of rigor.  Even in the <span class="process-math">\(17\)</span>th century it was known that there are logical problems with interpreting an integral in terms of infinitiesimals. But the infinitesimal approach was adequate to the needs of the time so a closer investigation into the nature of the integral was left until infinitesimals were no longer sufficient.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="problem example-like" id="SECTIONFTC-12"><h3 class="heading">
+<article class="problem example-like" id="SECTIONFTC-13"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="SECTIONFTC-12-1">One question which eventually led to such a closer investigation was, “Does every continuous function have an antiderivative.” What do you think?<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-13-1">One question which eventually led to such a closer investigation was, “Does every continuous function have an antiderivative.” What do you think?<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-13-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 10.3.2"><a href="#SECTIONFTC-12" title="Copy heading and permalink for Problem 10.3.2" aria-label="Copy heading and permalink for Problem 10.3.2">🔗</a></div></article><div class="para" id="SECTIONFTC-13">At this point we have the tools necessary for a rigorous proof of the Fundamental Theorem of Calculus. What we do not have is an adequate definition of the integral.    We’ll need a definition that is independent of differentiation, but which recovers all of the properties of integration that you are already familiar with from your Calculus course, including the Fundamental Theorem of Calculus.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Problem 10.3.2"><a href="#SECTIONFTC-13" title="Copy heading and permalink for Problem 10.3.2" aria-label="Copy heading and permalink for Problem 10.3.2">🔗</a></div></article><div class="para" id="SECTIONFTC-14">At this point we have the tools necessary for a rigorous proof of the Fundamental Theorem of Calculus. What we do not have is an adequate definition of the integral.    We’ll need a definition that is independent of differentiation, but which recovers all of the properties of integration that you are already familiar with from your Calculus course, including the Fundamental Theorem of Calculus.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-14">We’ll provide such a definition in <a href="SECTIONDefiningIntegral.html" class="internal" title="Section 10.4: The Definition of the Integral">Section 10.4</a> (the next section), but since we are already familiar with the properties we’ll need we will proceed with the proof of the Fundamental Theorem of Calculus now.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-15">We’ll provide such a definition in <a href="SECTIONDefiningIntegral.html" class="internal" title="Section 10.4: The Definition of the Integral">Section 10.4</a> (the next section), but since we are already familiar with the properties we’ll need we will proceed with the proof of the Fundamental Theorem of Calculus now.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-15">The following formulation and proof of the Fundamental Theorem of Calculus is from Cauchy’s 1823 publication <i class="foreign">Résumé des leçons donnés à l’ école royale polytechnique sur le calcul infinitesimal</i> (Summary of the lessons given at the Royal Polytechnic School on infinitesimal calculus).<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-16">The following formulation and proof of the Fundamental Theorem of Calculus is from Cauchy’s 1823 publication <i class="foreign">Résumé des leçons donnés à l’ école royale polytechnique sur le calcul infinitesimal</i> (Summary of the lessons given at the Royal Polytechnic School on infinitesimal calculus).<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="THEOREMFTCCauchy"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Fundamental Theorem of Calculus (Cauchy).</span>
@@ -414,23 +415,39 @@ I^\prime\left(x\right)=f(x)
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#THEOREMFTCCauchy-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)"><a href="#THEOREMFTCCauchy" title="Copy heading and permalink for Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)" aria-label="Copy heading and permalink for Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)">🔗</a></div></article><div class="para" id="SECTIONFTC-17">Before we dive into the proof, notice that <a href="SECTIONFTC.html#THEOREMFTCCauchy" class="internal" title="Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)">Theorem 10.3.3</a> and <a href="SECTIONFTC.html#EQUATIONFTCLeibniz" class="internal" title="Equation 14">equation (14)</a> are very closely related though they come at the question of integration from different viewpoints.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)"><a href="#THEOREMFTCCauchy" title="Copy heading and permalink for Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)" aria-label="Copy heading and permalink for Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)">🔗</a></div></article><div class="para" id="SECTIONFTC-18">Notice that <a href="SECTIONFTC.html#THEOREMFTCCauchy" class="internal" title="Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)">Theorem 10.3.3</a> and <a href="SECTIONFTC.html#EQUATIONFTCLeibniz" class="internal" title="Equation 15">equation (15)</a> are very closely related though they come at the question of integration from different viewpoints.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-18">
-<a href="SECTIONFTC.html#EQUATIONFTCLeibniz" class="internal" title="Equation 14">Equation (14)</a> starts with the assumption that <span class="process-math">\(\dfdx{Y}{x}=y \text{.}\)</span> It says that if we sum the differentials <span class="process-math">\(y\dx{x}\)</span> from  <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> then the sum collapses to the difference of the extremes: <span class="process-math">\(Y(b)-Y(a)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-19">
+<a href="SECTIONFTC.html#EQUATIONFTCLeibniz" class="internal" title="Equation 15">Equation (15)</a> starts with the assumption that <span class="process-math">\(\dfdx{Y}{x}=y \text{.}\)</span> It says that if we sum the differentials <span class="process-math">\(y\dx{x}\)</span> from  <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> then the sum collapses to the difference of the extremes: <span class="process-math">\(Y(b)-Y(a)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-19">On the other hand <a href="SECTIONFTC.html#THEOREMFTCCauchy" class="internal" title="Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)">Theorem 10.3.3</a> starts with the assumption that <span class="process-math">\(\int_{t=a}^x f(t)\dx{t}\)</span> is well defined, uses this to define the function <span class="process-math">\(I(x)\)</span> ( which is simply <span class="process-math">\(Y(x)\)</span> by another name), and then concludes where Leibniz began — with the statement that <span class="process-math">\(I^\prime
-(x)=f(x)\text{,}\)</span> (or <span class="process-math">\(\dfdx{Y}{x}=y\)</span>). Our task in the next section will be to provide a definition that will support that conclusion.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-20">On the other hand <a href="SECTIONFTC.html#THEOREMFTCCauchy" class="internal" title="Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)">Theorem 10.3.3</a> starts with the assumption that <span class="process-math">\(\int_{t=a}^x f(t)\dx{t}\)</span> is well defined, uses this to define the function <span class="process-math">\(I(x)\)</span> ( which is simply <span class="process-math">\(Y(x)\)</span> by another name), and then concludes where Leibniz began — with the statement that <span class="process-math">\(I^\prime
+(x)=f(x)\text{,}\)</span> (or <span class="process-math">\(\dfdx{Y}{x}=y\)</span>). Our task in the next section will be to provide a definition that will support that conclusion.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-20">In most Calculus texts <a href="SECTIONFTC.html#EQUATIONFTCLeibniz" class="internal" title="Equation 14">equation (14)</a> is called a <dfn class="terminology">definite integral</dfn>, and the function defined in <a href="SECTIONFTC.html#THEOREMFTCCauchy" class="internal" title="Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)">Theorem 10.3.3</a> is called an <dfn class="terminology">indefinite integral</dfn>. The two of them are often referred to as parts 1 and 2 of the Fundamental Theorem of Calculus.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-21">In most Calculus texts <a href="SECTIONFTC.html#EQUATIONFTCLeibniz" class="internal" title="Equation 15">equation (15)</a> is called a <dfn class="terminology">definite integral</dfn>, and the function defined in <a href="SECTIONFTC.html#THEOREMFTCCauchy" class="internal" title="Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)">Theorem 10.3.3</a> is called an <dfn class="terminology">indefinite integral</dfn>. The two of them are often referred to as parts <span class="process-math">\(1\)</span> and <span class="process-math">\(2\)</span> of the Fundamental Theorem of Calculus.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-21">We will now proceed with the proof of Cauchy’s version of the Fundamental Theorem of Calculus, with the caveat that the proof is not complete until we have defined the function <span class="process-math">\(I(x)=\int_{t=a}^x
-f(t)\dx{t}\)</span> and shown that, under our definition, it has the properties we expect from an integral. We will need some of these properties in the proof below.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-22">We will now proceed with the proof of Cauchy’s version of the Fundamental Theorem of Calculus, with the caveat that the proof is not complete until we have defined the function <span class="process-math">\(I(x)=\int_{t=a}^x f(t)\dx{t}\)</span> and shown that under our definition it has the properties we expect from an integral. We will need some of these properties in the proof below.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="proof" id="SECTIONFTC-22"><h3 class="heading"><span class="title">Sketch of Proof.</span></h3>
-<div class="para logical" id="SECTIONFTC-22-2">
+<article class="proof" id="SECTIONFTC-23"><h3 class="heading"><span class="title">Sketch of Proof.</span></h3>
+<div class="para logical" id="SECTIONFTC-23-2">
+<div class="para">There are two statements to prove:</div>
+<ol class="decimal" id="SECTIONFTC-23-2-1">
+<li id="SECTIONFTC-23-2-1-1">
+<div class="para" id="p-derived-SECTIONFTC-23-2-1-1">That <span class="process-math">\(I(x)\)</span> is continuous on the closed interval <span class="process-math">\([a,b]\text{,}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#SECTIONFTC-23-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="SECTIONFTC-23-2-1-2">
+<div class="para" id="p-derived-SECTIONFTC-23-2-1-2">and that <span class="process-math">\(I(x)\)</span> is differentiable on the open interval <span class="process-math">\((a,b)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#SECTIONFTC-23-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">We will prove differentiablity on <span class="process-math">\((a,b)\)</span> first. From that continuity on <span class="process-math">\([a,b]\)</span> follows immediately (why?). Continuity at the endpoints will be addressed separately.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-23-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="SECTIONFTC-23-3">
 <div class="para">Let <span class="process-math">\(x\in (a,b)\text{.}\)</span> To find <span class="process-math">\(I^\prime (x)\)</span> we apply <a href="Continuity-DerivativeAfterthought.html#def_derivative" class="xref" data-knowl="./knowl/xref/def_derivative.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 10.2.1: The Derivative">Definition 10.2.1</a>. Thus</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def_derivative.html ./knowl/xref/thm_EVT.html" id="SECTIONFTC-22-2-4">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def_derivative.html ./knowl/xref/thm_EVT.html" id="SECTIONFTC-23-3-4">
 \begin{align*}
 I^\prime (x)\amp{} = \limit{h}{0}{\frac{I(x+h)-I(x)}{h}}\\
 \amp{} =       \limit{h}{0}{\frac{\int_{t=a}^{x+h}f(t)\dx{t}-\int_{t=a}^x
@@ -439,9 +456,9 @@ f(t)\dx{t}}{h}}\\
 \end{align*}
 </div>
 <div class="para">        Since <span class="process-math">\(f(t)\)</span> was assumed to be continuous on <span class="process-math">\([a,b]\)</span> it is also continuous on the closed interval with endpoints <span class="process-math">\(x\)</span> and <span class="process-math">\(x+h\text{.}\)</span> We know from the <a href="IVTandEVT-SupremumAndEVT.html#thm_EVT" class="xref" data-knowl="./knowl/xref/thm_EVT.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.4.10: Extreme Value Theorem (EVT)">Extreme Value Theorem</a> that there are points <span class="process-math">\(c\text{,}\)</span> and <span class="process-math">\(C\text{,}\)</span> in the same interval such that <span class="process-math">\(f(c)\)</span> and <span class="process-math">\(f(C)\)</span> are the global minimum and maximum of <span class="process-math">\(f\)</span> on the closed interval with endpoints <span class="process-math">\(x\)</span> and  <span class="process-math">\(x+h\text{,}\)</span> respectively.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-23-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SECTIONFTC-22-3">
+<div class="para logical" id="SECTIONFTC-23-4">
 <div class="para">Thus if <span class="process-math">\(h\gt0\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -456,9 +473,9 @@ f\left(c\right)\le \frac{\int^{x+h}_{t=x}{f(t)\dx{t}}}{h}\le
 f\left(C\right)\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-23-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SECTIONFTC-22-4">
+<div class="para logical" id="SECTIONFTC-23-5">
 <div class="para">If <span class="process-math">\(h\lt 0\text{,}\)</span> we have <span class="process-math">\(-h&gt;0\text{,}\)</span> and so</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -477,15 +494,13 @@ f(c)\le \frac{\int^x_{t=x+h}{f(t)\dx{t}}}{-h}\le f(C)
 f(c)\le \frac{\int^{x+h}_{t=x}{f(t)\dx{t}}}{h}\le f\left(C\right)
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-23-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-22-5">Applying the squeeze theorem as <span class="process-math">\(h\to 0\)</span> and continuity of <span class="process-math">\(f\)</span> at <span class="process-math">\(x\)</span> should do the trick.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-23-6">Applying the <a href="Continuity-DefLimit.html#thm_SqueezeTheoremFunctions" class="xref" data-knowl="./knowl/xref/thm_SqueezeTheoremFunctions.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 10.1.11: Squeeze Theorem for Functions">Squeeze Theorem</a> and <a href="Continuity-AnalyticDef.html#def_continuity" class="xref" data-knowl="./knowl/xref/def_continuity.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.1.7: Continuity at a Point">Definition 8.1.7</a> of <span class="process-math">\(f\)</span> at <span class="process-math">\(x\)</span> should do the trick.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-23-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-22-6">The above outline shows that <span class="process-math">\(I(x)\)</span> is differentiable on <span class="process-math">\((a,b)\text{,}\)</span> and it follows thata <span class="process-math">\(I(x)\)</span> is also continuous on <span class="process-math">\([a,b]\)</span> (why?).<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-23-7">To show that <span class="process-math">\(I(x)\)</span> is  continuous  at the endpoints <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> we will appeal to <a href="SequencesAndContinuity.html#thm_LimDefOfContinuity" class="xref" data-knowl="./knowl/xref/thm_LimDefOfContinuity.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.2.1">Theorem 8.2.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-23-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-22-7">To show that <span class="process-math">\(I(x)\)</span> is  continuous  at the endpoints <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> we will appeal to <a href="SequencesAndContinuity.html#thm_LimDefOfContinuity" class="xref" data-knowl="./knowl/xref/thm_LimDefOfContinuity.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.2.1">Theorem 8.2.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="SECTIONFTC-22-8">
+<div class="para logical" id="SECTIONFTC-23-8">
 <div class="para">Consider any sequence <span class="process-math">\((x_n)\)</span> contained in <span class="process-math">\([a,b]\)</span> and converging to <span class="process-math">\(a\text{.}\)</span> We want to show that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -494,9 +509,9 @@ f(c)\le \frac{\int^{x+h}_{t=x}{f(t)\dx{t}}}{h}\le f\left(C\right)
 \left(\int^{x_n}_{t=a}{f(t)\dx{t}}\right)}=0 
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-23-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="SECTIONFTC-22-9">
+<div class="para logical" id="SECTIONFTC-23-9">
 <div class="para">To get continuity at <span class="process-math">\(b\text{,}\)</span> consider any sequence <span class="process-math">\(\left(y_n\right)\)</span> in <span class="process-math">\([a,b]\)</span> converging to <span class="process-math">\(b\text{.}\)</span>  We want to show that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -505,11 +520,11 @@ f(c)\le \frac{\int^{x+h}_{t=x}{f(t)\dx{t}}}{h}\le f\left(C\right)
 }=\limit{n}{\infty } {\left(\int^b_{t=y_n}{f(t)\dx{t}}\right)}=0
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-23-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 10.3.1: Sketch of Proof"><a href="#SECTIONFTC-22" title="Copy heading and permalink for Proof 10.3.1: Sketch of Proof" aria-label="Copy heading and permalink for Proof 10.3.1: Sketch of Proof">🔗</a></div></article><div class="para" id="SECTIONFTC-23">We can use an argument similar to what we did before, but in this case, since we are not dividing, we can just consider the minimum <span class="process-math">\(m\)</span> and maximum <span class="process-math">\(M\)</span> of <span class="process-math">\(f\)</span> on <span class="process-math">\([a,b]\)</span> so that <span class="process-math">\(m\le f\left(t\right)\le M\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-23-10">It will be useful to recognize that on <span class="process-math">\([a,b]\)</span> the function <span class="process-math">\(f(x)\)</span> will have both a maximum and a minimum value (why?).<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-23-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="problem example-like" id="SECTIONFTC-24"><h3 class="heading">
+<div class="autopermalink" data-description="Proof 10.3.1: Sketch of Proof"><a href="#SECTIONFTC-23" title="Copy heading and permalink for Proof 10.3.1: Sketch of Proof" aria-label="Copy heading and permalink for Proof 10.3.1: Sketch of Proof">🔗</a></div></article><article class="problem example-like" id="SECTIONFTC-24"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para" id="SECTIONFTC-24-1">Turn the above ideas into a proof of <a href="SECTIONFTC.html#THEOREMFTCCauchy" class="internal" title="Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)">Theorem 10.3.3</a>. Don’t forget to justify every step in the “Sketch of Proof” above.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-24-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -517,30 +532,37 @@ f(c)\le \frac{\int^{x+h}_{t=x}{f(t)\dx{t}}}{h}\le f\left(C\right)
 <div class="autopermalink" data-description="Problem 10.3.4"><a href="#SECTIONFTC-24" title="Copy heading and permalink for Problem 10.3.4" aria-label="Copy heading and permalink for Problem 10.3.4">🔗</a></div></article><article class="problem example-like" id="SECTIONFTC-25"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para logical" id="SECTIONFTC-25-1-1">
-<div class="para">Suppose <span class="process-math">\(f(x)\)</span> is continuous on <span class="process-math">\([a,b]\)</span> and <span class="process-math">\(I(x)\)</span> is the antiderivative of <span class="process-math">\(f(x)\)</span> from <a href="SECTIONFTC.html#THEOREMFTCCauchy" class="internal" title="Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)">Theorem 10.3.3</a>. Suppose further that <span class="process-math">\(F(x)\)</span> is continuous on <span class="process-math">\([a,b]\)</span> with <span class="process-math">\(F^\prime
-(x)=f(x)\)</span> on <span class="process-math">\((a,b)\text{.}\)</span>  Prove that for any <span class="process-math">\(x\in
+<div class="introduction" id="SECTIONFTC-25-1"><div class="para" id="SECTIONFTC-25-1-1">Suppose <span class="process-math">\(f(x)\)</span> is continuous on <span class="process-math">\([a,b]\)</span> and <span class="process-math">\(I(x)\)</span> is the antiderivative of <span class="process-math">\(f(x)\)</span> from <a href="SECTIONFTC.html#THEOREMFTCCauchy" class="internal" title="Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)">Theorem 10.3.3</a>. Suppose further that <span class="process-math">\(F(x)\)</span> is continuous on <span class="process-math">\([a,b]\)</span> with <span class="process-math">\(F^\prime
+(x)=f(x)\)</span> on <span class="process-math">\((a,b)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-25-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="SECTIONFTC-25-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="SECTIONFTC-25-2-1-1">
+<div class="para">Prove that for any <span class="process-math">\(x\in
 [a,b]\text{,}\)</span>
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/THEOREMFTCCauchy.html">
+<div class="displaymath process-math">
 \begin{equation*}
 I(x)=\int^x_{t=a}{f\left(t\right)\dx{t}}=F\left(x\right)-F(a)
 \end{equation*}
 </div>
-<div class="para">In particular this means that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/THEOREMFTCCauchy.html">
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-25-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 10.3.5.a"><a href="#SECTIONFTC-25-2" title="Copy heading and permalink for Task 10.3.5.a" aria-label="Copy heading and permalink for Task 10.3.5.a">🔗</a></div></article><article class="task exercise-like" id="SECTIONFTC-25-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="SECTIONFTC-25-3-1-1">
+<div class="para">Use the result in part (a) to show that</div>
+<div class="displaymath process-math">
 \begin{equation*}
 \int^b_{t=a}{f\left(t\right)\dx{t}}=F\left(b\right)-F(a)
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-25-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-25-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="SECTIONFTC-25-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="SECTIONFTC-25-2-1">You have two antiderivatives of <span class="process-math">\(f(x)\text{.}\)</span>  By part (c) of <a href="Continuity-DerivativeAfterthought.html#DRILLZeroDerivImpConst" class="xref" data-knowl="./knowl/xref/DRILLZeroDerivImpConst.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 10.2.16">Problem 10.2.16</a>, these must differ by a constant.  What must this constant be?<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-25-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="solutions"><details id="SECTIONFTC-25-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="SECTIONFTC-25-3-2-1">You have two antiderivatives of <span class="process-math">\(f(x)\text{.}\)</span>  By part (c) of <a href="Continuity-DerivativeAfterthought.html#DRILLZeroDerivImpConst" class="xref" data-knowl="./knowl/xref/DRILLZeroDerivImpConst.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 10.2.16">Problem 10.2.16</a>, these must differ by a constant.  What must this constant be?<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-25-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 10.3.5.1"><a href="#SECTIONFTC-25-2" title="Copy heading and permalink for Hint 10.3.5.1" aria-label="Copy heading and permalink for Hint 10.3.5.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 10.3.5.b.1"><a href="#SECTIONFTC-25-3-2" title="Copy heading and permalink for Hint 10.3.5.b.1" aria-label="Copy heading and permalink for Hint 10.3.5.b.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Problem 10.3.5"><a href="#SECTIONFTC-25" title="Copy heading and permalink for Problem 10.3.5" aria-label="Copy heading and permalink for Problem 10.3.5">🔗</a></div></article><div class="para logical" id="SECTIONFTC-26">
+<div class="autopermalink" data-description="Task 10.3.5.b"><a href="#SECTIONFTC-25-3" title="Copy heading and permalink for Task 10.3.5.b" aria-label="Copy heading and permalink for Task 10.3.5.b">🔗</a></div></article><div class="autopermalink" data-description="Problem 10.3.5"><a href="#SECTIONFTC-25" title="Copy heading and permalink for Problem 10.3.5" aria-label="Copy heading and permalink for Problem 10.3.5">🔗</a></div></article><div class="para logical" id="SECTIONFTC-26">
 <div class="para">An obvious question is, how do we know that a continuous function on a closed interval has an antiderivative? That is, how do we know that</div>
 <div class="displaymath process-math">
 \begin{equation*}

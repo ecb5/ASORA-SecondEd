@@ -25,9 +25,10 @@
     <p>
       So far, we (the authors) have refrained from giving rigorous
       definitions of the <term>derivative</term>, and the
-      <term>integral</term>. We simply assumed that you are familiar
-      with the use of these ideas from your Calculus course, even if
-      the details of their definitions are still a bit hazy.
+      <term>integral</term> before using them. We simply assumed that
+      you are familiar with the use of these ideas from your Calculus
+      course, even if the details of their definitions are still a bit
+      hazy.
     </p>
     <p>
       We made this choice consciously, not because it is more
@@ -101,11 +102,11 @@
     </p>
 
     <p>
-      And it is probably tempting for you to
-      make the same assumption and skip the discussion you are about to
-      see. Don<rsq/>t do that. The limit concept is subtle. There is
-      more here than you probably believe and it is worth taking a few
-      moments to think about deeply.
+      And it is probably tempting for you to make the same assumption
+      and skip the discussion you are about to see. Don<rsq/>t do
+      that. The limit concept is subtle. There is more here than you
+      probably believe and it is worth taking time to think about it
+      deeply.
     </p>
     <p>
       The statement <m>\limit{n}{\infty}{2^{-n}}=0</m> has a very
@@ -124,8 +125,9 @@
       <m>2^{-n}</m> that is equal to zero.
     </p>
     <p>
-      Suppose the sequence <m>\left(a_n\right)_{n=1}^\infty </m>
-      converges to <m>a</m>.      In <xref ref="Convergence" ></xref> we usually said that 
+      More generally, suppose the sequence
+      <m>\left(a_n\right)_{n=1}^\infty </m> converges to <m>a</m>.  In
+      <xref ref="Convergence" ></xref> we usually said that
       <m>\limit{n}{\infty}{a_n}</m> <term>converged</term> to <m>a</m>
       rather than saying that <m>\limit{n}{\infty}{a_n}</m> is equal
       to <m>a</m>. Unfortunately this idea gets rendered notationally
@@ -134,7 +136,10 @@
         \limit{n}{\infty}{a_n}=a 
       </me> 
       so when we read it aloud we tend to speak of equality rather
-      than convergence. This is not wrong <foreign>per se</foreign> but it can be confusing.
+      than convergence. This is not wrong <foreign>per se</foreign>
+      but it can be confusing at first. It is the <term>limit</term>
+      of the sequence that is equal to <m>a</m>, not any individual
+      term, and certainly not the sequence itself.
     </p>
     <p>
       The limit concept is a deep and very abstract
@@ -166,34 +171,43 @@
     <p>
       <idx><h>Newton, Isaac</h></idx>
 
-      The limit concept has always been lurking in the background of Calculus.
-      In his attempts to justify his calculations, Newton used what he
-      called his doctrine of <term>Ultimate Ratios</term>. For
-      example, the ratio <m>\frac{(x+h)^2-x^2}{h} = \frac{2xh+h^2}{h}
-      = 2x+h</m> becomes <m>2x</m> <term>ultimately</term>, or at the
-      last instant  before <m>h</m> becomes zero. Newton would
-      have called <m>h</m> an <q>evanescent quantity</q> or
-      <q>vanishing quantity</q> (<xref
-      ref="grabiner81__origin_cauch_rigor_calculy"/>, p. 33). 
+      The limit concept has always been lurking in the background of
+      Calculus.  In his attempts to justify his calculations, Newton
+      used what he called his doctrine of <term>Ultimate
+      Ratios</term>. For example, the ratio <m>\frac{(x+h)^2-x^2}{h} =
+      \frac{2xh+h^2}{h} = 2x+h</m> becomes <m>2x</m>
+      <term>ultimately</term>, or at the last instant before <m>h</m>
+      becomes zero. Newton would have called <m>h</m> an
+      <q>evanescent</q> or <q>vanishing quantity</q> (<xref
+      ref="grabiner81__origin_cauch_rigor_calculy"/>, p. 33).
     </p>
     <p>
-      You have seen this sort of expression before, usually with a limit symbol in front of it:
-   
-      <me>
-        \limit{h}{0}{\frac{(x+h)^2-x^2}{h}} =
-        \limit{h}{0}{\frac{2xh+h^2}{h}} = \limit{h}{0}{2x+h}=2x 
-        </me>.  
+      <!-- You have seen this sort of expression before, usually with a limit symbol in front of it: -->
+      
+      <!-- <me> -->
+      <!--   \limit{h}{0}{\frac{(x+h)^2-x^2}{h}} = -->
+      <!--   \limit{h}{0}{\frac{2xh+h^2}{h}} = \limit{h}{0}{2x+h}=2x  -->
+      <!--   </me>.   -->
 
-        But notice that whereas in the limit of a sequence we were
-        letting <m>n</m> get close to infinity (which is not a number)
-        here we need to let <m>h</m> get infinitely close to zero
-        (which is a number). Notice that in evaluating the limit of
-        the sequence <m>(a_n)</m> <m>n</m> only took on integer values
-        whereas in evaluating the limit <m>
-        \limitt{h}{0}{\frac{(x+h)^2-x^2}{h}}</m> the limit parameter
-        <m>h</m> is simply close to zero. Hence it must be a real
-        number. Clearly these two limits, while related, are different
-        kinds of entities.
+      But notice that to evaluate the limit of the sequence
+      <m>(a_n)</m> we allowed the limit parameter <m>n</m> to take
+      only integer values, whereas to evaluate <m>
+      \limitt{h}{0}{\frac{(x+h)^2-x^2}{h}}</m> for <m>h</m> to get
+      arbitrarily close to zero we must allow it to take on both
+      rational and irrational real values.
+      <!-- get close to infinity (which -->
+      <!-- is not a number) here we need to let <m>h</m> get infinitely -->
+      <!-- close to zero (which is a number).  In evaluating the limit of -->
+      <!-- the sequence <m>(a_n)</m> the limit parameter <m>n</m>, only -->
+      <!-- took on integer values whereas in evaluating the limit <m> -->
+      <!-- \limitt{h}{0}{\frac{(x+h)^2-x^2}{h}}</m> the limit parameter -->
+      <!-- <m>h</m> is simply close to zero. Hence it must be a real -->
+      <!-- number.  -->
+      While they are clearly related, the two limits,
+      <md>
+        <mrow>\limit{n}{\infty}{a_n}\amp{}\amp{} \text{and}\amp{}\amp{}\limit{h}{0}{\frac{(x+h)^2-x^2}{h}}</mrow>
+        </md>      
+        are different kinds of entities.
     </p>
 
 
@@ -281,22 +295,37 @@
       <statement> 
         <p> 
           We say <m>\limit{x}{a}{f(x)} =L</m> provided that for each
-          <m>\eps>0</m>, there exists <m>\delta>0</m> such that if
+          <m>\eps\gt0</m>, there exists a <m>\delta\gt0</m> such that if
           <m>0\lt \abs{x-a}\lt \delta</m> then <m>\abs{f(x)-L}\lt
           \eps</m>.
         </p>
       </statement> 
     </definition> 
     <p> 
-      Before we delve into this, notice that it is very similar to the
+      Before we delve into this, notice that <xref ref="def_limit" ></xref>  is very similar to the
       definition of <xref ref="def_continuity"
-      text="custom">continuity at a point</xref>.
+      text="custom">continuity at a point</xref>. 
       <!-- the definition of the continuity of -->
       <!-- <m>f(x)</m> at <m>x=a</m>.  --> 
-      In fact we can readily see that <m>f</m>
-    is continuous at  <m>x=a</m>  if and only if 
-    <m>\limit{x}{a}{f(x)} = f(a)</m>.  
+      This is because the two concepts are closely very related.  
+    </p>
+
+    <p>
+      In fact we can readily see that <m>f</m> is continuous at
+      <m>x=a</m> if and only if the limit of <m>f(x)</m> as <m>x</m>
+      approaches <m>a</m> is <m>f(a)</m>.
     </p> 
+    <problem xml:id="DRILLContIFFLimExist">
+
+      <p>
+        Use <xref ref="def_continuity" ></xref> and <xref
+        ref="def_limit" ></xref> to prove that a function <m>f(x)</m>
+        is continuous at <m>x=a</m> if and only if
+        <m>\limit{x}{a}{f(x)}=f(a)</m>.
+
+      </p>
+    </problem>
+
     <!-- <aside> -->
     
     <!--   <title>Accumulation Points</title> -->
@@ -310,538 +339,584 @@
     <!--   </p>  -->
     <!-- </aside> --> 
     <p> 
-      There are two differences between <xref ref="def_limit" ></xref>
-      and <xref ref="def_continuity" ></xref> and the differences are
-      related.  The first is that we in the definition of a limit
-      <m>L</m> plays the same role that <m>f(a)</m> played in the
-      definition of continuity.  This is because the function may not
-      be defined at <m>a</m>.  In a sense the limiting value <m>L</m>
-      is the value <m>f</m> would have <em>if it were defined and
-      continuous at <m>a</m>.</em> 
+      There are really only two differences between <xref
+      ref="def_limit" ></xref> and <xref ref="def_continuity" ></xref>
+      and the differences are related.  The first is that we in the
+      definition of a limit <m>L</m> plays the same role that
+      <m>f(a)</m> played in the definition of continuity.  This is
+      because the function may not be defined at <m>a</m>.  In a sense
+      the limiting value <m>L</m> is the value <m>f</m> would have
+      if <m>f</m>it were defined and continuous at <m>a</m>.
     </p>
     <p>
-      The second is that we have replaced <me> \abs{x-a}\lt \delta
-      </me> from continuity with <me> 0\lt \abs{x-a}\lt \delta </me>
-      in the limit definition.  Because <m>f</m> needn<rsq/>t be
-      defined at <m>a</m>, we don<rsq/>t consider what happens when
-      <m>x=a</m>.  This is the only purpose for this change.
+      The second difference is that we have replaced <me> \abs{x-a}\lt
+      \delta </me> from the continuity definition with <me> 0\lt
+      \abs{x-a}\lt \delta </me> in the limit definition. You can see
+      why this change is needed from the limit in <xref
+      ref="EXAMPLESyncFunction" ></xref>. Since <m>\frac{\sin
+      x}{x}</m> is not defined at <m>x=0</m> we need to eliminate that
+      possibility from consideration.  This is the only purpose for
+      this change.
     </p> 
-    <p>
-      As with the definition of the limit of a sequence, this
-      definition does not determine what <m>L</m> is, it only verifies
-      that your guess for the value of the limit is correct.
-    </p> 
-      <p> 
-        Finally, a few comments on the differences and similiarities
-        between this limit and the limit of a sequence are in order,
-        if for no other reason than because we use the same notation
-        (<m>\lim</m>) for both.
-      </p> 
-      <p> 
-        When we were
-        working with sequences in <xref ref="Convergence"></xref>
-        and wrote things like <m>\limit{n}{\infty}{a_n}</m> we were
-        thinking of <m>n</m> as an integer that got bigger and bigger.
-        To put that more mathematically, the limit parameter <m>n</m>
-        was taken from the set of positive integers, or <m>n\in \NN</m>.
-      </p> 
-      <p> 
-        For both continuity and the limit of a function we
-        write things like <m>\limit{x}{a}{f(x)}</m> and think of
-        <m>x</m> as a continuous real variable that gets arbitrarily close to the number
-        <m>a</m>. 
+    <!-- <p> -->
+    <!--   As with the definition of convergence of a sequence, the limit -->
+    <!--   definition does not determine what the limit will be. It -->
+    <!--   doesn<rsq/>t even help you guess what the limit might be.  It -->
+    <!--   only verifies that your guess for the value of the limit is -->
+    <!--   correct, once you have made a guess by other means. -->
+    <!-- </p>  -->
+    <!-- <p>  -->
+    <!--   Finally, a few comments on the differences and similiarities -->
+    <!--   between this limit and the limit of a sequence are in order, -->
+    <!--   if for no other reason than because we use the same notation -->
+    <!--   (<m>\lim</m>) for both. -->
+    <!-- </p>  -->
+    <!-- <p>  -->
+    <!--   When we were working with sequences in <xref -->
+    <!--   ref="Convergence"></xref> and wrote things like -->
+    <!--   <m>\limit{n}{\infty}{a_n}</m> we were thinking of <m>n</m> as an -->
+    <!--   integer that got bigger and bigger.  To put that more -->
+    <!--   mathematically, the limit parameter <m>n</m> was taken from the -->
+    <!--   set of positive integers, or <m>n\in \NN</m>. -->
+    <!-- </p>  -->
+    <!-- <p>  -->
+    <!--   For both continuity and the limit of a function we -->
+    <!--   write things like <m>\limit{x}{a}{f(x)}</m> and think of -->
+    <!--   <m>x</m> as a continuous real variable that gets arbitrarily close to the number -->
+    <!--   <m>a</m>.  -->
 
 
-        <!-- Again, to be more mathematical in our language we -->
-        <!-- would say that the limit parameter <m>x</m> is taken from the -->
-        <!-- <m>\ldots</m> Well, actually, this is interesting isn<rsq/>t it?  Do -->
-        <!-- we need to take <m>x</m> from <m>\QQ</m> or from <m>\RR?</m> The -->
-        <!-- requirement in both cases is simply that we be able to choose -->
-        <!-- <m>x</m> arbitrarily close to <m>a</m>.  From <xref -->
-        <!-- ref="thm_IrrationalBetweenIrrationals"></xref> of <xref -->
-        <!-- ref="NumbersRealRational"></xref> we see that this is -->
-        <!-- possible whether <m>x</m> is rational or not, so it seems either -->
-        <!-- will work.  This leads to the pardoxical sounding conclusion -->
-        <!-- that we do not need a continuum <m>(\RR)</m> to have continuity. -->
-        <!-- This seems strange.   -->
-      </p> 
+    <!--   <!-\- Again, to be more mathematical in our language we -\-> -->
+    <!--   <!-\- would say that the limit parameter <m>x</m> is taken from the -\-> -->
+    <!--   <!-\- <m>\ldots</m> Well, actually, this is interesting isn<rsq/>t it?  Do -\-> -->
+    <!--   <!-\- we need to take <m>x</m> from <m>\QQ</m> or from <m>\RR?</m> The -\-> -->
+    <!--   <!-\- requirement in both cases is simply that we be able to choose -\-> -->
+    <!--   <!-\- <m>x</m> arbitrarily close to <m>a</m>.  From <xref -\-> -->
+    <!--   <!-\- ref="thm_IrrationalBetweenIrrationals"></xref> of <xref -\-> -->
+    <!--   <!-\- ref="NumbersRealRational"></xref> we see that this is -\-> -->
+    <!--   <!-\- possible whether <m>x</m> is rational or not, so it seems either -\-> -->
+    <!--   <!-\- will work.  This leads to the pardoxical sounding conclusion -\-> -->
+    <!--   <!-\- that we do not need a continuum <m>(\RR)</m> to have continuity. -\-> -->
+    <!--   <!-\- This seems strange.   -\-> -->
+    <!-- </p>  -->
 
-      <p>
-        Before continuing with <xref ref="EXAMPLESyncFunction"
-        ></xref>, let<rsq/>s look at some simpler, algebraic examples
-        to see the <xref ref="def_limit" ></xref> in use.
-      </p>
-      <example>
-        <statement>
-          <p> Consider the
-          function <m>D(x)=\frac{x^2-1}{x-1}</m>, <m>x\neq 1</m>.  You
-          probably recognize this as the difference quotient used to
-          compute the derivative of <m>f(x)=x^2</m> at <m>x=1</m>, so we
-          strongly suspect that <m>\limit{x}{1}{\frac{x^2-1}{x-1}}=2</m>.
-          Just as when we were dealing with limits of sequences, we should
-          be able to use the definition to verify this.  And as before, we
-          will start with some scrapwork.  
-          </p> 
-          <p> 
-            <term>SCRAPWORK</term>
-          </p>
-          <p>
-            Let <m>\eps>0</m>.  We wish to find a <m>\delta>0</m>
-            such that if <m>0\lt \abs{x-1}\lt \delta</m> then
-            <m>\abs{\frac{x^2-1}{x-1}-2}\lt \eps</m>.  With this in mind, we
-            perform the following calculations <me>
-            \abs{\frac{x^2-1}{x-1}-2}=\abs{(x+1)-2} = \abs{x-1} </me>.  
-          </p>
-          <p>
-            Now we have a handle on <m>\delta</m> that will work in the
-            definition and we<rsq/>ll give the formal proof that <me>
-            \limit{x}{1}{\frac{x^2-1}{x-1}}=2 </me>.  
-          </p> 
-        </statement>
-      </example>
-      <proof> 
-        <p>
-          Let <m>\eps>0</m> and let <m>\delta=\eps</m>.  If <m>0\lt
-          \abs{x-1}\lt \delta</m>, then <me>
-          \abs{\frac{x^2-1}{x-1}-2}=\abs{(x+1)-2}=\abs{x-1}\lt
-          \delta=\eps </me>.
-        </p>
-      </proof> 
-      <p> 
-        As in our previous work with sequences and continuity, notice
-        that the scrapwork is not part of the formal proof (though it
-        was necessary to determine an appropriate <m>\delta)</m>.  Also,
-        notice that <m>0\lt \abs{x-1}</m> was not really used except to
-        ensure that <m>x\neq 1</m>.
-      </p> 
-      <problem>
-        
-        <idx><h>limit</h><h><m>\limit{x}{a}{\frac{x^2-a^2}{x-a}}=2a</m></h></idx>
-
-        <statement> 
-          <p>
-            Use the definition of a limit to verify that
-            <me> \limit{x}{a}{\frac{x^2-a^2}{x-a}}=2a.{} </me> 
-          </p>
-        </statement>
-      </problem>
-
-      <problem>
-        
-        <idx><h>limit</h><h>verifying limits via continuity</h></idx>
-
-        <introduction>
-          <p> 
-            Use the
-            definition of a limit to verify each of the following limits.
-          </p>
-        </introduction>
-        <task> 
-          <statement>
-            <p>
-              <m>\limit{x}{1}{\frac{x^3-1}{x-1}}=3</m> 
-            </p> 
-          </statement>
-          <hint>
-            <p> 
-              <md>
-                <mrow> 
-                  \abs{\frac{x^3-1}{x-1}-3} \amp =
-                  \abs{x^2+x+1-3} 
-                </mrow> 
-                <mrow>\amp \leq\abs{x^2-1}+\abs{x-1}
-                
-                </mrow> 
-                <mrow> \amp =\abs{(x-1+1)^2-1}+\abs{x-1} 
-                </mrow> 
-                <mrow>
-                  \amp =\abs{(x-1)^2+2(x-1)}+\abs{x-1} 
-                </mrow> 
-                <mrow>\amp
-                \leq\abs{x-1}^2 + 3\abs{x-1} 
-                </mrow> 
-                </md>.  
-            </p> 
-          </hint>
-        </task> 
-        <task>
-          <statement> 
-            <p>
-              <m>\limit{x}{1}{\frac{\sqrt{x}-1}{x-1}}=1/2</m> 
-            </p>
-          </statement>
-          <hint>
-            <p>
-              <md>
-                <mrow>
-                  \abs{\frac{\sqrt{x}-1}{x-1}-\frac12}\amp =
-                  \abs{\frac{1}{\sqrt{x}+1}-\frac12} 
-                </mrow> 
-                <mrow> 
-                  \amp
-                  =\abs{\frac{2-\left(\sqrt{x}+1\right)}{2\left(\sqrt{x}+1\right)}}
-                </mrow> 
-                <mrow> 
-                  \amp
-                  =\abs{\frac{1-x}{2\left(1+\sqrt{x}\right)^2}} 
-                </mrow> 
-                <mrow>
-                  \amp \leq\frac12\abs{x-1}.  
-                </mrow> 
-              </md> 
-            </p> 
-          </hint> 
-        </task>
-      </problem> 
-
-      <p> 
-        Our definition of a limit, although it is rigorous, is quite
-        cumbersome to use. What we want to do is develop some tools we
-        can use without having to refer directly to <xref
-        ref="def_limit"></xref>.  One such tool is <xref
-        ref="thm_LimDefOfContinuity"></xref> which allows us to show
-        that a function is continuous (or discontinuous) at a point by
-        examining certain sequences. We will need others.
-      </p>
-      <p>
-        As we observed earlier, <m>f(x)</m> is continuous at
-        <m>x=a</m> if and only if <m>\limit{x}{a}{f(x)} = f(a)</m>. On
-        the other hand if <m>f(x)</m> is not continuous at <m>x=a</m>,
-        but <m>\limit{x}{a}{f(x)}=L </m>, we can make it continuous by
-        arbitrarily assigning <m>f(a)=L</m>. 
-
-
-        <!-- <m>\limit{x}{a}{f(x)}=L -->
-        <!-- </m> then we can make it continuous by defining -->
-        <!-- <m>f(a)=L</m>. -->
-        Combining this with <xref
-        ref="thm_LimDefOfContinuity"></xref> we have the following
-        corollary:
-        <!--   Here is another.  The key is the -->
-        <!--   observation we made after the definition of a limit: <me> f -->
-        <!--   \text{ is continuous at } x=a \text{ if and only if } -->
-        <!--   \limit{x}{a}{f(x)}=f(a) </me>. -->
-        <!-- </p>  -->
-        <!-- <p> -->
-        <!--   Read another way, we could say that <m>\limit{x}{a}{f(x)}=L</m> -->
-        <!--   provided that if we redefine <m>f(a)=L</m> (or define -->
-        <!--   <m>f(a)=L</m> in the case where <m>f(a)</m> is not defined) then -->
-        <!--   <m>f</m> becomes continuous at <m>a</m>.  This allows us to use -->
-        <!--   all of the machinery we proved about continuous functions and -->
-        <!--   limits of sequences.   -->
-        <!-- </p>  -->
-        <!-- <p>  -->
-        <!--   For example, the following -->
-        <!--   corollary to <xref ref="thm_LimDefOfContinuity"></xref> -->
-        <!--   comes virtually for free once we<rsq/>ve made the observation above. -->
-      </p> 
-      <corollary xml:id="cor_limit-by-sequences"> 
-        <statement> 
-          <p>
-            <m>\limit{x}{a}{f(x)}=L</m> if and only if <m>f</m> satisfies
-            the following property: <me> \forall \text{ sequences } (x_n),
-            x_n\ne a, \text{ if } \limit{n}{\infty}{x_n}=a \text{ then }
-            \limit{n}{\infty}{f(x_n)}=L. {} </me> 
-          </p> 
-        </statement>
-      </corollary> 
-      <p> 
-        Armed with this, we can prove the following
-        familiar limit theorems from Calculus.  
-      </p> 
-
-      <theorem xml:id="thm_CalcLimits">
-
-        <idx><h>limit</h><h>properties of</h></idx>
-
-        <statement>
-          <p>
-            Suppose <m>\limit{x}{a}{f(x)}=L</m> and <m>\limit{x}{a}{g(x)}=M</m>, then
-
-            <ol marker="(a)">
-              <li>
-                <p>
-                  <m>\limit{x}{a}{\left(f(x)+g(x)\right)}=L+M</m>
-                </p>
-              </li>
-
-              <li>
-                <p>
-                  <m>\limit{x}{a}{\left(f(x)\cdot g(x)\right)}=L\cdot M</m>
-                </p>
-              </li>
-
-              <li>
-                <p>
-                  <m>\limit{x}{a}{\left(\frac{f(x)}{g(x)}\right)}=L/M</m> provided <m>M\ne0</m> and <m>g(x)\ne{}0</m>,
-                  for <m>x</m> sufficiently close to a
-                  (but not equal to <m>a</m>).
-                </p>
-              </li>
-            </ol>
-          </p>
-        </statement>
-      </theorem>
-
-      <!-- <theorem xml:id="thm_CalcLimits">  -->
-      <!--   <introduction> -->
-      <!--     <idx><h>limit</h><h>properties of</h></idx>  -->
-      <!--     <p> -->
-      <!--       Suppose -->
-      <!--       <m>\limit{x}{a}{f(x)}=L</m> and <m>\limit{x}{a}{g(x)}=M</m>, -->
-      <!--       then  -->
-      <!--     </p> -->
-      <!--   </introduction> -->
-      <!--   <task> -->
-      <!--     <statement> -->
-      <!--       <p> -->
-      <!--         <m>\limit{x}{a}{\left(f(x)+g(x)\right)}=L+M</m>  -->
-      <!--       </p> -->
-      <!--     </statement> -->
-      <!--   </task> -->
-      <!--   <task> -->
-      <!--     <statement> -->
-      <!--       <p> -->
-      <!--         <m>\limit{x}{a}{\left(f(x)\cdot g(x)\right)}=L\cdot M</m> -->
-      <!--       </p> -->
-      <!--     </statement> -->
-      <!--   </task> -->
-      <!--   <task> -->
-      <!--     <statement> -->
-      <!--       <p> -->
-      <!--         <m>\limit{x}{a}{\left(\frac{f(x)}{g(x)}\right)}=L/M</m> provided -->
-      <!--         <m>M\ne0</m> and <m>g(x)\ne{}0</m>, for <m>x</m> sufficiently -->
-      <!--         close to a (but not equal to <m>a</m>).   -->
-      <!--       </p> -->
-      <!--     </statement> -->
-      <!--   </task> -->
-      <!-- </theorem> -->
-
-
-      <!-- <statement>  -->
-      <!--   <p> -->
-      <!--     <ol marker="(a)">  -->
-      <!--       <li>  -->
-      <!--         <p> -->
-
-      <!--         </p>  -->
-      <!--       </li>  -->
-      <!--       <li> -->
-      <!--         <p> -->
-
-      <!--         </p> -->
-      <!--       </li>  -->
-      <!--       <li> -->
-      <!--         <p> -->
-      <!--         </p>  -->
-      <!--       </li>  -->
-      <!--     </ol>  -->
-      <!--   </p> -->
-      <!-- </statement>  -->
-      <!-- </theorem>  -->
-      <p> 
-        We will prove part (a) to give you a
-        feel for this and let you prove parts (b) and (c).  
-      </p> 
-      <proof>
-        <p> 
-          Let <m>\left(x_n\right)</m> be a sequence such that
-          <m>x_n\ne a</m> and <m>\limit{n}{\infty}{x_n}=a</m>.  Since
-          <m>\limit{x}{a}{f(x)} = L</m> and <m>\limit{x}{a}{g(x)} = M</m>
-          we see that <m>\limit{n}{\infty}{f(x_n)} = L</m> and
-          <m>\limit{n}{\infty}{g(x_n)} = M</m>.  By <xref
-          ref="thm_SumOfSequences"></xref> of <xref
-          ref="Convergence"></xref>, we have
-          <m>\limit{n}{\infty}{f(x_n)+g(x_n)}=L+M</m>.  Since
-          <m>\left(x_n\right)</m> was an arbitrary sequence with
-          <m>x_n\ne a</m> and <m>\limit{n}{\infty}{x_n} = a</m> we have
-          <me> \limit{x}{a}{\left(f(x)+g(x)\right)} = L+M </me>.  
+    <!-- <p> -->
+    <!--   Before continuing with <xref ref="EXAMPLESyncFunction" -->
+    <!--   ></xref>, let<rsq/>s look at some simpler, algebraic examples -->
+    <!--   to see the <xref ref="def_limit" ></xref> in use. -->
+    <!-- </p> -->
+    <example>
+      <statement>
+        <p> Consider the
+        function <m>D(x)=\frac{x^2-1}{x-1}</m>, <m>x\neq 1</m>.  You
+        probably recognize this as the difference quotient used to
+        compute the derivative of <m>f(x)=x^2</m> at <m>x=1</m>, so we
+        strongly suspect that <m>\limit{x}{1}{\frac{x^2-1}{x-1}}=2</m>.
+        Just as when we were dealing with limits of sequences, we should
+        be able to use the definition to verify this.  And as before, we
+        will start with some scrapwork.  
         </p> 
-      </proof>
-
-      <problem> 
-
-        <idx><h>limit</h><h>properties of</h></idx>
-        <idx><h>limit</h><h>verify limit laws from Calculus</h></idx>
-
-        <statement> 
-          <p> 
-            Prove parts (b) and (c) of <xref
-            ref="thm_CalcLimits"></xref>.  
-          </p> 
-        </statement>
-      </problem> 
-      <p> 
-        More in line with our current needs, we have a
-        reformulation of the Squeeze Theorem.  
-      </p> 
-      <theorem xml:id="thm_SqueezeTheoremFunctions"> 
-        <title>Squeeze Theorem for Functions</title>
-
-        <idx><h>Squeeze Theorem</h><h>for functions</h></idx>
-
-        <statement>
-          
-
-
-          <p>
-            Suppose
-            <m>f(x)\le g(x) \le h(x)</m>, for <m>x</m> sufficiently close to
-            <m>a</m> (but not equal to <m>a</m>).  If
-            <m>\limit{x}{a}{f(x)}=L=\limit{x}{a}{h(x)}</m>, then
-            <m>\limit{x}{a}{g(x)}=L</m> also.  
-          </p> 
-        </statement> 
-      </theorem>
-
-      <problem> 
-
-        <idx><h>Squeeze Theorem</h><h>for functions</h></idx>
-
-        <statement> 
-          <p>
-            Prove the <xref
-            ref="thm_SqueezeTheoremFunctions" text="custom">Squeeze
-            Theorem for functions</xref>.  
-          </p>
-        </statement>
-        <hint> 
-          <p> Use <xref
-          ref="thm_SqueezeTheorem"></xref>, the Squeeze Theorem for
-          sequences from <xref ref="Convergence"></xref>.  
-          </p>
-        </hint> 
-      </problem> 
-      <p> 
-        Returning to <xref ref="EXAMPLESyncFunction"></xref> we see
-        that the Squeeze Theorem is just what we need.  First notice
-        that since <m>D(x)=\sin x/x</m> is an even function, we only
-        need to focus on <m>x>0</m> in our inequalities.  Consider the
-        unit circle.
+        <p> 
+          <term>SCRAPWORK</term>
+        </p>
+        <p>
+          Let <m>\eps>0</m>.  We wish to find a <m>\delta>0</m>
+          such that if <m>0\lt \abs{x-1}\lt \delta</m> then
+          <m>\abs{\frac{x^2-1}{x-1}-2}\lt \eps</m>.  With this in mind, we
+          perform the following calculations <me>
+          \abs{\frac{x^2-1}{x-1}-2}=\abs{(x+1)-2} = \abs{x-1} </me>.  
+        </p>
+        <p>
+          Now we have a handle on <m>\delta</m> that will work in the
+          definition and we<rsq/>ll give the formal proof that <me>
+          \limit{x}{1}{\frac{x^2-1}{x-1}}=2 </me>.  
+        </p> 
+      </statement>
+    </example>
+    <proof> 
+      <p>
+        Let <m>\eps>0</m> and let <m>\delta=\eps</m>.  If <m>0\lt
+        \abs{x-1}\lt \delta</m>, then <me>
+        \abs{\frac{x^2-1}{x-1}-2}=\abs{(x+1)-2}=\abs{x-1}\lt
+        \delta=\eps </me>.
       </p>
+    </proof> 
+    <p> 
+      As in our previous work with sequences and continuity, notice
+      that the scrapwork is not part of the formal proof (though it
+      was necessary to determine an appropriate <m>\delta)</m>.  Also,
+      notice that <m>0\lt \abs{x-1}</m> was not really used except to
+      ensure that <m>x\neq 1</m>.
+    </p> 
+    <problem>
+      
+      <idx><h>limit</h><h><m>\limit{x}{a}{\frac{x^2-a^2}{x-a}}=2a</m></h></idx>
 
+      <statement> 
+        <p>
+          Use the definition of a limit to verify that
+          <me> \limit{x}{a}{\frac{x^2-a^2}{x-a}}=2a.{} </me> 
+        </p>
+      </statement>
+    </problem>
+
+    <problem>
+      
+      <idx><h>limit</h><h>verifying limits via continuity</h></idx>
+
+      <introduction>
+        <p> 
+          Use the
+          definition of a limit to verify each of the following limits.
+        </p>
+      </introduction>
+      <task> 
+        <statement>
+          <p>
+            <m>\limit{x}{1}{\frac{x^3-1}{x-1}}=3</m> 
+          </p> 
+        </statement>
+        <hint>
+          <p> 
+            <md>
+              <mrow> 
+                \abs{\frac{x^3-1}{x-1}-3} \amp =
+                \abs{x^2+x+1-3} 
+              </mrow> 
+              <mrow>\amp \leq\abs{x^2-1}+\abs{x-1}
+              
+              </mrow> 
+              <mrow> \amp =\abs{(x-1+1)^2-1}+\abs{x-1} 
+              </mrow> 
+              <mrow>
+                \amp =\abs{(x-1)^2+2(x-1)}+\abs{x-1} 
+              </mrow> 
+              <mrow>\amp
+              \leq\abs{x-1}^2 + 3\abs{x-1} 
+              </mrow> 
+              </md>.  
+          </p> 
+        </hint>
+      </task> 
+      <task>
+        <statement> 
+          <p>
+            <m>\limit{x}{1}{\frac{\sqrt{x}-1}{x-1}}=1/2</m> 
+          </p>
+        </statement>
+        <hint>
+          <p>
+            <md>
+              <mrow>
+                \abs{\frac{\sqrt{x}-1}{x-1}-\frac12}\amp =
+                \abs{\frac{1}{\sqrt{x}+1}-\frac12} 
+              </mrow> 
+              <mrow> 
+                \amp
+                =\abs{\frac{2-\left(\sqrt{x}+1\right)}{2\left(\sqrt{x}+1\right)}}
+              </mrow> 
+              <mrow> 
+                \amp
+                =\abs{\frac{1-x}{2\left(1+\sqrt{x}\right)^2}} 
+              </mrow> 
+              <mrow>
+                \amp \leq\frac12\abs{x-1}.  
+              </mrow> 
+            </md> 
+          </p> 
+        </hint> 
+      </task>
+    </problem> 
+
+    <p> 
+      Our definition of a limit, although it is rigorous, is quite
+      cumbersome to use. What we want to do is develop some tools we
+      can use without having to refer directly to <xref
+      ref="def_limit"></xref>.  One such tool is <xref
+      ref="thm_LimDefOfContinuity"></xref> which allows us to show
+      that a function is continuous (or discontinuous) at a point by
+      examining certain sequences. We will need others.
+    </p>
+    <p>
+      As we observed earlier, <m>f(x)</m> is continuous at
+      <m>x=a</m> if and only if <m>\limit{x}{a}{f(x)} = f(a)</m>. On
+      the other hand if <m>f(x)</m> is not continuous at <m>x=a</m>,
+      but <m>\limit{x}{a}{f(x)}=L </m>, we can make it continuous by
+      arbitrarily assigning <m>f(a)=L</m>. 
+
+
+      <!-- <m>\limit{x}{a}{f(x)}=L -->
+      <!-- </m> then we can make it continuous by defining -->
+      <!-- <m>f(a)=L</m>. -->
+      Combining this with <xref
+      ref="thm_LimDefOfContinuity"></xref> we have the following
+      corollary:
+      <!--   Here is another.  The key is the -->
+      <!--   observation we made after the definition of a limit: <me> f -->
+      <!--   \text{ is continuous at } x=a \text{ if and only if } -->
+      <!--   \limit{x}{a}{f(x)}=f(a) </me>. -->
+      <!-- </p>  -->
+      <!-- <p> -->
+      <!--   Read another way, we could say that <m>\limit{x}{a}{f(x)}=L</m> -->
+      <!--   provided that if we redefine <m>f(a)=L</m> (or define -->
+      <!--   <m>f(a)=L</m> in the case where <m>f(a)</m> is not defined) then -->
+      <!--   <m>f</m> becomes continuous at <m>a</m>.  This allows us to use -->
+      <!--   all of the machinery we proved about continuous functions and -->
+      <!--   limits of sequences.   -->
+      <!-- </p>  -->
+      <!-- <p>  -->
+      <!--   For example, the following -->
+      <!--   corollary to <xref ref="thm_LimDefOfContinuity"></xref> -->
+      <!--   comes virtually for free once we<rsq/>ve made the observation above. -->
+    </p> 
+    <corollary xml:id="cor_limit-by-sequences"> 
+      <statement> 
+        <p>
+          <m>\limit{x}{a}{f(x)}=L</m> if and only if <m>f</m> satisfies
+          the following property: <me> \forall \text{ sequences } (x_n),
+          x_n\ne a, \text{ if } \limit{n}{\infty}{x_n}=a \text{ then }
+          \limit{n}{\infty}{f(x_n)}=L. {} </me> 
+        </p> 
+      </statement>
+    </corollary> 
+    <p> 
+      Armed with this, we can prove the following
+      familiar limit theorems from Calculus.  
+    </p> 
+
+    <theorem xml:id="thm_CalcLimits">
+
+      <idx><h>limit</h><h>properties of</h></idx>
+
+      <statement>
+        <p>
+          Suppose <m>\limit{x}{a}{f(x)}=L</m> and <m>\limit{x}{a}{g(x)}=M</m>, then
+
+          <ol marker="(a)">
+            <li>
+              <p>
+                <m>\limit{x}{a}{\left(f(x)+g(x)\right)}=L+M</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\limit{x}{a}{\left(f(x)\cdot g(x)\right)}=L\cdot M</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\limit{x}{a}{\left(\frac{f(x)}{g(x)}\right)}=L/M</m> provided <m>M\ne0</m> and <m>g(x)\ne{}0</m>,
+                for <m>x</m> sufficiently close to a
+                (but not equal to <m>a</m>).
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </theorem>
+
+    <!-- <theorem xml:id="thm_CalcLimits">  -->
+    <!--   <introduction> -->
+    <!--     <idx><h>limit</h><h>properties of</h></idx>  -->
+    <!--     <p> -->
+    <!--       Suppose -->
+    <!--       <m>\limit{x}{a}{f(x)}=L</m> and <m>\limit{x}{a}{g(x)}=M</m>, -->
+    <!--       then  -->
+    <!--     </p> -->
+    <!--   </introduction> -->
+    <!--   <task> -->
+    <!--     <statement> -->
+    <!--       <p> -->
+    <!--         <m>\limit{x}{a}{\left(f(x)+g(x)\right)}=L+M</m>  -->
+    <!--       </p> -->
+    <!--     </statement> -->
+    <!--   </task> -->
+    <!--   <task> -->
+    <!--     <statement> -->
+    <!--       <p> -->
+    <!--         <m>\limit{x}{a}{\left(f(x)\cdot g(x)\right)}=L\cdot M</m> -->
+    <!--       </p> -->
+    <!--     </statement> -->
+    <!--   </task> -->
+    <!--   <task> -->
+    <!--     <statement> -->
+    <!--       <p> -->
+    <!--         <m>\limit{x}{a}{\left(\frac{f(x)}{g(x)}\right)}=L/M</m> provided -->
+    <!--         <m>M\ne0</m> and <m>g(x)\ne{}0</m>, for <m>x</m> sufficiently -->
+    <!--         close to a (but not equal to <m>a</m>).   -->
+    <!--       </p> -->
+    <!--     </statement> -->
+    <!--   </task> -->
+    <!-- </theorem> -->
+
+
+    <!-- <statement>  -->
+    <!--   <p> -->
+    <!--     <ol marker="(a)">  -->
+    <!--       <li>  -->
+    <!--         <p> -->
+
+    <!--         </p>  -->
+    <!--       </li>  -->
+    <!--       <li> -->
+    <!--         <p> -->
+
+    <!--         </p> -->
+    <!--       </li>  -->
+    <!--       <li> -->
+    <!--         <p> -->
+    <!--         </p>  -->
+    <!--       </li>  -->
+    <!--     </ol>  -->
+    <!--   </p> -->
+    <!-- </statement>  -->
+    <!-- </theorem>  -->
+    <p> 
+      We will prove part (a) to give you a
+      feel for this and let you prove parts (b) and (c).  
+    </p> 
+    <proof>
+      <p> 
+        Let <m>\left(x_n\right)</m> be a sequence such that
+        <m>x_n\ne a</m> and <m>\limit{n}{\infty}{x_n}=a</m>.  Since
+        <m>\limit{x}{a}{f(x)} = L</m> and <m>\limit{x}{a}{g(x)} = M</m>
+        we see that <m>\limit{n}{\infty}{f(x_n)} = L</m> and
+        <m>\limit{n}{\infty}{g(x_n)} = M</m>.  By <xref
+        ref="thm_SumOfSequences"></xref> of <xref
+        ref="Convergence"></xref>, we have
+        <m>\limit{n}{\infty}{f(x_n)+g(x_n)}=L+M</m>.  Since
+        <m>\left(x_n\right)</m> was an arbitrary sequence with
+        <m>x_n\ne a</m> and <m>\limit{n}{\infty}{x_n} = a</m> we have
+        <me> \limit{x}{a}{\left(f(x)+g(x)\right)} = L+M </me>.  
+      </p> 
+    </proof>
+
+    <problem> 
+
+      <idx><h>limit</h><h>properties of</h></idx>
+      <idx><h>limit</h><h>verify limit laws from Calculus</h></idx>
+
+      <statement> 
+        <p> 
+          Prove parts (b) and (c) of <xref
+          ref="thm_CalcLimits"></xref>.  
+        </p> 
+      </statement>
+    </problem> 
+    <p> 
+      More in line with our current needs, we have a
+      reformulation of the Squeeze Theorem.  
+    </p> 
+    <theorem xml:id="thm_SqueezeTheoremFunctions"> 
+      <title>Squeeze Theorem for Functions</title>
+
+      <idx><h>Squeeze Theorem</h><h>for functions</h></idx>
+
+      <statement>
+        
+
+
+        <p>
+          Suppose
+          <m>f(x)\le g(x) \le h(x)</m>, for <m>x</m> sufficiently close to
+          <m>a</m> (but not equal to <m>a</m>).  If
+          <m>\limit{x}{a}{f(x)}=L=\limit{x}{a}{h(x)}</m>, then
+          <m>\limit{x}{a}{g(x)}=L</m> also.  
+        </p> 
+      </statement> 
+    </theorem>
+
+    <problem> 
+
+      <idx><h>Squeeze Theorem</h><h>for functions</h></idx>
+
+      <statement> 
+        <p>
+          Prove the <xref
+          ref="thm_SqueezeTheoremFunctions" text="custom">Squeeze
+          Theorem for functions</xref>.  
+        </p>
+      </statement>
+      <hint> 
+        <p> Use <xref
+        ref="thm_SqueezeTheorem"></xref>, the Squeeze Theorem for
+        sequences from <xref ref="Convergence"></xref>.  
+        </p>
+      </hint> 
+    </problem> 
+    <figure  xml:id="FIGUREUnitCircleSinOverX">
+      <caption></caption>
       <image width="60%" source="images/UnitCircle.png" > 
         <shortdescription></shortdescription>
       </image>
-      <problem>
-        
-        <idx><h>limit</h><h><m>\limit{x}{0}{\textstyle\frac{\sin
-        x}{x}}=1</m></h></idx>
+    </figure>
 
-        <statement> 
+    <problem>
+      <idx><h>limit</h><h><m>\limit{x}{0}{\textstyle\frac{\sin
+      x}{x}}=1</m></h></idx>
+      <introduction>
+        <p> 
+          Returning to <xref ref="EXAMPLESyncFunction"></xref> we see
+          that the Squeeze Theorem is just what we need.  First notice
+          that since <m>D(x)=\frac{\sin x}{x}</m> is an even function, we only
+          need to focus on <m>x\gt0</m> in our inequalities.  Consider the
+          unit circle.
+        </p>
+      </introduction>
+      <task>
+        <statement>
           <p>
-            Use the fact that <me>
-            \text{ area } (\Delta OAC)\lt \text{ area } (\text{ sector }
-            OAC)\lt \text{ area } (\Delta OAB) </me> to show that if <m>0\lt
-            x\lt \pi/2</m>, then <m>\cos x\lt \sin x/x\lt 1</m>.  Use the
-            fact that all of these functions are even to extend the
-            inequality for <m>-\pi/2\lt x\lt 0</m> and use the Squeeze
-            Theorem to show <m>\limit{x}{0}{\textstyle\frac{\sin
-            x}{x}}=1</m>.  
+            Use <xref ref="FIGUREUnitCircleSinOverX" ></xref> to show that
+            <me>
+
+              \text{ area } (\Delta OAC)\lt \text{ area } (\text{ sector }
+            OAC)\lt \text{ area } (\Delta OAB) </me>
           </p>
         </statement>
-      </problem> 
+      </task>
 
-      <problem xml:id="PROBLEMBasicLimits">
-        <introduction>
+
+      <task>
+        <statement>
+
           <p>
-            Suppose <m>\limit{x}{a}{ f(x)}=L</m>.  
+            Use the result in part (a) to show that if <m>0\lt x\lt
+            \frac{\pi}{2}</m>, then 
+            <men xml:id="EQUATIONCosLSinOverx">
+              \cos x\lt \frac{\sin x}{x}\lt 1 
+              </men>.
           </p>
-        </introduction>
-        <task>
-          <statement>
-            <p>
-              Prove that if <m>L\gt0</m>,
-              then there exists a <m>\delta >0</m>, such that if
-              <m>0\lt\left|x-a\right|\lt\delta </m>, then
-              <m>f\left(x\right)>0</m>.  
-            </p>
-          </statement>
-          <hint>
-            <p> 
-              Try
-              <m>\eps =\frac{L}{2}</m>.  
-            </p> 
-          </hint> 
-        </task> 
-        <task>
-          <statement> 
-            <p> 
-              Prove that if <m>L\lt0</m>, then there exists a
-              <m>\delta >0</m>, such that if <m>0\lt\left|x-a\right|\lt\delta
-              </m>, then <m>f\left(x\right)\lt0</m>.  
-            </p>
-          </statement>
-          <hint>
-            <p>
-              Consider <m>-f(x)</m>.  
-            </p> 
-          </hint>
-        </task> 
-        <task>
-          <statement>
-            <p>
-              Notice that if <m>\limit{x}{a}{f(x)}=L</m>, then the contrapositive of part (a) says that
-              if for each <m>\delta >0</m>, there is an <m>x</m> with
-              <m>0\lt\left|x-a\right|\lt\delta </m> and <m>f\left(x\right)\le
-              0</m>, then <m>L\le 0</m>.  
-            </p> 
-            <p> 
-              What does the contrapositive of part (b) say?
-            </p> 
-          </statement> 
-        </task>
-      </problem> 
-
-      <definition xml:id="DEFINITIONNear">
-        <title>Near</title> 
-        <statement> 
-          <p>
-            <idx><h>Definition</h><h>near</h></idx>     
-            <idx><h>near</h></idx>     
-
-            We say that a function
-            <m>f(x)</m> has a property for <m>x</m> <term>near</term> <m>a</m>, if there
-            exists a <m>{\delta }_0>0</m> such that <m>f(x)</m> has that
-            property for all <m>x</m> with <m>0\lt\left|x-a\right|\lt{\delta
-            }_0</m>
-
-          </p>
-
         </statement>
-
-      </definition>
-
-      <problem xml:id="PROBLEMLimUppLow">
-        <introduction>
+      </task>
+      <task>
+        <statement>
 
           <p>
 
-            Prove that each of the following statements is also a
-            consequence of <xref ref="PROBLEMBasicLimits"></xref>.
-            Suppose <m>\limit{x}{a}{f(x)}=L</m>.
+            Use the fact that <m>\cos x</m> and <m>\frac{\sin
+            x}{x}</m> are both even functions to show that  <xref
+            ref="EQUATIONCosLSinOverx" >equation</xref> is also true
+            for <m>-\frac{\pi}{2}\lt x\lt 0</m>
 
           </p>
-        </introduction>
-        <task>
-          <statement>
+        </statement>
+      </task>
+      <task>
+        <statement>
 
-            <p>
-              If <m>f\left(x\right)\le 0</m> for <m>x</m> near <m>a</m>, then <m>L\le 0</m>.
-            </p>
+          <p>
+            Use <xref ref="EQUATIONCosLSinOverx" >equation</xref> and
+            the <xref ref="thm_SqueezeTheoremFunctions"
+            text="custom">Squeeze Theorem</xref> for Functions to show
+            <m>\limitt{x}{0}{\textstyle\frac{\sin x}{x}}=1</m>.
 
-          </statement>
-        </task>
-        <task>
-          <statement>
-            <p>
-              If <m>f\left(x\right)\ge 0</m> for <m>x</m> near <m>a</m>, then <m>L\ge 0</m>.
-            </p>
-          </statement>
-        </task>
-      </problem>
+          </p>
+        </statement>
+      </task> 
+    </problem> 
 
-    </section>
+    <problem xml:id="PROBLEMBasicLimits">
+      <introduction>
+        <p>
+          Suppose <m>\limitt{x}{a}{ f(x)}=L</m>.  
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Prove that if <m>L\gt0</m>,
+            then there exists a <m>\delta >0</m>, such that if
+            <m>0\lt\left|x-a\right|\lt\delta </m>, then
+            <m>f\left(x\right)>0</m>.  
+          </p>
+        </statement>
+        <hint>
+          <p> 
+            Try
+            <m>\eps =\frac{L}{2}</m>.  
+          </p> 
+        </hint> 
+      </task> 
+      <task>
+        <statement> 
+          <p> 
+            Prove that if <m>L\lt0</m>, then there exists a
+            <m>\delta >0</m>, such that if <m>0\lt\left|x-a\right|\lt\delta
+            </m>, then <m>f\left(x\right)\lt0</m>.  
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Consider <m>-f(x)</m>.  
+          </p> 
+        </hint>
+      </task> 
+      <task>
+        <statement>
+          <p>
+            Notice that if <m>\limit{x}{a}{f(x)}=L</m>, then the contrapositive of part (a) says that
+            if for each <m>\delta >0</m>, there is an <m>x</m> with
+            <m>0\lt\left|x-a\right|\lt\delta </m> and <m>f\left(x\right)\le
+            0</m>, then <m>L\le 0</m>.  
+          </p> 
+          <p> 
+            What does the contrapositive of part (b) say?
+          </p> 
+        </statement> 
+      </task>
+</problem> 
+
+<definition xml:id="DEFINITIONNear">
+  <title>Near</title> 
+  <statement> 
+    <p>
+      <idx><h>Definition</h><h>near</h></idx>     
+      <idx><h>near</h></idx>     
+
+      We say that a function
+      <m>f(x)</m> has a property for <m>x</m> <term>near</term> <m>a</m>, if there
+      exists a <m>{\delta }_0>0</m> such that <m>f(x)</m> has that
+      property for all <m>x</m> with <m>0\lt\left|x-a\right|\lt{\delta
+      }_0</m>
+
+    </p>
+
+  </statement>
+
+</definition>
+
+<problem xml:id="PROBLEMLimUppLow">
+  <introduction>
+
+    <p>
+
+      Prove that each of the following statements is also a
+      consequence of <xref ref="PROBLEMBasicLimits"></xref>.
+      Suppose <m>\limit{x}{a}{f(x)}=L</m>.
+
+    </p>
+  </introduction>
+  <task>
+    <statement>
+
+      <p>
+        If <m>f\left(x\right)\le 0</m> for <m>x</m> near <m>a</m>, then <m>L\le 0</m>.
+      </p>
+
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        If <m>f\left(x\right)\ge 0</m> for <m>x</m> near <m>a</m>, then <m>L\ge 0</m>.
+      </p>
+    </statement>
+  </task>
+</problem>
+
+  </section>
 
 
 
@@ -849,30 +924,29 @@
 <section  xml:id="Continuity-DerivativeAfterthought">
   <title>The Definition of  the Derivative and the Mean Value Theorem</title>
   <p>
-    As we have mentioned in <xref
-    ref="CalcIn17th18thCentury-NewtLeibStart"></xref>  Leibniz
-    invented his <foreign>calculus differentialis</foreign>
-    (differential calculus <mdash/> literally <q>rules
-    for (infinitely small) differences</q>) in the 1600s. 
+    As we mentioned in <xref
+    ref="CalcIn17th18thCentury-NewtLeibStart"></xref> Leibniz invented
+    his <foreign>calculus differentialis</foreign> (differential
+    calculus <mdash/> literally <q>rules for (infinitely small)
+    differences</q>) in the <m>1600</m>s.
   </p>
   <p>
-    In the late 1700s Lagrange tried to provide a rigorous
+    In the late <m>1700</m>s Lagrange tried to provide a rigorous
     foundation for Calculus by discarding differential ratios like
     the expression <m>\dfdx{y}{x} </m> in favor of his own <q>prime
-    notation</q> (<m>y^\prime </m>). Thus it was Lagrange who
+    notation</q> (<m>f^\prime(x) </m>). Thus it was Lagrange who
     established functions and limits, rather than the curves and
-    infinitesimals favored by Leibniz and Newton, as foundational
-    ideas of Calculus
+    infinitesimals favored by Leibniz and Newton, as fundamental.
   </p>
   
 
   <p>
     When you took Calculus you spent at least an entire semester
     learning about the properties of the derivative and how to use
-    them to explore the properties of functions so there is no need
-    to repeat that effort here. Instead we will establish a
-    rigorous, formal foundation for the derivative concept in terms
-    of limits.
+    them to explore the properties of functions so there is no need to
+    repeat that effort here. Instead we will establish the underlying,
+    rigorous, formal foundation for the derivative concept in terms of
+    limits.
     
   </p>
 
@@ -1182,17 +1256,17 @@
     <idx><h>Newton, Isaac</h></idx>
     <idx><h>Leibniz, Gottfried Wilhelm</h></idx>
 
-    <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Rolle/"
-         visual="mathshistory.st-andrews.ac.uk/Biographies/Rolle/">Michel
-    Rolle</url> (1652<ndash/>1719) first stated the following theorem in
-    1691.  Given this date and the nature of the theorem it would be
-    reasonable to suppose that Rolle was one of the early developers of
-    Calculus but this is not so.  In fact, Rolle was disdainful of both
-    Newton  and
-    Leibniz<rsq/>s versions
-    of Calculus, once deriding them as a collection of <q>ingenious
-    fallacies.</q> It is a bit ironic that his theorem is so fundamental
-    to the modern development of the Calculus he ridiculed.
+    <url
+    href="https://mathshistory.st-andrews.ac.uk/Biographies/Rolle/"
+    visual="mathshistory.st-andrews.ac.uk/Biographies/Rolle/">Michel
+    Rolle</url> (1652<ndash/>1719) first stated the following theorem
+    in 1691.  Given this date and the nature of the theorem it would
+    be reasonable to suppose that Rolle was one of the early
+    developers of Calculus but this is not so.  In fact, Rolle was
+    disdainful of both Newton and Leibniz<rsq/> versions of Calculus,
+    once deriding them as a collection of <q>ingenious fallacies.</q>
+    It is a bit ironic that his theorem is so fundamental to the
+    modern development of the Calculus he ridiculed.
   </p>
 
   <theorem xml:id="thm_Rolle_s_Theorem">
@@ -1485,30 +1559,29 @@
     anchoring step:
 <me>
   f(x)=f(a)+\int_{t=a}^xf^\prime(t)\dx{t}=f(a)+\frac{1}{0!}f^{(1)}(t)(x-t)^0\dx{t}
-</me>
-even though we had not yet proved it. In fact we
-still haven<rsq/>t, but we assumed you were familiar with it from
-your Calculus course.
+  </me>.
   </p>
   <p>
     The Fundamental Theorem of Calculus was understood (in at least
     the limited context of polynomials) before Newton and Leibniz
-    invented Calculus. As a result neither of them dubbed it a
-    <q>Fundamental Theorem.</q> For them it was simply one of those
-    known results that their Calculus re<ndash/>captured in a more
-    elegant form than had previously been known.
+    invented Calculus. 
+    <!-- As a result neither of them dubbed it a -->
+    <!-- <q>Fundamental Theorem.</q>  -->
+    <!-- For them it was simply one of those -->
+    <!-- known results that their Calculus re<ndash/>captured in a more -->
+    <!-- elegant form than had previously been known. -->
 
     They both provided derivations of it via their versions of
     Calculus, but again neither of them dubbed it <q>The Fundamental
-    Theorem</q> because for them it was a relatively obvious
-    consequence of the way they thought about such things. Both
-    considered it very natural and obvious that areas can be found by
-    antidifferentiation. 
+    Theorem.</q> That name was an innovation of twentieth century
+    Calculus textbooks.  Both Newton and Leibniz considered it very
+    natural and obvious that areas can be found by
+    antidifferentiation.
   </p>
 
   <p>
     Using the differential and integral notation that Leibniz invented
-    and we still use today it is easy to see why. If we suppose that
+    (and we still use today) it is easy to see why. If we suppose that
     <me>\dfdx{Y}{x}=y</me>, then it follows that
 
     <men xml:id="EQUATIONFTCDifferentialEquality">
@@ -1525,33 +1598,38 @@ your Calculus course.
       \int^b_{x=a}{y\dx{x}}=\int^b_{x=a}{\dx{Y}}
       </men>
   </p>
-  <aside>
-    
-    <p>
-      We said that <xref ref="EQUATIONFTCIntDiffer" >equation</xref>
-      uses Leibniz<rsq/> notation but this is not entirely
-      correct. Fourier innovated the use of upper and lower indices on
-      the integral sign to show the limits of the integration
-      approximately 150 years later. Leibniz didn<rsq/>t use
-      them.
-    </p>
-    <p>
-      <xref ref="EQUATIONFTCIntDiffer" >Equation</xref> indicates
-      that we are summing all of the respective differentials between
-      <m>x=a</m> and <m>x=b</m>.
-    </p>
-
-  </aside>
-
   <p>
-    Since  a finite sum of finite differences collapses into the
-    difference of the extremes:
+    <xref ref="EQUATIONFTCIntDiffer" >Equation</xref> indicates
+    that we are summing all of the respective differentials between
+    <m>x=a</m> and <m>x=b</m>.
+    </p>
+
+    <aside>
+      
+      <title>
+        Integral Notation: Upper and Lower Indices
+      </title>
+      <p>
+        We said that <xref ref="EQUATIONFTCIntDiffer" >equation</xref>
+        uses Leibniz<rsq/> notation but this is not entirely
+        correct. Fourier innovated the use of upper and lower indices on
+        the integral sign to show the limits of the integration
+        approximately 150 years later. Leibniz didn<rsq/>t use
+        them.
+      </p>
+    </aside>
+    
+
+    <p>
+      Since  a finite sum of finite differences collapses into the
+      difference of the extremes:
 
     <me>\left(a_2-a_1\right)+\left(a_3-a_2\right)+\dots
     +\left(a_{n-1}-a_{n-2}\right)+\left(a_n-a_{n-1}\right)=a_n-a_1</me>.
     Leibniz assumed that this is also true for an infinite sum of
-    infinitesimals. This is the most intuitive understanding of the
-    Fundamental Theorem of Calculus. In Leibniz<rsq/> notation it is
+    infinitesimals. This is probably the most intuitive understanding
+    of the Fundamental Theorem of Calculus. In Leibniz<rsq/> notation
+    it is
 
     <men xml:id="EQUATIONFTCLeibniz">\int^b_{x=a}{y\dx{x}}=\int^b_{x=a}{\dx{Y}}=Y\left(b\right)-Y(a)</men>.
   </p>
@@ -1567,7 +1645,7 @@ your Calculus course.
       <!-- many ways to construct a curve from a given condition on its -->
       <!-- tangents) --> he called it a
       <q>supplementum</q> (supplement, or corollary) rather than
-    something more  imposing <mdash/> like the <term>Fundamental Theorem of Calculus</term>.
+      something more  imposing <mdash/> like the <term>Fundamental Theorem of Calculus</term>.
   </p>
   <p>
     Leibniz included a diagram to support this result, but he rather
@@ -1609,8 +1687,8 @@ your Calculus course.
     between <m>Y(a)</m> and <m>Y(b)</m>: <m>Y\left(b\right)-Y(a)</m>.
   </p>
   <p>
-    Such an approach does not pass modern, or even 19th century,
-    standards of rigor.  Even in the 17th century it was known that
+    Such an approach does not pass modern, or even <m>19</m>th century,
+    standards of rigor.  Even in the <m>17</m>th century it was known that
     there are logical problems with interpreting an integral in terms
     of infinitiesimals. But the infinitesimal approach was adequate to
     the needs of the time so a closer investigation into the nature of
@@ -1678,10 +1756,10 @@ your Calculus course.
     </p>
   </theorem>
   <p>
-    Before we dive into the proof, notice that <xref
+    Notice that <xref
     ref="THEOREMFTCCauchy"></xref> and <xref ref="EQUATIONFTCLeibniz"
-    >equation</xref> are very closely related though they come at the question
-    of integration from different viewpoints.
+    >equation</xref> are very closely related though they come at the
+    question of integration from different viewpoints.
   </p>
   <p>
     <xref ref="EQUATIONFTCLeibniz" >Equation</xref> starts with the
@@ -1717,19 +1795,36 @@ your Calculus course.
     called a <term>definite integral</term>, and the function defined
     in <xref ref="THEOREMFTCCauchy" ></xref> is called an
     <term>indefinite integral</term>. The two of them are often
-    referred to as parts 1 and 2 of the Fundamental Theorem of
+    referred to as parts <m>1</m> and <m>2</m> of the Fundamental Theorem of
     Calculus.
   </p>
   <p>
     We will now proceed with the proof of Cauchy<rsq/>s version of the
-    Fundamental Theorem of Calculus, with the caveat that the proof
-    is not complete until we have defined the function <m>I(x)=\int_{t=a}^x
-    f(t)\dx{t}</m> and shown that, under our definition, it has the
-    properties we expect from an integral. We will need some of these
-    properties in the proof below.
+    Fundamental Theorem of Calculus, with the caveat that the proof is
+    not complete until we have defined the function
+    <m>I(x)=\int_{t=a}^x f(t)\dx{t}</m> and shown that under our
+    definition it has the properties we expect from an integral. We
+    will need some of these properties in the proof below.
   </p>
   <proof>
     <title>Sketch of Proof</title>
+<p>
+  There are two statements to prove:
+  <ol>
+    <li>
+      That <m>I(x)</m> is continuous on the closed interval
+      <m>[a,b]</m>,
+    </li>
+    <li>
+      and that <m>I(x)</m> is differentiable on the open interval
+      <m>(a,b)</m>.
+    </li>
+  </ol> 
+  We will prove differentiablity on <m>(a,b)</m> first. From that
+  continuity on <m>[a,b]</m> follows immediately (why?). Continuity at
+  the endpoints will be addressed separately.
+</p>
+
     <p>
       Let <m>x\in (a,b)</m>. To find <m>I^\prime (x)</m> we apply
       <xref ref="def_derivative" ></xref>. Thus 
@@ -1782,15 +1877,14 @@ your Calculus course.
       <me>f(c)\le \frac{\int^{x+h}_{t=x}{f(t)\dx{t}}}{h}\le f\left(C\right)</me>
     </p>
     <p>
-      Applying the squeeze theorem as <m>h\to 0</m> and continuity
+      Applying the <xref ref="thm_SqueezeTheoremFunctions" text="custom">Squeeze Theorem</xref> and <xref ref="def_continuity" ></xref> 
       of <m>f</m> at <m>x</m> should do the trick.
     </p>
-
-    <p>
-      The above outline shows that <m>I(x)</m> is differentiable on
-      <m>(a,b)</m>, and it follows thata <m>I(x)</m> is also
-      continuous on <m>[a,b]</m> (why?).
-    </p>
+    <!-- <p> -->
+    <!--   The above outline shows that <m>I(x)</m> is differentiable on -->
+    <!--   <m>(a,b)</m>, so it follows that <m>I(x)</m> is also -->
+    <!--   continuous on <m>[a,b]</m> (why?). -->
+    <!-- </p> -->
     <p>
       To show that <m>I(x)</m> is  continuous  at the endpoints
       <m>a</m> and <m>b</m>, we will appeal to <xref
@@ -1814,13 +1908,18 @@ your Calculus course.
         }=\limit{n}{\infty } {\left(\int^b_{t=y_n}{f(t)\dx{t}}\right)}=0
       </me>
     </p>
+<p>
+  It will be useful to recognize that on <m>[a,b]</m> the function
+  <m>f(x)</m> will have both a maximum and a minimum value (why?).
+</p>
+
+    <!-- <p> -->
+    <!--   We can use an argument similar to what we did before, but in this -->
+    <!--   case, since we are not dividing, we can just consider the minimum -->
+    <!--   <m>m</m> and maximum <m>M</m> of <m>f</m> on <m>[a,b]</m> so that -->
+    <!--   <m>m\le f\left(t\right)\le M</m>. -->
+    <!-- </p> -->
   </proof>
-  <p>
-    We can use an argument similar to what we did before, but in this
-    case, since we are not dividing, we can just consider the minimum
-    <m>m</m> and maximum <m>M</m> of <m>f</m> on <m>[a,b]</m> so that
-    <m>m\le f\left(t\right)\le M</m>.
-  </p>
 
 
   <problem>
@@ -1833,29 +1932,48 @@ your Calculus course.
 
   <problem>
 
-    <statement>
+    <introduction>
+
       <p>
-        Suppose <m>f(x)</m> is continuous on <m>[a,b]</m> and
-        <m>I(x)</m> is the antiderivative of <m>f(x)</m> from <xref
-        ref="THEOREMFTCCauchy" ></xref>. Suppose further that
-        <m>F(x)</m> is continuous on <m>[a,b]</m> with <m>F^\prime
-        (x)=f(x)</m> on <m>(a,b)</m>.  Prove that for any <m>x\in
+      Suppose <m>f(x)</m> is continuous on <m>[a,b]</m> and
+      <m>I(x)</m> is the antiderivative of <m>f(x)</m> from <xref
+      ref="THEOREMFTCCauchy" ></xref>. Suppose further that
+      <m>F(x)</m> is continuous on <m>[a,b]</m> with <m>F^\prime
+      (x)=f(x)</m> on <m>(a,b)</m>. 
+    </p>
+    </introduction>
+    <task>
+      <statement>
+
+        <p>
+
+          Prove that for any <m>x\in
         [a,b]</m>,
+        <me>
+          I(x)=\int^x_{t=a}{f\left(t\right)\dx{t}}=F\left(x\right)-F(a)
+        </me>
 
-        <me>I(x)=\int^x_{t=a}{f\left(t\right)\dx{t}}=F\left(x\right)-F(a)</me>
-
-        In particular this means that
-
-        <me>\int^b_{t=a}{f\left(t\right)\dx{t}}=F\left(b\right)-F(a)</me>
-      </p>
-    </statement>
-    <hint>
-      <p>
-        You have two antiderivatives of <m>f(x)</m>.  By part (c) of
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Use the result in part (a) to show that
+          
+          <me>
+            \int^b_{t=a}{f\left(t\right)\dx{t}}=F\left(b\right)-F(a)
+          </me>
+        </p>
+      </statement>
+      <hint>
+        <p>          You have two antiderivatives of <m>f(x)</m>.  By part (c) of
         <xref ref="DRILLZeroDerivImpConst"></xref>, these must differ
         by a constant.  What must this constant be?
-      </p>
-    </hint>
+        </p>
+      </hint>
+    </task>
+
 
   </problem>
   <!-- <problem> -->
@@ -1891,7 +2009,7 @@ your Calculus course.
     we know that <me>I\left(x\right)=\int^x_{t=a}{f(t)\dx{t}}</me>
     actually exists?
   </p>
-  </section>
+</section>
 
 <section xml:id="SECTIONDefiningIntegral">
   <title>The Definition of the Integral</title>
@@ -1905,7 +2023,7 @@ your Calculus course.
       (circa 250 BC), 
       <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/" visual="mathshistory.st-andrews.ac.uk/Biographies/Archimedes/">Archimedes</url>
       described what he called a
-      <q>mechanical</q> method for finding areas and volumes.  His method
+      mechanical method for finding areas and volumes.  His method
       consisted of mentally dividing objects into infinitely thin slices
       and balancing these slices on an imaginary balance.  Archimedes noted
       that while his method was not rigorous it was still quite useful:
@@ -1951,7 +2069,7 @@ your Calculus course.
       work of Fourier, that it became imperative to replace it.
     </p>
     <p>
-      Fourier<rsq/>s work raises the question: How <q>random</q> can a
+      Fourier<rsq/>s work raises the question: How random> can a
       function defined on an interval be and still be represented by a
       Fourier series?  Since the coefficients are computed via
       integration, a closely related question is how random can a
@@ -1962,7 +2080,7 @@ your Calculus course.
       analysis we will not be able to fully answer that question here.
       But we will give one rigorous definition of the integral (there
       are many) and use it to show that a continuous function on a
-      closed interval is integrable.  This will <q>close the gap</q> in
+      closed interval is integrable.  This will close the gap in
       our proof of the <xref ref="THEOREMFTCCauchy" text="custom" >Fundamental Theorem of Calculus</xref>.
       <!--  and show that a -->
       <!-- continuous function on an interval has an antiderivative. --> 

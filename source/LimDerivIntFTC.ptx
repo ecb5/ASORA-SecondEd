@@ -92,62 +92,64 @@
   <section xml:id="Continuity-DefLimit"> 
     <title> The Definition of the Limit of a Function </title>
 
-    <p> We<rsq/>ve already used the the notion of a limit and its
-    associated notation, <m>\limit{n}{\infty}{a_n}</m>, to analyze the
-    convergence and divergence of a sequence. And you<rsq/>ve almost
-    certainly encountered limits of functions before so it is tempting
-    for us (the authors) to assume that you are already
-    well<ndash/>versed in the limit concept and simply plow forward
-    with little discussion. We won<rsq/>t do that.
+    <p>
+      We<rsq/>ve already used the the notion of a limit and its
+      associated notation, <m>\limit{n}{\infty}{a_n}</m>, to analyze
+      the convergence and divergence of a sequence. And you<rsq/>ve
+      almost certainly encountered limits of functions before so it is
+      tempting for us (the authors) to assume that you are already
+      well<ndash/>versed in the limit concept and simply plow forward
+      with little discussion. We won<rsq/>t do that.
     </p>
 
     <p>
       And it is probably tempting for you to make the same assumption
       and skip the discussion you are about to see. Don<rsq/>t do
-      that. The limit concept is subtle. There is more here than you
+      that. The limit concept is subtle. There is more to it than you
       probably believe and it is worth taking time to think about it
       deeply.
     </p>
     <p>
-      The statement <m>\limit{n}{\infty}{2^{-n}}=0</m> has a very
-      precise meaning. It means that as <m>n</m> increases arbitrarily
-      (<m>\rightarrow \infty </m>) the elements of the sequence
-      <me>\left(2^{-0}, 2^{-1}, 2^{-2}, 2^{-3}, \cdots{}\right)</me>
-      get arbitrarily close to zero <m>(=0)</m>.  Notice that it does
-      not mean that <m>2^{-n}</m> is actually equal to zero for any
-      value of <m>n</m>. That is not true.
+      For example, the statement <m>\limit{n}{\infty}{2^{-n}}=0</m>
+      has a very precise meaning. It means that as <m>n</m> increases
+      arbitrarily (<m>\rightarrow \infty </m>) the elements of the
+      sequence <me>\left(2^{-0}, 2^{-1}, 2^{-2}, 2^{-3},
+      \cdots{}\right)</me> get arbitrarily close to zero <m>(=0)</m>.
+      Notice that it does not mean that <m>2^{-n}</m> is actually
+      equal to zero for any value of <m>n</m>. That is not true.
     </p>
     <p>
-      You might reasonably ask, <q>OK, but the notation
-      <lsq/> <m>=0</m> <rsq/> means that something is equal to
-      zero. What exactly is equal to zero?</q> The answer to that
-      question is as obvious as it is unhelpful.  It is the limit of
-      <m>2^{-n}</m> that is equal to zero.
+      You might reasonably ask, <q>OK, but what exactly is equal to
+      zero?</q> The notation <q>=0</q> clearly states that
+      <em>something</em> is equal to zero. What? A simple answer to
+      that question is as obvious as it is unhelpful.  It is the limit
+      of <m>2^{-n}</m> that is equal to zero.
     </p>
     <p>
-      More generally, suppose the sequence
+      More helpfully, suppose the sequence
       <m>\left(a_n\right)_{n=1}^\infty </m> converges to <m>a</m>.  In
       <xref ref="Convergence" ></xref> we usually said that
       <m>\limit{n}{\infty}{a_n}</m> <term>converged</term> to <m>a</m>
-      rather than saying that <m>\limit{n}{\infty}{a_n}</m> is equal
+      rather than saying that <m>\limit{n}{\infty}{a_n}</m> was equal
       to <m>a</m>. Unfortunately this idea gets rendered notationally
       as
       <me>
         \limit{n}{\infty}{a_n}=a 
       </me> 
-      so when we read it aloud we tend to speak of equality rather
-      than convergence. This is not wrong <foreign>per se</foreign>
-      but it can be confusing at first. It is the <term>limit</term>
-      of the sequence that is equal to <m>a</m>, not any individual
-      term, and certainly not the sequence itself.
+      and when we read it aloud we tend to say that <m>a_n</m>
+      <q>equals <m>a</m></q> rather than <q>converges to
+      <m>a</m></q>. This is not wrong <foreign>per se</foreign> but it
+      can be confusing at first. But ultimately it is the
+      <term>limit</term> of the sequence that is equal to <m>a</m>,
+      not any individual term, and certainly not the sequence itself.
     </p>
     <p>
-      The limit concept is a deep and very abstract
-      idea and as we<rsq/>ve just seen the notation we<rsq/>ve
-      inherited (especially the way the equals sign is used) is more
-      befuddling than helpful, at least at first. 
-      We will proceed
-      slowly.
+      The limit concept has always been lurking in the background of
+      Calculus.  Because it is a deep and very abstract idea it took
+      about <m>200</m> years to bring it forward clearly. And as
+      we<rsq/>ve just seen the notation we<rsq/>ve inherited
+      (especially the way the equals sign is used) is more befuddling
+      than helpful, at least at first.  We will proceed slowly.
     </p>
     <!-- <p> -->
     <!--   We introduced sequences first because the limit of a sequence (especially a sequence converging to zero) is the simplest kind of non<ndash/>trivial limit to understand.  In this section we<rsq/>ll expand <xref ref="def_ConvergenceOfASequence" ></xref> to the limits of functions -->
@@ -161,24 +163,23 @@
     <!--   the formal definition of continuity.   The limit  -->
     <!--   concept has become foundational to Calculus.  -->
     <!-- </p> -->
-    <p>
-      Speaking very loosely, when we evaluate the limit of the
-      sequence <m>\left( a_n\right)_{n=1}^\infty</m> we let <m>n</m>
-      get close to infinity. That is, we<rsq/>re interested in what
-      happens at the far right side of the sequence, even though there
-      is no <q>far right side.</q>
-    </p>
+    <!-- <p> -->
+    <!--   Speaking very loosely, when we evaluate the limit of the -->
+    <!--   sequence <m>\left( a_n\right)_{n=1}^\infty</m> we let <m>n</m> -->
+    <!--   get close to infinity. That is, we<rsq/>re interested in what -->
+    <!--   happens at the far right side of the sequence, even though there -->
+    <!--   is no <q>far right side.</q> -->
+    <!-- </p> -->
     <p>
       <idx><h>Newton, Isaac</h></idx>
 
-      The limit concept has always been lurking in the background of
-      Calculus.  In his attempts to justify his calculations, Newton
-      used what he called his doctrine of <term>Ultimate
-      Ratios</term>. For example, the ratio <m>\frac{(x+h)^2-x^2}{h} =
-      \frac{2xh+h^2}{h} = 2x+h</m> becomes <m>2x</m>
-      <term>ultimately</term>, or at the last instant before <m>h</m>
-      becomes zero. Newton would have called <m>h</m> an
-      <q>evanescent</q> or <q>vanishing quantity</q> (<xref
+      In his attempts to justify his calculations, Newton used what he
+      called his doctrine of <term>Ultimate Ratios</term>. For
+      example, the ratio <m>\frac{(x+h)^2-x^2}{h} = \frac{2xh+h^2}{h}
+      = 2x+h</m> becomes <m>2x</m> <term>ultimately</term>, or at the
+      last instant before <m>h</m> becomes zero. Newton would have
+      called <m>h</m> an <q>evanescent</q> or <q>vanishing
+      quantity</q> (<xref
       ref="grabiner81__origin_cauch_rigor_calculy"/>, p. 33).
     </p>
     <p>
@@ -189,12 +190,12 @@
       <!--   \limit{h}{0}{\frac{2xh+h^2}{h}} = \limit{h}{0}{2x+h}=2x  -->
       <!--   </me>.   -->
 
-      But notice that to evaluate the limit of the sequence
-      <m>(a_n)</m> we allowed the limit parameter <m>n</m> to take
-      only integer values, whereas to evaluate <m>
-      \limitt{h}{0}{\frac{(x+h)^2-x^2}{h}}</m> for <m>h</m> to get
-      arbitrarily close to zero we must allow it to take on both
-      rational and irrational real values.
+      Notice that to evaluate the limit of the sequences <m>(a_n)</m>
+      and <m>\limit{h}{0}{\frac{(x+h)^2-x^2}{h}}</m> the limit
+      parameters <m>n</m> and <m>h</m> are different. In the former
+      the limit parameter <m>n</m> took on only integer values,
+      whereas in the latter it could be any real number (though we're
+      only interested in values close to zero).
       <!-- get close to infinity (which -->
       <!-- is not a number) here we need to let <m>h</m> get infinitely -->
       <!-- close to zero (which is a number).  In evaluating the limit of -->

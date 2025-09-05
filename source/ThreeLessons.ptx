@@ -130,16 +130,17 @@
         x^2+\frac{b}{a}x =-\frac{c}{a}
         </men>.
         Now let
+        <m>x=y-\frac{b}{2a}</m>, so that
         <men xml:id="EQUATIONeq_QForm3">
           y^2 = -\frac{c}{a} +\frac{b^2}{4a^2}
-        </men>
-        so that
-        <men xml:id="EQUATIONeq_QForm4">
-          y = \frac{\pm \sqrt{b^2-4ac}}{2a}
-        </men>
-        and
-        <men xml:id="EQUATIONQuadraticFormula">
-          x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}
+          </men>.
+          Thus
+          <men xml:id="EQUATIONeq_QForm4">
+            y = \frac{\pm \sqrt{b^2-4ac}}{2a}
+          </men>
+          and
+          <men xml:id="EQUATIONQuadraticFormula">
+            x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}
           </men>
           which is the <term>Quadratic Formula</term>.
           <!-- <mdn> -->
@@ -291,11 +292,18 @@
     
     
     <p>
-      The general <term>depressed cubic</term> had previously been solved by
-      Tartaglia (1500<ndash/>1557) so converting the general
-      cubic into a <term>depressed cubic</term> provided a path for Ferrari to
-      compute the 
-      <url href="https://mathshistory.st-andrews.ac.uk/HistTopics/Quadratic_etc_equations/" visual="mathshistory.st-andrews.ac.uk/HistTopics/Quadratic_etc_equations/"><term>Cubic Formula</term></url>. (It<rsq/>s like the <term><xref ref="EQUATIONQuadraticFormula" text="custom">Quadratic
+      The general <term>depressed cubic</term> had previously been
+      solved by <url
+      href="https://mathshistory.st-andrews.ac.uk/Biographies/Tartaglia/"
+      visual="mathshistory.st-andrews.ac.uk/Biographies/Tartaglia/">
+      Niccolò Fontana</url> (1500<ndash/>1557) (usually known as
+      <q>Tartaglia</q> or <q>The Stutterer</q>) so converting the general
+      cubic into a <term>depressed cubic</term> provided a path for
+      Ferrari to compute the <url
+      href="https://mathshistory.st-andrews.ac.uk/HistTopics/Quadratic_etc_equations/"
+      visual="mathshistory.st-andrews.ac.uk/HistTopics/Quadratic_etc_equations/"><term>Cubic
+      Formula</term></url>. (It<rsq/>s like the <term><xref
+      ref="EQUATIONQuadraticFormula" text="custom">Quadratic
       Formula</xref></term> but bigger.)
     </p>
     <aside>
@@ -306,7 +314,7 @@
       </p>
     </aside>
     <figure>
-      <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Tartaglia/" visual="mathshistory.st-andrews.ac.uk/Biographies/Tartaglia/">Tartaglia </url>, <q>The Stutterer</q></caption>
+      <caption>Niccolò Fontana, <q>Tartaglia</q></caption>
 
       <idx><h>Portraits</h><h>Tartaglia</h></idx>
       <idx><h>Tartaglia</h><h>portrait of</h></idx>
@@ -723,19 +731,6 @@
       really cool theorems from number theory.
     </p>
 
-    <theorem xml:id="thm_FermatsLittleTheorem">
-      <title>Fermat<rsq/>s Little Theorem</title>
-    
-      <idx><h>Fermat<rsq/>s Little Theorem</h></idx>
-
-      <statement>
-        <p>
-          Let <m>p</m> be any prime number. Use <xref
-          ref="PROBLEMFermLittl3" ></xref> to show that
-          <m>p\,|(n^p-n)</m> for all positive integers <m>n</m>.
-        </p>
-      </statement>
-    </theorem>
 
     <problem xml:id="DRILLPROBLEMFermLittl4">
       <title>Fermat<rsq/>s Little Theorem, step 4</title>
@@ -744,7 +739,10 @@
 
       <statement>
         <p>
-          Prove Fermat<rsq/>s Little Theorem. 
+          Use <xref
+          ref="PROBLEMFermLittl3" ></xref> to show that
+          <m>p\,|(n^p-n)</m> for all positive integers <m>n</m>, thus
+          proving <xref ref="thm_FermatsLittleTheorem" text="custom">Fermat<rsq/>s Little Theorem</xref>. 
         </p>
       </statement>
       <hint>
@@ -755,9 +753,24 @@
       </hint>
     </problem>
 
+
+    <theorem xml:id="thm_FermatsLittleTheorem">
+      <title>Fermat<rsq/>s Little Theorem</title>
+      
+      <idx><h>Fermat<rsq/>s Little Theorem</h></idx>
+
+      <statement>
+        <p>
+          If <m>p</m> is a prime number then <m>p\,|(n^p-n)</m> for
+          all positive integers <m>n</m>.
+        </p>
+      </statement>
+    </theorem>
+
     <p>
-      Fermat<rsq/>s Little Theorem is the foundational basis for a
-      number of results in number theory and encryption.
+      <xref ref="thm_FermatsLittleTheorem" text="custom">
+        Fermat<rsq/>s Little Theorem</xref> is the foundational basis
+        for a number of results in number theory and encryption.
     </p>
 
     <problem>

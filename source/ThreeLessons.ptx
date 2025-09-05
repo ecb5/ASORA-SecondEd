@@ -636,124 +636,12 @@
       </statement>
     </theorem>
     <p>
-      We will not prove this, but we will use it as a starting point
-      to examine the following problems.  As you do these problems,
-      notice how subsequent problems make use of the previous results.
+      We will not prove <xref ref="thm_FTA" text="custom">The
+      Fundamental Theorem of Arithmetic</xref>. We will assume that is
+      is true and use it as a starting point to examine the following
+      problems, eventually arriving at the result known as
+      <xref ref="thm_FermatsLittleTheorem" text="custom">Fermat<rsq/>s Little Theorem</xref>:
     </p>
-
-    <p>
-      Notice that the notation <m>p\,|a</m> simply means that the
-      integer <m>p</m> divides the integer <m>a</m> with no remainder.
-    </p>
-
-    <problem xml:id="PROBLEMFermLittl1">
-      <title>Fermat<rsq/>s Little Theorem, step 1</title>
-
-      <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
-      to</h><h>if a prime divides a product of two numbers then it
-      divides one of the factors</h></idx>
-
-      <statement>
-      <p>
-
-
-        Let <m>p</m> be a prime number and <m>a, b</m> positive
-        integers such that <m>p\, | (a\cdot b)</m>.  Show that
-        <m>p\,|a</m> or <m>p\,|b</m>.
-      </p>
-      </statement>
-      <hint>
-        <p>
-          If <m>p\,|a</m> then we are done.  If not then notice that
-          <m>p</m> is a prime factor of <m>a\cdot b</m>.  What does the
-          Fundamental Theorem of Arithmetic say about the prime factors
-          of <m>a\cdot b</m> compared to the prime factors of <m>a</m>
-          and <m>b?</m>
-        </p>
-      </hint>
-    </problem>
-
-    <problem xml:id="PROBLEMFermLittl2">
-      <title>Fermat<rsq/>s Little Theorem, step 2</title>
-
-      <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
-      to</h><h>if a prime divides an arbitrary product then it divides
-      one of the factors</h></idx>
-
-      <statement>
-        <p>
-          Let <m>p</m> be a prime number and let <m>a_1, a_2, \ldots,
-          a_n</m> be positive integers such that <m>p\,|\left(a_1\cdot
-          a_2\cdot a_3\cdot\ldots\cdot a_n\right)</m>.
-        </p>
-        <p>
-          Use <xref ref="PROBLEMFermLittl1" ></xref> to show that
-          <m>p\,|a_k</m> for some <m>k\in\{1, 2, 3, \ldots, n\}</m>.
-        </p>
-      </statement>
-      <hint>
-        <p>
-          Use induction on <m>n</m> and the result of the previous
-          problem.
-        </p>
-      </hint>
-    </problem>
-
-    <problem xml:id="PROBLEMFermLittl3">
-      <title>Fermat<rsq/>s Little Theorem, step 3</title>
-
-      <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
-      to</h><h>if <m>p</m> is prime then <m>p</m> divides <m>p
-      \choose{}k</m></h></idx>
-
-      <statement>
-      <p>
-        Let <m>p</m> be a prime number and let <m>k</m> be an
-        integer with <m>1\le k\le p-1</m>.
-      </p>
-      <p>
-        Use <xref ref="PROBLEMFermLittl2" ></xref> to prove that
-        <m>p\left|{p \choose{}k}\right.</m>, where <m>{p
-        \choose{}k}</m> is the binomial coefficient
-        <m>\frac{p!}{k!(p-k)!}</m>.
-      </p>
-      </statement>
-      <hint>
-        <p>
-          We know <m>p\,|p\,!</m>, so <m>p\,|{p \choose{}k}k!(p-k)!</m>.
-          How does the previous result apply?
-        </p>
-      </hint>
-    </problem>
-
-    <p>
-      We now have all the machinery in place to prove one of the
-      really cool theorems from number theory.
-    </p>
-
-
-    <problem xml:id="DRILLPROBLEMFermLittl4">
-      <title>Fermat<rsq/>s Little Theorem, step 4</title>
-
-      <idx><h>Fermat<rsq/>s Little Theorem</h></idx>
-
-      <statement>
-        <p>
-          Use <xref
-          ref="PROBLEMFermLittl3" ></xref> to show that
-          <m>p\,|(n^p-n)</m> for all positive integers <m>n</m>, thus
-          proving <xref ref="thm_FermatsLittleTheorem" text="custom">Fermat<rsq/>s Little Theorem</xref>. 
-        </p>
-      </statement>
-      <hint>
-        <p>
-          Use induction on <m>n</m>.  To get from <m>n</m> to <m>n+1</m>,
-          use the binomial theorem on <m>(n+1)^p</m>.
-        </p>
-      </hint>
-    </problem>
-
-
     <theorem xml:id="thm_FermatsLittleTheorem">
       <title>Fermat<rsq/>s Little Theorem</title>
       
@@ -766,39 +654,154 @@
         </p>
       </statement>
     </theorem>
-
     <p>
-      <xref ref="thm_FermatsLittleTheorem" text="custom">
-        Fermat<rsq/>s Little Theorem</xref> is the foundational basis
-        for a number of results in number theory and encryption.
-    </p>
+      As you work through these problems, notice how each subsequent
+      problem makes use of the previous results.
+      The notation <m>p\,|a</m> simply means that the
+      integer <m>p</m> divides the integer <m>a</m> with no remainder.
+      </p>
 
-    <problem>
-      <introduction>
-        <p>
-          Recall what we said above: Having solved a problem is no
-          reason to stop thinking about it. Reflect upon your proof of
-          <xref ref="thm_FermatsLittleTheorem"
-                text="custom">Fermat<rsq/>s Little Theorem</xref> by
-          answering these questions.
-        </p>
-      </introduction>
-      <task>
+      <problem xml:id="PROBLEMFermLittl1">
+        <!-- <title>Fermat<rsq/>s Little Theorem, step 1</title> -->
+
+        <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
+        to</h><h>if a prime divides a product of two numbers then it
+        divides one of the factors</h></idx>
+
         <statement>
           <p>
-            Will the result of Fermat<rsq/>s Little Theorem hold if
-            <m>p</m> is not a prime number?
+
+
+            Let <m>p</m> be a prime number and <m>a, b</m> positive
+            integers such that <m>p\, | (a\cdot b)</m>.  Show that
+            <m>p\,|a</m> or <m>p\,|b</m>.
           </p>
         </statement>
-      </task>
-      <task>
+        <hint>
+          <p>
+            If <m>p\,|a</m> then we are done.  If not then notice that
+            <m>p</m> is a prime factor of <m>a\cdot b</m>.  What does the
+            Fundamental Theorem of Arithmetic say about the prime factors
+            of <m>a\cdot b</m> compared to the prime factors of <m>a</m>
+            and <m>b?</m>
+          </p>
+        </hint>
+      </problem>
+
+      <problem xml:id="PROBLEMFermLittl2">
+        <!-- <title>Fermat<rsq/>s Little Theorem, step 2</title> -->
+
+        <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
+        to</h><h>if a prime divides an arbitrary product then it divides
+        one of the factors</h></idx>
+
         <statement>
           <p>
-            If not, then which of the steps in the proof breaks down?
+            Let <m>p</m> be a prime number and let <m>a_1, a_2, \ldots,
+            a_n</m> be positive integers such that <m>p\,|\left(a_1\cdot
+            a_2\cdot a_3\cdot\ldots\cdot a_n\right)</m>.
+          </p>
+          <p>
+            Use <xref ref="PROBLEMFermLittl1" ></xref> to show that
+            <m>p\,|a_k</m> for some <m>k\in\{1, 2, 3, \ldots, n\}</m>.
           </p>
         </statement>
-      </task>
-    </problem>
+        <hint>
+          <p>
+            Use induction on <m>n</m> and the result of the previous
+            problem.
+          </p>
+        </hint>
+      </problem>
+
+      <problem xml:id="PROBLEMFermLittl3">
+        <!-- <title>Fermat<rsq/>s Little Theorem, step 3</title> -->
+
+        <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
+        to</h><h>if <m>p</m> is prime then <m>p</m> divides <m>p
+        \choose{}k</m></h></idx>
+
+        <statement>
+          <p>
+            Let <m>p</m> be a prime number and let <m>k</m> be an
+            integer with <m>1\le k\le p-1</m>.
+          </p>
+          <p>
+            Use <xref ref="PROBLEMFermLittl2" ></xref> to prove that
+            <m>p\left|{p \choose{}k}\right.</m>, where <m>{p
+            \choose{}k}</m> is the binomial coefficient
+            <m>\frac{p!}{k!(p-k)!}</m>.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            We know <m>p\,|p\,!</m>, so <m>p\,|{p \choose{}k}k!(p-k)!</m>.
+            How does the previous result apply?
+          </p>
+        </hint>
+      </problem>
+
+      <p>
+        We now have all the machinery in place to prove one of the
+        really cool theorems from number theory.
+      </p>
+
+
+      <problem xml:id="DRILLPROBLEMFermLittl4">
+        <!-- <title>Fermat<rsq/>s Little Theorem, step 4</title> -->
+
+        <idx><h>Fermat<rsq/>s Little Theorem</h></idx>
+
+        <statement>
+          <p>
+            Use <xref
+            ref="PROBLEMFermLittl3" ></xref> to show that
+            <m>p|(n^p-n)</m> for all positive integers <m>n</m>, thus
+            proving <xref ref="thm_FermatsLittleTheorem" text="custom">Fermat<rsq/>s Little Theorem</xref>. 
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Use induction on <m>n</m>.  To get from <m>n</m> to <m>n+1</m>,
+            use the binomial theorem on <m>(n+1)^p</m> and the result of <xref ref="PROBLEMFermLittl3" ></xref> .
+          </p>
+        </hint>
+      </problem>
+
+
+
+      <p>
+        <xref ref="thm_FermatsLittleTheorem" text="custom">
+          Fermat<rsq/>s Little Theorem</xref> is the foundational basis
+          for a number of results in number theory and encryption.
+      </p>
+
+      <problem>
+        <introduction>
+          <p>
+            Recall what we said above: Having solved a problem is no
+            reason to stop thinking about it. Reflect upon your proof of
+            <xref ref="thm_FermatsLittleTheorem"
+                  text="custom">Fermat<rsq/>s Little Theorem</xref> by
+            answering these questions.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Will the result of Fermat<rsq/>s Little Theorem hold if
+              <m>p</m> is not a prime number?
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              If not, then which of the steps in the proof breaks down?
+            </p>
+          </statement>
+        </task>
+      </problem>
   </section>
 </chapter>
 

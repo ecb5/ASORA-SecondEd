@@ -121,7 +121,7 @@
     <p>
       You might reasonably ask, <q>OK, but what exactly is equal to
       zero?</q> The notation <q>=0</q> clearly states that
-      <em>something</em> is equal to zero. What? A simple answer to
+      <em>something</em> is equal to zero. What? The simple answer to
       that question is as obvious as it is unhelpful.  It is the limit
       of <m>2^{-n}</m> that is equal to zero.
     </p>
@@ -136,9 +136,9 @@
       <me>
         \limit{n}{\infty}{a_n}=a 
       </me> 
-      and when we read it aloud we tend to say that <m>a_n</m>
-      <q>equals <m>a</m></q> rather than <q>converges to
-      <m>a</m></q>. This is not wrong <foreign>per se</foreign> but it
+      and when we read it aloud we tend to say that <m>a_n</m> <term>equals
+      <m> \boldsymbol{a}</m></term> rather than saying that <m>a_n</m> <term>converges to
+      <m>\boldsymbol{a}</m></term>. This is not wrong <foreign>per se</foreign> but it
       can be confusing at first. But ultimately it is the
       <term>limit</term> of the sequence that is equal to <m>a</m>,
       not any individual term, and certainly not the sequence itself.
@@ -175,11 +175,11 @@
 
       In his attempts to justify his calculations, Newton used what he
       called his doctrine of <term>Ultimate Ratios</term>. For
-      example, the ratio <m>\frac{(x+h)^2-x^2}{h} = \frac{2xh+h^2}{h}
-      = 2x+h</m> becomes <m>2x</m> <term>ultimately</term>, or at the
-      last instant before <m>h</m> becomes zero. Newton would have
-      called <m>h</m> an <q>evanescent</q> or <q>vanishing
-      quantity</q> (<xref
+      example, he would have said that the ratio
+      <m>\frac{(x+h)^2-x^2}{h} = \frac{2xh+h^2}{h} = 2x+h</m> becomes
+      <m>2x</m> <term>ultimately</term>, or at the last instant before
+      <m>h</m> becomes zero. Newton would have called <m>h</m> an
+      <q>evanescent</q> or <q>vanishing quantity</q> (<xref
       ref="grabiner81__origin_cauch_rigor_calculy"/>, p. 33).
     </p>
     <p>
@@ -190,12 +190,13 @@
       <!--   \limit{h}{0}{\frac{2xh+h^2}{h}} = \limit{h}{0}{2x+h}=2x  -->
       <!--   </me>.   -->
 
-      Notice that to evaluate the limit of the sequences <m>(a_n)</m>
-      and <m>\limit{h}{0}{\frac{(x+h)^2-x^2}{h}}</m> the limit
-      parameters <m>n</m> and <m>h</m> are different. In the former
-      the limit parameter <m>n</m> took on only integer values,
-      whereas in the latter it could be any real number (though we're
-      only interested in values close to zero).
+      Notice that to evaluate the limits <m>\limit{n}{\infty}
+      {a_n}</m> and <m>\limit{h}{0}{\frac{(x+h)^2-x^2}{h}}</m>
+      requires that we think about the limit parameters <m>n</m> and
+      <m>h</m> slightly differently. In the former the limit parameter
+      <m>n</m> takes on only integer values, whereas in the latter it
+      could be any real number (though we're only interested in values
+      close to zero).
       <!-- get close to infinity (which -->
       <!-- is not a number) here we need to let <m>h</m> get infinitely -->
       <!-- close to zero (which is a number).  In evaluating the limit of -->
@@ -204,27 +205,27 @@
       <!-- \limitt{h}{0}{\frac{(x+h)^2-x^2}{h}}</m> the limit parameter -->
       <!-- <m>h</m> is simply close to zero. Hence it must be a real -->
       <!-- number.  -->
-      While they are clearly related, the two limits,
-      <md>
-        <mrow>\limit{n}{\infty}{a_n}\amp{}\amp{} \text{and}\amp{}\amp{}\limit{h}{0}{\frac{(x+h)^2-x^2}{h}}</mrow>
-        </md>      
-        are different kinds of entities.
+      <!--   While they are clearly related, the two limits, -->
+      <!--   <md> -->
+      <!--     <mrow>\limit{n}{\infty}{a_n}\amp{}\amp{} \text{and}\amp{}\amp{}\limit{h}{0}{\frac{(x+h)^2-x^2}{h}}</mrow> -->
+      <!--     </md>       -->
+      <!--     are different kinds of entities. -->
     </p>
 
 
     <p>
       <idx><h>Leibniz, Gottfried Wilhelm</h></idx>
 
-      Similarly Leibniz<rsq/> differentials (e.g. <m>\dx{x}</m> and
-      <m>\dx{y}</m>) can be seen as an attempt to get infinitely close
-      to <m>x</m> and <m>y</m> respectively, in much the same way that
-      <m>h</m> does in <m> \limitt{h}{0}{\frac{(x+h)^2-x^2}{h}}</m>.
-      Infinite closeness is the idea at the heart of
-      Calculus. Unfortunately it is very difficult to define
-      <q>infinite closeness</q> so to get around that difficulty we
-      instead we ask what happens to the expression
+      In much the same way that <m>h</m> gets close to zero in <m>
+      \limitt{h}{0}{\frac{(x+h)^2-x^2}{h}}</m> Leibniz<rsq/>
+      differentials (e.g. <m>\dx{x}</m> and <m>\dx{y}</m>) can be seen
+      as an attempt to get close to <m>x</m> and <m>y</m>
+      respectively, The idea at the heart of Calculus is the notion of
+      <q>infinite closeness.</q> Unfortunately it is very difficult to
+      define <q>infinite closeness</q> might mean so to get around
+      that difficulty we instead we ask what happens to the expression
       <m>\frac{(x+h)^2-x^2}{h}</m> as <m>h</m> gets
-      <term>arbitrarily</term> close to zero. Which is the meaning of
+      <term>arbitrarily</term> close to zero. That is the meaning of
       the notation: <m>\limitt{h}{0}{\frac{2xh+h^2}{h}}</m>.
     </p> 
     <p> 
@@ -235,8 +236,8 @@
       href="https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/"
       visual="mathshistory.st-andrews.ac.uk/Biographies/Lagrange/">Lagrange</url>
       tried to avoid the entire issue of infinite closeness, both in
-      the limit and differential forms when, in 1797, he attempted to
-      make infinite series series the foundational concept in
+      the limit and differential forms when, in <m>1797</m>, he
+      attempted to make infinite series the foundational concept in
       Calculus.  Although Lagrange<rsq/>s efforts failed, they set the
       stage for <url
       href="https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/"
@@ -250,9 +251,10 @@
         Suppose we wish to determine the slope of the tangent line
         (derivative) of <m>f(x) = \sin x</m> at <m>x=0</m>.  We form
         the usual difference quotient: <m>D(x)=\frac{\sin x - \sin
-        0}{x-0}</m>. Now consider the graph of this difference
-        quotient <me>D(x) =\frac{\sin x - \sin 0}{x-0}=\frac{\sin x
-        }{x}</me>.
+        0}{x-0}=\frac{\sin x
+        }{x}</m>. 
+        <!-- Now consider the graph of this difference -->
+        <!-- quotient <me>D(x) =\frac{\sin x - \sin 0}{x-0}</me>. -->
       </p>
 
       <figure xml:id="FIGURESyncFunc" > <caption>Graph of
@@ -282,9 +284,9 @@
       <url
           href="https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/"
           visual="mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/">Karl
-      Weierstrass</url> made these ideas precise in his lectures on
-      analysis at the University of Berlin (1859-60) and provided us
-      with our modern formulation of the limit.
+      Weierstrass</url> made these ideas precise  and provided us
+      with our modern formulation of the limit in his lectures on
+      analysis at the University of Berlin (1859-60).
     </p>
 
     <definition xml:id="def_limit">
@@ -867,7 +869,7 @@
           </p> 
         </statement> 
       </task>
-</problem> 
+    </problem> 
 
 <definition xml:id="DEFINITIONNear">
   <title>Near</title> 

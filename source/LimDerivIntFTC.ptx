@@ -99,7 +99,7 @@
       almost certainly encountered limits of functions before so it is
       tempting for us (the authors) to assume that you are already
       well<ndash/>versed in the limit concept and simply plow forward
-      with little discussion. We won<rsq/>t do that.
+      with very little discussion. We won<rsq/>t do that.
     </p>
 
     <p>
@@ -126,7 +126,7 @@
       of <m>2^{-n}</m> that is equal to zero.
     </p>
     <p>
-      More helpfully, suppose the sequence
+      More generally (and more helpfully) suppose the sequence
       <m>\left(a_n\right)_{n=1}^\infty </m> converges to <m>a</m>.  In
       <xref ref="Convergence" ></xref> we usually said that
       <m>\limit{n}{\infty}{a_n}</m> <term>converged</term> to <m>a</m>
@@ -146,10 +146,11 @@
     <p>
       The limit concept has always been lurking in the background of
       Calculus.  Because it is a deep and very abstract idea it took
-      about <m>200</m> years to bring it forward clearly. And as
-      we<rsq/>ve just seen the notation we<rsq/>ve inherited
-      (especially the way the equals sign is used) is more befuddling
-      than helpful, at least at first.  We will proceed slowly.
+      about <m>200</m> years to bring it forward clearly and
+      precisely. And as we<rsq/>ve just seen the notation we<rsq/>ve
+      inherited, especially the way the equals sign is used, is more
+      befuddling than helpful, at least at first.  We will proceed
+      slowly.
     </p>
     <!-- <p> -->
     <!--   We introduced sequences first because the limit of a sequence (especially a sequence converging to zero) is the simplest kind of non<ndash/>trivial limit to understand.  In this section we<rsq/>ll expand <xref ref="def_ConvergenceOfASequence" ></xref> to the limits of functions -->
@@ -175,11 +176,12 @@
 
       In his attempts to justify his calculations, Newton used what he
       called his doctrine of <term>Ultimate Ratios</term>. For
-      example, he would have said that the ratio
-      <m>\frac{(x+h)^2-x^2}{h} = \frac{2xh+h^2}{h} = 2x+h</m> becomes
-      <m>2x</m> <term>ultimately</term>, or at the last instant before
-      <m>h</m> becomes zero. Newton would have called <m>h</m> an
-      <q>evanescent</q> or <q>vanishing quantity</q> (<xref
+      example, he would have said that as long as <m>h</m> is not zero
+      the ratio <m>\frac{(x+h)^2-x^2}{h} = \frac{2xh+h^2}{h} =
+      2x+h</m> becomes <m>2x</m> <term>ultimately</term>, or at the
+      last instant before <m>h</m> becomes zero. Newton would have
+      called <m>h</m> an <q>evanescent</q> or <q>vanishing
+      quantity</q> (<xref
       ref="grabiner81__origin_cauch_rigor_calculy"/>, p. 33).
     </p>
     <p>
@@ -190,13 +192,20 @@
       <!--   \limit{h}{0}{\frac{2xh+h^2}{h}} = \limit{h}{0}{2x+h}=2x  -->
       <!--   </me>.   -->
 
-      Notice that to evaluate the limits <m>\limit{n}{\infty}
-      {a_n}</m> and <m>\limit{h}{0}{\frac{(x+h)^2-x^2}{h}}</m>
+      To evaluate the two limits,
+      <md>
+        <mrow>\limit{n}{\infty}{a_n}\amp{}\amp{} \text{and}\amp{}\amp{}\limit{h}{0}{\frac{(x+h)^2-x^2}{h}}</mrow>
+      </md>
       requires that we think about the limit parameters <m>n</m> and
       <m>h</m> slightly differently. In the former the limit parameter
-      <m>n</m> takes on only integer values, whereas in the latter it
-      could be any real number (though we're only interested in values
-      close to zero).
+      <m>n</m> takes on only integer values and continues to increase.
+      But it cannot get close to <m>\infty </m> because <m>\infty</m>
+      is not a number.  In the latter <m>h</m> is getting closer to
+      zero but it cannot become zero because the expression we are
+      evaluating is not a number (because division by zero is
+      meaningless). The commonality is that in both instances the
+      limit parameter is approaching something that it can never
+      reach because that would lead to nonsense.
       <!-- get close to infinity (which -->
       <!-- is not a number) here we need to let <m>h</m> get infinitely -->
       <!-- close to zero (which is a number).  In evaluating the limit of -->
@@ -205,22 +214,16 @@
       <!-- \limitt{h}{0}{\frac{(x+h)^2-x^2}{h}}</m> the limit parameter -->
       <!-- <m>h</m> is simply close to zero. Hence it must be a real -->
       <!-- number.  -->
-      <!--   While they are clearly related, the two limits, -->
-      <!--   <md> -->
-      <!--     <mrow>\limit{n}{\infty}{a_n}\amp{}\amp{} \text{and}\amp{}\amp{}\limit{h}{0}{\frac{(x+h)^2-x^2}{h}}</mrow> -->
-      <!--     </md>       -->
-      <!--     are different kinds of entities. -->
-    </p>
-
-
+      <!-- While they are clearly related this difference in the , the two limits, -->
+      <!-- <md> -->
+      <!--   <mrow>\limit{n}{\infty}{a_n}\amp{}\amp{} \text{and}\amp{}\amp{}\limit{h}{0}{\frac{(x+h)^2-x^2}{h}}</mrow> -->
+      <!-- </md> -->
+      <!-- are different kinds of entities. -->
+      (We are using the word <q>nonsense</q> literally. We mean that
+      it is not sensible. We do not mean that it is silly.)
+    </p> 
     <p>
-      <idx><h>Leibniz, Gottfried Wilhelm</h></idx>
-
-      In much the same way that <m>h</m> gets close to zero in <m>
-      \limitt{h}{0}{\frac{(x+h)^2-x^2}{h}}</m> Leibniz<rsq/>
-      differentials (e.g. <m>\dx{x}</m> and <m>\dx{y}</m>) can be seen
-      as an attempt to get close to <m>x</m> and <m>y</m>
-      respectively, The idea at the heart of Calculus is the notion of
+      At the heart of Calculus is the notion of
       <q>infinite closeness.</q> Unfortunately it is very difficult to
       define <q>infinite closeness</q> might mean so to get around
       that difficulty we instead we ask what happens to the expression
@@ -228,6 +231,17 @@
       <term>arbitrarily</term> close to zero. That is the meaning of
       the notation: <m>\limitt{h}{0}{\frac{2xh+h^2}{h}}</m>.
     </p> 
+
+    <p>
+      <idx><h>Leibniz, Gottfried Wilhelm</h></idx>
+
+      With the advantage of hindsight it is easy to see that
+      Leibniz<rsq/> differentials (e.g. <m>\dx{x}</m> and
+      <m>\dx{y}</m>) were also an attempt to get infinitely close to
+      <m>x</m> and <m>y</m>, respectively. Since <m>\dx{x}</m> was
+      considered an infinitely small quantity the expression
+      <m>x+\dx{x}</m> was seen to be infinitely close to <m>x</m>.
+    </p>
     <p> 
       <idx><h>Lagrange, Joseph-Louis</h></idx>
       <idx><h>Cauchy, Augustin</h></idx> 
@@ -304,33 +318,77 @@
         </p>
       </statement> 
     </definition> 
+
     <p> 
-      Before we delve into this, notice that <xref ref="def_limit" ></xref>  is very similar to the
-      definition of <xref ref="def_continuity"
-      text="custom">continuity at a point</xref>. 
-      <!-- the definition of the continuity of -->
-      <!-- <m>f(x)</m> at <m>x=a</m>.  --> 
-      This is because the two concepts are closely very related.  
-    </p>
+      There are a couple of observations about <xref ref="def_limit" ></xref> that are worth making explicit:
+      <ol>
+        <li>
+          <p>
+            Notice that <xref ref="def_limit" ></xref> is very similar
+            to the definition of <xref ref="def_continuity"
+            text="custom">continuity at a point</xref>.
+            <!-- the definition of the continuity of -->
+            <!-- <m>f(x)</m> at <m>x=a</m>.  --> 
+            This is because the two concepts are very closely related.  
 
-    <p>
-      In fact we can readily see that <m>f</m> is continuous at
-      <m>x=a</m> if and only if the limit of <m>f(x)</m> as <m>x</m>
-      approaches <m>a</m> is <m>f(a)</m>.
+            In fact we can readily see that a function <m>f</m> is continuous at
+            <m>x=a</m> if and only if the limit of <m>f(x)</m> as <m>x</m>
+            approaches <m>a</m> is <m>f(a)</m>.
+          </p> 
+      </li>
+      <li>
+      
+        <p>
+          The statement of <xref ref="def_limit"></xref> does not
+          reflect the way we think or speak about limits at all. We
+          speak of <m>x</m> getting close to, or approaching <m>a</m>
+          which clearly indicates some sort of metaphorical motion.
+          But the definition only references a single, unspecified and
+          fixed parameter <m>\eps{}</m>. Once <m>\eps </m> is given if
+          we need to find a value of <m>\delta{}</m> which guarantees
+          that the inequality <m>\abs{f(x)-L}\lt \eps </m> holds as
+          long as the inequality <m>0\lt \abs{x-a}\lt \delta</m>
+          holds. In that case the limit exists and has the value
+          <m>L</m>. There is no motion metaphorical or otherwise. We
+          just have unchanging inequalities.
+        </p>
+<p>
+  However, although <m>\eps </m> is fixed it is also unspecified. This
+  means that once an appropriate <m>\delta{}</m> is found (usually in
+  terms of <m>\eps{}</m>) then our inequalities will hold for every
+  value of <m>\eps{}</m>. The upshot is that <m>\eps </m> represents
+  every possible real number and <m>\delta{}</m> represent every
+  corresponding response. There is no need for motion as a metaphor
+  because all possibilities are handled at once.
+</p>
+<p>
+  This may seem unnecessarily complex to you and it certainly is
+  complex. But it is also necessary because we want to use our
+  mathematics to (among other things) interpret and explain the
+  natural world. Using our intuition regarding motion (part of the
+  natural world) to explain our mathematics would be reasoning in a
+  circular fashion which is useless.
+</p>
+
+        
+      </li>
+      </ol>
+      <!--   Before we delve into this, notice that <xref ref="def_limit" ></xref>  is very similar to the -->
+      <!--   definition of <xref ref="def_continuity" -->
+      <!--   text="custom">continuity at a point</xref>.  -->
+      <!--   <!-\- the definition of the continuity of -\-> -->
+      <!--   <!-\- <m>f(x)</m> at <m>x=a</m>.  -\->  -->
+      <!--   This is because the two concepts are closely very related.   -->
+      <!-- </p> -->
+
+      <!-- <p> -->
+      <!--   In fact we can readily see that <m>f</m> is continuous at -->
+      <!--   <m>x=a</m> if and only if the limit of <m>f(x)</m> as <m>x</m> -->
+      <!--   approaches <m>a</m> is <m>f(a)</m>. -->
     </p> 
-    <problem xml:id="DRILLContIFFLimExist">
-
-      <p>
-        Use <xref ref="def_continuity" ></xref> and <xref
-        ref="def_limit" ></xref> to prove that a function <m>f(x)</m>
-        is continuous at <m>x=a</m> if and only if
-        <m>\limit{x}{a}{f(x)}=f(a)</m>.
-
-      </p>
-    </problem>
 
     <!-- <aside> -->
-    
+
     <!--   <title>Accumulation Points</title> -->
 
     <!--   <p> -->
@@ -360,7 +418,18 @@
       x}{x}</m> is not defined at <m>x=0</m> we need to eliminate that
       possibility from consideration.  This is the only purpose for
       this change.
-    </p> 
+    </p>
+    <problem xml:id="DRILLContIFFLimExist">
+
+      <p>
+        Use <xref ref="def_continuity" ></xref> and <xref
+        ref="def_limit" ></xref> to prove that a function <m>f(x)</m>
+        is continuous at <m>x=a</m> if and only if
+        <m>\limit{x}{a}{f(x)}=f(a)</m>.
+
+      </p>
+    </problem>
+ 
     <!-- <p> -->
     <!--   As with the definition of convergence of a sequence, the limit -->
     <!--   definition does not determine what the limit will be. It -->
@@ -410,14 +479,13 @@
     <!-- </p> -->
     <example>
       <statement>
-        <p> Consider the
-        function <m>D(x)=\frac{x^2-1}{x-1}</m>, <m>x\neq 1</m>.  You
-        probably recognize this as the difference quotient used to
-        compute the derivative of <m>f(x)=x^2</m> at <m>x=1</m>, so we
-        strongly suspect that <m>\limit{x}{1}{\frac{x^2-1}{x-1}}=2</m>.
-        Just as when we were dealing with limits of sequences, we should
-        be able to use the definition to verify this.  And as before, we
-        will start with some scrapwork.  
+        <p> Consider the function <m>\frac{x^2-1}{x-1}</m>, where
+        <m>x\neq 1</m>, which you probably recognize as the
+        difference quotient used to compute the derivative of
+        <m>f(x)=x^2</m> at <m>x=1</m>, so we strongly suspect that
+        <me>\limit{x}{1}{\frac{x^2-1}{x-1}}=2</me>.  We will use the
+        <xref ref="def_limit" text="custom">definition</xref> to
+        verify this. We begin with some scrapwork.
         </p> 
         <p> 
           <term>SCRAPWORK</term>
@@ -457,7 +525,7 @@
 
       <statement> 
         <p>
-          Use the definition of a limit to verify that
+          Use <xref ref="def_limit"></xref>  to verify that
           <me> \limit{x}{a}{\frac{x^2-a^2}{x-a}}=2a.{} </me> 
         </p>
       </statement>
@@ -469,8 +537,7 @@
 
       <introduction>
         <p> 
-          Use the
-          definition of a limit to verify each of the following limits.
+          Use <xref ref="def_limit"></xref>  to verify each of the following limits.
         </p>
       </introduction>
       <task> 
@@ -532,13 +599,12 @@
     </problem> 
 
     <p> 
-      Our definition of a limit, although it is rigorous, is quite
-      cumbersome to use. What we want to do is develop some tools we
-      can use without having to refer directly to <xref
-      ref="def_limit"></xref>.  One such tool is <xref
+      Although it is rigorous <xref ref="def_limit" ></xref> is quite
+      cumbersome to use. What we need to do is develop some tools we
+      can use without having to refer directly to the definition.  One such tool is <xref
       ref="thm_LimDefOfContinuity"></xref> which allows us to show
       that a function is continuous (or discontinuous) at a point by
-      examining certain sequences. We will need others.
+      examining certain sequences.
     </p>
     <p>
       As we observed earlier, <m>f(x)</m> is continuous at
@@ -586,6 +652,24 @@
       Armed with this, we can prove the following
       familiar limit theorems from Calculus.  
     </p> 
+    <theorem xml:id="LimConst">
+      <title>
+        The Limit of a Constant Function
+      </title>
+      <p>
+        Suppose <m>a, \alpha \in \RR </m> and <m>f(x)=\alpha </m>. Then
+        <m>
+          \limit{x}{a}{f(x)} = \alpha.
+        </m>
+      </p> 
+    </theorem>
+
+    <problem xml:id="PROBLEMLimConstBySeq">
+      <p>
+        Use <xref ref="cor_limit-by-sequences" ></xref> to prove <xref ref="LimConst" ></xref>.
+      </p>
+    </problem>
+
 
     <theorem xml:id="thm_CalcLimits">
 
@@ -683,12 +767,12 @@
     <proof>
       <p> 
         Let <m>\left(x_n\right)</m> be a sequence such that
-        <m>x_n\ne a</m> and <m>\limit{n}{\infty}{x_n}=a</m>.  Since
+        <!-- <m>x_n\ne a</m> and --> 
+        <m>\limit{n}{\infty}{x_n}=a</m>.  Since
         <m>\limit{x}{a}{f(x)} = L</m> and <m>\limit{x}{a}{g(x)} = M</m>
         we see that <m>\limit{n}{\infty}{f(x_n)} = L</m> and
         <m>\limit{n}{\infty}{g(x_n)} = M</m>.  By <xref
-        ref="thm_SumOfSequences"></xref> of <xref
-        ref="Convergence"></xref>, we have
+        ref="thm_SumOfSequences"></xref> we have
         <m>\limit{n}{\infty}{f(x_n)+g(x_n)}=L+M</m>.  Since
         <m>\left(x_n\right)</m> was an arbitrary sequence with
         <m>x_n\ne a</m> and <m>\limit{n}{\infty}{x_n} = a</m> we have
@@ -703,8 +787,8 @@
 
       <statement> 
         <p> 
-          Prove parts (b) and (c) of <xref
-          ref="thm_CalcLimits"></xref>.  
+          Use <xref ref="cor_limit-by-sequences" ></xref> to prove
+          parts (b) and (c) of <xref ref="thm_CalcLimits"></xref>.
         </p> 
       </statement>
     </problem> 
@@ -744,8 +828,8 @@
       </statement>
       <hint> 
         <p> Use <xref
-        ref="thm_SqueezeTheorem"></xref>, the Squeeze Theorem for
-        sequences from <xref ref="Convergence"></xref>.  
+        ref="thm_SqueezeTheorem" text="custom"> the Squeeze Theorem for
+        Sequences</xref>.
         </p>
       </hint> 
     </problem> 
@@ -765,15 +849,14 @@
           that the Squeeze Theorem is just what we need.  First notice
           that since <m>D(x)=\frac{\sin x}{x}</m> is an even function, we only
           need to focus on <m>x\gt0</m> in our inequalities.  Consider the
-          unit circle.
+          unit circle seen in <xref ref="FIGUREUnitCircleSinOverX" ></xref>.
         </p>
       </introduction>
       <task>
         <statement>
           <p>
-            Use <xref ref="FIGUREUnitCircleSinOverX" ></xref> to show that
+            Show that
             <me>
-
               \text{ area } (\Delta OAC)\lt \text{ area } (\text{ sector }
             OAC)\lt \text{ area } (\Delta OAB) </me>
           </p>
@@ -812,7 +895,7 @@
           <p>
             Use <xref ref="EQUATIONCosLSinOverx" >equation</xref> and
             the <xref ref="thm_SqueezeTheoremFunctions"
-            text="custom">Squeeze Theorem</xref> for Functions to show
+            text="custom">Squeeze Theorem for Functions</xref> to show
             <m>\limitt{x}{0}{\textstyle\frac{\sin x}{x}}=1</m>.
 
           </p>
@@ -871,53 +954,53 @@
       </task>
     </problem> 
 
-<definition xml:id="DEFINITIONNear">
-  <title>Near</title> 
-  <statement> 
-    <p>
-      <idx><h>Definition</h><h>near</h></idx>     
-      <idx><h>near</h></idx>     
+    <definition xml:id="DEFINITIONNear">
+      <title>Near</title> 
+      <statement> 
+        <p>
+          <idx><h>Definition</h><h>near</h></idx>     
+          <idx><h>near</h></idx>     
 
-      We say that a function
-      <m>f(x)</m> has a property for <m>x</m> <term>near</term> <m>a</m>, if there
-      exists a <m>{\delta }_0>0</m> such that <m>f(x)</m> has that
-      property for all <m>x</m> with <m>0\lt\left|x-a\right|\lt{\delta
-      }_0</m>
+          We say that a function
+          <m>f(x)</m> has a property for <m>x</m> <term>near</term> <m>a</m>, if there
+          exists a <m>{\delta }_0>0</m> such that <m>f(x)</m> has that
+          property for all <m>x</m> with <m>0\lt\left|x-a\right|\lt{\delta
+          }_0</m>
 
-    </p>
+        </p>
 
-  </statement>
+      </statement>
 
-</definition>
+    </definition>
 
-<problem xml:id="PROBLEMLimUppLow">
-  <introduction>
+    <problem xml:id="PROBLEMLimUppLow">
+      <introduction>
 
-    <p>
+        <p>
 
-      Prove that each of the following statements is also a
-      consequence of <xref ref="PROBLEMBasicLimits"></xref>.
-      Suppose <m>\limit{x}{a}{f(x)}=L</m>.
+          Prove that each of the following statements is also a
+          consequence of <xref ref="PROBLEMBasicLimits"></xref>.
+          Suppose <m>\limit{x}{a}{f(x)}=L</m>.
 
-    </p>
-  </introduction>
-  <task>
-    <statement>
+        </p>
+      </introduction>
+      <task>
+        <statement>
 
-      <p>
-        If <m>f\left(x\right)\le 0</m> for <m>x</m> near <m>a</m>, then <m>L\le 0</m>.
-      </p>
+          <p>
+            If <m>f\left(x\right)\le 0</m> for <m>x</m> <term>near</term> <m>a</m>, then <m>L\le 0</m>.
+          </p>
 
-    </statement>
-  </task>
-  <task>
-    <statement>
-      <p>
-        If <m>f\left(x\right)\ge 0</m> for <m>x</m> near <m>a</m>, then <m>L\ge 0</m>.
-      </p>
-    </statement>
-  </task>
-</problem>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            If <m>f\left(x\right)\ge 0</m> for <m>x</m> <term>near</term> <m>a</m>, then <m>L\ge 0</m>.
+          </p>
+        </statement>
+      </task>
+    </problem>
 
   </section>
 
@@ -1068,9 +1151,9 @@
   </problem>
 
   <p> 
-    As we mentioned, the derivative is an extraordinarily useful
-    mathematical tool but it is not our intention to learn to
-    <em>use</em> it here.  Our purpose here is to define it
+    Although it is an extraordinarily useful mathematical tool but it
+    is not our intention to learn to use the derivative here. You did
+    that in your Calculus course. Our purpose here is to define it
     rigorously (done) and to show that our formal definition does in
     fact recover the useful properties you came to know and love in
     your Calculus course.
@@ -1251,7 +1334,7 @@
 
   <p> 
     It would be difficult to prove the MVT right now,  so
-    we will first state and prove Rolle<rsq/>s Theorem, which can be seen as a
+    we will first state and prove <xref ref="thm_Rolle_s_Theorem" text="custom">Rolle<rsq/>s Theorem</xref>, which can be seen as a
     special case of the MVT. The proof of the MVT will then follow easily.
   </p>
 
@@ -1601,38 +1684,37 @@
       \int^b_{x=a}{y\dx{x}}=\int^b_{x=a}{\dx{Y}}
       </men>
   </p>
-  <p>
-    <xref ref="EQUATIONFTCIntDiffer" >Equation</xref> indicates
-    that we are summing all of the respective differentials between
-    <m>x=a</m> and <m>x=b</m>.
-    </p>
+  <!-- <p> -->
+  <!--   <xref ref="EQUATIONFTCIntDiffer" >Equation</xref> indicates -->
+  <!--   that we are summing all of the respective differentials between -->
+  <!--   <m>x=a</m> and <m>x=b</m>. -->
+  <!--   </p> -->
 
-    <aside>
-      
-      <title>
-        Integral Notation: Upper and Lower Indices
-      </title>
-      <p>
-        We said that <xref ref="EQUATIONFTCIntDiffer" >equation</xref>
-        uses Leibniz<rsq/> notation but this is not entirely
-        correct. Fourier innovated the use of upper and lower indices on
-        the integral sign to show the limits of the integration
-        approximately 150 years later. Leibniz didn<rsq/>t use
-        them.
-      </p>
-    </aside>
+  <aside>
     
-
+    <title>
+      Integral Notation: Upper and Lower Indices
+    </title>
     <p>
-      Since  a finite sum of finite differences collapses into the
-      difference of the extremes:
+      We said that <xref ref="EQUATIONFTCIntDiffer" >equation</xref>
+      uses Leibniz<rsq/> notation but this is not entirely
+      correct. Leibniz didn<rsq/>t use upper and lower indices on the
+      integral sign to show the limits of the integration.  Fourier
+      innovated their use approximately <m>150</m> years after Leibniz.
+    </p>
+  </aside>
+  
+
+  <p>
+    Since  a finite sum of finite differences collapses into the
+    difference of the extremes:
 
     <me>\left(a_2-a_1\right)+\left(a_3-a_2\right)+\dots
     +\left(a_{n-1}-a_{n-2}\right)+\left(a_n-a_{n-1}\right)=a_n-a_1</me>.
     Leibniz assumed that this is also true for an infinite sum of
-    infinitesimals. This is probably the most intuitive understanding
-    of the Fundamental Theorem of Calculus. In Leibniz<rsq/> notation
-    it is
+    infinitesimals. This is probably the most intuitive possible
+    understanding of the Fundamental Theorem of Calculus. In
+    Leibniz<rsq/> notation it is
 
     <men xml:id="EQUATIONFTCLeibniz">\int^b_{x=a}{y\dx{x}}=\int^b_{x=a}{\dx{Y}}=Y\left(b\right)-Y(a)</men>.
   </p>
@@ -1651,9 +1733,9 @@
       something more  imposing <mdash/> like the <term>Fundamental Theorem of Calculus</term>.
   </p>
   <p>
-    Leibniz included a diagram to support this result, but he rather
-    famously favored very complex diagrams in his publications.  We
-    provide a simpler, more modern rendition below. 
+    Leibniz rather famously favored very complex diagrams to
+    illustrate his idea and he included one such diagram in his paper.
+    We provide a simpler, more modern rendition below.
   </p>
 
 
@@ -1712,7 +1794,7 @@
 
   </problem>
   <p>
-    At this point we have the tools necessary for a rigorous
+    At this point we have all of the tools necessary for a rigorous
     proof of the Fundamental Theorem of Calculus. What we do not have
     is an adequate definition of the integral.
     <!-- As we said it turns out -->
@@ -2029,7 +2111,7 @@
       mechanical method for finding areas and volumes.  His method
       consisted of mentally dividing objects into infinitely thin slices
       and balancing these slices on an imaginary balance.  Archimedes noted
-      that while his method was not rigorous it was still quite useful:
+      that while his method was not rigorous it was still quite useful. He said:
     </p>
     <blockquote>
       <p>
@@ -2067,24 +2149,25 @@
     </p>
     <p>
       It had always been recognized that infinitesimals were an
-      inadequate foundation for Calculus     but it was  
-      at the beginning of the 19th century, in large part due to the
-      work of Fourier, that it became imperative to replace it.
+      inadequate foundation for Calculus but it was only at the
+      beginning of the 19th century that it became imperative to
+      replace it (in large part due to the work of Fourier).
     </p>
     <p>
-      Fourier<rsq/>s work raises the question: How random> can a
+      Fourier<rsq/>s work raises the question: How random can a
       function defined on an interval be and still be represented by a
       Fourier series?  Since the coefficients are computed via
       integration, a closely related question is how random can a
       function be and still be integrable?
     </p>
     <p>
-      Since this text is intended as a one semester introduction to real
-      analysis we will not be able to fully answer that question here.
-      But we will give one rigorous definition of the integral (there
-      are many) and use it to show that a continuous function on a
-      closed interval is integrable.  This will close the gap in
-      our proof of the <xref ref="THEOREMFTCCauchy" text="custom" >Fundamental Theorem of Calculus</xref>.
+      Since this text is intended as a one semester introduction to
+      real analysis we will not be able to fully answer that question
+      here.  But we will give two equivalent rigorous definitions of
+      the integral and then show that a continuous function on a
+      closed interval is integrable.  This will close the gap in our
+      proof of the <xref ref="THEOREMFTCCauchy" text="custom"
+      >Fundamental Theorem of Calculus</xref>.
       <!--  and show that a -->
       <!-- continuous function on an interval has an antiderivative. --> 
       <!-- We
@@ -2093,9 +2176,20 @@
       <!-- mind the idea of trying to compute an area under a curve without -->
       <!-- resorting to infinitesimals underlies these ideas. -->
     </p>
+    <aside>
+      <title>Multiple Definitions of the Integral</title>
+      <p>
+        The definitions we will discuss in this chapter are equivalent in the sense
+        that if a function is integrable using one definition then it
+        will be integrable using the other.  But there are other
+        definitions that extend integrability to more general
+        functions. We will look at two of them in <xref ref="BackToFourier" ></xref>.
+      </p>
+    </aside>
+
 </introduction>
 <subsection xml:id="SUBSECTIONCauchyRiemannInt">
-  <title>Cauchy<rsq/>s Integral Definition</title>
+  <title>Cauchy<rsq/>s Definition of the Integral</title>
 
 
   <p>

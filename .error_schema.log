@@ -1,5 +1,5 @@
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:617:0:ERROR:RELAXNGV:RELAXNG_ERR_NOELEM: Expecting an element nbsp, got nothing
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:116:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element chapter has extra content: section
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:12:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element part failed to validate content
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:8:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element book failed to validate content
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element docinfo, got pretext
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:609:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element blockquote, got p
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:609:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element p there
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:609:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sidebyside, got p
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:609:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element proof, got p
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:105:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element section has extra content: p

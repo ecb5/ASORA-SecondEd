@@ -54,8 +54,22 @@
       polynomials and hence continuous but what they converged to was
       continuous as well.
     </p>
+
+
+    <p>
+      The difficulty is quite delicate and it took mathematicians a
+      while to determine the problem.  There are two very subtly
+      different ways that a sequence of functions can converge:
+      pointwise or uniformly.  This distinction was touched upon by
+      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Abel/" visual="mathshistory.st-andrews.ac.uk/Biographies/Darboux/">Niels Henrik Abel</url> (1802<ndash/>1829) in <m>1826</m> while studying the domain
+      of convergence of a power series.  However, the necessary formal
+      definitions were not made explicit until Weierstrass did it in
+      his <m>1841</m> paper <pubtitle>Zur Theorie der Potenzreihen (On the
+      Theory of Power Series)</pubtitle>. This was published in his
+      collected works in <m>1894</m>.
+    </p>
     <figure  xml:id="FIGUREAbelPortrait">
-      <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Abel/" visual="mathshistory.st-andrews.ac.uk/Biographies/Darboux/">Niels Henrik Abel</url></caption>
+      <caption>Niels Henrik Abel</caption>
 
       <idx><h>Portraits</h><h>Abel</h></idx>
       <idx><h>Abel, Niels Henrik</h><h>portrait of</h></idx>
@@ -64,30 +78,17 @@
         <shortdescription></shortdescription>
       </image>
     </figure>
-
-    <p>
-      The difficulty is quite delicate and it took mathematicians a
-      while to determine the problem.  There are two very subtly
-      different ways that a sequence of functions can converge:
-      pointwise or uniformly.  This distinction was touched upon by
-      Niels Henrik Abel (1802-1829) in 1826 while studying the domain
-      of convergence of a power series.  However, the necessary formal
-      definitions were not made explicit until Weierstrass did it in
-      his 1841 paper <pubtitle>Zur Theorie der Potenzreihen (On the
-      Theory of Power Series)</pubtitle>. This was published in his
-      collected works in 1894.
-    </p>
-
+    
     <p>
       It will be instructive to take a look at an argument that
       doesn't quite work before looking at the formal definitions we
-      will need.  In 1821 Augustin Cauchy <q>proved</q> that the
+      will need.  In <m>1821</m> Augustin Cauchy <q>proved</q> that the
       infinite sum of continuous functions is continuous.  Of course,
       it is obvious (to us) that this is not true because we've seen
       several counterexamples.  But Cauchy, who was a first rate
       mathematician was so sure of the correctness of his argument
       that he included it in his textbook on analysis, <foreign>Cours
-      d'analyse</foreign> (1821).
+      d'analyse</foreign> <m>(1821)</m>.
     </p>
 
     <problem xml:id="prob_Cauchy_s_incorrect_proof">
@@ -99,7 +100,7 @@
 
       <idx>
         <h>continuity</h> 
-        <h>Cauchy's flawed proof that the limit of continuous
+        <h>Cauchy<rsq/>s flawed proof that the limit of continuous
         functions is continuous</h>
       </idx>
 
@@ -361,7 +362,8 @@
             Suppose <m>f_n</m> and <m>f</m> are integrable and
             <m>f_n\unif f</m> on <m>[a,b]</m>.  Then
             <me>
-              \lim_{n\rightarrow\infty}\int_{x=a}^b f_n(x)\dx{ x}=\int_{x=a}^bf(x)\dx{x}
+              \limit{n}{\infty}{\left(\int_{x=a}^b f_n(x)\dx{
+              x}\right)}=\int_{x=a}^bf(x)\dx{x}
               </me>.
           </p>
         </statement>
@@ -458,7 +460,7 @@
             Remember that
             <me>
               \displaystyle \sum_{n=0}^\infty f_n(x) =
-              \lim_{N\rightarrow\infty}\sum_{n=0}^N f_n(x).
+              \limit{N}{\infty}{\left(\sum_{n=0}^N f_n(x)\right)}.
             </me>
           </p>
         </hint>
@@ -710,7 +712,7 @@
             
             Suppose <m>\left(s_n\right)</m> is a Cauchy sequence of
             real numbers.  There exists a real number <m>s</m> such
-            that <m>\lim_{n\rightarrow\infty}s_n=s</m>.
+            that <me>\limit{n}{\infty}{s_n}=s</me>.
           </p>
         </statement>
       </theorem>
@@ -1639,7 +1641,7 @@
 
       <statement>
         <p>
-          Prove <xref ref="lemma_AbelsLemma"></xref>.
+          Prove <xref ref="lemma_AbelsLemma" text="custom">Abel<rsq/>s Lemma</xref>.
         </p>
       </statement>
     </problem>
@@ -1650,7 +1652,7 @@
 
       <statement>
         <p>
-          Prove <xref ref="AbelsTheorem"></xref>. 
+          Prove <xref ref="AbelsTheorem" text="custom">Abel<rsq/>s Theorem</xref>. 
         </p>
       </statement>
       <hint>
@@ -1661,7 +1663,7 @@
           <m>\abs{\sum_{k=n+1}^ma_kr^k}\lt \frac{\eps }{2}</m>. Let
           <m>0\leq x\leq r</m>.
           
-          By <xref ref="lemma_AbelsLemma"></xref>,
+          By <xref ref="lemma_AbelsLemma" text="custom">Abel<rsq/>s Lemma</xref>,
           <me>
             \abs{\sum_{k=n+1}^ma_kx^k}=\abs{\sum_{k=n+1}^ma_kr^k\left(\frac{x}{r}\right)^k}\leq \left(\frac{\eps }{2}\right)\left(\frac{x}{r}\right)^{n+1}\leq\frac{\epsilon}{2}
             </me>.
@@ -1669,7 +1671,8 @@
         <p>
           Thus for <m>0\leq x\leq r</m>, <m>n>N</m>,
           <me>
-            \abs{\sum_{k=n+1}^\infty a_kx^k}=\lim_{m\rightarrow\infty}\abs{\sum_{k=n+1}^ma_kx^k}\leq\frac{\eps }{2}\lt \epsilon.\rbrack{}
+            \abs{\sum_{k=n+1}^\infty
+            a_kx^k}=\limit{m}{\infty}{\abs{\sum_{k=n+1}^ma_kx^k}}\leq\frac{\eps }{2}\lt \epsilon.\rbrack{}
           </me>
         </p>
       </hint>
@@ -1699,7 +1702,7 @@
       </statement>
       <hint>
         <p>
-          Apply Abel<rsq/>s Theorem to  <m>\sum
+          Apply <xref ref="AbelsTheorem" text="custom">Abel<rsq/>s Theorem</xref> to  <m>\sum
           a_n\left(-x\right)^n=\sum (-1)^nx^n</m>.
         </p>
       </hint>

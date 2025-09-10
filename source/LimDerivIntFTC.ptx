@@ -2133,26 +2133,42 @@
     </blockquote>
 
     <p>
-      Closer to our time 
-      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/" visual="mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/">Cavalieri</url>, 
-      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Torricelli/" visual="mathshistory.st-andrews.ac.uk/Biographies/Torricelli/">Torricelli</url>, 
-      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Kepler/" visual="mathshistory.st-andrews.ac.uk/Biographies/Kepler/">Kepler</url>, 
-      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Galileo/" visual="mathshistory.st-andrews.ac.uk/Biographies/Galileo/">Galileo</url>,
-      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Roberval/" visual="mathshistory.st-andrews.ac.uk/Biographies/Roberval/"> Roberval</url>,
-      and others explored a similar idea. They too mentally  cut geometric areas (and volumes) into infinitely thin slices.  But rather than using an imaginary balance they compared them geometrically.
+      Closer to our time <url
+      href="https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/"
+      visual="mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/">Cavalieri</url>,
+      <url
+      href="https://mathshistory.st-andrews.ac.uk/Biographies/Torricelli/"
+      visual="mathshistory.st-andrews.ac.uk/Biographies/Torricelli/">Torricelli</url>,
+      <url
+      href="https://mathshistory.st-andrews.ac.uk/Biographies/Kepler/"
+      visual="mathshistory.st-andrews.ac.uk/Biographies/Kepler/">Kepler</url>,
+      <url
+      href="https://mathshistory.st-andrews.ac.uk/Biographies/Galileo/"
+      visual="mathshistory.st-andrews.ac.uk/Biographies/Galileo/">Galileo</url>,
+      <url
+      href="https://mathshistory.st-andrews.ac.uk/Biographies/Roberval/"
+      visual="mathshistory.st-andrews.ac.uk/Biographies/Roberval/">
+      Roberval</url>, and others explored a similar idea. They
+      mentally cut geometric areas (and volumes) into infinitely thin
+      slices.  But rather than using an imaginary balance they
+      compared them geometrically.
     </p>
     <p>
-      This division of objects into infinitely small pieces in order to
-      analyze them is the essential idea underlying Calculus but as
-      Archimedes observed it is questionable as a method of proof. For practical applicatons
-      this is still a useful way to think.
+      This division of objects into infinitely small pieces in order
+      to analyze them is the essential idea underlying integration. As
+      Archimedes observed it is questionable as a method of proof, but
+      for practical applicatons this is still a useful way to think
+      about problems.
     </p>
     <p>
-      It had always been recognized that infinitesimals were an
-      inadequate foundation for Calculus but it was only at the
-      beginning of the 19th century that it became imperative to
-      replace it (in large part due to the work of Fourier).
+      It was always recognized that the notion of an infinitesimals
+      was problematic as a logical foundation for Calculus but it
+      was not until  the beginning of the <m>19</m>th century that it became
+      imperative to replace them (in large part due to the work of
+      Fourier) with a more rigorous formulation.
     </p>
+
+
     <p>
       Fourier<rsq/>s work raises the question: How random can a
       function defined on an interval be and still be represented by a
@@ -2179,7 +2195,7 @@
     <aside>
       <title>Multiple Definitions of the Integral</title>
       <p>
-        The definitions we will discuss in this chapter are equivalent in the sense
+        The two definitions we will discuss in this chapter are equivalent in the sense
         that if a function is integrable using one definition then it
         will be integrable using the other.  But there are other
         definitions that extend integrability to more general
@@ -2252,10 +2268,11 @@
       same length.
     </p>
     <p>
-      Diagrams like this are the source of the common
-      misunderstanding that an integral computes area. In certain
-      special cases it does, but not always. Yet it is often helpful
-      to think of an integral that way.
+      Diagrams like this are the source of the common misunderstanding
+      that an integral computes area. In certain special cases it
+      does, and it is often helpful to think of an integral as if it
+      is an area but area is only one possible application of the
+      integral. There are many others.
     </p>
     <p>
 
@@ -2336,7 +2353,7 @@
 
             <!-- </p> -->
             <aside>
-              <title>Historical Context</title>
+              <title>Riemann Integral vs. Cauchy Integral</title>
               <p>
                 No doubt you are wondering why this is called the
                 <term>Riemann Integral</term> when it was devised by
@@ -2431,18 +2448,32 @@
   <title>Darboux<rsq/>s Integral Definition</title>
 
   <p>
-    Notice that neither nor the definition of the <xref
-    ref="DEFINITIONRiemannIntegral" text="custom">integral</xref>
-    nor the definition of the <xref ref="def_derivative"
-    text="custom">derivative</xref> tells us how to compute the
-    quantity in question. In the 19th century how to compute both
-    integrals and derivatives was as well known as it is today.  These
-    definitions are about providing a rigorous foundation for these
-    ideas, not computing them.
+    Notice that neither the <xref ref="DEFINITIONRiemannIntegral"
+    text="custom">definition of the integral</xref> nor <xref
+    ref="def_derivative" text="custom">the definition of the
+    derivative</xref> tells us how to compute the quantity in
+    question. In the <m>19</m>th century the computational rules for
+    both integrals and derivatives were as well understood as they are
+    today.  It was the logical support for these methods that was
+    shaky. These definitions are about providing a rigorous foundation
+    for these ideas, not about computing them.
   </p>
 
+
+
+  <p>
+    In <m>1875</m> <url
+    href="https://mathshistory.st-andrews.ac.uk/Biographies/Darboux/"
+    visual="mathshistory.st-andrews.ac.uk/Biographies/Darboux/">Jean
+    Gaston Darboux</url> (1842<ndash/>1917) developed a different (but
+    equivalent) definition of the Riemann integral which uses the
+    least upper and greatest lower bounds we learned about in <xref
+    ref="IVTandEVT" ></xref>.  There are discontinuous functions which
+    are Darboux (and Riemann) integrable, but to keep things simple we
+    will restrict our attention to continuous functions.
+  </p>
   <figure  xml:id="FIGUREDarbouxPortrait">
-    <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Darboux/" visual="mathshistory.st-andrews.ac.uk/Biographies/Darboux/">Jean Gaston Darboux</url></caption>
+    <caption>Jean Gaston Darboux</caption>
 
     <idx><h>Portraits</h><h>Darboux</h></idx>
     <idx><h>Darboux, Jean</h><h>portrait of</h></idx>
@@ -2451,15 +2482,6 @@
       <shortdescription></shortdescription>
     </image>
   </figure>
-
-  <p>
-    In 1875 Jean Gaston Darboux developed a different (yet equivalent)
-    definition of the Riemann integral which uses the least upper and
-    greatest lower bounds we learned about in <xref ref="IVTandEVT"
-    ></xref>.  There are discontinuous functions which are Darboux
-    (and Riemann) integrable, but to keep things simple we will
-    restrict our attention to continuous functions.
-  </p>
   <p>
     As before, we will start with a partition <m>P=\{x_0, x_1,x_2,
     \dots , x_n\}</m> of the interval <m>[a,b]</m> where <m>a=x_0\lt
@@ -2533,7 +2555,7 @@
 
     <hint>
       <p>
-        First, show that this is true if <m>P^\prime</m> is obtained
+        First show that this is true if <m>P^\prime</m> is obtained
         by adding one point to <m>P</m>.
       </p>
     </hint>
@@ -3026,15 +3048,16 @@
             parallel to, and intertwined with, the definition of the
             definite integral.  Issues of integrability were not
             prevalent in 18th century because for most of that time
-            the words <q>integral</q> and <q>antiderivative</q> were
-            synonymous. Thus the only <q>integrable</q> functions were
-            the ones that were derivatives of some other function. But
-            in the 19th century, and especially after Fourier, we
-            needed to integrate functions that were not clearly
-            derivatives of something else. As a result the need for a
-            precise definition of function became more and more
-            pressing as the years went by.  For example, here is the
-            definition of a function from Euler<rsq/>s
+            the words <term>integral</term> and
+            <term>antiderivative</term> were synonymous. Thus the only
+            <term>integrable</term> functions were the ones that were
+            derivatives of some other function. But in the 19th
+            century, and especially after Fourier, we needed to
+            integrate functions that were not clearly derivatives of
+            something else. As a result the need for a precise
+            definition of function became more and more pressing as
+            the years went by.  For example, here is the definition of
+            a function from Euler<rsq/>s
             <pubtitle>
               <foreign>Introductio in Analysin Infinitorum</foreign>
             </pubtitle>

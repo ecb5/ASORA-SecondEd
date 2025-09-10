@@ -21,6 +21,10 @@
     or so it was believed.
   </p>
   <aside>
+    <title>
+      How Old is Calculus?
+    </title>
+
     <p>
       Some would say <q>re-invented.</q>
       See <xref ref="russo96__forgot_revol"></xref>, or <xref ref="netz07__archim_codex"></xref>.
@@ -578,54 +582,65 @@
 </p>
 
 <p>
-  To conclude this aside on the <term>Archimedean Property</term>,
-  the idea of infinitesimals was revisited in the twentieth century by the logician Abraham Robinson in<nbsp /><xref ref="robinson74__non_stand_analy" />.
-  Robinson was able to put the idea of infinitesimals on a solid logical foundation.
-  But in the 18th century,
-  the existence of infinitesimal numbers was shaky to say the very least.
-  However this did not prevent mathematicians from successfully exploiting these infinitely small quantities.
-</p>
-
-<p>
+  The idea of infinitesimals was revisited in the twentieth century by
+  the logician <url
+  href="https://mathshistory.st-andrews.ac.uk/Biographies/Robinson/">Abraham
+  Robinson</url> (1918<ndash/>1974). In his book <pubtitle>
+  Non<ndash/>Standard Analysis</pubtitle> <xref
+  ref="robinson74__non_stand_analy" /> Robinson was able to put the
+  idea of infinitesimals on a solid logical foundation, but in the
+  <m>18</m>th century the notion of infinitesimal numbers was
+  shaky to say the very least. Nonetheless mathematicians of the time
+  were able to profitably exploit the idea of infinitely small
+  quantities.
   We will come back to this saga in later chapters,
   but for now we return to <xref ref="thm_IrrationalBetweenIrrationals"></xref>.
 </p>
 
+<figure  xml:id="FIGURERobinsonPortrait">
+  <caption>Abraham Robinson</caption>
+  <image source="images/Robinson.png" width="35%">
+    <shortdescription>Portrait of Abraham Robinson</shortdescription>
+  </image>
+</figure>
+
+
+
 <proof>
-<title>Sketch of Proof</title>
-<p>
-We will outline the proof of part (a) of <xref ref="thm_IrrationalBetweenIrrationals"></xref>
-and indicate how it can be used to prove part b.
-</p>
+  <title>Sketch of Proof</title>
+  <p>
+    We will outline the proof of part (a) of <xref ref="thm_IrrationalBetweenIrrationals"></xref>
+    and indicate how it can be used to prove part (b).
+  </p>
 
-<p>
-  Let <m>\alpha</m> and <m>\beta</m> be real numbers with <m>\alpha > \beta</m>.
-  There are two cases.
+  <p>
+    Let <m>\alpha</m> and <m>\beta</m> be real numbers with <m>\alpha > \beta</m>.
+    There are two cases.
 
-  <ul>
-    <li>
-<title>Case 1:</title>
-<p>
-  <m>\alpha-\beta > 1</m>.
-  In this case there is at least one integer between <m>\alpha</m> and <m>\beta</m>.
-  Since integers are rational we are done.
-</p>
-</li>
+    <ul>
+      <li>
+        <title>Case 1:</title>
+        <p>
+          <m>\alpha-\beta > 1</m>.
+          In this case there is at least one integer between <m>\alpha</m> and <m>\beta</m>.
+          Since integers are rational we are done.
+        </p>
+      </li>
 
-<li>
-<title>Case 2:</title>
-<p>
-  <m>\alpha-\beta \le 1</m>.  In this case, by the
-  <term>Archimedean Property</term> there is a positive integer, say
-  <m>n</m>, such that <m>n(\alpha-\beta) = n\alpha-n\beta
-  > 1</m>.  Now there will be an integer between
-  <m>n\alpha</m> and <m>n\beta</m>.  You should now be
-  able to find a rational number between <m>\alpha</m> and
-  <m>\beta</m>.
-</p>
-</li>
-</ul>
-</p>
+      <li>
+        <title>Case 2:</title>
+        <p>
+          <m>\alpha-\beta \le 1</m>.  In this case, by the
+          <term>Archimedean Property</term> there is a positive integer, say
+          <m>n</m>, such that <m>n(\alpha-\beta) = n\alpha-n\beta
+          > 1</m>.  Now there will be an integer between
+          <m>n\alpha</m> and <m>n\beta</m>.  You should now be
+          able to find a rational number between <m>\alpha</m> and
+          <m>\beta</m>.
+        </p>
+      </li>
+    </ul>
+  </p>
 </proof>
 
 <p>
@@ -703,13 +718,13 @@ and indicate how it can be used to prove part b.
 </p>
 <figure xml:id="RandQ">
   <title>
-</title>
-<caption>
-<m>\RR</m> and <m>\QQ</m>
-</caption>
-<image width="100%" source="images/RandQ.png" > 
-<shortdescription></shortdescription>
-</image>
+  </title>
+  <caption>
+    <m>\RR</m> and <m>\QQ</m>
+  </caption>
+  <image width="100%" source="images/RandQ.png" > 
+    <shortdescription></shortdescription>
+  </image>
 </figure>
 
 <p>

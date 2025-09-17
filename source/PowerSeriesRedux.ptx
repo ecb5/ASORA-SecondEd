@@ -9,30 +9,40 @@
       convergence of a sequence and continuity of a function and we
       have used these to prove the <xref ref="thm_EVT"
       text="custom">EVT</xref> and <xref
-      ref="IntermediateValueTheorem" text="custom">IVT</xref> for a
-      continuous function. We have also carefully defined the
+      ref="IntermediateValueTheorem" text="custom">IVT</xref> for
+      continuous functions. We have also carefully defined the
       derivative and the integral and used those definitions to prove
-      the <xref ref="THEOREMFTCCauchy"
-      text="custom">Fundamental Theorem of Calculus</xref>, which was instrumental in developing the three
-      forms of the remainder for <xref ref="TaylorSeries"
-      text="custom">Taylor Series</xref>. We will now draw our
-      attention back to the question that originally motivated these
+      the <xref ref="THEOREMFTCCauchy" text="custom">Fundamental
+      Theorem of Calculus</xref>, which was instrumental in developing
+      the three forms of the remainder for <xref ref="TaylorSeries"
+      text="custom">Taylor Series</xref>. 
+    </p>
+    <p>
+      We now return to the question that originally motivated these
       definitions, <q>Why are Taylor series well behaved, but Fourier
       series are not necessarily?</q> More precisely, we mentioned
-      that whenever a power series converges then whatever it
-      converged to was continuous.  Moreover, if we differentiate or
-      integrate these series term by term then the resulting series
+      that whenever a power series converges then the function it
+      converges to is continuous that if we differentiate or integrate
+      a convergent power series term by term then the resulting series
       will converge to the derivative or integral of the original
-      series.  This was not always the case for Fourier series.  For
-      example consider the function
-      <md>
-        <mrow>f(x) \amp = \frac{4}{\pi}\left(\sum_{k=0}^\infty\frac{(-1)^k}{2k+1}\cos\left((2k+1)\pi x\right)\right)</mrow>
-        <mrow>\amp = \frac{4}{\pi}\left(\cos(\pi x)-\frac13\cos(3\pi x)+\frac15 (5\pi x)-\ldots\right)</mrow>
-        </md>.
+      series, but this was not always the case for Fourier series.
     </p>
-
     <p>
-      We have seen that the graph of <m>f</m> is given by
+      We saw in our <xref ref="InterregnumPart" text="custom">Interregnum</xref>  that the 
+      <!--   <!-\- <md> -\-> -->
+      <!--   <!-\-   <mrow>f(x) \amp = \frac{4}{\pi}\left(\sum_{k=0}^\infty\frac{(-1)^k}{2k+1}\cos\left((2k+1)\pi x\right)\right)</mrow> -\-> -->
+      <!--   <!-\-   <mrow>\amp = \frac{4}{\pi}\left(\cos(\pi x)-\frac13\cos(3\pi x)+\frac15 (5\pi x)-\ldots\right)</mrow> -\-> -->
+      <!--   <!-\-   </md>. -\-> -->
+      <!-- </p> -->
+
+      <!-- <p> -->
+      graph of 
+      <men  xml:id="EQUATIONContConvDis">
+        f(x) =
+        \frac{4}{\pi}\left(\sum_{k=0}^\infty\frac{(-1)^k}{2k+1}\cos\left((2k+1)\pi
+        x\right)\right)
+      </men>
+      specifically, <xref ref="EQUATIONPDESolDeriv" >formula</xref>) is given by
     </p>
 
     <image width="85%" source="images/Ch7fig1.png" >
@@ -40,7 +50,8 @@
     </image>
 
     <p>
-      If we consider the following sequence of functions
+      But if we consider the sequence of partial sums of <m>f(x)</m>
+      in <xref ref="EQUATIONContConvDis" >equation</xref>:
       <md>
         <mrow>f_1(x)=\amp \frac{4}{\pi}\cos\left(\pi x\right)</mrow>
         <mrow>f_2(x)=\amp \frac{4}{\pi}\left(\cos \left(\pi x\right)-\frac{1}{3}\cos\left( 3\pi x\right)\right)</mrow>
@@ -48,8 +59,8 @@
         <mrow>\amp \vdots</mrow>
       </md>
       we see the sequence of continuous functions
-      <m>\left(f_n\right)</m> converges to the non-continuous function
-      <m>f</m> for each real number <m>x</m>.  This didn't happen with
+      <m>\left(f_n\right)</m> converges to the non<ndash/>continuous function
+      <m>f</m> for each real number <m>x</m>.  This didn<rsq/>t happen with
       Taylor series.  The partial sums for a Taylor series were
       polynomials and hence continuous but what they converged to was
       continuous as well.
@@ -57,16 +68,20 @@
 
 
     <p>
-      The difficulty is quite delicate and it took mathematicians a
-      while to determine the problem.  There are two very subtly
+      The difficulty is quite delicate and it took mathematicians
+      quite a while to determine that there are two very subtly
       different ways that a sequence of functions can converge:
       pointwise or uniformly.  This distinction was touched upon by
-      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Abel/" visual="mathshistory.st-andrews.ac.uk/Biographies/Darboux/">Niels Henrik Abel</url> (1802<ndash/>1829) in <m>1826</m> while studying the domain
-      of convergence of a power series.  However, the necessary formal
-      definitions were not made explicit until Weierstrass did it in
-      his <m>1841</m> paper <pubtitle>Zur Theorie der Potenzreihen (On the
-      Theory of Power Series)</pubtitle>. This was published in his
-      collected works in <m>1894</m>.
+      <url
+      href="https://mathshistory.st-andrews.ac.uk/Biographies/Abel/"
+      visual="mathshistory.st-andrews.ac.uk/Biographies/Darboux/">Niels
+      Henrik Abel</url> (1802<ndash/>1829) in <m>1826</m> while
+      studying the domain of convergence of a power series.  However,
+      the necessary formal definitions were not made explicit until
+      Weierstrass did it in his <m>1841</m> paper <pubtitle>Zur
+      Theorie der Potenzreihen (On the Theory of Power
+      Series)</pubtitle>. This was published in his collected works in
+      <m>1894</m>.
     </p>
     <figure  xml:id="FIGUREAbelPortrait">
       <caption>Niels Henrik Abel</caption>
@@ -81,14 +96,14 @@
     
     <p>
       It will be instructive to take a look at an argument that
-      doesn't quite work before looking at the formal definitions we
+      doesn<rsq/>t quite work before looking at the formal definitions we
       will need.  In <m>1821</m> Augustin Cauchy <q>proved</q> that the
       infinite sum of continuous functions is continuous.  Of course,
-      it is obvious (to us) that this is not true because we've seen
+      it is obvious (to us) that this is not true because we<rsq/>ve seen
       several counterexamples.  But Cauchy, who was a first rate
       mathematician was so sure of the correctness of his argument
       that he included it in his textbook on analysis, <foreign>Cours
-      d'analyse</foreign> <m>(1821)</m>.
+      d<rsq/>analyse</foreign> <m>(1821)</m>.
     </p>
 
     <problem xml:id="prob_Cauchy_s_incorrect_proof">
@@ -197,10 +212,10 @@
 
     <p>
       The difference between these two definitions is subtle.  In
-      pointwise convergence, we are given a fixed <m>x\in S</m> and an
+      <term>pointwise convergence</term>, we are given a fixed <m>x\in S</m> and an
       <m>\eps>0</m>.  Then the task is to find an <m>N</m> that works
-      for that particular <m>x</m> and <m>\eps</m>.  In uniform
-      convergence, one is given <m>\eps>0</m> and must find a single
+      for that particular <m>x</m> and that <m>\eps</m>.  In <term>uniform
+      convergence</term>, we are given <m>\eps>0</m> and must find a single
       <m>N</m> that works for that particular <m>\eps</m> but also
       simultaneously (uniformly) for all <m>x\in S</m>.  Clearly
       uniform convergence implies pointwise convergence as an <m>N</m>
@@ -291,7 +306,6 @@
 
       <statement>
         <p>
-          
           Provide a formal proof of <xref
           ref="thm_UnifConv-_Continuity"></xref> based on the
           above ideas.
@@ -344,10 +358,11 @@
         is a sequence of continuous functions which converges
         uniformly to <m>f</m> on an interval, then <m>f</m> must be
         continuous on the interval as well.  This was not necessarily
-        true if the convergence was only pointwise, as we saw a
+        true if the convergence was only pointwise. For example, we
+        saw in <xref ref="EQUATIONContConvDis" >equation</xref> a
         sequence of continuous functions defined on
-        <m>(-\infty,\infty)</m> converging pointwise to a Fourier
-        series that was not continuous on the real line.  Uniform
+        <m>(-\infty,\infty)</m> converging pointwise to a function
+        that was not continuous on <m>(-\infty,\infty)</m>.  Uniform
         convergence guarantees some other nice properties as well.
       </p>
 
@@ -358,7 +373,6 @@
 
         <statement>
           <p>
-
             Suppose <m>f_n</m> and <m>f</m> are integrable and
             <m>f_n\unif f</m> on <m>[a,b]</m>.  Then
             <me>
@@ -368,9 +382,7 @@
           </p>
         </statement>
       </theorem>
-
       <problem>
-
         <idx><h>uniform convergence</h><h>integration and</h></idx>
 
         <statement>
@@ -427,24 +439,33 @@
         Applying this result to power series we have the following.
       </p>
 
-      <aside>
-        
-        <p>
-          Notice that we must explicitly assume uniform convergence.
-          This is because we have not <em>yet</em>
-        proved that power series actually do converge uniformly.</p>
-      </aside>
+      <!-- <aside> -->
+      
+      <!--   <p> -->
+      <!--     Notice that we must explicitly assume uniform convergence. -->
+      <!--     This is because we have not <em>yet</em> -->
+      <!--   proved that power series actually do converge uniformly.</p> -->
+      <!-- </aside> -->
 
       <corollary xml:id="cor_IntConvUni">
         <statement>
           <p>
             If <m>\sum_{n=0}^\infty a_nx^n</m> converges uniformly to
             <m>f</m> on an interval containing <m>0</m> and <m>x</m>
-            then <m>\int_{t=0}^xf(t)\dx{
-            t}=\sum_{n=0}^\infty\left(\frac{a_n}{n+1}x^{n+1}\right)</m>.
+            then 
+            <me>
+            \int_{t=0}^xf(t)\dx{
+            t}=\sum_{n=0}^\infty\left(\frac{a_n}{n+1}x^{n+1}\right)
+          </me>.
           </p>
-        </statement>
-      </corollary>
+          <p>
+            (Notice that we must explicitly assume uniform convergence.
+            This is because we have not yet proved that power
+            series actually do converge uniformly.)
+          </p>
+
+</statement>
+</corollary>
 
       <problem>
 
@@ -467,15 +488,15 @@
       </problem>
 
       <p>
-        Surprisingly, the issue of term-by-term differentiation
-        depends not on the uniform convergence of
+        Surprisingly, the issue of term<ndash/>by<ndash/>term
+        differentiation depends not on the uniform convergence of
         <m>\left(f_n\right),</m> but on the uniform convergence of
         <m>\left(f^\prime_n\right)</m>.  More precisely, we have the
         following result.
       </p>
 
       <theorem xml:id="thm_UniformDerivativeConvergence">
-      
+        
         <idx><h>pointwise convergence</h><h>derivative and</h></idx>
         <idx><h>differentiation</h><h>of the pointwise limit of functions</h></idx>
 
@@ -566,7 +587,7 @@
         example, we know that <m>\sum_{n=0}^\infty\frac{1}{n!}</m>and
         <m>\sum_{n=0}^\infty\frac{1}{n!\,n!}</m> both converge.  The
         first converges to <m>e,</m> which has meaning in other
-        contexts.  We don't know what the second one converges to,
+        contexts.  We don<rsq/>t know what the second one converges to,
         other than to say it converges to
         <m>\sum_{n=0}^\infty\frac{1}{n!\,n!}</m>.  In fact, that
         question might not have much meaning without some other
@@ -578,7 +599,7 @@
       </p>
 
       <definition xml:id="def_CauchySequence">
-      
+        
         <title>Cauchy Sequence</title>
 
         <idx><h>Cauchy Sequence</h></idx>
@@ -623,14 +644,14 @@
 
       <p>
         Intuitively, this result makes sense.  If the terms in a
-        sequence are getting arbitrarily close to <m>s,</m> then they
-        should be getting arbitrarily close to each other.  This is
+        sequence are getting arbitrarily close to <m>s</m>, then they
+        should be getting arbitrarily close to each other as well.  This is
         the basis of the proof.
       </p>
       <aside>
         
         <p>
-          But the converse isn't nearly as clear.  In fact, it isn't
+          But the converse isn<rsq/>t nearly as clear.  In fact, it isn't
           true in the rational numbers.
         </p>
       </aside>
@@ -793,7 +814,7 @@
 
       <p>
         <xref
-        ref="prob_Cauchy_sequences_Cauchy_implies_convergence">Problems</xref>
+            ref="prob_Cauchy_sequences_Cauchy_implies_convergence">Problems</xref>
         and <xref
         ref="prob_Cauchy_sequences_Cauchy_implies_NIP"></xref> tell us
         that the following are equivalent: the Nested Interval
@@ -818,7 +839,7 @@
 
       <problem>
 
-        <idx><h>sequences</h><h>Cauchy sequences</h><h>don't always converge in <m>\QQ</m></h></idx>
+        <idx><h>sequences</h><h>Cauchy sequences</h><h>don<rsq/>t always converge in <m>\QQ</m></h></idx>
 
         <statement>
           <p>
@@ -1014,7 +1035,7 @@
             that <m>s=|\sum_{n=0}^\infty a_n|</m>?  Justify your
             answer.  What can be said?
           </p>
-</statement>
+        </statement>
       </problem>
 
       <p>
@@ -1135,7 +1156,7 @@
         We can now use the comparison test.
       </p>
 
-</proof>
+    </proof>
 
     <problem>
 
@@ -1162,7 +1183,7 @@
     <problem>
 
       <idx><h>power series</h><h>the radius of convergence</h></idx>
-      <idx><h>power series</h><h>a power series diverges outside it's radius of convergence</h></idx>
+      <idx><h>power series</h><h>a power series diverges outside it<rsq/>s radius of convergence</h></idx>
       
       <statement>
         <p>
@@ -1510,7 +1531,7 @@
     <p>
       The fact is that for a power series <m>\sum a_nx^n</m> with
       radius of convergence <m>r</m>, we know what happens when
-      <m>|x|\lt r</m> and when <m>|x|>r</m>. But we've never talked
+      <m>|x|\lt r</m> and when <m>|x|>r</m>. But we<rsq/>ve never talked
       about what happens when <m>|x|=r</m>.  That is because there is
       no systematic approach to this boundary problem.  For example,
       consider the three series
@@ -1557,7 +1578,7 @@
     </problem>
 
     <p>
-      Unfortunately, this result doesn't apply to the integrals we
+      Unfortunately, this result doesn<rsq/>t apply to the integrals we
       mentioned as the convergence at the endpoints is not absolute.
       Nonetheless, the integrations we performed in <xref
       ref="CalcIn17th18thCentury"></xref> are still legitimate.
@@ -1565,7 +1586,7 @@
       uniform convergence to the endpoints of the interval of
       convergence even if the convergence at an endpoint is only
       conditional.  Abel did not use the term uniform convergence, as
-      it hadn't been defined yet, but the ideas involved are his.
+      it hadn<rsq/>t been defined yet, but the ideas involved are his.
     </p>
 
     <theorem xml:id="AbelsTheorem">
@@ -1585,7 +1606,7 @@
 
     <p>
       The proof of this is not intuitive, but involves a clever
-      technique known as Abel's Partial Summation Formula.
+      technique known as Abel<rsq/>s Partial Summation Formula.
     </p>
 
     <lemma xml:id="lemma_AbelsPartialSummationFormula">
@@ -1605,7 +1626,7 @@
 
     <problem>
       
-      <idx><h>Abel, Niels Henrik</h><h>Abel's Partial Summation Formula</h></idx>
+      <idx><h>Abel, Niels Henrik</h><h>Abel<rsq/>s Partial Summation Formula</h></idx>
 
       <statement>
         <p>
@@ -1622,7 +1643,7 @@
     <lemma xml:id="lemma_AbelsLemma">
       <statement>
         <p>
-          <alert>Abel's Lemma</alert>
+          <alert>Abel<rsq/>s Lemma</alert>
         </p>
         <p>
           Let <m>a_1,a_2,\,\ldots,\,a_n,\,b_1,b_2,\,\ldots\,,\,b_n</m>
@@ -1637,7 +1658,7 @@
 
     <problem>
 
-      <idx><h>Abel, Niels Henrik</h><h>Abel's Lemma</h></idx>
+      <idx><h>Abel, Niels Henrik</h><h>Abel<rsq/>s Lemma</h></idx>
 
       <statement>
         <p>
@@ -1648,7 +1669,7 @@
 
     <problem>
       
-      <idx><h>Abel, Niels Henrik</h><h>Abel's Theorem</h></idx>
+      <idx><h>Abel, Niels Henrik</h><h>Abel<rsq/>s Theorem</h></idx>
 
       <statement>
         <p>

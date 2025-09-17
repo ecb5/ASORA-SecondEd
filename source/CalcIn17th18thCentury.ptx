@@ -358,7 +358,6 @@
           x}\right)=3x^2\dx{ x}
           </me>, 
           were results that had been derived by others using other methods.
-          ways.
       </p>
 
       <!-- <problem> -->
@@ -661,16 +660,15 @@
         <idx><h>Newton, Isaac</h></idx>
 
         In addition to Johann<rsq/>s, solutions were obtained from
-        Newton,  Leibniz, Johann<rsq/>s
-        brother Jacob Bernoulli,  and
+        Newton, Leibniz, Johann<rsq/>s brother Jacob Bernoulli, and
         the Marquis de l<rsq/>Hopital <xref
         ref="struik69__sourc_book_mathem" />.  At the time there was
         an ongoing and very vitriolic controversy raging over whether
         Newton or Leibniz had been the first to invent Calculus.  As
         an advocate for Leibniz, Bernoulli did not believe Newton
-        would be able to solve the problem using his fluxions. So
-        Bernoulli<rsq/>s this challenge was in part an attempt to
-        embarrass Newton.  However Newton solved it easily.
+        would be able to solve the problem using his fluxions. So this
+        challenge was in part an attempt to embarrass Newton.  However
+        Newton solved it easily.
       </p>
 
       <p>
@@ -1105,6 +1103,9 @@
     </me>.
 </p>
 <aside>
+  <title>
+    Formal Manipulation
+  </title>
   
   <p>
     When we say <q>formal manipulations</q> we mean that we will
@@ -1610,17 +1611,17 @@
   </task>
 </problem>
 
-<problem>
+<!-- <problem> -->
 
-  <statement>
-    <p>
-      Compute 
-      <me>\int_{x=0}^1 \frac{1}{1+x^2}\dx{x}</me>
-      as a power series.
-    </p>
+<!--   <statement> -->
+<!--     <p> -->
+<!--       Compute  -->
+<!--       <me>\int_{x=0}^1 \frac{1}{1+x^2}\dx{x}</me> -->
+<!--       as a power series. -->
+<!--     </p> -->
 
-  </statement>
-</problem>
+<!--   </statement> -->
+<!-- </problem> -->
 
 <problem xml:id="PROBLEMLnSeriesFromGeoSeries">
   
@@ -1787,7 +1788,7 @@
 
 <p>
   Just as it is convenient to define <m>0!=1</m>, we will find
-  it convenient to define <m>\prod_{j=1}^{0}=1</m>.
+  it convenient to define <me>\prod_{j=1}^{0}\left(\text{whatever}\right)=1</me>.
   Similarly, the fact that <m>\binom{N}{0}=1</m> leads to the
   convention <m>\prod_{j=0}^{-1}\left(N-j\right)=1</m>.
   Strange as this may look, it is convenient and is
@@ -1805,8 +1806,8 @@
       </me>.
 </p>
 <p>
-  These two representations probably look the same at first.
-  Take a moment and be sure you see where they differ.
+  These two representations may  look slightly different to you at first.
+  Be sure that you see that they are really the same before reading further.  
 </p> 
 
 <p>
@@ -2362,7 +2363,7 @@
     <p>
       Let <m>a</m> be a real number.  Represent <m>e^x</m> as power
       series expanded about <m>a</m>.  Notice there is no restriction
-      on <m>a</m>.  What happens if <m>a=0</m>?
+      on <m>a</m>.  
     </p>
 </problem>
   

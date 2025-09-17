@@ -21,7 +21,7 @@
       <xi:include href="./PowerSeriesQuestions.ptx" />
     </part>
 
-    <part xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="Interregnum">
+    <part xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="InterregnumPart">
       <title>Interregnum</title>
       <xi:include href="./Interegnum.ptx" />
     </part>

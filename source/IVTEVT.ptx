@@ -122,13 +122,13 @@
 
             <li>
               <p>
-                <m>\forall</m> <m>n</m>, <m>x_n\leq y_n</m>
+                <m>\forall\  n</m>, <m>x_n\leq y_n</m>
               </p>
             </li>
 
             <li>
               <p>
-                <m>\lim_{n\rightarrow\infty}\left(y_n-x_n\right)=0</m>
+                <m>\limit{n}{\infty}{\left(y_n-x_n\right)}=0</m>
               </p>
             </li>
           </ol>
@@ -429,16 +429,14 @@
           <li>
             <title>Condition 3:</title>
             <p>
-
-
-              <m>\forall</m> <m>n</m>, <m>x_n\leq y_n</m>
+              <m>\forall\ n</m>, <m>x_n\leq y_n</m>
             </p>
           </li>
 
           <li>
             <title>Condition 4:</title>
             <p>
-              <m>\lim_{n\rightarrow\infty}\left(y_n-x_n\right)=\,\lim_{n\rightarrow\infty}\frac{1}{2^{n-1}}\left(y_1-x_1\right)=0</m>
+              <m>\limit{n}{\infty}{\left(y_n-x_n\right)}=\limit{n}{\infty}{\left[\frac{1}{2^{n-1}}\left(y_1-x_1\right)\right]}=0</m>
             </p>
           </li>
 
@@ -447,7 +445,7 @@
             <p>
               These sequences also satisfy the following property:
               <me>
-                \forall n,\,x_n^2\leq a\leq y_n^2
+                \forall\  n, x_n^2\leq a\leq y_n^2
               </me>
             </p>
           </li>
@@ -1129,15 +1127,16 @@ and all subsequences of the the second diverge to infinity.
             </p>
           </li>
 
-          <li>
-            <p>
-              <m>\forall</m> <m>k,\,a_k\leq b_k</m>
-            </p>
+          <li> 
+            <p> 
+            <m>\forall\ k</m><m>a_k\leq b_k</m> 
+            </p> 
           </li>
 
           <li>
             <p>
-              <m>\displaystyle\lim_{k\rightarrow\infty}\left(b_k-a_k\right)=\,\lim_{k\rightarrow\infty} \frac{1}{2^{k-1}}\left(b_1-a_1\right)=0</m>
+              <m>\displaystyle\limit{k}{\infty}{\left(b_k-a_k\right)}=\limit{k}{\infty}{\left[
+              \frac{1}{2^{k-1}}\left(b_1-a_1\right)\right]}=0</m>
             </p>
           </li>
 
@@ -1398,20 +1397,21 @@ and all subsequences of the the second diverge to infinity.
 
           <li>
             <p>
-              <m>\forall</m> <m>n</m>, <m>x_n\leq y_n</m>
+              <m>\forall\ n</m>, <m>x_n\leq y_n</m>
             </p>
           </li>
 
           <li>
             <p>
-              <m>\lim_{n\rightarrow\infty}\left(y_n-x_n\right)=\lim_{n\rightarrow\infty} \frac{1}{2^{n-1}}\left(y_1-x_1\right)=0</m>
+              <m>\limit{n}{\infty}{\left(y_n-x_n\right)}=\limit{n}{\infty}{
+              \left[\frac{1}{2^{n-1}}\left(y_1-x_1\right)\right]}=0</m>
             </p>
           </li>
 
           <li>
             <p>
-              <m>\forall</m> <m>n,\exists</m> <m>x\in S</m> such that
-              <m>x\geq x_n</m> and <m>\forall\,x\in S</m>, <m>y_n\geq x</m>,
+              <m>\forall\ n,\exists\ x\in S</m> such that
+              <m>x\geq x_n</m> and <m>\forall\ x\in S</m>, <m>y_n\geq x</m>,
             </p>
           </li>
         </ol>
@@ -1788,7 +1788,7 @@ and all subsequences of the the second diverge to infinity.
 
                 <li>
                   <p>
-                    <m>\displaystyle\lim_{n\rightarrow\infty}\left(y_n-x_n\right) = 0</m>.
+                    <m>\limit{n}{\infty}{\left(y_n-x_n\right)} = 0</m>.
                   </p>
                 </li>
               </ol>

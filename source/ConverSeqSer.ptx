@@ -938,7 +938,7 @@
           previous problem, <m>\exists</m> <m>N</m> such that if
           <m>n>N</m>, then <m>\frac{s_{n+1}}{s_n}\lt R</m>.  Let
           <m>n_0>N</m> be fixed and show <m>s_{n_0+k}\lt R^ks_{n_0}</m>.
-          Conclude that <m>\lim_{k\rightarrow\infty}s_{n_0+k}=0</m> and
+          Conclude that <m>\limit{k}{\infty}{s_{n_0+k}}=0</m> and
           let <m>n=n_0+k</m>.
         </p>
       </hint>
@@ -947,7 +947,7 @@
       <statement>
         <p>
           Let <m>c</m> be a positive real number.  Prove
-          <m>\displaystyle\lim_{n\rightarrow\infty}\left(\frac{c^n}{n!}\right)=0</m>.
+          <m>\limit{n}{\infty}{\left(\frac{c^n}{n!}\right)}=0</m>.
         </p>
       </statement>
     </task>
@@ -1488,8 +1488,8 @@
                 <p>
                   Prove that 
                   <me>
-                    \lim_{n\rightarrow\infty}\frac{a_0+a_1n+a_2n^2+
-                    \cdots+a_kn^k}{b_0+b_1n+b_2n^2+\cdots+b_kn^k}=\frac{a_k}{b_k}
+                    \limit{n}{\infty}{\frac{a_0+a_1n+a_2n^2+
+                    \cdots+a_kn^k}{b_0+b_1n+b_2n^2+\cdots+b_kn^k}}=\frac{a_k}{b_k}
                     </me>, provided <m>b_k\neq 0</m>.
                 </p>
                 <p>

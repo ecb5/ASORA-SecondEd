@@ -45,9 +45,9 @@
     the one-dimensional heat equation
     <m>\rho^2\frac{\partial^2u}{\partial x^2}=\frac{\partial
     u}{\partial t}</m>, where <m>\rho^2</m> is a positive constant
-    known as the <term>thermal diffusivity</term>.  If the initial temperature
-    distribution is given by the function <m>f(x)</m>, then the
-    <m>u</m> we are seeking must satisfy all of the following
+    known as the <term>thermal diffusivity</term>.  If the initial
+    temperature distribution is given by the function <m>f(x)</m>,
+    then the <m>u</m> we are seeking must satisfy all of the following
 
     <mdn>
 
@@ -116,10 +116,8 @@
     <p>
       Show that <m>T=Ce^{\rho^2kt}</m> satisfies the equation
       <m>T^\prime=\rho^2k T</m>, where <m>C</m> is an arbitrary
-      constant, , and <m>\rho^2</m> is a physical constant called
-      the <term>thermal diffusivity</term>.  Use the physics of the
-      problem to show that if <m>u</m> is not constantly zero, then
-      <m>k\lt 0</m>.
+      constant.  Use the physics of the problem to show that if
+      <m>u</m> is not constantly zero, then <m>k\lt 0</m>.
     </p>
     </statement>
     <hint>
@@ -262,8 +260,8 @@
       <statement>
         <p>
           Let's apply this to the function,
-          <m>f(x)=\frac{1}{2}-\abs{x-\frac{1}{2}}</m>, whose graph of
-          this function is seen below.
+          <m>f(x)=\frac{1}{2}-\abs{x-\frac{1}{2}}</m>, whose graph is
+          seen below.
         </p>
         <image width="75%" source="images/FourierEx1.png" >
           <shortdescription></shortdescription>
@@ -425,12 +423,12 @@
 <p>
   If we differentiate the Fourier series in <xref ref="PDE_sol"
   >equation</xref> term<ndash/>by<ndash/>term, we obtain
-  <me>
+  <men xml:id="EQUATIONPDESolDeriv">
     \frac{4}{\pi}\sum_{k=0}^\infty\frac{\left(-1\right)^k}{\left(2k+1\right)}
     \cos\left(\left(2k+1\right)\pi x\right) 
-</me>.
-Let
-<m>C_N(x)=\frac{4}{\pi}\sum_{k=0}^N\frac{\left(-1\right)^k}{\left(2k+1\right)}
+    </men>.
+    Let
+    <m>C_N(x)=\frac{4}{\pi}\sum_{k=0}^N\frac{\left(-1\right)^k}{\left(2k+1\right)}
     \cos\left(\left(2k+1\right)\pi x\right)</m> be the <m>Nth</m>
     partial sum of this Fourier cosine series.
     The sketches below display the graphs of <m>C_N</m> when
@@ -588,52 +586,58 @@ Let
       This was part of their appeal.
       They were treated like <q>infinite polynomials.</q>
       Either there is some power series lurking that refuses to behave nicely,
-      or there is some property that power series have that not all Fourier series have.
+      or there is some property that power series have that not all Fourier series have. 
+    </p>
+    <p>
+      Could it be that everything we did in <xref ref="CalcIn17th18thCentury" ></xref> and <xref
+      ref="PowerSeriesQuestions"></xref> was bogus?
     </p>
 
+
     <p>
-      Could it be that everything we did in <xref ref="PowerSeriesQuestions"></xref> was bogus?
+      Fortunately, the answer to that question is, <q>No.</q> Power
+      series are generally much more well<ndash/>behaved than
+      Fourier series.  Whenever a power series converges, the
+      function it converges to will be continuous.  And, as long as
+      one stays inside the interval of convergence, power series can
+      be differentiated and integrated term<ndash/>by<ndash/>term.
+      Power series have something going for them that your average
+      Fourier series does not, but none of this is any more obvious
+      to us than it was to mathematicians at the beginning of the
+      nineteenth century.  What they did (and we do) know was that
+      relying on intuition was perilous and that rigorous
+      formulations were needed to either justify or dismiss these
+      intuitions.  In some sense, the nineteenth century was the
+      <q>morning after</q> the mathematical party that went on
+      throughout the eighteenth century.
     </p>
 
     <aside>
+      <title>
+        Convergence: Power Series vs. Fourier Series
+      </title>
+
       <p>
         We will prove all of these assertions in <xref ref="PowerSeriesRedux" ></xref>.
       </p>
-      </aside>
-      <p>
-        Fortunately, the answer to that question is, <q>No.</q> Power
-        series are generally much more well<ndash/>behaved than
-        Fourier series.  Whenever a power series converges, the
-        function it converges to will be continuous.  And, as long as
-        one stays inside the interval of convergence, power series can
-        be differentiated and integrated term<ndash/>by<ndash/>term.
-        Power series have something going for them that your average
-        Fourier series does not, but none of this is any more obvious
-        to us than it was to mathematicians at the beginning of the
-        nineteenth century.  What they did (and we do) know was that
-        relying on intuition was perilous and that rigorous
-        formulations were needed to either justify or dismiss these
-        intuitions.  In some sense, the nineteenth century was the
-        <q>morning after</q> the mathematical party that went on
-        throughout the eighteenth century.
-      </p>
+    </aside>
 
 
-      <problem xml:id="prob_Fourier_Series-orthogonality">
-        
-        <idx><h><m>\cos (nx)</m></h><h>orthogonality of</h></idx>
-        <idx><h>orthogonality</h><h> of <m>\cos nx</m></h></idx>
+    <problem xml:id="prob_Fourier_Series-orthogonality">
+      
+      <idx><h><m>\cos (nx)</m></h><h>orthogonality of</h></idx>
+      <idx><h>orthogonality</h><h> of <m>\cos nx</m></h></idx>
 
-        <statement>
-          <p>
-            Let <m>n</m> and <m>m</m> be positive integers.
-            Show
-            <me>
-              \int_{x=0}^1\cos\left(n\pi x\right)\cos\left(m\pi x\right)\dx{ x}=\left\{ \begin{matrix}0\amp \text{ if } n\neq m\\ \frac{1}{2}\amp \text{ if } n=m \end{matrix} \right.
-              </me>.
-          </p>
-        </statement>
-      </problem>
+      <statement>
+        <p>
+          Let <m>n</m> and <m>m</m> be positive integers.
+          Show
+          <me>
+            \int_{x=0}^1\cos\left(n\pi x\right)\cos\left(m\pi x\right)\dx{ x}=\left\{ \begin{matrix}0\amp \text{ if } n\neq m\\ \frac{1}{2}\amp \text{ if } n=m \end{matrix} \right.
+            </me>.
+        </p>
+      </statement>
+    </problem>
 
         <problem xml:id="prob_fouriercoef">
 

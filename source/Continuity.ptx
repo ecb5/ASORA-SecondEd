@@ -84,7 +84,7 @@
       However, the complexities associated with Fourier series and the
       types of functions that they represented caused mathematicians
       in the early <m>1800</m>s to rethink their notions of continuity.  As
-      we saw in <xref ref="Interregnum"></xref>, the graph of the
+      we saw in <xref ref="InterregnumPart"></xref>, the graph of the
       function defined by the Fourier series
       <me>
         \frac{4}{\pi}\sum_{k=0}^\infty\frac{\left(-1\right)^k}{\left(2k+1\right)} \cos \left(\left(2k+1\right)\pi x\right)
@@ -479,7 +479,11 @@
         </me>
       </p>
       <aside>
-        
+      
+        <title>
+          Choosing <m>\delta{}</m>
+        </title>
+  
         <p>
           Take particular note in these proofs that our choice of
           <m>\delta</m> guarantees that <m>\delta\gt0</m>. This is

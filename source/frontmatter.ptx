@@ -91,7 +91,29 @@
         <!-- </li> -->
     </dl></p>
   </acknowledgement>
+  <preface>
+    <title>
+      Preface to the Second Edition
+    </title>
 
+    <p>
+      Even though it has a different title, this work is an extension of the open-source book How We Got from There to Here: A Story of Real Analysis.  The immediate reason for writing this “second edition” was that we discovered the original title led many people to believe that this was a history of mathematics book rather than a textbook for use in a typical undergraduate introductory analysis class.  We were so caught up in using history to tell the story behind the nonintuitive, rigorous definitions and theorems found in such a course that we mistaken assumed that others would understand our intent before actually opening the book.  We kept the “How We Got from There to Here” because this book still endeavors to tell a story of how modern analysis evolved to its present state.
+    </p>
+    <p>
+
+      After rereading what we wrote, we realized that there were parts of the story that we did not include in the original book but should have been there.  We included a proof of the Fundamental Theorem of Calculus in Section 10.3 as we did use it earlier to derive the integral form of the remainder for Taylor series.  We assumed that students were familiar with this from calculus class and thought that this fit with the idea of following the historical development, since the FT of C was understood and utilized long before Cauchy and Riemann were born.  Of course, to present a rigorous proof of the FT of C requires a precise definition of the definite integral which occurs in Section 10.4.  If this seems backwards, this is how mathematics is created.  Foundational issues are typically the last piece of the puzzle.
+    </p>
+    <p>
+
+      In Chapter 12, we decided to expand more on Cantor’s influence and the general idea of transferring analysis to a modern set theoretical approach which provides an interested student with a path to studying point set topology in a future course.  We deemed that this was appropriate for an introductory book.  Of course, this rise in set theory leads to Lebesgue measure and integral.  Without going into too much detail, we wanted to mention this as part of the story.
+    </p>
+    <p>
+
+      On a more nuts and bolts level, most of the problems in the last edition were imbedded in the text, with a few sections labeled “Additional Problems”.  This new edition has absorbed those additional problems into the body of the text.  This represents the author’s evolution from learning and teaching from conventional math books for much of their careers.  We have decided that all problems should be part of the story of how we got from there to here.
+
+    </p>
+
+  </preface>
   <preface xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="Instructor">
     <title>To the Instructor</title>
     <p>

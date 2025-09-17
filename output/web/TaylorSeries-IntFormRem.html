@@ -166,6 +166,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
 <li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="ASORA-2-4.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="ASORA-2-5.html" class="internal"><span class="title">Preface to the Second Edition</span></a></div></li>
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="Instructor.html" class="internal"><span class="title">To the Instructor</span></a></div></li>
 </ul>
 </li>
@@ -206,7 +207,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-part">
-<div class="toc-title-box"><a href="Interregnum.html" class="internal"><span class="codenumber">II</span> <span class="title">Interregnum</span></a></div>
+<div class="toc-title-box"><a href="InterregnumPart.html" class="internal"><span class="codenumber">II</span> <span class="title">Interregnum</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="Interegnum.html" class="internal"><span class="codenumber">5</span> <span class="title">Joseph Fourier: The Man Who Broke Calculus</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="Interegnum-2.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Joseph Fourier and His Series</span></a></div></li></ul>
@@ -338,7 +339,7 @@ f(a)+\frac{f^{\prime}(a)}{1!}(x-a),\right. \\
 <div class="para">converges to the number <span class="process-math">\(f(x)\text{.}\)</span> Note that the index in the summation was changed to <span class="process-math">\(j\)</span> to allow <span class="process-math">\(n\)</span> to represent the index of the sequence of partial sums. As intimidating as this may look, bear in mind that for a fixed real number <span class="process-math">\(x\text{,}\)</span> this is still a sequence of real numbers so, that saying <span class="process-math">\(f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n\)</span> means that <span class="process-math">\(\limitt{n}{\infty}{\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)}=f(x)\)</span> and in the previous chapter we developed some tools to examine this phenomenon. In particular, we know that <span class="process-math">\(\limitt{n}{\infty}{\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)}=f(x)\)</span> is equivalent to</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\lim_{n\rightarrow\infty}\Biggl[f(x)-\left(\sum_{j=0}^n \frac{f^{(j)}(a)}{j!}(x-a)^j\right)\Biggr]=0\text{.}
+\limit{n}{\infty}{\Biggl[f(x)-\left(\sum_{j=0}^n \frac{f^{(j)}(a)}{j!}(x-a)^j\right)\Biggr]}=0\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -418,7 +419,7 @@ f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)
 <div class="para">If there exists a real number <span class="process-math">\(B\)</span> such that <span class="process-math">\(|f^{(n+1)}(t)|\leq B\)</span> for all nonnegative integers <span class="process-math">\(n\)</span> and for all <span class="process-math">\(t\)</span> on an interval containing <span class="process-math">\(a\)</span> and <span class="process-math">\(x\text{,}\)</span> then</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\lim_{n\rightarrow\infty}\left(\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\right)=0
+\limit{n}{\infty}{\left(\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\right)}=0
 \end{equation*}
 </div>
 <div class="para">and so</div>
@@ -528,7 +529,7 @@ e^{a+x}=e^a\cdot e^x\text{.}
 </div>
 <div class="autopermalink" data-description="Problem 7.1.6"><a href="#TaylorSeries-IntFormRem-20" title="Copy heading and permalink for Problem 7.1.6" aria-label="Copy heading and permalink for Problem 7.1.6">🔗</a></div></article><div class="para logical" id="TaylorSeries-IntFormRem-21">
 <div class="para">
-<a href="TaylorSeries-IntFormRem.html#THEOREMTaylorSeriesBnd" class="internal" title="Theorem 7.1.1">Theorem 7.1.1</a> is a nice first step toward a rigorous theory of the convergence of Taylor series, but it is not applicable in all cases.  For example, consider the function <span class="process-math">\(f(x)=\left(1+x\right)^{\frac12}\text{.}\)</span>  As we saw in <a href="ExponentAdditionProperty.html#prob_SqrtSeriesProb" class="xref" data-knowl="./knowl/xref/prob_SqrtSeriesProb.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 3.2.19">Problem 3.2.19</a>, the Maclaurin (binomial) series for <span class="process-math">\(\left(1+x\right)^{\frac12}\)</span> appears to be converging to the function for <span class="process-math">\(x\in(-1,1)\text{.}\)</span>  While this is true, the above proposition does not apply. We can see this by finding a general formula for the derivatives of <span class="process-math">\(f(x)=\left(1+x\right)^{\frac12}\)</span> as follows.</div>
+<a href="TaylorSeries-IntFormRem.html#THEOREMTaylorSeriesBnd" class="internal" title="Theorem 7.1.1">Theorem 7.1.1</a> is a nice first step toward a rigorous theory of the convergence of Taylor series, but it is not applicable in all cases.  For example, consider the function <span class="process-math">\(f(x)=\left(1+x\right)^{\frac12}\text{.}\)</span>  As we saw in <a href="ExponentAdditionProperty.html#prob_SqrtSeriesProb" class="xref" data-knowl="./knowl/xref/prob_SqrtSeriesProb.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 3.2.18">Problem 3.2.18</a>, the Maclaurin (binomial) series for <span class="process-math">\(\left(1+x\right)^{\frac12}\)</span> appears to be converging to the function for <span class="process-math">\(x\in(-1,1)\text{.}\)</span>  While this is true, the above proposition does not apply. We can see this by finding a general formula for the derivatives of <span class="process-math">\(f(x)=\left(1+x\right)^{\frac12}\)</span> as follows.</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/THEOREMTaylorSeriesBnd.html ./knowl/xref/prob_SqrtSeriesProb.html" id="TaylorSeries-IntFormRem-21-7">
 \begin{align*}
 f^\prime(x)\amp =\frac{1}{2}(1+x)^{\frac{1}{2}-1}\\

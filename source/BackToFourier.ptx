@@ -897,7 +897,7 @@
           in <m>S</m>.
         </p>
         <aside> 
-          <title>Notation</title>
+          <title>Abuse of Notation</title>
           <p>
             To streamline things, we are abusing notation here as we
             are letting <m>S</m> denote both the sequence (which is
@@ -1100,7 +1100,7 @@
     </p>
 
     <aside>
-      <title>Notation</title>
+      <title>Notation: <m>\aleph_0</m></title>
       <p>
         <m>\aleph{}</m> is the first letter of the Hebrew alphabet and
         is pronounced <q>aleph.</q> <m>\aleph_0</m> is pronounced

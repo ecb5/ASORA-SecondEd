@@ -41,7 +41,7 @@
       <m>\limitt{n}{\infty}{\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)}=f(x)</m>
       is equivalent to
       <me>
-        \lim_{n\rightarrow\infty}\Biggl[f(x)-\left(\sum_{j=0}^n \frac{f^{(j)}(a)}{j!}(x-a)^j\right)\Biggr]=0
+        \limit{n}{\infty}{\Biggl[f(x)-\left(\sum_{j=0}^n \frac{f^{(j)}(a)}{j!}(x-a)^j\right)\Biggr]}=0
         </me>.
     </p>
 
@@ -120,7 +120,7 @@
           <m>n</m> and for all <m>t</m> on an interval containing
           <m>a</m> and <m>x</m>, then
           <me>
-            \lim_{n\rightarrow\infty}\left(\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\right)=0
+            \limit{n}{\infty}{\left(\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\right)}=0
           </me>
           and so
           <me>
@@ -661,9 +661,14 @@
       <p>
         Since <m>\limitt{n}{\infty}{\frac{1}{2n+2}}=0=\limitt{n}{\infty}{0}</m>,
         then by the <xref ref="thm_SqueezeTheorem" text="custom">Squeeze Theorem</xref>,
-        <me>
-          \lim_{n\rightarrow\infty}\abs{\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}}=0, \text{ so } \lim_{n\rightarrow\infty}\left(\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}\right)=0
-          </me>.
+
+        <md>
+          <mrow>
+            \limit{n}{\infty}{\abs{\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}}}=0, \amp{}\amp{}\text{ so } \amp{}\amp{}\limit{n}{\infty}{\left(\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}\right)}=0.
+          </mrow>
+
+        </md>
+
       </p>
 
       <p>

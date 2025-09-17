@@ -166,6 +166,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
 <li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="ASORA-2-4.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="ASORA-2-5.html" class="internal"><span class="title">Preface to the Second Edition</span></a></div></li>
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="Instructor.html" class="internal"><span class="title">To the Instructor</span></a></div></li>
 </ul>
 </li>
@@ -206,7 +207,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-part">
-<div class="toc-title-box"><a href="Interregnum.html" class="internal"><span class="codenumber">II</span> <span class="title">Interregnum</span></a></div>
+<div class="toc-title-box"><a href="InterregnumPart.html" class="internal"><span class="codenumber">II</span> <span class="title">Interregnum</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="Interegnum.html" class="internal"><span class="codenumber">5</span> <span class="title">Joseph Fourier: The Man Who Broke Calculus</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="Interegnum-2.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Joseph Fourier and His Series</span></a></div></li></ul>
@@ -553,10 +554,10 @@ f^{(n+1)}(x)=\left(\frac{1}{2}\right)\left(\frac{1}{2}-1\right)\cdots\left(\frac
 </div>
 <div class="para logical" id="TaylorSeries-LagrFormRem-13-2">
 <div class="para">Since <span class="process-math">\(\limitt{n}{\infty}{\frac{1}{2n+2}}=0=\limitt{n}{\infty}{0}\text{,}\)</span> then by the <a href="LimitAsPrimary.html#thm_SqueezeTheorem" class="xref" data-knowl="./knowl/xref/thm_SqueezeTheorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 6.2.16: The Squeeze Theorem for Sequences">Squeeze Theorem</a>,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm_SqueezeTheorem.html">
-\begin{equation*}
-\lim_{n\rightarrow\infty}\abs{\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}}=0, \text{ so } \lim_{n\rightarrow\infty}\left(\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}\right)=0\text{.}
-\end{equation*}
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm_SqueezeTheorem.html" id="TaylorSeries-LagrFormRem-13-2-3">
+\begin{align*}
+\limit{n}{\infty}{\abs{\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}}}=0, \amp{}\amp{}\text{ so } \amp{}\amp{}\limit{n}{\infty}{\left(\frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}\right)}=0.
+\end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-LagrFormRem-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>

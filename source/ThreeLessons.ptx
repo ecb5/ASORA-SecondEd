@@ -289,7 +289,7 @@
       </me>
       where <m>k</m> depends only on <m>a</m>, <m>b</m>, and <m>c</m>.
       In the sixteenth century a similar technique was used by
-      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Ferrari/" visual="mathshistory.st-andrews.ac.uk/Biographies/Ferrari/">Ludovico Ferrari</url> (1522-1565) to reduce the general cubic
+      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Ferrari/" >Ludovico Ferrari</url> (1522-1565) to reduce the general cubic
       equation
       
       <men xml:id="eq_GenCubic">
@@ -309,13 +309,13 @@
       The general <term>depressed cubic</term> had previously been
       solved by <url
       href="https://mathshistory.st-andrews.ac.uk/Biographies/Tartaglia/"
-      visual="mathshistory.st-andrews.ac.uk/Biographies/Tartaglia/">
+      >
       Niccolò Fontana</url> (1500<ndash/>1557) (usually known as
       <q>Tartaglia</q> or <q>The Stutterer</q>) so converting the general
       cubic into a <term>depressed cubic</term> provided a path for
       Ferrari to compute the <url
       href="https://mathshistory.st-andrews.ac.uk/HistTopics/Quadratic_etc_equations/"
-      visual="mathshistory.st-andrews.ac.uk/HistTopics/Quadratic_etc_equations/"><term>Cubic
+      ><term>Cubic
       Formula</term></url>. (It<rsq/>s like the <term><xref
       ref="EQUATIONQuadraticFormula" text="custom">Quadratic
       Formula</xref></term> but bigger.)
@@ -344,7 +344,7 @@
 
     <p>
       Ferrari also knew how to compute the general solution of the
-      <term>depressed quartic</term> so when he and his teacher <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Cardan" visual="mathshistory.st-andrews.ac.uk/Biographies/Cardan">Girolomo
+      <term>depressed quartic</term> so when he and his teacher <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Cardan" >Girolomo
       Cardano</url> (1501-1576) figured out how to depress a general quartic
       they had a complete solution of the general quartic as well.
     </p>
@@ -505,7 +505,7 @@
       In his book <em>How to Solve It</em> the mathematician and
       teacher <url
       href="https://mathshistory.st-andrews.ac.uk/Biographies/Polya/"
-      visual="mathshistory.st-andrews.ac.uk/Biographies/Polya/">George
+      >George
       Polya</url> (1887<ndash/>1985) gave four steps for problem
       solving.  The steps may be paraphrased as
 

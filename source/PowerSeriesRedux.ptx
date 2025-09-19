@@ -73,8 +73,7 @@
       different ways that a sequence of functions can converge:
       pointwise or uniformly.  This distinction was touched upon by
       <url
-      href="https://mathshistory.st-andrews.ac.uk/Biographies/Abel/"
-      visual="mathshistory.st-andrews.ac.uk/Biographies/Darboux/">Niels
+      href="https://mathshistory.st-andrews.ac.uk/Biographies/Abel/">Niels
       Henrik Abel</url> (1802<ndash/>1829) in <m>1826</m> while
       studying the domain of convergence of a power series.  However,
       the necessary formal definitions were not made explicit until
@@ -536,7 +535,7 @@
       </problem>
 
       <p>
-        As before, applying this to power series gives the following result.
+        Applying <xref ref="thm_UniformDerivativeConvergence" ></xref>  to power series gives the following result.
       </p>
 
       <corollary xml:id="cor_UniformConvergenceDerivative">
@@ -568,7 +567,7 @@
         long as the convergence is uniform.  Fortunately it is in
         general true that when a power series converges the
         convergence of it and its integrated and differentiated series
-        is also uniform (almost).
+        is also (almost) uniform.
       </p>
 
       <p>
@@ -643,18 +642,19 @@
       </theorem>
 
       <p>
-        Intuitively, this result makes sense.  If the terms in a
-        sequence are getting arbitrarily close to <m>s</m>, then they
-        should be getting arbitrarily close to each other as well.  This is
-        the basis of the proof.
+        Intuitively, <xref ref="thm_Converge-_Cauchy" ></xref> makes
+        sense.  If the terms of a sequence are getting arbitrarily
+        close to <m>s</m>, then they should be getting arbitrarily
+        close to each other as well.  This is the basis of the proof.
       </p>
-      <aside>
-        
-        <p>
-          But the converse isn<rsq/>t nearly as clear.  In fact, it isn't
-          true in the rational numbers.
-        </p>
-      </aside>
+      <!-- <aside> -->
+      <!--   <title> -->
+      <!--     Cauchy Sequences Needn<rsq/>t Converge -->
+      <!--   </title> -->
+      <!--   <p> -->
+      <!--     But the converse of <xref ref="thm_Converge-_Cauchy" ></xref> is not true. Why not? -->
+      <!--   </p> -->
+      <!-- </aside> -->
 
       <problem>
         
@@ -668,7 +668,7 @@
         </statement>
         <hint>
           <p>
-            <m>|s_m-s_n|=|s_m-s+s-s_n|\leq|s_m-s\mathopen|+|s-s_n|</m>.
+            <m>\abs{s_m-s_n}=\abs{s_m-s+s-s_n}\leq \abs{s_m-s}+\abs{s-s_n}</m>.
           </p>
         </hint>
       </problem>
@@ -694,7 +694,7 @@
           <p>
             Suppose <m>\left(s_n\right)</m> <m></m>is a Cauchy
             sequence.  Then there exists <m>B>0</m> such that
-            <m>|s_n|\leq B</m> for all <m>n</m>.
+            <m>\abs{s_n}\leq B</m> for all <m>n</m>.
           </p>
         </statement>
       </lemma>
@@ -723,7 +723,7 @@
       </problem>
 
       <theorem xml:id="thm_Cauchy-_Converge">
-        <title>Cauchy sequences converge</title>
+        <title>Cauchy Sequences Converge in <m>\RR </m></title>
 
         <idx><h>sequences</h><h>Cauchy sequences</h><h>convergence
         of</h></idx>
@@ -745,11 +745,23 @@
           by the Bolzano<ndash/>Weierstrass Theorem, it has a convergent
           subsequence <m>\left(s_{n_k}\right)</m> converging to some
           real number <m>s</m>.  We have
-          <m>|s_n-s|=|s_n-s_{n_k}+s_{n_k}-s|\leq|s_n-s_{n_k}\mathopen|+|s_{n_k}-s|</m>.
-          If we choose <m>n</m> and <m>n_k</m> large enough, we should
-          be able to make each term arbitrarily small.
+          <me>
+            \abs{s_n-s}=\abs{s_n-s_{n_k}+s_{n_k}-s}\leq
+            \abs{s_n-s_{n_k}}+\abs{s_{n_k}-s}
+            </me>.
+          If we choose <m>n</m> and <m>n_k</m> large enough, we
+          should be able to make each term arbitrarily small.
         </p>
       </proof>
+
+      <!-- <problem> -->
+      <!--   <p> -->
+      <!--     Show that <xref ref="thm_Cauchy-_Converge" ></xref> is not -->
+      <!--     true if the underlying number system is <m>\QQ{}</m> instead -->
+      <!--     of <m>\RR{}</m> by constructing a sequence in <m>\QQ{}</m> -->
+      <!--     which converges to an irrational number. -->
+      <!--   </p> -->
+      <!-- </problem> -->
 
       <problem xml:id="prob_Cauchy_sequences_Cauchy_implies_convergence">
 
@@ -765,15 +777,19 @@
       </problem>
 
       <p>
-        From <xref ref="thm_Converge-_Cauchy"></xref> we see
-        that every Cauchy sequence converges in <m>\RR</m>.  Moreover
-        the proof of this fact depends on the Bolzano<ndash/>Weierstrass
-        Theorem which, as we have seen, is equivalent to our
-        completeness axiom, the Nested Interval Property.  What this
-        means is that if there is a Cauchy sequence which does not
-        converge then the <xref ref="NIP" text="custom">NIP</xref> is not true.  A natural question to ask
-        is if every Cauchy sequence converges does the <xref ref="NIP" text="custom">NIP</xref> follow?
-        That is, is the convergence of Cauchy sequences also
+        From <xref ref="thm_Converge-_Cauchy"></xref> we see that
+        every Cauchy sequence converges in <m>\RR</m>.  Moreover the
+        proof of this fact depends on the <xref
+        ref="BolzanoWeierstrass"
+        text="custom">Bolzano<ndash/>Weierstrass Theorem</xref> which,
+        as we have seen, is equivalent to our completeness axiom, the
+        <xref ref="NIP" text="custom">Nested Interval Property</xref>.
+        What this means is that if there is a <xref
+        ref="def_CauchySequence" text="custom">Cauchy sequence</xref>
+        which does not converge then the <xref ref="NIP"
+        text="custom">NIP</xref> is not true.  A natural question to
+        ask is if every Cauchy sequence converges does the NIP follow?
+        In other words, is the convergence of Cauchy sequences also
         equivalent to our completeness axiom?  The following theorem
         shows that the answer is yes.
       </p>
@@ -786,8 +802,10 @@
         <statement>
           <p>
             
-            Suppose every Cauchy sequence converges.  Then the Nested
-            Interval Property is true.
+            Suppose every <xref ref="def_CauchySequence"
+            text="custom">Cauchy sequence</xref> converges.  Then the
+            <xref ref="NIP" text="custom">Nested Interval
+            Property</xref> is true.
           </p>
         </statement>
       </theorem>
@@ -806,24 +824,25 @@
           <p>
             If we start with two sequences <m>\left(x_n\right)</m> and
             <m>\left(y_n\right)</m>, satisfying all of the conditions
-            of the <xref ref="NIP" text="custom">NIP</xref>, you should be able to show that these are both
-            Cauchy sequences.
+            of the <xref ref="NIP" text="custom">NIP</xref>, you
+            should be able to show that these are both Cauchy
+            sequences.
           </p>
         </hint>
       </problem>
 
       <p>
-        <xref
-            ref="prob_Cauchy_sequences_Cauchy_implies_convergence">Problems</xref>
+        Taken together <xref
+        ref="prob_Cauchy_sequences_Cauchy_implies_convergence"></xref>
         and <xref
         ref="prob_Cauchy_sequences_Cauchy_implies_NIP"></xref> tell us
         that the following are equivalent: the Nested Interval
-        Property, the Bolzano<ndash/>Weierstrass Theorem, the Least Upper
-        Bound Property, and the convergence of Cauchy sequences.  Thus
-        any one of these could have been taken as the completeness
-        axiom of the real number system and then used to prove the
-        each of the others as a theorem according to the following
-        dependency graph:
+        Property, the Bolzano<ndash/>Weierstrass Theorem, the Least
+        Upper Bound Property, and the convergence of Cauchy sequences.
+        Thus any one of these could have been taken as the
+        completeness axiom of the real number system and then used to
+        prove the each of the others as a theorem according to the
+        following dependency graph:
       </p>
 
       <image width="100%" source="images/CompletenessAxioms.png" >
@@ -844,10 +863,11 @@
         <statement>
           <p>
             Since the convergence of Cauchy sequences can be taken as
-            the completeness axiom for the real number system, it does
-            not hold for the rational number system.  Give an example
-            of a Cauchy sequence of rational numbers which does not
-            converge to a rational number.
+            the completeness axiom for the real number system
+            <m>(\RR)</m>, it does not hold for the rational number
+            system <m>(\QQ)</m>, since <m>\QQ{}</m> is not complete.
+            Give an example of a Cauchy sequence of rational numbers
+            which does not converge to a rational number.
           </p>
         </statement>
       </problem>
@@ -859,15 +879,21 @@
       </p>
 
       <theorem xml:id="thm_CauchyCriterion"><title>Cauchy Criterion</title>
-      
+
       <idx><h>series</h><h>Cauchy sequences</h><h>Cauchy Criterion</h></idx> 
 
       <statement>
         <p> 
           The series <m>\sum_{k=0}^\infty a_k</m> converges if and
-          only if <m>\forall</m> <m>\eps>0</m>, <m>\ \exists</m>
-          <m>N</m> such that if <m>m>n>N</m> then
-          <m>|\sum_{k=n+1}^ma_k|\lt \eps</m>.
+          only if <m>\forall</m> <m>\eps>0</m>, <m>\exists\ N</m> such
+          that 
+
+          <md>
+            <mrow>
+              \text{if } m\gt{}n\gt{}N\amp{}\amp{}\text{ then }\amp{}\amp{} \abs{\sum_{k=n+1}^ma_k}\lt
+              \eps.
+            </mrow>
+</md>
         </p>
       </statement>
       </theorem>
@@ -884,8 +910,8 @@
       </problem>
 
       <p>
-        At this point several of the tests for convergence that you
-        probably learned in Calculus are easily proved.  For example:
+        At this point several of the convergence tests that you
+        probably in Calculus are easily proved.  
       </p>
 
       <problem xml:id="prob_NthTermTest">
@@ -926,29 +952,27 @@
       </problem>
 
       <p>
-        You may also recall the Comparison Test from studying series
-        in Calculus: suppose <m>0\leq a_n\leq b_n</m>, if <m>\sum
-        b_n</m> converges then <m>\sum a_n</m> converges.  This result
-        follows from the fact that the partial sums of <m>\sum a_n</m>
-        form an increasing sequence which is bounded above by <m>\sum
-        b_n</m>.  (See <xref
+        You may also recall the <xref ref="thm_ComparisonTest"
+        text="custom">Comparison Test</xref> from your study of series
+        in Calculus.  This result follows from the fact that the
+        partial sums of <m>\sum a_n</m> form an increasing sequence
+        which is bounded above by <m>\sum b_n</m>.  (See <xref
         ref="cor_IncBoundedConverge"></xref> of <xref
-        ref="IVTandEVT">Chapter</xref>.)  The Cauchy Criterion allows
-        us to extend this to the case where the terms <m>a_n</m> could
-        be negative as well.  This can be seen in the following
-        theorem.
+        ref="IVTandEVT">Chapter</xref>.)  The <xref
+        ref="thm_CauchyCriterion" text="custom">Cauchy
+        Criterion</xref> allows us to extend this to the case where
+        the terms <m>a_n</m> could be negative as well.  This can be
+        seen in the following theorem.
       </p>
 
       <theorem xml:id="thm_ComparisonTest">
+        <title>Comparison Test</title>
 
         <idx><h>series</h><h>Comparison Test</h></idx> 
 
         <statement>
+
           <p>
-            <alert>Comparison Test</alert>
-          </p>
-          <p>
-            
             Suppose <m>|a_n|\leq b_n</m> for all <m>n</m>.  If <m>\sum
             b_n</m> converges then <m>\sum a_n</m> also converges.
           </p>
@@ -1031,8 +1055,8 @@
 
         <statement>
           <p>
-            If <m>\sum_{n=0}^\infty|a_n|=s</m>, then does it follow
-            that <m>s=|\sum_{n=0}^\infty a_n|</m>?  Justify your
+            If <m>\displaystyle\sum_{n=0}^\infty\abs{a_n}=s</m>,  does it follow
+            that <m>\displaystyle s= \abs{\sum_{n=0}^\infty a_n}</m>?  Justify your
             answer.  What can be said?
           </p>
         </statement>
@@ -1043,19 +1067,19 @@
 
         The converse of <xref ref="cor_AbsConv-_Conv"></xref>
         is not true as evidenced by the series
-        <m>\sum_{n=0}^\infty\frac{(-1)^n}{n+1}</m>.  As we noted in
+        <m>\displaystyle\sum_{n=0}^\infty\frac{(-1)^n}{n+1}</m>.  As we noted in
         <xref ref="PowerSeriesQuestions"></xref>, this series
-        converges to ln <m>2</m>.  However, its absolute series is the
+        converges to <m>\ln 2</m>.  However, its absolute series is the
         Harmonic  Series
         which diverges.  Any such series which converges, but not
         absolutely, is said to <alert>converge conditionally</alert>.
         Recall also that in <xref
         ref="PowerSeriesQuestions"></xref>, we showed that we
         could rearrange the terms of the series
-        <m>\sum_{n=0}^\infty\frac{(-1)^n}{n+1}</m> to make it converge
+        <m>\displaystyle\sum_{n=0}^\infty\frac{(-1)^n}{n+1}</m> to make it converge
         to any number we wished.  We noted further that all
         rearrangements of the series
-        <m>\sum_{n=0}^\infty\frac{(-1)^n}{\left(n+1\right)^2}</m>
+        <m>\displaystyle\sum_{n=0}^\infty\frac{(-1)^n}{\left(n+1\right)^2}</m>
         converged to the same value.  The difference between the two
         series is that the latter converges absolutely whereas the
         former does not.  Specifically, we have the following result.
@@ -1069,7 +1093,7 @@
         <statement>
           <p>
             Suppose <m>\sum a_n</m> converges absolutely and let
-            <m>s=\sum_{n=0}^\infty a_n</m>.  Then any rearrangement of
+            <me>s=\sum_{n=0}^\infty a_n</me>.  Then any rearrangement of
             <m>\sum a_n</m> must converge to <m>s</m>.
           </p>
         </statement>
@@ -1082,7 +1106,7 @@
           where <m>a_n\geq 0</m>.  If <m>\sum b_n</m> represents a
           rearrangement of <m>\sum a_n</m>, then notice that the
           sequence of partial sums
-          <m>\left(\sum_{k=0}^nb_k\right)_{n=0}^\infty</m>is an
+          <m>\displaystyle\left(\sum_{k=0}^nb_k\right)_{n=0}^\infty</m>is an
           increasing sequence which is bounded by <m>s</m>.  By <xref
           ref="cor_IncBoundedConverge"></xref> of <xref
           ref="IVTandEVT"></xref>, this sequence must converge
@@ -1094,10 +1118,14 @@
           and that <m>\sum\frac{|a_n\mathopen|+a_n}{2}</m> and
           <m>\sum\frac{|a_n\mathopen|-a_n}{2}</m> are both convergent
           series with nonnegative terms.  By the special case
-          <m>\sum\frac{|b_n\mathopen|+b_n}{2}=</m>
-          <m>\sum\frac{|a_n\mathopen|+a_n}{2}</m> and
-          <m>\sum\frac{|b_n\mathopen|-b_n}{2}=</m>
-          <m>\sum\frac{|a_n\mathopen|-a_n}{2}</m>.
+
+          <md>
+            <mrow>\sum\frac{\abs{b_n}+b_n}{2}=
+            \sum\frac{\abs{a_n}+a_n}{2}\amp{}\amp{}\text{ and }\amp{}\amp{}
+            \sum\frac{\abs{b_n}-b_n}{2}=
+            \sum\frac{\abs{a_n}-a_n}{2}.
+            </mrow>
+          </md>
         </p>
       </proof>
 
@@ -1129,11 +1157,10 @@
 
       <statement>
         <p>
-          
-          Suppose <m>\sum_{n=0}^\infty a_nc^n</m> converges for some
-          nonzero real number <m>c</m>.  Then <m>\sum_{n=0}^\infty
+          Suppose <m>\displaystyle\sum_{n=0}^\infty a_nc^n</m> converges for some
+          nonzero real number <m>c</m>.  Then <m>\displaystyle\sum_{n=0}^\infty
           a_nx^n</m> converges absolutely for all <m>x</m> such that
-          <m>|x|\lt |c|</m>.
+          <m>\abs{x}\lt \abs{c}</m>.
         </p>
       </statement>
     </theorem>
@@ -1173,9 +1200,9 @@
     <corollary xml:id="cor_RadiusOfDivergence">
       <statement>
         <p>
-          Suppose <m>\sum_{n=0}^\infty a_nc^n</m> diverges for some
-          real number <m>c</m>.  Then <m>\sum_{n=0}^\infty a_nx^n</m>
-          diverges for all <m>x</m> such that <m>|x|>|c|</m>.
+          Suppose <m>\displaystyle\sum_{n=0}^\infty a_nc^n</m> diverges for some
+          real number <m>c</m>.  Then <m>\displaystyle\sum_{n=0}^\infty a_nx^n</m>
+          diverges for all <m>x</m> such that <m>\abs{x} \gt \abs{c}</m>.
         </p>
       </statement>
     </corollary>
@@ -1196,16 +1223,16 @@
       As a result of <xref
       ref="thm_RadiusOfConvergence"></xref> and <xref
       ref="cor_RadiusOfDivergence"></xref>, we have the
-      following: either <m>\sum_{n=0}^\infty a_nx^n</m> converges
+      following: Either <m>\displaystyle\sum_{n=0}^\infty a_nx^n</m> converges
       absolutely for all <m>x</m> or there exists some nonnegative
-      real number <m>r</m> such that <m>\sum_{n=0}^\infty a_nx^n</m>
+      real number <m>r</m> such that <m>\displaystyle\sum_{n=0}^\infty a_nx^n</m>
       converges absolutely when <m>|x|\lt r</m> and diverges when
       <m>|x|>r</m>.  In the latter case, we call <m>r</m> the
       <term>radius of convergence</term> of the power series
-      <m>\sum_{n=0}^{\infty}a_{n} x^{n}</m>.  In the former case, we
-      say that the <term>radius of convergence</term> of <m>\sum_{n=0}^\infty
+      <m>\displaystyle\sum_{n=0}^{\infty}a_{n} x^{n}</m>.  In the former case, we
+      say that the <term>radius of convergence</term> of <m>\displaystyle\sum_{n=0}^\infty
       a_nx^n</m> is <m>\infty</m>.  Though we can say that
-      <m>\sum_{n=0}^\infty a_nx^n</m> converges absolutely when
+      <m>\displaystyle\sum_{n=0}^\infty a_nx^n</m> converges absolutely when
       <m>|x|\lt r</m>, we cannot say that the convergence is uniform.
       However, we can come close.  We can show that the convergence is
       uniform for <m>|x|\leq b\lt r</m>.  To see this we will use the
@@ -1229,8 +1256,8 @@
         </p>
         
         <p>
-          If <m>\sum_{n=1}^\infty M_n</m> converges then
-          <m>\sum_{n=1}^\infty f_n(x)</m> converges uniformly on
+          If <m>\displaystyle\sum_{n=1}^\infty M_n</m> converges then
+          <m>\displaystyle\sum_{n=1}^\infty f_n(x)</m> converges uniformly on
           <m>S</m> to some function (which we will denote by
           <m>f(x)</m>).
         </p>
@@ -1243,11 +1270,11 @@
         Since the crucial feature of the theorem is the function
         <m>f(x)</m> that our series converges to, our plan of attack
         is to first define <m>f(x)</m> and then show that our series,
-        <m>\sum_{n=1}^\infty f_n(x)</m>, converges to it uniformly.
+        <m>\displaystyle\sum_{n=1}^\infty f_n(x)</m>, converges to it uniformly.
       </p>
 
       <p>
-        First observe that for any <m>x\in S</m>, <m>\sum_{n=1}^\infty
+        First observe that for any <m>x\in S</m>, <m>\displaystyle\sum_{n=1}^\infty
         f_n(x)</m> converges by the Comparison Test (in fact it
         converges absolutely) to some number we will denote by
         <m>f(x)</m>.  This actually defines the function <m>f(x)</m>
@@ -1257,7 +1284,7 @@
 
       <p>
         Next, let <m>\eps>0</m> be given.  Notice that since
-        <m>\sum_{n=1}^\infty M_n</m> converges, say to <m>M</m>, then
+        <m>\displaystyle\sum_{n=1}^\infty M_n</m> converges, say to <m>M</m>, then
         there is a real number, <m>N</m>, such that if <m>n>N</m>,
         then
         <me>
@@ -1343,7 +1370,7 @@
       <task>
         <statement>
           <p>
-            <m>\sum_{n=1}^\infty\frac{\left(x^n-x^{n-1}\right)}{n^2}</m>
+            <m>\displaystyle\sum_{n=1}^\infty\frac{\left(x^n-x^{n-1}\right)}{n^2}</m>
           </p>
         </statement>
       </task>
@@ -1361,10 +1388,10 @@
       <statement>
         <p>
           
-          Suppose <m>\sum_{n=0}^\infty a_nx^n</m> has radius of
+          Suppose <m>\displaystyle\sum_{n=0}^\infty a_nx^n</m> has radius of
           convergence <m>r</m> (where <m>r</m> could be <m>\infty</m>
           as well).  Let <m>b</m> be any nonnegative real number with
-          <m>b\lt r</m>.  Then <m>\sum_{n=0}^\infty a_nx^n</m>
+          <m>b\lt r</m>.  Then <m>\displaystyle\sum_{n=0}^\infty a_nx^n</m>
           converges uniformly on <m>[-b,b]</m>.
         </p>
       </statement>
@@ -1381,7 +1408,7 @@
       </statement>
       <hint>
         <p>
-          We know that <m>\sum_{n=0}^\infty|a_nb^n|</m> converges.
+          We know that <m>\displaystyle\sum_{n=0}^\infty|a_nb^n|</m> converges.
           This should be all set for the Weierstrass-<m>M</m> test.
         </p>
       </hint>
@@ -1395,14 +1422,14 @@
       already know that the integrated series has a radius of
       convergence at least as big as the radius of convergence of the
       original series.  Specifically, suppose
-      <m>f(x)=\sum_{n=0}^\infty a_nx^n</m>has a radius of convergence
-      <m>r</m> and let <m>|x|\lt r</m>.  We know that
-      <m>\,\sum_{n=0}^\infty a_nx^n</m> converges uniformly on an
+      <m>f(x)=\displaystyle\sum_{n=0}^\infty a_nx^n</m>has a radius of convergence
+      <m>r</m> and let <m>\abs{x}\lt r</m>.  We know that
+      <m>\displaystyle\sum_{n=0}^\infty a_nx^n</m> converges uniformly on an
       interval containing <m>0</m> and <m>x</m>, and so by <xref
       ref="cor_IntConvUni"></xref>, <m>\int_{t=0}^xf(t)\dx{
-      t}=\sum_{n=0}^\infty\left(\frac{a_n}{n+1}x^{n+1}\right)</m>.  In
+      t}=\displaystyle\sum_{n=0}^\infty\left(\frac{a_n}{n+1}x^{n+1}\right)</m>.  In
       other words, the integrated series converges for any <m>x</m>
-      with<m>\,|x|\lt r</m>.  This says that the radius of convergence
+      with <m>\abs{x}\lt r</m>.  This says that the radius of convergence
       of the integated series must be at least <m>r</m>.
     </p>
 
@@ -1418,17 +1445,16 @@
     </p>
     <p>
 
-      Putting
-      the differentiated series into the role of the original series,
-      the original series is now the integrated series and so these
-      would have the same radii of convergence as well.  With this in
-      mind, we want to show that if <m>|x|\lt r</m>, then
-      <m>\sum_{n=0}^\infty a_nnx^{n-1}</m> converges.  The strategy is
-      to mimic what we did in <xref
-      ref="thm_RadiusOfConvergence"></xref>, where we
-      essentially compared our series with a converging geometric
-      series.  Only this time we need to start with the differentiated
-      geometric series.
+      Putting the differentiated series into the role of the original
+      series, the original series is now the integrated series and so
+      these would have the same radii of convergence as well.  With
+      this in mind, we want to show that if <m>|x|\lt r</m>, then
+      <m>\displaystyle\sum_{n=0}^\infty a_nnx^{n-1}</m> converges.
+      The strategy is to mimic what we did in <xref
+      ref="thm_RadiusOfConvergence"></xref>, where we essentially
+      compared our series with a converging geometric series.  Only
+      this time we need to start with the differentiated geometric
+      series.
     </p>
 
     <problem xml:id="prob_PwrSeriesDiffConv">
@@ -1438,13 +1464,13 @@
 
       <statement>
         <p>
-          Show that <m>\sum_{n=1}^\infty nx^{n-1}</m> converges for
+          Show that <m>\displaystyle\sum_{n=1}^\infty nx^{n-1}</m> converges for
           <m>|x|\lt 1</m>.
         </p>
       </statement>
       <hint>
         <p>
-          We know that <m>\sum_{k=0}^nx^k=\frac{x^{n+1}-1}{x-1}</m>.
+          We know that <m>\displaystyle\sum_{k=0}^nx^k=\frac{x^{n+1}-1}{x-1}</m>.
           Differentiate both sides and take the limit as <m>n</m>
           approaches infinity.
         </p>
@@ -1458,9 +1484,9 @@
       <statement>
         <p>
           
-          Suppose <m>\sum_{n=0}^\infty a_nx^n</m> has a radius of
-          convergence <m>r</m> and let <m>|x|\lt r</m>.  Then
-          <m>\sum_{n=1}^\infty a_nnx^{n-1}</m> converges.
+          Suppose <m>\displaystyle\sum_{n=0}^\infty a_nx^n</m> has a radius of
+          convergence <m>r</m> and let <m>\abs{x}\lt r</m>.  Then
+          <m>\displaystyle\sum_{n=1}^\infty a_nnx^{n-1}</m> converges.
         </p>
       </statement>
     </theorem>
@@ -1477,10 +1503,14 @@
       <hint>
         <p>
           Let <m>b</m> be a number with <m>\abs{x}\lt b\lt r</m> and
-          consider <m>\abs{a_nnx^{n-1}}
-          =\abs{a_nb^n\cdot\frac{1}{b}\cdot
-          n\left(\frac{x}{b}\right)^{n-1}}</m>.  You should be able to
-          use the Comparison Test and <xref
+          consider 
+
+          <me>
+            \abs{a_nnx^{n-1}} =\abs{a_nb^n\cdot\frac{1}{b}\cdot
+            n\left(\frac{x}{b}\right)^{n-1}} 
+          </me>.
+
+          Now use the <xref ref="thm_ComparisonTest" text="custom">Comparison Test</xref> and <xref
           ref="prob_PwrSeriesDiffConv"></xref>.
         </p>
       </hint>
@@ -1495,8 +1525,8 @@
     <p>
       Summarizing our results, we see that any power series <m>\sum
       a_nx^n</m> has a radius of convergence <m>r</m> such that
-      <m>\sum a_nx^n</m> converges absolutely when <m>|x|\lt r</m> and
-      diverges when <m>|x|>r</m>.  Furthermore, the convergence is
+      <m>\sum a_nx^n</m> converges absolutely when <m>\abs{x}\lt r</m> and
+      diverges when <m>\abs{x}>r</m>.  Furthermore, the convergence is
       uniform on any closed interval <m>[-b,b]\subset(-r,r)</m> which
       tells us that whatever the power series converges to must be a
       continuous function on <m>(-r,r)</m>.  Lastly, if
@@ -1531,8 +1561,8 @@
     <p>
       The fact is that for a power series <m>\sum a_nx^n</m> with
       radius of convergence <m>r</m>, we know what happens when
-      <m>|x|\lt r</m> and when <m>|x|>r</m>. But we<rsq/>ve never talked
-      about what happens when <m>|x|=r</m>.  That is because there is
+      <m>\abs{x}\lt r</m> and when <m>\abs{x}>r</m>. But we<rsq/>ve never talked
+      about what happens when <m>\abs{x}=r</m>.  That is because there is
       no systematic approach to this boundary problem.  For example,
       consider the three series
       <me>
@@ -1572,7 +1602,7 @@
       </statement>
       <hint>
         <p>
-          For <m>|x|\leq r</m>, <m>|a_nx^n|\leq |a_nr^n|</m>.
+          For <m>\abs{x}\leq r</m>, <m>|a_nx^n|\leq |a_nr^n|</m>.
         </p>
       </hint>
     </problem>

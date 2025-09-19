@@ -13,7 +13,7 @@
     <date><today/></date>
     <edition>2.0.2, ISBN: 978-1-956862-03-4</edition>
     <website>
-      <url href="https://knightscholar.geneseo.edu/oer-ost/20/" visual="https://knightscholar.geneseo.edu/oer-ost/20/">Milne Open Textbooks, State University of New York at Geneseo, Geneseo, NY 14454
+      <url href="https://knightscholar.geneseo.edu/oer-ost/20/" >Milne Open Textbooks, State University of New York at Geneseo, Geneseo, NY 14454
       </url>
     </website>
 
@@ -30,7 +30,7 @@
         copy of this license, visit
         <url 
             href="http://creativecommons.org/licenses/by-nc/4.0/"
-            visual="creativecommons.org/licenses/by-nc/4.0">
+            >
         CreativeCommons.org</url>
       </shortlicense>
     </copyright>
@@ -64,7 +64,7 @@
             The interested student can fill in the gaps we have left by
             making use of the extensive resources that can be found at
             the <url href="https://mathshistory.st-andrews.ac.uk/"
-            visual="mathshistory.st-andrews.ac.uk"> MacTutor</url>
+            > MacTutor</url>
             history of mathematics repository.
           </p>
           <p>
@@ -86,7 +86,7 @@
         <!--     The interactive figures in <xref -->
         <!--     ref="Interegnum"></xref> were created using the -->
         <!--     <url href="https://www.desmos.com/" -->
-        <!--          visual="www.desmos.com">Desmos online calculator</url>. -->
+        <!--          >Desmos online calculator</url>. -->
         <!--   </p> -->
         <!-- </li> -->
     </dl></p>

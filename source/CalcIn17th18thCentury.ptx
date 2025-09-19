@@ -17,7 +17,7 @@
         Impeded Neither by Fractional Nor by Irrational Quantities,
         and a Remarkable Type of Calculus for This) written by <url
         href="https://mathshistory.st-andrews.ac.uk/Biographies/Leibniz/"
-        visual="mathshistory.st-andrews.ac.uk/Biographies/Leibniz/">Gottfried
+        >Gottfried
         Wilhelm Leibniz</url> (1646<ndash/>1716).  Leibniz started
         with subtraction.  That is, if <m>x_1</m> and <m>x_2</m> are
         very close together then their difference, <m>\Delta
@@ -218,7 +218,7 @@
         
         <url
         href="https://mathshistory.st-andrews.ac.uk/Biographies/Newton/"
-        visual="mathshistory.st-andrews.ac.uk/Biographies/Newton/">Isaac
+        >Isaac
         Newton<rsq/>s</url> (1643<ndash/>1727) approach to Calculus
         <mdash /> his <sq>Method of Fluxions</sq> <mdash /> depended
         fundamentally on motion.  He conceived of variables (fluents)
@@ -266,7 +266,7 @@
       <!--   <title>Historical Note: Newton<rsq/>s <pubtitle>Method of Fluxions</pubtitle></title> -->
       <!--   <p> -->
       
-      <!--     <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Newton/" visual="mathshistory.st-andrews.ac.uk/Biographies/Newton/">Isaac Newton</url><rsq/>s (1643<ndash/>1727) approach to Calculus <mdash /> his <sq>Method of -->
+      <!--     <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Newton/" >Isaac Newton</url><rsq/>s (1643<ndash/>1727) approach to Calculus <mdash /> his <sq>Method of -->
       <!--     Fluxions</sq> <mdash /> depended fundamentally on motion. -->
       <!--     That is, he viewed his variables (fluents) as changing -->
       <!--     (flowing or fluxing) in time.  The rate of change of a -->
@@ -509,7 +509,7 @@
 
       <figure  xml:id="FIGURESnellPortrait">
         <caption>
-          <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Snell/" visual="mathshistory.st-andrews.ac.uk/Biographies/Snell/">Willebrord Snell</url> (1580<ndash/>1626)
+          <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Snell/" >Willebrord Snell</url> (1580<ndash/>1626)
         </caption>
         <image source="images/Snell.png" width="35%">
           <shortdescription>Portrait of Willebrord Snell</shortdescription>
@@ -535,7 +535,7 @@
 
       <p>
         According to 
-        <url href="https://en.wikipedia.org/wiki/Fermat%27s_principle" visual="en.wikipedia.org/wiki/Fermat%27s_principle">Fermat<rsq/>s Principle of Least Time</url>, this fastest
+        <url href="https://en.wikipedia.org/wiki/Fermat%27s_principle" >Fermat<rsq/>s Principle of Least Time</url>, this fastest
         path is the one that light will travel.
       </p>
 
@@ -597,10 +597,10 @@
         
         <url
             href="https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Johann/"
-            visual="mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Johann">Johann
+            >Johann
         Bernoulli<rsq/>s</url> (1667<ndash/>1748) solution of the <url
         href="https://mathshistory.st-andrews.ac.uk/HistTopics/Brachistochrone/"
-        visual="mathshistory.st-andrews.ac.uk/HistTopics/Brachistochrone/">Brachistochrone
+        >Brachistochrone
         Problem</url>.  In 1696, Bernoulli posed and solved, the
         Brachistochrone problem: To find the shape of a frictionless
         wire joining points <m>A</m> and <m>B</m> so that the time it
@@ -1702,7 +1702,7 @@
 
   The power series for arctangent was known by <url
   href="https://mathshistory.st-andrews.ac.uk/Biographies/Gregory/"
-  visual="mathshistory.st-andrews.ac.uk/Biographies/Gregory/">James
+  >James
   Gregory</url> (1638-1675) and it is sometimes referred to as
   <q>Gregory<rsq/>s series.</q> Leibniz independently discovered
   <m>\frac{\pi}{4}=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\cdots</m> by
@@ -2097,7 +2097,7 @@
 
 
 <p>
-  <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Euler/" visual="mathshistory.st-andrews.ac.uk/Biographies/Euler/">Leonhard Euler</url> (1707<ndash/>1783) was a master at exploiting power series.  In
+  <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Euler/" >Leonhard Euler</url> (1707<ndash/>1783) was a master at exploiting power series.  In
   1735, the 28 year-old Euler won acclaim for what is now
   called the Basel problem: to evaluate the sum
   <me>

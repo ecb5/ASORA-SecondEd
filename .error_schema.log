@@ -1,5 +1,5 @@
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:326:0:ERROR:RELAXNGV:RELAXNG_ERR_NOELEM: Expecting an element sidebyside, got nothing
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:326:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sage, got sbsgroup
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:326:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element sbsgroup there
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:326:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element proof, got sbsgroup
-/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:421:0:ERROR:RELAXNGV:RELAXNG_ERR_INTERSEQ: Invalid sequence in interleave
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:954:0:ERROR:RELAXNGV:RELAXNG_ERR_NOELEM: Expecting an element nbsp, got nothing
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:352:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element chapter has extra content: section
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:1:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element part has extra content: chapter
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:24:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element book has extra content: part
+/home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/source/main.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element docinfo, got pretext

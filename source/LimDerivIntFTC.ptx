@@ -248,14 +248,14 @@
 
       As we saw in <xref ref="PowerSeriesQuestions"></xref>, <url
       href="https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/"
-      visual="mathshistory.st-andrews.ac.uk/Biographies/Lagrange/">Lagrange</url>
+      >Lagrange</url>
       tried to avoid the entire issue of infinite closeness, both in
       the limit and differential forms when, in <m>1797</m>, he
       attempted to make infinite series the foundational concept in
       Calculus.  Although Lagrange<rsq/>s efforts failed, they set the
       stage for <url
       href="https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/"
-      visual="mathshistory.st-andrews.ac.uk/Biographies/Cauchy/">Cauchy</url>
+      >Cauchy</url>
       to provide a definition of derivative which in turn relied on
       his precise formulation of a limit.  Consider the following
       example.
@@ -297,7 +297,7 @@
       
       <url
           href="https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/"
-          visual="mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/">Karl
+          >Karl
       Weierstrass</url> made these ideas precise  and provided us
       with our modern formulation of the limit in his lectures on
       analysis at the University of Berlin (1859-60).
@@ -1344,7 +1344,7 @@
 
     <url
     href="https://mathshistory.st-andrews.ac.uk/Biographies/Rolle/"
-    visual="mathshistory.st-andrews.ac.uk/Biographies/Rolle/">Michel
+    >Michel
     Rolle</url> (1652<ndash/>1719) first stated the following theorem
     in 1691.  Given this date and the nature of the theorem it would
     be reasonable to suppose that Rolle was one of the early
@@ -2092,7 +2092,7 @@
     An obvious question is, how do we know that a continuous function
     on a closed interval has an antiderivative? That is, how do
     we know that <me>I\left(x\right)=\int^x_{t=a}{f(t)\dx{t}}</me>
-    actually exists?
+    actually exists? This is the topic of the next <xref ref="SECTIONDefiningIntegral" text="custom">section</xref>.
   </p>
 </section>
 
@@ -2104,9 +2104,9 @@
       <!-- The seeds of what we call integration were planted long ago. --> 
       In a
       letter to 
-      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Eratosthenes/" visual="mathshistory.st-andrews.ac.uk/Biographies/Eratosthenes/">Eratosthenes</url>
+      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Eratosthenes/" >Eratosthenes</url>
       (circa 250 BC), 
-      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/" visual="mathshistory.st-andrews.ac.uk/Biographies/Archimedes/">Archimedes</url>
+      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/" >Archimedes</url>
       described what he called a
       mechanical method for finding areas and volumes.  His method
       consisted of mentally dividing objects into infinitely thin slices
@@ -2135,20 +2135,20 @@
     <p>
       Closer to our time <url
       href="https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/"
-      visual="mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/">Cavalieri</url>,
+      >Cavalieri</url>,
       <url
       href="https://mathshistory.st-andrews.ac.uk/Biographies/Torricelli/"
-      visual="mathshistory.st-andrews.ac.uk/Biographies/Torricelli/">Torricelli</url>,
+      >Torricelli</url>,
       <url
       href="https://mathshistory.st-andrews.ac.uk/Biographies/Kepler/"
-      visual="mathshistory.st-andrews.ac.uk/Biographies/Kepler/">Kepler</url>,
+      >Kepler</url>,
       <url
       href="https://mathshistory.st-andrews.ac.uk/Biographies/Galileo/"
-      visual="mathshistory.st-andrews.ac.uk/Biographies/Galileo/">Galileo</url>,
+      >Galileo</url>,
       <url
       href="https://mathshistory.st-andrews.ac.uk/Biographies/Roberval/"
-      visual="mathshistory.st-andrews.ac.uk/Biographies/Roberval/">
-      Roberval</url>, and others explored a similar idea. They
+      >
+        Roberval</url>, and others explored a similar idea. They
       mentally cut geometric areas (and volumes) into infinitely thin
       slices.  But rather than using an imaginary balance they
       compared them geometrically.
@@ -2212,7 +2212,7 @@
     One of the first mathematicians to provide a rigorous definition
     of a definite integral was <url
     href="https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/"
-    visual="mathshistory.st-andrews.ac.uk/Biographies/Cauchy/">Augustin Louis
+    >Augustin Louis
     Cauchy</url> in 1823. 
     Cauchy used the limit idea to bridge the gap between finite sums
     of (finitely many) very small (but still finite) pieces and
@@ -2390,7 +2390,7 @@
 
         <!--   In 1854, <url -->
         <!--   href="https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/" -->
-        <!--   visual="mathshistory.st-andrews.ac.uk/Biographies/Riemann/">Bernhard -->
+        <!--   >Bernhard -->
         <!--   Riemann</url> presented a generalization of Cauchy<rsq/>s idea for -->
         <!--   a definite integral to the faculty at the University of Göttingen -->
         <!--   which was later published in 1868.  His idea was similar to -->
@@ -2464,7 +2464,7 @@
   <p>
     In <m>1875</m> <url
     href="https://mathshistory.st-andrews.ac.uk/Biographies/Darboux/"
-    visual="mathshistory.st-andrews.ac.uk/Biographies/Darboux/">Jean
+    >Jean
     Gaston Darboux</url> (1842<ndash/>1917) developed a different (but
     equivalent) definition of the Riemann integral which uses the
     least upper and greatest lower bounds we learned about in <xref
@@ -2679,7 +2679,7 @@
         <p>
           The next problem displays a function invented by <url
           href="https://mathshistory.st-andrews.ac.uk/Biographies/Dirichlet/"
-          visual="mathshistory.st-andrews.ac.uk/Biographies/Dirichlet/">Lejeune
+          >Lejeune
           Dirichlet</url> (1805<ndash/>1859) in 1837 which is not Riemann integrable.
 
 
@@ -3106,7 +3106,7 @@
             Euler<rsq/>s definition in that no formula, and no
             metaphorical machine is needed to generate an output. A
             function can be defined by simply giving a list of ordered
-            pairs: (input, output). No other particular rule is needed.
+            pairs. No particular rule is needed.
           </p>
           <p>
 
@@ -3117,109 +3117,111 @@
           </p>
 
         </subsection>
+      </section>
+    </chapter>
 
-        <!-- <subsection xml:id="SUBSECTIONStieltjesIntegral"> -->
-        <!--   <title>The Stieltjes Integral</title> -->
+    <!-- <subsection xml:id="SUBSECTIONStieltjesIntegral"> -->
+    <!--   <title>The Stieltjes Integral</title> -->
 
-        <!--   <figure  xml:id="FIGUREStieltjesPortrait"> -->
-        <!--     <caption>Thomas Jan Stieltjes</caption> -->
-        <!--     <image source="images/Stieltjes.png" width="35%"> -->
-        <!--       <shortdescription>Portrait of Thomas Jan Stieltjes</shortdescription> -->
-        <!--     </image> -->
-        <!--   </figure> -->
+    <!--   <figure  xml:id="FIGUREStieltjesPortrait"> -->
+    <!--     <caption>Thomas Jan Stieltjes</caption> -->
+    <!--     <image source="images/Stieltjes.png" width="35%"> -->
+    <!--       <shortdescription>Portrait of Thomas Jan Stieltjes</shortdescription> -->
+    <!--     </image> -->
+    <!--   </figure> -->
 
-        <!--   <p> -->
-        <!--     The various integral definitions we<rsq/>ve seen so far have -->
-        <!--     all been equivalent in the sense that the value of the -->
-        <!--     integral is the same regardless of which definition is -->
-        <!--     used. This is not true of the Stieltjes integral. -->
-        <!--   </p> -->
-        <!--   <p> -->
-        <!--     To begin to understand the Stieltjes integral consider the -->
-        <!--     Riemann integral:  -->
-        <!--     <me> -->
-        <!--       \int_{x=1}^2x^2(2x) \dx{x} -->
-        <!--       </me>.  In your -->
-        <!--     Calculus you learned how to evaluate this integral as -->
-        <!--     follows. First we let <m>\alpha(x) = x^2</m> so that -->
-        <!--     <m>\dx{\alpha}=2x\dx{x}</m>, <m>\alpha (1)=1</m>, and -->
-        <!--     <m>\alpha (2)=4</m>, so that  -->
-        <!--     <me> -->
-        <!--       \int_{x=1}^1x^2(2x) \dx{x} = -->
-        <!--       \int_{ \alpha =1}^4  \alpha \dx{\alpha }=3 -->
-        <!--       </me>.   -->
-        <!--   </p> -->
-        <!-- </subsection> -->
-    </section>
-
-
-<!-- <section xml:id="Continuity-AddProb"> -->
-<!--   <title>Additional Problems</title> -->
-<!--   <problem> -->
-<!--     <idx><h>continuous functions</h><h>a constant function is continuous</h></idx> -->
-
-<!--     <statement> -->
-<!--       <p> -->
-<!--         Use the definition of continuity to prove that the constant -->
-<!--         function <m>g(x)=c</m> is continuous at any point <m>a</m>. -->
-<!--       </p> -->
-<!--     </statement> -->
-<!--   </problem> -->
-
-<!--   <problem> -->
-<!--     <idx><h>continuous functions</h><h><m>\ln x</m> is continuous everywhere</h></idx> -->
-<!--     <task> -->
-<!--       <statement> -->
-<!--         <p> -->
-<!--           Use the definition of continuity to prove that <m>\ln x</m> -->
-<!--           is continuous at <m>1</m>. -->
-<!--         </p> -->
-<!--       </statement> -->
-<!--       <hint> -->
-<!--         <p> -->
-<!--           You may want to use the fact <m>\abs{\ln x}\lt -->
-<!--           \eps\,\Leftrightarrow-\eps\lt \ln x\lt \eps</m> to find a -->
-<!--           <m>\delta</m>. -->
-<!--         </p> -->
-<!-- </hint> -->
-<!-- </task> -->
-<!-- <task> -->
-<!--   <statement> -->
-<!--     <p> -->
-<!--       Use part (a) to prove that <m>\ln x</m> is continuous at any -->
-<!--       positive real number <m>a</m>. -->
-<!--     </p> -->
-<!-- </statement> -->
-<!-- <hint> -->
-<!--   <p> -->
-<!--     <m>\ln(x)=\ln(x/a)+\ln(a)</m>.  This is a combination of functions -->
-<!--     which are continuous at <m>a</m>.  Be sure to explain how you know -->
-<!--     that <m>\ln(x/a)</m> is continuous at <m>a</m>. -->
-<!--   </p> -->
-<!-- </hint> -->
-<!-- </task> -->
-<!-- </problem> -->
-
-<!-- <problem> -->
-<!--   <statement> -->
-<!--     <p> -->
-<!-- <idx><h>continuity</h><h>formal definition of discontinuity</h></idx> -->
-
-<!-- Write a formal definition of the statement <m>f</m> is not continuous -->
-<!-- at <m>a</m>, and use it to prove that the function -->
-<!-- <me> -->
-<!--   f(x)=  -->
-<!--   \begin{cases} -->
-<!--   x\amp \text{ if } x\neq 1\\ -->
-<!--   0\amp \text{if } x=1  -->
-<!--   \end{cases} -->
-<!-- </me> -->
-<!-- is not continuous at <m>a=1</m>. -->
-<!--     </p> -->
-<!-- </statement> -->
-<!-- </problem> -->
-<!-- </section> -->
+    <!--   <p> -->
+    <!--     The various integral definitions we<rsq/>ve seen so far have -->
+    <!--     all been equivalent in the sense that the value of the -->
+    <!--     integral is the same regardless of which definition is -->
+    <!--     used. This is not true of the Stieltjes integral. -->
+    <!--   </p> -->
+    <!--   <p> -->
+    <!--     To begin to understand the Stieltjes integral consider the -->
+    <!--     Riemann integral:  -->
+    <!--     <me> -->
+    <!--       \int_{x=1}^2x^2(2x) \dx{x} -->
+    <!--       </me>.  In your -->
+    <!--     Calculus you learned how to evaluate this integral as -->
+    <!--     follows. First we let <m>\alpha(x) = x^2</m> so that -->
+    <!--     <m>\dx{\alpha}=2x\dx{x}</m>, <m>\alpha (1)=1</m>, and -->
+    <!--     <m>\alpha (2)=4</m>, so that  -->
+    <!--     <me> -->
+    <!--       \int_{x=1}^1x^2(2x) \dx{x} = -->
+    <!--       \int_{ \alpha =1}^4  \alpha \dx{\alpha }=3 -->
+    <!--       </me>.   -->
+    <!--   </p> -->
+    <!-- </subsection> -->
 
 
-</chapter>
+
+    <!-- <section xml:id="Continuity-AddProb"> -->
+    <!--   <title>Additional Problems</title> -->
+    <!--   <problem> -->
+    <!--     <idx><h>continuous functions</h><h>a constant function is continuous</h></idx> -->
+
+    <!--     <statement> -->
+    <!--       <p> -->
+    <!--         Use the definition of continuity to prove that the constant -->
+    <!--         function <m>g(x)=c</m> is continuous at any point <m>a</m>. -->
+    <!--       </p> -->
+    <!--     </statement> -->
+    <!--   </problem> -->
+
+    <!--   <problem> -->
+    <!--     <idx><h>continuous functions</h><h><m>\ln x</m> is continuous everywhere</h></idx> -->
+    <!--     <task> -->
+    <!--       <statement> -->
+    <!--         <p> -->
+    <!--           Use the definition of continuity to prove that <m>\ln x</m> -->
+    <!--           is continuous at <m>1</m>. -->
+    <!--         </p> -->
+    <!--       </statement> -->
+    <!--       <hint> -->
+    <!--         <p> -->
+    <!--           You may want to use the fact <m>\abs{\ln x}\lt -->
+    <!--           \eps\,\Leftrightarrow-\eps\lt \ln x\lt \eps</m> to find a -->
+    <!--           <m>\delta</m>. -->
+    <!--         </p> -->
+    <!-- </hint> -->
+    <!-- </task> -->
+    <!-- <task> -->
+    <!--   <statement> -->
+    <!--     <p> -->
+    <!--       Use part (a) to prove that <m>\ln x</m> is continuous at any -->
+    <!--       positive real number <m>a</m>. -->
+    <!--     </p> -->
+    <!-- </statement> -->
+    <!-- <hint> -->
+    <!--   <p> -->
+    <!--     <m>\ln(x)=\ln(x/a)+\ln(a)</m>.  This is a combination of functions -->
+    <!--     which are continuous at <m>a</m>.  Be sure to explain how you know -->
+    <!--     that <m>\ln(x/a)</m> is continuous at <m>a</m>. -->
+    <!--   </p> -->
+    <!-- </hint> -->
+    <!-- </task> -->
+    <!-- </problem> -->
+
+    <!-- <problem> -->
+    <!--   <statement> -->
+    <!--     <p> -->
+    <!-- <idx><h>continuity</h><h>formal definition of discontinuity</h></idx> -->
+
+    <!-- Write a formal definition of the statement <m>f</m> is not continuous -->
+    <!-- at <m>a</m>, and use it to prove that the function -->
+    <!-- <me> -->
+    <!--   f(x)=  -->
+    <!--   \begin{cases} -->
+    <!--   x\amp \text{ if } x\neq 1\\ -->
+    <!--   0\amp \text{if } x=1  -->
+    <!--   \end{cases} -->
+    <!-- </me> -->
+    <!-- is not continuous at <m>a=1</m>. -->
+    <!--     </p> -->
+    <!-- </statement> -->
+    <!-- </problem> -->
+    <!-- </section> -->
+
+
+
 

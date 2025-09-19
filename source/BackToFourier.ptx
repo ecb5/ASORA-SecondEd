@@ -50,7 +50,7 @@
       <idx><h>Cantor, Georg</h></idx> 
 
       This led to a generalization of the integral by 
-      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/" visual="mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/">Henri Lebesgue</url>
+      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/" >Henri Lebesgue</url>
       in 1905.  Lebesgue<rsq/>s profound work settled the question: <q>Is
       a bounded pointwise converging trigonometric series the
       Fourier series of a function?</q> We will (very briefly) describe some of 
@@ -60,7 +60,7 @@
         But before we can do that we will need to understand the
         pioneering work of <url
         href="https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/"
-        visual="mathshistory.st-andrews.ac.uk/Biographies/Cantor/">Georg
+        >Georg
         Cantor</url> (1845<ndash/>1918) on <term>Set Theory</term> in the late 19th
         century.
         Cantor<rsq/>s work was also profound and had far reaching
@@ -76,7 +76,7 @@
         </p>
       </aside> 
       <figure>
-        <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/" visual="mathshistory.st-andrews.ac.uk/Biographies/Cantor/">Georg Cantor</url> </caption>
+        <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/" >Georg Cantor</url> </caption>
 
         <idx><h>Portraits</h><h>Cantor</h></idx>
         <idx><h>Cantor, Georg</h><h>portrait of</h></idx>
@@ -1467,7 +1467,7 @@
 <subsection xml:id="SUBSECTIONStieltjesInt">
   <title>The Steiltjes Integral</title>
   <figure  xml:id="FIGUREStieltjes">
-    <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Stieltjes/" visual="mathshistory.st-andrews.ac.uk/Biographies/Stieltjes/">Thomas Jan Stieltjes</url>
+    <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Stieltjes/" >Thomas Jan Stieltjes</url>
     (1856-1894)</caption>
     <image source="images/Stieltjes.jpg" width="35%">
       <shortdescription>Portrait of Thomas Stieltjes</shortdescription>
@@ -1536,7 +1536,7 @@
         function.  The trick is to not focus on the function but on
         the interval on which it is integrated and how to measure the
         subsets in a partition.  This generalization comes from 
-        <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/" visual="mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/">
+        <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/" >
           Henri
           Lebesgue</url> (1875-1941) in 1901.
       </p>
@@ -1666,7 +1666,7 @@
 
   </p>
   <figure  xml:id="FIGUREGiuseppeVitali">
-    <caption>  <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Vitali/" visual="mathshistory.st-andrews.ac.uk/Biographies/Vitali/">
+    <caption>  <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Vitali/" >
     Giuseppe Vitali</url> (1875-1932)</caption>
 
     <idx><h>Portraits</h><h>Vitali</h></idx>
@@ -1761,12 +1761,12 @@
      1877 correspondence of this result to his friend and fellow
      mathematician, <url
      href="https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/"
-     visual="mathshistory.st-andrews.ac.uk/Biographies/Dedekind/">Richard
+     >Richard
      Dedekind</url>, (1831<ndash/>1915) even Cantor remarked, <q>I see
      it, but I don<rsq/>t believe it!</q>
    </p>
    <figure>
-     <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/" visual="mathshistory.st-andrews.ac.uk/Biographies/Dedekind/">Richard Dedekind</url></caption>
+     <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/" >Richard Dedekind</url></caption>
 
      <idx><h>Dedekind, Richard</h><h>portrait of</h></idx>
      <idx><h>Portraits</h><h>Dedekind</h></idx>
@@ -2033,7 +2033,7 @@
      mathematics in the beginning of the twentieth century.  For
      example, in examining the proof of Cantor<rsq/>s Theorem, the
      eminent logician 
-     <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Russell/" visual="mathshistory.st-andrews.ac.uk/Biographies/Russell/">Bertrand Russell</url> (1872<ndash/>1970) devised his famous paradox in
+     <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Russell/" >Bertrand Russell</url> (1872<ndash/>1970) devised his famous paradox in
      1901.  
    </p>
 
@@ -2087,7 +2087,7 @@
     deal with fall under the category of what we would call
     <q>normal sets.</q> In fact, such an approach is officially
     called Naive Set Theory (as opposed to 
-    <url href="https://mathshistory.st-andrews.ac.uk/HistTopics/Beginnings_of_set_theory/" visual="mathshistory.st-andrews.ac.uk/HistTopics/Beginnings_of_set_theory/">Axiomatic Set Theory</url>).
+    <url href="https://mathshistory.st-andrews.ac.uk/HistTopics/Beginnings_of_set_theory/" >Axiomatic Set Theory</url>).
     However, attempts to put set theory and logic on solid footing
     led to the modern study of symbolic logic and ultimately the
     design of computer (machine) logic.
@@ -2123,10 +2123,10 @@
     every other mathematician). In fact, proving or disproving the
     Continuum Hypothesis, was one of <url
     href="https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/"
-    visual="mathshistory.st-andrews.ac.uk/Biographies/Hilbert/">David
+    >David
     Hilbert<rsq/>s</url> famous <url
     href="https://mathshistory.st-andrews.ac.uk/Extras/Hilbert_Problems/"
-    visual="mathshistory.st-andrews.ac.uk/Extras/Hilbert_Problems/">23
+    >23
     problems</url> which he presented as a challenge for the
     mathematics community at the International Congress of
     Mathematicians in 1900.
@@ -2165,11 +2165,11 @@
 
   <p>
     Efforts to prove or disprove this were in vain and with good
-    reason.  In 1940, the logician         <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Godel/"  visual="mathshistory.st-andrews.ac.uk/Biographies/Godel/">Kurt Gödel</url> showed that the
+    reason.  In 1940, the logician         <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Godel/"  >Kurt Gödel</url> showed that the
     Continuum Hypothesis could not be disproved from the
     
-    <url href="https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory" visual="en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory">Zermelo-Fraenkel Axioms</url> of set theory.  In 1963, 
-    <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Cohen/" visual="mathshistory.st-andrews.ac.uk/Biographies/Cohen/">Paul Cohen</url> (1934<ndash/>2007)
+    <url href="https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory" >Zermelo-Fraenkel Axioms</url> of set theory.  In 1963, 
+    <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Cohen/" >Paul Cohen</url> (1934<ndash/>2007)
     showed that the Continuum Hypothesis could not be proved using
     the Zermelo-Fraenkel Axioms.  In other words, the
     Zermelo-Fraenkel Axioms do not contain enough information to

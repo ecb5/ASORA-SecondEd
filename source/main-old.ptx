@@ -92,7 +92,7 @@
           <shortlicense>
             How We Got from There to Here: A Story of Real Analysis by
             Robert Rogers and Eugene Boman, is licensed under a 
-<url href="http://creativecommons.org/licenses/by-nc-sa/4.0/" visual="creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</url>.
+<url href="http://creativecommons.org/licenses/by-nc-sa/4.0/" > Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</url>.
           </shortlicense>
         </copyright>
 <!-- <p> -->
@@ -115,7 +115,7 @@
           The interested student can fill in the gaps we have left by
           making use of the extensive resources that can be found at
           the <url href="https://mathshistory.st-andrews.ac.uk/"
-          visual="mathshistory.st-andrews.ac.uk"> MacTutor</url>
+          > MacTutor</url>
           history of mathematics repository.
         </p>
         <p>
@@ -137,7 +137,7 @@
               The interactive figures in <xref
               ref="Interegnum"></xref> were created using the
               <url href="https://www.desmos.com/"
-              visual="www.desmos.com">Desmos online calculator</url>.
+              >Desmos online calculator</url>.
             </p>
           </li>
         </dl></p>

@@ -1530,10 +1530,10 @@
       uniform on any closed interval <m>[-b,b]\subset(-r,r)</m> which
       tells us that whatever the power series converges to must be a
       continuous function on <m>(-r,r)</m>.  Lastly, if
-      <m>f(x)=\sum_{n=0}^\infty a_nx^n</m> for <m>x\in(-r,r)</m>, then
-      <m>f^\prime(x)=\sum_{n=1}^\infty a_nnx^{n-1}</m> for
+      <m>f(x)=\displaystyle\sum_{n=0}^\infty a_nx^n</m> for <m>x\in(-r,r)</m>, then
+      <m>f^\prime(x)=\displaystyle}\sum_{n=1}^\infty a_nnx^{n-1}</m> for
       <m>x\in(-r,r)</m> and <m>\int_{t=0}^xf(t)\dx{ t} =
-      \sum_{n=0}^\infty a_n\frac{x^{n+1}}{n+1}</m> for
+      \displaystyle}\sum_{n=0}^\infty a_n\frac{x^{n+1}}{n+1}</m> for
       <m>x\in(-r,r)</m>.
     </p>
 
@@ -1545,16 +1545,16 @@
       ref="PROBLEMResultsFromGeometricSeries"></xref> of <xref
       ref="CalcIn17th18thCentury"></xref>, you see that we used
       the geometric series to obtain the series, <m>\arctan x
-      =\sum_{n=0}^\infty(-1)^n\frac{1}{2n+1}x^{2n+1}</m>.  We
+      =\displaystyle\sum_{n=0}^\infty(-1)^n\frac{1}{2n+1}x^{2n+1}</m>.  We
       substituted <m>x=1</m> into this to obtain
-      <m>\frac{\pi}{4}=\sum_{n=0}^\infty(-1)^n\frac{1}{2n+1}</m>.
+      <m>\frac{\pi}{4}=\displaystyle\sum_{n=0}^\infty(-1)^n\frac{1}{2n+1}</m>.
       Unfortunately, our integration was only guaranteed on a closed
       subinterval of the interval <m>(-1,1)</m> where the convergence
       was uniform and we substituted in <m>x=1</m>.  We <q>danced on
       the boundary</q> in other places as well, including when we said
       that
       <me>
-        \frac{\pi}{4}=\int_{x=0}^1\sqrt{1-x^2}\dx{x}=1+\sum_{n=1}^\infty\left(\frac{\prod_{j=0}^{n-1}\left(\frac{1}{2}-j\right)}{n!}\text{ } \right)\left(\frac{\left(-1\right)^n}{2n+1}\right)
+        \frac{\pi}{4}=\int_{x=0}^1\sqrt{1-x^2}\dx{x}=1+\displaystyle\sum_{n=1}^\infty\left(\frac{\prod_{j=0}^{n-1}\left(\frac{1}{2}-j\right)}{n!}\text{ } \right)\left(\frac{\left(-1\right)^n}{2n+1}\right)
         </me>.
     </p>
 
@@ -1636,17 +1636,20 @@
 
     <p>
       The proof of this is not intuitive, but involves a clever
-      technique known as Abel<rsq/>s Partial Summation Formula.
+      technique known as <xref ref="lemma_AbelsPartialSummationFormula" text="custom">Abel<rsq/>s Partial Summation Formula</xref>.
     </p>
 
     <lemma xml:id="lemma_AbelsPartialSummationFormula">
+      <title>
+        Abel<rsq/>s Partial Summation Formula
+      </title>
       <statement>
         <p>
           Let
           <me>
             a_1,a_2,\,\ldots,\,a_n,\,b_1,b_2,\,\ldots\,,\,b_n
           </me>
-          be real numbers and let <m>A_m=\sum_{k=1}^ma_k</m>.  Then
+          be real numbers and let <m>A_m=\displaystyle\sum_{k=1}^ma_k</m>.  Then
           <me>
             a_1b_1+a_2b_2+\cdots+a_nb_n=\sum_{j=1}^{n-1}A_j\left(b_j-b_{j+1}\text{ } \right)+A_nb_n
             </me>.
@@ -1667,20 +1670,21 @@
         <p>
           For <m>j>1</m>, <m>a_j=A_j-A_{j-1}</m>.
         </p>
+
       </hint>
     </problem>
 
     <lemma xml:id="lemma_AbelsLemma">
+      <title>
+        Abel<rsq/>s Lemma
+      </title>
       <statement>
-        <p>
-          <alert>Abel<rsq/>s Lemma</alert>
-        </p>
         <p>
           Let <m>a_1,a_2,\,\ldots,\,a_n,\,b_1,b_2,\,\ldots\,,\,b_n</m>
           be real numbers with <m>\,b_1\geq
           b_2\geq\,\ldots\geq\,b_n\geq 0</m> and let
-          <m>A_m=\sum_{k=1}^ma_k</m>.  Suppose <m>|A_m|\leq B</m> for
-          all <m>m</m>.  Then <m>|\sum_{j=1}^na_jb_j|\leq B\cdot
+          <m>A_m=\displaystyle\sum_{k=1}^ma_k</m>.  Suppose <m>|A_m|\leq B</m> for
+          all <m>m</m>.  Then <m>\displaystyle\abs{\sum_{j=1}^na_jb_j}\leq B\cdot
           b_1</m>.
         </p>
       </statement>
@@ -1708,10 +1712,10 @@
       </statement>
       <hint>
         <p>
-          Let <m>\eps\gt0</m>.  Since <m>\sum_{n=0}^\infty
+          Let <m>\eps\gt0</m>.  Since <m>\displaystyle{}\sum_{n=0}^\infty
           a_nr^n</m> converges then by the Cauchy Criterion, there
           exists <m>N</m> such that if <m>m>n>N</m> then
-          <m>\abs{\sum_{k=n+1}^ma_kr^k}\lt \frac{\eps }{2}</m>. Let
+          <m>\abs{\displaystyle \sum_{k=n+1}^ma_kr^k}\lt \frac{\eps }{2}</m>. Let
           <m>0\leq x\leq r</m>.
           
           By <xref ref="lemma_AbelsLemma" text="custom">Abel<rsq/>s Lemma</xref>,

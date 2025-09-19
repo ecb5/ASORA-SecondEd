@@ -1693,16 +1693,13 @@
       </p>
 
       <p>
-        This is what happened with the words
-        <q>open</q> and <q>closed.</q>
-        These are opposites in English:
-        <q>not open</q> is <q>closed,</q>
-        <q>not closed</q> is <q>open,</q>
-        and there is nothing which is both open and closed.
-        But recall that an open interval on the real line, <m>(a,b)</m>,
-        is one that does not include <em>either</em>
-        of its endpoints while a closed interval, <m>[a,b]</m>,
-        is one that includes both of them.
+        This is what happened with the words <q>open</q> and
+        <q>closed.</q> These are opposites in English: <q>not open</q>
+        is <q>closed,</q> <q>not closed</q> is <q>open,</q> and there
+        is nothing which is both open and closed.  But recall that an
+        open interval on the real line, <m>(a,b)</m>, is one that does
+        not include <em>either</em> of its endpoints while a closed
+        interval, <m>[a,b]</m>, is one that includes both of them.
       </p>
 
       <p>

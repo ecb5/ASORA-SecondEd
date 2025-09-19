@@ -4471,7 +4471,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.4",
   "title": "Boundary Issues and Abel’s Theorem",
-  "body": " Boundary Issues and Abel s Theorem  Summarizing our results, we see that any power series has a radius of convergence such that converges absolutely when and diverges when . Furthermore, the convergence is uniform on any closed interval which tells us that whatever the power series converges to must be a continuous function on . Lastly, if for , then for and for .  Thus power series are very well behaved within their interval of convergence, and our cavalier approach from is justified, EXCEPT for one issue. If you go back to of , you see that we used the geometric series to obtain the series, . We substituted into this to obtain . Unfortunately, our integration was only guaranteed on a closed subinterval of the interval where the convergence was uniform and we substituted in . We danced on the boundary in other places as well, including when we said that .  The fact is that for a power series with radius of convergence , we know what happens when and when . But we ve never talked about what happens when . That is because there is no systematic approach to this boundary problem. For example, consider the three series .  They are all related in that we started with the geometric series and integrated twice, thus they all have radius of convergence equal to 1. Their behavior on the boundary, i.e., when , is another story. The first series diverges when , the third series converges when . The second series converges when and diverges when .  Even with the unpredictability of a power series at the endpoints of its interval of convergence, the Weierstrass- test does give us some hope of uniform convergence.   power series Weierstrass- Test and  power series converge uniformly inside their radius of convergence   Suppose the power series has radius of convergence and the series converges absolutely. Then converges uniformly on .    For , .    Unfortunately, this result doesn t apply to the integrals we mentioned as the convergence at the endpoints is not absolute. Nonetheless, the integrations we performed in are still legitimate. This is due to the following theorem by Abel which extends uniform convergence to the endpoints of the interval of convergence even if the convergence at an endpoint is only conditional. Abel did not use the term uniform convergence, as it hadn t been defined yet, but the ideas involved are his.   Abel s Theorem  Abel, Niels Henrik Abel s Theorem   Suppose the power series has radius of convergence and the series converges. Then converges uniformly on .    The proof of this is not intuitive, but involves a clever technique known as Abel s Partial Summation Formula.    Let be real numbers and let . Then .     Abel, Niels Henrik Abel s Partial Summation Formula   Prove .    For , .       Abel s Lemma   Let be real numbers with and let . Suppose for all . Then .     Abel, Niels Henrik Abel s Lemma   Prove Abel s Lemma .     Abel, Niels Henrik Abel s Theorem   Prove Abel s Theorem .    Let . Since converges then by the Cauchy Criterion, there exists such that if then . Let . By Abel s Lemma , .  Thus for , ,       Suppose the power series has radius of convergence and the series converges. Then converges uniformly on .     power series uniform convergence of  uniform convergence power series and  uniform convergence of power series at the endpoints of the interval of convergence   Prove .    Apply Abel s Theorem to .    "
+  "body": " Boundary Issues and Abel s Theorem  Summarizing our results, we see that any power series has a radius of convergence such that converges absolutely when and diverges when . Furthermore, the convergence is uniform on any closed interval which tells us that whatever the power series converges to must be a continuous function on . Lastly, if for , then for and for .  Thus power series are very well behaved within their interval of convergence, and our cavalier approach from is justified, EXCEPT for one issue. If you go back to of , you see that we used the geometric series to obtain the series, . We substituted into this to obtain . Unfortunately, our integration was only guaranteed on a closed subinterval of the interval where the convergence was uniform and we substituted in . We danced on the boundary in other places as well, including when we said that .  The fact is that for a power series with radius of convergence , we know what happens when and when . But we ve never talked about what happens when . That is because there is no systematic approach to this boundary problem. For example, consider the three series .  They are all related in that we started with the geometric series and integrated twice, thus they all have radius of convergence equal to 1. Their behavior on the boundary, i.e., when , is another story. The first series diverges when , the third series converges when . The second series converges when and diverges when .  Even with the unpredictability of a power series at the endpoints of its interval of convergence, the Weierstrass- test does give us some hope of uniform convergence.   power series Weierstrass- Test and  power series converge uniformly inside their radius of convergence   Suppose the power series has radius of convergence and the series converges absolutely. Then converges uniformly on .    For , .    Unfortunately, this result doesn t apply to the integrals we mentioned as the convergence at the endpoints is not absolute. Nonetheless, the integrations we performed in are still legitimate. This is due to the following theorem by Abel which extends uniform convergence to the endpoints of the interval of convergence even if the convergence at an endpoint is only conditional. Abel did not use the term uniform convergence, as it hadn t been defined yet, but the ideas involved are his.   Abel s Theorem  Abel, Niels Henrik Abel s Theorem   Suppose the power series has radius of convergence and the series converges. Then converges uniformly on .    The proof of this is not intuitive, but involves a clever technique known as Abel s Partial Summation Formula .   Abel s Partial Summation Formula   Let be real numbers and let . Then .     Abel, Niels Henrik Abel s Partial Summation Formula   Prove .    For , .     Abel s Lemma   Let be real numbers with and let . Suppose for all . Then .     Abel, Niels Henrik Abel s Lemma   Prove Abel s Lemma .     Abel, Niels Henrik Abel s Theorem   Prove Abel s Theorem .    Let . Since converges then by the Cauchy Criterion, there exists such that if then . Let . By Abel s Lemma , .  Thus for , ,       Suppose the power series has radius of convergence and the series converges. Then converges uniformly on .     power series uniform convergence of  uniform convergence power series and  uniform convergence of power series at the endpoints of the interval of convergence   Prove .    Apply Abel s Theorem to .    "
 },
 {
   "id": "PowerSeriesRedux-AbelsThm-7",
@@ -4497,8 +4497,8 @@ var ptx_lunr_docs = [
   "url": "PowerSeriesRedux-AbelsThm.html#lemma_AbelsPartialSummationFormula",
   "type": "Lemma",
   "number": "11.4.3",
-  "title": "",
-  "body": "  Let be real numbers and let . Then .   "
+  "title": "Abel’s Partial Summation Formula.",
+  "body": " Abel s Partial Summation Formula   Let be real numbers and let . Then .   "
 },
 {
   "id": "PowerSeriesRedux-AbelsThm-12",
@@ -4515,8 +4515,8 @@ var ptx_lunr_docs = [
   "url": "PowerSeriesRedux-AbelsThm.html#lemma_AbelsLemma",
   "type": "Lemma",
   "number": "11.4.5",
-  "title": "",
-  "body": "   Abel s Lemma   Let be real numbers with and let . Suppose for all . Then .   "
+  "title": "Abel’s Lemma.",
+  "body": " Abel s Lemma   Let be real numbers with and let . Suppose for all . Then .   "
 },
 {
   "id": "PowerSeriesRedux-AbelsThm-14",
@@ -4561,7 +4561,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.1",
   "title": "The Rise of Set Theory",
-  "body": " The Rise of Set Theory  Cantor s work was instrumental in the re examination of the foundations of mathematics, one where mathematical ideas were recast in the language of sets. Nowadays we do this naturally, so it doesn t seem profound, but recasting mathematics in terms of Set Theory has fundamentally shaped our modern approach. We ve already seen this in , , and where we recast Cantor s definition of a limit point into set theoretic terms.  It turns out that we can also rewrite concepts such as limits and continuity in terms of sets. This led to a subject known as point set topology. We will not present all of the ideas from topology as this would require an entire new course with an entire new book. But we can give you a look into how analysis concepts are recast in this set theoretic manner.  For example, a set of real numbers is called closed if it contains all of its limit points. In other words, is closed if and only if If this sounds the same as our notion of a closed interval , it is meant to since the idea is to recast familiar notions in terms of sets. In fact, this closed interval contains all of its limit points, so it really is closed. To see this, we will show that any point not in is not a limit point of . First, suppose . If , then if we let , then so .   Prove that if , then is not a limit point of . This will complete the proof that is closed.   It is true that the term closed was modeled after closed intervals, but these are not the only closed sets. Each of the following are closed sets.    ,     ,     ,     ,    any finite set,              the union of two closed sets      Convince yourself that each of the above sets is closed.   At this point you can guess that an open set is modeled after an open interval . It is, and this can be defined succinctly as   Open Sets  Definition open set  open set definition of   A set of real numbers is open if its complement is closed.      Show that a set is open if and only if for all there is an such that     Notice that if is closed then is not a limit point of . What does tell you?     Open intervals are not the only open sets. Convince yourself that each of the following are also open sets.         where each is an open set.      Of course, there are sets which are neither open nor closed.  Convince yourself that these sets are neither open nor closed.   ,   ,        Again, we could spend an entire course delving into these concepts and more, but for our introduction we will show how the concept of continuity on a set can be repackaged into a statement involving sets. To transition into talking about functions and sets, we have the following two definitions. So we don't have to get into issues dealing with endpoints on intervals, etc., we will restrict ourselves to talking about functions whose domain is an open set of real numbers.     Definition image  Definition image pre image  image definition  image definition pre image  pre image definition  pre image definition image Let , we define the image of by   For any , we define the preimage of by     With these definitions we have the following result                  Show that is continuous at if and only if for every open set containing there is an open set containing with .        Notice that in the previous problem, can be written as . Based on this observation and the previous problem, continuity of on all of its domain has an even easier condition when stated in terms of open sets.   Show that is continuous on if and only if satisfies the following condition: for any open set of real numbers , is open.   The value of this reformulation of continuity, and similar definitions for limits in terms of open sets is that it can be generalized beyond the realm of real numbers to sets where the distance between points is either irrelevant or not even possible to determine. With this in mind, in 1914, Felix Hausdorff (1868 1942) defined what it means for a general set to have a topology based solely on sets and not relying on formulating a distance between its elements. Given an arbitrary nonempty set , we define a topology on to be a collection of subsets of which we designate to be open sets. The modern rendition of Hausdorff's definition of a topology says that must satisfy the following axioms.    and must be in .    An arbitrary union of open sets in must also be in .    The intersection of any finite number of open sets in must also be in .      Felix Hausdorff   Portrait of Felix Hausdorff    Hausdorff actually added an extra separation axiom.     For any two elements of , there must exist two disjoint open sets and with and .     Nowadays, a topological space (that is a set with a topology defined on it) which has this extra property is called a Hausdorff space.  This relatively simple idea generalizes our notion of open sets of real numbers and can be applied to a wide range of sets. We won't get into this, but we note that if we have a function from one topological space into another, we can define concepts like continuity by insisting that the preimage of any open set in the topology on must be open in the topology on . It would be hard to overstate the impact of this on modern mathematics.  "
+  "body": " The Rise of Set Theory  Cantor s work was instrumental in the re examination of the foundations of mathematics, whereby mathematical ideas were recast in the language of sets. Nowadays we do this naturally, so it doesn t seem profound, but recasting mathematics in terms of Set Theory has fundamentally shaped our modern approach. We ve already seen this in , , and where we recast Cantor s definition of a limit point into set theoretic terms.  It turns out that we can also rewrite concepts such as limits and continuity in terms of sets. This led to a subject known as point set topology. We will not present all of the ideas from topology as this would require an entire new course with an entire new book. But we can give you a brief look at how analysis concepts are recast in set theoretic form.  For example, a set of real numbers (not necessarily an interval) is called closed if it contains all of its limit points. Notice how similar this is to the definition of a closed interval. Since a closed interval contains all of its limit points (the endpoints), it is also a closed set. To see this, we will show that any point not in is not a limit point of .         Prove that a closed interval, is also a closed set.       First suppose that . There are two cases:   Case 1       Case 2   .        The converse of is not true. That is, not every closed set is also a closed interval. Convince yourself that each of the sets below is closed.    ,     ,     ,     ,    any finite set,              the union of two closed sets      At this point you ve probably guessed that the definition of an open set can be modeled on the definition of open interval. That is true, but is easier to use.   Open Sets  Definition open set  open set definition of   A set of real numbers is open if its complement is closed.      Show that a set is open if and only if for all there is an such that     Notice that if is closed then is not a limit point of . What does tell you?     Open intervals are not the only open sets. Convince yourself that each of the following are also open sets.         where each is an open set.      Of course, there are sets which are neither open nor closed.  Convince yourself that these sets are neither open nor closed.   ,   ,        Again, we could spend an entire course delving into these concepts, but for our introduction we will only show how the concept of continuity can be repackaged into a statement involving sets. To keep things simple we will restrict our attention to functions whose domain is an open set of real numbers.  We will need the following two definitions.   Definition image  Definition image pre image  image definition  image definition pre image  pre image definition  pre image definition image      Let , we define the image of by     For any , we define the preimage of by        With these definitions we have the following result                  Show that is continuous at if and only if for every open set containing there is an open set containing with .        Notice that in , can be expressed as . Based on this observation and , we have the following definition.   Topological Definition of Continuity   A function is continuous on if and only if satisfies the following condition: for any open set of real numbers , is also open.    The value of this reformulation of continuity (and similar definitions involving limits) in terms of open sets is that the concept of continuity can be generalized beyond the realm of real numbers to sets where the distance between points is either irrelevant or not even possible to determine. In , Felix Hausdorff (1868 1942) defined the concept of a topology on a set . His definition is based solely on sets and does not use the notion of distance or length which we have relied on hitherto. (The and that appeared in almost all of our convergence proofs measure a distance of some sort.)   Felix Hausdorff   Portrait of Felix Hausdorff    Given an arbitrary nonempty set , we define a topology on to be a collection of subsets of which we designate to be open sets. The modern rendition of Hausdorff s definition of a topology says that must satisfy the following axioms.    and must be in .    An arbitrary union of open sets in must also be in .    The intersection of any finite number of open sets in must also be in .     Hausdorff actually added an extra separation axiom.     For any two elements of , there must exist two disjoint open sets and with and .     Nowadays, a topological space (that is a set with a topology defined on it) which has this extra property is called a Hausdorff space .  This relatively simple idea generalizes our notion of open sets of real numbers and can be applied to a wide range of sets. We won't get into this, but we note that if we have a function from one topological space into another, we can define concepts like continuity by insisting that the preimage of any open set in the topology on must be open in the topology on . It would be hard to overstate the impact of this on modern mathematics.  "
 },
 {
   "id": "SECTIONRiseSetTheory-2",
@@ -4573,22 +4573,22 @@ var ptx_lunr_docs = [
   "body": "Set Theory "
 },
 {
-  "id": "SECTIONRiseSetTheory-5",
+  "id": "PROBLEMClosedIntIsClosedSet",
   "level": "2",
-  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-5",
+  "url": "SECTIONRiseSetTheory.html#PROBLEMClosedIntIsClosedSet",
   "type": "Problem",
   "number": "12.1.1",
   "title": "",
-  "body": " Prove that if , then is not a limit point of . This will complete the proof that is closed.  "
+  "body": "  Prove that a closed interval, is also a closed set.       First suppose that . There are two cases:   Case 1       Case 2   .      "
 },
 {
-  "id": "SECTIONRiseSetTheory-7",
+  "id": "SECTIONRiseSetTheory-6",
   "level": "2",
-  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-7",
+  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-6",
   "type": "Problem",
   "number": "12.1.2",
   "title": "",
-  "body": " Convince yourself that each of the above sets is closed.  "
+  "body": " The converse of is not true. That is, not every closed set is also a closed interval. Convince yourself that each of the sets below is closed.    ,     ,     ,     ,    any finite set,              the union of two closed sets     "
 },
 {
   "id": "DEFINITIONOpenSet",
@@ -4600,27 +4600,27 @@ var ptx_lunr_docs = [
   "body": " Open Sets  Definition open set  open set definition of   A set of real numbers is open if its complement is closed.   "
 },
 {
-  "id": "SECTIONRiseSetTheory-10",
+  "id": "SECTIONRiseSetTheory-9",
   "level": "2",
-  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-10",
+  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-9",
   "type": "Problem",
   "number": "12.1.4",
   "title": "",
   "body": "  Show that a set is open if and only if for all there is an such that     Notice that if is closed then is not a limit point of . What does tell you?   "
 },
 {
-  "id": "SECTIONRiseSetTheory-11",
+  "id": "SECTIONRiseSetTheory-10",
   "level": "2",
-  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-11",
+  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-10",
   "type": "Problem",
   "number": "12.1.5",
   "title": "",
   "body": " Open intervals are not the only open sets. Convince yourself that each of the following are also open sets.         where each is an open set.    "
 },
 {
-  "id": "SECTIONRiseSetTheory-12",
+  "id": "SECTIONRiseSetTheory-11",
   "level": "2",
-  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-12",
+  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-11",
   "type": "Problem",
   "number": "12.1.6",
   "title": "",
@@ -4633,25 +4633,34 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "12.1.7",
   "title": "",
-  "body": "   Definition image  Definition image pre image  image definition  image definition pre image  pre image definition  pre image definition image Let , we define the image of by   For any , we define the preimage of by    "
+  "body": " Definition image  Definition image pre image  image definition  image definition pre image  pre image definition  pre image definition image      Let , we define the image of by     For any , we define the preimage of by       "
 },
 {
-  "id": "SECTIONRiseSetTheory-16",
+  "id": "PROBLEMTopoDefCont",
   "level": "2",
-  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-16",
+  "url": "SECTIONRiseSetTheory.html#PROBLEMTopoDefCont",
   "type": "Problem",
   "number": "12.1.8",
   "title": "",
   "body": " Show that is continuous at if and only if for every open set containing there is an open set containing with .       "
 },
 {
-  "id": "SECTIONRiseSetTheory-18",
+  "id": "DEFINITIONTopoDefCont",
   "level": "2",
-  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-18",
-  "type": "Problem",
+  "url": "SECTIONRiseSetTheory.html#DEFINITIONTopoDefCont",
+  "type": "Definition",
   "number": "12.1.9",
+  "title": "Topological Definition of Continuity.",
+  "body": " Topological Definition of Continuity   A function is continuous on if and only if satisfies the following condition: for any open set of real numbers , is also open.   "
+},
+{
+  "id": "SECTIONRiseSetTheory-19",
+  "level": "2",
+  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-19",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
   "title": "",
-  "body": " Show that is continuous on if and only if satisfies the following condition: for any open set of real numbers , is open.  "
+  "body": "topology on a set "
 },
 {
   "id": "FIGUREHausdorffPortrait",
@@ -4661,6 +4670,15 @@ var ptx_lunr_docs = [
   "number": "12.1.10",
   "title": "",
   "body": " Felix Hausdorff   Portrait of Felix Hausdorff   "
+},
+{
+  "id": "SECTIONRiseSetTheory-24",
+  "level": "2",
+  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-24",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Hausdorff space "
 },
 {
   "id": "BackToFourier-InfiniteSets",

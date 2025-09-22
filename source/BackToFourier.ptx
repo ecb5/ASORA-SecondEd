@@ -1788,37 +1788,36 @@
             Integral</term> it is easy to get the impression that it
             is equivalent to <term>integration by substitution</term>
             and nothing more. But Stieltjes<rsq/> original efforts
-            were a little more general than that. His integral allowed
-            him to address to the moment problem he was working on
-            more simply than the Riemann integral would allow. It is
-            useful in probability and physics, in places where
-            <m>f</m> has jump discontinuities, and is generalizable to
-            a functional analysis setting where the <q>points</q> are
-            actually functions. But all of this is well beyond the
-            scope of this text.
+            were a little more general than that. He was working on
+            the moment problem we described at the beginning of this
+            section. His integral allowed him to address that problem
+            more simply than the Riemann integral would allow. The
+            <term>Stieltjes Integral</term> is also useful in
+            probability and physics, in places where <m>f</m> has jump
+            discontinuities, and is generalizable to a functional
+            analysis setting where the <q>points</q> are actually
+            functions. But all of this is well beyond the scope of
+            this text.
           </p>
           <p>
-            We did not give the more general form because our purpose
-            was to introduce the notion of <term>measure</term> of a
+            We focused on the notion of the <term>measure</term> of a
             set as distinct from the length of an interval because the
             <term>measure</term> of a set is the foundational idea
             that we will need to introduce our next topic, the
             <term>Lebesgue Integral</term>.
           </p>
-          <p>
-            # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
-          </p>
-          <p>
 
-            It also sets the stage for what we will focus on, which is to
-            find a way to integrate a function such as the <xref ref="PROBLEMDiricheletCountrExamp" text="custom">Dirichlet
-            Function</xref>.  The trick is to not focus on the function but on
-            the interval on which it is integrated and how to measure the
-            subsets in a partition.  This generalization comes from 
-            <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/" >
-              Henri
-              Lebesgue</url> (1875-1941) in <m>1901</m>.
-          </p>
+          <!-- <p> -->
+
+          <!--   It also sets the stage for what we will focus on, which is to -->
+          <!--   find a way to integrate a function such as the <xref ref="PROBLEMDiricheletCountrExamp" text="custom">Dirichlet -->
+          <!--   Function</xref>.  The trick is to not focus on the function but on -->
+          <!--   the interval on which it is integrated and how to measure the -->
+          <!--   subsets in a partition.  This generalization comes from  -->
+          <!--   <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/" > -->
+          <!--     Henri -->
+          <!--     Lebesgue</url> (1875-1941) in <m>1901</m>. -->
+          <!-- </p> -->
     </subsection>
     <subsection xml:id="SUBSECTIONLebesgueInt">
       <title>The Lebesgue Integral</title>

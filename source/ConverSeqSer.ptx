@@ -50,7 +50,7 @@
         We assume that you are familiar with the distinction between a
         sequence and a series from your Calculus course. However, for
         the sake of clarity we<rsq/>ll make this explicit here. A
-        <term>sequence</term> numbers is simply a
+        <term>sequence</term> of numbers is simply a
         comma<ndash/>separated list of numbers. A single number from a
         sequence is an <term>element</term> of the sequence.  A
         <term>series</term> is the sum of the elements of a
@@ -64,7 +64,7 @@
         </me>
         is a Geometric <term>Sequence</term>, whereas 
         <me>
-          1+\frac{1}{2}+ \frac{1}{4}+ \frac{1}{8} + \cdots{}) =
+          1+\frac{1}{2}+ \frac{1}{4}+ \frac{1}{8} + \cdots =
           \sum_{n=0}^\infty \frac{1}{2^n}
         </me>
         is a Geometric <term>Series</term>.
@@ -455,7 +455,7 @@
   <task>
     <statement>
       <p>
-        Where does your proof in part (c) break down if
+        Where does your proof in part (b) break down if
         <m>\abs{b}\ge 1</m>?
       </p>
     </statement>
@@ -499,7 +499,7 @@
       For the sake of specificity (rigor) we will let <m>\eps=2</m>.
     </p>
     <p>
-      Also let <m>N\in\NN</m> be any integer.
+      Also let <m>N\in\RR</m> be any real number.
       If we let <m>k</m> be any non<ndash/>negative integer with <m>k>\frac{N}{2}</m>,
       then <m>n=2k>N</m>, but <m>|1+(-1)^n|=2</m>.
       Thus no choice of <m>N</m> will satisfy the conditions of the definition for this <m>\eps</m>, (namely that
@@ -764,8 +764,8 @@
     </statement>
     <hint>
       <p>
-        You will probably need to separate this into two cases:
-        <m>0\lt b\lt 1</m> and <m>b\geq 1</m>.
+        You will probably need to separate this into three cases:
+        <m>0\lt b\lt 1</m>, <m>b=0</m>, and <m>b\gt 1</m>.
       </p>
     </hint>
   </problem>
@@ -1078,7 +1078,7 @@
       </theorem>
 
       <p>
-        We will often state this theorem informally as <q>the limit of
+        We  often state this theorem informally as <q>the limit of
         a sum is the sum of the limits.</q> However, to be absolutely
         precise, what it says is that if we already know that two
         sequences converge, then the sequence formed by summing their
@@ -1086,152 +1086,151 @@
         in fact, it will converge to the sum of those individual limits.
       </p>
       <p>
+        We<rsq/>ll provide the scrapwork and leave the formal
+        write<ndash/>up to you in <xref ref="PROBLEMLimitOfSum"
+        ></xref>. Be sure you justify every step. Also, note the role
+        of the <xref ref="Tri-RevTri-Ineq" text="custom">triangle
+        inequality</xref> in the proof.
       </p>
-
-      <problem>
-
-        <idx><h>sequences</h><h>termwise sums of</h></idx>
-
-        <statement>
-          <p>
-            Prove <xref ref="thm_SumOfSequences"></xref>.
-          </p>
-          <p>
-            We<rsq/>ll provide the scrapwork and leave the formal
-            write<ndash/>up to you. Be sure you justify every
-            step. Also, note the role of the <xref ref="Tri-RevTri-Ineq" text="custom">triangle inequality</xref> in
-            the proof.
-          </p>
-
-          <p>
-            <term>SCRAPWORK:</term>
-          </p>
-          <p>
-            If we let <m>\eps>0</m>, then we want to find <m>N</m>
-            such that if <m>n>N</m>, then
-            <m>\big|\left(a_n+b_n\right)-\left(a+b\right)\big|\lt
-            \eps</m>.  Since we know that
-            <m>\limit{n}{\infty}{a_n}=a</m> and
-            <m>\limit{n}{\infty}{b_n}=b</m>, we can make
-            <m>\big|a_n-a\big|</m> and <m>\big|b_n-b\big|</m> as small
-            as we wish, provided we make <m>n</m> large enough.
-            Let<rsq/>s go back to what we want, to see if we can close
-            the gap between what we know and what we want.  We know,
-            by the triangle inequality, that
-            <me>
-              \left|\left(a_n+b_n\right)-\left(a+b\right)\right|=\left|\left(a_n-a\right)+\left(b_n-b\right)\right|\leq\left|a_n-a\right|+\left|b_n-b\right|
-              </me>.
-              To make this whole thing less than <m>\eps</m>,
-              it makes sense to make each part less than <m>\frac{\eps}{2}</m>.
-              
-          </p>
-          <p>
-            Fortunately, we can do that as the definitions of 
-            <m>\limit{n}{\infty}{a_n}=a</m> and <m>\limit{n}{\infty}{b_n}=b</m> allow us to make
-            <m>\abs{a_n-a}</m> and <m>\abs{b_n-b}</m> arbitrarily small.
-          </p>
-          <p>
-            Specifically, since <m>\limit{n}{\infty}{a_n}=a</m>, there
-            exists an <m>N_1</m> such that if <m>n>N_1</m> then
-            <m>\abs{a_n-a}\lt \frac{\eps}{2}</m>.  Also since
-            <m>\limit{n}{\infty}{b_n}=b</m>, there exists an <m>N_2</m>
-            such that if <m>n>N_2</m> then <m>\abs{b_n-b}\lt
-            \frac{\eps}{2}</m>.  Since we want both of these to occur,
-            it makes sense to let
-            <m>N=</m>max<m>\left(N_1,N_2\right)</m>.  This should be the
-            <m>N</m> that we seek.
-          </p>
-        </statement>
-        <!-- <hint> -->
-        <!--   <title>SCRAPWORK</title> -->
-
-        <!--   <p> -->
-        <!--     <term>SCRAPWORK:</term> -->
-        <!--   </p> -->
-        <!--   <p> -->
-        <!--     If we let <m>\eps>0</m>, then we want to find <m>N</m> -->
-        <!--     such that if <m>n>N</m>, then -->
-        <!--     <m>\big|\left(a_n+b_n\right)-\left(a+b\right)\big|\lt -->
-        <!--     \eps</m>.  Since we know that -->
-        <!--     <m>\limit{n}{\infty}{a_n}=a</m> and -->
-        <!--     <m>\limit{n}{\infty}{b_n}=b</m>, we can make -->
-        <!--     <m>\big|a_n-a\big|</m> and <m>\big|b_n-b\big|</m> as small -->
-        <!--     as we wish, provided we make <m>n</m> large enough. -->
-        <!--     Let<rsq/>s go back to what we want, to see if we can close -->
-        <!--     the gap between what we know and what we want.  We know, -->
-        <!--     by the triangle inequality, that -->
-        <!--     <me> -->
-        <!--       \left|\left(a_n+b_n\right)-\left(a+b\right)\right|=\left|\left(a_n-a\right)+\left(b_n-b\right)\right|\leq\left|a_n-a\right|+\left|b_n-b\right| -->
-        <!--       </me>. -->
-        <!--       To make this whole thing less than <m>\eps</m>, -->
-        <!--       it makes sense to make each part less than <m>\frac{\eps}{2}</m>. -->
-
-        <!--   </p> -->
-        <!--   <p> -->
-        <!--     Fortunately, we can do that as the definitions of  -->
-        <!--     <m>\limit{n}{\infty}{a_n}=a</m> and <m>\limit{n}{\infty}{b_n}=b</m> allow us to make -->
-        <!--     <m>\abs{a_n-a}</m> and <m>\abs{b_n-b}</m> arbitrarily small. -->
-        <!--   </p> -->
-        <!--   <p> -->
-        <!--     Specifically, since <m>\limit{n}{\infty}{a_n}=a</m>, there -->
-        <!--     exists an <m>N_1</m> such that if <m>n>N_1</m> then -->
-        <!--     <m>\abs{a_n-a}\lt \frac{\eps}{2}</m>.  Also since -->
-        <!--     <m>\limit{n}{\infty}{b_n}=b</m>, there exists an <m>N_2</m> -->
-        <!--     such that if <m>n>N_2</m> then <m>\abs{b_n-b}\lt -->
-        <!--     \frac{\eps}{2}</m>.  Since we want both of these to occur, -->
-        <!--     it makes sense to let -->
-        <!--     <m>N=</m>max<m>\left(N_1,N_2\right)</m>.  This should be the -->
-        <!--     <m>N</m> that we seek. -->
-        <!--   </p> -->
-        <!-- </hint> -->
-      </problem>
-
-      <theorem xml:id="thm_LimitOfProduct">
-        <title>Limit of the Product of Sequences is the Product of the Limits</title>
-
-        <idx><h>limit</h><h> of a product of sequences</h></idx>
-        <idx><h>limit</h><h>products of</h></idx>
-
-        <statement>
-          <p>
-            If <m>\limit{n}{\infty}{a_n}=a</m> and <m>\limit{n}{\infty}{b_n}=b</m>,
-            then <m>\limit{n}{\infty}{\left(a_n b_n\right)}=a b</m>.
-          </p>
-        </statement>
-      </theorem>
-
 
       <p>
         <term>SCRAPWORK:</term>
-        Given <m>\eps>0</m>, we want <m>N</m> so that if <m>n>N</m>,
-        then <m>\abs{a_n  b_n-a  b}\lt \eps</m>.
-        One of the standard tricks in analysis is to <q>uncancel.</q>
-        In this case we will subtract and add a convenient term.
-        Normally these would <q>cancel out,</q>
-        which is why we say that we will uncancel to put them back in.
-        You already saw an example of this in proving the Reverse Triangle Inequality
-        (<xref ref="Tri-RevTri-Ineq_prob"></xref>).
-        In the present case, consider
-        <md>
-          <mrow>\abs{a_n  b_n-a  b}\amp =\abs{a_n  b_n-a_n b+a_n b-a  b}</mrow>
-          <mrow>\amp \leq \abs{a_n  b_n-a_n  b}+\abs{a_n b-a b}|</mrow>
-          <mrow>\amp =\abs{a_n}\abs{b_n-b}+\abs{b}\abs{a_n-a}</mrow>
-          </md>.
       </p>
+      <p>
+        If we let <m>\eps>0</m>, then we want to find <m>N</m> such
+        that if <m>n>N</m>, then
+        <m>\abs{\left(a_n+b_n\right)-\left(a+b\right)}\lt \eps</m>.
+        Since we know that <m>\limit{n}{\infty}{a_n}=a</m> and
+        <m>\limit{n}{\infty}{b_n}=b</m>, we can make
+        <m>\abs{a_n-a}</m> and <m>\abs{b_n-b}</m> as small as we wish,
+        provided we make <m>n</m> large enough.  Let<rsq/>s look
+        closely at our goal to see if we can close the gap between
+        what we know and what we want.  We know, by the triangle
+        inequality, that
+        <me>
+          \abs{\left(a_n+b_n\right)-\left(a+b\right)}=\abs{\left(a_n-a\right)+\left(b_n-b\right)}\leq\abs{a_n-a}+\abs{b_n-b}
+          </me>.
+          To make this whole thing less than <m>\eps</m>,
+          it makes sense to make each part less than <m>\frac{\eps}{2}</m>.
+          
+      </p>
+      <p>
+        Fortunately, we can do that as the definitions of 
+        <m>\limit{n}{\infty}{a_n}=a</m> and <m>\limit{n}{\infty}{b_n}=b</m> allow us to make
+        <m>\abs{a_n-a}</m> and <m>\abs{b_n-b}</m> arbitrarily small.
+      </p>
+      <p>
+        Specifically, since <m>\limit{n}{\infty}{a_n}=a</m>, there
+        exists an <m>N_1</m> such that if <m>n>N_1</m> then
+        <m>\abs{a_n-a}\lt \frac{\eps}{2}</m>.  Also since
+        <m>\limit{n}{\infty}{b_n}=b</m>, there exists an <m>N_2</m>
+        such that if <m>n>N_2</m> then <m>\abs{b_n-b}\lt
+        \frac{\eps}{2}</m>.  Since we want both of these to occur,
+        it makes sense to let
+        <m>N=</m>max<m>\left(N_1,N_2\right)</m>.  This should be the
+        <m>N</m> that we seek.
+        </p>
 
-      <p>
-        We can make this whole thing less than <m>\eps</m>, provided we
-        make each term in the sum less than <m>\frac{\eps}{2}</m>.  We
-        can make <m>\big|b\big|\big|a_n-a\big|\lt \frac{\eps}{2}</m> if
-        we make <m>\big|a_n-a\big|\lt \frac{\eps}{2|b|}</m>. 
-      </p>
-      <p>
-        But wait!
-        What if <m>b=0</m>? 
-      </p>
-      <p>
-        We could handle this as a separate case or
-        we can do the following <q>slick trick.</q> Notice that we can
+        <problem xml:id="PROBLEMLimitOfSum">
+
+          <idx><h>sequences</h><h>termwise sums of</h></idx>
+
+          <statement>
+            <p>
+              Prove <xref ref="thm_SumOfSequences"></xref>.
+            </p>
+
+          </statement>
+          <!-- <hint> -->
+          <!--   <title>SCRAPWORK</title> -->
+
+          <!--   <p> -->
+          <!--     <term>SCRAPWORK:</term> -->
+          <!--   </p> -->
+          <!--   <p> -->
+          <!--     If we let <m>\eps>0</m>, then we want to find <m>N</m> -->
+          <!--     such that if <m>n>N</m>, then -->
+          <!--     <m>\big|\left(a_n+b_n\right)-\left(a+b\right)\big|\lt -->
+          <!--     \eps</m>.  Since we know that -->
+          <!--     <m>\limit{n}{\infty}{a_n}=a</m> and -->
+          <!--     <m>\limit{n}{\infty}{b_n}=b</m>, we can make -->
+          <!--     <m>\big|a_n-a\big|</m> and <m>\big|b_n-b\big|</m> as small -->
+          <!--     as we wish, provided we make <m>n</m> large enough. -->
+          <!--     Let<rsq/>s go back to what we want, to see if we can close -->
+          <!--     the gap between what we know and what we want.  We know, -->
+          <!--     by the triangle inequality, that -->
+          <!--     <me> -->
+          <!--       \left|\left(a_n+b_n\right)-\left(a+b\right)\right|=\left|\left(a_n-a\right)+\left(b_n-b\right)\right|\leq\left|a_n-a\right|+\left|b_n-b\right| -->
+          <!--       </me>. -->
+          <!--       To make this whole thing less than <m>\eps</m>, -->
+          <!--       it makes sense to make each part less than <m>\frac{\eps}{2}</m>. -->
+
+          <!--   </p> -->
+          <!--   <p> -->
+          <!--     Fortunately, we can do that as the definitions of  -->
+          <!--     <m>\limit{n}{\infty}{a_n}=a</m> and <m>\limit{n}{\infty}{b_n}=b</m> allow us to make -->
+          <!--     <m>\abs{a_n-a}</m> and <m>\abs{b_n-b}</m> arbitrarily small. -->
+          <!--   </p> -->
+          <!--   <p> -->
+          <!--     Specifically, since <m>\limit{n}{\infty}{a_n}=a</m>, there -->
+          <!--     exists an <m>N_1</m> such that if <m>n>N_1</m> then -->
+          <!--     <m>\abs{a_n-a}\lt \frac{\eps}{2}</m>.  Also since -->
+          <!--     <m>\limit{n}{\infty}{b_n}=b</m>, there exists an <m>N_2</m> -->
+          <!--     such that if <m>n>N_2</m> then <m>\abs{b_n-b}\lt -->
+          <!--     \frac{\eps}{2}</m>.  Since we want both of these to occur, -->
+          <!--     it makes sense to let -->
+          <!--     <m>N=</m>max<m>\left(N_1,N_2\right)</m>.  This should be the -->
+          <!--     <m>N</m> that we seek. -->
+          <!--   </p> -->
+          <!-- </hint> -->
+        </problem>
+
+        <theorem xml:id="thm_LimitOfProduct">
+          <title>Limit of the Product of Sequences is the Product of the Limits</title>
+
+          <idx><h>limit</h><h> of a product of sequences</h></idx>
+          <idx><h>limit</h><h>products of</h></idx>
+
+          <statement>
+            <p>
+              If <m>\limit{n}{\infty}{a_n}=a</m> and <m>\limit{n}{\infty}{b_n}=b</m>,
+              then <m>\limit{n}{\infty}{\left(a_n b_n\right)}=a b</m>.
+            </p>
+          </statement>
+        </theorem>
+
+
+        <p>
+          <term>SCRAPWORK:</term>
+          Given <m>\eps>0</m>, we want <m>N</m> so that if <m>n>N</m>,
+          then <m>\abs{a_n  b_n-a  b}\lt \eps</m>.
+          One of the standard tricks in analysis is to <q>uncancel.</q>
+          In this case we will subtract and add a convenient term.
+          Normally these would <q>cancel out,</q>
+          which is why we say that we will uncancel to put them back in.
+          You already saw an example of this in proving the Reverse Triangle Inequality
+          (<xref ref="Tri-RevTri-Ineq_prob"></xref>).
+          In the present case, consider
+          <md>
+            <mrow>\abs{a_n  b_n-a  b}\amp =\abs{a_n  b_n-a_n b+a_n b-a  b}</mrow>
+            <mrow>\amp \leq \abs{a_n  b_n-a_n  b}+\abs{a_n b-a b}|</mrow>
+            <mrow>\amp =\abs{a_n}\abs{b_n-b}+\abs{b}\abs{a_n-a}</mrow>
+            </md>.
+        </p>
+
+        <p>
+          We can make this whole thing less than <m>\eps</m>, provided we
+          make each term in the sum less than <m>\frac{\eps}{2}</m>.  We
+          can make <m>\big|b\big|\big|a_n-a\big|\lt \frac{\eps}{2}</m> if
+          we make <m>\big|a_n-a\big|\lt \frac{\eps}{2|b|}</m>. 
+        </p>
+        <p>
+          But wait!
+          What if <m>b=0</m>? 
+        </p>
+        <p>
+          We could handle this as a separate case or
+          we can do the following <q>slick trick.</q> Notice that we can
           add one more line to the above string of inequalities:
           <me>\left|a_n\right|\left|b_n-b\right|+\left|b\right|\left|a_n-a\right|\lt
           \left|a_n
@@ -1302,19 +1301,7 @@
           </hint>
         </problem>
 
-        <problem>
-          
-          <idx><h>sequences</h><h>if the sequence <m>\left(s_n\right)</m> is bounded then
 
-          <m>\limit{n}{\infty}{\left(\frac{s_n}{n}\right)}=0</m></h></idx> 
-          <statement>
-            <p>
-              Prove that if the sequence <m>\left(s_n\right)</m> is
-              bounded then
-              <m>\limit{n}{\infty}{\left(\frac{s_n}{n}\right)}=0</m>.
-            </p>
-          </statement>
-        </problem>
 
         <p>
           Armed with <xref ref="lemma_BoundedConvergent" ></xref>  
@@ -1588,11 +1575,19 @@
           </proof>
 
           <p>
-            Notice that this proof is completely rigorous.
-            This is the proper way to use the Squeeze Theorem.
-            Here is an example of an <alert>improper</alert> use of the Squeeze Theorem.
+            Our proof in <xref ref="example_SqzeEx" ></xref> is
+            completely rigorous and is the proper way to use the <xref
+            ref="thm_SqueezeTheorem" text="custom">Squeeze
+            Theorem</xref>. 
           </p>
-          <example>
+          <p>
+            Next we give an example of an improper
+            use of the Squeeze Theorem. It is easy to fall into this
+            error. Be careful.
+          </p>
+
+
+          <example xml:id="EXAMPLENotUseSquzTheorem">
             <title>How Not to Use the Squeeze Theorem</title>
 
 
@@ -1620,8 +1615,22 @@
               The Squeeze Theorem proves that the limit does in fact exist,
               but it must be so stated.
             </p>
-</example>
+          </example>
 
+
+          <problem>
+            
+            <idx><h>sequences</h><h>if the sequence <m>\left(s_n\right)</m> is bounded then
+
+            <m>\limit{n}{\infty}{\left(\frac{s_n}{n}\right)}=0</m></h></idx> 
+            <statement>
+              <p>
+                Prove that if the sequence <m>\left(s_n\right)</m> is
+                bounded then
+                <me>\limit{n}{\infty}{\left(\frac{s_n}{n}\right)}=0</me>.
+              </p>
+            </statement>
+          </problem>
           <p>
             The general theorems we have seen in this section will
             allow us to rigorously explore convergence of power series
@@ -1802,9 +1811,8 @@
 
         <problem xml:id="PROBLEMBoundedSeqConv">
           <p>
-            Prove <m>\left(n\right)_{n=1}^\infty </m> that diverges
-            using <xref
-            ref="lemma_BoundedConvergent" ></xref>.
+            Prove that <m>\left(n\right)_{n=1}^\infty </m> diverges
+            using <xref ref="lemma_BoundedConvergent" ></xref>.
           </p>
         </problem>
             <p>

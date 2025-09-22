@@ -343,7 +343,7 @@
 
       Joseph<ndash/>Louis Lagrange 
       provided an alternate form for the remainder of a Taylor series
-      in his 1797 work <pubtitle>Théorie des functions
+      in his 1797 work <pubtitle>Théorie des fonctions
       analytiques</pubtitle> as
       follows.
     </p>
@@ -371,21 +371,22 @@
       <p>
         Note first that <xref ref="EQUATIONLagFormRemainder"
         >equation</xref> is true when <m>x=a</m> as both sides reduce
-        to <m>0</m> (in that case <m>c=x=a</m>.)
+        to <m>0</m> (in that case <m>c=x=a</m>.)  We will prove the
+        case where <m>a\lt x</m>. <xref
+        ref="PROBLEMFinishLagrRemainder" ></xref> asks you to prove
+        the case <m>x\lt a</m> thereby finishing the proof.
       </p>
-      <p>
-        We will prove the case
-        where <m>a\lt x</m>; the case <m>x\lt a</m> will be an
-        exercise.
-        First, we already have
-        <me>
-          f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)=\frac{1}{n!} \int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}
-        </me>
-        so it suffices to show that
-        <me>
-          \int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}=\,\frac{f^{\,(n+1)}(c)}{n+1}(x-a)^{n+1}
-        </me>
-        for some <m>c</m> with <m>c\in[\,a,x]</m>.
+        <p>
+          First, we
+          already have
+          <me>
+            f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)=\frac{1}{n!} \int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}
+          </me>
+          so it suffices to show that
+          <me>
+            \int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}=\,\frac{f^{\,(n+1)}(c)}{n+1}(x-a)^{n+1}
+          </me>
+          for some <m>c</m> with <m>c\in[\,a,x]</m>.
           To this end, let
           <me>
             M=\max_{a\le t\le x}\left(f^{(n+1)}(t)\right)
@@ -473,7 +474,7 @@
         </p>
     </proof>
 
-    <problem>
+    <problem xml:id="PROBLEMFinishLagrRemainder">
 
       <idx><h>Lagrange<rsq/>s form of the remainder</h><h><m>x\lt a</m></h></idx>
 
@@ -509,7 +510,7 @@
       Lagrange<rsq/>s proof in that he also used the <xref
       ref="IntermediateValueTheorem" text="custom">Intermediate Value
       Theorem</xref> (IVT) and <xref ref="thm_EVT"
-      text="custom">Extreme Value Theorem</xref> (<term>EVT</term>) much as we did
+      text="custom">Extreme Value Theorem</xref> (EVT) much as we did
       just now.
     </p>
     <p>
@@ -823,17 +824,9 @@
         1+\frac{1}{2}x+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)}{2!}x^2+\frac{\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)}{3!}x^3+\cdots
       </me>
       converges to <m>\sqrt{1+x}</m> for
-      <m>x\in(-1,0).</m>
+      <m>x\in(-1,0).</m> (Strictly speaking we only need to show this for <m>x\in(-1,-1/2)
+      </m>. We covered the case <m>x\in [-1/2,0]</m> in <xref ref="prob_Taylor_Series-Binomial_Series_and"></xref>.)
     </p>
-    <aside>
-      
-
-      <p>   
-        Strictly speaking we only need to show this for <m>x\in(-1,-1/2)
-        </m>. We covered the case <m>x\in (-1/2,0)</m> in <xref ref="prob_Taylor_Series-Binomial_Series_and"></xref>. 
-        
-      </p>
-    </aside> 
 
     <p>
       With this in mind,

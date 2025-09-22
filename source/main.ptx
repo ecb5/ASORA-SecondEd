@@ -28,6 +28,7 @@
     
     <part xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="FindingAnswers">
       <title>In Which We Find (Some) Answers</title>
+
       <xi:include href="./ConverSeqSer.ptx" />
       
       <xi:include href="./TaylorSeries.ptx" />

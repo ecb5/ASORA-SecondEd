@@ -836,7 +836,9 @@
         <ul>
           <li>
             <p>
-              For any two elements <m>x,y</m> of <m>S</m>, there must exist two disjoint open sets <m>U_x</m> and <m>U_y</m> with <m>x\in U_x</m> and <m>y\in U_y</m>.
+              For any two elements <m>x,y</m> of <m>S</m>, there must
+              exist two disjoint open sets <m>U_x</m> and <m>U_y</m>
+              with <m>x\in U_x</m> and <m>y\in U_y</m>.
             </p>
           </li>
         </ul>
@@ -849,13 +851,14 @@
       </p>
       <p>
         This relatively simple idea generalizes our notion of open
-        sets of real numbers and can be applied to a wide range of
-        sets. We won't get into this, but we note that if we have a
-        function <m>f:S\to T</m> from one topological space into
-        another, we can define concepts like continuity by insisting
-        that the preimage of any open set in the topology on <m>T</m>
-        must be open in the topology on <m>S</m>.  It would be hard to
-        overstate the impact of this on modern mathematics.
+        intervals in the real numbers and can be applied to a wide
+        range of sets. We won<rsq/>t go into this very deeply, but we
+        note that if we have a function <m>f:S\to T</m> from one
+        topological space into another, we can define concepts like
+        continuity by insisting that the preimage of any open set in
+        the topology on <m>T</m> must be open in the topology on
+        <m>S</m>.  It would be hard to overstate the impact of 
+        generalizaions of this sort on modern mathematics.
       </p>
 
   </section>
@@ -864,13 +867,14 @@
   <section  xml:id="BackToFourier-InfiniteSets">
     <title>Infinite Sets</title>
     <p>
-      Cantor<rsq/>s work with sets of real numbers prompted him to
-      study the sizes of various infinite sets in general.  The
-      following theorem follows directly from our previous work with
-      the <xref ref="NIP" text="custom">NIP</xref>  and will be very handy later.  It basically says that a
-      sequence of nested closed intervals will still have a non<ndash/>empty
-      intersection even if their lengths do not converge to zero as in
-      the <xref ref="NIP" text="custom">NIP</xref> .
+      Cantor<rsq/>s work with Fourier series prompted him to study the
+      sizes of various infinite sets.  The following theorem follows
+      directly from our previous work with the <xref ref="NIP"
+      text="custom">NIP</xref> and will be very handy later.  It is a
+      slightly weaker version of the NIP which says that the
+      intersection of a sequence of nested closed intervals will be
+      non<ndash/>empty intersection even if their lengths do not
+      converge to zero.
     </p>
 
     <theorem xml:id="thm_WeakNIP">
@@ -952,7 +956,8 @@
             To streamline things, we are abusing notation here as we
             are letting <m>S</m> denote both the sequence (which is
             ordered) and the underlying (unordered) set of entries in
-            the sequence.
+            the sequence. Which usage is meant will be clear from the
+            context.
           </p>  
         </aside>
       </statement>
@@ -973,79 +978,90 @@
         <m>\left[x_1,y_1\right]</m> to be the first interval.
       </p>
 
+      <!-- <p> -->
+      <!--   Next we assume that <m>\left[x_{n-1}, y_{n-1}\right]</m> has -->
+      <!--   been constructed and build <m>\left[x_n, y_n\right]</m> as -->
+      <!--   follows.  Observe that there are infinitely many elements of -->
+      <!--   <m>S</m> in <m>\left(x_{n-1}, y_{n-1}\right)</m> since -->
+      <!--   <m>S=\RR</m>.  Let <m>s_m</m> and <m>s_k</m> be the first two -->
+      <!--   distinct elements of <m>S</m> such that <me> s_m, s_k \in -->
+      <!--   \left(x_{n-1}, y_{n-1}\right) </me>. -->
+      <!-- </p> -->
       <p>
         Next we assume that <m>\left[x_{n-1}, y_{n-1}\right]</m> has
         been constructed and build <m>\left[x_n, y_n\right]</m> as
         follows.  Observe that there are infinitely many elements of
         <m>S</m> in <m>\left(x_{n-1}, y_{n-1}\right)</m> since
-        <m>S=\RR</m>.  Let <m>s_m</m> and <m>s_k</m> be the
-        <em>first</em> two distinct elements of <m>S</m> such that
-        <me> s_m, s_k \in \left(x_{n-1}, y_{n-1}\right) </me>.
-      </p>
-
-      <p>
-        Take <m>x_n</m> to be the smaller and <m>y_n</m> to be the
-        larger of <m>s_m</m> and <m>s_k</m>.  Then <m>\left[x_n,
+        <m>S=\RR</m>.  Let <m>x_n</m> and <m>y_n</m> be the first two
+        distinct elements of <m>S</m> such that <me> x_n, y_n \in
+        \left(x_{n-1}, y_{n-1}\right) </me> with <m>x_n\lt y_n</m>.
+        Then <m>\left[x_n,
         y_n\right]</m> is the <m>n</m>th interval.
-      </p>
+        </p>
 
-      <p>
-        From the way we constructed them it is clear that <me>
-        \left[x_1, y_1\right] \supseteq \left[x_2, y_2\right]
-        \supseteq \left[x_3, y_3\right] \supseteq \ldots </me>.
-      </p>
+        <!-- <p> -->
+        <!--   Take <m>x_n</m> to be the smaller and <m>y_n</m> to be the -->
+        <!--   larger of <m>s_m</m> and <m>s_k</m>.  Then <m>\left[x_n, -->
+        <!--   y_n\right]</m> is the <m>n</m>th interval. -->
+        <!-- </p> -->
 
-      <p>
-        Therefore by <xref ref="thm_WeakNIP"></xref> there is a
-        real number, say <m>c</m>, such that <me> c\in\left[x_n,
-        y_n\right] \text{ for all } n\in\NN </me>.
-      </p>
+        <p>
+          From the way we constructed them it is clear that <me>
+          \left[x_1, y_1\right] \supseteq \left[x_2, y_2\right]
+          \supseteq \left[x_3, y_3\right] \supseteq \ldots </me>.
+        </p>
 
-      <p>
-        In fact, since <m>x_1\lt x_2\lt x_3\ldots\lt y_3\lt y_2\lt
-        y_1</m> it is clear that
-        <men xml:id="eq_NIP-interval">
-          x_n\lt c\lt y_n, \ \forall n
-          </men>.
-      </p>
+        <p>
+          Therefore by <xref ref="thm_WeakNIP"></xref> there is a
+          real number, say <m>c</m>, such that <me> c\in\left[x_n,
+          y_n\right] \text{ for all } n\in\NN </me>.
+        </p>
 
-      <p>
-        We will show that <m>c</m> is the number we seek.  That the
-        inequalities in <xref ref="eq_NIP-interval">formula</xref> are
-        strict will play a crucial role.
-      </p>
+        <p>
+          In fact, since <m>x_1\lt x_2\lt x_3\ldots\lt y_3\lt y_2\lt
+          y_1</m> it is clear that
+          <men xml:id="eq_NIP-interval">
+            x_n\lt c\lt y_n, \ \forall n
+            </men>.
+        </p>
 
-      <p>
-        To see that <m>c\not\in S</m> we suppose that <m>c\in S</m>
-        and derive a contradiction.
-      </p>
+        <p>
+          We will show that <m>c</m> is the number we seek.  That the
+          inequalities in <xref ref="eq_NIP-interval">formula</xref> are
+          strict will play a crucial role.
+        </p>
 
-      <p>
-        So, suppose that <m>c=s_p</m> for some <m>p\in\NN</m>.  Then
-        only <m>\left\{s_1, s_2,\ldots, s_{p-1}\right\}</m> appear
-        before <m>s_p</m> in the sequence <m>S</m>.  Since each
-        <m>x_n</m> is taken from <m>S</m> it follows that only
-        finitely many elements of the sequence <m>(x_n)</m> appear
-        before <m>s_p=c</m> in the sequence as well.
-      </p>
+        <p>
+          To see that <m>c\not\in S</m> we suppose that <m>c\in S</m>
+          and derive a contradiction.
+        </p>
 
-      <p>
-        Let <m>x_l</m> be the <em>last</em> element of <m>(x_n)</m>
-        which appears before <m>c=s_p</m> in the sequence and consider
-        <m>x_{l+1}</m>.  The way it was constructed, <m>x_{l+1}</m>
-        was one of the first two distinct terms in the sequence
-        <m>S</m> strictly between <m>x_l</m> and <m>y_l</m>, the other
-        being <m>y_{l+1}</m>.  Since <m>x_{l+1}</m> does not appear
-        before <m>c=s_p</m> in the sequence and <m>x_l\lt c\lt
-        y_l</m>, it follows that either <m>c=x_{l+1}</m> or
-        <m>c=y_{l+1}</m>.  However, this gives us a contradiction as
-        we know from <xref ref="eq_NIP-interval">formula</xref> that
-        <m>x_{l+1}\lt c\lt y_{l+1}</m>.
-      </p>
+        <p>
+          So, suppose that <m>c=s_p</m> for some <m>p\in\NN</m>.  Then
+          only <m>\left\{s_1, s_2,\ldots, s_{p-1}\right\}</m> appear
+          before <m>s_p</m> in the sequence <m>S</m>.  Since each
+          <m>x_n</m> is taken from <m>S</m> it follows that only
+          finitely many elements of the sequence <m>(x_n)</m> appear
+          before <m>s_p=c</m> in the sequence as well.
+        </p>
 
-      <p>
-        Thus <m>c</m> is not an element of <m>S</m>.
-      </p>
+        <p>
+          Let <m>x_l</m> be the <em>last</em> element of <m>(x_n)</m>
+          which appears before <m>c=s_p</m> in the sequence and consider
+          <m>x_{l+1}</m>.  The way it was constructed, <m>x_{l+1}</m>
+          was one of the first two distinct terms in the sequence
+          <m>S</m> strictly between <m>x_l</m> and <m>y_l</m>, the other
+          being <m>y_{l+1}</m>.  Since <m>x_{l+1}</m> does not appear
+          before <m>c=s_p</m> in the sequence and <m>x_l\lt c\lt
+          y_l</m>, it follows that either <m>c=x_{l+1}</m> or
+          <m>c=y_{l+1}</m>.  However, this gives us a contradiction as
+          we know from <xref ref="eq_NIP-interval">formula</xref> that
+          <m>x_{l+1}\lt c\lt y_{l+1}</m>.
+        </p>
+
+        <p>
+          Thus <m>c</m> is not an element of <m>S</m>.
+        </p>
     </proof>
 
     <p>
@@ -1057,23 +1073,24 @@
 
     <p>
       First let<rsq/>s consider two finite sets, say
-      <m>A=\left\{\alpha,\beta,\gamma,\delta\right\}</m> and
-      <m>B=\left\{a,b,c,d,e\right\}</m>.  How do we know that <m>B</m>
-      is the bigger set? (It obviously is.) Clearly we can just count
-      the number of elements in both <m>A</m> and <m>B</m>.  Since
-      <m>\abs{A}=4</m> and <m>\abs{B}=5</m> and <m>4\lt 5</m> <m>B</m>
-      is clearly bigger.  But we<rsq/>re looking for a way to determine the
-      relative size of two sets without counting them because we have
-      no way of counting the number of elements of an infinite set.
-      Indeed, it isn<rsq/>t even clear what the phrase <q>the number of
-      elements</q> might <em>mean</em> when applied to the elements of
-      an infinite set.
+      <md>
+        <mrow>        A=\left\{\alpha,\beta,\gamma,\delta\right\}
+        \amp{}\amp{}\text{and}\amp{}\amp{}B=\left\{a,b,c,d,e\right\}.</mrow>
+      </md>
+      How do we know that <m>B</m>
+      is the bigger set? One way is to simply count
+      the number of elements in both sets. Clearly <m>B</m>
+      is  bigger since <m>\abs{A}=4</m> and <m>\abs{B}=5</m>
+      and <m>4\lt 5</m>.  But we have no way of counting the number of elements of an
+      infinite set.  Indeed, it isn<rsq/>t even clear what the phrase
+      <q>the number of elements</q> might <em>mean</em> when applied
+      to  an infinite set. So we need to find another way.
     </p>
 
     <p>
-      When we count the number of elements in a finite set what we<rsq/>re
-      really doing is matching up the elements of the set with a set
-      of consecutive positive integers, starting at <m>1</m>.  Thus
+      When we count the number of elements in a finite set  we are 
+       matching up the elements of the set with a set
+       of consecutive positive integers, starting at <m>1</m>.  Thus
       since
       <md>
         <mrow>1\amp \leftrightarrow\alpha</mrow>
@@ -1082,7 +1099,7 @@
         <mrow>4\amp \leftrightarrow\delta</mrow>
       </md>
       we see that <m>\abs{A}=4</m>.  Moreover, the order of the
-      match<ndash/>up is unimportant.  Thus since
+      match<ndash/>up is unimportant.   Since
       <md>
         <mrow>2\amp \leftrightarrow e</mrow>
         <mrow>3\amp \leftrightarrow a</mrow>
@@ -1121,6 +1138,7 @@
       (cardinalities) of infinite sets.
     </p>
 
+
     <definition xml:id="def_CountableSets">
       
       <idx><h>Definition</h><h>countable sets</h></idx>    
@@ -1139,6 +1157,9 @@
       </statement>
     </definition>
 
+
+
+
     <p>
       <idx><h>Cantor, Georg</h></idx>
 
@@ -1150,7 +1171,7 @@
     </p>
 
     <aside>
-      <title>Notation: <m>\aleph_0</m></title>
+      <title>: <m>\boldsymbol\aleph_0</m></title>
       <p>
         <m>\aleph{}</m> is the first letter of the Hebrew alphabet and
         is pronounced <q>aleph.</q> <m>\aleph_0</m> is pronounced
@@ -1175,6 +1196,8 @@
       </statement>
     </definition>
 
+
+
     <p>
       <idx><h>infinite sets</h><h>uncountable</h></idx>
 
@@ -1189,12 +1212,26 @@
       natural numbers.
     </p>
 
+    <aside>
+      <title>
+        Size vs. Cardinality
+      </title>
+      <p>
+        It is natural to use the word <q>size</q> in the context of
+        infinite sets but <q>size</q> conjures up a mental image that
+        really doesn<rsq/>t apply. This is why we use
+        <q>cardinality</q>. For example all of the sets in <xref
+        ref="PROBLEMCountableDrills" ></xref> have the same
+        cardinality. Would you say they are the same size?
+      </p>
+    </aside>
+
     <p>
       To see this let us suppose first that each real number appears
-      in the sequence <m>(s_n)_{n=1}^\infty</m> exactly once.  In that
-      case the indexing of our sequence is really just a one<ndash/>to<ndash/>one
-      correspondence between the elements of the sequence and
-      <m>\NN:</m>
+      in the sequence <m>(s_n)_{n=1}^\infty</m> at least once.  In
+      that case the indexing of our sequence is really just a
+      one<ndash/>to<ndash/>one correspondence between the elements of
+      the sequence and <m>\NN:</m>
       <md>
         <mrow>1\amp \leftrightarrow s_1</mrow>
         <mrow>2\amp \leftrightarrow s_2</mrow>
@@ -1204,21 +1241,22 @@
       </md>
     </p>
 
-    <p>
-      If some real numbers are repeated in our sequence then all of
-      the real numbers are a subset of our sequence and will therefore
-      also be countable by part (a) of  <xref
-      ref="prob_countable_sets_unions_of"></xref>.
-    </p>
+    <!-- <p> -->
+    <!--   If some real numbers are repeated in our sequence then all of -->
+    <!--   the real numbers are a subset of our sequence and will therefore -->
+    <!--   also be countable as we will see in  part (a) of  <xref -->
+    <!--   ref="prob_countable_sets_unions_of"></xref>. -->
+    <!-- </p> -->
 
     <p>
-      In either case, every sequence is countable.  But <xref ref="thm_NoSeriesContainsAllReals" ></xref> 
-      says that <em>no</em> sequence in <m>\RR</m> includes all of
-      <m>\RR</m>.  Therefore <m>\RR</m> is uncountable.
+      Therefore <m>\left(s_n\right)_{n=1}^\infty </m> is countable.
+      But <xref ref="thm_NoSeriesContainsAllReals" ></xref> says that
+      no sequence in <m>\RR</m> includes all of <m>\RR</m>.  Therefore
+      <m>\RR</m> is uncountable.
     </p>
 
 
-    <problem>
+    <problem xml:id="PROBLEMCountableDrills">
       
       <idx><h>countable sets</h><h>countable sets drill, 5 parts</h></idx>
       
@@ -1411,82 +1449,81 @@
       <q>feel</q> like they should be uncountable are not. This makes
       the uncountability of <m>\RR</m> all the more remarkable.
     </p>
-    <aside>
+    <!-- <aside> -->
       
 
-      <p>    
-        The failure is in the methods we<rsq/>ve used so far.  It is
-        possible to build an uncountable set using just two symbols if
-        we<rsq/>re clever enough, but this would take us too far away from
-        our main topic so we won<rsq/>t pursue it.
-      </p>
-      <p>
-        Do you see how it might be done?
-      </p>
-    </aside> 
-
-    <p>
-      However if we <em>start</em> with an uncountable set it is relatively easy to build others from it.
+    <p>    
+      The failure is in the methods we<rsq/>ve used so far.  It is
+      possible to build an uncountable set using just two symbols if
+      we<rsq/>re clever enough, but this would take us too far away from
+      our main topic so we won<rsq/>t pursue it.
+      Do you see how it might be done?
     </p>
+      <!-- </aside>  -->
 
-    <problem>
-      
-      <idx><h>sets</h><h>intervals are uncountable</h></idx>
+      <p>
+        On the other hand if we start with an uncountable set it is
+        relatively easy to build others from it.
+      </p>
 
-      <task>
-        <statement>
-          <p>
-            Let <m>(a,b)</m> and <m>(c,d)</m> be two open intervals of
-            real numbers.  Show that these two sets have the same
-            cardinality by constructing a one<ndash/>to<ndash/>one onto function
-            between them.
-          </p>
-        </statement>
-        <hint>
-          <p>
-            A linear function should do the trick.
-          </p>
-        </hint>
-      </task>
-      <task>
-        <statement>
-          <p>
-            Show that any open interval of real numbers has the same
-            cardinality as <m>\RR</m>.
-          </p>
-        </statement>
-        <hint>
-          <p>
-            Consider the interval <m>(-\pi/2,\pi/2)</m>.
-          </p>
-        </hint>
-      </task>
-      <task>
-        <statement>
-          <p>
-            Show that <m>(0,1]</m> and <m>(0,1)</m> have the same cardinality. 
-          </p>
-        </statement>
-        <hint>
-          <p>
-            If <m>x\not\in \QQ{}</m> let <m>x</m> correspond to
-            itself. Note that  <m>\QQ \cap (0,1)</m> and <m>\QQ
-            \cap (0,1]</m> are both countable.
-            <!--   Note that <m>\left\{1,1/2,1/3,\ldots\right\}</m> and -->
-            <!--   <m>\left\{1/2, 1/3, \ldots\right\}</m> have the same -->
-            <!--   cardinality. -->
-        </p>
-      </hint>
-      </task>
-      <task>
-        <statement>
-          <p>
-            Show that <m>[0,1]</m> and <m>(0,1)</m> have the same
-            cardinality.
-          </p>
-        </statement>
-      </task>
-    </problem>
+      <problem>
+        
+        <idx><h>sets</h><h>intervals are uncountable</h></idx>
+
+        <task>
+          <statement>
+            <p>
+              Let <m>(a,b)</m> and <m>(c,d)</m> be two open intervals of
+              real numbers.  Show that these two sets have the same
+              cardinality by constructing a one<ndash/>to<ndash/>one onto function
+              between them.
+            </p>
+          </statement>
+          <hint>
+            <p>
+              A linear function should do the trick.
+            </p>
+          </hint>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Show that any open interval of real numbers has the same
+              cardinality as <m>\RR</m>.
+            </p>
+          </statement>
+          <hint>
+            <p>
+              Consider the interval <m>(-\pi/2,\pi/2)</m>.
+            </p>
+          </hint>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Show that <m>(0,1]</m> and <m>(0,1)</m> have the same cardinality. 
+            </p>
+          </statement>
+          <hint>
+            <p>
+              If <m>x\not\in \QQ{}</m> let <m>x</m> correspond to
+              itself. Note that  <m>\QQ \cap (0,1)</m> and <m>\QQ
+              \cap (0,1]</m> are both countable.
+              <!--   Note that <m>\left\{1,1/2,1/3,\ldots\right\}</m> and -->
+              <!--   <m>\left\{1/2, 1/3, \ldots\right\}</m> have the same -->
+              <!--   cardinality. -->
+            </p>
+          </hint>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Show that <m>[0,1]</m> and <m>(0,1)</m> have the same
+              cardinality.
+            </p>
+          </statement>
+        </task>
+      </problem>
   </section>
 
   <section xml:id="SECTIONLebesgMeas">
@@ -1504,92 +1541,284 @@
           1, \amp \text{ if }  x \text{ is irrational}
           \end{cases}
         </me>
-        is not Riemann (Cauchy, or Darboux) integrable . Dirichlet
-        invented this function simply as an example of a
+        is not Riemann (Cauchy, Darboux) integrable. Dirichlet
+        invented this function as an example of a
         non<ndash/>integrable function. In itself it has no importance
         beyond that. However the existence of non<ndash/>integrable
-        functions suggests the question, can the integral be defined in
-        such a way as to capture all of the intuitive features known to
-        17th century mathematicians and which allows us to integrate
-        something as seemingly bizarre as the Dirichlet Function?
+        functions suggests a question: Can the integral be defined
+        in such a way as to capture all of the intuitive features of integration
+        known to <m>17</m>th century mathematicians and which allows us to
+        integrate something as seemingly bizarre as the Dirichlet
+        Function?
       </p>
+<p>
+  The answer, of course, is yes. Otherwise we wouldn<rsq/>t have asked.
+</p>
+
 </introduction>
 <subsection xml:id="SUBSECTIONStieltjesInt">
   <title>The Steiltjes Integral</title>
-  <figure  xml:id="FIGUREStieltjes">
-    <caption><url href="https://mathshistory.st-andrews.ac.uk/Biographies/Stieltjes/" >Thomas Jan Stieltjes</url>
-    (1856-1894)</caption>
-    <image source="images/Stieltjes.jpg" width="35%">
-      <shortdescription>Portrait of Thomas Stieltjes</shortdescription>
-    </image>
-  </figure>
+
 
   <p>
-    Of particular note is the work of Thomas Jan Stieltjes. While
-    working on the problem of determining the mass distribution of an
-    object given that the moments of all orders of a body are given
-    (called the moment problem) he defined a slight generalization of
-    the Riemann integral which was published in his work
-    <foreign>Recherches sur les fractions continues</foreign>
-    (Research on Continued Fractions) in 1894.  
+    Of particular note is the work of <url
+    href="https://mathshistory.st-andrews.ac.uk/Biographies/Stieltjes/"
+    >Thomas Jan Stieltjes</url> (1856-1894). While working on the
+    problem of determining the mass distribution of an object given
+    that the moments of all orders of a body are given (called the
+    moment problem) he defined a slight generalization of the Riemann
+    integral which was published in his work <foreign>Recherches sur
+    les fractions continues</foreign> (Research on Continued
+    Fractions) in <m>1894</m>.
     <!-- If you are acquainted -->
     <!-- with probability theory, the first moment of a probability density -->
     <!-- function is the expected value, the second moment (about the mean) -->
     <!-- is the variance, etc.  The problem is to reconstruct the -->
     <!-- probability density function from these moments.   -->
   </p>
-  <p>
-    As intimidating
-    as the problem sounds, you are acquainted with the idea of a
-    Stieltjes integral, but not by this name.  Consider for example,
-    <me>\int^1_{x=0}{\sin\left(x^2\right)2x\dx{x}}</me>.
+  <figure  xml:id="FIGUREStieltjes">
+    <caption>Thomas Jan Stieltjes</caption>
+    <image source="images/Stieltjes.jpg" width="35%">
+      <shortdescription>Portrait of Thomas Stieltjes</shortdescription>
+    </image>
+    </figure>
+    <p>
+      You are already acquainted with the underlying idea of a
+      Stieltjes integral. You just don<rsq/>t know it by this name.
+      Consider for example,
+      <men xml:id="EQUATIONStieltjesExampIntX">
+        \int^2_{x=0}{\sin\left(x^2\right)2x\dx{x}}
+        </men>.
+
+        We recognize that the computed value of <xref
+        ref="EQUATIONStieltjesExampIntX" >formula</xref> will be the
+        same as the computed value of integral
+
+        <men  xml:id="EQUATIONStieltjesExampIntY">
+          \int^2_{x=0}{\sin(u)} \dx(u)
+          </men>
+          if <m>u=x^2</m>          .
+          
+          In both <xref ref="EQUATIONStieltjesExampIntX">formula</xref> and <xref ref="EQUATIONStieltjesExampIntY" >formula</xref> 
+          <!-- <me>\int^2_{x=0}{\sin\left(x^2\right)2x\dx{x}}</me>. -->
+          <!-- <me>\int^1_{u=0}{{\sin -->
+          <!-- \left(u\right)}\ du}</me> --> 
+          we can think of the differential <m>\dx{x}</m> as representing
+          the <q>width</q> (or <q>measure</q>) of the infinitely thin
+          rectangles whose areas are to be summed. But it is clear
+          that <m>\dx{x}\neq \dx{u}</m>. There must be some
+          relationship between the two differentials that adjusts for
+          the change in variables.
+    </p>
+<p>
+  Since <m>u=x^2</m> clearly <m>\dx{u} = 2x\dx{x}</m>. It is this
+  relation between the differentials that keeps the integrals equal.
+</p>
+
+<!--     <p> -->
+<!--       In the Riemann integral -->
+<!--       <me> -->
+<!--         \int^2_{x=0}{\sin(x^2)} \dx(x^2) -->
+<!--       </me> -->
+<!--       we see that the width of the areas <m>\dx(x^2)</m> changes -->
+<!--       depending on the value of <m>x</m>.  Those closer to one carry -->
+<!--       more weight, or are denser, than those closer to zero: -->
+
+<!--       <md> -->
+<!--         <mrow> -->
+<!--           \mineval{2x\dx{x}}{x=0}\amp{}=0\dx{x} -->
+<!--           <!-\- \left.2x\dx{x}\right|_{x=0}\amp{}=0\dx{x} -\-> -->
+<!--         </mrow> -->
+<!--         <mrow> -->
+<!--           \mineval{2x\dx{x}}{x=1}\amp{}=2 \dx{x}. -->
+<!--         </mrow> -->
+<!--         <mrow> -->
+<!--           \mineval{2x\dx{x}}{x=2}\amp{}=4 \dx{x}. -->
+<!--         </mrow> -->
+<!--       </md> -->
+<!--       To simplify our notation we set <m>u=x^2</m> so that <m>\dx{u}=2x\dx{x}</m> and the integral becomes  -->
+<!-- <me> -->
+<!--   \int_{x=0}^1\sin \left(x^2\right)2x\dx{x}=\int_{u=0}^4\sin u\dx{u} -->
+<!--   </me>.  -->
+<!--   Of course you recognize this as the integration technique called <term>integration by substitution</term> in most Calculus textbooks. -->
+<!--     </p> -->
+<!--     <p> -->
+<!--       The genius of Stieltjes was that he recognized that there is -->
+<!--       more going on here than just finding a clever way to compute a -->
+<!--       difficult integral. But to see it we<rsq/>ll need to -->
+<!--       re<ndash/>interpret our notation a bit. In particular we need to -->
+<!--       re<ndash/>think the role of the differentials <m>\dx{x}</m> and -->
+<!--       <m>\dx{u}</m>. -->
+
+<!--     </p> -->
+<p>
+  This relation is visualized geometrically in <xref
+  ref="FIGUREStieltjesDX" ></xref> and <xref ref="FIGUREStieltjesDY"
+  ></xref> where  the interval <m>[0,2]</m> is partitioned into
+  subintervals of length <m>\dx{x}</m> and of length <m>\dx{u}</m>,
+  respectively.
+</p>
 
 
-    In trying to compute this integral, you can quickly recognize that this is the integral
-    
-    <me>\int^1_{x=0}{\sin(x^2)} \dx(x^2)</me> We are writing the
-    integral this way to emphasize the differential <m>\dx{(x^2)}</m>.
-    In the Riemann integral <me>\int^1_{u=0}{{\mathrm{sin}
-    \left(u\right)\ }\ du}</me> the differential <m>\dx{u}</m>
-    represents the fact that the interval is being partitioned into
-    subintervals whose lengths are being measured.  The differential
-    <m>d\left(x^2\right)=2xdx</m> represents the idea that points
-    closer to one carry more weight or are denser than those closer
-    to zero: 
+    <sbsgroup widths="50% 50%" margins="auto" valign="top">
 
-    <md>
-      <mrow>
-        \mineval{2x\dx{x}}{x=0}\amp{}=0\dx{x}
-        <!-- \left.2x\dx{x}\right|_{x=0}\amp{}=0\dx{x} -->
-      </mrow>
-      <mrow>
-\mineval{2x\dx{x}}{x=\frac12} \amp{}=1 \dx{x}
-      </mrow>
-      <mrow>
-      \mineval{2x\dx{x}}{x=1}\amp{}=2 \dx{x}.
-      </mrow>
-    </md>
-    This says that the <q>lengths</q> of the subintervals in our
-    partition are being measured in different ways.  In general,
-    given two functions <m>f\left(x\right),\ g(x)</m>, the Stieltjes
-    integral is defined by <me>\int^b_{x=a}{f\left(x\right)dg}</me>
-  </p>
-      <p>
-        You can see that the Riemann integral is just the Stieltjes
-        integral with <m>g\left(x\right)=x</m>.  We won't go further
-        with the Stieltjes integral except to say that it is useful in
-        probability and physics in places where <m>f</m> has jumps.
-        With the proper density function, these discontinuities can be
-        minimized.  It is also generalizable to functional analysis.
-        It also sets the stage for what we will focus on, which is to
-        find a way to integrate a function such as the Dirichlet
-        function.  The trick is to not focus on the function but on
-        the interval on which it is integrated and how to measure the
-        subsets in a partition.  This generalization comes from 
-        <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/" >
-          Henri
-          Lebesgue</url> (1875-1941) in 1901.
+      <sidebyside>
+
+        <figure  xml:id="FIGUREStieltjesDX">
+          <caption>
+            Interpreting <m>\dx{x}</m> geometrically.
+          </caption>
+
+          <image  source="images/StieltjesDX.png" >
+            <shortdescription>The interval from 0 to 2, partitioned uniformly into subintervals of length dx.</shortdescription>
+          </image>
+        </figure>
+
+        <figure  xml:id="FIGUREStieltjesDY">
+          <caption> 
+            Re<ndash/>interpreting <m>\dx{u}</m>. These intervals are
+            all the same length, <m>\dx{u}</m>, despite appearances.
+          </caption>
+
+
+          <image source="images/StieltjesDY.png">
+            <shortdescription>The interval from 0 to 2, partitioned  into subintervals of length du, where du is longer closer to 2.</shortdescription>
+          </image>
+
+        </figure>
+      </sidebyside>
+
+      </sbsgroup>
+
+      <p> Strictly speaking, the intervals in <xref
+      ref="FIGUREStieltjesDY" ></xref> are all the same length (since
+      they are all of length <m>\dx{u}</m>) just as in <xref
+      ref="FIGUREStieltjesDX" ></xref>. We<rsq/>ve drawn them with
+      increasing lengths to emphasize that we are measuring the
+      distance of a point from the origin in two distinct ways.  </p>
+      <p> This is a bizarre idea so we will proceed slowly.  </p> <p>
+      Notice that the (absolute value of the) coordinate of a point on
+      the line gives the distance from the origin to the point.
+       The
+       usual way to measure the length between arbitrary points on the
+       real line is to take the absolute value of the difference of
+      their coordinates. Thus between <m>x</m> and <m>x+\dx{x}</m> the
+      length is <m>\abs{\dx{x}}</m>.  Similarly the length between
+      <m>u</m> and <m>u+\dx{u}</m> is <m>\abs{\dx{u}}</m>. As long as
+      we work with the <m>u-</m>coordinate system this is fine but if
+      we want to move between the <m>u-</m>coordinates and the
+      <m>x-</m>coordinates we must use the relation 
+
+      <me>
+      \dx{u}=2x\dx{x}
+      </me> 
+
+      to adjust appropriately between <m>\dx{x}</m> and
+      <m>\dx{u}</m>. That is what <xref ref="FIGUREStieltjesDY"
+      ></xref> depicts. We<rsq/>ve drawn the intervals in the
+      <m>x-</m>coordinates, but we<rsq/>ve labeled them with
+      <m>u-</m>coordinates. That<rsq/>s why they don<rsq/>t appear to
+      be the same length.
+
+
       </p>
+
+
+
+
+      <aside>
+        <title>
+          Is This Rigorous? 
+        </title>
+        <p>
+          No, obviously it is not and we won<rsq/>t pretend that it
+          is. In particular we haven<rsq/>t even stated a definition
+          for the differentials <m>\dx{x}</m> or <m>\dx{y}</m>.
+        </p>
+        <p>
+          As we observed in <xref ref="NumbersRealRational" ></xref>
+          Abraham Robinson built a rigorous theory of differentials in
+          his book <pubtitle> Non<ndash/>Standard Analysis</pubtitle>
+          <xref ref="robinson74__non_stand_analy" />. But we have
+          relied on the older limit theory so nothing we do with
+          differentials can be considered rigorous. You should think
+          of the use of differentials as an aid to intuition, as a
+          useful <q>way of thinking</q>. But to be considered
+          thoroughly rigorous any insight gained from the use of
+          differentials must be justified either using the theory of
+          limits or Robinson<rsq/>s Non<ndash/>Standard Analysis.
+        </p>
+        </aside>
+
+        <p>
+          Just as we replaced the word <q>size</q> with
+          <q>cardinality</q> when working with infinite sets we
+          replace the word <q>length</q> with <q>measure</q> in this
+          context. The word <q>length</q> has too many associations
+          that can trip us up if we<rsq/>re not careful. So the
+          measures of subintervals in our partition are being
+          generated in different ways. When we work in the
+          <m>u-</m>coordinate system the length of the interval
+          <m>\dx{u} </m> at <m>u=x^2</m> is given by
+          <m>\dx{u}=2x\dx{x}</m>. The function <m>u(x)=x^2</m> is our  <term>measure</term> function.
+        </p>
+        <definition xml:id="DEFINITIONStieljesIntegral">
+          <title>
+            The Stieltjes Integral
+          </title>
+
+          <statement>
+
+            <p>
+              Suppose <m>\alpha(x)</m> is a monotonically increasing
+              function on an interval <m>[a,b]</m> then 
+              <me>
+                \int_a^bf(\alpha )\dx{\alpha} =\int_a^bf(\alpha (x))\alpha^\prime(x)\dx{x}
+              </me> 
+              is called the  <term>Stieltjes Integral</term>.
+
+            </p>
+
+</statement>
+          </definition>
+
+          <p>
+            Because <xref ref="DEFINITIONStieljesIntegral" ></xref>
+            gives the simplest possible version of the <term>Stieltjes
+            Integral</term> it is easy to get the impression that it
+            is equivalent to <term>integration by substitution</term>
+            and nothing more. But Stieltjes<rsq/> original efforts
+            were a little more general than that. His integral allowed
+            him to address to the moment problem he was working on
+            more simply than the Riemann integral would allow. It is
+            useful in probability and physics, in places where
+            <m>f</m> has jump discontinuities, and is generalizable to
+            a functional analysis setting where the <q>points</q> are
+            actually functions. But all of this is well beyond the
+            scope of this text.
+          </p>
+          <p>
+            We did not give the more general form because our purpose
+            was to introduce the notion of <term>measure</term> of a
+            set as distinct from the length of an interval because the
+            <term>measure</term> of a set is the foundational idea
+            that we will need to introduce our next topic, the
+            <term>Lebesgue Integral</term>.
+          </p>
+          <p>
+            # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+          </p>
+          <p>
+
+            It also sets the stage for what we will focus on, which is to
+            find a way to integrate a function such as the <xref ref="PROBLEMDiricheletCountrExamp" text="custom">Dirichlet
+            Function</xref>.  The trick is to not focus on the function but on
+            the interval on which it is integrated and how to measure the
+            subsets in a partition.  This generalization comes from 
+            <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/" >
+              Henri
+              Lebesgue</url> (1875-1941) in <m>1901</m>.
+          </p>
     </subsection>
     <subsection xml:id="SUBSECTIONLebesgueInt">
       <title>The Lebesgue Integral</title>
@@ -1607,13 +1836,13 @@
       </figure>
 
       <p>
-        Given Cantor's results that the set of rational numbers is
+        Given that Cantor had shown that the set of rational numbers is
         countable while the set of irrational numbers is uncountable,
         Lebesgue thought that the value of <m>f\left(x\right)</m> on a
-        relatively ``small'' set such as the rational numbers should
-        have no bearing on the value of an integral and he focused
-        more on measuring the ``sizes'' of sets to take that into
-        account.  The basis of this idea comes from the following.
+        relatively <q>small</q> set such as the rational numbers should
+        have no bearing (or at least very little) on the value of an integral so he focused
+        more on measuring the relative <q>sizes</q> of different sets in the
+        domain of <m>f</m>. The basis of this idea comes from the following.
       </p>
 
       <theorem xml:id="THEOREMMeasureZero">
@@ -1674,18 +1903,17 @@
   </p>
 
   <p>
-    Given the result of <xref ref="THEOREMMeasureZero"></xref>,
-    any countable set would have Lebesgue measure zero.  Since the
-    rational numbers are countably infinite, then they have
-    measure zero.  We won't get into the details of a Lebesgue
-    integral, but it should not be surprising that if two
-    (Lebesgue integrable) functions, <m>f</m> and <m>g</m>, differ
-    from each other on set of measure zero, then they should have
-    the same value for their Lebesgue integrals.  Since the
-    Dirichlet function differs from the constantly one function on
-    a set of measure zero (namely <m>\mathbb{Q}</m>), then it
-    should be Lebesgue integrable (as a constant function should
-    be) and its integral would be
+    Given the result of <xref ref="THEOREMMeasureZero"></xref>, any
+    countable set would have Lebesgue measure zero.  Since the
+    rational numbers are countably infinite, then they have measure
+    zero.  We won't get into the details of a Lebesgue integral, but
+    it should not be surprising that if two (Lebesgue integrable)
+    functions, <m>f</m> and <m>g</m>, differ from each other on set of
+    measure zero, then they should have the same value for their
+    Lebesgue integrals.  Since the <xref ref="PROBLEMDiricheletCountrExamp" text="custom">Dirichlet function</xref> differs from
+    the constantly one function on a set of measure zero (namely
+    <m>\QQ</m>), then it should be Lebesgue integrable (as a
+    constant function should be) and its integral would be
 
     
     <me>\int^b_{x=a}{f\left(x\right)d\lambda =\left(b-a\right)}</me> 
@@ -2272,10 +2500,10 @@
     We are willing to bet that at this point your head might be
     swimming a bit with uncertainty.  If so, then know that these
     are the same feelings that the mathematical community
-    experienced in the mid twentieth century.  In the past,
+    experienced in the mid<ndash/>twentieth century.  In the past,
     mathematics was seen as a model of logical certainty.  It is
     disconcerting to find that there are statements that are
-    <q>undecidable.</q> In fact, G&#xf6;del proved in 1931 that a
+    <q>undecidable.</q> In fact, Gödel proved in <m>1931</m> that a
     consistent finite axiom system that contained the axioms of
     arithmetic would always contain undecidable statements which
     could neither be proved true nor false with those axioms.

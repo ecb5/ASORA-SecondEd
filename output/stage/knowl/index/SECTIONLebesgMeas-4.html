@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<section class="paragraphs"><h3 class="heading"><span class="title">Measure, Outer Measure, and the Lesbesgue Measure.</span></h3>
+<div class="para">Historically,  the word that has been chosen  is <dfn class="terminology">measure</dfn>. If <span class="process-math">\(S\)</span> is a set of real numbers then <span class="process-math">\(\mu
+(S)\)</span> denotes the <dfn class="terminology">measure</dfn> of <span class="process-math">\(S\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Definition of a Measure.</span>
+</h4>
+<div class="para logical">
+<div class="para">
+<span class="process-math">\(\mu \)</span> is a <dfn class="terminology">measure</dfn> on the real numbers if the following statements are true.</div>
+<ol class="decimal ol-marker-2" id="DEFINITIONMeasureFunction-2-1-3">
+<li>
+<div class="para logical">
+<div class="para">If <span class="process-math">\(S\)</span> is an interval of length <span class="process-math">\(l\)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mu (S)=l\text{.}
+\end{equation*}
+</div>
+<div class="para">(We include intervals with the same left and right endpoint: <span class="process-math">\(\mu ([a,a])=0\)</span>).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#DEFINITIONMeasureFunction-2-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#DEFINITIONMeasureFunction-2-1-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li>
+<div class="para logical">
+<div class="para">If <span class="process-math">\(\left( S_i\right)_{i=1}^\infty  \)</span> is a sequence of  sets in <span class="process-math">\(\RR \)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mu\left( \bigcup_{i=1}^\infty S_i\right)\leq \sum_{i=1}^\infty
+\mu\left(S_i\right)
+\end{equation*}
+</div>
+<div class="para">with equality when <span class="process-math">\(\left( S_i\right)_{i=1}^\infty  \)</span> are disjoint.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#DEFINITIONMeasureFunction-2-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#DEFINITIONMeasureFunction-2-1-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li>
+<div class="para logical">
+<div class="para">
+<span class="process-math">\(\mu{}\)</span> is translation invariant. More precisely, if <span class="process-math">\(S \)</span> is a subset of <span class="process-math">\(\RR \text{,}\)</span> <span class="process-math">\(x\)</span> is any real number, and <span class="process-math">\(S_x=\left\{s+x\left| s\in S
+\right.\right\}  \)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mu (S)=\mu(S_x). 
+\end{equation*}
+</div>
+<div class="para">(<span class="process-math">\(\mu{}\)</span> is said to be <dfn class="terminology">shift invariant</dfn>, meaning that if you shift every element of <span class="process-math">\(S\)</span> by some amount <span class="process-math">\(x\)</span> the measure of the set is unchanged.)</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#DEFINITIONMeasureFunction-2-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#DEFINITIONMeasureFunction-2-1-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#DEFINITIONMeasureFunction-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 12.3.1: The Definition of a Measure"><a href="#DEFINITIONMeasureFunction" title="Copy heading and permalink for Definition 12.3.1: The Definition of a Measure" aria-label="Copy heading and permalink for Definition 12.3.1: The Definition of a Measure">🔗</a></div></article><div class="para logical">
+<div class="para">The purpose of the first and third statements should be clear.  Since we are looking to generalize the concept of length the <dfn class="terminology">measure</dfn> of an interval should be its length. For example,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mu
+\left( (a,b)\right) = \mu \left( [a,b]\right) =  \mu \left(
+[a,b)\right) =\mu \left( (a,b]\right) =b-a\text{,}
+\end{equation*}
+</div>
+<div class="para">and if <span class="process-math">\(\lambda{}\in\RR{}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mu
+\left( (a,b)\right) = \mu \left( a+\lambda{},b+\lambda{}])\right) = b-a\text{,}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">The second statement is the <a href="LimitAsPrimary.html#TriangleIneq" class="xref" data-knowl="./knowl/xref/TriangleIneq.html" data-reveal-label="Reveal" data-close-label="Close" title="Item: Triangle Inequality:">Triangle Inequalty</a> dressed up in the language of sets and measures.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">The conditions given in <a href="SECTIONLebesgMeas.html#DEFINITIONMeasureFunction" class="internal" title="Definition 12.3.1: The Definition of a Measure">Definition 12.3.1</a> are modeled on properties of lengths (of intervals) but if that’s all we are interested in there is no need to make this definition. These properties are easily proven if <span class="process-math">\(\mu{}\)</span> is length and the only sets we measure are intervals. This definition is here because we want measure other kinds of sets in <span class="process-math">\(\RR{}\text{.}\)</span> For example using this definition we can compute <span class="process-math">\(\mu (\ZZ )\text{,}\)</span>  <span class="process-math">\(\mu (\NN{}) \)</span> and <span class="process-math">\(\mu (\QQ) \text{.}\)</span> What would you guess each of these will be?<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">Notice that <a href="SECTIONLebesgMeas.html#DEFINITIONMeasureFunction" class="internal" title="Definition 12.3.1: The Definition of a Measure">Definition 12.3.1</a> does not require that <span class="process-math">\(\mu{}\)</span> be unique. In fact many measure functions have been, and can be defined on <span class="process-math">\(\RR{}\text{,}\)</span> but for our purposes we only need to touch lightly on one of them, the <dfn class="terminology">Lebesgue measure</dfn>. By “touch lightly” we mean that we will only actually define the so–calle <dfn class="terminology">outer measure</dfn> from which Lebegue’s measure follows. That will be enough for our purposes.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">We are at the edge of very deep mathematical waters and we will only be wading in the shallows. For that reason we will relax the  relentless emphasis on  rigor we have maintained thus far.  Conveying an appreciation for, and an understanding of, the need for rigor has been a primary objective but our purpose in this section is to give you a sense of what comes next mathematically.  We can’t simultaneously give you a solid, rigorous grounding in <dfn class="terminology">Measure Theory</dfn> and stay within the scope of our text. So, for this section only, we will set rigor (slightly) to the side.   We   will appeal your intuition with sketches and we will reason by analogy becaue our goal here is to give you a sense of how Cauchy’s integral was broadened by <a class="external" href="https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/" target="_blank">Henri Lesbegue</a> (1875-1941) in <span class="process-math">\(1902\text{,}\)</span> not to develop his integral in detail. Should you desire a deeper understanding than you’ll get here a second course in Real Analysis is highly recommended.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like"><div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="external/images/Lebesgue.png" class="contained" alt="Portrait of Henri Lebesgue"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Henri Lebesgue<div class="autopermalink" data-description="Figure 12.3.2"><a href="#FIGURELebesgue" title="Copy heading and permalink for Figure 12.3.2" aria-label="Copy heading and permalink for Figure 12.3.2">🔗</a></div></figcaption></figure><div class="para logical">
+<div class="para"> Recall from <a href="SECTIONDefiningIntegral.html#PROBLEMDiricheletCountrExamp" class="xref" data-knowl="./knowl/xref/PROBLEMDiricheletCountrExamp.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 10.4.10">Problem 10.4.10</a> that the <dfn class="terminology">Dirichlet Function</dfn>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/PROBLEMDiricheletCountrExamp.html">
+\begin{equation*}
+D(x)=
+\begin{cases}
+0, \amp \text{ if }  x \text{ is rational}\\
+1, \amp \text{ if }  x \text{ is irrational}
+\end{cases}
+\end{equation*}
+</div>
+<div class="para">is not Riemann (Cauchy, Darboux) integrable. Dirichlet invented his function as an example of a non–integrable function. For our purposes it has no importance beyond that. However the existence of non–(Riemann)integrable functions suggests the question: Can the integral be defined in such a way as to capture all of the intuitive features of (Riemann) integration known to <span class="process-math">\(18\)</span>th century mathematicians and which also allows us to integrate something as seemingly bizarre as the Dirichlet Function?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">The answer, of course, is yes. Otherwise we wouldn’t have asked.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">To begin we will need the concept of an <dfn class="terminology">open cover</dfn> a set.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Open Cover.</span>
+</h4>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(S\)</span> be any set in <span class="process-math">\(\RR\text{,}\)</span> and let</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I=\bigcup_{n=1}^\infty{}(a_n,b_n)
+\end{equation*}
+</div>
+<div class="para">be the union of a collection of open intervals. Then <span class="process-math">\(I\)</span> is called an <dfn class="terminology">open cover</dfn> of <span class="process-math">\(S\)</span> if and only if</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x\in S \imp x\in I\text{.}
+\end{equation*}
+</div>
+<div class="para">(Our definition specifies that the collection of open intervals be countably infinite, but a cover is allowed to be a finite collection as well.)</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#DEFINITIONOpenCover-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 12.3.3: Open Cover"><a href="#DEFINITIONOpenCover" title="Copy heading and permalink for Definition 12.3.3: Open Cover" aria-label="Copy heading and permalink for Definition 12.3.3: Open Cover">🔗</a></div></article><div class="para">Loosely speaking, and <dfn class="terminology">open cover</dfn> of a set <span class="process-math">\(S\)</span> is a collection of open intervals which “cover” <span class="process-math">\(S\)</span> (hence the name). Obviously every open interval is an open cover of itself.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-4-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="problem example-like"><h4 class="heading">
+<span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="introduction"><div class="para">Construct two distinct open covers of each of the following sets. (There is more than one correct answer.)<div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMOpenCovers-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para">The empty set: <span class="process-math">\(\emptyset \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMOpenCovers-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 12.3.4.a"><a href="#PROBLEMOpenCovers-2" title="Copy heading and permalink for Task 12.3.4.a" aria-label="Copy heading and permalink for Task 12.3.4.a">🔗</a></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para">
+<span class="process-math">\((0,1)\cup{} (2,4)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMOpenCovers-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 12.3.4.b"><a href="#PROBLEMOpenCovers-3" title="Copy heading and permalink for Task 12.3.4.b" aria-label="Copy heading and permalink for Task 12.3.4.b">🔗</a></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para">
+<span class="process-math">\([-1,1]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMOpenCovers-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 12.3.4.c"><a href="#PROBLEMOpenCovers-4" title="Copy heading and permalink for Task 12.3.4.c" aria-label="Copy heading and permalink for Task 12.3.4.c">🔗</a></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para">
+<span class="process-math">\(\QQ\cap(0,1) \)</span><div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMOpenCovers-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 12.3.4.d"><a href="#PROBLEMOpenCovers-5" title="Copy heading and permalink for Task 12.3.4.d" aria-label="Copy heading and permalink for Task 12.3.4.d">🔗</a></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para">
+<span class="process-math">\(\QQ\cap [0,1]  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMOpenCovers-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 12.3.4.e"><a href="#PROBLEMOpenCovers-6" title="Copy heading and permalink for Task 12.3.4.e" aria-label="Copy heading and permalink for Task 12.3.4.e">🔗</a></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para">
+<span class="process-math">\(\QQ{}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMOpenCovers-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 12.3.4.f"><a href="#PROBLEMOpenCovers-7" title="Copy heading and permalink for Task 12.3.4.f" aria-label="Copy heading and permalink for Task 12.3.4.f">🔗</a></div></article><div class="autopermalink" data-description="Problem 12.3.4"><a href="#PROBLEMOpenCovers" title="Copy heading and permalink for Problem 12.3.4" aria-label="Copy heading and permalink for Problem 12.3.4">🔗</a></div></article><article class="definition definition-like"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Outer Measure.</span>
+</h4>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(S\subseteq\RR \)</span> be a set and let</div>
+<div class="displaymath process-math">
+\begin{equation*}
+C=\bigcup_{n=1}^\infty (a_n,b_n)
+\end{equation*}
+</div>
+<div class="para">be an open cover of <span class="process-math">\(S\text{.}\)</span> The <dfn class="terminology">outer measure</dfn> of <span class="process-math">\(S\)</span> is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lambda (S)= \inf_{S\in C}\left({}\sum_{n=1}^\infty (b_n-a_n)\right)  
+\end{equation*}
+</div>
+<div class="para">where the sum is over all possible open covers of <span class="process-math">\(S\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#OuterMeasure-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 12.3.5: Outer Measure"><a href="#OuterMeasure" title="Copy heading and permalink for Definition 12.3.5: Outer Measure" aria-label="Copy heading and permalink for Definition 12.3.5: Outer Measure">🔗</a></div></article><div class="para">Notice that since <dfn class="terminology">outer measure</dfn> is by definition an infimum. Since not all infima exist, there is the possibility that some sets have no outer measure; that there might be <dfn class="terminology">non–measurable</dfn> sets. In fact, non–measurable sets do exist and that reality is the only thing that prevented Lebesgue from basing his integral on the outer measure directly. Instead we have to use <a href="SECTIONLebesgMeas.html#DEFINITIONLebMeas" class="internal" title="Definition 12.3.6: Lesbegue Measure">Definition 12.3.6</a> below.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-4-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Lesbegue Measure.</span>
+</h4>
+<div class="para">The <dfn class="terminology">Lebesgue Measure</dfn> of a set, <span class="process-math">\(S\subseteq
+\RR{}\)</span> is equal to the  <dfn class="terminology">outer measure</dfn> of <span class="process-math">\(S\)</span> if <span class="process-math">\(S\)</span> is measurable.<div class="autopermalink" data-description="Paragraph"><a href="#DEFINITIONLebMeas-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 12.3.6: Lesbegue Measure"><a href="#DEFINITIONLebMeas" title="Copy heading and permalink for Definition 12.3.6: Lesbegue Measure" aria-label="Copy heading and permalink for Definition 12.3.6: Lesbegue Measure">🔗</a></div></article><div class="autopermalink" data-description="Paragraphs: Measure, Outer Measure, and the Lesbesgue Measure"><a href="#SECTIONLebesgMeas-4" title="Copy heading and permalink for Paragraphs: Measure, Outer Measure, and the Lesbesgue Measure" aria-label="Copy heading and permalink for Paragraphs: Measure, Outer Measure, and the Lesbesgue Measure">🔗</a></div></section><span class="incontext"><a class="internal" href="SECTIONLebesgMeas.html#SECTIONLebesgMeas-4">in-context</a></span>
+</body>
+</html>

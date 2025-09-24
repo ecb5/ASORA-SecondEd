@@ -4830,114 +4830,177 @@ var ptx_lunr_docs = [
   "url": "SECTIONLebesgMeas.html",
   "type": "Section",
   "number": "12.3",
-  "title": "Lebesgue Measure and Integration",
-  "body": " Lebesgue Measure and Integration    Dirichlet Function Recall from that the Dirichlet Function  is not Riemann (Cauchy, Darboux) integrable. Dirichlet invented this function as an example of a non integrable function. In itself it has no importance beyond that. However the existence of non integrable functions suggests a question: Can the integral be defined in such a way as to capture all of the intuitive features of integration known to th century mathematicians and which allows us to integrate something as seemingly bizarre as the Dirichlet Function?  The answer, of course, is yes. Otherwise we wouldn t have asked.    The Steiltjes Integral  Of particular note is the work of Thomas Jan Stieltjes (1856-1894). While working on the problem of determining the mass distribution of an object given that the moments of all orders of a body are given (called the moment problem) he defined a slight generalization of the Riemann integral which was published in his work Recherches sur les fractions continues (Research on Continued Fractions) in .        Thomas Jan Stieltjes   Portrait of Thomas Stieltjes    You are already acquainted with the underlying idea of a Stieltjes integral. You just don t know it by this name. Consider for example, . We recognize that the computed value of formula will be the same as the computed value of integral if . In both formula and formula    we can think of the differential as representing the width (or measure ) of the infinitely thin rectangles whose areas are to be summed. But it is clear that . There must be some relationship between the two differentials that adjusts for the change in variables.  Since clearly . It is this relation between the differentials that keeps the integrals equal.                                    This relation is visualized geometrically in and where the interval is partitioned into subintervals of length and of length , respectively.     Interpreting geometrically.   The interval from 0 to 2, partitioned uniformly into subintervals of length dx.     Re interpreting . These intervals are all the same length, , despite appearances.   The interval from 0 to 2, partitioned into subintervals of length du, where du is longer closer to 2.      Strictly speaking, the intervals in are all the same length (since they are all of length ) just as in . We ve drawn them with increasing lengths to emphasize that we are measuring the distance of a point from the origin in two distinct ways.  This is a bizarre idea so we will proceed slowly.  Notice that the (absolute value of the) coordinate of a point on the line gives the distance from the origin to the point. The usual way to measure the length between arbitrary points on the real line is to take the absolute value of the difference of their coordinates. Thus between and the length is . Similarly the length between and is . As long as we work with the coordinate system this is fine but if we want to move between the coordinates and the coordinates we must use the relation to adjust appropriately between and . That is what depicts. We ve drawn the intervals in the coordinates, but we ve labeled them with coordinates. That s why they don t appear to be the same length.   Is This Rigorous?  No, obviously it is not and we won t pretend that it is. In particular we haven t even stated a definition for the differentials or .  As we observed in Abraham Robinson built a rigorous theory of differentials in his book Non Standard Analysis  . But we have relied on the older limit theory so nothing we do with differentials can be considered rigorous. You should think of the use of differentials as an aid to intuition, as a useful way of thinking . But to be considered thoroughly rigorous any insight gained from the use of differentials must be justified either using the theory of limits or Robinson s Non Standard Analysis.   Just as we replaced the word size with cardinality when working with infinite sets we replace the word length with measure in this context. The word length has too many associations that can trip us up if we re not careful. So the measures of subintervals in our partition are being generated in different ways. When we work in the coordinate system the length of the interval at is given by . The function is our measure function.   The Stieltjes Integral   Suppose is a monotonically increasing function on an interval then is called the Stieltjes Integral .    Because gives the simplest possible version of the Stieltjes Integral it is easy to get the impression that it is equivalent to integration by substitution and nothing more. But Stieltjes original efforts were a little more general than that. He was working on the moment problem we described at the beginning of this section. His integral allowed him to address that problem more simply than the Riemann integral would allow. The Stieltjes Integral is also useful in probability and physics, in places where has jump discontinuities, and is generalizable to a functional analysis setting where the points are actually functions. But all of this is well beyond the scope of this text.  We focused on the notion of the measure of a set as distinct from the length of an interval because the measure of a set is the foundational idea that we will need to introduce our next topic, the Lebesgue Integral .              The Lebesgue Integral   Henri Lebesgue  Portraits Lebesgue  Lebesgue, Henri portrait of   Portrait of Henri Lebesgue    Given that Cantor had shown that the set of rational numbers is countable while the set of irrational numbers is uncountable, Lebesgue thought that the value of on a relatively small set such as the rational numbers should have no bearing (or at least very little) on the value of an integral so he focused more on measuring the relative sizes of different sets in the domain of . The basis of this idea comes from the following.   measure zero  zero measure measure zero   Let be countably infinite set of real numbers. Let be given. There is a collection of open intervals with and   Such a set is said to have measure zero .      Prove Theorem .    Consider the interval .]    The collection of intervals with is called an open cover of . Lebesgue defined the (outer) measure of a set to be the infimum of the sums over all such open covers. In symbols, the (outer) measure of a set  is given by   Given the result of , any countable set would have Lebesgue measure zero. Since the rational numbers are countably infinite, then they have measure zero. We won't get into the details of a Lebesgue integral, but it should not be surprising that if two (Lebesgue integrable) functions, and , differ from each other on set of measure zero, then they should have the same value for their Lebesgue integrals. Since the Dirichlet function differs from the constantly one function on a set of measure zero (namely ), then it should be Lebesgue integrable (as a constant function should be) and its integral would be   You may have noticed that we used the term outer measure before. For a measurable set, its measure is this outer measure. However, there are examples of non measurable sets. Any set would have an outer measure, but assigning this as the measure of one of these non measurable sets results in a number of contradictions on how a measure should behave.  The first non measurable set was described by Giuseppe Vitali in 1905. Creating such a set requires the use of something called the Axiom of Choice and delves deeply into a careful study of the theory of sets. We will see how complicated sets can be in the next section.    Giuseppe Vitali (1875-1932)  Portraits Vitali  Vitali, Giuseppe portrait of    Portrait of Giuseppe Vitali                                             "
+  "title": "Henri Lebesgue: Measure and Integration",
+  "body": " Henri Lebesgue: Measure and Integration   Measure, Outer Measure, and Lesbesgue Measure  In our side comment, we noted that the mental image evoked by the word size isn t really appropriate when discussing infinite sets because two sets can have the same cardinality even though the first completely contains the second, with some left over. For example contains all of , and all of the negative integers as well.  We have a similar problem with the concept of length. Two intervals can have the same length even as one completely contains the other, with some left over. For example, contains all of the points in in addition to and . Moreover length is only applicable to intervals which are a very specific kind of set. We will need to be able to compute the length of more general sets. To avoid confusion we need to use a word other than length .  Historically, the word that has been chosen is measure . If is a set of real numbers then denotes the measure of .   The Definition of a Measure    is a measure on the real numbers if the following statements are true.   If is an interval of length then . (We include intervals with the same left and right endpoint: ).    If is a sequence of sets in then with equality when are disjoint.     is translation invariant. More precisely, if is a subset of , is any real number, and then ( is said to be shift invariant , meaning that if you shift every element of by some amount the measure of the set is unchanged.)       The purpose of the first and third statements should be clear. Since we are looking to generalize the concept of length the measure of an interval should be its length. For example, , and if  ,  The second statement is the Triangle Inequalty dressed up in the language of sets and measures.  The conditions given in are modeled on properties of lengths (of intervals) but if that s all we are interested in there is no need to make this definition. These properties are easily proven if is length and the only sets we measure are intervals. This definition is here because we want measure other kinds of sets in . For example using this definition we can compute , and . What would you guess each of these will be?  Notice that does not require that be unique. In fact many measure functions have been, and can be defined on , but for our purposes we only need to touch lightly on one of them, the Lebesgue measure , first introduced by Henri Lebesgue (1875-1941) in his doctoral dissertation Intégrale, longueur, aire (Integral, length, area) . By touch lightly we mean that we will only actually define the so calle outer measure from which Lebegue s measure follows. That will be enough for our purposes.   Henri Lebesgue  Portraits Lebesgue  Lebesgue, Henri portrait of   Portrait of Henri Lebesgue                                                                                                                                                                                                                                        To begin we will need the concept of an open cover a set.   Open Cover   Let be any set in , and let be the union of a collection of open intervals. Then is called an open cover of if and only if . (Our definition specifies that the collection of open intervals be countably infinite, but a cover is allowed to be a finite collection as well.)    Loosely speaking, and open cover of a set is a collection of open intervals which cover  (hence the name). Obviously every open interval is an open cover of itself.    Construct two distinct open covers of each of the following sets. (There is more than one correct answer.)     The empty set: .                                         Outer Measure   Let be a set and let be an open cover of . The outer measure of is given by where the sum is over all possible open covers of .      Compute the outer measure of each of the following sets.      where .       .                               Notice that outer measure is by definition an infimum. Since not all infima exist, there is the possibility that some sets have no outer measure; that there might be non measurable sets. In fact, non measurable sets do exist and that reality is the only thing that prevented Lebesgue from basing his integral on the outer measure directly. Instead we have to use below.   Lesbegue Measure   The Lebesgue Measure of a set, is equal to the outer measure of if is measurable.    You saw in parts (a) and (b) of that finite sets have outer measure equal to zero. In fact some infinite sets do too.   measure zero  zero measure measure zero   Let be countably infinite set of real numbers. Let be given. There is a collection of open intervals with and   Such a set is said to have measure zero .      Prove Theorem .    Consider the interval .]      The Lesbegue Integral  We are at the edge of very deep mathematical waters and we will only be wading in the shallows. For that reason we will relax the relentless emphasis on rigor we have maintained thus far. Conveying an appreciation for, and an understanding of, the need for rigor has been a primary objective.  Our purpose in this section is to give you a sense of what comes next mathematically but we can t simultaneously give you a solid, rigorous grounding in Measure Theory and stay within the scope of our text. So, for this section only, we will set rigor (slightly) to the side and instead appeal your intuition by using sketches and only considering positive functions (so that we can safely think of areas). We will also reason by analogy rather than precisely (e.g., using and ) because our goal here is to give you a sense of how Lesbegue broadened Cauchy s definition of the integral. In particular we will not develop Lebesgue s integral in detail. Should you desire a deeper understanding than you ll get here a second course in Real Analysis is highly recommended.   Dirichlet Function Recall from that the Dirichlet Function  is not Riemann (Cauchy, Darboux) integrable. Dirichlet invented his function as an example of a non integrable function. For our purposes it has no importance beyond that. However the existence of non (Riemann)integrable functions suggests the question: Can the integral be defined in such a way as to capture all of the intuitive features of (Riemann) integration known to th century mathematicians and which also allows us to integrate something as seemingly bizarre as the Dirichlet Function?  The answer, of course, is yes. Otherwise we wouldn t have asked. Our goal in this section is to show you how Lebesgue integrated Dirichlet s function.  Speaking very loosely, if we want to compute where using the Riemann (Cauchy) integral we partition the axis into adjacent intervals with width and then construct (infinitesimal) rectangles with area from each differential. Summing these areas provides the value of the definite integral.            Lebesgue s idea was to find all rectangles with a common height first, gather them together, and sum those areas. In letter to a colleague how he described his process as follows:    I have to pay a certain sum, which I have collected in my pocket. I take the bills and coins out of my pocket and give them to the creditor in the order I find them until I have reached the total sum. This is the Riemann integral. But I can proceed differently. After I have taken all the money out of my pocket I order the bills and coins according to identical values and then I pay the several heaps one after the other to the creditor. This is my integral.            To see how this worked suppose we want to integrate from to as seen in below.   In Lebesgue s integral we find the area of each colored region first.      Given that Cantor had shown that the set of rational numbers is countable while the set of irrational numbers is uncountable, Lebesgue thought that the value of on a relatively small set such as the rational numbers should have no bearing (or at least very little) on the value of an integral so he focused more on measuring the relative sizes of different sets in the domain of . The basis of this idea comes from the following.  The collection of intervals with is called an open cover of . Lebesgue defined the (outer) measure of a set to be the infimum of the sums over all such open covers. In symbols, the (outer) measure of a set  is given by   Given the result of , any countable set would have Lebesgue measure zero. Since the rational numbers are countably infinite, then they have measure zero. We won't get into the details of a Lebesgue integral, but it should not be surprising that if two (Lebesgue integrable) functions, and , differ from each other on set of measure zero, then they should have the same value for their Lebesgue integrals. Since the Dirichlet function differs from the constantly one function on a set of measure zero (namely ), then it should be Lebesgue integrable (as a constant function should be) and its integral would be   You may have noticed that we used the term outer measure before. For a measurable set, its measure is this outer measure. However, there are examples of non measurable sets. Any set would have an outer measure, but assigning this as the measure of one of these non measurable sets results in a number of contradictions on how a measure should behave.  The first non measurable set was described by Giuseppe Vitali in 1905. Creating such a set requires the use of something called the Axiom of Choice and delves deeply into a careful study of the theory of sets. We will see how complicated sets can be in the next section.    Giuseppe Vitali (1875-1932)  Portraits Vitali  Vitali, Giuseppe portrait of    Portrait of Giuseppe Vitali                                             "
 },
 {
-  "id": "SECTIONLebesgMeas-2-1",
+  "id": "SECTIONLebesgMeas-2-4",
   "level": "2",
-  "url": "SECTIONLebesgMeas.html#SECTIONLebesgMeas-2-1",
+  "url": "SECTIONLebesgMeas.html#SECTIONLebesgMeas-2-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Dirichlet Function "
+  "body": "measure measure "
 },
 {
-  "id": "FIGUREStieltjes",
+  "id": "DEFINITIONMeasureFunction",
   "level": "2",
-  "url": "SECTIONLebesgMeas.html#FIGUREStieltjes",
-  "type": "Figure",
+  "url": "SECTIONLebesgMeas.html#DEFINITIONMeasureFunction",
+  "type": "Definition",
   "number": "12.3.1",
-  "title": "",
-  "body": " Thomas Jan Stieltjes   Portrait of Thomas Stieltjes   "
+  "title": "The Definition of a Measure.",
+  "body": " The Definition of a Measure    is a measure on the real numbers if the following statements are true.   If is an interval of length then . (We include intervals with the same left and right endpoint: ).    If is a sequence of sets in then with equality when are disjoint.     is translation invariant. More precisely, if is a subset of , is any real number, and then ( is said to be shift invariant , meaning that if you shift every element of by some amount the measure of the set is unchanged.)      "
 },
 {
-  "id": "FIGUREStieltjesDX",
+  "id": "SECTIONLebesgMeas-2-6",
   "level": "2",
-  "url": "SECTIONLebesgMeas.html#FIGUREStieltjesDX",
-  "type": "Figure",
-  "number": "12.3.2",
-  "title": "",
-  "body": " Interpreting geometrically.   The interval from 0 to 2, partitioned uniformly into subintervals of length dx.   "
-},
-{
-  "id": "FIGUREStieltjesDY",
-  "level": "2",
-  "url": "SECTIONLebesgMeas.html#FIGUREStieltjesDY",
-  "type": "Figure",
-  "number": "12.3.3",
-  "title": "",
-  "body": " Re interpreting . These intervals are all the same length, , despite appearances.   The interval from 0 to 2, partitioned into subintervals of length du, where du is longer closer to 2.   "
-},
-{
-  "id": "SUBSECTIONStieltjesInt-12",
-  "level": "2",
-  "url": "SECTIONLebesgMeas.html#SUBSECTIONStieltjesInt-12",
+  "url": "SECTIONLebesgMeas.html#SECTIONLebesgMeas-2-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "measure "
 },
 {
-  "id": "DEFINITIONStieljesIntegral",
+  "id": "SECTIONLebesgMeas-2-9",
   "level": "2",
-  "url": "SECTIONLebesgMeas.html#DEFINITIONStieljesIntegral",
-  "type": "Definition",
-  "number": "12.3.4",
-  "title": "The Stieltjes Integral.",
-  "body": " The Stieltjes Integral   Suppose is a monotonically increasing function on an interval then is called the Stieltjes Integral .   "
-},
-{
-  "id": "SUBSECTIONStieltjesInt-14",
-  "level": "2",
-  "url": "SECTIONLebesgMeas.html#SUBSECTIONStieltjesInt-14",
+  "url": "SECTIONLebesgMeas.html#SECTIONLebesgMeas-2-9",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Stieltjes Integral integration by substitution Stieltjes Integral "
-},
-{
-  "id": "SUBSECTIONStieltjesInt-15",
-  "level": "2",
-  "url": "SECTIONLebesgMeas.html#SUBSECTIONStieltjesInt-15",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "measure measure Lebesgue Integral "
+  "body": "Lebesgue measure outer measure "
 },
 {
   "id": "FIGURELebesgue",
   "level": "2",
   "url": "SECTIONLebesgMeas.html#FIGURELebesgue",
   "type": "Figure",
-  "number": "12.3.5",
+  "number": "12.3.2",
   "title": "",
   "body": " Henri Lebesgue  Portraits Lebesgue  Lebesgue, Henri portrait of   Portrait of Henri Lebesgue   "
+},
+{
+  "id": "SECTIONLebesgMeas-2-11",
+  "level": "2",
+  "url": "SECTIONLebesgMeas.html#SECTIONLebesgMeas-2-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "open cover "
+},
+{
+  "id": "DEFINITIONOpenCover",
+  "level": "2",
+  "url": "SECTIONLebesgMeas.html#DEFINITIONOpenCover",
+  "type": "Definition",
+  "number": "12.3.3",
+  "title": "Open Cover.",
+  "body": " Open Cover   Let be any set in , and let be the union of a collection of open intervals. Then is called an open cover of if and only if . (Our definition specifies that the collection of open intervals be countably infinite, but a cover is allowed to be a finite collection as well.)   "
+},
+{
+  "id": "SECTIONLebesgMeas-2-13",
+  "level": "2",
+  "url": "SECTIONLebesgMeas.html#SECTIONLebesgMeas-2-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "open cover "
+},
+{
+  "id": "PROBLEMOpenCovers",
+  "level": "2",
+  "url": "SECTIONLebesgMeas.html#PROBLEMOpenCovers",
+  "type": "Problem",
+  "number": "12.3.4",
+  "title": "",
+  "body": "  Construct two distinct open covers of each of the following sets. (There is more than one correct answer.)     The empty set: .                                       "
+},
+{
+  "id": "OuterMeasure",
+  "level": "2",
+  "url": "SECTIONLebesgMeas.html#OuterMeasure",
+  "type": "Definition",
+  "number": "12.3.5",
+  "title": "Outer Measure.",
+  "body": " Outer Measure   Let be a set and let be an open cover of . The outer measure of is given by where the sum is over all possible open covers of .   "
+},
+{
+  "id": "PROBLEMOuterMeasure1",
+  "level": "2",
+  "url": "SECTIONLebesgMeas.html#PROBLEMOuterMeasure1",
+  "type": "Problem",
+  "number": "12.3.6",
+  "title": "",
+  "body": "  Compute the outer measure of each of the following sets.      where .       .                              "
+},
+{
+  "id": "SECTIONLebesgMeas-2-17",
+  "level": "2",
+  "url": "SECTIONLebesgMeas.html#SECTIONLebesgMeas-2-17",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "outer measure non measurable "
+},
+{
+  "id": "DEFINITIONLebMeas",
+  "level": "2",
+  "url": "SECTIONLebesgMeas.html#DEFINITIONLebMeas",
+  "type": "Definition",
+  "number": "12.3.7",
+  "title": "Lesbegue Measure.",
+  "body": " Lesbegue Measure   The Lebesgue Measure of a set, is equal to the outer measure of if is measurable.   "
 },
 {
   "id": "THEOREMMeasureZero",
   "level": "2",
   "url": "SECTIONLebesgMeas.html#THEOREMMeasureZero",
   "type": "Theorem",
-  "number": "12.3.6",
+  "number": "12.3.8",
   "title": "",
   "body": " measure zero  zero measure measure zero   Let be countably infinite set of real numbers. Let be given. There is a collection of open intervals with and   Such a set is said to have measure zero .   "
 },
 {
-  "id": "SUBSECTIONLebesgueInt-5",
+  "id": "SECTIONLebesgMeas-2-21",
   "level": "2",
-  "url": "SECTIONLebesgMeas.html#SUBSECTIONLebesgueInt-5",
+  "url": "SECTIONLebesgMeas.html#SECTIONLebesgMeas-2-21",
   "type": "Problem",
-  "number": "12.3.7",
+  "number": "12.3.9",
   "title": "",
   "body": "  Prove Theorem .    Consider the interval .]   "
+},
+{
+  "id": "SECTIONLebesgMeas-3-3",
+  "level": "2",
+  "url": "SECTIONLebesgMeas.html#SECTIONLebesgMeas-3-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Measure Theory "
+},
+{
+  "id": "SECTIONLebesgMeas-3-4",
+  "level": "2",
+  "url": "SECTIONLebesgMeas.html#SECTIONLebesgMeas-3-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Dirichlet Function "
+},
+{
+  "id": "FIGURELebegInt1",
+  "level": "2",
+  "url": "SECTIONLebesgMeas.html#FIGURELebegInt1",
+  "type": "Figure",
+  "number": "12.3.10",
+  "title": "",
+  "body": " In Lebesgue s integral we find the area of each colored region first.     "
 },
 {
   "id": "FIGUREGiuseppeVitali",
   "level": "2",
   "url": "SECTIONLebesgMeas.html#FIGUREGiuseppeVitali",
   "type": "Figure",
-  "number": "12.3.8",
+  "number": "12.3.11",
   "title": "",
   "body": "  Giuseppe Vitali (1875-1932)  Portraits Vitali  Vitali, Giuseppe portrait of    Portrait of Giuseppe Vitali   "
 },

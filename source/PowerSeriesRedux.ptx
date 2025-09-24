@@ -1531,9 +1531,9 @@
       tells us that whatever the power series converges to must be a
       continuous function on <m>(-r,r)</m>.  Lastly, if
       <m>f(x)=\displaystyle\sum_{n=0}^\infty a_nx^n</m> for <m>x\in(-r,r)</m>, then
-      <m>f^\prime(x)=\displaystyle}\sum_{n=1}^\infty a_nnx^{n-1}</m> for
+      <m>f^\prime(x)=\displaystyle\sum_{n=1}^\infty a_nnx^{n-1}</m> for
       <m>x\in(-r,r)</m> and <m>\int_{t=0}^xf(t)\dx{ t} =
-      \displaystyle}\sum_{n=0}^\infty a_n\frac{x^{n+1}}{n+1}</m> for
+      \displaystyle\sum_{n=0}^\infty a_n\frac{x^{n+1}}{n+1}</m> for
       <m>x\in(-r,r)</m>.
     </p>
 

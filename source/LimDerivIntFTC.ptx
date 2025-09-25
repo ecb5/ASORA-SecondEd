@@ -1721,16 +1721,18 @@
   <p>
     For Leibniz, this is all so natural and obvious that when he wrote
     about it in his 1693 paper
-    <foreign>
+    <pubtitle>
       Supplementum geometriae dimensoriae, seu generalissima omnium
       tetragonismorum effectio per motum: similiterque multiplex
-      constructio lineae ex data tangentium conditione</foreign>,
-      <!-- (More on geometric measurement, or most generally of all -->
-      <!-- practicing of quadrilateralization through motion: likewise -->
-      <!-- many ways to construct a curve from a given condition on its -->
-      <!-- tangents) --> he called it a
-      <q>supplementum</q> (supplement, or corollary) rather than
-      something more  imposing <mdash/> like the <term>Fundamental Theorem of Calculus</term>.
+      constructio lineae ex data tangentium conditione
+      (More on geometric measurement, or most generally of all
+      practicing of quadrilateralization through motion: likewise
+      many ways to construct a curve from a given condition on its
+      tangents) 
+    </pubtitle>
+    he called it a
+    <q>supplementum</q> (supplement, or corollary) rather than
+    something more  imposing <mdash/> like the <term>Fundamental Theorem of Calculus</term>.
   </p>
   <p>
     Leibniz rather famously favored very complex diagrams to

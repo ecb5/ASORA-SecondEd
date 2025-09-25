@@ -19,9 +19,11 @@
 </head>
 <body class="ignore-math">
 <section class="paragraphs"><h3 class="heading"><span class="title">The Lesbegue Integral.</span></h3>
-<div class="para">We are at the edge of very deep mathematical waters and we will only be wading in the shallows. For that reason we will relax the relentless emphasis on rigor we have maintained thus far. Conveying an appreciation for, and an understanding of, the need for rigor has been a primary objective.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">A primary objective of this text is to convey to you, the student, an appreciation for, and an understanding of, the need for rigor. That objective remains in force. However, in this section we are at the edge of very deep mathematical waters. Until we start the next section we will only be wading in the shallows.  We will thus relax our relentless emphasis on rigor for now.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">Our purpose in this section is to give you a sense of what comes next mathematically but we can’t simultaneously give you a solid, rigorous grounding in <dfn class="terminology">Measure Theory</dfn> and stay within the scope of our text. So, for this section only, we will set rigor (slightly) to the side and instead appeal your intuition by using sketches and only considering positive functions (so that we can safely think of areas). We will also reason by analogy rather than precisely (e.g., using <span class="process-math">\(\delta{}\)</span> and <span class="process-math">\(\eps\)</span>) because our goal here is to give you a sense of how Lesbegue broadened Cauchy’s definition of the integral. In particular we will not develop Lebesgue’s integral in detail. Should you desire a deeper understanding than you’ll get here a second course in Real Analysis is highly recommended.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">For the rest of this section we will set rigor to the side and instead appeal to your intuition by the use of sketches. We will also reason by analogy rather than precisely (e.g., using <span class="process-math">\(\eps\)</span>) and <span class="process-math">\(\delta{}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">In addition, for the remainder of this section we will assume that all of the functions we will consider are positive so that we can safely engage your strong intuitive understanding of area. We do this because our goal here is only to give you a sense of how Lesbegue broadened Cauchy’s definition of the integral. In particular we will not develop Lebesgue’s integral in detail. Should you desire a deeper understanding than you’ll get here a second course in Real Analysis is highly recommended.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical">
 <div class="para"> Recall from <a href="SECTIONDefiningIntegral.html#PROBLEMDiricheletCountrExamp" class="xref" data-knowl="./knowl/xref/PROBLEMDiricheletCountrExamp.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 10.4.10">Problem 10.4.10</a> that the <dfn class="terminology">Dirichlet Function</dfn>
@@ -36,9 +38,9 @@ D(x)=
 \end{equation*}
 </div>
 <div class="para">is not Riemann (Cauchy, Darboux) integrable. Dirichlet invented his function as an example of a non–integrable function. For our purposes it has no importance beyond that. However the existence of non–(Riemann)integrable functions suggests the question: Can the integral be defined in such a way as to capture all of the intuitive features of (Riemann) integration known to <span class="process-math">\(18\)</span>th century mathematicians and which also allows us to integrate something as seemingly bizarre as the Dirichlet Function?</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">The answer, of course, is yes. Otherwise we wouldn’t have asked. Our goal in this section is to show you how Lebesgue integrated Dirichlet’s function.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">The answer, of course, is yes. Otherwise we wouldn’t have asked. Lebesgue defined such an integral at he turn of the twentieth century.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical">
 <div class="para">Speaking <em class="emphasis">very</em> loosely, if we want to compute <span class="process-math">\(\int_a^bf(x)\dx{x} \)</span> where <span class="process-math">\(f(x)\ge 0\)</span> using the Riemann (Cauchy) integral we partition the <span class="process-math">\(x-\)</span>axis into adjacent intervals with width <span class="process-math">\(\dx{x}\)</span> and then construct (infinitesimal) rectangles with area</div>
@@ -47,52 +49,110 @@ D(x)=
 f(x)\dx{x} 
 \end{equation*}
 </div>
-<div class="para">from each differential. Summing these areas <span class="process-math">\(\left( \int f(x)\dx{x}
-\right) \)</span> provides the value of the definite integral.</div>
-<div class="displaymath process-math">
-\begin{equation*}
-x=2\pi{}
-\end{equation*}
+<div class="para">from each differential. Summing these areas — computing <span class="process-math">\(\int_a^b f(x)\dx{x} \)</span> — provides the value of the definite integral.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para">         Lebesgue’s idea was to find all rectangles with a common height first, gather them together, and sum those areas. In  letter to a colleague how he  described his process as follows:<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">         Lebesgue’s idea was to find all rectangles with a common height first, gather them together, and sum those areas. In letter to a colleague he described his process as follows:<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <blockquote class="blockquote">
-<div class="para">“I have to pay a certain sum, which I have collected in my pocket. I take the bills and coins out of my pocket and give them to the creditor in the order I find them until I have reached the total sum. This is the Riemann integral. But I can proceed differently. After I have taken all the money out of my pocket I order the bills and coins according to identical values and then I pay the several heaps one after the other to the creditor. This is my integral.”<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">“I have to pay a certain sum, which I have collected in my pocket. I take the bills and coins out of my pocket and give them to the creditor in the order I find them until I have reached the total sum. This is the Riemann integral. But I can proceed differently. After I have taken all the money out of my pocket I order the bills and coins according to identical values and then I pay the several heaps one after the other to the creditor. This is my integral.”<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Quotation"><a href="#SECTIONLebesgMeas-3-8" title="Copy heading and permalink for Quotation" aria-label="Copy heading and permalink for Quotation">🔗</a></div>
+<div class="autopermalink" data-description="Quotation"><a href="#SECTIONLebesgMeas-3-9" title="Copy heading and permalink for Quotation" aria-label="Copy heading and permalink for Quotation">🔗</a></div>
 </blockquote>
-<div class="para">To see how this worked suppose we want to integrate <span class="process-math">\(f(x)=\abs{\sin x}\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=\pi{}\)</span> as seen in <a href="SECTIONLebesgMeas.html#FIGURELebegInt1" class="internal" title="Figure 12.3.10">Figure 12.3.10</a> below.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">To see how this worked suppose we want to integrate <span class="process-math">\(f(x)=\abs{\sin x}\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=\pi{}\)</span> as seen in <a href="SECTIONLebesgMeas.html#FIGURELebegInt1" class="internal" title="Figure 12.3.12">Figure 12.3.12</a> below.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/LebInt2.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>In Lebesgue’s integral we find the area of each colored region first.<div class="autopermalink" data-description="Figure 12.3.10"><a href="#FIGURELebegInt1" title="Copy heading and permalink for Figure 12.3.10" aria-label="Copy heading and permalink for Figure 12.3.10">🔗</a></div></figcaption></figure><div class="para">Given that Cantor had shown that the set of rational numbers is countable while the set of irrational numbers is uncountable, Lebesgue thought that the value of <span class="process-math">\(f\left(x\right)\)</span> on a relatively “small” set such as the rational numbers should have no bearing (or at least very little) on the value of an integral so he focused more on measuring the relative “sizes” of different sets in the domain of <span class="process-math">\(f\text{.}\)</span> The basis of this idea comes from the following.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>In Lebesgue’s integral we find the area of each colored region first. Notice that there are <span class="process-math">\(29\)</span> regions, including the two very thin red regions and three regions with zero height located at <span class="process-math">\(x=0\text{,}\)</span> <span class="process-math">\(x=\pi{}\text{,}\)</span> and <span class="process-math">\(x=2\pi{}\text{.}\)</span><div class="autopermalink" data-description="Figure 12.3.12"><a href="#FIGURELebegInt1" title="Copy heading and permalink for Figure 12.3.12" aria-label="Copy heading and permalink for Figure 12.3.12">🔗</a></div></figcaption></figure><div class="para">In a Riemann integral we start at <span class="process-math">\(x=0\text{,}\)</span> compute the first blue area, add to that the first green area, and so on, until we reach <span class="process-math">\(x=2\pi \)</span> where we add in the last blue area. Notice that area of the first blue rectangle is the height of <span class="process-math">\(f(x)\)</span> multiplied by the measure of interval on the <span class="process-math">\(x-\)</span>axis which corresponds to the interval <span class="process-math">\(\left[ \frac17, \frac27 \right]{}\)</span> on the <span class="process-math">\(y-\)</span>axis. We’ll designate that area with <span class="process-math">\(\mu{(1)}\text{.}\)</span> Similarly <span class="process-math">\(\mu (2)\)</span> represents the measure of the base of the first green rectangle, and so on for all <span class="process-math">\(26\)</span> regions. (Don’t forget the thin red regions. We’ll get back to those in a bit.)<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical">
-<div class="para">The collection of intervals <span class="process-math">\((a_n,b_n)\)</span> with <span class="process-math">\(S\subset
-\bigcup^{\infty }_{n=1}{\left(a_n,\ b_n\right)}\)</span> is called an open cover of <span class="process-math">\(S\text{.}\)</span>  Lebesgue defined the (outer) measure of a set to be the infimum of the sums <span class="process-math">\(\sum^{\infty
-}_{n=1}{\left(b_n-a_n\right)}\)</span> over all such open covers. In symbols, the (outer) measure of a set <span class="process-math">\(S\)</span> <span class="process-math">\(\left(\lambda \left(S\right)\right)\)</span> is given by</div>
+<div class="para">But nothing says we must add the areas in this order. This is just a convention. Lebesgue’s ideas was to compute the area of all of the blue regions together, then all of the green regions, then the orange, and so on. By rearranging the sum this way the total are of the blue regions is,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\lambda(S)=\inf_{S\subset \bigcup^{\infty}_{n=1}{(a_n,\ b_n)}} \left(\sum^{\infty }_{n=1}{\left(b_n-a_n\right)}\right) 
+f(1/7)\mu (1) +f(1/7)\mu (13) +f(1/7)\mu (14) +f(1/7)\mu
+(28)
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical">
-<div class="para">Given the result of <a href="SECTIONLebesgMeas.html#THEOREMMeasureZero" class="internal" title="Theorem 12.3.8">Theorem 12.3.8</a>, any countable set would have Lebesgue measure zero.  Since the rational numbers are countably infinite, then they have measure zero.  We won’t get into the details of a Lebesgue integral, but it should not be surprising that if two (Lebesgue integrable) functions, <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{,}\)</span> differ from each other on set of measure zero, then they should have the same value for their Lebesgue integrals.  Since the <a href="SECTIONDefiningIntegral.html#PROBLEMDiricheletCountrExamp" class="xref" data-knowl="./knowl/xref/PROBLEMDiricheletCountrExamp.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 10.4.10">Dirichlet function</a> differs from the constantly one function on a set of measure zero (namely <span class="process-math">\(\QQ\)</span>), then it should be Lebesgue integrable (as a constant function should be) and its integral would be</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/THEOREMMeasureZero.html ./knowl/xref/PROBLEMDiricheletCountrExamp.html">
+<div class="para">or</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\int^b_{x=a}{f\left(x\right)d\lambda =\left(b-a\right)}
+f(1/7)\underbrace{\left[ \mu (1) +\mu (13) +\mu (14)
++\mu(28)\right]}_{=\Lambda_b} \text{.}
 \end{equation*}
 </div>
+<div class="para">The expression <span class="process-math">\(\left( \mu (1) +\mu (13) +\mu (14)
++\mu(28)\right)\)</span> then represents the total measure of the bases on the <span class="process-math">\(x-\)</span>axis of the blue regions which we designate <span class="process-math">\(\Lambda_b\text{.}\)</span> <span class="process-math">\(\Lambda_b\)</span> is the Lebesgue measure of the base of all of the blue regions. Similarly the Lebesgue measure of the dark green, orange, light green, purple,  yellow, and red regions are <span class="process-math">\(\Lambda_d\text{,}\)</span> <span class="process-math">\(\Lambda_o\text{,}\)</span> <span class="process-math">\(\Lambda_l\text{,}\)</span> <span class="process-math">\(\Lambda_p\text{,}\)</span>  <span class="process-math">\(\Lambda_y\text{,}\)</span> and <span class="process-math">\(\Lambda_r\)</span> respectively.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">You may have noticed that we used the term outer measure before. For a measurable set, its measure is this outer measure.  However, there are examples of non–measurable sets.  Any set would have an outer measure, but assigning this as the measure of one of these non–measurable sets results in a number of contradictions on how a measure should behave.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical">
+<div class="para">Our integral is thus</div>
+<div class="displaymath process-math">
+\begin{align*}
+\int_{x=0}^{2 \pi}f(x)\dx{x}=f(1/7)\Lambda_b + f(2/7)\Lambda_d \amp{}+
+f(3/7)\Lambda_o\\
+\amp{} + f(4/7)\Lambda_l + f(5/7)\Lambda_p + f(6/7)\Lambda_y 
+\end{align*}
 </div>
-<div class="para">The first non–measurable set was described by Giuseppe Vitali  in 1905.  Creating such a set requires the use of something called the Axiom of Choice and delves deeply into a careful study of the theory of sets.  We will see how complicated sets can be in the next section.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="figure figure-like"><div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="external/images/Vitali.png" class="contained" alt="Portrait of Giuseppe Vitali"></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><a class="external" href="https://mathshistory.st-andrews.ac.uk/Biographies/Vitali/" target="_blank">Giuseppe Vitali</a> (1875-1932)<div class="autopermalink" data-description="Figure 12.3.11"><a href="#FIGUREGiuseppeVitali" title="Copy heading and permalink for Figure 12.3.11" aria-label="Copy heading and permalink for Figure 12.3.11">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraphs: The Lesbegue Integral"><a href="#SECTIONLebesgMeas-3" title="Copy heading and permalink for Paragraphs: The Lesbegue Integral" aria-label="Copy heading and permalink for Paragraphs: The Lesbegue Integral">🔗</a></div></section><span class="incontext"><a class="internal" href="SECTIONLebesgMeas.html#SECTIONLebesgMeas-3">in-context</a></span>
+<div class="para">But wait a minute! What about the two thin red regions and the ones at <span class="process-math">\(x=0\text{,}\)</span> <span class="process-math">\(x=\pi{}\text{,}\)</span> and <span class="process-math">\(x=2 \pi{}\text{?}\)</span> Why did we leave them out?<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">It should be clear that the measure of these regions must be zero. Do you see why?  The only places on our graph where <span class="process-math">\(f(x) =
+1\)</span> are at the two maxima, and the base of any rectangle constructed there will have measure zero, <span class="process-math">\(\Lambda_r = 0\text{.}\)</span> This is clear from the sketch and also in light of parts (a) of <a href="SECTIONLebesgMeas.html#PROBLEMOuterMeasure1" class="internal" title="Problem 12.3.6">Problem 12.3.6</a>. A single point on the <span class="process-math">\(x-\)</span>axis has measure zero. Thus the “area” of those regions will be <span class="process-math">\(1\cdot \Lambda_0 =
+1\cdot 0 = 0\text{.}\)</span> Those points in the domain of our function contribute nothing to the integral.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">The same is true of the rectangles constructed at <span class="process-math">\(x=0\text{,}\)</span> <span class="process-math">\(x=\pi{}\text{,}\)</span> and <span class="process-math">\(x=2\pi{}\text{.}\)</span> (Their heights will also be zero but that is irrelevant.)<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">In Lebesgue’s scheme there is always the possibility that after rearranging our rectangles the measure of the base of a region might be zero.  <a href="SECTIONLebesgMeas.html#FIGURELebegInt1" class="internal" title="Figure 12.3.12">Figure 12.3.12</a> shows two ways that can happen but there are many others. In particular, <a href="SECTIONLebesgMeas.html#THEOREMMeasureZero" class="internal" title="Theorem 12.3.10">Theorem 12.3.10</a> shows that it is possible for an infinite set to have measure zero.  This has repurcussions for the integral of Dirichlet’s function,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/FIGURELebegInt1.html ./knowl/xref/THEOREMMeasureZero.html">
+\begin{equation*}
+D(x)=
+\begin{cases}
+0, \amp \text{ if }  x \text{ is rational}\\
+1, \amp \text{ if }  x \text{ is irrational}
+\end{cases}\text{,}
+\end{equation*}
+</div>
+<div class="para">which we will explore next.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">For our later convenience we define the following notations.</div>
+<ul class="disc" id="SECTIONLebesgMeas-3-19-1">
+<li>
+<div class="para">Let <span class="process-math">\(\cal{I}\)</span> represent the set of irrational numbers in the interval <span class="process-math">\([0,1]\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#SECTIONLebesgMeas-3-19-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li>
+<div class="para">Let <span class="process-math">\(\cal{Q}\)</span> be the set of rational numbers in the same interval.</div>
+<div class="autopermalink" data-description="Item"><a href="#SECTIONLebesgMeas-3-19-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">Since <span class="process-math">\(D(x)\)</span> takes on only two values, <span class="process-math">\(0\)</span> and <span class="process-math">\(1\text{,}\)</span> we need only partition the <span class="process-math">\(y-\)</span>axis in two places, <span class="process-math">\(y=0\)</span> and <span class="process-math">\(y=1\text{.}\)</span> Gathering all of the rectangles together in the same way we did  above  we see that</div>
+<div class="displaymath process-math">
+\begin{equation}
+\int_0^1D(x)\dx{x} = 0\cdot{} \Lambda \left( \cal{I}\right){}+ 1\cdot
+\Lambda\left( \cal{Q}\right) .\tag{22}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="problem example-like"><h4 class="heading">
+<span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Lebesgue Integral of Dirichlet’s Function.</span>
+</h4>
+<div class="para logical">
+<div class="para">Use <a href="SECTIONLebesgMeas.html#THEOREMMeasureZero" class="internal" title="Theorem 12.3.10">Theorem 12.3.10</a> and <a href="SECTIONLebesgMeas.html#EQUATIONDirichFunc" class="internal" title="Equation 22">equation (22)</a> to show that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/THEOREMMeasureZero.html ./knowl/xref/EQUATIONDirichFunc.html">
+\begin{equation*}
+\int_0^1D(x)\dx{x} = 0\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgMeas-3-21-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Problem 12.3.13: The Lebesgue Integral of Dirichlet’s Function"><a href="#SECTIONLebesgMeas-3-21" title="Copy heading and permalink for Problem 12.3.13: The Lebesgue Integral of Dirichlet’s Function" aria-label="Copy heading and permalink for Problem 12.3.13: The Lebesgue Integral of Dirichlet’s Function">🔗</a></div></article><div class="autopermalink" data-description="Paragraphs: The Lesbegue Integral"><a href="#SECTIONLebesgMeas-3" title="Copy heading and permalink for Paragraphs: The Lesbegue Integral" aria-label="Copy heading and permalink for Paragraphs: The Lesbegue Integral">🔗</a></div></section><span class="incontext"><a class="internal" href="SECTIONLebesgMeas.html#SECTIONLebesgMeas-3">in-context</a></span>
 </body>
 </html>

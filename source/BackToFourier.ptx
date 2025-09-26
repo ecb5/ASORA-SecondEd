@@ -2459,7 +2459,7 @@
   zero. Do you see why?  The only places on our graph where <m>f(x) =
   1</m> are at the two maxima, and the base of any rectangle
   constructed there will have measure zero, <m>\Lambda_r = 0</m>. This
-  is clear from the sketch and also in light of parts (a) of <xref
+  is clear from the sketch. Moreover in light of part (a) of <xref
   ref="PROBLEMOuterMeasure1" ></xref>. A single point on the
   <m>x-</m>axis has measure zero.
 

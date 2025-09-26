@@ -330,7 +330,7 @@ f(a)+\frac{f^{\prime}(a)}{1!}(x-a),\right. \\
 \amp{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \left.{}f(a) +\frac{f^{\prime}(a)}{1!}(x-a)+\frac{f^{\prime\prime}(a)}{2!}(x-a)^2,\ldots\right)
 \end{align*}
 </div>
-<div class="para">converges to the number <span class="process-math">\(f(x)\text{.}\)</span> Note that the index in the summation was changed to <span class="process-math">\(j\)</span> to allow <span class="process-math">\(n\)</span> to represent the index of the sequence of partial sums. As intimidating as this may look, bear in mind that for a fixed real number <span class="process-math">\(x\text{,}\)</span> this is still a sequence of real numbers so, that saying <span class="process-math">\(f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n\)</span> means that <span class="process-math">\(\limitt{n}{\infty}{\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)}=f(x)\)</span> and in the previous chapter we developed some tools to examine this phenomenon. In particular, we know that <span class="process-math">\(\limitt{n}{\infty}{\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)}=f(x)\)</span> is equivalent to</div>
+<div class="para">converges to the number <span class="process-math">\(f(x)\text{.}\)</span>  Note that the index in the summation was changed to <span class="process-math">\(j\)</span> to allow <span class="process-math">\(n\)</span> to represent the index of the sequence of partial sums.  As intimidating as this may look, bear in mind that for a fixed real number <span class="process-math">\(x\text{,}\)</span> this is still a sequence of real numbers so, that saying <span class="process-math">\(f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n\)</span> means that <span class="process-math">\(\limitt{n}{\infty}{\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)}=f(x)\)</span> and in the previous chapter we developed some tools to examine this phenomenon.  In particular, we know that <span class="process-math">\(\limitt{n}{\infty}{\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)}=f(x)\)</span> is equivalent to</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \limit{n}{\infty}{\Biggl[f(x)-\left(\sum_{j=0}^n \frac{f^{(j)}(a)}{j!}(x-a)^j\right)\Biggr]}=0\text{.}
@@ -356,15 +356,16 @@ f(a)+\frac{f^{\prime}(a)}{1!}(x-a),\right. \\
 f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)\text{,}
 \end{equation*}
 </div>
-<div class="para">it is not easy to work with it in this form. Fortunately, a number of alternate forms of this remainder are available.  We will explore some of those in this chapter.</div>
+<div class="para">it is not easy to work with it in this form.  Fortunately, a number of alternate forms of this remainder are available.  We will explore some of those in this chapter.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#TaylorSeries-IntFormRem-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="TaylorSeries-IntFormRem-8">
 <div class="para"> Recall  from <a href="PowerSeriesQuestions-TaylorsFormula.html#TaylorsTheorem" class="xref" data-knowl="./knowl/xref/TaylorsTheorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.12: Taylor’s Theorem">Theorem 4.1.12</a> from <a href="PowerSeriesQuestions.html" class="internal" title="Chapter 4: Questions Concerning Power Series">Chapter 4</a> that,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/TaylorsTheorem.html ./knowl/xref/PowerSeriesQuestions.html" id="TaylorSeries-IntFormRem-8-4">
 \begin{align*}
-f(x)=f(a)+\frac{f^{\,\prime}(a)}{1!}(x-a)+\frac{f^{\,\prime\prime}(a)}{2!}(x-a)^2\amp{} +\cdots+\frac{f^{(n)}(a)}{n!}(x-a)^n\\
-\amp{} +\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{t}\amp{}\amp{}
+f(x)=f(a)+\frac{f^{\,\prime}(a)}{1!}(x-a)+\frac{f^{\,\prime\prime}(a)}{2!}(x-a)^2\amp{}
++\cdots+\frac{f^{(n)}(a)}{n!}(x-a)^n\\
+\amp{} + \frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{t} \amp{}\amp{}
 \end{align*}
 </div>
 <div class="para">or</div>

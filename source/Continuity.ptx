@@ -331,7 +331,7 @@
     <p>
       <idx><h>continuity</h><h>on an interval</h></idx>
 
-      Notice that the definition of continuity of a function is done
+      Notice that the <xref ref="def_continuity" text="custom">definition of continuity</xref> of a function is done
       point<ndash/>by<ndash/>point so a function can certainly be
       continuous at some points while discontinuous at others.  When
       we say that <m>f</m> is <term>continuous on an interval</term>, then we mean
@@ -457,7 +457,7 @@
     <example>
       <statement>
         <p>
-          Use the definition of continuity to show that <m>f(x)=x</m>
+          Use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to show that <m>f(x)=x</m>
           is continuous at any point <m>a</m>.
         </p>
       </statement>
@@ -515,7 +515,7 @@
 
       <statement>
         <p>
-          Use the definition of continuity to show that if <m>m</m>
+          Use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to show that if <m>m</m>
           and <m>b</m> are fixed (but unspecified) real numbers then
           the function
           <me>
@@ -532,7 +532,7 @@
 
       <statement>
         <p>
-          Use the definition of continuity to show that
+          Use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to show that
           <m>f(x)=x^2</m> is continuous at <m>a=0</m>.
         </p>
       </statement>
@@ -585,7 +585,7 @@
         <statement>
           <p>
             Show that if a <m>\delta</m> can be found to satisfy the
-            conditions of the definition of continuity for a
+            conditions of the <xref ref="def_continuity" text="custom">definition of continuity</xref> for a
             particular <m>\eps_0>0</m>, then this <m>\delta</m> will
             also work for any <m>\,\eps</m> with <m>0\lt \eps_0\lt
             \eps</m>.
@@ -615,7 +615,8 @@
       <statement>
         <p>
           <idx><h>continuity</h><h><m>\pm\sqrt{x}</m> is continuous at zero</h></idx>
-          Use the definition of continuity to show that
+
+          Use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to show that
           <me>
             f(x)= \begin{cases}\sqrt{x} \amp  \text{ if }  x\ge0\\ -\sqrt{-x} \amp  \text{ if }  x\lt 0 \end{cases}
           </me>
@@ -630,7 +631,7 @@
 
       <statement>
         <p>
-          Use the definition of continuity to show that <m>f(x)=
+          Use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to show that <m>f(x)=
           \sqrt{x}</m> is continuous at <m>a=0</m>.  How is this
           problem different from <xref
           ref="prob_extended_sqrt_is_continuous_at_zero"></xref>?  How
@@ -653,7 +654,7 @@
     <example xml:id="example_SqrtContinuous">
       <statement>
         <p>
-          Use the definition of continuity to prove that
+          Use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to prove that
           <m>f(x)=\sqrt{x}</m> is continuous at <m>a=1</m>.
         </p>
 
@@ -753,7 +754,7 @@
 
   <statement>
     <p>
-      Use the definition of continuity to show that
+      Use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to show that
       <m>f(x)=\sqrt{x}</m> is continuous at any positive real
       number <m>a</m>.
     </p>
@@ -779,7 +780,7 @@
   <task>
     <statement>
       <p>
-        Use the definition of continuity to prove that
+        Use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to prove that
         <m>f(x)=\sin x</m> is continuous at any point <m>a</m>.
       </p>
     </statement>
@@ -800,7 +801,7 @@
   <task>
     <statement>
       <p>
-        Use the definition of continuity to show that
+        Use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to show that
         <m>f(x)=e^x</m> is continuous at <m>a=0</m>.
       </p>
     </statement>
@@ -820,8 +821,58 @@
   </task>
 </problem>
 
+<problem>
+  
+  <idx><h>continuous functions</h><h>a constant function is continuous</h></idx>
+  <idx><h>continuity</h><h>of a constant function</h></idx>
+
+  <statement>
+    <p>
+      Use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to prove that the constant
+      function <m>g(x)=c</m> is continuous at any point <m>a</m>.
+    </p>
+  </statement>
+</problem>
+
+<problem>
+
+  <idx><h>continuous functions</h><h><m>\ln x</m> is continuous everywhere</h></idx>
+  <idx><h>continuity</h><h>of <m>\ln{x}</m></h></idx>
+
+  <task>
+    <statement>
+      <p>
+        Use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to prove that <m>\ln x</m>
+        is continuous at <m>x=1</m>.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        You may want to use the fact <m>\abs{\ln x}\lt
+        \eps\,\Leftrightarrow-\eps\lt \ln x\lt \eps</m> to find a
+        <m>\delta</m>.
+      </p>
+    </hint>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Use part (a) to prove that <m>\ln x</m> is continuous at any
+        positive real number <m>a</m>.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        <m>\ln(x)=\ln(x/a)+\ln(a)</m>.  This is a combination of functions
+        which are continuous at <m>a</m>.  Be sure to explain how you know
+        that <m>\ln(x/a)</m> is continuous at <m>a</m>.
+      </p>
+    </hint>
+  </task>
+</problem>
+
 <p>
-  In the above problems, we used the definition of continuity
+  In the above problems, we used the <xref ref="def_continuity" text="custom">definition of continuity</xref>
   to verify our intuition about the continuity of familiar
   functions.  The advantage of this analytic definition is
   that it can be applied when the function is not so
@@ -854,10 +905,10 @@
 
   <statement>
     <p>
-      Use the definition of continuity to show that
+      Use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to show that
       <me>
         f(x)= \begin{cases}
-        x\,\sin\left(\frac{1}{x}\right),\amp \text{ if } x\neq 0\\ 
+        x \sin\left(\frac{1}{x}\right),\amp \text{ if } x\neq 0\\ 
         0, \amp \text{ if } x=0 
         \end{cases}
       </me>
@@ -920,11 +971,15 @@
   <task>
     <statement>
       <p>
-        Use the definition of continuity to show that the
+        Use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to show that the
         function
-        <me> D(x)= \begin{cases}
-        x,\amp \text{ if } x\text{ is rational } \\
-        0,\amp \text{ if } x\text{ is irrational } \end{cases} </me>
+        <me> 
+
+          D(x)= \begin{cases}
+          x,\amp \text{ if } x\text{ is rational } \\
+          0,\amp \text{ if } x\text{ is irrational } \end{cases} 
+          
+        </me>
         is continuous at <m>0</m>.
       </p>
     </statement>
@@ -932,7 +987,7 @@
   <task>
     <statement>
       <p>
-        Let <m>a\neq 0</m>.  Use the definition of continuity to
+        Let <m>a\neq 0</m>.  Use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to
         show that <m>D</m> is not continuous at <m>a</m>.
       </p>
     </statement>
@@ -943,55 +998,6 @@
         <m>\delta>0</m> will work for <m>\eps=\abs{a}</m>.  Note that
         <xref ref="thm_IrrationalBetweenIrrationals"></xref> of <xref
         ref="NumbersRealRational"></xref> will probably help here.
-      </p>
-    </hint>
-  </task>
-</problem>
-<problem>
-  
-  <idx><h>continuous functions</h><h>a constant function is continuous</h></idx>
-  <idx><h>continuity</h><h>of a constant function</h></idx>
-
-  <statement>
-    <p>
-      Use the definition of continuity to prove that the constant
-      function <m>g(x)=c</m> is continuous at any point <m>a</m>.
-    </p>
-  </statement>
-</problem>
-
-<problem>
-
-  <idx><h>continuous functions</h><h><m>\ln x</m> is continuous everywhere</h></idx>
-  <idx><h>continuity</h><h>of <m>\ln{x}</m></h></idx>
-
-  <task>
-    <statement>
-      <p>
-        Use the definition of continuity to prove that <m>\ln x</m>
-        is continuous at <m>x1</m>.
-      </p>
-    </statement>
-    <hint>
-      <p>
-        You may want to use the fact <m>\abs{\ln x}\lt
-        \eps\,\Leftrightarrow-\eps\lt \ln x\lt \eps</m> to find a
-        <m>\delta</m>.
-      </p>
-    </hint>
-  </task>
-  <task>
-    <statement>
-      <p>
-        Use part (a) to prove that <m>\ln x</m> is continuous at any
-        positive real number <m>a</m>.
-      </p>
-    </statement>
-    <hint>
-      <p>
-        <m>\ln(x)=\ln(x/a)+\ln(a)</m>.  This is a combination of functions
-        which are continuous at <m>a</m>.  Be sure to explain how you know
-        that <m>\ln(x/a)</m> is continuous at <m>a</m>.
       </p>
     </hint>
   </task>
@@ -1148,31 +1154,54 @@
           \end{cases} </m> using sequences
         </h>
       </idx>
-
-      <statement>
+      <introduction>
         <p>
-          Use <xref ref="thm_LimDefOfContinuity"></xref> to show that
-          <me>
-            D(x)= \begin{cases}
-            x, \amp \text{ if } x\text{ is rational } \\
-          0, \amp \text{ if } x\text{ is irrational } \end{cases}  </me>
-          is  continuous at <m>a= 0</m>.
+          Let <m>
+          D(x)= \begin{cases}
+          x, \amp \text{ if } x\text{ is rational } \\
+          0, \amp \text{ if } x\text{ is irrational } \end{cases}
+          </m>.
         </p>
-      </statement>
+      </introduction>
+
+<task>
+  <statement>
+    <p>
+      Use <xref ref="thm_LimDefOfContinuity"></xref> to show that
+      <m>
+        D(x)
+      </m>
+      is  continuous at <m>a= 0</m>.
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      Use <xref ref="thm_LimDefOfContinuity"></xref> to show that
+      <m>
+        D(x)
+      </m>
+      is  not continuous if <m>a\neq{} 0</m>.
+
+    </p>
+  </statement>
+</task>
+
     </problem>
 
     <problem>
-      <title>Topologist<rsq/>s Sine Curve</title>
+      <title>The Topologist<rsq/>s Sine Curve</title>
       
-      <idx><h>Topologist<rsq/>s sine function</h><h>modified version is not continuous at zero</h></idx>
+      <idx><h>Problem</h><h>Topologist<rsq/>s sine function</h><h>modified version is not continuous at zero</h></idx>
 
       <statement>
         <p>
-          The function <m>\hat{T}(x)=\sin\left(\frac{1}{x}\right)</m> is
+          The function <me>Top(x)=\sin\left(\frac{1}{x}\right)</me> is
           often called the topologist<rsq/>s sine curve.  Whereas <m>\sin
           x</m> has roots at <m>n\pi</m>, <m>n\in\ZZ</m> and
           oscillates infinitely often as <m>x\rightarrow\pm\infty</m>,
-          <m>\hat{T}</m> has roots at <m>\frac{1}{n\pi},\,n\in\ZZ,\,n\neq
+          <m>Top</m> has roots at <m>\frac{1}{n\pi},\,n\in\ZZ,\,n\neq
           0</m>, and oscillates infinitely often as <m>x</m>
           approaches zero.  A rendition of the graph follows.
         </p>
@@ -1181,18 +1210,18 @@
         </image>
 
         <p>
-          Notice that <m>\hat{T}</m> is not even defined at <m>x=0</m>.
-          We can extend <m>\hat{T}</m> to be defined at <m>0</m> by simply
+          Notice that <m>Top</m> is not even defined at <m>x=0</m>.
+          We can extend <m>Top</m> to be defined at <m>0</m> by simply
           choosing a value at  <m>0</m>. Since this will be a new function we give it a new name.
           <me>
-            T(x)= \begin{cases}
+            Top_m(x)= \begin{cases}
             \sin\left(\frac{1}{x}\right),\amp \text{ if } x\neq 0\\ 
             b,\amp \text{ if } x=0 \end{cases} </me>.
         </p>
 
         <p>
           Use <xref ref="thm_LimDefOfContinuity"></xref>
-          to show that <m>T</m> is not continuous at <m>0</m>,
+          to show that <m>Top_m</m> is not continuous at <m>0</m>,
           no matter what value is chosen for <m>b</m>.
         </p>
       </statement>
@@ -1208,20 +1237,28 @@
         The forward direction is fairly straightforward.  We assume
         that <m>f</m> is continuous at <m>a</m> and start with a
         sequence <m>\left(x_n\right)</m> which converges to <m>a</m>.
-        We now need  to show is that
-        <me>\limit{n}{\infty}{f(x_n)}=f(a)</me>, but that will follow from the 
-        definitions of  
-        <ol>
-          <li>
-            continuity at <m>a</m>,
-          </li>
-            <li>
-<m>\limit{n}{\infty}{x_n}=a</m>, and
-            </li>
-            <li>
-              <m>\limit{n}{\infty}{f(x_n)}=f(a)</m>.
-            </li>
-            </ol>
+        We now need to show that
+        
+        <me>
+          \limit{n}{\infty}{f(x_n)}=f(a)
+          </me>, 
+
+          but that will follow from <xref ref="def_continuity"
+          ></xref> and <xref ref="def_ConvergenceOfASequence"
+          ></xref>.
+
+          <!-- the definitions of -->
+          <!-- <ol> -->
+          <!--   <li> -->
+          <!--     continuity at <m>a</m>, -->
+          <!--   </li> -->
+          <!--   <li> -->
+          <!--     <m>\limit{n}{\infty}{x_n}=a</m>, and -->
+          <!--   </li> -->
+          <!--   <li> -->
+          <!--     <m>\limit{n}{\infty}{f(x_n)}=f(a)</m>. -->
+          <!--   </li> -->
+          <!-- </ol> -->
       </p>
 
       <p>
@@ -1288,7 +1325,7 @@
 
     <proof>
       <p>
-        We could use the definition of continuity to prove <xref
+        We could use the <xref ref="def_continuity" text="custom">definition of continuity</xref> to prove <xref
         ref="thm_ContSumProd"></xref>, but <xref
         ref="thm_LimDefOfContinuity"></xref> makes our job much
         easier.  For example, to show that <m>f+g</m> is continuous,
@@ -1485,7 +1522,7 @@
       <task>
         <statement>
           <p>
-            Using the definition of continuity.
+            Using the <xref ref="def_continuity" text="custom">definition of continuity</xref>.
           </p>
         </statement>
       </task>
@@ -1510,6 +1547,22 @@
       <m>f(x)=\sin\left(e^x\right)</m> are continuous without having
       to rely on the definition.
     </p>
+
+
+    <problem>
+      
+      <idx><h>continuity</h><h><m>\sin e^x</m> is continuous everywhere</h></idx>
+
+      <statement>
+        <p>
+          What allows us to conclude that
+          <m>f(x)=\sin\left(e^x\right)</m> is continuous at any point
+          <m>a</m> without referring back to the definition of
+          continuity?
+        </p>
+      </statement>
+    </problem>
+
 
     <problem>
       
@@ -1553,32 +1606,21 @@
       </task>
     </problem>
 
-    <problem>
-      
-      <idx><h>continuity</h><h><m>\sin e^x</m> is continuous everywhere</h></idx>
-
-      <statement>
-        <p>
-          What allows us to conclude that
-          <m>f(x)=\sin\left(e^x\right)</m> is continuous at any point
-          <m>a</m> without referring back to the definition of
-          continuity?
-        </p>
-      </statement>
-    </problem>
-
     <p>
       <xref ref="thm_LimDefOfContinuity"></xref> can also be used
       to study the convergence of sequences.  For example, since
       <m>f(x)=e^x</m> is continuous at any point and
-      <m>\limit{n}{\infty}{\frac{n+1}{n}}=1</m>, then
-      <m>\limit{n}{\infty}{e^{\left(\frac{n+1}{n}\right)}}=e</m>.
+      <m>\limitt{n}{\infty}{\frac{n+1}{n}}=1</m>, then
+      <m>\limitt{n}{\infty}{e^{\left(\frac{n+1}{n}\right)}}=e</m>.
       This also illustrates a certain way of thinking about continuous
       functions.  They are the ones where we can <term>commute</term> the
       function and a limit of a sequence.  Specifically, if <m>f</m> is
       continuous at <m>a</m> and <m>\limit{n}{\infty}{x_n}=a</m>,
       then
-      <me>\limit{n}{\infty}{f(x_n)}=f(a)=f\left(\limit{n}{\infty}{x_n}\right)</me>.
+
+      <me>
+        \limit{n}{\infty}{f(x_n)}=f(a)=f\left(\limit{n}{\infty}{x_n}\right)
+        </me>.
     </p>
 
     <problem>

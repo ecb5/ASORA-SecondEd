@@ -22,7 +22,7 @@
       But what can be said about the uniqueness of a trigonometric
       series?  If we can represent a function <m>f</m> as a general
       trigonometric series <me> f(x)=\displaystyle\sum_{n=0}^\infty(a_n\cos n\pi
-      x\,+b_n\sin n\pi x) </me>, then must this be the Fourier series
+      x+b_n\sin n\pi x) </me>, then must this be the Fourier series
       with the coefficients as determined by Fourier?
     </p>
 
@@ -95,8 +95,8 @@
       To begin, let<rsq/>s suppress the underlying function and suppose we
       have
       <me>
-        \sum_{n=0}^\infty(a_n\cos n\pi x\,+b_n\sin n\pi x) =
-        \sum_{n=0}^\infty(a^\prime_n\cos n\pi x\,+b^\prime_n\sin n\pi
+        \sum_{n=0}^\infty(a_n\cos n\pi x+b_n\sin n\pi x) =
+        \sum_{n=0}^\infty(a^\prime_n\cos n\pi x+b^\prime_n\sin n\pi
         x) </me>.
     </p>
 
@@ -112,8 +112,8 @@
 
         If we let <m>c_n = a_n-a^\prime_n</m> and <m>d_n =
         b_n-b^\prime_n</m>, then the question becomes: If
-        <me>\sum_{n=0}^\infty\left(c_n\cos n\pi x\,+d_n\sin n\pi
-          x\right) = 0</me>, is it necessarily true that
+        <me>\sum_{n=0}^\infty\left(c_n\cos n\pi x+d_n\sin n\pi
+        x\right) = 0</me>, is it necessarily true that
         <m>c_n=d_n=0</m>?  </p>
 
     <p>
@@ -130,7 +130,7 @@
 
     <!--   The converse of the question above: If <m>c_n=d_n=0</m>, is it -->
     <!--   necessarily true that <me>\sum_{n=0}^\infty\left(c_n\cos n\pi -->
-    <!--   x\,+d_n\sin n\pi x\right) = 0</me>, is even more interesting, as -->
+    <!--   x+d_n\sin n\pi x\right) = 0</me>, is even more interesting, as -->
     <!--   we will soon see.  The answer to this seemingly basic question -->
     <!--   leads to some very profound results. -->
     <!-- </p> -->
@@ -164,7 +164,7 @@
 
           If the trigonometric series
           <me>
-            \sum_{n=0}^\infty\left(c_n\cos n\pi  x\,+d_n\sin n\pi x\right) = 0
+            \sum_{n=0}^\infty\left(c_n\cos n\pi  x+d_n\sin n\pi x\right) = 0
             </me>,
         </p>
 
@@ -214,7 +214,7 @@
         <p>
           If the trigonometric series
           <me>
-            \sum_{n=0}^\infty\left(c_n\cos n\pi  x\,+d_n\sin n\pi x\right) = 0
+            \sum_{n=0}^\infty\left(c_n\cos n\pi  x+d_n\sin n\pi x\right) = 0
             </me>,
             for all <m>x\in\RR</m> then all of its coefficients vanish.
         </p>
@@ -243,7 +243,7 @@
         <p>
           If the trigonometric series 
           <me>
-            \sum_{n=0}^\infty\left(c_n\cos n\pi x\,+d_n\sin n\pi
+            \sum_{n=0}^\infty\left(c_n\cos n\pi x+d_n\sin n\pi
             x\right) = 0 
             </me>, 
             for all but finitely many <m>x\in\RR</m>
@@ -407,8 +407,8 @@
             <li>
               <p>
                 Prove that
-                <m>\left(S^{\,\prime}\right)^{\,\prime}\subseteq
-                S^{\,\prime}</m>.
+                <m>\left(S^{\prime}\right)^{\prime}\subseteq
+                S^{\prime}</m>.
               </p>
             </li>
             <li>
@@ -433,7 +433,7 @@
       a set of real numbers and consider the following sequence of
       sets:
       <me>
-        S^{\,\prime}\supseteq \left(S^\prime\right)^\prime\supseteq \left(\left(S^\prime\right)^\prime\right)^\prime\supseteq \cdots
+        S^{\prime}\supseteq \left(S^\prime\right)^\prime\supseteq \left(\left(S^\prime\right)^\prime\right)^\prime\supseteq \cdots
         </me>.
     </p>
 
@@ -457,7 +457,7 @@
           Let <m>S</m> be a subset of the real numbers with the
           property that one of its derived sets is empty.  Then if the
           trigonometric series <m>\displaystyle\sum_{n=0}^\infty\left(c_n\cos n\pi
-          x\,+d_n\sin n\pi x\right)</m> is zero for all
+          x+d_n\sin n\pi x\right)</m> is zero for all
           <m>x\in\RR-S</m>, then all of the coefficients of the series
           vanish.
         </p>
@@ -1928,7 +1928,7 @@
   <!--           <!-\- <p> -\-> -->
 
   <!--           <!-\-   It also sets the stage for what we will focus on, which is to -\-> -->
-  <!--           <!-\-   find a way to integrate a function such as the <xref ref="PROBLEMDiricheletCountrExamp" text="custom">Dirichlet -\-> -->
+  <!--           <!-\-   find a way to integrate a function such as the <xref ref="PROBLEMDirichletCountrExamp" text="custom">Dirichlet -\-> -->
   <!--           <!-\-   Function</xref>.  The trick is to not focus on the function but on -\-> -->
   <!--           <!-\-   the interval on which it is integrated and how to measure the -\-> -->
   <!--           <!-\-   subsets in a partition.  This generalization comes from  -\-> -->
@@ -2299,15 +2299,15 @@
 
 
   <p>
-    <idx><h>Dirichlet Function</h></idx>
+    <!-- <idx><h>Dirichlet<rsq/>s Function</h></idx> -->
 
-    Recall from <xref ref="PROBLEMDiricheletCountrExamp" ></xref>
+    Recall from <xref ref="PROBLEMDirichletCountrExamp" ></xref>
     that the <term>Dirichlet Function</term>
     <me> 
       D(x)=
       \begin{cases}
-      0, \amp \text{ if }  x \text{ is rational}\\
-      1, \amp \text{ if }  x \text{ is irrational}
+      0, \amp \text{ if }  x \text{ is irrational}\\
+      1, \amp \text{ if }  x \text{ is rational}
       \end{cases}
     </me>
     is not Riemann (Cauchy, Darboux) integrable. Dirichlet invented
@@ -2470,7 +2470,8 @@
 </p>
 <p>
   The same is true of the rectangles constructed at <m>x=0</m>,
-  <m>x=\pi{}</m>, and <m>x=2\pi{}</m>. The measures of their bases will be zero. (Their heights will also be zero but that is
+  <m>x=\pi{}</m>, and <m>x=2\pi{}</m>. The measures of their bases
+  will be zero. (Their heights will also be zero but that is
   irrelevant.)
 </p>
 
@@ -2516,10 +2517,10 @@
   <me> 
     D(x)=
     \begin{cases}
-    0, \amp \text{ if }  x \text{ is rational}\\
-    1, \amp \text{ if }  x \text{ is irrational}
+    0, \amp \text{ if }  x \text{ is irrational}\\
+    1, \amp \text{ if }  x \text{ is rational}
     \end{cases}
-    </me>, 
+    </me>
 
     which we will explore next. 
 </p>
@@ -2550,6 +2551,8 @@
   <title>
     The Lebesgue Integral of Dirichlet<rsq/>s Function 
   </title>
+
+  <idx><h>Dirichlet<rsq/>s Function</h><h>Lebesgue integral of</h></idx>
   <p>
     Use <xref ref="THEOREMMeasureZero" ></xref> and <xref
     ref="EQUATIONDirichFunc" >equation</xref> to show that
@@ -2568,7 +2571,7 @@
 <!--   it should not be surprising that if two (Lebesgue integrable) -->
 <!--   functions, <m>f</m> and <m>g</m>, differ from each other on set of -->
 <!--   measure zero, then they should have the same value for their -->
-<!--   Lebesgue integrals.  Since the <xref ref="PROBLEMDiricheletCountrExamp" text="custom">Dirichlet function</xref> differs from -->
+<!--   Lebesgue integrals.  Since the <xref ref="PROBLEMDirichletCountrExamp" text="custom">Dirichlet function</xref> differs from -->
 <!--   the constantly one function on a set of measure zero (namely -->
 <!--   <m>\QQ</m>), then it should be Lebesgue integrable (as a -->
 <!--   constant function should be) and its integral would be -->

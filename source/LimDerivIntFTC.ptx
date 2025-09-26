@@ -2695,8 +2695,8 @@
         <figure >
           <caption>Lejeune Dirichlet</caption>
 
-          <idx><h>Portraits</h><h>Dirichelet</h></idx>
-          <idx><h>Dirichelet, Lejeune</h><h>portrait of</h></idx>
+          <idx><h>Portraits</h><h>Dirichlet</h></idx>
+          <idx><h>Dirichlet, Lejeune</h><h>portrait of</h></idx>
 
           <image source="images/Dirichlet.png" width="35%">
             <shortdescription>Portrait of Dirichlet</shortdescription>
@@ -2704,7 +2704,8 @@
         </figure>
 
 
-        <problem xml:id="PROBLEMDiricheletCountrExamp">
+        <problem xml:id="PROBLEMDirichletCountrExamp">
+          <idx><h>Dirichlet<rsq/>s Function</h></idx>
 
           <statement>
             <p>
@@ -2713,8 +2714,8 @@
               <me>
                 D(x)=
                 \begin{cases}
-                0\amp \text{ if } x \text{ is rational}\\
-                1\amp \text{ if } x \text{ is irrational}
+                0\amp \text{ if } x \text{ is irrational}\\
+                1\amp \text{ if } x \text{ is rational}
                 \end{cases}
                 </me>.
 
@@ -2724,7 +2725,7 @@
               <m>[0,1]</m>.
             </p>
 
-</statement>
+          </statement>
 
           <hint>
             <p>

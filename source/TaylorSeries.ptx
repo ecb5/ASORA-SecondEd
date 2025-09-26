@@ -104,22 +104,32 @@
         The expression 
         <men xml:id="EQUATIONIntFormRemainder">
           \frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}
-          </men> is called the
-          <term>Integral Form</term> of the remainder of the Taylor series of <m>f(x)</m>.
+          </men> 
+
+          is called the <term>Integral Form</term> of the remainder of
+          the Taylor series of <m>f(x)</m>.
 
   </p>
   <p>
-    Clearly, the Taylor series will converge to <m>f(x)</m> exactly when
+    Clearly, the Taylor series will converge to <m>f(x)</m> exactly
+    when
+    
     <me>
       \limit{n}{\infty}{\left(\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{t}
-      \right)}=0 </me>.  The <xref ref="EQUATIONIntFormRemainder"
-      text="custom">Integral Form</xref> of the remainder is usually
-      easier to work with than the original form: 
+      \right)}=0 </me>.
+
+      The <xref ref="EQUATIONIntFormRemainder" text="custom">Integral
+      Form</xref> of the remainder is usually easier to work with than
+      the original form:
+      
       <me> 
         f(x)-\left(\sum_{j=0}^n\frac{f^{(j)}(a)}{j!}(x-a)^j\right)
       </me>
+
       and we can use the <xref ref="EQUATIONIntFormRemainder"
-      text="custom">Integral Form</xref> to obtain some conditions which guarantee the convergence of particular Taylor series such as the following.
+      text="custom">Integral Form</xref> to obtain some conditions
+      which guarantee the convergence of particular Taylor series such
+      as the following.
   </p>
 
   <theorem xml:id="THEOREMTaylorSeriesBnd">
@@ -132,9 +142,11 @@
         <m>|f^{(n+1)}(t)|\leq B</m> for all nonnegative integers
         <m>n</m> and for all <m>t</m> on an interval containing
         <m>a</m> and <m>x</m>, then
+      
         <me>
           \limit{n}{\infty}{\left(\frac{1}{n!}\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\right)}=0
         </me>
+
         and so
         <me>
           f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n.{}
@@ -150,7 +162,9 @@
   <lemma xml:id="lemma_TriangleForIntegral">
     <statement>
       <p>
-        If <m>f</m> and <m>\abs{f}</m> are integrable functions and <m>a\leq b</m>, then
+        If <m>f</m> and <m>\abs{f}</m> are integrable functions and
+        <m>a\leq b</m>, then
+
         <me>
           \left|\int_{t=a}^bf(t)\dx{ t}\right|\leq\int_{t=a}^b|f(t)|\dx{ t}. {}
         </me>
@@ -196,9 +210,16 @@
         true in general.  This is why we will often indicate
         that <m>t</m> is between <m>a</m> and <m>x</m> as in the
         theorem.  In the case <m>x\lt a</m>, notice that
+
         <md>
-          <mrow>\left|\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}\right|\amp =\left|(-1)^{n+1}\int_{t=x}^af^{(n+1)}(t)(t-x)^n\dx{ t}\right|</mrow>
-          <mrow>\amp =\left|\int_{t=x}^af^{(n+1)}(t)(t-x)^n\dx{ t}\right|.</mrow>
+          <mrow>
+          \abs{\int_{t=a}^xf^{(n+1)}(t)(x-t)^n\dx{ t}}\amp
+          =\abs{(-1)^{n+1}\int_{t=x}^af^{(n+1)}(t)(t-x)^n\dx{
+              t}}
+          </mrow>
+          <mrow>
+            \amp =\abs{\int_{t=x}^af^{(n+1)}(t)(t-x)^n\dx{ t}}.
+          </mrow>
         </md>
       </p>
     </hint>

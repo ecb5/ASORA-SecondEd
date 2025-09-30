@@ -186,9 +186,9 @@
     </p>
 
     <problem>
-      
-      <idx><h>Weierstrass, Karl</h><h>continuous, everywhere non-differentiable function</h></idx>
-      <idx><h>continuity</h><h>Weierstrass<rsq/> continuous, but non-differentiable function</h></idx>
+      <idx><h>Problem</h><h>continuous non<ndash/>differentiable function</h></idx>
+      <idx><h>Weierstrass, Karl</h><h>continuous, everywhere non<ndash/>differentiable function</h></idx>
+      <idx><h>continuity</h><h>Weierstrass<rsq/> continuous, but non<ndash/>differentiable function</h></idx>
 
       <task>
         <statement>
@@ -511,6 +511,7 @@
     </proof>
 
     <problem>
+      <idx><h>Problem</h><h><m>f(x) = mx +b</m> is continuous everywhere</h></idx>
       <idx><h>continuity</h><h><m>f(x) = mx +b</m> is continuous everywhere</h></idx> 
 
       <statement>
@@ -566,6 +567,8 @@
     </p>
 
     <problem>
+      <idx><h>Problem</h><h>continuity</h></idx>
+
 
       <idx><h>continuity</h><h>smaller <m>\delta</m> works in definition</h></idx>
       <idx><h>continuity</h><h>larger <m>\eps</m> works in definition</h></idx>
@@ -612,6 +615,8 @@
     </p>
 
     <problem xml:id="prob_extended_sqrt_is_continuous_at_zero">
+      <idx><h>Problem</h><h>continuity</h></idx>
+
       <statement>
         <p>
           <idx><h>continuity</h><h><m>\pm\sqrt{x}</m> is continuous at zero</h></idx>
@@ -626,6 +631,8 @@
     </problem>
 
     <problem>
+      <idx><h>Problem</h><h><m>\sqrt{x}</m> is continuous at zero</h></idx>
+
 
       <idx><h><m>\sqrt{x}</m></h><h>is continuous at zero</h></idx> 
 
@@ -749,7 +756,7 @@
 </p>
 
 <problem>
-  
+  <idx><h>Problem</h><h sortby="square"><m>\sqrt{x}</m></h><h>is continuous at every positive real number</h></idx>
   <idx><h><m>\sqrt{x}</m></h><h>is continuous at every positive real number</h></idx>
 
   <statement>
@@ -762,7 +769,7 @@
 </problem>
 
 <problem>
-  
+  <idx><h>Problem</h><h sortby="sine"><m>\sin x</m> is continuous for <m>0\leq x\lt \frac{\pi}{2}</m></h></idx>
   <idx><h><m>\sin x</m></h><h>is continuous for <m>0\leq x\lt \frac{\pi}{2}</m></h></idx>
 
   <task>
@@ -794,7 +801,7 @@
 
 
 <problem>
-  
+  <idx><h>Problem</h><h><m>e^x</m> is continuous everywhere</h></idx>
   <idx><h>continuity</h><h><m>e^x</m> is continuous everywhere</h></idx>
   <idx><h>continuous functions</h><h><m>e^x</m> is continuous everywhere</h></idx>
 
@@ -822,7 +829,7 @@
 </problem>
 
 <problem>
-  
+  <idx><h>Problem</h><h>constant functions are continuous</h></idx>
   <idx><h>continuous functions</h><h>a constant function is continuous</h></idx>
   <idx><h>continuity</h><h>of a constant function</h></idx>
 
@@ -835,6 +842,8 @@
 </problem>
 
 <problem>
+  <idx><h>Problem</h><h sortby="ln"><m>\ln x</m> is continuous everywhere</h></idx>
+
 
   <idx><h>continuous functions</h><h><m>\ln x</m> is continuous everywhere</h></idx>
   <idx><h>continuity</h><h>of <m>\ln{x}</m></h></idx>
@@ -901,6 +910,7 @@
 </p>
 
 <problem>
+  <idx><h>Problem</h><h>the Topologist<rsq/>s sine function is continuous at zero</h></idx>
   <idx><h>Topologist<rsq/>s sine function</h><h>is continuous at zero</h></idx>
 
   <statement>
@@ -958,7 +968,7 @@
 </p>
 
 <problem>
-
+  <idx><h>Problem</h><h>continuity</h></idx>
   <idx><h>continuity</h>
 
   <h>
@@ -1004,9 +1014,11 @@
 </problem>
 
 <problem>
+  <idx><h>Problem</h><h>definition of continuitycon</h></idx>
+  <idx><h>continuity</h><h>formal definition of discontinuity</h></idx>
+
   <statement>
     <p>
-      <idx><h>continuity</h><h>formal definition of discontinuity</h></idx>
 
       Write a formal definition of the statement <m>f</m> is not continuous
       at <m>a</m>, and use it to prove that the function
@@ -1127,6 +1139,8 @@
 
 
     <problem>
+      <idx><h>Problem</h><h>Heaviside<rsq/>s function is not continuous at zero</h></idx>
+
 
       <idx><h>continuity</h><h>Heaviside<rsq/>s function is not continuous at zero</h></idx>
 
@@ -1145,7 +1159,7 @@
     </problem>
 
     <problem>
-      
+      <idx><h>Problem</h><h>continuity</h></idx>
       <idx>
         <h>continuity</h>
         <h>
@@ -1194,14 +1208,15 @@
       <title>The Topologist<rsq/>s Sine Curve</title>
       
       <idx><h>Problem</h><h>Topologist<rsq/>s sine function</h><h>modified version is not continuous at zero</h></idx>
+      <idx><h>Topologist<rsq/>s sine function</h><h>modified version is not continuous at zero</h></idx>
 
       <statement>
         <p>
-          The function <me>Top(x)=\sin\left(\frac{1}{x}\right)</me> is
+          The function <me>T(x)=\sin\left(\frac{1}{x}\right)</me> is
           often called the topologist<rsq/>s sine curve.  Whereas <m>\sin
           x</m> has roots at <m>n\pi</m>, <m>n\in\ZZ</m> and
           oscillates infinitely often as <m>x\rightarrow\pm\infty</m>,
-          <m>Top</m> has roots at <m>\frac{1}{n\pi},\,n\in\ZZ,\,n\neq
+          <m>T</m> has roots at <m>\frac{1}{n\pi},\,n\in\ZZ,\,n\neq
           0</m>, and oscillates infinitely often as <m>x</m>
           approaches zero.  A rendition of the graph follows.
         </p>
@@ -1210,18 +1225,18 @@
         </image>
 
         <p>
-          Notice that <m>Top</m> is not even defined at <m>x=0</m>.
-          We can extend <m>Top</m> to be defined at <m>0</m> by simply
+          Notice that <m>T</m> is not even defined at <m>x=0</m>.
+          We can extend <m>T</m> to be defined at <m>0</m> by simply
           choosing a value at  <m>0</m>. Since this will be a new function we give it a new name.
           <me>
-            Top_m(x)= \begin{cases}
+            T_b(x)= \begin{cases}
             \sin\left(\frac{1}{x}\right),\amp \text{ if } x\neq 0\\ 
             b,\amp \text{ if } x=0 \end{cases} </me>.
         </p>
 
         <p>
           Use <xref ref="thm_LimDefOfContinuity"></xref>
-          to show that <m>Top_m</m> is not continuous at <m>0</m>,
+          to show that <m>T_b</m> is not continuous at <m>0</m>,
           no matter what value is chosen for <m>b</m>.
         </p>
       </statement>
@@ -1293,6 +1308,8 @@
     </proof>
 
     <problem>
+      <idx><h>Problem</h><h>continuity via sequences</h></idx>
+
       <statement>
         <p>
           <idx><h>continuity</h><h>via sequences</h></idx>
@@ -1354,7 +1371,8 @@
     </proof>
 
     <problem>
-
+      <idx><h>Problem</h><h>the product of continuous functions is
+      continuous</h></idx>
       <idx><h>continuous functions</h><h>the product of continuous
       functions is continuous</h></idx>
       <idx><h>continuity</h><h>of a product</h></idx>
@@ -1447,6 +1465,8 @@
     </lemma>
 
     <problem>
+      <idx><h>Problem</h><h>if <m>f</m> is continuouse and <m>f(a)\neq0</m> then <m>f</m> is bounded away from zero near a</h></idx>    
+
 
       <idx><h>continuous functions</h><h>if <m>f</m> is continuouse and <m>f(a)\neq0</m> then <m>f</m> is bounded away from zero near a</h></idx>    
       <idx><h>continuity</h><h>of a quotient</h></idx>

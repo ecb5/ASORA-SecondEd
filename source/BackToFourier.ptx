@@ -294,6 +294,7 @@
 
     <problem xml:id="PROBLEMAccumulationPoint">
       
+      <idx><h>Problem</h><h>accumulation point</h></idx>
       <idx><h>limit</h><h>accumulation point</h></idx>
       <idx><h>sets</h><h>accumulation points</h></idx>
 
@@ -345,6 +346,7 @@
     <problem>
       
       <idx><h>derived sets</h></idx>
+      <idx><h>Problem</h><h>derived sets</h></idx>
 
       <statement>
         <p>
@@ -398,6 +400,7 @@
 
     <problem>
 
+      <idx><h>Problem</h><h>derived sets</h></idx>
       <idx><h>derived sets</h></idx>
 
       <statement>
@@ -504,22 +507,24 @@
       <!-- S^\prime</m>. -->
     </p>
 
-    <problem  xml:id="PROBLEMClosedIntIsClosedSet">
-
-      <statement>
-        <p>
-          Prove that a closed interval, <m>[a,b]</m> is also a closed set.
-          <!-- Prove that if <m>b\lt c</m>, then <m>c</m> is not a limit -->
+        <problem  xml:id="PROBLEMClosedIntIsClosedSet">
+          <idx><h>Problem</h><h>a closed interval is a closed set</h></idx>
+    
+          <statement>
+            <p>
+              Prove that a closed interval, <m>[a,b]</m> is also a
+              closed set.
+              <!-- Prove that if <m>b\lt c</m>, then <m>c</m> is not a limit -->
           <!-- point of <m>[a,b]</m>.  This will complete the proof that -->
           <!-- <m>[a,b]</m> is closed. -->
-        </p>
+            </p>
 
-      </statement>
-      <hint>
-        <p>
-          First suppose that <m>c\notin [a,b]</m>. There are two
-          cases:
-          <dl>
+          </statement>
+          <hint>
+            <p>
+              First suppose that <m>c\notin [a,b]</m>. There are two
+              cases:
+              <dl>
             <li>
               <title>
                 Case 1
@@ -547,6 +552,8 @@
     </problem>
 
     <problem>
+      <idx><h>Problem</h><h>a closed set is not (necessarily) a closed inteval </h></idx>  
+    
       <p>
         The converse of <xref ref="PROBLEMClosedIntIsClosedSet" ></xref>
         is not true. That is, not every closed set is also a closed
@@ -619,6 +626,8 @@
     </definition>
 
     <problem>
+
+      <idx><h>Problem</h><h>open sets</h></idx>    
       <statement>
 
         <p>
@@ -638,10 +647,11 @@
     </problem>
 
     <problem>
+      <idx><h>Problem</h><h>open intervals are not the only open sets</h></idx>    
+    
       <p>
-        Open intervals are not the only open sets.
-        Convince yourself that each of the
-        following are also open sets.
+        Open intervals are not the only open sets.  Convince yourself
+        that each of the following are also open sets.
         <ul>
           <li>
             <m>\RR </m>
@@ -658,8 +668,10 @@
     </problem>
 
     <problem>
+      <idx><h>Problem</h><h>sets that are neither open nor closed</h></idx>
+
       <p>
-        Of course, there are sets which are neither open nor closed.
+      Of course, there are sets which are neither open nor closed.
       </p>
       <p>
         Convince yourself that these sets are neither open
@@ -689,12 +701,29 @@
       attention to functions <m>f(x)</m> whose domain is an open set
       <m>D</m> of real numbers.
     </p>
-    <p>
-      We will need the following two definitions.
-    </p>
+
+    <problem  xml:id="PROBLEMTopoDefCont">
+      <idx><h>Problem</h><h>continuity via set theory</h></idx>
+
+      <p>
+        Show that a function <m>f(x)</m> is continuous at <m>x=a</m>
+        if and only if for every open set <m>V</m> containing
+        <m>f(a)</m> there is an open set <m>U</m> containing <m>a</m>
+        with <m>f(U)\subset{V}</m>.
+      </p>
+
+      <!-- <p> -->
+      <!--   Show that <m>f</m> is continuous on <m>D</m> if and only if -->
+      <!--   <m>f</m> satisfies the following condition: for any open set -->
+      <!--   of real numbers <m>V</m>, <m>f^{-1}(V)</m> is open. -->
+      <!-- </p> -->
+    </problem>
+
+
+
 
     <definition xml:id="DEFINITIONOpenByPreImage">
-      <idx><h>Definition</h><h>image</h></idx>
+    <idx><h>Definition</h><h>image</h></idx>
       <idx><h>Definition</h><h>image</h><seealso>pre<ndash/>image</seealso></idx>
       <idx><h>image</h><h>definition</h></idx>
       <idx><h>image</h><h>definition</h><seealso>pre<ndash/>image</seealso></idx>
@@ -723,8 +752,16 @@
 
     </definition>
     <p>
-      With these definitions we have the following result
+      We can use the results of <xref ref="PROBLEMTopoDefCont"
+      ></xref>, and <xref ref="DEFINITIONOpenByPreImage" ></xref> to
+      give a <term>topological</term> definition of continuity in
+      terms of open sets.  (Notice that in <xref
+      ref="PROBLEMTopoDefCont" ></xref>, <m>f\left(U\right)\subset
+      V</m> can be expressed as <m>U\subset f^{-1}(V)</m>.)
     </p>
+    <!-- <p> -->
+    <!--   With these definitions we have the following result -->
+    <!-- </p> -->
     <!-- <problem> -->
     <!--   <p> -->
     <!--     Show that <m>f\left(x\right)</m> is continuous at <m>x=a</m> -->
@@ -740,27 +777,14 @@
     <!--   <m>f</m> on all of its domain <m>D</m> has an even easier -->
     <!--   condition when stated in terms of open sets. -->
     <!-- </p> -->
-    <problem  xml:id="PROBLEMTopoDefCont">
 
-      <p>
-        Show that <m>f(x)</m> is continuous at <m>x=a</m> if and only if for
-        every open set <m>V</m> containing <m>f(a)</m> there is an open set
-        <m>U</m> containing <m>a</m> with <m>f(U)\subset{V}</m>.
-      </p>
+    <!-- <p> -->
 
-      <!-- <p> -->
-      <!--   Show that <m>f</m> is continuous on <m>D</m> if and only if -->
-      <!--   <m>f</m> satisfies the following condition: for any open set -->
-      <!--   of real numbers <m>V</m>, <m>f^{-1}(V)</m> is open. -->
-      <!-- </p> -->
-    </problem>
-    <p>
+    <!--   With <xref ref="PROBLEMTopoDefCont" ></xref> in mind we have the following definition. -->
+    <!--   (Notice that in <xref ref="PROBLEMTopoDefCont" ></xref>, <m>f\left(U\right)\subset -->
+    <!--   V</m> can be expressed as <m>U\subset f^{-1}(V)</m>.) -->
 
-      Notice that in <xref ref="PROBLEMTopoDefCont" ></xref>, <m>f\left(U\right)\subset
-      V</m> can be expressed as <m>U\subset f^{-1}(V)</m>.  Based
-      on this observation and <xref ref="PROBLEMTopoDefCont" ></xref>, we have the following definition.
-
-    </p>
+    <!-- </p> -->
 
     <definition xml:id="DEFINITIONTopoDefCont">
       <title>
@@ -790,8 +814,8 @@
       href="https://mathshistory.st-andrews.ac.uk/Biographies/Hausdorff/"
       >Felix Hausdorff</url> (1868<ndash/>1942) defined the concept
       of a <term>topology on a set</term>. His definition is based
-      solely on sets and does not use the notion of <q>distance</q>
-      or <q>length</q>which we have relied on hitherto. (The <m>\eps
+      solely on sets and does not use the notion of distance
+      or length which we have relied on hitherto. (The <m>\eps
       </m> and <m>\delta </m> that appeared in almost all of our
       convergence proofs measure a distance of some sort.)
     </p>
@@ -804,7 +828,7 @@
     <p>
       Given an arbitrary nonempty set <m>S</m>, we define a topology
       on <m>S</m> to be a collection <m>\tau </m> of subsets of
-      <m>S</m> which we designate to be <q>open</q> sets.  The
+      <m>S</m> (which we designate to be the open sets).  The
       modern rendition of Hausdorff<rsq/>s definition of a topology
       says that <m>\tau </m> must satisfy the following axioms.
       
@@ -907,6 +931,7 @@
 
   <problem>
 
+    <idx><h>Problem</h><h>Nested Interval Property</h><h>weak form</h></idx>
     <idx><h>Nested Interval Property</h><h>weak form</h></idx> 
 
     <statement>
@@ -1259,7 +1284,8 @@
 
 
   <problem xml:id="PROBLEMCountableDrills">
-    
+  
+    <idx><h>Problem</h><h>countable sets</h></idx>  
     <idx><h>countable sets</h><h>countable sets drill, 5 parts</h></idx>
     
     <introduction>
@@ -1308,7 +1334,8 @@
 
 
   <problem xml:id="prob_countable_sets_unions_of">
-    
+  
+    <idx><h>Problem</h><h>countable sets</h><h>unions and intersections of</h></idx>  
     <idx><h>countable sets</h><h>unions and intersections of</h></idx>
 
     <introduction>
@@ -1420,7 +1447,7 @@
   </proof>
 
   <problem>
-    
+    <idx><h>Problem</h><h><m>\QQ</m> is countable</h></idx>  
     <idx><h><m>\QQ</m></h><h>is countable</h></idx>
 
     <statement>
@@ -1469,7 +1496,8 @@
   </p>
 
   <problem>
-    
+    <idx><h>Problem</h><h>intervals are uncountable</h></idx>  
+  
     <idx><h>sets</h><h>intervals are uncountable</h></idx>
 
     <task>
@@ -1968,10 +1996,14 @@
   collection of open intervals which <q>cover</q> <m>S</m> (hence the
   name). Obviously every open interval is an open cover of itself. 
 </p>
+
 <problem xml:id="PROBLEMOpenCovers">
+  <idx><h>Problem</h><h>open covers</h></idx>
+
   <introduction>
     <p>
-      Construct two distinct open covers of each of the following sets. (There is more than one correct answer.)
+      Construct two distinct open covers of each of the following
+      sets. (There is more than one correct answer.)
     </p>
 </introduction>
 <task>
@@ -2043,6 +2075,8 @@
   </statement>
 </definition>
 <problem xml:id="PROBLEMOuterMeasure1">
+  <idx><h>Problem</h><h>outer measure</h></idx>
+
 
   <introduction>
     <p>
@@ -2236,6 +2270,8 @@
   </theorem>
 
   <problem>
+    <idx><h>Problem</h><h>measure zero</h></idx>
+
     <task>
       <statement>
         <p>
@@ -2552,7 +2588,10 @@
     The Lebesgue Integral of Dirichlet<rsq/>s Function 
   </title>
 
+  <idx><h>Problem</h><h>Dirichlet<rsq/>s Function</h><h>Lebesgue integral of</h></idx>
   <idx><h>Dirichlet<rsq/>s Function</h><h>Lebesgue integral of</h></idx>
+
+
   <p>
     Use <xref ref="THEOREMMeasureZero" ></xref> and <xref
     ref="EQUATIONDirichFunc" >equation</xref> to show that
@@ -2714,6 +2753,8 @@
   </p>
 
   <problem>
+    <idx><h>Problem</h><h>Geometric series</h></idx>
+
     
     <idx><h>series</h><h>Geometric series</h><h>
 
@@ -2784,7 +2825,7 @@
   </p>
 
   <problem xml:id="prob_PowerSet">
-    
+    <idx><h>Problem</h><h>power set</h></idx>
     <idx><h>sets</h><h>power set</h></idx>
     <idx><h>sets</h><h>cardinality of a power set</h></idx>
     <idx><h>cardinality</h><h>of a power set</h></idx>
@@ -2816,6 +2857,8 @@
 
   
   <problem>
+    <idx><h>Problem</h><h>Cantor<rsq/>s Theorem</h></idx>
+
     
     <idx><h>Cantor, Georg</h><h>Cantor<rsq/>s Theorem</h></idx>
 
@@ -2869,6 +2912,8 @@
   </p>
 
   <problem>
+    <idx><h>Problem</h><h>countable union of finite sets</h></idx>
+
     <statement>
       <p>
         <idx><h>countable sets</h><h>countable union of finite sets</h></idx>
@@ -2889,6 +2934,8 @@
   </p>
 
   <problem>
+    <idx><h>Problem</h><h>countably infinite subsets</h></idx>
+
     <statement>
       <p>
         <idx><h>sets</h><h>countably infinite subsets</h></idx>
@@ -2900,7 +2947,9 @@
   </problem>
 
   <problem>
-    <idx><h>countable sets</h><h>deleting a countable subset</h></idx> 
+    <idx><h>Problem</h><h>deleting a countable subset from an uncountable set</h></idx>
+
+    <idx><h>uncountable sets</h><h>deleting a countable subset</h></idx> 
 
 
     <statement>

@@ -97,23 +97,23 @@
     </title>
 
     <p>
-      Even though it has a different title, this work is an extension
-      of the open-source book 
+      This is the second edition of of our open<ndash/>source book
       <pubtitle>
         How We Got from There to Here: A Story
         of Real Analysis.
       </pubtitle>
-      The immediate reason for writing a second
-      edition was that we discovered the original title led many
-      people to believe that this was a history of mathematics book
-      rather than a textbook for use in a typical undergraduate
-      introductory analysis class.  We were so caught up in using
-      history to tell the story behind the nonintuitive, rigorous
-      definitions and theorems found in such a course that we mistaken
-      assumed that others would understand our intent before actually
-      opening the book.  We kept the “How We Got from There to Here”
-      because this book still endeavors to tell a story of how modern
-      analysis evolved to its present state.
+      As much as we liked our original title we discovered much to our
+      dismay that it led many people to believe that it was a history
+      of mathematics book rather than a textbook for use in a typical
+      undergraduate introductory analysis class.  We were so caught up
+      in using history to tell the story behind the nonintuitive,
+      rigorous definitions and theorems found in such a course that we
+      mistakenly assumed that others would understand our intent before
+      actually opening the book. So we<rsq/>ve changed the title.  We kept  the original title
+      <pubtitle>
+        How We Got from There to Here
+        </pubtitle>,
+        but we have demoted it to subtitle status.
     </p>
     <p>
       After rereading what we wrote, we realized that there were parts

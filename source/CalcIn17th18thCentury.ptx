@@ -438,6 +438,8 @@
       <!-- </task> -->
       <!--       </problem> -->
       <problem>
+        <idx><h>Problem</h><h>differentiation rules</h></idx>
+
         <introduction>
           <p>
             Assume <m>n</m> is a positive integer.
@@ -481,7 +483,8 @@
       </problem>
 
       <problem>
-
+        <idx><h>Problem</h><h>power rule with fractional
+        exponents</h></idx>
         <idx><h>differentiation</h><h>power rule with fractional
         exponents</h></idx>
 
@@ -926,6 +929,8 @@
       </p>
 
       <problem>
+        <idx><h>Problem</h><h>the Brachistochrone problem</h></idx>
+
         <idx><h>Brachistochrone problem, the</h></idx>
 
         <statement>
@@ -1391,6 +1396,8 @@
 </p>
 
 <problem>
+  <idx><h>Problem</h><h>expand <m>e^{-x^3} as a power series</m></h></idx>
+
   <statement>
     <p>
       Write <m>e^{-x^3}</m> as a power series expanded about
@@ -1402,9 +1409,11 @@
 </problem>    
 
 <problem>
+  <idx><h>Problem</h><h> power series expansion of <m>a^x</m></h></idx>
+
   <statement>
     <p>
-      Let <m>a>0</m>.  Find a power series expansion about 0 for <m>a^x</m>
+      Let <m>a>0</m>.  Find a power series expansion about <q>0</q>  for <m>a^x</m>
 
     </p>
 
@@ -1421,7 +1430,7 @@
 
 
 <problem xml:id="PROBLEMSinPwrSeries">
-  
+  <idx><h>Problem</h><h>series</h><h>solutions of <m>\frac{\dx^2y}{\dx{ x}^2}=-y</m></h></idx>
   <idx><h>series</h><h>solutions of <m>\frac{\dx^2y}{\dx{ x}^2}=-y</m></h></idx>
 
   <introduction>
@@ -1490,7 +1499,7 @@
 </problem>
 
 <problem xml:id="PROBLEMSinCosPwrSeries">
-  
+  <idx><h>Problem</h><h>differentiation</h><h>of <m>\sin x</m> as a power series</h></idx>
   <idx><h><m>\sin x</m></h><h>derivative of the power series representation</h></idx>
   <idx><h>differentiation</h><h>of <m>\sin x</m> as a power series</h></idx>
 
@@ -1541,6 +1550,8 @@
 </problem>
 
 <problem>
+  <idx><h>Problem</h><h>power series expansion of <m>\sin x</m></h></idx>
+
 
   <statement>
 
@@ -1558,6 +1569,8 @@
 </problem>
 
 <problem xml:id="PROBLEMResultsFromGeometricSeries">
+  <idx><h>Problem</h><h>power series expansion of <m>\arctan x</m></h></idx>
+
   
   <idx><h>series</h><h>Geometric series</h><h>used to derive arctangent series</h></idx>
   <idx><h>series</h><h>of <m>\arctan x</m></h></idx>
@@ -1622,7 +1635,7 @@
 <!-- </problem> -->
 
 <problem xml:id="PROBLEMLnSeriesFromGeoSeries">
-  
+  <idx><h>Problem</h><h>Alternating Geometric series</h></idx>
   <idx><h>series</h><h>Geometric series</h><h>alternating</h></idx>
   <idx><h>series</h><h>Geometric series</h><h>derivation of the series representation of <m>\ln(1+x)</m> from</h></idx>
 
@@ -1680,6 +1693,8 @@
 
 
 <problem>
+  <idx><h>Problem</h><h>Alternating Geometric series</h></idx>
+
   <statement>
     <p>
       Use the <xref ref="EQUATIONGeometricSeries" text="custom"
@@ -1851,7 +1866,7 @@
 </p>
 
 <problem>
-  
+  <idx><h>Problem</h><h>Binomial series</h></idx>
   <idx><h>Binomial Series, the</h><h>squaring the</h></idx>
 
   <statement>
@@ -1872,6 +1887,8 @@
 </problem>
 
 <problem xml:id="prob_SqrtSeriesProb">
+  <idx><h>Problem</h><h>power series expansion of <m>\sqrt{1+x}</m></h></idx>
+
   
   <idx><h>series</h><h>graph the square root power series</h></idx>
 
@@ -1900,6 +1917,8 @@
 </p>
 
 <problem>
+  <idx><h>Problem</h><h>power series expansion</h></idx>
+
   
   <idx><h><m>\pi</m></h><h>first series expansion</h></idx>
 
@@ -1930,6 +1949,8 @@
 </p>
 
 <problem>
+  <idx><h>Problem</h><h>power series expansion</h></idx>
+
   
   <idx><h><m>\pi</m></h><h>second series expansion</h></idx>
 
@@ -2002,6 +2023,8 @@
 </p>
 
 <problem>
+  <idx><h>Problem</h><h>Binomial series</h></idx>
+
   <task>
     <statement>
       <p>
@@ -2056,6 +2079,8 @@
 </problem>
 
 <problem>
+  <idx><h>Problem</h><h>Binomial series</h></idx>
+
   
   <idx><h>Binomial Series, the</h></idx>
   <idx><h>Binomial Series, the</h><h>as a power series centered at zero</h></idx>
@@ -2120,6 +2145,7 @@
 <problem>
   <title>The Basel Problem</title>
 
+  <idx><h>Problem</h><h>the Basel Problem</h></idx>
   <idx><h>Euler, Leonhard</h><h>Basel Problem, the</h></idx>
 
   <introduction>
@@ -2192,6 +2218,7 @@
 <problem>
   <title>Euler<rsq/>s Formula</title>
 
+  <idx><h>Problem</h><h>Euler<rsq/>s Formula</h></idx>
   <idx><h>Euler, Leonhard</h><h>Euler<rsq/>s Formula</h></idx>
 
   <task>
@@ -2303,6 +2330,8 @@
   </p>
    
   <problem xml:id="PROBLEMOneOverXTayl">
+    <idx><h>Problem</h><h>power series expansion of <m>\frac1x </m></h></idx>
+
     <introduction>
       <p>
         Let <m>a\neq 0</m>.
@@ -2351,6 +2380,8 @@
    
 
   <problem>
+    <idx><h>Problem</h><h>power series expansion of <m>\sqrt{x}</m></h></idx>
+
     <p>
       Let <m>a>0</m> and use <xref ref="eq_BinomialSeries"
       >equation</xref> to represent <m>\sqrt{x}</m> as a power series
@@ -2359,6 +2390,8 @@
   </problem>
   
   <problem xml:id="PROBLEMExpTaylAta">
+    <idx><h>Problem</h><h>power series expansion of <m>e^x</m> at <m>a</m></h></idx>
+
     <p>
       Let <m>a</m> be a real number.  Represent <m>e^x</m> as power
       series expanded about <m>a</m>.  Notice there is no restriction
@@ -2367,6 +2400,8 @@
 </problem>
   
 <problem>
+  <idx><h>Problem</h><h>power series expansion of <m>x^3+2x^2+3</m></h></idx>
+
   <p>
     Let <m>a</m> be a real number.  Represent <m>x^3+2x^2+3</m> as a
     power series expanded about <m>a</m>.  What happens if <m>a=0</m>?
@@ -2374,9 +2409,11 @@
 </problem>
   
 <problem xml:id="PROBLEMSinExpandedAta">
+  <idx><h>Problem</h><h>power series expansion of <m>\sin x</m></h></idx>
+
 
   <statement>
-<p>
+    <p>
   Let <m>a</m> be a real number.  Use the power series expansions
 
   <md>

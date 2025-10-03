@@ -238,6 +238,7 @@
 </p>
 
 <problem xml:id="prob_absolute_value">
+  <idx><h>Problem</h><h>absolute value</h></idx>  
   <idx><h>absolute value</h></idx>
   <statement>
     <p>
@@ -329,7 +330,7 @@
 </p>
 
 <problem>
-
+  <idx><h>Problem</h><h>convergence to zero</h></idx>  
   <idx><h>convergence</h><h>of a sequence</h><h>convergence to zero drill</h></idx>
 
   <introduction>
@@ -414,7 +415,7 @@
 </p>
 
 <problem>
-
+  <idx><h>Problem</h><h>convergence to zero</h></idx>  
   <idx><h>convergence</h><h>of a sequence</h><h>convergence to zero drill</h></idx>
 
   <statement>
@@ -430,6 +431,7 @@
 </problem>
 
 <problem xml:id="prob_sequences3">
+  <idx><h>Problem</h><h><m>\limit{n}{\infty}{b^n}=0</m> if <m>-1\lt b\lt 1</m></h></idx>  
   
   <idx><h>limit</h><h><m>\limit{n}{\infty}{b^n}=0</m> if <m>-1\lt b\lt 1</m></h></idx>
 
@@ -510,8 +512,8 @@
 
 
   <problem xml:id="prob_sequences-not_converge_to_zero">
-
-    <idx><h>limit</h><h>definition of non-existence</h></idx>
+    <idx><h>Problem</h><h>definition of non<ndash/>existence of a limit</h></idx>  
+    <idx><h>limit</h><h>definition of non<ndash/>existence</h></idx> 
 
     <task>
     <statement>
@@ -753,10 +755,11 @@
   </p>
 
   <problem>
+    <idx><h>Problem</h><h><m>\limit{n}{\infty}{b^{\left(\frac{1}{n}\right)}}=1</m> if <m>b>0</m></h></idx>  
+    <idx><h>limit</h><h><m>\limit{n}{\infty}{b^{\left(\frac{1}{n}\right)}}=1</m> if <m>b>0</m></h></idx>
     <statement>
       <p>
-        <idx><h>limit</h><h><m>\limit{n}{\infty}{b^{\left(\frac{1}{n}\right)}}=1</m> if <m>b>0</m></h></idx>
-
+        
         Let <m>b>0</m>.  Use <xref ref="def_ConvergenceOfASequence"
         ></xref> to prove
         <m>\limitt{n}{\infty}{b^{\left(\frac{1}{n}\right)}}=1</m>.
@@ -771,7 +774,7 @@
   </problem>
 
   <problem xml:id="prob_series-geometric">
-    
+    <idx><h>Problem</h><h>convergence/divergence of the Geometric series</h></idx>  
     <idx><h>series</h><h>Geometric series</h><h>convergence/divergence conditions for</h></idx>
 
     <task>
@@ -795,7 +798,7 @@
   </problem>
 
   <problem>
-    
+    <idx><h>Problem</h><h>definition of divergence</h></idx>  
     <idx><h>sequences</h><h>definition of divergence</h></idx>
     <idx><h>convergence</h><h>definition of nonconvergence of a sequence</h></idx>
 
@@ -826,7 +829,7 @@
   </problem>
   
   <problem>
-    
+    <idx><h>Problem</h><h>convergence of the absolute value of a sequence</h></idx>  
     <idx><h>convergence</h><h> of a sequence</h><h>implies the convergence of the absolute sequence</h></idx>
 
     <statement>
@@ -840,7 +843,7 @@
   </problem>
 
   <problem>
-    
+    <idx><h>Problem</h><h>limit is unique</h></idx>  
     <idx><h>sequences</h><h>limit is unique</h></idx>
 
     <task>
@@ -875,7 +878,7 @@
   </problem>
 
   <problem>
-    
+    <idx><h>Problem</h><h>the difference of sequences</h></idx>  
     <idx><h>sequences</h><h>difference of</h></idx>
     <idx><h>limit</h><h>of the difference of sequences</h></idx>
 
@@ -889,7 +892,7 @@
   </problem>
 
   <problem>
-    
+    <idx><h>Problem</h><h>lower and upper bounds for sequences</h></idx>  
     <idx><h>sequences</h><h>lower and upper bounds for</h></idx>
 
     <task>
@@ -914,7 +917,8 @@
 
   <problem xml:id="prob_RatioTest">
     <title>The Ratio Test</title>
-    
+
+    <idx><h>Problem</h><h>Ratio Test</h></idx> 
     <idx><h>sequences</h><h>Ratio Test for</h></idx>
 
     <introduction>
@@ -977,6 +981,7 @@
       <problem xml:id="PROBLEMLimConst">
         <title>Limit of a Constant Sequence is the Constant</title>
 
+        <idx><h>Problem</h><h>limit of a constant sequence</h></idx>  
         <idx><h>limit</h><h>of a constant sequence</h></idx>
         <idx><h>sequences</h><h>constant sequences</h></idx>
 
@@ -1031,8 +1036,9 @@
 
 
       <problem xml:id="Tri-RevTri-Ineq_prob">
-      
         <idx><h>Triangle Inequalities</h><h>Triangle Inequality</h></idx>
+
+        <idx><h>Problem</h><h>The Triangle Inequality</h></idx>  
 
         <task>
           <statement>
@@ -1132,6 +1138,7 @@
         </p>
 
         <problem xml:id="PROBLEMLimitOfSum">
+          <idx><h>Problem</h><h>termwise sums of sequences</h></idx>  
 
           <idx><h>sequences</h><h>termwise sums of</h></idx>
 
@@ -1275,6 +1282,7 @@
 
 
         <problem xml:id="prob_BoundedConvergent">
+          <idx><h>Problem</h><h> convergent sequences are bounded</h></idx>  
           
           <idx><h>sequences</h><h>convergence</h><h> convergent sequences are bounded</h></idx>
 
@@ -1324,6 +1332,7 @@
 
 
         <problem>
+          <idx><h>Problem</h><h>termwise products of sequences</h></idx>  
 
           <idx><h>sequences</h><h>termwise product of</h></idx>
 
@@ -1356,7 +1365,7 @@
         </corollary>
 
         <problem>
-
+          <idx><h>Problem</h><h>the limit of a constant times a sequence</h></idx>  
           <idx><h>sequences</h><h>constant multiples of</h></idx>
           <idx><h>limit</h><h>of a constant times a sequence</h></idx>
 
@@ -1392,6 +1401,7 @@
 
 
         <problem>
+          <idx><h>Problem</h><h>termwise quotient of sequence</h></idx>  
 
           <idx><h>sequences</h><h>termwise quotient of</h></idx>
 
@@ -1448,6 +1458,7 @@
           </p>
 
           <problem>
+            <idx><h>Problem</h><h>the limit of ratios of polynomials</h></idx>  
 
             <idx><h>limit</h><h>identifing the theorems used in a limit</h></idx>
             <idx><h>limit</h><h> of ratios of polynomials</h></idx>
@@ -1519,6 +1530,7 @@
           </theorem>
 
           <problem>
+            <idx><h>Problem</h><h>The Squeeze Theorem</h></idx>  
             
             <idx><h>limit</h><h>Squeeze Theorem</h></idx>
 
@@ -1619,6 +1631,9 @@
 
 
           <problem>
+            <idx><h>Problem</h><h>if the sequence
+            <m>\left(s_n\right)</m> is bounded then
+            <m>\limit{n}{\infty}{\left(\frac{s_n}{n}\right)}=0</m></h></idx>
             
             <idx><h>sequences</h><h>if the sequence <m>\left(s_n\right)</m> is bounded then
 

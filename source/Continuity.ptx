@@ -1499,7 +1499,8 @@
     </p>
 
     <problem>
-      
+      <idx><h>Problem</h><h>the quotient of continuous
+      functions is continuous</h></idx>  
       <idx><h>continuous functions</h><h>the quotient of continuous
       functions is continuous</h></idx>
 
@@ -1529,7 +1530,8 @@
     </theorem>
 
     <problem>
-      
+      <idx><h>Problem</h><h>the composition of continuous
+      functions is continuous</h></idx>  
       <idx><h>continuous functions</h><h>the composition of continuous
       functions is continuous</h></idx>
       <idx><h>continuity</h><h>of a composition</h></idx>
@@ -1570,7 +1572,7 @@
 
 
     <problem>
-      
+      <idx><h>Problem</h><h><m>\sin e^x</m> is continuous everywhere</h></idx>  
       <idx><h>continuity</h><h><m>\sin e^x</m> is continuous everywhere</h></idx>
 
       <statement>
@@ -1585,6 +1587,7 @@
 
 
     <problem>
+      <idx><h>Problem</h><h>continuous functions</h></idx>  
       
       <idx><h>continuity</h><h>drill problems</h></idx>
 
@@ -1644,7 +1647,7 @@
     </p>
 
     <problem>
-      
+      <idx><h>Problem</h><h>continuity</h></idx>  
       <idx><h>continuity</h></idx>
 
       <introduction>

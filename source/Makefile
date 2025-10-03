@@ -23,3 +23,7 @@ pdfview:
 deploy: jing
 	/home/ecb5/.local/bin/pretext deploy -u
 #	/home/ecb5/.local/bin/pretext view
+
+LocalDeploy: *.ptx  Makefile
+	scp -r /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/output/web/* leto:/var/www/html/ASORA
+

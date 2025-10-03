@@ -699,25 +699,10 @@
       concept of continuity can be repackaged into a statement
       involving sets. To keep things simple we will restrict our
       attention to functions <m>f(x)</m> whose domain is an open set
-      <m>D</m> of real numbers.
+      <m>D</m> of real numbers. The following notation will be helpful.
     </p>
 
-    <problem  xml:id="PROBLEMTopoDefCont">
-      <idx><h>Problem</h><h>continuity via set theory</h></idx>
 
-      <p>
-        Show that a function <m>f(x)</m> is continuous at <m>x=a</m>
-        if and only if for every open set <m>V</m> containing
-        <m>f(a)</m> there is an open set <m>U</m> containing <m>a</m>
-        with <m>f(U)\subset{V}</m>.
-      </p>
-
-      <!-- <p> -->
-      <!--   Show that <m>f</m> is continuous on <m>D</m> if and only if -->
-      <!--   <m>f</m> satisfies the following condition: for any open set -->
-      <!--   of real numbers <m>V</m>, <m>f^{-1}(V)</m> is open. -->
-      <!-- </p> -->
-    </problem>
 
 
 
@@ -751,6 +736,24 @@
       </statement>
 
     </definition>
+
+    <problem  xml:id="PROBLEMTopoDefCont">
+      <idx><h>Problem</h><h>continuity via set theory</h></idx>
+
+      <p>
+        Show that a function <m>f(x)</m> is continuous at <m>x=a</m>
+        if and only if for every open set <m>V</m> containing
+        <m>f(a)</m> there is an open set <m>U</m> containing <m>a</m>
+        with <m>f(U)\subset{V}</m>.
+      </p>
+
+      <!-- <p> -->
+      <!--   Show that <m>f</m> is continuous on <m>D</m> if and only if -->
+      <!--   <m>f</m> satisfies the following condition: for any open set -->
+      <!--   of real numbers <m>V</m>, <m>f^{-1}(V)</m> is open. -->
+      <!-- </p> -->
+    </problem>
+
     <p>
       We can use the results of <xref ref="PROBLEMTopoDefCont"
       ></xref>, and <xref ref="DEFINITIONOpenByPreImage" ></xref> to

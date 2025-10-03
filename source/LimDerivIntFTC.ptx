@@ -126,22 +126,25 @@
       of <m>2^{-n}</m> that is equal to zero.
     </p>
     <p>
-      More generally (and more helpfully) suppose the sequence
-      <m>\left(a_n\right)_{n=1}^\infty </m> converges to <m>a</m>.  In
-      <xref ref="Convergence" ></xref> we usually said that
-      <m>\limit{n}{\infty}{a_n}</m> <term>converged</term> to <m>a</m>
-      rather than saying that <m>\limit{n}{\infty}{a_n}</m> was equal
-      to <m>a</m>. Unfortunately this idea gets rendered notationally
-      as
-      <me>
-        \limit{n}{\infty}{a_n}=a 
-      </me> 
-      and when we read it aloud we tend to say that <m>a_n</m> <term>equals
-      <m> \boldsymbol{a}</m></term> rather than saying that <m>a_n</m> <term>converges to
-      <m>\boldsymbol{a}</m></term>. This is not wrong <foreign>per se</foreign> but it
-      can be confusing at first. But ultimately it is the
-      <term>limit</term> of the sequence that is equal to <m>a</m>,
-      not any individual term, and certainly not the sequence itself.
+      <!-- More generally (and more helpfully) suppose the sequence -->
+      <!-- <m>\left(a_n\right)_{n=1}^\infty </m> converges to <m>a</m>.   -->
+
+      Recall from <xref ref="Convergence" ></xref> that
+      <m>\limit{n}{\infty}{a_n} =a</m> means that the sequence
+      <m>(a_n)</m> converges to the number <m>a</m>. This does not
+      necessarily mean that <m>a_n=a</m> for any value of <m>n</m>.
+      <!-- rather than saying that <m>\limit{n}{\infty}{a_n}</m> was equal -->
+      <!-- to <m>a</m>. Unfortunately this idea gets rendered notationally -->
+      <!-- as -->
+      <!-- <me> -->
+      <!--   \limit{n}{\infty}{a_n}=a  -->
+      <!-- </me>  -->
+      <!-- and when we read it aloud we tend to say that <m>a_n</m> <term>equals -->
+      <!-- <m> \boldsymbol{a}</m></term> rather than saying that <m>a_n</m> <term>converges to -->
+      <!-- <m>\boldsymbol{a}</m></term>. This is not wrong <foreign>per se</foreign> but it -->
+      <!-- can be confusing at first. But ultimately it is the -->
+      <!-- <term>limit</term> of the sequence that is equal to <m>a</m>, -->
+      <!-- not any individual term, and certainly not the sequence itself. -->
     </p>
     <p>
       The limit concept has always been lurking in the background of
@@ -402,12 +405,13 @@
     <p> 
       There are really only two differences between <xref
       ref="def_limit" ></xref> and <xref ref="def_continuity" ></xref>
-      and the differences are related.  The first is that we in the
+      and the differences are related.  The first is that in the
       definition of a limit <m>L</m> plays the same role that
       <m>f(a)</m> played in the definition of continuity.  This is
-      because the function may not be defined at <m>a</m>.  In a sense
-      the limiting value <m>L</m> is the value <m>f</m> would have
-      if <m>f</m>it were defined and continuous at <m>a</m>.
+      because the function may not be defined at <m>a</m>, let alone
+      have a value equal to <m>L</m>.  In a sense the limiting value
+      <m>L</m> is the value <m>f</m> would have if <m>f</m>it were
+      defined and continuous at <m>a</m>.
     </p>
     <p>
       The second difference is that we have replaced <me> \abs{x-a}\lt
@@ -1644,7 +1648,7 @@
     text="custom">Fundamental Theorem of Calculus</xref> provided  our
     anchoring step:
 <me>
-  f(x)=f(a)+\int_{t=a}^xf^\prime(t)\dx{t}=f(a)+\frac{1}{0!}f^{(1)}(t)(x-t)^0\dx{t}
+  f(x)=f(a)+\int_{t=a}^xf^\prime(t)\dx{t}=f(a)+\frac{1}{0!}\int_{t=a}^xf^{(1)}(t)(x-t)^0\dx{t}
   </me>.
   </p>
   <p>
@@ -1903,12 +1907,12 @@
       <m>[a,b]</m>,
     </li>
     <li>
-      and that <m>I(x)</m> is differentiable on the open interval
-      <m>(a,b)</m>.
+      that <m>I(x)</m> is differentiable on the open interval
+      <m>(a,b)</m> and that <m>I^\prime (x) =f(x)</m>.
     </li>
   </ol> 
   We will prove differentiablity on <m>(a,b)</m> first. From that
-  continuity on <m>[a,b]</m> follows immediately (why?). Continuity at
+  continuity on <m>(a,b)</m> follows immediately (why?). Continuity at
   the endpoints will be addressed separately.
 </p>
 
@@ -1916,15 +1920,15 @@
       Let <m>x\in (a,b)</m>. To find <m>I^\prime (x)</m> we apply
       <xref ref="def_derivative" ></xref>. Thus 
 
-      <md>
-        <mrow>I^\prime (x)\amp{} = \limit{h}{0}{\frac{I(x+h)-I(x)}{h}}</mrow>
-        <mrow>
+      <mdn>
+        <mrow number="no">I^\prime (x)\amp{} = \limit{h}{0}{\frac{I(x+h)-I(x)}{h}}</mrow>
+        <mrow number="no">
           \amp{} =       \limit{h}{0}{\frac{\int_{t=a}^{x+h}f(t)\dx{t}-\int_{t=a}^x
         f(t)\dx{t}}{h}}</mrow>
-        <mrow>
+        <mrow xml:id="EQUATIONFTCPfSketch">
           \amp{}=\limit{h}{0}{\frac{\int_{t=x}^{x+h}f(t)\dx{t}}{h}}.
-        </mrow>
-      </md>
+          </mrow>
+      </mdn>
 
       <!-- First, we want to show that -->
       <!--     </p> -->
@@ -1934,6 +1938,7 @@
       <!-- \limit{h}{0}{\frac{\int_{t=a}^{x+h}f(t)\dx{t}-\int_{t=a}^x -->
       <!-- f(t)\dx{t}}{h}}=\limit{h}{0}{\frac{\int_{t=x}^{x+h}f(t)\dx{t}}{h}}=f(x) -->
       <!-- </me>. -->
+      We need to show that the  limit in <xref ref="EQUATIONFTCPfSketch" >equation</xref>  is <m>f(x)</m>.
       Since <m>f(t)</m> was assumed to be continuous on <m>[a,b]</m>
       it is also continuous on the closed interval with endpoints
       <m>x</m> and <m>x+h</m>. We know from the <xref ref="thm_EVT"
@@ -1964,8 +1969,10 @@
       <me>f(c)\le \frac{\int^{x+h}_{t=x}{f(t)\dx{t}}}{h}\le f\left(C\right)</me>
     </p>
     <p>
-      Applying the <xref ref="thm_SqueezeTheoremFunctions" text="custom">Squeeze Theorem</xref> and <xref ref="def_continuity" ></xref> 
-      of <m>f</m> at <m>x</m> should do the trick.
+      Applying the <xref ref="thm_SqueezeTheoremFunctions" text="custom">Squeeze Theorem</xref> 
+      <!-- and <xref ref="def_continuity" ></xref>  -->
+      <!-- of <m>f</m> at <m>x</m> -->
+      should do the trick.
     </p>
     <!-- <p> -->
     <!--   The above outline shows that <m>I(x)</m> is differentiable on -->
@@ -2414,7 +2421,7 @@
           symbol as 
           <men xml:id="EQUATIONCauchyIntAsLim">
             \int_a^bf(x)\dx{x} =
-            \limit{\norm{P}}{0}{\sum^{n-1}_{k=0}{f\left(x_k\right)\left(x_{k+1}-x_k\right)}}
+            \limit{\norm{P}}{0}{\sum^{n-1}_{k=0}{f\left(x_k^*\right)\left(x_{k+1}-x_k\right)}}
           </men>
           but in our (the authors<rsq/>) opinions this notatation serves to hide the
           important ideas rather than elucidate them because the limit
@@ -2430,8 +2437,9 @@
           ref="EQUATIONCauchyIntAsLim" >equation</xref> is far more
           complex. It asks us to simultaneously think about all
           possible partitions with the property that
-          <m>\norm{P}\lt\delta{}</m> and  what is happening when
-          <m>\norm{P} \rightarrow 0</m>.
+          <m>\norm{P}\lt\delta{}</m>, and all possible choices of
+          <m>x_k^*\in \left[x_k,x_{k+1}\right]</m>, in addition to
+          what is happening when <m>\norm{P} \rightarrow 0</m>.
         </p>
         <p>
           Because of these issues we will use an equivalent

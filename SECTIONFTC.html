@@ -103,15 +103,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.11';
+eBookConfig.runestone_version = '7.9.12';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.59de9dca80a62a76.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.b37c97cbe7a5455b.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/prefix-runtime.a85e2f1fefeea635.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.a707b621c77f7e48.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -315,7 +315,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">If you look back at our derivation of the Integral Form of the Remainder for Taylor Series (<a href="PowerSeriesQuestions-TaylorsFormula.html#TaylorsTheorem" class="xref" data-knowl="./knowl/xref/TaylorsTheorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.1.12: Taylor’s Theorem">Theorem 4.1.12</a>) you’ll see that the <a href="SECTIONFTC.html#THEOREMFTCCauchy" class="internal" title="Theorem 10.3.3: The Fundamental Theorem of Calculus (Cauchy)">Fundamental Theorem of Calculus</a> provided  our anchoring step:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/TaylorsTheorem.html ./knowl/xref/THEOREMFTCCauchy.html">
 \begin{equation*}
-f(x)=f(a)+\int_{t=a}^xf^\prime(t)\dx{t}=f(a)+\frac{1}{0!}f^{(1)}(t)(x-t)^0\dx{t}\text{.}
+f(x)=f(a)+\int_{t=a}^xf^\prime(t)\dx{t}=f(a)+\frac{1}{0!}\int_{t=a}^xf^{(1)}(t)(x-t)^0\dx{t}\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -429,25 +429,25 @@ I^\prime\left(x\right)=f(x)
 <div class="autopermalink" data-description="Item 1"><a href="#SECTIONFTC-22-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="SECTIONFTC-22-2-1-2">
-<div class="para" id="p-derived-SECTIONFTC-22-2-1-2">and that <span class="process-math">\(I(x)\)</span> is differentiable on the open interval <span class="process-math">\((a,b)\text{.}\)</span>
+<div class="para" id="p-derived-SECTIONFTC-22-2-1-2">that <span class="process-math">\(I(x)\)</span> is differentiable on the open interval <span class="process-math">\((a,b)\)</span> and that <span class="process-math">\(I^\prime (x) =f(x)\text{.}\)</span>
 </div>
 <div class="autopermalink" data-description="Item 2"><a href="#SECTIONFTC-22-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 </ol>
-<div class="para">We will prove differentiablity on <span class="process-math">\((a,b)\)</span> first. From that continuity on <span class="process-math">\([a,b]\)</span> follows immediately (why?). Continuity at the endpoints will be addressed separately.</div>
+<div class="para">We will prove differentiablity on <span class="process-math">\((a,b)\)</span> first. From that continuity on <span class="process-math">\((a,b)\)</span> follows immediately (why?). Continuity at the endpoints will be addressed separately.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="SECTIONFTC-22-3">
 <div class="para">Let <span class="process-math">\(x\in (a,b)\text{.}\)</span> To find <span class="process-math">\(I^\prime (x)\)</span> we apply <a href="Continuity-DerivativeAfterthought.html#def_derivative" class="xref" data-knowl="./knowl/xref/def_derivative.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 10.2.1: The Derivative">Definition 10.2.1</a>. Thus</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def_derivative.html ./knowl/xref/thm_EVT.html" id="SECTIONFTC-22-3-4">
-\begin{align*}
-I^\prime (x)\amp{} = \limit{h}{0}{\frac{I(x+h)-I(x)}{h}}\\
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/def_derivative.html ./knowl/xref/EQUATIONFTCPfSketch.html ./knowl/xref/thm_EVT.html" id="SECTIONFTC-22-3-4">
+\begin{align}
+I^\prime (x)\amp{} = \limit{h}{0}{\frac{I(x+h)-I(x)}{h}}\notag\\
 \amp{} =       \limit{h}{0}{\frac{\int_{t=a}^{x+h}f(t)\dx{t}-\int_{t=a}^x
-f(t)\dx{t}}{h}}\\
-\amp{}=\limit{h}{0}{\frac{\int_{t=x}^{x+h}f(t)\dx{t}}{h}}.
-\end{align*}
+f(t)\dx{t}}{h}}\notag\\
+\amp{}=\limit{h}{0}{\frac{\int_{t=x}^{x+h}f(t)\dx{t}}{h}}.\tag{16}
+\end{align}
 </div>
-<div class="para">        Since <span class="process-math">\(f(t)\)</span> was assumed to be continuous on <span class="process-math">\([a,b]\)</span> it is also continuous on the closed interval with endpoints <span class="process-math">\(x\)</span> and <span class="process-math">\(x+h\text{.}\)</span> We know from the <a href="IVTandEVT-SupremumAndEVT.html#thm_EVT" class="xref" data-knowl="./knowl/xref/thm_EVT.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.4.10: Extreme Value Theorem (EVT)">Extreme Value Theorem</a> that there are points <span class="process-math">\(c\text{,}\)</span> and <span class="process-math">\(C\text{,}\)</span> in the same interval such that <span class="process-math">\(f(c)\)</span> and <span class="process-math">\(f(C)\)</span> are the global minimum and maximum of <span class="process-math">\(f\)</span> on the closed interval with endpoints <span class="process-math">\(x\)</span> and  <span class="process-math">\(x+h\text{,}\)</span> respectively.</div>
+<div class="para">        We need to show that the  limit in <a href="SECTIONFTC.html#SECTIONFTC-22-3-4" class="internal" title="Equation 16">equation (16)</a>  is <span class="process-math">\(f(x)\text{.}\)</span> Since <span class="process-math">\(f(t)\)</span> was assumed to be continuous on <span class="process-math">\([a,b]\)</span> it is also continuous on the closed interval with endpoints <span class="process-math">\(x\)</span> and <span class="process-math">\(x+h\text{.}\)</span> We know from the <a href="IVTandEVT-SupremumAndEVT.html#thm_EVT" class="xref" data-knowl="./knowl/xref/thm_EVT.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.4.10: Extreme Value Theorem (EVT)">Extreme Value Theorem</a> that there are points <span class="process-math">\(c\text{,}\)</span> and <span class="process-math">\(C\text{,}\)</span> in the same interval such that <span class="process-math">\(f(c)\)</span> and <span class="process-math">\(f(C)\)</span> are the global minimum and maximum of <span class="process-math">\(f\)</span> on the closed interval with endpoints <span class="process-math">\(x\)</span> and  <span class="process-math">\(x+h\text{,}\)</span> respectively.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="SECTIONFTC-22-4">
@@ -488,7 +488,7 @@ f(c)\le \frac{\int^{x+h}_{t=x}{f(t)\dx{t}}}{h}\le f\left(C\right)
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONFTC-22-6">Applying the <a href="Continuity-DefLimit.html#thm_SqueezeTheoremFunctions" class="xref" data-knowl="./knowl/xref/thm_SqueezeTheoremFunctions.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 10.1.13: Squeeze Theorem for Functions">Squeeze Theorem</a> and <a href="Continuity-AnalyticDef.html#def_continuity" class="xref" data-knowl="./knowl/xref/def_continuity.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.1.7: Continuity at a Point">Definition 8.1.7</a> of <span class="process-math">\(f\)</span> at <span class="process-math">\(x\)</span> should do the trick.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONFTC-22-6">Applying the <a href="Continuity-DefLimit.html#thm_SqueezeTheoremFunctions" class="xref" data-knowl="./knowl/xref/thm_SqueezeTheoremFunctions.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 10.1.13: Squeeze Theorem for Functions">Squeeze Theorem</a>   should do the trick.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="SECTIONFTC-22-7">To show that <span class="process-math">\(I(x)\)</span> is  continuous  at the endpoints <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> we will appeal to <a href="SequencesAndContinuity.html#thm_LimDefOfContinuity" class="xref" data-knowl="./knowl/xref/thm_LimDefOfContinuity.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.2.1">Theorem 8.2.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONFTC-22-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>

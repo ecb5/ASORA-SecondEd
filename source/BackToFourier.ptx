@@ -1076,7 +1076,7 @@
     </p>
 
     <p>
-      Let <m>x_l</m> be the <em>last</em> element of <m>(x_n)</m>
+      Let <m>x_l</m> be the last element of <m>(x_n)</m>
       which appears before <m>c=s_p</m> in the sequence and consider
       <m>x_{l+1}</m>.  The way it was constructed, <m>x_{l+1}</m>
       was one of the first two distinct terms in the sequence
@@ -1113,7 +1113,7 @@
     is  bigger since <m>\abs{A}=4</m> and <m>\abs{B}=5</m>
     and <m>4\lt 5</m>.  But we have no way of counting the number of elements of an
     infinite set.  Indeed, it isn<rsq/>t even clear what the phrase
-    <q>the number of elements</q> might <em>mean</em> when applied
+    <q>the number of elements</q> might mean when applied
     to  an infinite set. So we need to find another way.
   </p>
 
@@ -2130,7 +2130,10 @@
 
 </problem>
 <p>
-  That we called <m>\lambda_o (S)</m>  and <em>outer</em> measure suggests that there is something called an <term>inner measure</term> and indeed there is. It<rsq/>is definition is given in <xref ref="DEFINITIONInnerMeasure" ></xref>.
+  That we called <m>\lambda_o (S)</m> and <term>outer</term> measure
+  suggests that there might be something called an <term>inner
+  measure</term> and indeed there is. It<rsq/>is definition is given
+  in <xref ref="DEFINITIONInnerMeasure" ></xref>.
 </p>
 <definition xml:id="DEFINITIONInnerMeasure">
   <title>
@@ -2364,7 +2367,7 @@
     asked. Lebesgue defined such an integral at he turn of the twentieth century.
   </p>
   <p>
-    Speaking <em>very</em> loosely, if we want to compute
+    Speaking very loosely, if we want to compute
     <m>\int_a^bf(x)\dx{x} </m> where <m>f(x)\ge 0</m> using the
     Riemann (Cauchy) integral we partition the <m>x-</m>axis into
     adjacent intervals with width <m>\dx{x}</m> and then construct

@@ -285,7 +285,7 @@
         <statement>
 
           <p>
-            Apply Lagrange's idea to show that
+            Apply Lagrange<rsq/>s idea to show that
             <m>f^{\left(n\right)}\left(a\right)=\frac{{\left(-1\right)}^nn!}{a^{n+1}}</m>.
           </p>
         </statement>
@@ -357,7 +357,7 @@
           <p>
             In <xref ref="PROBLEMExpTaylAta"></xref> you
             determined the power series expansion of <m>e^x</m> about
-            <m>a</m>.  Apply Lagrange's idea to show that every derivative
+            <m>a</m>.  Apply Lagrange<rsq/>s idea to show that every derivative
             of <m>e^x</m> is given by <m>e^x</m>.
 
           </p>
@@ -370,7 +370,7 @@
           <p>
             In part (b) of <xref ref="PROBLEMOneOverXTayl" ></xref> you
             determined the power series expansion of <m>\ln(x)</m>
-            about <m>a>0</m>. Apply Lagrange's idea to show that
+            about <m>a>0</m>. Apply Lagrange<rsq/>s idea to show that
             the derivative of <m>\ln (x)</m> is <m>\frac{1}{x}</m>.
 
           </p>
@@ -594,7 +594,7 @@ Which obviously looks nothing like the older chain rule seen as
       </statement>
       <hint>
         <p>
-          Induction and a dash of L<rsq/>H&#xf4;pital's rule should do the trick.
+          Induction and a dash of L<rsq/>Hôpital<rsq/>s  rule should do the trick.
         </p>
       </hint>
     </task>
@@ -624,7 +624,7 @@ Which obviously looks nothing like the older chain rule seen as
     </p>
 
     <p>
-      While Lagrange<rsq/>s approach wasn't totally successful, it was
+      While Lagrange<rsq/>s approach wasn<rsq/>t totally successful, it was
       a major step away from infinitesimals and toward the modern
       approach.  We still use aspects of it today.  For instance we
       still use his prime notation to denote the derivative.

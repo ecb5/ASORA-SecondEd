@@ -3,8 +3,8 @@
   <section><title>Joseph Fourier and His Series</title>
   <p>
     Applying mathematics to physical problems such as heat flow in a
-    solid body drew much attention in the latter part of the 1700's
-    and the early part of the 1800's.  One of the people to attack the
+    solid body drew much attention in the latter part of the 1700<rsq/>s
+    and the early part of the 1800<rsq/>s.  One of the people to attack the
     heat flow problem was <url
     href="https://mathshistory.st-andrews.ac.uk/Biographies/Fourier/"
     >Jean
@@ -47,7 +47,7 @@
     u}{\partial t}</m>, where <m>\rho^2</m> is a positive constant
     known as the <term>thermal diffusivity</term>.  If the initial
     temperature distribution is given by the function <m>f(x)</m>,
-    then the <m>u</m> we are seeking must satisfy all of the following
+    then the <m>u</m> we are seeking must satisfy all of the following.
 
     <mdn>
 
@@ -58,12 +58,12 @@
         
         u(0,t)\amp{} =u(1,t)=0,  
         \amp{}
-        \forall t\amp{}\geq 0,
+        \forall\  t\amp{}\geq 0,
       </mrow>
       <mrow number="no">
         u(x,0)\amp{} =f(x), 
         \amp{}
-        \forall x\amp{}\in[\,0,1].
+        \forall\  x\amp{}\in[\,0,1].
       </mrow>
 
     </mdn>
@@ -71,29 +71,29 @@
   </p>
 
   <p>
-    To do this, Fourier employed what is now referred to as the
-    method of separation of variables.  Specifically, Fourier looked
-    for solutions of the form <m>u(x,t)=X(x)T(t)</m>; that is,
-    solutions where the <m>x</m>-part can be separated from the
-    <m>t</m>-part.  Assuming that <m>u</m> has this form, we get
+    To do this, Fourier employed what is now referred to as the method
+    of separation of variables.  Specifically, Fourier looked for
+    solutions of the form <m>u(x,t)=X(x)T(t)</m>; that is, solutions
+    where the <m>x</m><ndash/>part can be separated from the <m>t</m>-part.
+    Assuming that <m>u</m> has this form, we get
     <m>\frac{\partial^2u}{\partial x^2}=X^{\prime\prime}T</m> and
     <m>\frac{\partial u}{\partial t}=X\,T^{\prime}</m>.  Substituting
-    these into <xref ref="EQUATIONHeatEquation">equation</xref> 
-    <m>\rho^2\frac{\partial^2u}{\partial x^2}=\frac{\partial
-    u}{\partial t}</m>, we obtain
+    these into <xref ref="EQUATIONHeatEquation">equation</xref> we
+    obtain
 
     <md>
       <mrow>
-      \rho^2X^{\prime\prime}T=X
-      T^\prime\amp{}\amp{}\text{or}\amp{}\amp{}
-      \frac{X^{\prime\prime}}{X}=\frac{T^\prime}{\rho^2T}
+        \rho^2X^{\prime\prime}T=X
+        T^\prime\amp{}\amp{}\text{or}\amp{}\amp{}
+        \frac{X^{\prime\prime}}{X}=\frac{T^\prime}{\rho^2T}
       </mrow>
       </md>.
   </p>
 
   <p>
-    Since the left-hand side involves no <m>t</m>'s and the right-hand side involves no <m>x</m>'s, both sides must equal a constant <m>k</m>.
-    Thus we have
+    Since the left-hand side involves no <m>t</m><rsq/>s and the
+    right-hand side involves no <m>x</m><rsq/>s, both sides must equal
+    a constant <m>k</m>.  Thus we have
 
     <md>
 
@@ -128,7 +128,7 @@
   </problem>
 
   <p>
-    Using the result from <xref ref="prob_HarmonicMotion"></xref> that <m>k\lt 0</m>,
+    Using the reslut from <xref ref="prob_HarmonicMotion"></xref> that <m>k\lt 0</m>,
     we will let <m>k=-p^2</m>.
   </p>
 
@@ -207,7 +207,7 @@
   <p>
     The idea of representing a function as a series of sine waves was proposed by Daniel Bernoulli in 1753 while examining the problem of modeling a vibrating string.
     Unfortunately for Bernoulli,
-    he didn't know how to compute the coefficients in such a series representation.
+    he didn<rsq/>t know how to compute the coefficients in such a series representation.
     What distinguished Fourier was that he developed a technique to compute these coefficients.
     The key is the result of the following problem.
   </p>
@@ -252,14 +252,14 @@
         A_n=2\int_{x=0}^1f(x)\sin\left(n\pi
         x\right)\dx{ x}
       </men> 
-      is called the <em>Fourier (sine) series of
-      <m>\boldsymbol{f}</m></em>.
+      is called the <term>Fourier (sine) series of
+      <m>\boldsymbol{f}</m></term>.
     </p>
 
     <example>
       <statement>
         <p>
-          Let's apply this to the function,
+          Let<rsq/>s apply this to the function,
           <m>f(x)=\frac{1}{2}-\abs{x-\frac{1}{2}}</m>, whose graph is
           seen below.
         </p>
@@ -387,7 +387,7 @@
 <p>
   Recall, that when we represented a function as a power series,
   we freely differentiated and integrated the series term by term as though it was a polynomial.
-  Let's do the same with this Fourier series.
+  Let<rsq/>s do the same with this Fourier series.
 </p>
 
 <p>
@@ -576,12 +576,12 @@
         \frac{4}{\pi}\sum_{k=0}^\infty\frac{\left(-1\right)^k}{\left(2k+1\right)} \cos\left(\left(2k+1\right)\pi x\right)
       </me>
       term by term,
-      this differentiated series doesn't converge to anything at <m>x=\frac{1}{4}</m>,
+      this differentiated series doesn<rsq/>t converge to anything at <m>x=\frac{1}{4}</m>,
       let alone converge to zero.
       In this case,
       the old Calculus rule that the derivative of a sum is the sum of the derivatives does not apply for this infinite sum,
       though it did apply before.
-      As if the continuity issue wasn't bad enough before, this was even worse.
+      As if the continuity issue wasn<rsq/>t bad enough before, this was even worse.
       Power series were routinely differentiated and integrated term-by-term.
       This was part of their appeal.
       They were treated like <q>infinite polynomials.</q>

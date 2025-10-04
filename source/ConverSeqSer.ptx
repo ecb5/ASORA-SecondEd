@@ -1825,6 +1825,7 @@
         </p>
 
         <problem xml:id="PROBLEMBoundedSeqConv">
+          <idx><h>Problem</h><h>Prove that <m>\left(n\right)_{n=1}^\infty </m> diverges</h></idx>
           <p>
             Prove that <m>\left(n\right)_{n=1}^\infty </m> diverges
             using <xref ref="lemma_BoundedConvergent" ></xref>.
@@ -1920,6 +1921,7 @@
               </lemma>
 
               <problem xml:id="PROBLEMDivToInfImpDiv">
+                <idx><h>Problem</h><h>Prove that divergence to infinity implies divergence.</h></idx>
                 <p>
                   Prove <xref ref="DivToInfImpDiv" ></xref>.
                 </p>
@@ -1927,7 +1929,7 @@
 
 
               <problem>
-                
+                <idx><h>Problem</h><h>the sequence of positive integers diverges to infinity</h></idx>
                 <idx><h>sequences</h><h>the sequence of positive integers diverges to infinity</h></idx>
 
                 <task>
@@ -1971,7 +1973,7 @@
               </p>
 
               <problem>
-                
+                <idx><h>Problem</h><h>termwise sums of sequences</h></idx>
                 <idx><h>sequences</h><h>termwise sums of</h></idx>
 
                 <introduction>
@@ -2014,7 +2016,7 @@
               </p>
 
               <problem>
-                
+                <idx><h>Problem</h><h>divergence to <m>\infty</m></h></idx>
                 <idx><h>sequences</h><h>divergence to <m>\infty</m></h></idx>
 
                 <introduction>
@@ -2061,9 +2063,10 @@
 
 
               <problem>
+                <idx><h>Problem</h><h>divergence, but not to infinity</h></idx>
                 
                 <idx><h>sequences</h><h>divergence of</h></idx>
-                <idx><h>sequences</h><h> divergence, but not to infinity</h></idx>
+                <idx><h>sequences</h><h>divergence, but not to infinity</h></idx>
 
                 <introduction>
                   <p>
@@ -2097,7 +2100,7 @@
 
 
               <problem>
-                
+                <idx><h>Problem</h><h> divergence, but not to infinity</h></idx>
                 <idx><h>sequences</h><h>divergence, but not to infinity</h></idx>
 
                 <introduction>
@@ -2124,6 +2127,7 @@
               </problem>
 
               <problem>
+                <idx><h>Problem</h><h>Geometric Sequence</h></idx>
                 
                 <idx><h>series</h><h>Geometric Sequence</h><h>divergence condition</h></idx>
                 <idx><h>sequences</h><h>Geometric</h></idx>

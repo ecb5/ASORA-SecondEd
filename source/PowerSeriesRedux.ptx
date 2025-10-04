@@ -22,7 +22,7 @@
       definitions, <q>Why are Taylor series well behaved, but Fourier
       series are not necessarily?</q> More precisely, we mentioned
       that whenever a power series converges then the function it
-      converges to is continuous that if we differentiate or integrate
+      converges to is continuous and that if we differentiate or integrate
       a convergent power series term by term then the resulting series
       will converge to the derivative or integral of the original
       series, but this was not always the case for Fourier series.
@@ -1347,8 +1347,9 @@
 
       <introduction>
         <p>
-          Observe that for all <m>x \in [-1,1]</m> <m>\abs{x}\le
-          1</m>.  Identify which of the following series converges
+          <!-- Observe that for all <m>x \in [-1,1]</m> <m>\abs{x}\le -->
+          <!-- 1</m>.   -->
+          Identify which of the following series converges
           pointwise and which converges uniformly on the interval
           <m>[-1,1]</m>.  In every case identify the limit function.
         </p>
@@ -1758,7 +1759,7 @@
       <hint>
         <p>
           Apply <xref ref="AbelsTheorem" text="custom">Abel<rsq/>s Theorem</xref> to  <m>\sum
-          a_n\left(-x\right)^n=\sum (-1)^nx^n</m>.
+          a_n\left(-x\right)^n=\sum (-1)^na_nx^n</m>.
         </p>
       </hint>
     </problem>

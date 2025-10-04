@@ -1903,12 +1903,12 @@
   There are two statements to prove:
   <ol>
     <li>
-      That <m>I(x)</m> is continuous on the closed interval
-      <m>[a,b]</m>,
+       <m>I(x)</m> is continuous on the closed interval
+       <m>[a,b]</m>.
     </li>
     <li>
-      that <m>I(x)</m> is differentiable on the open interval
-      <m>(a,b)</m> and that <m>I^\prime (x) =f(x)</m>.
+      <m>I(x)</m> is differentiable on the open interval <m>(a,b)</m>
+      and <m>I^\prime (x) =f(x)</m>.
     </li>
   </ol> 
   We will prove differentiablity on <m>(a,b)</m> first. From that
@@ -1972,7 +1972,7 @@
       Applying the <xref ref="thm_SqueezeTheoremFunctions" text="custom">Squeeze Theorem</xref> 
       <!-- and <xref ref="def_continuity" ></xref>  -->
       <!-- of <m>f</m> at <m>x</m> -->
-      should do the trick.
+      and the continuity of <m>f</m> at <m>x</m> should do the trick.
     </p>
     <!-- <p> -->
     <!--   The above outline shows that <m>I(x)</m> is differentiable on -->

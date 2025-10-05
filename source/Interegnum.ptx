@@ -107,6 +107,7 @@
   </p>
 
   <problem xml:id="prob_HarmonicMotion">
+    <idx><h>Problems</h><h>Heat Equation, the</h></idx>
 
     <idx><h>Heat Equation, the</h></idx> 
     <idx><h>Heat Equation, the</h><h>parameter <m>k</m> must be less
@@ -133,7 +134,7 @@
   </p>
 
   <problem>
-
+    <idx><h>Problems</h><h>Heat Equation, the</h><h>solving for <m>\xi(x)</m></h></idx>
     <idx><h>Heat Equation, the</h></idx>
     <idx><h>Heat Equation, the</h><h>solving for <m>\xi(x)</m></h></idx>
     
@@ -151,7 +152,7 @@
   </problem>
 
   <problem>
-    
+    <idx><h>Problems</h><h>Heat Equation, the</h><h>fundamental solutions of</h></idx>  
     <idx><h>Heat Equation, the</h><h>fundamental solutions of</h></idx>
 
     <statement>
@@ -213,7 +214,8 @@
   </p>
 
   <problem xml:id="prob_SinOrthogonality">
-    <idx><h><m>\sin x</m></h><h>orthogonality of</h></idx>
+    <idx><h>Problems</h><h>orthogonality of <m>\sin x</m></h></idx>
+    <idx><h sortby="sine"><m>\sin x</m></h><h>orthogonality of</h></idx>
     <idx><h>orthogonality</h><h> of <m>\sin nx</m></h></idx>
     <statement>
       <p>
@@ -270,7 +272,7 @@
     </example>
 
     <problem>
-
+      <idx><h>Problems</h><h>sine series of an odd function</h></idx>
       <idx><h>Fourier Series</h><h>sine series of an odd function</h></idx>
 
       <statement>
@@ -548,6 +550,7 @@
     </p>
 
     <problem xml:id="prob_FourierDiverge">
+      <idx><h>Problems</h><h>divergent Fourier series example</h></idx>
 
       <idx><h>Fourier Series</h></idx>
       <idx><h>Fourier Series</h><h>divergent Fourier series example</h></idx>
@@ -624,8 +627,9 @@
 
 
     <problem xml:id="prob_Fourier_Series-orthogonality">
+      <idx><h>Problems</h><h>orthogonality of <m>\cos (nx)</m></h></idx>
       
-      <idx><h><m>\cos (nx)</m></h><h>orthogonality of</h></idx>
+      <idx><h sortby="cosine"><m>\cos (nx)</m></h><h>orthogonality of</h></idx>
       <idx><h>orthogonality</h><h> of <m>\cos nx</m></h></idx>
 
       <statement>
@@ -640,8 +644,8 @@
     </problem>
 
         <problem xml:id="prob_fouriercoef">
-
-          <idx><h>Fourier Series</h><h>computing the coefficients</h></idx>
+          <idx><h>Problems</h><h>Fourier Series</h><h>computing the coefficients of</h></idx>
+          <idx><h>Fourier Series</h><h>computing the coefficients of</h></idx>
 
           <statement>
           <p>
@@ -658,7 +662,7 @@
         </problem>
 
         <problem>
-          
+          <idx><h>Problems</h><h>the Fourier cosine series of <m>f(x)=x-\frac{1}{2}</m></h></idx>
           <idx><h>Fourier Series</h><h>cosine series</h><h>the Fourier cosine series of <m>f(x)=x-\frac{1}{2}</m></h></idx>
           <statement>
             <p>
@@ -685,6 +689,7 @@
           </problem>
 
           <problem>
+            <idx><h>Problems</h><h>Fourier Series</h><h>term by term differentiation of</h></idx>
             
             <idx><h>Fourier Series</h><h>term by term differentiation of</h></idx>
 

@@ -173,6 +173,7 @@
   </lemma>
 
   <problem>
+    <idx><h>Problems</h><h>Triangle Inequalities</h><h>for Integrals</h></idx>
 
     <idx><h>Triangle Inequalities</h><h>for Integrals</h></idx>
 
@@ -189,6 +190,7 @@
   </problem>
 
   <problem>
+    <idx><h>Problems</h><h>Taylor<rsq/>s series</h></idx>
 
     <idx>
       <h>series</h><h>Taylor<rsq/>s series</h>
@@ -226,6 +228,7 @@
   </problem>
 
   <problem xml:id="prob_Taylor_Series-using">
+    <idx><h>Problems</h><h>Taylor series</h></idx>
     <introduction>
       <p>
         Use <xref ref="THEOREMTaylorSeriesBnd"></xref> to prove that for any real number <m>x</m>
@@ -304,8 +307,9 @@
   </p>
 
   <problem>
+    <idx><h>Problems</h><h>Prove that <m>e^{a+b}=e^ae^b</m></h></idx>
 
-    <idx><h><m>e^x</m></h><h><m>e^{a+b}=e^ae^b</m></h></idx>
+    <idx><h sortby="exponential"><m>e^x</m></h><h><m>e^{a+b}=e^ae^b</m></h></idx>
 
     <statement>
       <p>
@@ -509,6 +513,7 @@
   </proof>
 
   <problem xml:id="PROBLEMFinishLagrRemainder">
+    <idx><h>Problems</h><h>Lagrange<rsq/>s form of the remainder</h></idx>
 
     <idx><h>Lagrange<rsq/>s form of the remainder</h><h><m>x\lt a</m></h></idx>
 
@@ -575,6 +580,7 @@
   </p>
 
   <problem>
+    <idx><h>Problems</h><h>Geometric series as a Taylor series</h></idx>
 
     <idx><h>series</h><h>Geometric series</h><h>as a Taylor series</h></idx>
     <idx><h>series</h><h>Geometric series</h></idx>
@@ -650,8 +656,8 @@
 
   <theorem xml:id="thm_BinomialSeriesConverges">
 
-    <idx><h>series</h><h>Binomial Series, the</h></idx>
-    <idx><h>Binomial Series, the</h><h>converges on the interval <m>[0,1]</m></h></idx>
+    <idx><h>series</h><h>Binomial series, the</h></idx>
+    <idx><h>Binomial series, the</h><h>converges on the interval <m>[0,1]</m></h></idx>
 
     <statement>
       <p>
@@ -727,8 +733,9 @@
   </p>
 
   <problem xml:id="prob_Taylor_Series-Binomial_Series_and">
+    <idx><h>Problems</h><h>Binomial series</h><h>is a Taylor series</h></idx>
 
-    <idx><h>series</h><h>Binomial Series, the</h><h>Binomial Series is a Taylor series</h></idx>
+    <idx><h>series</h><h>Binomial series</h><h>is a Taylor series</h></idx>
 
     <statement>
       <p>
@@ -764,6 +771,7 @@
   </p>
 
   <problem>
+    <idx><h>Problems</h><h>Lagrange<rsq/>s form of the remainder</h></idx>
 
     <idx><h>Lagrange<rsq/>s form of the remainder</h><h> <m>\ln 2</m></h></idx>
 
@@ -839,8 +847,9 @@
   </theorem>
 
   <problem>
+    <idx><h>Problems</h><h>Cauchy Form of the Remainder</h></idx>
 
-    <idx><h>series</h><h>Taylor<rsq/>s series</h><h>Cauchy Remainder</h></idx>
+    <idx><h>series</h><h>Taylor<rsq/>s series</h><h>Cauchy Form of the Remainder</h></idx>
 
     <statement>
       <p>
@@ -901,9 +910,10 @@
   </p>
 
   <problem>
+    <idx><h>Problems</h><h>Binomial series</h></idx>
 
-    <idx><h>Binomial Series, the</h><h><m>g(c)=\frac{c-x}{1+c}</m> is increasing</h></idx>
-    <idx><h><m>g(c)=\frac{c-x}{1+c}</m> is increasing on <m>[x,0]</m></h></idx>
+    <idx><h>Binomial series, the</h><h><m>g(c)=\frac{c-x}{1+c}</m> is increasing</h></idx>
+    <idx><h sortby="g(c)"><m>g(c)=\frac{c-x}{1+c}</m> is increasing on <m>[x,0]</m></h></idx>
 
     <statement>
       <p>
@@ -925,6 +935,7 @@
 
 
   <problem>
+    <idx><h>Problems</h><h>Taylor<rsq/>s series</h></idx>
 
     <idx><h>series</h><h>Taylor<rsq/>s series</h><h>drill problems</h></idx>
 

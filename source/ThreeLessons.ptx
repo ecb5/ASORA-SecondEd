@@ -387,6 +387,7 @@
 
     <problem>
       <title>The Quadratic Formula</title>
+      <idx><h>Problems</h><h>Quadratic Formula</h></idx>
       
       <idx><h>Quadratic Formula</h><h>first proof</h></idx>
 
@@ -425,6 +426,7 @@
 
     <problem>
       <title>Another Derivation of the Quadratic Formula</title>
+      <idx><h>Problems</h><h>Quadratic Formula</h></idx>
 
       <idx><h>Quadratic Formula</h><h>second proof</h></idx>
 
@@ -680,6 +682,7 @@
       </p>
 
       <problem xml:id="PROBLEMFermLittl1">
+        <idx><h>Problems</h><h>Fermat<rsq/>s Little Theorem</h></idx>
         <!-- <title>Fermat<rsq/>s Little Theorem, step 1</title> -->
 
         <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
@@ -707,6 +710,7 @@
       </problem>
 
       <problem xml:id="PROBLEMFermLittl2">
+        <idx><h>Problems</h><h>Fermat<rsq/>s Little Theorem</h></idx>
         <!-- <title>Fermat<rsq/>s Little Theorem, step 2</title> -->
 
         <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
@@ -733,6 +737,7 @@
       </problem>
 
       <problem xml:id="PROBLEMFermLittl3">
+        <idx><h>Problems</h><h>Fermat<rsq/>s Little Theorem</h></idx>
         <!-- <title>Fermat<rsq/>s Little Theorem, step 3</title> -->
 
         <idx><h>Fermat<rsq/>s Little Theorem</h><h>problems leading
@@ -766,6 +771,8 @@
 
 
       <problem xml:id="DRILLPROBLEMFermLittl4">
+      
+        <idx><h>Problems</h><h>Fermat<rsq/>s Little Theorem</h></idx>
         <!-- <title>Fermat<rsq/>s Little Theorem, step 4</title> -->
 
         <idx><h>Fermat<rsq/>s Little Theorem</h></idx>
@@ -795,6 +802,7 @@
       </p>
 
       <problem>
+        <idx><h>Problems</h><h>Fermat<rsq/>s Little Theorem</h></idx>
         <introduction>
           <p>
             Recall what we said above: Having solved a problem is no

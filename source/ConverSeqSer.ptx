@@ -238,7 +238,7 @@
 </p>
 
 <problem xml:id="prob_absolute_value">
-  <idx><h>Problem</h><h>absolute value</h></idx>  
+  <idx><h>Problems</h><h>absolute value</h></idx>  
   <idx><h>absolute value</h></idx>
   <statement>
     <p>
@@ -330,7 +330,7 @@
 </p>
 
 <problem>
-  <idx><h>Problem</h><h>convergence to zero</h></idx>  
+  <idx><h>Problems</h><h>convergence to zero</h></idx>  
   <idx><h>convergence</h><h>of a sequence</h><h>convergence to zero drill</h></idx>
 
   <introduction>
@@ -415,7 +415,7 @@
 </p>
 
 <problem>
-  <idx><h>Problem</h><h>convergence to zero</h></idx>  
+  <idx><h>Problems</h><h>convergence to zero</h></idx>  
   <idx><h>convergence</h><h>of a sequence</h><h>convergence to zero drill</h></idx>
 
   <statement>
@@ -431,7 +431,7 @@
 </problem>
 
 <problem xml:id="prob_sequences3">
-  <idx><h>Problem</h><h><m>\limit{n}{\infty}{b^n}=0</m> if <m>-1\lt b\lt 1</m></h></idx>  
+  <idx><h>Problems</h><h sortby="limit"><m>\limit{n}{\infty}{b^n}=0</m> if <m>-1\lt b\lt 1</m></h></idx>  
   
   <idx><h>limit</h><h><m>\limit{n}{\infty}{b^n}=0</m> if <m>-1\lt b\lt 1</m></h></idx>
 
@@ -512,7 +512,7 @@
 
 
   <problem xml:id="prob_sequences-not_converge_to_zero">
-    <idx><h>Problem</h><h>definition of non<ndash/>existence of a limit</h></idx>  
+    <idx><h>Problems</h><h>definition of non<ndash/>existence of a limit</h></idx>  
     <idx><h>limit</h><h>definition of non<ndash/>existence</h></idx> 
 
     <task>
@@ -755,7 +755,7 @@
   </p>
 
   <problem>
-    <idx><h>Problem</h><h><m>\limit{n}{\infty}{b^{\left(\frac{1}{n}\right)}}=1</m> if <m>b>0</m></h></idx>  
+    <idx><h>Problems</h><h sortby="limit"><m>\limit{n}{\infty}{b^{\left(\frac{1}{n}\right)}}=1</m> if <m>b>0</m></h></idx>  
     <idx><h>limit</h><h><m>\limit{n}{\infty}{b^{\left(\frac{1}{n}\right)}}=1</m> if <m>b>0</m></h></idx>
     <statement>
       <p>
@@ -774,7 +774,7 @@
   </problem>
 
   <problem xml:id="prob_series-geometric">
-    <idx><h>Problem</h><h>convergence/divergence of the Geometric series</h></idx>  
+    <idx><h>Problems</h><h>convergence/divergence of the Geometric series</h></idx>  
     <idx><h>series</h><h>Geometric series</h><h>convergence/divergence conditions for</h></idx>
 
     <task>
@@ -798,7 +798,7 @@
   </problem>
 
   <problem>
-    <idx><h>Problem</h><h>definition of divergence</h></idx>  
+    <idx><h>Problems</h><h>definition of divergence</h></idx>  
     <idx><h>sequences</h><h>definition of divergence</h></idx>
     <idx><h>convergence</h><h>definition of nonconvergence of a sequence</h></idx>
 
@@ -829,7 +829,7 @@
   </problem>
   
   <problem>
-    <idx><h>Problem</h><h>convergence of the absolute value of a sequence</h></idx>  
+    <idx><h>Problems</h><h>convergence of the absolute value of a sequence</h></idx>  
     <idx><h>convergence</h><h> of a sequence</h><h>implies the convergence of the absolute sequence</h></idx>
 
     <statement>
@@ -843,7 +843,7 @@
   </problem>
 
   <problem>
-    <idx><h>Problem</h><h>limit is unique</h></idx>  
+    <idx><h>Problems</h><h>limit is unique</h></idx>  
     <idx><h>sequences</h><h>limit is unique</h></idx>
 
     <task>
@@ -878,7 +878,7 @@
   </problem>
 
   <problem>
-    <idx><h>Problem</h><h>the difference of sequences</h></idx>  
+    <idx><h>Problems</h><h>the difference of sequences</h></idx>  
     <idx><h>sequences</h><h>difference of</h></idx>
     <idx><h>limit</h><h>of the difference of sequences</h></idx>
 
@@ -892,7 +892,7 @@
   </problem>
 
   <problem>
-    <idx><h>Problem</h><h>lower and upper bounds for sequences</h></idx>  
+    <idx><h>Problems</h><h>lower and upper bounds for sequences</h></idx>  
     <idx><h>sequences</h><h>lower and upper bounds for</h></idx>
 
     <task>
@@ -918,7 +918,7 @@
   <problem xml:id="prob_RatioTest">
     <title>The Ratio Test</title>
 
-    <idx><h>Problem</h><h>Ratio Test</h></idx> 
+    <idx><h>Problems</h><h>Ratio Test</h></idx> 
     <idx><h>sequences</h><h>Ratio Test for</h></idx>
 
     <introduction>
@@ -981,7 +981,7 @@
       <problem xml:id="PROBLEMLimConst">
         <title>Limit of a Constant Sequence is the Constant</title>
 
-        <idx><h>Problem</h><h>limit of a constant sequence</h></idx>  
+        <idx><h>Problems</h><h>limit of a constant sequence</h></idx>  
         <idx><h>limit</h><h>of a constant sequence</h></idx>
         <idx><h>sequences</h><h>constant sequences</h></idx>
 
@@ -1036,9 +1036,8 @@
 
 
       <problem xml:id="Tri-RevTri-Ineq_prob">
+        <idx><h>Problems</h><h>The Triangle Inequality</h></idx>  
         <idx><h>Triangle Inequalities</h><h>Triangle Inequality</h></idx>
-
-        <idx><h>Problem</h><h>The Triangle Inequality</h></idx>  
 
         <task>
           <statement>
@@ -1138,8 +1137,7 @@
         </p>
 
         <problem xml:id="PROBLEMLimitOfSum">
-          <idx><h>Problem</h><h>termwise sums of sequences</h></idx>  
-
+          <idx><h>Problems</h><h>termwise sums of sequences</h></idx>  
           <idx><h>sequences</h><h>termwise sums of</h></idx>
 
           <statement>
@@ -1282,7 +1280,7 @@
 
 
         <problem xml:id="prob_BoundedConvergent">
-          <idx><h>Problem</h><h> convergent sequences are bounded</h></idx>  
+          <idx><h>Problems</h><h> convergent sequences are bounded</h></idx>  
           
           <idx><h>sequences</h><h>convergence</h><h> convergent sequences are bounded</h></idx>
 
@@ -1332,7 +1330,7 @@
 
 
         <problem>
-          <idx><h>Problem</h><h>termwise products of sequences</h></idx>  
+          <idx><h>Problems</h><h>termwise products of sequences</h></idx>  
 
           <idx><h>sequences</h><h>termwise product of</h></idx>
 
@@ -1365,7 +1363,7 @@
         </corollary>
 
         <problem>
-          <idx><h>Problem</h><h>the limit of a constant times a sequence</h></idx>  
+          <idx><h>Problems</h><h>the limit of a constant times a sequence</h></idx>  
           <idx><h>sequences</h><h>constant multiples of</h></idx>
           <idx><h>limit</h><h>of a constant times a sequence</h></idx>
 
@@ -1401,7 +1399,7 @@
 
 
         <problem>
-          <idx><h>Problem</h><h>termwise quotient of sequence</h></idx>  
+          <idx><h>Problems</h><h>termwise quotient of sequence</h></idx>  
 
           <idx><h>sequences</h><h>termwise quotient of</h></idx>
 
@@ -1458,7 +1456,7 @@
           </p>
 
           <problem>
-            <idx><h>Problem</h><h>the limit of ratios of polynomials</h></idx>  
+            <idx><h>Problems</h><h>the limit of ratios of polynomials</h></idx>  
 
             <idx><h>limit</h><h>identifing the theorems used in a limit</h></idx>
             <idx><h>limit</h><h> of ratios of polynomials</h></idx>
@@ -1530,7 +1528,7 @@
           </theorem>
 
           <problem>
-            <idx><h>Problem</h><h>The Squeeze Theorem</h></idx>  
+            <idx><h>Problems</h><h>The Squeeze Theorem</h></idx>  
             
             <idx><h>limit</h><h>Squeeze Theorem</h></idx>
 
@@ -1631,7 +1629,7 @@
 
 
           <problem>
-            <idx><h>Problem</h><h>if the sequence
+            <idx><h>Problems</h><h>if the sequence
             <m>\left(s_n\right)</m> is bounded then
             <m>\limit{n}{\infty}{\left(\frac{s_n}{n}\right)}=0</m></h></idx>
             
@@ -1825,7 +1823,7 @@
         </p>
 
         <problem xml:id="PROBLEMBoundedSeqConv">
-          <idx><h>Problem</h><h>Prove that <m>\left(n\right)_{n=1}^\infty </m> diverges</h></idx>
+          <idx><h>Problems</h><h>Prove that <m>\left(n\right)_{n=1}^\infty </m> diverges</h></idx>
           <p>
             Prove that <m>\left(n\right)_{n=1}^\infty </m> diverges
             using <xref ref="lemma_BoundedConvergent" ></xref>.
@@ -1873,11 +1871,11 @@
 
                 
                 <idx><h>sequences</h><h>divergence<m>to \infty</m></h></idx>
-                <idx><h><m>\infty</m></h><h>positive infinity</h><h>divergence to</h></idx>
-                <idx><h><m>\infty</m></h><h>negative infinity</h><h>divergence to</h></idx>
+                <idx><h sortby="infinity"><m>\infty</m></h><h>positive infinity</h><h>divergence to</h></idx>
+                <idx><h sortby="infinity"><m>\infty</m></h><h>negative infinity</h><h>divergence to</h></idx>
                 <idx><h>Definition</h><h>divergence of a sequence to <m>\pm\infty</m></h></idx>
                 <idx><h>divergence of a sequence to <m>\pm\infty</m></h><h>definition</h></idx>
-                <idx><h><m>\infty</m></h><h>divergence to</h></idx>
+                <idx><h sortby="infinity"><m>\infty</m></h><h>divergence to</h></idx>
 
                 <statement>
                   <p>
@@ -1921,7 +1919,7 @@
               </lemma>
 
               <problem xml:id="PROBLEMDivToInfImpDiv">
-                <idx><h>Problem</h><h>Prove that divergence to infinity implies divergence.</h></idx>
+                <idx><h>Problems</h><h>Prove that divergence to infinity implies divergence.</h></idx>
                 <p>
                   Prove <xref ref="DivToInfImpDiv" ></xref>.
                 </p>
@@ -1929,7 +1927,7 @@
 
 
               <problem>
-                <idx><h>Problem</h><h>the sequence of positive integers diverges to infinity</h></idx>
+                <idx><h>Problems</h><h>the sequence of positive integers diverges to infinity</h></idx>
                 <idx><h>sequences</h><h>the sequence of positive integers diverges to infinity</h></idx>
 
                 <task>
@@ -1973,7 +1971,7 @@
               </p>
 
               <problem>
-                <idx><h>Problem</h><h>termwise sums of sequences</h></idx>
+                <idx><h>Problems</h><h>termwise sums of sequences</h></idx>
                 <idx><h>sequences</h><h>termwise sums of</h></idx>
 
                 <introduction>
@@ -2016,7 +2014,7 @@
               </p>
 
               <problem>
-                <idx><h>Problem</h><h>divergence to <m>\infty</m></h></idx>
+                <idx><h>Problems</h><h>divergence to <m>\infty</m></h></idx>
                 <idx><h>sequences</h><h>divergence to <m>\infty</m></h></idx>
 
                 <introduction>
@@ -2063,7 +2061,7 @@
 
 
               <problem>
-                <idx><h>Problem</h><h>divergence, but not to infinity</h></idx>
+                <idx><h>Problems</h><h>divergence, but not to infinity</h></idx>
                 
                 <idx><h>sequences</h><h>divergence of</h></idx>
                 <idx><h>sequences</h><h>divergence, but not to infinity</h></idx>
@@ -2100,7 +2098,7 @@
 
 
               <problem>
-                <idx><h>Problem</h><h> divergence, but not to infinity</h></idx>
+                <idx><h>Problems</h><h> divergence, but not to infinity</h></idx>
                 <idx><h>sequences</h><h>divergence, but not to infinity</h></idx>
 
                 <introduction>
@@ -2127,7 +2125,7 @@
               </problem>
 
               <problem>
-                <idx><h>Problem</h><h>Geometric Sequence</h></idx>
+                <idx><h>Problems</h><h>Geometric Sequence</h></idx>
                 
                 <idx><h>series</h><h>Geometric Sequence</h><h>divergence condition</h></idx>
                 <idx><h>sequences</h><h>Geometric</h></idx>

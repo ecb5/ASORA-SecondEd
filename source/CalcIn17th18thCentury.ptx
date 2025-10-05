@@ -438,7 +438,7 @@
       <!-- </task> -->
       <!--       </problem> -->
       <problem>
-        <idx><h>Problem</h><h>differentiation rules</h></idx>
+        <idx><h>Problems</h><h>differentiation rules</h></idx>
 
         <introduction>
           <p>
@@ -483,7 +483,7 @@
       </problem>
 
       <problem>
-        <idx><h>Problem</h><h>power rule with fractional
+        <idx><h>Problems</h><h>power rule with fractional
         exponents</h></idx>
         <idx><h>differentiation</h><h>power rule with fractional
         exponents</h></idx>
@@ -591,7 +591,7 @@
       </p>
 
       <p>
-        <idx><h>Bernoulli, Johann</h> </idx> 
+        <idx><h>Bernoulli</h><h>Johann</h> </idx> 
         <idx><h>Brachistochrone problem, the</h></idx>
         
         To compare 18th century and modern techniques we will consider
@@ -619,8 +619,8 @@
 
 
       <p>
-        <idx><h>Bernoulli, Johann</h><h>Bernoulli<rsq/>s
-        challenge</h></idx>
+        <idx><h>Bernoulli</h><h>Johann</h><h>
+        challenge problem</h></idx>
 
         Bernoulli posed this <q>path of fastest descent</q> problem to
         challenge the mathematicians of Europe and used his solution
@@ -648,7 +648,7 @@
           Johann Bernoulli
         </caption>
 
-        <idx><h>Bernoulli, Johann</h><h>portrait of</h></idx>
+        <idx><h>Bernoulli</h><h>Johann</h><h> portrait of</h></idx>
         <idx><h>Portraits</h><h>Johann Bernoulli</h></idx>
 
         <image width="35%" source="images/BernoulliJohann.png" >
@@ -657,7 +657,7 @@
       </figure>
 
       <p>
-        <idx><h>Bernoulli, Jacob</h></idx>
+        <idx><h>Bernoulli</h><h> Jacob</h></idx>
         <idx><h>Newton, Isaac</h></idx>
 
         In addition to Johann<rsq/>s, solutions were obtained from
@@ -722,7 +722,7 @@
       </aside> 
 
       <p>
-        <idx><h>Brachistochrone problem, the</h><h>Bernoulli<rsq/>s solution</h></idx>
+        <idx><h>Brachistochrone problem, the</h><h>Johanne Bernoulli<rsq/>s solution</h></idx>
 
         Newton<rsq/>s solution was clever but it doesn<rsq/>t provide any
         insights we<rsq/>ll be interested in so we will focus on
@@ -929,7 +929,7 @@
       </p>
 
       <problem>
-        <idx><h>Problem</h><h>the Brachistochrone problem</h></idx>
+        <idx><h>Problems</h><h>the Brachistochrone problem</h></idx>
 
         <idx><h>Brachistochrone problem, the</h></idx>
 
@@ -1139,7 +1139,7 @@
 
     <example>
       
-      <idx><h><m>e^x</m></h><h>as the solution of an Initial Value Problem</h></idx>
+      <idx><h sortby="exponential"><m>e^x</m></h><h>as the solution of an Initial Value Problem</h></idx>
 
       <statement>
         <p>
@@ -1301,8 +1301,8 @@
 
     <definition xml:id="def_e">
       
-      <idx><h><m>e^x</m></h><h>definition</h></idx>
-      <idx><h>Definition</h><h><m>e^x</m></h></idx>
+      <idx><h sortby="exponential"><m>e^x</m></h><h>definition</h></idx>
+      <idx><h>Definition</h><h sortby="exponential"><m>e^x</m></h></idx>
 
       <statement>
         <p>
@@ -1396,7 +1396,7 @@
     </p>
 
     <problem>
-      <idx><h>Problem</h><h>expand <m>e^{-x^3}</m> as a power series</h></idx>
+      <idx><h>Problems</h><h>expand <m>e^{-x^3}</m> as a power series</h></idx>
 
       <statement>
         <p>
@@ -1409,7 +1409,7 @@
     </problem>    
 
     <problem>
-      <idx><h>Problem</h><h> power series expansion of <m>a^x</m></h></idx>
+      <idx><h>Problems</h><h> power series expansion of <m>a^x</m></h></idx>
 
       <statement>
         <p>
@@ -1430,7 +1430,7 @@
 
 
     <problem xml:id="PROBLEMSinPwrSeries">
-      <idx><h>Problem</h><h>series</h><h>solutions of <m>\frac{\dx^2y}{\dx{ x}^2}=-y</m></h></idx>
+      <idx><h>Problems</h><h>series</h><h>solutions of <m>\frac{\dx^2y}{\dx{ x}^2}=-y</m></h></idx>
       <idx><h>series</h><h>solutions of <m>\frac{\dx^2y}{\dx{ x}^2}=-y</m></h></idx>
 
       <introduction>
@@ -1499,8 +1499,8 @@
     </problem>
 
     <problem xml:id="PROBLEMSinCosPwrSeries">
-      <idx><h>Problem</h><h>differentiation</h><h>of <m>\sin x</m> as a power series</h></idx>
-      <idx><h><m>\sin x</m></h><h>derivative of the power series representation</h></idx>
+      <idx><h>Problems</h><h>differentiation</h><h>of <m>\sin x</m> as a power series</h></idx>
+      <idx><h sortby="sine"><m>\sin x</m></h><h>derivative of the power series representation</h></idx>
       <idx><h>differentiation</h><h>of <m>\sin x</m> as a power series</h></idx>
 
       <task>
@@ -1550,7 +1550,7 @@
     </problem>
 
     <problem>
-      <idx><h>Problem</h><h>power series expansion of <m>\sin x</m></h></idx>
+      <idx><h>Problems</h><h>power series expansion of <m>\sin x</m></h></idx>
 
 
       <statement>
@@ -1569,7 +1569,7 @@
     </problem>
 
     <problem xml:id="PROBLEMResultsFromGeometricSeries">
-      <idx><h>Problem</h><h>power series expansion of <m>\arctan x</m></h></idx>
+      <idx><h>Problems</h><h>power series expansion of <m>\arctan x</m></h></idx>
 
       
       <idx><h>series</h><h>Geometric series</h><h>used to derive arctangent series</h></idx>
@@ -1635,7 +1635,7 @@
     <!-- </problem> -->
 
     <problem xml:id="PROBLEMLnSeriesFromGeoSeries">
-      <idx><h>Problem</h><h>Alternating Geometric series</h></idx>
+      <idx><h>Problems</h><h>Alternating Geometric series</h></idx>
       <idx><h>series</h><h>Geometric series</h><h>alternating</h></idx>
       <idx><h>series</h><h>Geometric series</h><h>derivation of the series representation of <m>\ln(1+x)</m> from</h></idx>
 
@@ -1693,7 +1693,7 @@
 
 
     <problem>
-      <idx><h>Problem</h><h>Alternating Geometric series</h></idx>
+      <idx><h>Problems</h><h>Alternating Geometric series</h></idx>
 
       <statement>
         <p>
@@ -1866,8 +1866,8 @@
     </p>
 
     <problem>
-      <idx><h>Problem</h><h>Binomial series</h></idx>
-      <idx><h>Binomial Series, the</h><h>squaring the</h></idx>
+      <idx><h>Problems</h><h>Binomial series</h></idx>
+      <idx><h>Binomial series</h><h>squaring the</h></idx>
 
       <statement>
         <p>
@@ -1887,7 +1887,7 @@
     </problem>
 
     <problem xml:id="prob_SqrtSeriesProb">
-      <idx><h>Problem</h><h>power series expansion of <m>\sqrt{1+x}</m></h></idx>
+      <idx><h>Problems</h><h>power series expansion of <m>\sqrt{1+x}</m></h></idx>
 
       
       <idx><h>series</h><h>graph the square root power series</h></idx>
@@ -1917,10 +1917,10 @@
     </p>
 
     <problem>
-      <idx><h>Problem</h><h>power series expansion</h></idx>
+      <idx><h>Problems</h><h>power series expansion of <m>\pi </m></h></idx>
 
       
-      <idx><h><m>\pi</m></h><h>first series expansion</h></idx>
+      <idx><h sortby="pi"><m>\pi</m></h><h>first series expansion of</h></idx>
 
       <statement>
         <p>
@@ -1949,10 +1949,10 @@
     </p>
 
     <problem>
-      <idx><h>Problem</h><h>power series expansion</h></idx>
+      <idx><h>Problems</h><h>power series expansion of</h></idx>
 
       
-      <idx><h><m>\pi</m></h><h>second series expansion</h></idx>
+      <idx><h sortby="pi"><m>\pi</m></h><h>second series expansion</h></idx>
 
       <statement>
         <p>
@@ -2023,7 +2023,7 @@
     </p>
 
     <problem>
-      <idx><h>Problem</h><h>Binomial series</h></idx>
+      <idx><h>Problems</h><h>Binomial series</h></idx>
 
       <task>
         <statement>
@@ -2079,11 +2079,11 @@
     </problem>
 
     <problem>
-      <idx><h>Problem</h><h>Binomial series</h></idx>
+      <idx><h>Problems</h><h>Binomial series</h></idx>
 
       
-      <idx><h>Binomial Series, the</h></idx>
-      <idx><h>Binomial Series, the</h><h>as a power series centered at zero</h></idx>
+      <idx><h>Binomial series, the</h></idx>
+      <idx><h>Binomial series, the</h><h>as a power series centered at zero</h></idx>
       <idx><h>series</h><h>Geometric series</h><h>differentiating</h></idx>
 
       <introduction>
@@ -2145,7 +2145,7 @@
     <problem>
       <title>The Basel Problem</title>
 
-      <idx><h>Problem</h><h>the Basel Problem</h></idx>
+      <idx><h>Problems</h><h>the Basel Problem</h></idx>
       <idx><h>Euler, Leonhard</h><h>Basel Problem, the</h></idx>
 
       <introduction>
@@ -2218,7 +2218,7 @@
     <problem>
       <title>Euler<rsq/>s Formula</title>
 
-      <idx><h>Problem</h><h>Euler<rsq/>s Formula</h></idx>
+      <idx><h>Problems</h><h>Euler<rsq/>s Formula</h></idx>
       <idx><h>Euler, Leonhard</h><h>Euler<rsq/>s Formula</h></idx>
 
       <task>
@@ -2330,7 +2330,7 @@
     </p>
     
     <problem xml:id="PROBLEMOneOverXTayl">
-      <idx><h>Problem</h><h>power series expansion of <m>\frac1x </m></h></idx>
+      <idx><h>Problems</h><h>power series expansion of <m>\frac1x </m></h></idx>
 
       <introduction>
         <p>
@@ -2380,7 +2380,7 @@
     
 
     <problem>
-      <idx><h>Problem</h><h>power series expansion of <m>\sqrt{x}</m></h></idx>
+      <idx><h>Problems</h><h>power series expansion of <m>\sqrt{x}</m></h></idx>
 
       <p>
         Let <m>a>0</m> and use <xref ref="eq_BinomialSeries"
@@ -2390,7 +2390,7 @@
     </problem>
     
     <problem xml:id="PROBLEMExpTaylAta">
-      <idx><h>Problem</h><h>power series expansion of <m>e^x</m> at <m>a</m></h></idx>
+      <idx><h>Problems</h><h>power series expansion of <m>e^x</m> at <m>a</m></h></idx>
 
       <p>
         Let <m>a</m> be a real number.  Represent <m>e^x</m> as power
@@ -2400,7 +2400,7 @@
     </problem>
     
     <problem>
-      <idx><h>Problem</h><h>power series expansion of <m>x^3+2x^2+3</m></h></idx>
+      <idx><h>Problems</h><h>power series expansion of <m>x^3+2x^2+3</m></h></idx>
 
       <p>
         Let <m>a</m> be a real number.  Represent <m>x^3+2x^2+3</m> as a
@@ -2409,7 +2409,7 @@
     </problem>
     
     <problem xml:id="PROBLEMSinExpandedAta">
-      <idx><h>Problem</h><h>power series expansion of <m>\sin x</m></h></idx>
+      <idx><h>Problems</h><h>power series expansion of <m>\sin x</m></h></idx>
 
 
       <statement>

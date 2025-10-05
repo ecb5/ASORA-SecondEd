@@ -155,6 +155,7 @@
     </p>
 
     <problem xml:id="PROBLEMEndpointsNIP">
+      <idx><h>Problems</h><h>Nested Interval Property</h></idx>
       
       <idx><h>Nested Interval Property</h><h>endpoints</h></idx>
 
@@ -190,6 +191,8 @@
     </p>
 
     <problem>
+      <idx><h>Problems</h><h>Least Upper Bound Property</h><h>implies the
+      existence of irrational numbers</h></idx>
 
       <idx><h>Least Upper Bound Property</h><h>implies the
       existence of irrational numbers</h></idx>
@@ -267,6 +270,7 @@
     </theorem>
 
     <problem>
+      <idx><h>Problems</h><h>Nested Interval Property</h></idx>
       <idx><h>Nested Interval Property</h><h>endpoints</h></idx>
       <statement>
         <p>
@@ -463,6 +467,8 @@
     </proof>
 
     <problem>
+      <idx><h>Problems</h><h>Nested Interval Property</h><h>square roots of integers,
+      and</h></idx>
 
       <idx><h>Nested Interval Property</h><h>square roots of integers,
       and</h></idx>
@@ -566,6 +572,8 @@
     </p>
 
     <problem>
+      <idx><h>Problems</h><h>Euler<rsq/>s constant
+      <m>(\gamma)</m></h></idx>
       
       <idx><h>Euler, Leonhard</h><h>Euler<rsq/>s constant
       <m>(\gamma)</m></h><h>existence of</h></idx>
@@ -640,8 +648,10 @@
     <!-- </problem> -->
 
     <problem>
+      <idx><h>Problems</h><h>Euler<rsq/>s constant
+      <m>(\gamma)</m></h></idx>
       
-      <idx><h>Euler, Leonhard</h><h>Euler<rsq/>ns constant
+      <idx><h>Euler, Leonhard</h><h>Euler<rsq/>s constant
       <m>(\gamma)</m></h><h>slow convergence to</h></idx>
 
       <task>
@@ -763,6 +773,7 @@
     </proof>
 
     <problem>
+      <idx><h>Problems</h><h>Intermediate Value Theorem (IVT)</h></idx>
       
       <idx><h>Intermediate Value Theorem (IVT)</h><h>the case <m>f(a)\leq v\leq f(b)</m></h></idx>
 
@@ -794,6 +805,7 @@
     </problem>
 
     <problem>
+      <idx><h>Problems</h><h>Intermediate Value Theorem, the</h></idx>
 
       <idx><h>polynomials</h><h>with odd degree must have a root</h></idx>
       <idx><h>Intermediate Value Theorem (IVT)</h><h>a polynomial
@@ -981,6 +993,7 @@
     </p>
 
     <problem>
+      <idx><h>Problems</h><h>all subsequences of a convergent sequence converge</h></idx>
 
       <idx><h>sequences</h><h>all subsequences of a convergent sequence converge</h></idx>
 
@@ -1174,8 +1187,9 @@
     </proof>
 
     <problem>
+      <idx><h>Problems</h><h>Bolzano<ndash/>Weierstrass Theorem</h><h>proof of</h></idx>
 
-      <idx><h>Bolzano<ndash/>Weierstrass Theorem</h></idx>
+      <idx><h>Bolzano<ndash/>Weierstrass Theorem</h><h>proof of</h></idx>
 
       <statement>
         <p>
@@ -1186,7 +1200,8 @@
     </problem>
 
     <problem>
-
+      <idx><h>Problems</h><h>Bolzano<ndash/>Weierstrass Theorem</h><h> implies that a continuous functions on a closed set is
+      bounded</h></idx>
       <idx>
         <h>Bolzano<ndash/>Weierstrass Theorem</h>
         <h>implies that a continuous functions on a closed set is
@@ -1425,7 +1440,7 @@
     </proof>
 
     <problem>
-      
+      <idx><h>Problems</h><h>Nested Interval Property</h><h>implies the LUBP</h></idx>
       <idx><h>Nested Interval Property</h><h>implies the LUBP</h></idx>
       <idx><h>NIP</h><see>Nested Interval Property</see></idx>
 
@@ -1459,8 +1474,9 @@
     </corollary>
 
     <problem>
+      <idx><h>Problems</h><h>bounded, non<ndash/>decreasing sequences</h></idx>
 
-      <idx><h>sequences</h><h>bounded and non-decreasing</h></idx>
+      <idx><h>sequences</h><h>bounded and non<ndash/>decreasing</h></idx>
 
       <statement>
         <p>
@@ -1479,9 +1495,8 @@
     </problem>
 
     <problem>
-
-      <idx><h>
-        <m>\sqrt{2+\sqrt{2+\sqrt{2+\sqrt{...}}}}</m></h><h>value
+      <idx><h>Problems</h><h sortby="square root">
+      <m>\sqrt{2+\sqrt{2+\sqrt{2+\sqrt{...}}}}</m></h><h>value
       of</h></idx>
 
       <introduction>
@@ -1537,12 +1552,13 @@
     </problem>
 
     <problem xml:id="PROBLEMGreatestLowerBound">
+      <idx><h>Problems</h><h>Greatest Lower Bound Property </h></idx>
 
       <idx><h>Definition</h><h>Greatest Lower Bound Property </h></idx>
       <idx><h>Definition</h><h>infimum </h></idx>
       <idx><h>Greatest Lower Bound Property (GLBP)</h><h>definition of</h></idx>
       <idx><h>Least Upper Bound Property</h></idx>
-      <idx><h><m>b</m> is an upper bound of <m>S\subseteq \RR</m> if and only if <m>-b</m> is a lower bound of <m>-S</m></h></idx>
+      <idx><h sortby="b"><m>b</m> is an upper bound of <m>S\subseteq \RR</m> if and only if <m>-b</m> is a lower bound of <m>-S</m></h></idx>
 
       <introduction>
         <p>
@@ -1596,7 +1612,7 @@
 
     </problem>
     <problem>
-
+      <idx><h>Problems</h><h>Least Upper Bound Property</h></idx>
       <idx><h>Least Upper Bound Property</h></idx>
       <!-- <idx><h>LUBP</h></idx> -->
       <idx><h>Greatest Lower Bound Property</h></idx>
@@ -1715,8 +1731,8 @@
     </proof>
 
     <problem>
-
-      <idx><h>Extreme Value Theorem (EVT)</h></idx>
+      <idx><h>Problems</h><h>Extreme Value Theorem</h></idx>
+      <idx><h>Extreme Value Theorem</h></idx>
 
       <statement>
         <p>
@@ -1754,6 +1770,7 @@
     </p>
 
     <problem>
+      <idx><h>Problems</h><h>Bolzano<ndash/>Weierstrass Theorem</h><h> implies the NIP</h></idx>
 
       <idx>
         <h>Bolzano<ndash/>Weierstrass Theorem</h>
@@ -1810,6 +1827,7 @@
     </p>
 
     <problem>
+      <idx><h>Problems</h><h>find a bounded sequence of rational numbers such that no subsequence converges to a rational number</h></idx>
 
       <idx><h>sequences</h><h>find a bounded sequence of rational numbers such that no subsequence converges to a rational number</h></idx>
 
@@ -1821,6 +1839,7 @@
     </problem>
 
     <problem>
+      <idx><h>Problems</h><h>Least Upper Bound Property implies the Nested Interval Property</h></idx>
 
       <idx><h>Least Upper Bound Property</h><h>implies the Nested Interval Property</h></idx>
 
@@ -1871,7 +1890,7 @@
     </problem>
 
     <problem>
-
+      <idx><h>Problems</h><h>Least Upper Bound Property doesn<rsq/>t hold in <m>\QQ</m></h></idx>
       <idx><h>Least Upper Bound Property</h><h>doesn<rsq/>t hold in <m>\QQ</m></h></idx>
 
       <statement>
@@ -1887,6 +1906,7 @@
     </problem>
 
     <p>
+      <idx><h>Archimedean Property</h></idx>
       We now have the machinery in place to prove the <xref
       ref="ArchimedeanProperty" text="custom">Archimedean
       Property</xref> of the real number system as we promised
@@ -1910,7 +1930,7 @@
     </theorem>
 
     <problem>
-      
+      <idx><h>Problems</h><h>Least Upper Bound Property implies the Archimedean Property</h></idx>
       <idx><h>Least Upper Bound Property</h><h>implies the Archimedean Property</h></idx>
       <idx><h>Archimedean Property</h><h>and LUBP</h></idx>
 
@@ -1939,6 +1959,7 @@
     </p>
 
     <problem>
+      <idx><h>Problems</h><h>Archimedean Property and <m>\QQ</m></h></idx>
 
       <idx><h>Archimedean Property</h><h>and <m>\QQ</m></h></idx>
 

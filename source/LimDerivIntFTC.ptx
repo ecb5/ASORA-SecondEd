@@ -424,6 +424,9 @@
       this change.
     </p>
     <problem xml:id="DRILLContIFFLimExist">
+      <idx><h>Problems</h><h>a function <m>f(x)</m>
+      is continuous at <m>x=a</m> if and only if
+      <m>\limit{x}{a}{f(x)}=f(a)</m></h></idx>
 
       <p>
         Use <xref ref="def_continuity" ></xref> and <xref
@@ -524,6 +527,7 @@
       ensure that <m>x\neq 1</m>.
     </p> 
     <problem>
+      <idx><h>Problems</h><h sortby="limit"><m>\limit{x}{a}{\frac{x^2-a^2}{x-a}}=2a</m></h></idx>
       
       <idx><h>limit</h><h><m>\limit{x}{a}{\frac{x^2-a^2}{x-a}}=2a</m></h></idx>
 
@@ -536,6 +540,7 @@
     </problem>
 
     <problem>
+      <idx><h>Problems</h><h>verifying limits</h></idx>
       
       <idx><h>limit</h><h>verifying limits via continuity</h></idx>
 
@@ -669,6 +674,7 @@
     </theorem>
 
     <problem xml:id="PROBLEMLimConstBySeq">
+      <idx><h>Problems</h><h>Prove that the limit of a constant function is the constant.</h></idx>
       <p>
         Use <xref ref="cor_limit-by-sequences" ></xref> to prove <xref ref="LimConst" ></xref>.
       </p>
@@ -785,6 +791,7 @@
     </proof>
 
     <problem> 
+      <idx><h>Problems</h><h>limit</h><h>properties of</h></idx>
 
       <idx><h>limit</h><h>properties of</h></idx>
       <idx><h>limit</h><h>verify limit laws from Calculus</h></idx>
@@ -820,6 +827,7 @@
     </theorem>
 
     <problem> 
+      <idx><h>Problems</h><h>Squeeze Theorem for functions</h></idx>
 
       <idx><h>Squeeze Theorem</h><h>for functions</h></idx>
 
@@ -845,8 +853,11 @@
     </figure>
 
     <problem>
-      <idx><h>limit</h><h><m>\limit{x}{0}{\textstyle\frac{\sin
+      <idx><h>Problems</h><h sortby="limit"><m>\limitt{x}{0}{\frac{\sin
       x}{x}}=1</m></h></idx>
+      <idx><h>limit</h><h><m>\limitt{x}{0}{\frac{\sin
+      x}{x}}=1</m></h></idx>
+
       <introduction>
         <p> 
           Returning to <xref ref="EXAMPLESyncFunction"></xref> we see
@@ -908,6 +919,7 @@
     </problem> 
 
     <problem xml:id="PROBLEMBasicLimits">
+      <idx><h>Problems</h><h>limits</h></idx>
       <introduction>
         <p>
           Suppose <m>\limitt{x}{a}{ f(x)}=L</m>.  
@@ -978,10 +990,10 @@
     </definition>
 
     <problem xml:id="PROBLEMLimUppLow">
+      <idx><h>Problems</h><h>limits</h></idx>
+
       <introduction>
-
         <p>
-
           Prove that each of the following statements is also a
           consequence of <xref ref="PROBLEMBasicLimits"></xref>.
           Suppose <m>\limit{x}{a}{f(x)}=L</m>.
@@ -1143,6 +1155,8 @@
   </theorem>
 
   <problem> 
+    <idx><h>Problems</h><h>differentiability implies
+    continuity</h></idx>
     
     <idx><h>differentiation</h><h>differentiability implies
     continuity</h></idx>
@@ -1301,6 +1315,8 @@
 
 
   <problem xml:id="PROBLEMFermatsTheorem">
+    <idx><h>Problems</h><h>Fermat<rsq/>s Theorem</h></idx>
+    <idx><h>Fermat<rsq/>s Theorem</h></idx>
 
     <statement>
       <p>
@@ -1449,6 +1465,8 @@
 
   <problem xml:id="PROBLEMRollesTheorem">
     <title>Rolle<rsq/>s Theorem</title>
+    <idx><h>Problems</h><h>Rolle<rsq/>s Theorem</h></idx>
+
     <p>
       Turn the ideas in the sketch above into a proof of <xref
       ref="thm_Rolle_s_Theorem" text="custom">Rolle<rsq/>s
@@ -1478,7 +1496,7 @@
   </p>
 
   <problem> 
-    
+    <idx><h>Problems</h><h>Mean Value Theorem, the</h></idx>
     <idx><h>Mean Value Theorem, the</h></idx> 
 
     <statement> 
@@ -1527,6 +1545,8 @@
   </proof>
 
   <problem>
+    <idx><h>Problems</h><h>if <m>f^\prime\lt 0</m> on an
+    interval then <m>f</m> is decreasing</h></idx>
 
     <idx><h>differentiation</h><h>if <m>f^\prime\lt 0</m> on an
     interval then <m>f</m> is decreasing</h></idx>
@@ -1554,6 +1574,8 @@
   </corollary>
 
   <problem>
+    <idx><h>Problems</h><h><m>f^\prime(a)>0</m> implies
+    <m>f</m> is increasing nearby</h></idx>
 
     <idx><h>differentiation</h><h><m>f^\prime(a)>0</m> implies
     <m>f</m> is increasing nearby</h></idx>
@@ -1568,6 +1590,8 @@
   </problem>
 
   <problem>
+    <idx><h>Problems</h><h><m>f^\prime(a)\lt 0</m> implies <m>f</m> is decreasing
+    nearby</h></idx>
 
     <idx> <h>differentiation</h>
     <h><m>f^\prime(a)\lt 0</m> implies <m>f</m> is decreasing
@@ -1589,6 +1613,7 @@
   </problem>
 
   <problem xml:id="DRILLZeroDerivImpConst">
+    <idx><h>Problems</h><h>Derivative</h><h><m>f^\prime =0 \imp f</m> is constant</h></idx>
     <task>
       <statement>
         <p>
@@ -1787,9 +1812,11 @@
     sufficient.
   </p>
   <problem>
+    <idx><h>Problems</h><h>antiderivative</h><h>Does every continuous function have an
+    antiderivative?</h></idx>
     <p>
       One question which eventually led to such a closer investigation
-      was, <q>Does every continuous function have an antiderivative.</q>
+      was, <q>Does every continuous function have an antiderivative?</q>
       What do you think?
     </p>
     <!-- <p> -->
@@ -2017,6 +2044,7 @@
 
 
   <problem>
+    <idx><h>Problems</h><h>Prove the Fundamental Theorem of Calculus</h></idx>
     <p>
       Turn the above ideas into a proof of <xref
       ref="THEOREMFTCCauchy"></xref>. Don<rsq/>t forget to justify
@@ -2025,11 +2053,11 @@
   </problem>
 
   <problem>
+    <idx><h>Problems</h><h>Fundamental Theorem of Calculus</h></idx>
 
     <introduction>
-
       <p>
-      Suppose <m>f(x)</m> is continuous on <m>[a,b]</m> and
+        Suppose <m>f(x)</m> is continuous on <m>[a,b]</m> and
       <m>I(x)</m> is the antiderivative of <m>f(x)</m> from <xref
       ref="THEOREMFTCCauchy" ></xref>. Suppose further that
       <m>F(x)</m> is continuous on <m>[a,b]</m> with <m>F^\prime
@@ -2547,6 +2575,7 @@
 
 
   <problem>
+    <idx><h>Problems</h><h>partition refinement</h></idx>
 
     <statement>
 
@@ -2573,6 +2602,7 @@
   </problem>
 
       <problem xml:id="PROBLEMPartitionIneq1">
+        <idx><h>Problems</h><h>partition of <m>[a,b]</m></h></idx>
 
         <statement>
           <p>
@@ -2613,6 +2643,8 @@
         </p>
 
         <problem>
+          <idx><h>Problems</h><h>Prove that <m>\underline{\int^b_{x=a}}{f(x)}\dx{x}\le
+          \overline{\int^{b}_{x=a}}{f(x)\dx{x}}</m></h></idx>
 
           <statement>
             <p>
@@ -2713,6 +2745,7 @@
 
 
         <problem xml:id="PROBLEMDirichletCountrExamp">
+          <idx><h>Problems</h><h>Dirichlet<rsq/>s Function</h></idx>
           <idx><h>Dirichlet<rsq/>s Function</h></idx>
 
           <statement>
@@ -2952,6 +2985,7 @@
         </p>
 
         <problem xml:id="PROBLEMContVSUnifCont">
+          <idx><h>Problems</h><h>uniform continuity</h></idx>
           <p>
             Consider <m>f(x)=x^2</m> on
             <m>[0,\infty )</m>.  Show that for any <m>\delta >0</m>,
@@ -3040,12 +3074,15 @@
           </proof>
 
           <problem>
+            <idx><h>Problems</h><h>Prove that uniform continuity implies continuity</h></idx>
+            <idx><h>continuity</h><h>uniform</h></idx>
             <p>
               Turn the above outline into a proof of <xref
               ref="LEMMAUnifContImpCont"></xref>.
             </p>
           </problem>
           <problem>
+            <idx><h>Problems</h><h>continuity</h><h>implies integrability</h></idx>
             <p>
               Prove <xref ref="THEROEMContImpInt"></xref>.
             </p>

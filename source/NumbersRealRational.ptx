@@ -88,8 +88,9 @@
   </p>
 
   <problem>
+    <idx><h>Problems</h><h>rational numbers exist between rational numbers</h></idx>
 
-    <idx><h><m>\QQ</m></h><h>rational numbers exist between rational numbers</h></idx>
+    <idx><h sortby="quotient"><m>\QQ</m></h><h>rational numbers exist between rational numbers</h></idx>
 
     <statement>
       <p>
@@ -146,6 +147,7 @@
   </proof>
 
   <problem>
+    <idx><h>Problems</h><h>common denominators</h></idx>
 
     <idx><h>common denominators</h></idx>
 
@@ -188,7 +190,7 @@
   </p>
 
   <p>
-    <idx><h><m>\sqrt{2}</m></h><h>is irrational</h></idx> 
+    <idx><h sortby="square root"><m>\sqrt{2}</m></h><h>is irrational</h></idx> 
 
     Squares are simple.  Two sets of parallel lines at right angles,
     all of the same length.  What could be simpler?  If we construct a
@@ -275,56 +277,58 @@
     be so expressed.
   </p>
 
-  <problem><title>Irrational Numbers</title>
-  
-  <idx><h><m>\RR</m></h><h>irrational numbers drill, 5 parts</h></idx>
+  <problem>
+    <title>Irrational Numbers</title>
+    <idx><h>Problems</h><h>irrational numbers</h></idx>
+    <idx><h sortby="real"><m>\RR</m></h><h>irrational numbers drill, 5 parts</h></idx>
 
-  <introduction>
-    <p>
-      Show that each of the following numbers is irrational:
-    </p>
-  </introduction>
-  <task>
-    <statement>
+    <introduction>
       <p>
-        <m>\sqrt{3}</m>
+        Show that each of the following numbers is irrational:
       </p>
-    </statement>
-  </task>
-  <task>
-    <statement>
-      <p>
-        <m>\sqrt{5}</m>
-      </p>
-    </statement>
-  </task>
-  <task>
-    <statement>
-      <p>
-        <m>\sqrt[3]{2}</m>
-      </p>
-    </statement>
-  </task>
-  <task>
-    <statement>
-      <p>
-        <m>i</m> <m>(=\sqrt{-1})</m>
-      </p>
-    </statement>
-  </task>
-  <task>
-    <statement>
-      <p>
-        The square root of every positive integer which is not the
-        square of an integer.
-      </p>
-    </statement>
-  </task>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\sqrt{3}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\sqrt{5}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\sqrt[3]{2}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>i</m> <m>(=\sqrt{-1})</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          The square root of every positive integer which is not the
+          square of an integer.
+        </p>
+      </statement>
+    </task>
   </problem>
 
   <problem>
+    <idx><h>Problems</h><h>sums and products of rational and irrational numbers</h></idx>
     
-    <idx><h><m>\QQ</m></h><h>sums and products of rational and irrational numbers</h></idx>
+    <idx><h sortby="quotient"><m>\QQ</m></h><h>sums and products of rational and irrational numbers</h></idx>
 
     <introduction>
       <p>
@@ -356,10 +360,11 @@
   </problem>
 
   <problem>
+    <idx><h>Problems</h><h>creating irrationals from rationals</h></idx>
 
-    <idx><h><m>\QQ</m></h><h>creating irrationals from rationals</h></idx>
-    <idx><h><m>\QQ</m></h><h>creating rationals from irrationals</h></idx>
-    <idx><h><m>\RR</m></h><h>irrational numbers</h></idx>
+    <idx><h sortby="quotient"><m>\QQ</m></h><h>creating irrationals from rationals</h></idx>
+    <idx><h sortby="quotient"><m>\QQ</m></h><h>creating rationals from irrationals</h></idx>
+    <idx><h sortby="real"><m>\RR</m></h><h>irrational numbers</h></idx>
 
     <task>
       <statement>
@@ -391,7 +396,7 @@
   </problem>
 
   <p>
-    <idx><h><m>\sqrt{2}</m></h><h>meaning of</h></idx>
+    <idx><h sortby="square root"><m>\sqrt{2}</m></h><h>meaning of</h></idx>
 
     The fact that <m>\sqrt{2}</m> is not rational is cute and
     interesting but unless, like the Pythagoreans of ancient Greece,
@@ -498,7 +503,7 @@
 
   <theorem xml:id="thm_IrrationalBetweenIrrationals">
 
-    <idx><h><m>\RR</m></h><h>real numbers exist between real numbers</h></idx>
+    <idx><h sortby="real"><m>\RR</m></h><h>real numbers exist between real numbers</h></idx>
 
     <statement>
       <p>
@@ -522,6 +527,8 @@
   </theorem>
 
   <p>
+    <idx><h>Archimedean Property</h></idx>
+
     Both parts of this theorem rely on a judicious use of what is now
     called the <term>Archimedean Property</term> of the Real Number
     System, which can be formally stated as follows.
@@ -552,6 +559,7 @@
   </p>
 
   <p>
+    <idx><h>Archimedean Property</h></idx>
     This is such an intuitively straightforward concept that it is
     easy to accept it without proof.  Until the invention of Calculus,
     and even for some time after that, it was simply assumed.  However
@@ -677,8 +685,9 @@
   </p>
 
   <problem>
+    <idx><h>Problems</h><h>products of rationals and irrationals</h></idx>
 
-    <idx><h><m>\RR</m></h><h>products of rationals and irrationals</h></idx>
+    <idx><h sortby="real"><m>\RR</m></h><h>products of rationals and irrationals</h></idx>
 
     <task>
       <statement>

@@ -294,7 +294,7 @@
 
     <problem xml:id="PROBLEMAccumulationPoint">
       
-      <idx><h>Problem</h><h>accumulation point</h></idx>
+      <idx><h>Problems</h><h>accumulation point</h></idx>
       <idx><h>limit</h><h>accumulation point</h></idx>
       <idx><h>sets</h><h>accumulation points</h></idx>
 
@@ -346,7 +346,7 @@
     <problem>
       
       <idx><h>derived sets</h></idx>
-      <idx><h>Problem</h><h>derived sets</h></idx>
+      <idx><h>Problems</h><h>derived sets</h></idx>
 
       <statement>
         <p>
@@ -400,7 +400,7 @@
 
     <problem>
 
-      <idx><h>Problem</h><h>derived sets</h></idx>
+      <idx><h>Problems</h><h>derived sets</h></idx>
       <idx><h>derived sets</h></idx>
 
       <statement>
@@ -508,7 +508,7 @@
     </p>
 
         <problem  xml:id="PROBLEMClosedIntIsClosedSet">
-          <idx><h>Problem</h><h>a closed interval is a closed set</h></idx>
+          <idx><h>Problems</h><h>a closed interval is a closed set</h></idx>
     
           <statement>
             <p>
@@ -552,7 +552,7 @@
     </problem>
 
     <problem>
-      <idx><h>Problem</h><h>a closed set is not (necessarily) a closed inteval </h></idx>  
+      <idx><h>Problems</h><h>a closed set is not (necessarily) a closed inteval </h></idx>  
     
       <p>
         The converse of <xref ref="PROBLEMClosedIntIsClosedSet" ></xref>
@@ -627,7 +627,7 @@
 
     <problem>
 
-      <idx><h>Problem</h><h>open sets</h></idx>    
+      <idx><h>Problems</h><h>open sets</h></idx>    
       <statement>
 
         <p>
@@ -647,7 +647,7 @@
     </problem>
 
     <problem>
-      <idx><h>Problem</h><h>open intervals are not the only open sets</h></idx>    
+      <idx><h>Problems</h><h>open intervals are not the only open sets</h></idx>    
     
       <p>
         Open intervals are not the only open sets.  Convince yourself
@@ -668,7 +668,7 @@
     </problem>
 
     <problem>
-      <idx><h>Problem</h><h>sets that are neither open nor closed</h></idx>
+      <idx><h>Problems</h><h>sets that are neither open nor closed</h></idx>
 
       <p>
       Of course, there are sets which are neither open nor closed.
@@ -738,7 +738,7 @@
     </definition>
 
     <problem  xml:id="PROBLEMTopoDefCont">
-      <idx><h>Problem</h><h>continuity via set theory</h></idx>
+      <idx><h>Problems</h><h>continuity</h><h> via set theory</h></idx>
 
       <p>
         Show that a function <m>f(x)</m> is continuous at <m>x=a</m>
@@ -934,7 +934,7 @@
 
   <problem>
 
-    <idx><h>Problem</h><h>Nested Interval Property</h><h>weak form</h></idx>
+    <idx><h>Problems</h><h>Nested Interval Property</h><h>weak form</h></idx>
     <idx><h>Nested Interval Property</h><h>weak form</h></idx> 
 
     <statement>
@@ -968,7 +968,7 @@
       <h>first proof that <m>\RR</m> is uncountable</h>
     </idx> 
     <idx>
-      <h><m>\RR</m></h>
+      <h sortby="real"><m>\RR</m></h>
       <h> is uncountable</h>
       <h>Cantor<rsq/>s first proof</h>
     </idx>
@@ -1288,7 +1288,7 @@
 
   <problem xml:id="PROBLEMCountableDrills">
   
-    <idx><h>Problem</h><h>countable sets</h></idx>  
+    <idx><h>Problems</h><h>countable sets</h></idx>  
     <idx><h>countable sets</h><h>countable sets drill, 5 parts</h></idx>
     
     <introduction>
@@ -1338,7 +1338,7 @@
 
   <problem xml:id="prob_countable_sets_unions_of">
   
-    <idx><h>Problem</h><h>countable sets</h><h>unions and intersections of</h></idx>  
+    <idx><h>Problems</h><h>countable sets</h><h>unions and intersections of</h></idx>  
     <idx><h>countable sets</h><h>unions and intersections of</h></idx>
 
     <introduction>
@@ -1406,7 +1406,7 @@
 
   <theorem xml:id="thm_QisCountable">
     
-    <idx><h><m>\QQ</m></h><h> is countable</h></idx>
+    <idx><h sortby="quotient"><m>\QQ</m></h><h> is countable</h></idx>
 
     <statement>
       <p>
@@ -1450,8 +1450,8 @@
   </proof>
 
   <problem>
-    <idx><h>Problem</h><h><m>\QQ</m> is countable</h></idx>  
-    <idx><h><m>\QQ</m></h><h>is countable</h></idx>
+    <idx><h>Problems</h><h sortby="quotient"><m>\QQ</m> is countable</h></idx>  
+    <idx><h sortby="quotient"><m>\QQ</m></h><h>is countable</h></idx>
 
     <statement>
       <p>
@@ -1499,7 +1499,7 @@
   </p>
 
   <problem>
-    <idx><h>Problem</h><h>intervals are uncountable</h></idx>  
+    <idx><h>Problems</h><h>intervals are uncountable</h></idx>  
   
     <idx><h>sets</h><h>intervals are uncountable</h></idx>
 
@@ -2001,7 +2001,7 @@
 </p>
 
 <problem xml:id="PROBLEMOpenCovers">
-  <idx><h>Problem</h><h>open covers</h></idx>
+  <idx><h>Problems</h><h>open covers</h></idx>
 
   <introduction>
     <p>
@@ -2078,7 +2078,7 @@
   </statement>
 </definition>
 <problem xml:id="PROBLEMOuterMeasure1">
-  <idx><h>Problem</h><h>outer measure</h></idx>
+  <idx><h>Problems</h><h>outer measure</h></idx>
 
 
   <introduction>
@@ -2276,7 +2276,7 @@
   </theorem>
 
   <problem>
-    <idx><h>Problem</h><h>measure zero</h></idx>
+    <idx><h>Problems</h><h>measure zero</h></idx>
 
     <task>
       <statement>
@@ -2594,7 +2594,7 @@
     The Lebesgue Integral of Dirichlet<rsq/>s Function 
   </title>
 
-  <idx><h>Problem</h><h>Dirichlet<rsq/>s Function</h><h>Lebesgue integral of</h></idx>
+  <idx><h>Problems</h><h>Dirichlet<rsq/>s Function</h><h>Lebesgue integral of</h></idx>
   <idx><h>Dirichlet<rsq/>s Function</h><h>Lebesgue integral of</h></idx>
 
 
@@ -2759,7 +2759,7 @@
   </p>
 
   <problem>
-    <idx><h>Problem</h><h>Geometric series</h></idx>
+    <idx><h>Problems</h><h>Geometric series</h></idx>
 
     
     <idx><h>series</h><h>Geometric series</h><h>
@@ -2831,7 +2831,7 @@
   </p>
 
   <problem xml:id="prob_PowerSet">
-    <idx><h>Problem</h><h>power set</h></idx>
+    <idx><h>Problems</h><h>power set</h></idx>
     <idx><h>sets</h><h>power set</h></idx>
     <idx><h>sets</h><h>cardinality of a power set</h></idx>
     <idx><h>cardinality</h><h>of a power set</h></idx>
@@ -2863,7 +2863,7 @@
 
   
   <problem>
-    <idx><h>Problem</h><h>Cantor<rsq/>s Theorem</h></idx>
+    <idx><h>Problems</h><h>Cantor<rsq/>s Theorem</h></idx>
 
     
     <idx><h>Cantor, Georg</h><h>Cantor<rsq/>s Theorem</h></idx>
@@ -2918,7 +2918,7 @@
   </p>
 
   <problem>
-    <idx><h>Problem</h><h>countable union of finite sets</h></idx>
+    <idx><h>Problems</h><h>countable union of finite sets</h></idx>
 
     <statement>
       <p>
@@ -2940,7 +2940,7 @@
   </p>
 
   <problem>
-    <idx><h>Problem</h><h>countably infinite subsets</h></idx>
+    <idx><h>Problems</h><h>countably infinite subsets</h></idx>
 
     <statement>
       <p>
@@ -2953,7 +2953,7 @@
   </problem>
 
   <problem>
-    <idx><h>Problem</h><h>deleting a countable subset from an uncountable set</h></idx>
+    <idx><h>Problems</h><h>deleting a countable subset from an uncountable set</h></idx>
 
     <idx><h>uncountable sets</h><h>deleting a countable subset</h></idx> 
 

@@ -57,7 +57,7 @@
     </p>
 
     <problem>
-
+      <idx><h>Problems</h><h>Taylor<rsq/>s Formula</h></idx>
       <idx><h>Taylor<rsq/>s Formula</h></idx>
 
       <statement>
@@ -123,6 +123,7 @@
     </figure>
 
     <problem>
+      <idx><h>Problems</h><h>Taylor<rsq/>s Formula</h></idx>
       
       <idx><h>Taylor<rsq/>s Formula</h><h>drill problems </h></idx>
 
@@ -252,14 +253,12 @@
     </p>
 
     <problem>
-
+      <idx><h>Problems</h><h>Lagrange<rsq/>s idea</h></idx>
       <introduction>
-
         <p>
-
-          Let <m>a\neq 0</m> be a fixed number.
-          We saw in <xref ref="PROBLEMOneOverXTayl" ></xref>  that the power series of <m>\frac{1}{x}</m> expanded
-          about <m>a</m> is given by 
+          Let <m>a\neq 0</m> be a fixed number.  We saw in <xref
+          ref="PROBLEMOneOverXTayl" ></xref> that the power series of
+          <m>\frac{1}{x}</m> expanded about <m>a</m> is given by
           <me>
             \sum^{\infty}_{n=0}{\frac{{\left(-1\right)}^n}{a^{n+1}}{\left(x-a\right)}^n}
             =\frac{1}{a}-\frac{1}{a^2}\left(x-a\right)
@@ -301,11 +300,12 @@
     </problem>
     
     <problem>
+      <idx><h>Problems</h><h>Taylor<rsq/>s series</h><h>expansion of <m>e^x, \sin x</m>, and <m>\cos x</m></h></idx>
       
-      <idx><h><m>e^x</m></h><h>Taylor<rsq/>s series for</h></idx>
+      <idx><h sortby="exponential"><m>e^x</m></h><h>Taylor<rsq/>s series for</h></idx>
       <idx><h>series</h><h>Taylor<rsq/>s series</h><h>expansion of <m>e^x, \sin x</m>, and <m>\cos x</m></h></idx>
-      <idx><h><m>\sin x</m></h><h>Taylor<rsq/>s series for</h></idx>
-      <idx><h><m>\cos x</m></h><h>Taylor<rsq/>s series for</h></idx>
+      <idx><h sortby="sine"><m>\sin x</m></h><h>Taylor<rsq/>s series for</h></idx>
+      <idx><h sortby="cosine"><m>\cos x</m></h><h>Taylor<rsq/>s series for</h></idx>
 
       <task>
         <statement>
@@ -443,11 +443,12 @@
     </p>
     
     <problem>
-      <introduction>
-        <p>
+      <idx><h>Problems</h><h>power series expanded about <m>a</m></h></idx>
+      <!-- <introduction> -->
+      <!--   <p> -->
 
-        </p>
-      </introduction>
+      <!--   </p> -->
+      <!-- </introduction> -->
       <task>
         <statement>
           <p>
@@ -523,43 +524,45 @@
         </me>.
     </p>
 
-    <problem xml:id="DRILLCauchyCounterPartI"><title>Cauchy<rsq/>s Counterexample, Part 1</title>
-    
-    <idx><h>Cauchy, Augustin</h><h>Cauchy<rsq/>s counterexample</h><h> part 1</h></idx>
+    <problem xml:id="DRILLCauchyCounterPartI">
+      <title>Cauchy<rsq/>s Counterexample, Part 1</title>
+      
+      <idx><h>Problems</h><h>Cauchy<rsq/>s counterexample</h><h> part 1</h></idx>
+      <idx><h>Cauchy, Augustin</h><h>Cauchy<rsq/>s counterexample</h><h> part 1</h></idx>
 
-    <introduction>
-      <p>
-        In this problem and in <xref
-        ref="PROBLEMCauchyCounterPartII"></xref> <m>f(x)</m> is the function defined in <xref ref="eq_CauchyCounterEx" >equation</xref>. 
-      </p>
-      <p>
-
-        To simplify the notation we make the following definitions:
-        <m>y=x^{-1}</m> and <m>f^{(n)}(x) =p_n(y)e^{-y^2}</m>.
-
-      </p>
-    </introduction>
-
-    <task>
-      <statement>
+      <introduction>
         <p>
-          Find <m>p_{n+1}(y)</m> in terms of
-          <m>p_{n}(y)</m>. 
+          In this problem and in <xref
+          ref="PROBLEMCauchyCounterPartII"></xref> <m>f(x)</m> is the function defined in <xref ref="eq_CauchyCounterEx" >equation</xref>. 
         </p>
-      </statement>
-      <hint>
         <p>
-          You are differentiating with respect to <m>x</m>, not <m>y</m>.
+
+          To simplify the notation we make the following definitions:
+          <m>y=x^{-1}</m> and <m>f^{(n)}(x) =p_n(y)e^{-y^2}</m>.
+
         </p>
-      </hint>
-    </task>
-    <task>
-      <statement>
-        <p>
-          Use induction on <m>n</m> to show that <m>p_n(y)</m> is a polynomial for all <m>n\in\NN</m>.
-        </p>
-      </statement>
-    </task>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            Find <m>p_{n+1}(y)</m> in terms of
+            <m>p_{n}(y)</m>. 
+          </p>
+        </statement>
+        <hint>
+          <p>
+            You are differentiating with respect to <m>x</m>, not <m>y</m>.
+          </p>
+        </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Use induction on <m>n</m> to show that <m>p_n(y)</m> is a polynomial for all <m>n\in\NN</m>.
+          </p>
+        </statement>
+      </task>
     </problem>
 
     <p>
@@ -581,40 +584,42 @@
       We can close the deal with the following problem.
     </p>
 
-    <problem xml:id="PROBLEMCauchyCounterPartII"><title>Cauchy<rsq/>s Counterexample, Part 2</title>
-    
-    <idx><h>Cauchy, Augustin</h><h>Cauchy<rsq/>s counterexample</h><h>part 2</h></idx>
+    <problem xml:id="PROBLEMCauchyCounterPartII">
+      <title>Cauchy<rsq/>s Counterexample, Part 2</title>
 
-    <task>
-      <statement>
-        <p>
-          Let <m>m</m> be a nonnegative integer.
-          Show that <m>\limit{y}{\pm\infty}{\frac{y^m}{e^{y^2}}}=0</m>. 
-        </p>
-      </statement>
-      <hint>
-        <p>
-          Induction and a dash of L<rsq/>Hôpital<rsq/>s  rule should do the trick.
-        </p>
-      </hint>
-    </task>
-    <task>
-      <statement>
-        <p>
-          Prove that
-          <m>\limit{y}{\pm\infty}{\frac{q(y)}{e^{y^2}}}=0</m> for any
-          polynomial <m>q</m>.
-        </p>
-      </statement>
-    </task>
-    <task>
-      <statement>
-        <p>
-          Let <m>f(x)</m> be as in <xref ref="eq_CauchyCounterEx">equation</xref>
-          and show that for every nonnegative integer <m>n</m>, <m>f^{(n)}(0)=0</m>.
-        </p>
-      </statement>
-    </task>
+      <idx><h>Problems</h><h>Cauchy<rsq/>s counterexample</h><h> part 2</h></idx>
+      <idx><h>Cauchy, Augustin</h><h>Cauchy<rsq/>s counterexample</h><h>part 2</h></idx>
+
+      <task>
+        <statement>
+          <p>
+            Let <m>m</m> be a nonnegative integer.
+            Show that <m>\limit{y}{\pm\infty}{\frac{y^m}{e^{y^2}}}=0</m>. 
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Induction and a dash of L<rsq/>Hôpital<rsq/>s  rule should do the trick.
+          </p>
+        </hint>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Prove that
+            <m>\limit{y}{\pm\infty}{\frac{q(y)}{e^{y^2}}}=0</m> for any
+            polynomial <m>q</m>.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Let <m>f(x)</m> be as in <xref ref="eq_CauchyCounterEx">equation</xref>
+            and show that for every nonnegative integer <m>n</m>, <m>f^{(n)}(0)=0</m>.
+          </p>
+        </statement>
+      </task>
     </problem>
 
     <p>
@@ -669,6 +674,7 @@
     </p>
 
     <problem>
+      <idx><h>Problems</h><h>Binomial series</h></idx>
 
       <idx><h>Taylor<rsq/>s Formula</h><h>use to obtain the general binomial series</h></idx>
 
@@ -781,6 +787,7 @@
     </p>
 
     <problem>
+      <idx><h>Problems</h><h>Taylor<rsq/>s Theorem</h></idx>
 
       <idx><h>Taylor<rsq/>s Theorem</h></idx>
 
@@ -890,6 +897,7 @@
     </p>
 
     <problem>
+      <idx><h>Problems</h><h>Taylor<rsq/>s series used to approximate <m>\ln 2</m></h></idx>
       <statement>
         <p>
           <idx><h>series</h><h>Taylor<rsq/>s series</h><h>used to approximate <m>\ln 2</m></h></idx>
@@ -1232,6 +1240,7 @@
     </p>
 
     <problem xml:id="DRILLprob_RearrangeDivToInf">
+      <idx><h>Problems</h><h>rearrangements of the Alternating Harmonic Series</h></idx>
       
       <idx><h>series</h><h>Alternating Harmonic Series</h><h>rearrangements of</h></idx>
 

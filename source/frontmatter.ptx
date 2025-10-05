@@ -97,39 +97,39 @@
     </title>
 
     <p>
-      This is the second edition of of our open<ndash/>source book
+      You are viewing the second edition of our open<ndash/>source book
       <pubtitle>
         How We Got from There to Here: A Story
         of Real Analysis.
       </pubtitle>
-      As much as we liked our original title we discovered much to our
-      dismay that it led many people to believe that it was a history
-      of mathematics book rather than a textbook for use in a typical
-      undergraduate introductory analysis class.  We were so caught up
-      in using history to tell the story behind the nonintuitive,
-      rigorous definitions and theorems found in such a course that we
-      mistakenly assumed that others would understand our intent before
-      actually opening the book. So we<rsq/>ve changed the title.  We kept  the original title
-      <pubtitle>
-        How We Got from There to Here
-        </pubtitle>,
-        but we have demoted it to subtitle status.
+      As much as we liked our original title we discovered, much to
+      our dismay, that it led many people to believe that it was a
+      history of mathematics book rather than a textbook.  We were so
+      caught up in using history to tell the story behind the
+      nonintuitive, rigorous definitions and theorems found in a
+      typical undergraduate introductory analysis class that we
+      mistakenly assumed that others would understand our intent
+      before actually opening the book. We were wrong so we have
+      changed the title. We have demoted the phrase <pubtitle> How We
+      Got from There to Here </pubtitle>, to subtitle status and
+      modified the main title slightly. We hope this does not cause
+      too much confusion.
     </p>
     <p>
-      After rereading what we wrote, we realized that there were parts
-      of the story that we did not include in the original book but
-      should have been there.  We included a proof of the Fundamental
-      Theorem of Calculus in Section 10.3 as we did use it earlier to
-      derive the integral form of the remainder for Taylor series.  We
-      assumed that students were familiar with this from calculus
-      class and thought that this fit with the idea of following the
-      historical development, since the FT of C was understood and
-      utilized long before Cauchy and Riemann were born.  Of course,
-      to present a rigorous proof of the FT of C requires a precise
-      definition of the definite integral which occurs in Section
-      10.4.  If this seems backwards, this is how mathematics is
-      created.  Foundational issues are typically the last piece of
-      the puzzle.
+      After rereading the first edition, we realized that there were
+      parts of the story that we did not include in the original book
+      but should have been there.  We included a proof of the
+      Fundamental Theorem of Calculus in Section 10.3 as we did use it
+      earlier to derive the integral form of the remainder for Taylor
+      series.  We assumed that students were familiar with this from
+      calculus class and thought that this fit with the idea of
+      following the historical development, since the FT of C was
+      understood and utilized long before Cauchy and Riemann were
+      born.  Of course, to present a rigorous proof of the FT of C
+      requires a precise definition of the definite integral which
+      occurs in Section 10.4.  If this seems backwards, this is how
+      mathematics is created.  Foundational issues are typically the
+      last piece of the puzzle.
     </p>
     <p>
       In Chapter 12, we decided to expand more on Cantor’s influence

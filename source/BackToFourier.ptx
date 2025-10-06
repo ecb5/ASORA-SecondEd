@@ -1559,126 +1559,392 @@
   </problem>
 </section>
 
+
+<section xml:id="SUBSECTIONStieltjesInt">
+  <title>The Steiltjes Integral</title>
+
+
+  <p>
+    Of particular note is the work of <url
+    href="https://mathshistory.st-andrews.ac.uk/Biographies/Stieltjes/"
+    >Thomas Jan Stieltjes</url> (1856-1894). While working on the
+    problem of determining the mass distribution of an object given
+    that the moments of all orders of a body are given (called the
+    moment problem) he defined a slight generalization of the Riemann
+    integral which was published in his work <foreign>Recherches sur
+    les fractions continues</foreign> (Research on Continued
+    Fractions) in <m>1894</m>.
+    <!-- If you are acquainted -->
+    <!-- with probability theory, the first moment of a probability density -->
+    <!-- function is the expected value, the second moment (about the mean) -->
+    <!-- is the variance, etc.  The problem is to reconstruct the -->
+    <!-- probability density function from these moments.   -->
+  </p>
+  <figure  xml:id="FIGUREStieltjes">
+    <caption>Thomas Jan Stieltjes</caption>
+    <image source="images/Stieltjes.jpg" width="35%">
+      <shortdescription>Portrait of Thomas Stieltjes</shortdescription>
+    </image>
+  </figure>
+  <p>
+    You are already acquainted with the underlying idea of a
+    Stieltjes integral. You just don<rsq/>t know it by this name.
+    Consider for example,
+    <men xml:id="EQUATIONStieltjesExampIntX">
+      \int^2_{x=0}{\sin\left(x^2\right)2x\dx{x}}
+      </men>.
+
+      We recognize that the computed value of <xref
+      ref="EQUATIONStieltjesExampIntX" >formula</xref> will be the
+      same as the computed value of integral
+
+      <men  xml:id="EQUATIONStieltjesExampIntY">
+        \int^2_{x=0}{\sin(u)} \dx(u)
+      </men>
+      if <m>u=x^2</m>          .
+
+      In both <xref ref="EQUATIONStieltjesExampIntX">formula</xref> and <xref ref="EQUATIONStieltjesExampIntY" >formula</xref>
+      <!-- <me>\int^2_{x=0}{\sin\left(x^2\right)2x\dx{x}}</me>. -->
+      <!-- <me>\int^1_{u=0}{{\sin -->
+      <!-- \left(u\right)}\ du}</me> -->
+      we can think of the differential <m>\dx{x}</m> as representing
+      the <q>width</q> (or <q>measure</q>) of the infinitely thin
+      rectangles whose areas are to be summed. But it is clear
+      that <m>\dx{x}\neq \dx{u}</m>. There must be some
+      relationship between the two differentials that adjusts for
+      the change in variables.
+  </p>
+  <p>
+    Since <m>u=x^2</m> clearly <m>\dx{u} = 2x\dx{x}</m>. It is this
+    relation between the differentials that keeps the integrals equal.
+  </p>
+
+  <!--     <p> -->
+  <!--       In the Riemann integral -->
+  <!--       <me> -->
+  <!--         \int^2_{x=0}{\sin(x^2)} \dx(x^2) -->
+  <!--       </me> -->
+  <!--       we see that the width of the areas <m>\dx(x^2)</m> changes -->
+  <!--       depending on the value of <m>x</m>.  Those closer to one carry -->
+  <!--       more weight, or are denser, than those closer to zero: -->
+
+  <!--       <md> -->
+  <!--         <mrow> -->
+  <!--           \mineval{2x\dx{x}}{x=0}\amp{}=0\dx{x} -->
+  <!--           <!-\- \left.2x\dx{x}\right|_{x=0}\amp{}=0\dx{x} -\-> -->
+  <!--         </mrow> -->
+  <!--         <mrow> -->
+  <!--           \mineval{2x\dx{x}}{x=1}\amp{}=2 \dx{x}. -->
+  <!--         </mrow> -->
+  <!--         <mrow> -->
+  <!--           \mineval{2x\dx{x}}{x=2}\amp{}=4 \dx{x}. -->
+  <!--         </mrow> -->
+  <!--       </md> -->
+  <!--       To simplify our notation we set <m>u=x^2</m> so that <m>\dx{u}=2x\dx{x}</m> and the integral becomes  -->
+  <!-- <me> -->
+  <!--   \int_{x=0}^1\sin \left(x^2\right)2x\dx{x}=\int_{u=0}^4\sin u\dx{u} -->
+  <!--   </me>.  -->
+  <!--   Of course you recognize this as the integration technique called <term>integration by substitution</term> in most Calculus textbooks. -->
+  <!--     </p> -->
+  <!--     <p> -->
+  <!--       The genius of Stieltjes was that he recognized that there is -->
+  <!--       more going on here than just finding a clever way to compute a -->
+  <!--       difficult integral. But to see it we<rsq/>ll need to -->
+  <!--       re<ndash/>interpret our notation a bit. In particular we need to -->
+  <!--       re<ndash/>think the role of the differentials <m>\dx{x}</m> and -->
+  <!--       <m>\dx{u}</m>. -->
+
+  <!--     </p> -->
+  <p>
+    This relation is visualized geometrically in <xref
+    ref="FIGUREStieltjesDX" ></xref> and <xref ref="FIGUREStieltjesDY"
+    ></xref> where  the interval <m>[0,2]</m> is partitioned into
+    subintervals of length <m>\dx{x}</m> and of length <m>\dx{u}</m>,
+    respectively.
+  </p>
+
+
+  <sbsgroup widths="50% 50%" margins="auto" valign="top">
+
+    <sidebyside>
+
+      <figure  xml:id="FIGUREStieltjesDX">
+        <caption>
+          Interpreting <m>\dx{x}</m> geometrically.
+        </caption>
+
+        <image  source="images/StieltjesDX.png" >
+          <shortdescription>The interval from 0 to 2, partitioned uniformly into subintervals of length dx.</shortdescription>
+        </image>
+      </figure>
+
+      <figure  xml:id="FIGUREStieltjesDY">
+        <caption>
+          Re<ndash/>interpreting <m>\dx{u}</m>. These intervals are
+          all the same length, <m>\dx{u}</m>, despite appearances.
+        </caption>
+
+
+        <image source="images/StieltjesDY.png">
+          <shortdescription>The interval from 0 to 2, partitioned  into subintervals of length du, where du is longer closer to 2.</shortdescription>
+        </image>
+
+      </figure>
+    </sidebyside>
+
+  </sbsgroup>
+
+  <p> Strictly speaking, the intervals in <xref
+  ref="FIGUREStieltjesDY" ></xref> are all the same length (since
+  they are all of length <m>\dx{u}</m>) just as in <xref
+  ref="FIGUREStieltjesDX" ></xref>. We<rsq/>ve drawn them with
+  increasing lengths to emphasize that we are measuring the
+  distance of a point from the origin in two distinct ways.  </p>
+  <p> This is a bizarre idea so we will proceed slowly.  </p> <p>
+  Notice that the (absolute value of the) coordinate of a point on
+  the line gives the distance from the origin to the point.
+  The
+  usual way to measure the length between arbitrary points on the
+  real line is to take the absolute value of the difference of
+  their coordinates. Thus between <m>x</m> and <m>x+\dx{x}</m> the
+  length is <m>\abs{\dx{x}}</m>.  Similarly the length between
+  <m>u</m> and <m>u+\dx{u}</m> is <m>\abs{\dx{u}}</m>. As long as
+  we work with the <m>u-</m>coordinate system this is fine but if
+  we want to move between the <m>u-</m>coordinates and the
+  <m>x-</m>coordinates we must use the relation
+
+  <me>
+    \dx{u}=2x\dx{x}
+  </me>
+
+  to adjust appropriately between <m>\dx{x}</m> and
+  <m>\dx{u}</m>. That is what <xref ref="FIGUREStieltjesDY"
+  ></xref> depicts. We<rsq/>ve drawn the intervals in the
+  <m>x-</m>coordinates, but we<rsq/>ve labeled them with
+  <m>u-</m>coordinates. That<rsq/>s why they don<rsq/>t appear to
+  be the same length.
+
+
+</p>
+
+
+
+
+<aside>
+  <title>
+    Is This Rigorous?
+  </title>
+  <p>
+    No, obviously it is not and we won<rsq/>t pretend that it
+    is. In particular we haven<rsq/>t even stated a definition
+    for the differentials <m>\dx{x}</m> or <m>\dx{y}</m>.
+  </p>
+  <p>
+    As we observed in <xref ref="NumbersRealRational" ></xref>
+    Abraham Robinson built a rigorous theory of differentials in
+    his book <pubtitle> Non<ndash/>Standard Analysis</pubtitle>
+    <xref ref="robinson74__non_stand_analy" />. But we have
+    relied on the older limit theory so nothing we do with
+    differentials can be considered rigorous. You should think
+    of the use of differentials as an aid to intuition, as a
+    useful <q>way of thinking</q>. But to be considered
+    thoroughly rigorous any insight gained from the use of
+    differentials must be justified either using the theory of
+    limits or Robinson<rsq/>s Non<ndash/>Standard Analysis.
+  </p>
+</aside>
+
+<p>
+  Just as we replaced the word <q>size</q> with
+  <q>cardinality</q> when working with infinite sets we
+  replace the word <q>length</q> with <q>measure</q> in this
+  context. The word <q>length</q> has too many associations
+  that can trip us up if we<rsq/>re not careful. So the
+  measures of subintervals in our partition are being
+  generated in different ways. When we work in the
+  <m>u-</m>coordinate system the length of the interval
+  <m>\dx{u} </m> at <m>u=x^2</m> is given by
+  <m>\dx{u}=2x\dx{x}</m>. The function <m>u(x)=x^2</m> is our  <term>measure</term> function.
+</p>
+<definition xml:id="DEFINITIONStieljesIntegral">
+  <title>
+    The Stieltjes Integral
+  </title>
+
+  <statement>
+
+    <p>
+      Suppose <m>\alpha(x)</m> is a monotonically increasing
+      function on an interval <m>[a,b]</m> then
+      <me>
+        \int_a^bf(\alpha )\dx{\alpha} =\int_a^bf(\alpha (x))\alpha^\prime(x)\dx{x}
+      </me>
+      is called the  <term>Stieltjes Integral</term>.
+
+    </p>
+
+  </statement>
+</definition>
+
+<p>
+  Because <xref ref="DEFINITIONStieljesIntegral" ></xref>
+  gives the simplest possible version of the <term>Stieltjes
+  Integral</term> it is easy to get the impression that it
+  is equivalent to <term>integration by substitution</term>
+  and nothing more. But Stieltjes<rsq/> original efforts
+  were a little more general than that. He was working on
+  the moment problem we described at the beginning of this
+  section. His integral allowed him to address that problem
+  more simply than the Riemann integral would allow. The
+  <term>Stieltjes Integral</term> is also useful in
+  probability and physics, in places where <m>f</m> has jump
+  discontinuities, and is generalizable to a functional
+  analysis setting where the <q>points</q> are actually
+  functions. But all of this is well beyond the scope of
+  this text.
+</p>
+<p>
+  We focused on the notion of the <term>measure</term> of a
+  set as distinct from the length of an interval because the
+  <term>measure</term> of a set is the foundational idea
+  that we will need to introduce our next topic, the
+  <term>Lebesgue Integral</term>.
+</p>
+
+<!-- <p> -->
+
+<!--   It also sets the stage for what we will focus on, which is to -->
+<!--   find a way to integrate a function such as the <xref ref="PROBLEMDirichletCountrExamp" text="custom">Dirichlet -->
+<!--   Function</xref>.  The trick is to not focus on the function but on -->
+<!--   the interval on which it is integrated and how to measure the -->
+<!--   subsets in a partition.  This generalization comes from  -->
+<!--   <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/" > -->
+<!--     Henri -->
+<!--     Lebesgue</url> (1875-1941) in <m>1901</m>. -->
+<!-- </p> -->
+</section>
+
+
 <section xml:id="SECTIONLebesgMeas">
   <title>Henri Lebesgue: Measure and Integration</title>
 
   <paragraphs>
-  <title>
-  Measure, Outer Measure, and  Lesbesgue Measure
-  </title>
-  <p>
-  In our side comment, <xref ref="SizeVsCardinality"
-    text="title"></xref> we noted that the mental image evoked by the
-    word <q>size</q> isn<rsq/>t really appropriate when discussing
-    infinite sets because two sets can have the same cardinality even
-    though the first completely contains the second, with some left
-    over. For example <m>\ZZ </m> contains all of <m>\NN{}</m>, and
-    all of the negative integers as well.
-  </p>
-  <p>
-    We have a similar problem with the concept of length. Two intervals
-    can have the same length even as one completely contains the other,
-    with some left over. For example, <m>[0,1]</m> contains all of the
-    points in <m>(0,1)</m> in addition to <m>0</m> and
-    <m>1</m>. Moreover <q>length</q> is only applicable to intervals
-    which are a very specific kind of set.  We will need to be able to
-    compute the <q>length</q> of more general sets. To avoid
-    confusion we need to use a word other than <q>length</q>.
-  </p>
-
-  <p>
-    Historically,  the word that has been chosen  is <term>measure</term>. If <m>S</m> is a set of real numbers then <m> \mu
-    (S)</m> denotes the <term>measure</term> of <m>S</m>. 
-  </p>
-
-  <definition xml:id="DEFINITIONMeasureFunction">
     <title>
-      The Definition of a Measure
+      Measure, Outer Measure, and  Lesbesgue Measure
     </title>
+    <p>
+      In our side comment, <xref ref="SizeVsCardinality"
+      text="title"></xref> we noted that the mental image evoked by the
+      word <q>size</q> isn<rsq/>t really appropriate when discussing
+      infinite sets because two sets can have the same cardinality even
+      though the first completely contains the second, with some left
+      over. For example <m>\ZZ </m> contains all of <m>\NN{}</m>, and
+      all of the negative integers as well.
+    </p>
+    <p>
+      We have a similar problem with the concept of length. Two intervals
+      can have the same length even as one completely contains the other,
+      with some left over. For example, <m>[0,1]</m> contains all of the
+      points in <m>(0,1)</m> in addition to <m>0</m> and
+      <m>1</m>. Moreover <q>length</q> is only applicable to intervals
+      which are a very specific kind of set.  We will need to be able to
+      compute the <q>length</q> of more general sets. To avoid
+      confusion we need to use a word other than <q>length</q>.
+    </p>
 
-    <statement>
-      <p>
-        <m>\mu </m> is a <term>measure</term> on the real numbers if the following statements are true.
-        <ol marker="(1)">
-          <li> 
-            <p>
-              If <m>S</m> is an interval of length <m>l</m> then 
-              <me>
-                \mu (S)=l
-                </me>.
-                (We include intervals with the same left and right
-                endpoint: <m>\mu ([a,a])=0</m>).
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>\left( S_i\right)_{i=1}^\infty  </m> is a sequence of  sets in <m>\RR </m> then 
-              <me>
-                \mu\left( \bigcup_{i=1}^\infty S_i\right)\leq \sum_{i=1}^\infty
-                \mu\left(S_i\right)
-              </me>
-              with equality when <m>\left( S_i\right)_{i=1}^\infty  </m> are disjoint.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\mu{}</m> is translation invariant. More precisely, if
-              <m>S </m> is a subset of <m>\RR </m>, <m>x</m> is any real number, and <m>S_x=\left\{s+x\left| s\in S
-              \right.\right\}  </m> then
-              <me>
-                \mu (S)=\mu(S_x). 
-              </me>
-              (<m>\mu{}</m> is said to be <term>shift invariant</term>,
-              meaning that if you shift every element of <m>S</m> by
-              some amount <m>x</m> the measure of the set is unchanged.)
+    <p>
+      Historically,  the word that has been chosen  is <term>measure</term>. If <m>S</m> is a set of real numbers then <m> \mu
+      (S)</m> denotes the <term>measure</term> of <m>S</m>. 
+    </p>
 
-            </p>
+    <definition xml:id="DEFINITIONMeasureFunction">
+      <title>
+        The Definition of a Measure
+      </title>
 
-          </li>
-        </ol>    
-      </p>
+      <statement>
+        <p>
+          <m>\mu </m> is a <term>measure</term> on the real numbers if the following statements are true.
+          <ol marker="(1)">
+            <li> 
+              <p>
+                If <m>S</m> is an interval of length <m>l</m> then 
+                <me>
+                  \mu (S)=l
+                  </me>.
+                  (We include intervals with the same left and right
+                  endpoint: <m>\mu ([a,a])=0</m>).
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>\left( S_i\right)_{i=1}^\infty  </m> is a sequence of  sets in <m>\RR </m> then 
+                <me>
+                  \mu\left( \bigcup_{i=1}^\infty S_i\right)\leq \sum_{i=1}^\infty
+                  \mu\left(S_i\right)
+                </me>
+                with equality when <m>\left( S_i\right)_{i=1}^\infty  </m> are disjoint.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\mu{}</m> is translation invariant. More precisely, if
+                <m>S </m> is a subset of <m>\RR </m>, <m>x</m> is any real number, and <m>S_x=\left\{s+x\left| s\in S
+                \right.\right\}  </m> then
+                <me>
+                  \mu (S)=\mu(S_x). 
+                </me>
+                (<m>\mu{}</m> is said to be <term>shift invariant</term>,
+                meaning that if you shift every element of <m>S</m> by
+                some amount <m>x</m> the measure of the set is unchanged.)
 
-    </statement>
-  </definition>
-  <p>
-    The purpose of
-    the first and third statements should be clear.  Since we are
-    looking to generalize the concept of length the
-    <term>measure</term> of an interval should be its length. For
-    example,
-    <me>
-      \mu
-      \left( (a,b)\right) = \mu \left( [a,b]\right) =  \mu \left(
-      [a,b)\right) =\mu \left( (a,b]\right) =b-a
-      </me>, 
-      and if <m>\gamma{}\in\RR{}</m>
+              </p>
+
+            </li>
+          </ol>    
+        </p>
+
+      </statement>
+    </definition>
+    <p>
+      The purpose of
+      the first and third statements should be clear.  Since we are
+      looking to generalize the concept of length the
+      <term>measure</term> of an interval should be its length. For
+      example,
       <me>
         \mu
-        \left( (a,b)\right) = \mu \left( a+\gamma{},b+\gamma{}])\right) = b-a
+        \left( (a,b)\right) = \mu \left( [a,b]\right) =  \mu \left(
+        [a,b)\right) =\mu \left( (a,b]\right) =b-a
         </me>, 
-  </p>
-  <p>
-    The second statement is the <xref ref="TriangleIneq"
-    text="custom">Triangle Inequalty</xref> dressed up in the language
-    of sets and measures.
-  </p>
-  <p>
-    The conditions given in <xref ref="DEFINITIONMeasureFunction"
-    ></xref> are modeled on properties of lengths (of intervals) but
-    if that<rsq/>s all we are interested in there is no need to make
-    this definition. These properties are easily proven if
-    <m>\mu{}</m> is length and the only sets we measure are
-    intervals. This definition is here because we want measure other
-    kinds of sets in <m>\RR{}</m>. For example using this definition
-    we can compute <m>\mu (\ZZ )</m>,  <m>\mu (\NN{}) </m> and
-    <m>\mu (\QQ) </m>. What would you guess each of these will be?
-  </p>
-  <p>
-    Notice that <xref ref="DEFINITIONMeasureFunction" ></xref> does not
-    require that <m>\mu{}</m> be unique. In fact many measure functions
-    have been, and can be defined on <m>\RR{}</m>, but for our purposes
-    we only need to touch lightly on one of them, the <term>Lebesgue
-    measure</term>, first introduced by <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/" >
+        and if <m>\gamma{}\in\RR{}</m>
+        <me>
+          \mu
+          \left( (a,b)\right) = \mu \left( a+\gamma{},b+\gamma{}])\right) = b-a
+          </me>, 
+    </p>
+    <p>
+      The second statement is the <xref ref="TriangleIneq"
+      text="custom">Triangle Inequalty</xref> dressed up in the language
+      of sets and measures.
+    </p>
+    <p>
+      The conditions given in <xref ref="DEFINITIONMeasureFunction"
+      ></xref> are modeled on properties of lengths (of intervals) but
+      if that<rsq/>s all we are interested in there is no need to make
+      this definition. These properties are easily proven if
+      <m>\mu{}</m> is length and the only sets we measure are
+      intervals. This definition is here because we want measure other
+      kinds of sets in <m>\RR{}</m>. For example using this definition
+      we can compute <m>\mu (\ZZ )</m>,  <m>\mu (\NN{}) </m> and
+      <m>\mu (\QQ) </m>. What would you guess each of these will be?
+    </p>
+    <p>
+      Notice that <xref ref="DEFINITIONMeasureFunction" ></xref> does not
+      require that <m>\mu{}</m> be unique. In fact many measure functions
+      have been, and can be defined on <m>\RR{}</m>, but for our purposes
+      we only need to touch lightly on one of them, the <term>Lebesgue
+      measure</term>, first introduced by <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/" >
       Henri
       Lebesgue</url> (1875-1941) in his doctoral dissertation 
       <pubtitle>
@@ -1687,1005 +1953,740 @@
         actually define the so<ndash/>calle <term>outer measure</term> from
         which Lebegue<rsq/>s measure follows. That will be enough for our
         purposes.
-  </p>
-
-
-
-  <figure  xml:id="FIGURELebesgue">
-    <caption>Henri Lebesgue</caption>
-    
-    <idx><h>Portraits</h><h>Lebesgue</h></idx>
-    <idx><h>Lebesgue, Henri</h><h>portrait of</h></idx>
-
-    <image source="images/Lebesgue.png" width="35%">
-      <shortdescription>Portrait of Henri Lebesgue</shortdescription>
-    </image>
-  </figure>
-
-
-
-
-  <!-- <subsection xml:id="SUBSECTIONStieltjesInt"> -->
-  <!--   <title>The Steiltjes Integral</title> -->
-
-
-  <!--   <p> -->
-  <!--     Of particular note is the work of <url -->
-  <!--     href="https://mathshistory.st-andrews.ac.uk/Biographies/Stieltjes/" -->
-  <!--     >Thomas Jan Stieltjes</url> (1856-1894). While working on the -->
-  <!--     problem of determining the mass distribution of an object given -->
-  <!--     that the moments of all orders of a body are given (called the -->
-  <!--     moment problem) he defined a slight generalization of the Riemann -->
-  <!--     integral which was published in his work <foreign>Recherches sur -->
-  <!--     les fractions continues</foreign> (Research on Continued -->
-  <!--     Fractions) in <m>1894</m>. -->
-  <!--     <!-\- If you are acquainted -\-> -->
-  <!--     <!-\- with probability theory, the first moment of a probability density -\-> -->
-  <!--     <!-\- function is the expected value, the second moment (about the mean) -\-> -->
-  <!--     <!-\- is the variance, etc.  The problem is to reconstruct the -\-> -->
-  <!--     <!-\- probability density function from these moments.   -\-> -->
-  <!--   </p> -->
-  <!--   <figure  xml:id="FIGUREStieltjes"> -->
-  <!--     <caption>Thomas Jan Stieltjes</caption> -->
-  <!--     <image source="images/Stieltjes.jpg" width="35%"> -->
-  <!--       <shortdescription>Portrait of Thomas Stieltjes</shortdescription> -->
-  <!--     </image> -->
-  <!--     </figure> -->
-  <!--     <p> -->
-  <!--       You are already acquainted with the underlying idea of a -->
-  <!--       Stieltjes integral. You just don<rsq/>t know it by this name. -->
-  <!--       Consider for example, -->
-  <!--       <men xml:id="EQUATIONStieltjesExampIntX"> -->
-  <!--         \int^2_{x=0}{\sin\left(x^2\right)2x\dx{x}} -->
-  <!--         </men>. -->
-
-  <!--         We recognize that the computed value of <xref -->
-  <!--         ref="EQUATIONStieltjesExampIntX" >formula</xref> will be the -->
-  <!--         same as the computed value of integral -->
-
-  <!--         <men  xml:id="EQUATIONStieltjesExampIntY"> -->
-  <!--           \int^2_{x=0}{\sin(u)} \dx(u) -->
-  <!--           </men> -->
-  <!--           if <m>u=x^2</m>          . -->
-
-  <!--           In both <xref ref="EQUATIONStieltjesExampIntX">formula</xref> and <xref ref="EQUATIONStieltjesExampIntY" >formula</xref>  -->
-  <!--           <!-\- <me>\int^2_{x=0}{\sin\left(x^2\right)2x\dx{x}}</me>. -\-> -->
-  <!--           <!-\- <me>\int^1_{u=0}{{\sin -\-> -->
-  <!--           <!-\- \left(u\right)}\ du}</me> -\->  -->
-  <!--           we can think of the differential <m>\dx{x}</m> as representing -->
-  <!--           the <q>width</q> (or <q>measure</q>) of the infinitely thin -->
-  <!--           rectangles whose areas are to be summed. But it is clear -->
-  <!--           that <m>\dx{x}\neq \dx{u}</m>. There must be some -->
-  <!--           relationship between the two differentials that adjusts for -->
-  <!--           the change in variables. -->
-  <!--     </p> -->
-  <!-- <p> -->
-  <!--   Since <m>u=x^2</m> clearly <m>\dx{u} = 2x\dx{x}</m>. It is this -->
-  <!--   relation between the differentials that keeps the integrals equal. -->
-  <!-- </p> -->
-
-  <!-- <!-\-     <p> -\-> -->
-  <!-- <!-\-       In the Riemann integral -\-> -->
-  <!-- <!-\-       <me> -\-> -->
-  <!-- <!-\-         \int^2_{x=0}{\sin(x^2)} \dx(x^2) -\-> -->
-  <!-- <!-\-       </me> -\-> -->
-  <!-- <!-\-       we see that the width of the areas <m>\dx(x^2)</m> changes -\-> -->
-  <!-- <!-\-       depending on the value of <m>x</m>.  Those closer to one carry -\-> -->
-  <!-- <!-\-       more weight, or are denser, than those closer to zero: -\-> -->
-
-  <!-- <!-\-       <md> -\-> -->
-  <!-- <!-\-         <mrow> -\-> -->
-  <!-- <!-\-           \mineval{2x\dx{x}}{x=0}\amp{}=0\dx{x} -\-> -->
-  <!-- <!-\-           <!-\\- \left.2x\dx{x}\right|_{x=0}\amp{}=0\dx{x} -\\-> -\-> -->
-  <!-- <!-\-         </mrow> -\-> -->
-  <!-- <!-\-         <mrow> -\-> -->
-  <!-- <!-\-           \mineval{2x\dx{x}}{x=1}\amp{}=2 \dx{x}. -\-> -->
-  <!-- <!-\-         </mrow> -\-> -->
-  <!-- <!-\-         <mrow> -\-> -->
-  <!-- <!-\-           \mineval{2x\dx{x}}{x=2}\amp{}=4 \dx{x}. -\-> -->
-  <!-- <!-\-         </mrow> -\-> -->
-  <!-- <!-\-       </md> -\-> -->
-  <!-- <!-\-       To simplify our notation we set <m>u=x^2</m> so that <m>\dx{u}=2x\dx{x}</m> and the integral becomes  -\-> -->
-  <!-- <!-\- <me> -\-> -->
-  <!-- <!-\-   \int_{x=0}^1\sin \left(x^2\right)2x\dx{x}=\int_{u=0}^4\sin u\dx{u} -\-> -->
-  <!-- <!-\-   </me>.  -\-> -->
-  <!-- <!-\-   Of course you recognize this as the integration technique called <term>integration by substitution</term> in most Calculus textbooks. -\-> -->
-  <!-- <!-\-     </p> -\-> -->
-  <!-- <!-\-     <p> -\-> -->
-  <!-- <!-\-       The genius of Stieltjes was that he recognized that there is -\-> -->
-  <!-- <!-\-       more going on here than just finding a clever way to compute a -\-> -->
-  <!-- <!-\-       difficult integral. But to see it we<rsq/>ll need to -\-> -->
-  <!-- <!-\-       re<ndash/>interpret our notation a bit. In particular we need to -\-> -->
-  <!-- <!-\-       re<ndash/>think the role of the differentials <m>\dx{x}</m> and -\-> -->
-  <!-- <!-\-       <m>\dx{u}</m>. -\-> -->
-
-  <!-- <!-\-     </p> -\-> -->
-  <!-- <p> -->
-  <!--   This relation is visualized geometrically in <xref -->
-  <!--   ref="FIGUREStieltjesDX" ></xref> and <xref ref="FIGUREStieltjesDY" -->
-  <!--   ></xref> where  the interval <m>[0,2]</m> is partitioned into -->
-  <!--   subintervals of length <m>\dx{x}</m> and of length <m>\dx{u}</m>, -->
-  <!--   respectively. -->
-  <!-- </p> -->
-
-
-  <!--     <sbsgroup widths="50% 50%" margins="auto" valign="top"> -->
-
-  <!--       <sidebyside> -->
-
-  <!--         <figure  xml:id="FIGUREStieltjesDX"> -->
-  <!--           <caption> -->
-  <!--             Interpreting <m>\dx{x}</m> geometrically. -->
-  <!--           </caption> -->
-
-  <!--           <image  source="images/StieltjesDX.png" > -->
-  <!--             <shortdescription>The interval from 0 to 2, partitioned uniformly into subintervals of length dx.</shortdescription> -->
-  <!--           </image> -->
-  <!--         </figure> -->
-
-  <!--         <figure  xml:id="FIGUREStieltjesDY"> -->
-  <!--           <caption>  -->
-  <!--             Re<ndash/>interpreting <m>\dx{u}</m>. These intervals are -->
-  <!--             all the same length, <m>\dx{u}</m>, despite appearances. -->
-  <!--           </caption> -->
-
-
-  <!--           <image source="images/StieltjesDY.png"> -->
-  <!--             <shortdescription>The interval from 0 to 2, partitioned  into subintervals of length du, where du is longer closer to 2.</shortdescription> -->
-  <!--           </image> -->
-
-  <!--         </figure> -->
-  <!--       </sidebyside> -->
-
-  <!--       </sbsgroup> -->
-
-  <!--       <p> Strictly speaking, the intervals in <xref -->
-  <!--       ref="FIGUREStieltjesDY" ></xref> are all the same length (since -->
-  <!--       they are all of length <m>\dx{u}</m>) just as in <xref -->
-  <!--       ref="FIGUREStieltjesDX" ></xref>. We<rsq/>ve drawn them with -->
-  <!--       increasing lengths to emphasize that we are measuring the -->
-  <!--       distance of a point from the origin in two distinct ways.  </p> -->
-  <!--       <p> This is a bizarre idea so we will proceed slowly.  </p> <p> -->
-  <!--       Notice that the (absolute value of the) coordinate of a point on -->
-  <!--       the line gives the distance from the origin to the point. -->
-  <!--        The -->
-  <!--        usual way to measure the length between arbitrary points on the -->
-  <!--        real line is to take the absolute value of the difference of -->
-  <!--       their coordinates. Thus between <m>x</m> and <m>x+\dx{x}</m> the -->
-  <!--       length is <m>\abs{\dx{x}}</m>.  Similarly the length between -->
-  <!--       <m>u</m> and <m>u+\dx{u}</m> is <m>\abs{\dx{u}}</m>. As long as -->
-  <!--       we work with the <m>u-</m>coordinate system this is fine but if -->
-  <!--       we want to move between the <m>u-</m>coordinates and the -->
-  <!--       <m>x-</m>coordinates we must use the relation  -->
-
-  <!--       <me> -->
-  <!--       \dx{u}=2x\dx{x} -->
-  <!--       </me>  -->
-
-  <!--       to adjust appropriately between <m>\dx{x}</m> and -->
-  <!--       <m>\dx{u}</m>. That is what <xref ref="FIGUREStieltjesDY" -->
-  <!--       ></xref> depicts. We<rsq/>ve drawn the intervals in the -->
-  <!--       <m>x-</m>coordinates, but we<rsq/>ve labeled them with -->
-  <!--       <m>u-</m>coordinates. That<rsq/>s why they don<rsq/>t appear to -->
-  <!--       be the same length. -->
-
-
-  <!--       </p> -->
-
-
-
-
-  <!--       <aside> -->
-  <!--         <title> -->
-  <!--           Is This Rigorous?  -->
-  <!--         </title> -->
-  <!--         <p> -->
-  <!--           No, obviously it is not and we won<rsq/>t pretend that it -->
-  <!--           is. In particular we haven<rsq/>t even stated a definition -->
-  <!--           for the differentials <m>\dx{x}</m> or <m>\dx{y}</m>. -->
-  <!--         </p> -->
-  <!--         <p> -->
-  <!--           As we observed in <xref ref="NumbersRealRational" ></xref> -->
-  <!--           Abraham Robinson built a rigorous theory of differentials in -->
-  <!--           his book <pubtitle> Non<ndash/>Standard Analysis</pubtitle> -->
-  <!--           <xref ref="robinson74__non_stand_analy" />. But we have -->
-  <!--           relied on the older limit theory so nothing we do with -->
-  <!--           differentials can be considered rigorous. You should think -->
-  <!--           of the use of differentials as an aid to intuition, as a -->
-  <!--           useful <q>way of thinking</q>. But to be considered -->
-  <!--           thoroughly rigorous any insight gained from the use of -->
-  <!--           differentials must be justified either using the theory of -->
-  <!--           limits or Robinson<rsq/>s Non<ndash/>Standard Analysis. -->
-  <!--         </p> -->
-  <!--         </aside> -->
-
-  <!--         <p> -->
-  <!--           Just as we replaced the word <q>size</q> with -->
-  <!--           <q>cardinality</q> when working with infinite sets we -->
-  <!--           replace the word <q>length</q> with <q>measure</q> in this -->
-  <!--           context. The word <q>length</q> has too many associations -->
-  <!--           that can trip us up if we<rsq/>re not careful. So the -->
-  <!--           measures of subintervals in our partition are being -->
-  <!--           generated in different ways. When we work in the -->
-  <!--           <m>u-</m>coordinate system the length of the interval -->
-  <!--           <m>\dx{u} </m> at <m>u=x^2</m> is given by -->
-  <!--           <m>\dx{u}=2x\dx{x}</m>. The function <m>u(x)=x^2</m> is our  <term>measure</term> function. -->
-  <!--         </p> -->
-  <!--         <definition xml:id="DEFINITIONStieljesIntegral"> -->
-  <!--           <title> -->
-  <!--             The Stieltjes Integral -->
-  <!--           </title> -->
-
-  <!--           <statement> -->
-
-  <!--             <p> -->
-  <!--               Suppose <m>\alpha(x)</m> is a monotonically increasing -->
-  <!--               function on an interval <m>[a,b]</m> then  -->
-  <!--               <me> -->
-  <!--                 \int_a^bf(\alpha )\dx{\alpha} =\int_a^bf(\alpha (x))\alpha^\prime(x)\dx{x} -->
-  <!--               </me>  -->
-  <!--               is called the  <term>Stieltjes Integral</term>. -->
-
-  <!--             </p> -->
-
-  <!-- </statement> -->
-  <!--           </definition> -->
-
-  <!--           <p> -->
-  <!--             Because <xref ref="DEFINITIONStieljesIntegral" ></xref> -->
-  <!--             gives the simplest possible version of the <term>Stieltjes -->
-  <!--             Integral</term> it is easy to get the impression that it -->
-  <!--             is equivalent to <term>integration by substitution</term> -->
-  <!--             and nothing more. But Stieltjes<rsq/> original efforts -->
-  <!--             were a little more general than that. He was working on -->
-  <!--             the moment problem we described at the beginning of this -->
-  <!--             section. His integral allowed him to address that problem -->
-  <!--             more simply than the Riemann integral would allow. The -->
-  <!--             <term>Stieltjes Integral</term> is also useful in -->
-  <!--             probability and physics, in places where <m>f</m> has jump -->
-  <!--             discontinuities, and is generalizable to a functional -->
-  <!--             analysis setting where the <q>points</q> are actually -->
-  <!--             functions. But all of this is well beyond the scope of -->
-  <!--             this text. -->
-  <!--           </p> -->
-  <!--           <p> -->
-  <!--             We focused on the notion of the <term>measure</term> of a -->
-  <!--             set as distinct from the length of an interval because the -->
-  <!--             <term>measure</term> of a set is the foundational idea -->
-  <!--             that we will need to introduce our next topic, the -->
-  <!--             <term>Lebesgue Integral</term>. -->
-  <!--           </p> -->
-
-  <!--           <!-\- <p> -\-> -->
-
-  <!--           <!-\-   It also sets the stage for what we will focus on, which is to -\-> -->
-  <!--           <!-\-   find a way to integrate a function such as the <xref ref="PROBLEMDirichletCountrExamp" text="custom">Dirichlet -\-> -->
-  <!--           <!-\-   Function</xref>.  The trick is to not focus on the function but on -\-> -->
-  <!--           <!-\-   the interval on which it is integrated and how to measure the -\-> -->
-  <!--           <!-\-   subsets in a partition.  This generalization comes from  -\-> -->
-  <!--           <!-\-   <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/" > -\-> -->
-  <!--           <!-\-     Henri -\-> -->
-  <!--           <!-\-     Lebesgue</url> (1875-1941) in <m>1901</m>. -\-> -->
-  <!--           <!-\- </p> -\-> -->
-  <!--     </subsection> -->
-
-  <p>
-    To begin we will need the concept of an <term>open cover</term> a set. 
-  </p>
-  <definition xml:id="DEFINITIONOpenCover">
-    <title>
-      Open Cover
-    </title>
-
-    <statement>
-      <p>
-        Let <m>S</m> be any set in <m>\RR</m>, and let
-        <me>I=\bigcup_{n=1}^\infty{}(a_n,b_n)</me> be the union of a
-        collection of open intervals. Then <m>I</m> is called an
-        <term>open cover</term> of <m>S</m> if and only if
-        <me>
-          x\in S \imp x\in I
-          </me>.
-
-          (Our definition specifies that the collection of open
-          intervals be countably infinite, but a cover is allowed to
-          be a finite collection as well.)
-      </p>
-
-    </statement>
-  </definition>
-<p>
-  Loosely speaking, and <term>open cover</term> of a set <m>S</m> is a
-  collection of open intervals which <q>cover</q> <m>S</m> (hence the
-  name). Obviously every open interval is an open cover of itself. 
-</p>
-
-<problem xml:id="PROBLEMOpenCovers">
-  <idx><h>Problems</h><h>open covers</h></idx>
-
-  <introduction>
-    <p>
-      Construct two distinct open covers of each of the following
-      sets. (There is more than one correct answer.)
-    </p>
-</introduction>
-<task>
-  <statement>
-    <p>
-      The empty set: <m>\emptyset </m>.
-    </p>
-</statement>
-</task>
-
-<task>
-  <statement>
-    <p>
-      <m>(0,1)\cup{} (2,4)</m>
-    </p>
-  </statement>
-</task>
-<task>
-  <statement>
-    <p>
-      <m>[-1,1]</m>
-    </p>
-  </statement>
-</task>
-<task>
-  <statement>
-    <p>
-      <m>\QQ\cap(0,1) </m>
-    </p>
-  </statement>
-</task>
-<task>
-  <statement>
-    <p>
-      <m>\QQ\cap [0,1]  </m>
-    </p>
-  </statement>
-</task>
-<task>
-  <statement>
-    <p>
-      <m>\QQ{}</m>
-    </p>
-  </statement>
-</task>
-  </problem>
-
-<definition xml:id="DEFINITIONOuterMeasure">
-  <title>
-    Lebesgue<rsq/>s Outer Measure
-  </title>
-
-  <statement>
-    <p>
-      Let <m>S\subseteq [a,b]\subset{}\RR </m> be a set and let 
-
-      <me>
-        C=\bigcup_{n=1}^\infty (a_n,b_n)
-      </me> 
-
-      be an open cover of <m>S</m>. The <term>outer measure</term> of
-      <m>S</m> is given by
-      <me>
-        \lambda_o (S)= \inf_{S\in C}\left({}\sum_{n=1}^\infty (b_n-a_n)\right)  
-      </me>
-      where the sum is over all possible open covers of <m>S</m>.
     </p>
 
-  </statement>
-</definition>
-<problem xml:id="PROBLEMOuterMeasure1">
-  <idx><h>Problems</h><h>outer measure</h></idx>
 
 
-  <introduction>
+    <figure  xml:id="FIGURELebesgue">
+      <caption>Henri Lebesgue</caption>
+      
+      <idx><h>Portraits</h><h>Lebesgue</h></idx>
+      <idx><h>Lebesgue, Henri</h><h>portrait of</h></idx>
+
+      <image source="images/Lebesgue.png" width="35%">
+        <shortdescription>Portrait of Henri Lebesgue</shortdescription>
+      </image>
+    </figure>
+
+
+
     <p>
-      Compute the <xref ref="DEFINITIONOuterMeasure" text="custom">outer measure</xref> of each of the following sets.
+      To begin we will need the concept of an <term>open cover</term> a set. 
     </p>
-  </introduction>
-  <task>
-    <statement>
-      <p>
-        <m>\left\{a\right\} </m> where <m>a\in \RR{}</m>.
-      </p>
-</statement>
-  </task>
-  <task>
-    <statement>
-      <p>
-        <m>\left\{1, 2, 3, 4, 5\right\} </m>.
-      </p>
-</statement>
-  </task>
-  <task>
-    <statement>
-      <p>
-        <m>(0,1)</m>
-      </p>
-</statement>
-  </task>
-  <task>
-    <statement>
-      <p>
-        <m>[0,1]</m>
-      </p>
-</statement>
-  </task>
-  <!--   <task> -->
-  <!--     <statement> -->
-  <!--       <p> -->
-  <!--         <m>\NN{}</m> -->
-  <!--       </p> -->
-  <!-- </statement> -->
-  <!-- <hint> -->
-  <!--   <p> -->
-  <!--     The sets in your cover do not have to be the same size. -->
-  <!--   </p> -->
-  <!-- </hint> -->
+    <definition xml:id="DEFINITIONOpenCover">
+      <title>
+        Open Cover
+      </title>
 
-  <!-- </task> -->
-
-</problem>
-<p>
-  That we called <m>\lambda_o (S)</m> and <term>outer</term> measure
-  suggests that there might be something called an <term>inner
-  measure</term> and indeed there is. It<rsq/>is definition is given
-  in <xref ref="DEFINITIONInnerMeasure" ></xref>.
-</p>
-<definition xml:id="DEFINITIONInnerMeasure">
-  <title>
-    Lebegue<rsq/>s Inner Measure
-  </title>
-
-  <statement>
-    <p>
-      Let <m>S\subseteq [a,b] \subset \RR </m> be a set, and let <m>S^C</m> be its complement as in <xref ref="DEFINITIONOpenSet" ></xref>. The the <term>inner measure</term> of <m>S</m> is given by
-      <men xml:id="EQUATIONInnerMeasure">
-        \lambda_i(S) = [b-a]-\lambda_o([a,b]-S)
-        </men>.
-    </p>
-</statement>
-</definition>
-
-<p>
-  A couple of observations regarding this notation will be helpful here.
-  <ul  marker="disc">
-    <li>
-      <p>
-        Since <m>[b-a]</m> and <m>\lambda_o</m> both represent numbers
-        the first subtraction in <xref ref="EQUATIONInnerMeasure"
-        >equation</xref> is just ordinary subtraction.
-      </p>
-    </li>    
-    <li>
-      <p>
-        The expression <m>[a,b]</m> normally means the interval from
-        <m>a</m> to <m>b</m> which means that the points in the
-        interval are ordered, but we are abusing our notation a bit by
-        thinking of it simply as an unordered set. In that case the
-        expression <m>[a,b] - S</m> represents set deletion rather
-        than ordinary subtraction. It represents the set of points
-        between <m>a</m> and <m>b</m> (inclusive) with the points in
-        <m>S</m> deleted.
-      </p>
-    </li>
-  </ul>
-</p>
-
-<p>
-  The names of the inner and outer measures are descriptive. To
-  compute <m>\lambda _o</m> we consider a set of numbers generated by
-  a collection of sets which contain <m>S</m>. To compute
-  <m>\lambda_i</m> we consider a set of numbers generated by a
-  collection of sets which are contained within <m>S</m>. When these
-  are the same we have the <term>Lebesgue Measure</term>.
-</p>
-
-  <definition xml:id="DEFINITIONLebesgueMeasure">
-    <title>
-      Lebesgue Measure
-    </title>
-
-    <statement>
-      <p>
-        Given a set <m>S\subseteq [a,b]\subset \RR</m> if
-        <m>\lambda_o(S)=\lambda_i(S)</m> then their common value is the
-        <term>Lebesgue measure</term> of <m>S</m>, denoted <m>\Lambda(S)</m>.
-
-      </p>
-    </statement>
-
-  </definition>
-
-  <p>
-    Because the <term>Lebesgue Measure</term> depends on the notion of an infimum, the possibility of an non<ndash/>measureable set exists. 
-    The first non<ndash/>measurable set was described
-    by 
-    <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Vitali/" >
-      Giuseppe Vitali</url> (1875-1932) in <m>1905</m>.  Creating such
-      a set requires the use of something called the <term>Axiom of
-      Choice</term> and delves deeply into a careful study of the
-      theory of sets.  We will see how complicated sets can be in the
-      next section.
-
-  </p>
-  <figure  xml:id="FIGUREGiuseppeVitali">
-    <caption>    Giuseppe Vitali</caption>
-
-    <idx><h>Portraits</h><h>Vitali</h></idx>
-    <idx><h>Vitali, Giuseppe</h><h>portrait of</h> </idx>
-
-    <image source="images/Vitali.png" width="35%">
-      <shortdescription>Portrait of Giuseppe Vitali</shortdescription>
-    </image>
-  </figure>
-
-  <p> 
-    For the remainder of this section we will only be discussing and
-    using the <xref ref="DEFINITIONOuterMeasure" text="custom">Outer
-    Measure</xref>. This will be enough to give you a good intuitive
-    feel for the <term>Lebesgue Integral</term> which we define below.
-    We have included the definitions of <xref
-    ref="DEFINITIONInnerMeasure" text="custom">Inner Measure</xref>
-    and <xref ref="DEFINITIONLebesgueMeasure" text="custom">Lebesgue
-    Measure</xref> for completeness.
-  </p>
-
-
-
-  <!-- <p> -->
-  <!--   Notice that <term>outer measure</term> is by definition an -->
-  <!--   infimum. Since not all infima exist, there is the possibility that -->
-  <!--   some sets might be <term>non<ndash/>measurable</term>. -->
-  <!-- </p> -->
-
-
-
-
-  <p>
-    You saw in parts (a) and (b) of <xref ref="PROBLEMOuterMeasure1"
-    ></xref> that finite sets have outer measure equal to zero.  So do
-    some infinite sets.
-  </p>
-
-  <theorem xml:id="THEOREMMeasureZero">
-
-    <idx><h>measure zero</h></idx>
-    <idx><h>zero measure</h><see>measure zero</see></idx>
-    
-    <statement>
-
-      <p>
-        Let <m>S=\{s_1, s_2, s_3, \dots \}</m> be countably
-        infinite set of real numbers.  Let <m>\eps \gt 0</m> be
-        given.  There is a collection of open intervals <m>(a_n,\
-        b_n)</m> with <me>S\subset \bigcup^{\infty
-        }_{n=1}{\left(a_n,\ b_n\right)}</me> and <me>\sum^{\infty
-        }_{n=1}{\left(b_n-a_n\right)}=\eps </me>
-
-      </p>
-      <p>
-        Such a set is said to have <term>measure zero</term>.
-      </p>
-
-
-    </statement>
-  </theorem>
-
-  <problem>
-    <idx><h>Problems</h><h>measure zero</h></idx>
-
-    <task>
       <statement>
         <p>
-          Observe that <xref ref="DEFINITIONLebesgueMeasure" ></xref> does not say that anything is equal to zero. Explain how we can still conclude that the set <m>S</m> has <term>measure zero</term>.
+          Let <m>S</m> be any set in <m>\RR</m>, and let
+          <me>I=\bigcup_{n=1}^\infty{}(a_n,b_n)</me> be the union of a
+          collection of open intervals. Then <m>I</m> is called an
+          <term>open cover</term> of <m>S</m> if and only if
+          <me>
+            x\in S \imp x\in I
+            </me>.
+
+            (Our definition specifies that the collection of open
+            intervals be countably infinite, but a cover is allowed to
+            be a finite collection as well.)
         </p>
-</statement>
-    </task>
-    <task>
+
+      </statement>
+    </definition>
+    <p>
+      Loosely speaking, and <term>open cover</term> of a set <m>S</m> is a
+      collection of open intervals which <q>cover</q> <m>S</m> (hence the
+      name). Obviously every open interval is an open cover of itself. 
+    </p>
+
+    <problem xml:id="PROBLEMOpenCovers">
+      <idx><h>Problems</h><h>open covers</h></idx>
+
+      <introduction>
+        <p>
+          Construct two distinct open covers of each of the following
+          sets. (There is more than one correct answer.)
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            The empty set: <m>\emptyset </m>.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            <m>(0,1)\cup{} (2,4)</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>[-1,1]</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\QQ\cap(0,1) </m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\QQ\cap [0,1]  </m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\QQ{}</m>
+          </p>
+        </statement>
+      </task>
+    </problem>
+
+    <definition xml:id="DEFINITIONOuterMeasure">
+      <title>
+        Lebesgue<rsq/>s Outer Measure
+      </title>
+
       <statement>
-
         <p>
-          Prove <xref ref="THEOREMMeasureZero"></xref>. 
+          Let <m>S\subseteq [a,b]\subset{}\RR </m> be a set and let 
+
+          <me>
+            C=\bigcup_{n=1}^\infty (a_n,b_n)
+          </me> 
+
+          be an open cover of <m>S</m>. The <term>outer measure</term> of
+          <m>S</m> is given by
+          <me>
+            \lambda_o (S)= \inf_{S\in C}\left({}\sum_{n=1}^\infty (b_n-a_n)\right)  
+          </me>
+          where the sum is over all possible open covers of <m>S</m>.
         </p>
 
-      </statement>      
+      </statement>
+    </definition>
+    <problem xml:id="PROBLEMOuterMeasure1">
+      <idx><h>Problems</h><h>outer measure</h></idx>
 
 
-      <hint>
+      <introduction>
         <p>
-          Consider the interval <m>\left(s_n-\frac{\eps  }{2^{n+1}},\ s_n+\frac{\eps }{2^{n+1}}\right)</m>.]
+          Compute the <xref ref="DEFINITIONOuterMeasure" text="custom">outer measure</xref> of each of the following sets.
         </p>
-      </hint>
-    </task>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\left\{a\right\} </m> where <m>a\in \RR{}</m>.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\left\{1, 2, 3, 4, 5\right\} </m>.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>(0,1)</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>[0,1]</m>
+          </p>
+        </statement>
+      </task>
+      <!--   <task> -->
+      <!--     <statement> -->
+      <!--       <p> -->
+      <!--         <m>\NN{}</m> -->
+      <!--       </p> -->
+      <!-- </statement> -->
+      <!-- <hint> -->
+      <!--   <p> -->
+      <!--     The sets in your cover do not have to be the same size. -->
+      <!--   </p> -->
+      <!-- </hint> -->
+
+      <!-- </task> -->
+
+    </problem>
+    <p>
+      That we called <m>\lambda_o (S)</m> and <term>outer</term> measure
+      suggests that there might be something called an <term>inner
+      measure</term> and indeed there is. It<rsq/>is definition is given
+      in <xref ref="DEFINITIONInnerMeasure" ></xref>.
+    </p>
+    <definition xml:id="DEFINITIONInnerMeasure">
+      <title>
+        Lebegue<rsq/>s Inner Measure
+      </title>
+
+      <statement>
+        <p>
+          Let <m>S\subseteq [a,b] \subset \RR </m> be a set, and let <m>S^C</m> be its complement as in <xref ref="DEFINITIONOpenSet" ></xref>. The the <term>inner measure</term> of <m>S</m> is given by
+          <men xml:id="EQUATIONInnerMeasure">
+            \lambda_i(S) = [b-a]-\lambda_o([a,b]-S)
+            </men>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      A couple of observations regarding this notation will be helpful here.
+      <ul  marker="disc">
+        <li>
+          <p>
+            Since <m>[b-a]</m> and <m>\lambda_o</m> both represent numbers
+            the first subtraction in <xref ref="EQUATIONInnerMeasure"
+            >equation</xref> is just ordinary subtraction.
+          </p>
+        </li>    
+        <li>
+          <p>
+            The expression <m>[a,b]</m> normally means the interval from
+            <m>a</m> to <m>b</m> which means that the points in the
+            interval are ordered, but we are abusing our notation a bit by
+            thinking of it simply as an unordered set. In that case the
+            expression <m>[a,b] - S</m> represents set deletion rather
+            than ordinary subtraction. It represents the set of points
+            between <m>a</m> and <m>b</m> (inclusive) with the points in
+            <m>S</m> deleted.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The names of the inner and outer measures are descriptive. To
+      compute <m>\lambda _o</m> we consider a set of numbers generated by
+      a collection of sets which contain <m>S</m>. To compute
+      <m>\lambda_i</m> we consider a set of numbers generated by a
+      collection of sets which are contained within <m>S</m>. When these
+      are the same we have the <term>Lebesgue Measure</term>.
+    </p>
+
+    <definition xml:id="DEFINITIONLebesgueMeasure">
+      <title>
+        Lebesgue Measure
+      </title>
+
+      <statement>
+        <p>
+          Given a set <m>S\subseteq [a,b]\subset \RR</m> if
+          <m>\lambda_o(S)=\lambda_i(S)</m> then their common value is the
+          <term>Lebesgue measure</term> of <m>S</m>, denoted <m>\Lambda(S)</m>.
+
+        </p>
+      </statement>
+
+    </definition>
+
+    <p>
+      Because the <term>Lebesgue Measure</term> depends on the notion of an infimum, the possibility of an non<ndash/>measureable set exists. 
+      The first non<ndash/>measurable set was described
+      by 
+      <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Vitali/" >
+        Giuseppe Vitali</url> (1875-1932) in <m>1905</m>.  Creating such
+        a set requires the use of something called the <term>Axiom of
+        Choice</term> and delves deeply into a careful study of the
+        theory of sets.  We will see how complicated sets can be in the
+        next section.
+
+    </p>
+    <figure  xml:id="FIGUREGiuseppeVitali">
+      <caption>    Giuseppe Vitali</caption>
+
+      <idx><h>Portraits</h><h>Vitali</h></idx>
+      <idx><h>Vitali, Giuseppe</h><h>portrait of</h> </idx>
+
+      <image source="images/Vitali.png" width="35%">
+        <shortdescription>Portrait of Giuseppe Vitali</shortdescription>
+      </image>
+    </figure>
+
+    <p> 
+      For the remainder of this section we will only be discussing and
+      using the <xref ref="DEFINITIONOuterMeasure" text="custom">Outer
+      Measure</xref>. This will be enough to give you a good intuitive
+      feel for the <term>Lebesgue Integral</term> which we define below.
+      We have included the definitions of <xref
+      ref="DEFINITIONInnerMeasure" text="custom">Inner Measure</xref>
+      and <xref ref="DEFINITIONLebesgueMeasure" text="custom">Lebesgue
+      Measure</xref> for completeness.
+    </p>
 
 
-
-  </problem>
-  </paragraphs>
-
-<paragraphs>
-  <title>
-    The Lesbegue Integral
-  </title>
-
-
-
-  <p>
-    A primary objective of this text is to convey to you, the student,
-    an appreciation for, and an understanding of, the need for
-    rigor. That objective remains in force. However, in this section
-    we are at the edge of very deep mathematical waters. Until we
-    start the next section we will only be wading in the shallows.  We
-    will thus relax our relentless emphasis on rigor for now.
-  </p>
-  <p>
-    For the rest of this section we will set rigor to the side and
-    instead appeal to your intuition by the use of sketches. We will
-    also reason by analogy rather than precisely (e.g., using <m>\eps
-    </m>) and <m>\delta{}</m>. 
-  </p>
-  <p>
-    In addition, for the remainder of this section we will assume that
-    all of the functions we will consider are positive so that we can
-    safely engage your strong intuitive understanding of area. We do
-    this because our goal here is only to give you a sense of how
-    Lesbegue broadened Cauchy<rsq/>s definition of the integral. In
-    particular we will not develop Lebesgue<rsq/>s integral in
-    detail. Should you desire a deeper understanding than you<rsq/>ll
-    get here a second course in Real Analysis is highly recommended.
-  </p>
-
-
-  <p>
-    <!-- <idx><h>Dirichlet<rsq/>s Function</h></idx> -->
-
-    Recall from <xref ref="PROBLEMDirichletCountrExamp" ></xref>
-    that the <term>Dirichlet Function</term>
-    <me> 
-      D(x)=
-      \begin{cases}
-      0, \amp \text{ if }  x \text{ is irrational}\\
-      1, \amp \text{ if }  x \text{ is rational}
-      \end{cases}
-    </me>
-    is not Riemann (Cauchy, Darboux) integrable. Dirichlet invented
-    his function as an example of a non<ndash/>integrable
-    function. For our purposes it has no importance beyond
-    that. However the existence of non<ndash/>(Riemann)integrable
-    functions suggests the question: Can the integral be defined in
-    such a way as to capture all of the intuitive features of
-    (Riemann) integration known to <m>18</m>th century mathematicians
-    and which also allows us to integrate something as seemingly
-    bizarre as the Dirichlet Function?
-  </p>
-  <p>
-    The answer, of course, is yes. Otherwise we wouldn<rsq/>t have
-    asked. Lebesgue defined such an integral at he turn of the twentieth century.
-  </p>
-  <p>
-    Speaking very loosely, if we want to compute
-    <m>\int_a^bf(x)\dx{x} </m> where <m>f(x)\ge 0</m> using the
-    Riemann (Cauchy) integral we partition the <m>x-</m>axis into
-    adjacent intervals with width <m>\dx{x}</m> and then construct
-    (infinitesimal) rectangles with area 
-
-    <me>
-      f(x)\dx{x} 
-    </me> 
-    from each differential. Summing these areas <mdash/> computing
-    <m> \int_a^b f(x)\dx{x} </m> <mdash/> provides the value
-    of the definite integral.
-  </p> 
-
-  <p>
-    <!--   To compute the area of the rectangle -->
-    <!-- constructed at <m>x</m> we need its height, <m>f(x)</m>, and its -->
-    <!-- width, <m>\dx{x}</m>.   -->
-    <!-- </p> -->
 
     <!-- <p> -->
-    <!--   Rather -->
-    <!--   than summing the areas of the rectangle one at a time proceeding -->
-    <!--   from <m>a</m> to <m>b</m>  -->
-    <!--   came up with a different approach -->
+    <!--   Notice that <term>outer measure</term> is by definition an -->
+    <!--   infimum. Since not all infima exist, there is the possibility that -->
+    <!--   some sets might be <term>non<ndash/>measurable</term>. -->
+    <!-- </p> -->
 
 
-    Lebesgue<rsq/>s idea was to find all rectangles with a common
-    height first, gather them together, and sum those areas. In letter
-    to a colleague he described his process as follows:
-  </p>
-  <blockquote>
+
 
     <p>
-      <q>I have to pay a certain sum, which I have collected
-      in my pocket. I take the bills and coins out of my
-      pocket and give them to the creditor in the order I
-      find them until I have reached the total sum. This is
-      the Riemann integral. But I can proceed
-      differently. After I have taken all the money out of
-      my pocket I order the bills and coins according to
-      identical values and then I pay the several heaps one
-      after the other to the creditor. This is my integral.</q>
+      You saw in parts (a) and (b) of <xref ref="PROBLEMOuterMeasure1"
+      ></xref> that finite sets have outer measure equal to zero.  So do
+      some infinite sets.
     </p>
-  </blockquote>
 
-  <!-- <figure  xml:id="FIGURELebesgue"> -->
-  <!--   <caption>Henri Lebesgue</caption> -->
+    <theorem xml:id="THEOREMMeasureZero">
 
-  <!--   <idx><h>Portraits</h><h>Lebesgue</h></idx> -->
-  <!--   <idx><h>Lebesgue, Henri</h><h>portrait of</h></idx> -->
+      <idx><h>measure zero</h></idx>
+      <idx><h>zero measure</h><see>measure zero</see></idx>
+      
+      <statement>
 
-  <!--   <image source="images/Lebesgue.png" width="35%"> -->
-  <!--     <shortdescription>Portrait of Henri Lebesgue</shortdescription> -->
-  <!--   </image> -->
-  <!-- </figure> -->
+        <p>
+          Let <m>S=\{s_1, s_2, s_3, \dots \}</m> be countably
+          infinite set of real numbers.  Let <m>\eps \gt 0</m> be
+          given.  There is a collection of open intervals <m>(a_n,\
+          b_n)</m> with <me>S\subset \bigcup^{\infty
+          }_{n=1}{\left(a_n,\ b_n\right)}</me> and <me>\sum^{\infty
+          }_{n=1}{\left(b_n-a_n\right)}=\eps </me>
 
-  <p>
-    To see how this worked suppose we want to integrate
-    <m>f(x)=\abs{\sin x}</m> from <m>x=0</m> to <m>x=\pi{}</m> as seen in <xref ref="FIGURELebegInt1" ></xref> below.
-  </p>
+        </p>
+        <p>
+          Such a set is said to have <term>measure zero</term>.
+        </p>
 
 
-  <figure  xml:id="FIGURELebegInt1">
-    <caption>In Lebesgue<rsq/>s integral we find the area of each
-    colored region first. Notice that there are <m>29</m> regions,
-    including the two very thin red regions and three regions with
-    zero height located at <m>x=0</m>, <m>x=\pi{}</m>, and
-    <m>x=2\pi{}</m>.  </caption>
-    <image source="images/LebInt2.png" width="100%">
-      <shortdescription></shortdescription>
-    </image>
-  </figure>
+      </statement>
+    </theorem>
 
-<p>
-  In a Riemann integral we start at <m>x=0</m>, compute the first blue
-  area, add to that the first green area, and so on, until we reach
-  <m>x=2\pi </m> where we add in the last blue area. Notice that area of
-  the first blue rectangle is the height of <m>f(x)</m> multiplied by
-  the measure of interval on the <m>x-</m>axis which corresponds to
-  the interval <m>\left[ \frac17, \frac27 \right]{}</m> on the
-  <m>y-</m>axis. We<rsq/>ll designate that area with
-  <m>\mu{(1)}</m>. Similarly <m>\mu (2)</m> represents the measure of
-  the base of the first green rectangle, and so on for all <m>26</m>
-  regions. (Don<rsq/>t forget the thin red regions. We<rsq/>ll get
-  back to those in a bit.)
-</p>
-<p>
-  But nothing says we must add the areas in this order. This is just a
-  convention. Lebesgue<rsq/>s ideas was to compute the area of all of
-  the blue regions together, then all of the green regions, then the
-  orange, and so on. By rearranging the sum this way the total are of
-  the blue regions is,
+    <problem>
+      <idx><h>Problems</h><h>measure zero</h></idx>
 
-  <me>
-    f(1/7)\mu (1) +f(1/7)\mu (13) +f(1/7)\mu (14) +f(1/7)\mu
-    (28)
-    </me>
-    or 
-<me>
-  f(1/7)\underbrace{\left[ \mu (1) +\mu (13) +\mu (14)
-  +\mu(28)\right]}_{=\Lambda_b} 
-  </me>.
+      <task>
+        <statement>
+          <p>
+            Observe that <xref ref="DEFINITIONLebesgueMeasure" ></xref> does not say that anything is equal to zero. Explain how we can still conclude that the set <m>S</m> has <term>measure zero</term>.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
 
-  The expression <m>\left( \mu (1) +\mu (13) +\mu (14)
-  +\mu(28)\right)</m> then represents the total measure of the bases
-  on the <m>x-</m>axis of the blue regions which we designate
-  <m>\Lambda_b</m>. <m>\Lambda_b</m> is the Lebesgue measure of the
-  base of all of the blue regions. Similarly the Lebesgue measure of
-  the dark green, orange, light green, purple,  yellow, and red regions are
-  <m>\Lambda_d</m>, <m>\Lambda_o</m>, <m>\Lambda_l</m>,
-  <m>\Lambda_p</m>,  <m>\Lambda_y</m>, and <m>\Lambda_r</m> respectively.
-</p>
-<p>
-  Our integral is thus 
-  <md>
-    <mrow>  
-      \int_{x=0}^{2 \pi}f(x)\dx{x}=f(1/7)\Lambda_b + f(2/7)\Lambda_d \amp{}+
-      f(3/7)\Lambda_o
-    </mrow>
-    <mrow>
-      \amp{} + f(4/7)\Lambda_l + f(5/7)\Lambda_p + f(6/7)\Lambda_y 
-    </mrow>
-  </md>
-</p>
-<p>
-  But wait a minute! What about the two thin red regions and the ones
-  at <m>x=0</m>, <m>x=\pi{}</m>, and <m>x=2 \pi{}</m>? Why did we leave them out?
-</p>
-<p>
-  It should be clear that the measure of these regions must be
-  zero. Do you see why?  The only places on our graph where <m>f(x) =
-  1</m> are at the two maxima, and the base of any rectangle
-  constructed there will have measure zero, <m>\Lambda_r = 0</m>. This
-  is clear from the sketch. Moreover in light of part (a) of <xref
-  ref="PROBLEMOuterMeasure1" ></xref>. A single point on the
-  <m>x-</m>axis has measure zero.
+          <p>
+            Prove <xref ref="THEOREMMeasureZero"></xref>. 
+          </p>
 
-  Thus
-  the <q>area</q> of those regions will be <m>1\cdot \Lambda_0 =
-  1\cdot 0 = 0</m>. Those points in the domain of our function
-  contribute nothing to the integral.
-</p>
-<p>
-  The same is true of the rectangles constructed at <m>x=0</m>,
-  <m>x=\pi{}</m>, and <m>x=2\pi{}</m>. The measures of their bases
-  will be zero. (Their heights will also be zero but that is
-  irrelevant.)
-</p>
+        </statement>      
+
+
+        <hint>
+          <p>
+            Consider the interval <m>\left(s_n-\frac{\eps  }{2^{n+1}},\ s_n+\frac{\eps }{2^{n+1}}\right)</m>.]
+          </p>
+        </hint>
+      </task>
 
 
 
+    </problem>
+  </paragraphs>
 
-
-<!-- <p> -->
-<!--   Given that Cantor had shown that the set of rational numbers is -->
-<!--   countable while the set of irrational numbers is uncountable, -->
-<!--   Lebesgue thought that the value of <m>f\left(x\right)</m> on a -->
-<!--   relatively <q>small</q> set such as the rational numbers should -->
-<!--   have no bearing (or at least very little) on the value of an integral so he focused -->
-<!--   more on measuring the relative <q>sizes</q> of different sets in the -->
-<!--   domain of <m>f</m>. The basis of this idea comes from the following. -->
-<!-- </p> -->
+  <paragraphs>
+    <title>
+      The Lesbegue Integral
+    </title>
 
 
 
-<!-- <p> -->
-<!--   The collection of intervals <m>(a_n,b_n)</m> with <m>S\subset -->
-<!--   \bigcup^{\infty }_{n=1}{\left(a_n,\ b_n\right)}</m> is called -->
-<!--   an open cover of <m>S</m>.  Lebesgue defined the (outer) -->
-<!--   measure of a set to be the infimum of the sums <m>\sum^{\infty -->
-<!--   }_{n=1}{\left(b_n-a_n\right)}</m> over all such open covers. -->
-<!--   In symbols, the (outer) measure of a set <m>S</m> -->
-<!--   <m>\left(\lambda_o \left(S\right)\right)</m> is given by -->
-
-<!--   <me>\lambda_o(S)=\inf_{S\subset \bigcup^{\infty}_{n=1}{(a_n,\ b_n)}} \left(\sum^{\infty }_{n=1}{\left(b_n-a_n\right)}\right) </me>  -->
-
-
-<!-- </p> -->
-
-<p>
-  In Lebesgue<rsq/>s scheme there is always the possibility that after
-  rearranging our rectangles the measure of the base of a region might
-  be zero.  <xref ref="FIGURELebegInt1" ></xref> shows two ways that
-  can happen but there are many others. In particular, <xref
-  ref="THEOREMMeasureZero" ></xref> shows that it is possible for an
-  infinite set to have measure zero.  This has repurcussions for the
-  integral of Dirichlet<rsq/>s function,
-
-  <me> 
-    D(x)=
-    \begin{cases}
-    0, \amp \text{ if }  x \text{ is irrational}\\
-    1, \amp \text{ if }  x \text{ is rational}
-    \end{cases}
-    </me>
-
-    which we will explore next. 
-</p>
-<p>
-  For our later convenience we define the following
-  notations. 
-  <ul>
-    <li>
-      Let <m>\cal{I}</m> represent the set of irrational
-      numbers in the interval <m>[0,1]</m>.
-    </li>
-    <li>
-      Let <m>\cal{Q}</m> be the set of rational numbers in the same interval. 
-    </li>
-  </ul>   
-</p>
-
-<p>
-  Since <m>D(x)</m> takes on only two values, <m>0</m> and <m>1</m>,
-  we need only partition the <m>y-</m>axis in two places, <m>y=0</m>
-  and <m>y=1</m>. Gathering all of the rectangles together in the same way we did  above  we see that
-  <men xml:id="EQUATIONDirichFunc">
-    \int_0^1D(x)\dx{x} = 0\cdot{} \Lambda \left( \cal{I}\right){}+ 1\cdot
-    \Lambda\left( \cal{Q}\right) .
-  </men>
-</p>
-<problem>
-  <title>
-    The Lebesgue Integral of Dirichlet<rsq/>s Function 
-  </title>
-
-  <idx><h>Problems</h><h>Dirichlet<rsq/>s Function</h><h>Lebesgue integral of</h></idx>
-  <idx><h>Dirichlet<rsq/>s Function</h><h>Lebesgue integral of</h></idx>
+    <p>
+      A primary objective of this text is to convey to you, the student,
+      an appreciation for, and an understanding of, the need for
+      rigor. That objective remains in force. However, in this section
+      we are at the edge of very deep mathematical waters. Until we
+      start the next section we will only be wading in the shallows.  We
+      will thus relax our relentless emphasis on rigor for now.
+    </p>
+    <p>
+      For the rest of this section we will set rigor to the side and
+      instead appeal to your intuition by the use of sketches. We will
+      also reason by analogy rather than precisely (e.g., using <m>\eps
+      </m>) and <m>\delta{}</m>. 
+    </p>
+    <p>
+      In addition, for the remainder of this section we will assume that
+      all of the functions we will consider are positive so that we can
+      safely engage your strong intuitive understanding of area. We do
+      this because our goal here is only to give you a sense of how
+      Lesbegue broadened Cauchy<rsq/>s definition of the integral. In
+      particular we will not develop Lebesgue<rsq/>s integral in
+      detail. Should you desire a deeper understanding than you<rsq/>ll
+      get here a second course in Real Analysis is highly recommended.
+    </p>
 
 
-  <p>
-    Use <xref ref="THEOREMMeasureZero" ></xref> and <xref
-    ref="EQUATIONDirichFunc" >equation</xref> to show that
-    <me>
-      \int_0^1D(x)\dx{x} = 0
-      </me>.
-  </p>
+    <p>
+      <!-- <idx><h>Dirichlet<rsq/>s Function</h></idx> -->
 
-</problem>
+      Recall from <xref ref="PROBLEMDirichletCountrExamp" ></xref>
+      that the <term>Dirichlet Function</term>
+      <me> 
+        D(x)=
+        \begin{cases}
+        0, \amp \text{ if }  x \text{ is irrational}\\
+        1, \amp \text{ if }  x \text{ is rational}
+        \end{cases}
+      </me>
+      is not Riemann (Cauchy, Darboux) integrable. Dirichlet invented
+      his function as an example of a non<ndash/>integrable
+      function. For our purposes it has no importance beyond
+      that. However the existence of non<ndash/>(Riemann)integrable
+      functions suggests the question: Can the integral be defined in
+      such a way as to capture all of the intuitive features of
+      (Riemann) integration known to <m>18</m>th century mathematicians
+      and which also allows us to integrate something as seemingly
+      bizarre as the Dirichlet Function?
+    </p>
+    <p>
+      The answer, of course, is yes. Otherwise we wouldn<rsq/>t have
+      asked. Lebesgue defined such an integral at he turn of the twentieth century.
+    </p>
+    <p>
+      Speaking very loosely, if we want to compute
+      <m>\int_a^bf(x)\dx{x} </m> where <m>f(x)\ge 0</m> using the
+      Riemann (Cauchy) integral we partition the <m>x-</m>axis into
+      adjacent intervals with width <m>\dx{x}</m> and then construct
+      (infinitesimal) rectangles with area 
 
+      <me>
+        f(x)\dx{x} 
+      </me> 
+      from each differential. Summing these areas <mdash/> computing
+      <m> \int_a^b f(x)\dx{x} </m> <mdash/> provides the value
+      of the definite integral.
+    </p> 
 
-<!--   it is possible that   Part (b) of <xref ref="PROBLEMOuterMeasure1" ></xref> indicates that any finite set of points  Given the result of <xref ref="THEOREMMeasureZero"></xref>, any -->
-<!--   countable set would have Lebesgue measure zero.  Since the -->
-<!--   rational numbers are countably infinite, then they have measure -->
-<!--   zero.  We won't get into the details of a Lebesgue integral, but -->
-<!--   it should not be surprising that if two (Lebesgue integrable) -->
-<!--   functions, <m>f</m> and <m>g</m>, differ from each other on set of -->
-<!--   measure zero, then they should have the same value for their -->
-<!--   Lebesgue integrals.  Since the <xref ref="PROBLEMDirichletCountrExamp" text="custom">Dirichlet function</xref> differs from -->
-<!--   the constantly one function on a set of measure zero (namely -->
-<!--   <m>\QQ</m>), then it should be Lebesgue integrable (as a -->
-<!--   constant function should be) and its integral would be -->
+    <p>
+      <!--   To compute the area of the rectangle -->
+      <!-- constructed at <m>x</m> we need its height, <m>f(x)</m>, and its -->
+      <!-- width, <m>\dx{x}</m>.   -->
+      <!-- </p> -->
 
-
-<!--   <me>\int^b_{x=a}{f\left(x\right)d\lambda_o =\left(b-a\right)}</me>  -->
-
-
-<!-- </p> -->
-
-
-
-<!-- <p> -->
-
-<!--   You may have noticed that we used the term outer measure before. -->
-<!--   For a measurable set, its measure is this outer measure.  However, -->
-<!--   there are examples of non<ndash/>measurable sets.  Any set would have an -->
-<!--   outer measure, but assigning this as the measure of one of these -->
-<!--   non<ndash/>measurable sets results in a number of contradictions on how a -->
-<!--   measure should behave.  -->
-
-
-
-
-<!-- <corollary xml:id="cor_Q-MeasureZero"> -->
-<!--   <statement> -->
-<!--     <p> -->
-<!--       Let <m>\eps>0</m> be given.  There is a collection of -->
-<!--       intervals in <m>\RR</m>, <m>I_n=[a_n,b_n]</m> such that -->
-<!--       <me> -->
-<!--         \QQ \subset \bigcup_{n=1}^\infty I_n -->
-<!--       </me> -->
-<!--       and -->
-<!--       <me> -->
-<!--         \sum_{n=1}^\infty(b_n-a_n)\lt \eps -->
-<!--         </me>. -->
-<!--       </p> -->
-<!--     </statement> -->
-<!--   </corollary> -->
-
-<!--     <problem> -->
-<!--       <idx><h><m>\QQ</m></h><h>has measure zero in <m>\RR</m></h></idx> -->
-<!--       <idx><h>measure zero</h><h><m>\QQ</m> has measure zero in <m>\RR</m></h></idx> -->
-<!--       <statement> -->
-
-<!--         <p> -->
-<!--           Prove <xref ref="cor_Q-MeasureZero"></xref>.  -->
-<!--         </p> -->
-<!--       </statement> -->
-<!--       <hint> -->
-<!--         <p> -->
-<!--           If we had only finitely many rationals to deal with this -->
-<!--           would be easy.  Let <m>\left\{r_1, r_2, \ldots, -->
-<!--           r_k\right\}</m> be these rational numbers and take -->
-<!--           <m>a_n=r_n-\frac{\eps}{2(k+1)}</m> and -->
-<!--           <m>b_n=r_n+\frac{\eps}{2(k+1)}</m>.  Then for all -->
-<!--           <m>n=1,\ldots, k</m> <m>r_n\in[a_n,b_n]</m> and <me> -->
-<!--           \sum_{n=1}^kb_n-a_n = \sum_{n=1}^k -->
-<!--           \frac{\eps}{k+1}=\frac{k\eps}{k+1}\lt\eps </me>. -->
-<!--         </p> -->
-<!--         <p> -->
-<!--           The difficulty is, how do we move from the finite to the -->
-<!--           infinite case?] -->
-<!--         </p> -->
-<!--       </hint> -->
-<!--     </problem> -->
+      <!-- <p> -->
+      <!--   Rather -->
+      <!--   than summing the areas of the rectangle one at a time proceeding -->
+      <!--   from <m>a</m> to <m>b</m>  -->
+      <!--   came up with a different approach -->
 
 
-</paragraphs>
+      Lebesgue<rsq/>s idea was to find all rectangles with a common
+      height first, gather them together, and sum those areas. In letter
+      to a colleague he described his process as follows:
+    </p>
+    <blockquote>
+
+      <p>
+        <q>I have to pay a certain sum, which I have collected
+        in my pocket. I take the bills and coins out of my
+        pocket and give them to the creditor in the order I
+        find them until I have reached the total sum. This is
+        the Riemann integral. But I can proceed
+        differently. After I have taken all the money out of
+        my pocket I order the bills and coins according to
+        identical values and then I pay the several heaps one
+        after the other to the creditor. This is my integral.</q>
+      </p>
+    </blockquote>
+
+    <!-- <figure  xml:id="FIGURELebesgue"> -->
+    <!--   <caption>Henri Lebesgue</caption> -->
+
+    <!--   <idx><h>Portraits</h><h>Lebesgue</h></idx> -->
+    <!--   <idx><h>Lebesgue, Henri</h><h>portrait of</h></idx> -->
+
+    <!--   <image source="images/Lebesgue.png" width="35%"> -->
+    <!--     <shortdescription>Portrait of Henri Lebesgue</shortdescription> -->
+    <!--   </image> -->
+    <!-- </figure> -->
+
+    <p>
+      To see how this worked suppose we want to integrate
+      <m>f(x)=\abs{\sin x}</m> from <m>x=0</m> to <m>x=\pi{}</m> as seen in <xref ref="FIGURELebegInt1" ></xref> below.
+    </p>
+
+
+    <figure  xml:id="FIGURELebegInt1">
+      <caption>In Lebesgue<rsq/>s integral we find the area of each
+      colored region first. Notice that there are <m>29</m> regions,
+      including the two very thin red regions and three regions with
+      zero height located at <m>x=0</m>, <m>x=\pi{}</m>, and
+      <m>x=2\pi{}</m>.  </caption>
+      <image source="images/LebInt2.png" width="100%">
+        <shortdescription></shortdescription>
+      </image>
+    </figure>
+
+    <p>
+      In a Riemann integral we start at <m>x=0</m>, compute the first blue
+      area, add to that the first green area, and so on, until we reach
+      <m>x=2\pi </m> where we add in the last blue area. Notice that area of
+      the first blue rectangle is the height of <m>f(x)</m> multiplied by
+      the measure of interval on the <m>x-</m>axis which corresponds to
+      the interval <m>\left[ \frac17, \frac27 \right]{}</m> on the
+      <m>y-</m>axis. We<rsq/>ll designate that area with
+      <m>\mu{(1)}</m>. Similarly <m>\mu (2)</m> represents the measure of
+      the base of the first green rectangle, and so on for all <m>26</m>
+      regions. (Don<rsq/>t forget the thin red regions. We<rsq/>ll get
+      back to those in a bit.)
+    </p>
+    <p>
+      But nothing says we must add the areas in this order. This is just a
+      convention. Lebesgue<rsq/>s ideas was to compute the area of all of
+      the blue regions together, then all of the green regions, then the
+      orange, and so on. By rearranging the sum this way the total are of
+      the blue regions is,
+
+      <me>
+        f(1/7)\mu (1) +f(1/7)\mu (13) +f(1/7)\mu (14) +f(1/7)\mu
+        (28)
+      </me>
+      or 
+      <me>
+        f(1/7)\underbrace{\left[ \mu (1) +\mu (13) +\mu (14)
+        +\mu(28)\right]}_{=\Lambda_b} 
+        </me>.
+
+        The expression <m>\left( \mu (1) +\mu (13) +\mu (14)
+        +\mu(28)\right)</m> then represents the total measure of the bases
+        on the <m>x-</m>axis of the blue regions which we designate
+        <m>\Lambda_b</m>. <m>\Lambda_b</m> is the Lebesgue measure of the
+        base of all of the blue regions. Similarly the Lebesgue measure of
+        the dark green, orange, light green, purple,  yellow, and red regions are
+        <m>\Lambda_d</m>, <m>\Lambda_o</m>, <m>\Lambda_l</m>,
+        <m>\Lambda_p</m>,  <m>\Lambda_y</m>, and <m>\Lambda_r</m> respectively.
+    </p>
+    <p>
+      Our integral is thus 
+      <md>
+        <mrow>  
+          \int_{x=0}^{2 \pi}f(x)\dx{x}=f(1/7)\Lambda_b + f(2/7)\Lambda_d \amp{}+
+          f(3/7)\Lambda_o
+        </mrow>
+        <mrow>
+          \amp{} + f(4/7)\Lambda_l + f(5/7)\Lambda_p + f(6/7)\Lambda_y 
+        </mrow>
+      </md>
+    </p>
+    <p>
+      But wait a minute! What about the two thin red regions and the ones
+      at <m>x=0</m>, <m>x=\pi{}</m>, and <m>x=2 \pi{}</m>? Why did we leave them out?
+    </p>
+    <p>
+      It should be clear that the measure of these regions must be
+      zero. Do you see why?  The only places on our graph where <m>f(x) =
+      1</m> are at the two maxima, and the base of any rectangle
+      constructed there will have measure zero, <m>\Lambda_r = 0</m>. This
+      is clear from the sketch. Moreover in light of part (a) of <xref
+      ref="PROBLEMOuterMeasure1" ></xref>. A single point on the
+      <m>x-</m>axis has measure zero.
+
+      Thus
+      the <q>area</q> of those regions will be <m>1\cdot \Lambda_0 =
+      1\cdot 0 = 0</m>. Those points in the domain of our function
+      contribute nothing to the integral.
+    </p>
+    <p>
+      The same is true of the rectangles constructed at <m>x=0</m>,
+      <m>x=\pi{}</m>, and <m>x=2\pi{}</m>. The measures of their bases
+      will be zero. (Their heights will also be zero but that is
+      irrelevant.)
+    </p>
+
+
+
+
+
+    <!-- <p> -->
+    <!--   Given that Cantor had shown that the set of rational numbers is -->
+    <!--   countable while the set of irrational numbers is uncountable, -->
+    <!--   Lebesgue thought that the value of <m>f\left(x\right)</m> on a -->
+    <!--   relatively <q>small</q> set such as the rational numbers should -->
+    <!--   have no bearing (or at least very little) on the value of an integral so he focused -->
+    <!--   more on measuring the relative <q>sizes</q> of different sets in the -->
+    <!--   domain of <m>f</m>. The basis of this idea comes from the following. -->
+    <!-- </p> -->
+
+
+
+    <!-- <p> -->
+    <!--   The collection of intervals <m>(a_n,b_n)</m> with <m>S\subset -->
+    <!--   \bigcup^{\infty }_{n=1}{\left(a_n,\ b_n\right)}</m> is called -->
+    <!--   an open cover of <m>S</m>.  Lebesgue defined the (outer) -->
+    <!--   measure of a set to be the infimum of the sums <m>\sum^{\infty -->
+    <!--   }_{n=1}{\left(b_n-a_n\right)}</m> over all such open covers. -->
+    <!--   In symbols, the (outer) measure of a set <m>S</m> -->
+    <!--   <m>\left(\lambda_o \left(S\right)\right)</m> is given by -->
+
+    <!--   <me>\lambda_o(S)=\inf_{S\subset \bigcup^{\infty}_{n=1}{(a_n,\ b_n)}} \left(\sum^{\infty }_{n=1}{\left(b_n-a_n\right)}\right) </me>  -->
+
+
+    <!-- </p> -->
+
+    <p>
+      In Lebesgue<rsq/>s scheme there is always the possibility that after
+      rearranging our rectangles the measure of the base of a region might
+      be zero.  <xref ref="FIGURELebegInt1" ></xref> shows two ways that
+      can happen but there are many others. In particular, <xref
+      ref="THEOREMMeasureZero" ></xref> shows that it is possible for an
+      infinite set to have measure zero.  This has repurcussions for the
+      integral of Dirichlet<rsq/>s function,
+
+      <me> 
+        D(x)=
+        \begin{cases}
+        0, \amp \text{ if }  x \text{ is irrational}\\
+        1, \amp \text{ if }  x \text{ is rational}
+        \end{cases}
+      </me>
+
+      which we will explore next. 
+    </p>
+    <p>
+      For our later convenience we define the following
+      notations. 
+      <ul>
+        <li>
+          Let <m>\cal{I}</m> represent the set of irrational
+          numbers in the interval <m>[0,1]</m>.
+        </li>
+        <li>
+          Let <m>\cal{Q}</m> be the set of rational numbers in the same interval. 
+        </li>
+      </ul>   
+    </p>
+
+    <p>
+      Since <m>D(x)</m> takes on only two values, <m>0</m> and <m>1</m>,
+      we need only partition the <m>y-</m>axis in two places, <m>y=0</m>
+      and <m>y=1</m>. Gathering all of the rectangles together in the same way we did  above  we see that
+      <men xml:id="EQUATIONDirichFunc">
+        \int_0^1D(x)\dx{x} = 0\cdot{} \Lambda \left( \cal{I}\right){}+ 1\cdot
+        \Lambda\left( \cal{Q}\right) .
+      </men>
+    </p>
+    <problem>
+      <title>
+        The Lebesgue Integral of Dirichlet<rsq/>s Function 
+      </title>
+
+      <idx><h>Problems</h><h>Dirichlet<rsq/>s Function</h><h>Lebesgue integral of</h></idx>
+      <idx><h>Dirichlet<rsq/>s Function</h><h>Lebesgue integral of</h></idx>
+
+
+      <p>
+        Use <xref ref="THEOREMMeasureZero" ></xref> and <xref
+        ref="EQUATIONDirichFunc" >equation</xref> to show that
+        <me>
+          \int_0^1D(x)\dx{x} = 0
+          </me>.
+      </p>
+
+    </problem>
+
+
+    <!--   it is possible that   Part (b) of <xref ref="PROBLEMOuterMeasure1" ></xref> indicates that any finite set of points  Given the result of <xref ref="THEOREMMeasureZero"></xref>, any -->
+    <!--   countable set would have Lebesgue measure zero.  Since the -->
+    <!--   rational numbers are countably infinite, then they have measure -->
+    <!--   zero.  We won't get into the details of a Lebesgue integral, but -->
+    <!--   it should not be surprising that if two (Lebesgue integrable) -->
+    <!--   functions, <m>f</m> and <m>g</m>, differ from each other on set of -->
+    <!--   measure zero, then they should have the same value for their -->
+    <!--   Lebesgue integrals.  Since the <xref ref="PROBLEMDirichletCountrExamp" text="custom">Dirichlet function</xref> differs from -->
+    <!--   the constantly one function on a set of measure zero (namely -->
+    <!--   <m>\QQ</m>), then it should be Lebesgue integrable (as a -->
+    <!--   constant function should be) and its integral would be -->
+
+
+    <!--   <me>\int^b_{x=a}{f\left(x\right)d\lambda_o =\left(b-a\right)}</me>  -->
+
+
+    <!-- </p> -->
+
+
+
+    <!-- <p> -->
+
+    <!--   You may have noticed that we used the term outer measure before. -->
+    <!--   For a measurable set, its measure is this outer measure.  However, -->
+    <!--   there are examples of non<ndash/>measurable sets.  Any set would have an -->
+    <!--   outer measure, but assigning this as the measure of one of these -->
+    <!--   non<ndash/>measurable sets results in a number of contradictions on how a -->
+    <!--   measure should behave.  -->
+
+
+
+
+    <!-- <corollary xml:id="cor_Q-MeasureZero"> -->
+    <!--   <statement> -->
+    <!--     <p> -->
+    <!--       Let <m>\eps>0</m> be given.  There is a collection of -->
+    <!--       intervals in <m>\RR</m>, <m>I_n=[a_n,b_n]</m> such that -->
+    <!--       <me> -->
+    <!--         \QQ \subset \bigcup_{n=1}^\infty I_n -->
+    <!--       </me> -->
+    <!--       and -->
+    <!--       <me> -->
+    <!--         \sum_{n=1}^\infty(b_n-a_n)\lt \eps -->
+    <!--         </me>. -->
+    <!--       </p> -->
+    <!--     </statement> -->
+    <!--   </corollary> -->
+
+    <!--     <problem> -->
+    <!--       <idx><h><m>\QQ</m></h><h>has measure zero in <m>\RR</m></h></idx> -->
+    <!--       <idx><h>measure zero</h><h><m>\QQ</m> has measure zero in <m>\RR</m></h></idx> -->
+    <!--       <statement> -->
+
+    <!--         <p> -->
+    <!--           Prove <xref ref="cor_Q-MeasureZero"></xref>.  -->
+    <!--         </p> -->
+    <!--       </statement> -->
+    <!--       <hint> -->
+    <!--         <p> -->
+    <!--           If we had only finitely many rationals to deal with this -->
+    <!--           would be easy.  Let <m>\left\{r_1, r_2, \ldots, -->
+    <!--           r_k\right\}</m> be these rational numbers and take -->
+    <!--           <m>a_n=r_n-\frac{\eps}{2(k+1)}</m> and -->
+    <!--           <m>b_n=r_n+\frac{\eps}{2(k+1)}</m>.  Then for all -->
+    <!--           <m>n=1,\ldots, k</m> <m>r_n\in[a_n,b_n]</m> and <me> -->
+    <!--           \sum_{n=1}^kb_n-a_n = \sum_{n=1}^k -->
+    <!--           \frac{\eps}{k+1}=\frac{k\eps}{k+1}\lt\eps </me>. -->
+    <!--         </p> -->
+    <!--         <p> -->
+    <!--           The difficulty is, how do we move from the finite to the -->
+    <!--           infinite case?] -->
+    <!--         </p> -->
+    <!--       </hint> -->
+    <!--     </problem> -->
+
+
+  </paragraphs>
 </section>
 
 <section  xml:id="BackToFourier-CantorsTheorem">
@@ -2905,7 +2906,7 @@
     cardinality as <m>T</m> as well by expressing them in binary form.
     Specifically every real number in <m>[0,1]</m> can be written as
     <me>
-    \displaystyle\sum_{j=1}^\infty \frac{a_j}{2^j} =0.a_1a_2a_3\cdots
+      \displaystyle\sum_{j=1}^\infty \frac{a_j}{2^j} =0.a_1a_2a_3\cdots
     </me>
     where <m>a_j\in\left\{0,1\right\}</m>.  We have to account for
     the fact that binary representations such as <m>0.0111\cdots</m>
@@ -3212,57 +3213,57 @@
     We are willing to bet that at this point your head might be
     swimming a bit.  If so, then know that these are the same feelings
     that the mathematical community experienced in the
-    mid<ndash/>twentieth century.  In the past, mathematics was seen
-    as a model of logical certainty.  It is disconcerting to find that
-    there are statements that are <term>undecidable</term>. In fact, Gödel
-    proved in <m>1931</m> that a consistent finite axiom system that
-    contained the axioms of arithmetic would always contain
-    undecidable statements which could neither be proved true nor
-    false with those axioms.  Mathematical knowledge would always be
-    incomplete.
-  </p>
+      mid<ndash/>twentieth century.  In the past, mathematics was seen
+      as a model of logical certainty.  It is disconcerting to find that
+      there are statements that are <term>undecidable</term>. In fact, Gödel
+      proved in <m>1931</m> that a consistent finite axiom system that
+      contained the axioms of arithmetic would always contain
+      undecidable statements which could neither be proved true nor
+      false with those axioms.  Mathematical knowledge would always be
+      incomplete.
+    </p>
 
 
 
-  <p>
-    So by trying to put the foundations of Calculus on solid ground,
-    we have come to a point where we can never obtain mathematical
-    certainty.  Does this mean that we should throw up our hands and
-    concede defeat?  Should we be paralyzed with fear of trying
-    anything?  Certainly not!  As we mentioned before, most
-    mathematicians do well by taking a pragmatic approach. We use the
-    mathematics we know and understand to solve the problems we
-    encounter as best we can.  In fact, it is typically the problems
-    that motivate the mathematics.  It is true that we take chances
-    that don<rsq/>t always pan out, but still we take those chances,
-    often with success.  Even when the successes lead to more
-    questions, as they typically do, tackling those questions usually
-    leads to a deeper understanding.  At the very least, our
-    incomplete understanding means we will always have more questions
-    to answer, more problems to solve.
-  </p>
-  <!-- <aside> -->
-  <!--   <title>Note from Bob</title> <p> I'm not sure how, but it sounds -->
-  <!--   appropriate to mention in the following passage that by -->
-  <!--   essentially ignoring the complexities of axiomatic set theory -->
-  <!--   (but knowing they are there), we are in much the same boat as -->
-  <!--   mathematicians of the 18th century who exploited the infinitely -->
-  <!--   small with great success and a large number of questions to be -->
-  <!--   answered.  That being said, I like the way that this ends the -->
-  <!--   book. -->
-  <!-- </p> -->
-  <!-- <p> -->
+    <p>
+      So by trying to put the foundations of Calculus on solid ground,
+      we have come to a point where we can never obtain mathematical
+      certainty.  Does this mean that we should throw up our hands and
+      concede defeat?  Should we be paralyzed with fear of trying
+      anything?  Certainly not!  As we mentioned before, most
+      mathematicians do well by taking a pragmatic approach. We use the
+      mathematics we know and understand to solve the problems we
+      encounter as best we can.  In fact, it is typically the problems
+      that motivate the mathematics.  It is true that we take chances
+      that don<rsq/>t always pan out, but still we take those chances,
+      often with success.  Even when the successes lead to more
+      questions, as they typically do, tackling those questions usually
+      leads to a deeper understanding.  At the very least, our
+      incomplete understanding means we will always have more questions
+      to answer, more problems to solve.
+    </p>
+    <!-- <aside> -->
+    <!--   <title>Note from Bob</title> <p> I'm not sure how, but it sounds -->
+    <!--   appropriate to mention in the following passage that by -->
+    <!--   essentially ignoring the complexities of axiomatic set theory -->
+    <!--   (but knowing they are there), we are in much the same boat as -->
+    <!--   mathematicians of the 18th century who exploited the infinitely -->
+    <!--   small with great success and a large number of questions to be -->
+    <!--   answered.  That being said, I like the way that this ends the -->
+    <!--   book. -->
+    <!-- </p> -->
+    <!-- <p> -->
 
-  <!--   Any thoughts? -->
+    <!--   Any thoughts? -->
 
-  <!-- </p> -->
-  <!-- </aside> -->
+    <!-- </p> -->
+    <!-- </aside> -->
 
 
-  <p>
-    What else could a mathematician ask for?
-  </p>
-</section>
+    <p>
+      What else could a mathematician ask for?
+    </p>
+  </section>
 
 
 </chapter>

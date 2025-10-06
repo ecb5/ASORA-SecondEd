@@ -4834,13 +4834,85 @@ var ptx_lunr_docs = [
   "body": " Problems intervals are uncountable  sets intervals are uncountable    Let and be two open intervals of real numbers. Show that these two sets have the same cardinality by constructing a one to one onto function between them.    A linear function should do the trick.      Show that any open interval of real numbers has the same cardinality as .    Consider the interval .      Show that and have the same cardinality.    If let correspond to itself. Note that and are both countable.         Show that and have the same cardinality.    "
 },
 {
+  "id": "SUBSECTIONStieltjesInt",
+  "level": "1",
+  "url": "SUBSECTIONStieltjesInt.html",
+  "type": "Section",
+  "number": "12.3",
+  "title": "The Steiltjes Integral",
+  "body": " The Steiltjes Integral  Of particular note is the work of Thomas Jan Stieltjes (1856-1894). While working on the problem of determining the mass distribution of an object given that the moments of all orders of a body are given (called the moment problem) he defined a slight generalization of the Riemann integral which was published in his work Recherches sur les fractions continues (Research on Continued Fractions) in .        Thomas Jan Stieltjes   Portrait of Thomas Stieltjes    You are already acquainted with the underlying idea of a Stieltjes integral. You just don t know it by this name. Consider for example, . We recognize that the computed value of formula will be the same as the computed value of integral if . In both formula and formula    we can think of the differential as representing the width (or measure ) of the infinitely thin rectangles whose areas are to be summed. But it is clear that . There must be some relationship between the two differentials that adjusts for the change in variables.  Since clearly . It is this relation between the differentials that keeps the integrals equal.                                    This relation is visualized geometrically in and where the interval is partitioned into subintervals of length and of length , respectively.     Interpreting geometrically.   The interval from 0 to 2, partitioned uniformly into subintervals of length dx.     Re interpreting . These intervals are all the same length, , despite appearances.   The interval from 0 to 2, partitioned into subintervals of length du, where du is longer closer to 2.      Strictly speaking, the intervals in are all the same length (since they are all of length ) just as in . We ve drawn them with increasing lengths to emphasize that we are measuring the distance of a point from the origin in two distinct ways.  This is a bizarre idea so we will proceed slowly.  Notice that the (absolute value of the) coordinate of a point on the line gives the distance from the origin to the point. The usual way to measure the length between arbitrary points on the real line is to take the absolute value of the difference of their coordinates. Thus between and the length is . Similarly the length between and is . As long as we work with the coordinate system this is fine but if we want to move between the coordinates and the coordinates we must use the relation to adjust appropriately between and . That is what depicts. We ve drawn the intervals in the coordinates, but we ve labeled them with coordinates. That s why they don t appear to be the same length.   Is This Rigorous?  No, obviously it is not and we won t pretend that it is. In particular we haven t even stated a definition for the differentials or .  As we observed in Abraham Robinson built a rigorous theory of differentials in his book Non Standard Analysis  . But we have relied on the older limit theory so nothing we do with differentials can be considered rigorous. You should think of the use of differentials as an aid to intuition, as a useful way of thinking . But to be considered thoroughly rigorous any insight gained from the use of differentials must be justified either using the theory of limits or Robinson s Non Standard Analysis.   Just as we replaced the word size with cardinality when working with infinite sets we replace the word length with measure in this context. The word length has too many associations that can trip us up if we re not careful. So the measures of subintervals in our partition are being generated in different ways. When we work in the coordinate system the length of the interval at is given by . The function is our measure function.   The Stieltjes Integral   Suppose is a monotonically increasing function on an interval then is called the Stieltjes Integral .    Because gives the simplest possible version of the Stieltjes Integral it is easy to get the impression that it is equivalent to integration by substitution and nothing more. But Stieltjes original efforts were a little more general than that. He was working on the moment problem we described at the beginning of this section. His integral allowed him to address that problem more simply than the Riemann integral would allow. The Stieltjes Integral is also useful in probability and physics, in places where has jump discontinuities, and is generalizable to a functional analysis setting where the points are actually functions. But all of this is well beyond the scope of this text.  We focused on the notion of the measure of a set as distinct from the length of an interval because the measure of a set is the foundational idea that we will need to introduce our next topic, the Lebesgue Integral .            "
+},
+{
+  "id": "FIGUREStieltjes",
+  "level": "2",
+  "url": "SUBSECTIONStieltjesInt.html#FIGUREStieltjes",
+  "type": "Figure",
+  "number": "12.3.1",
+  "title": "",
+  "body": " Thomas Jan Stieltjes   Portrait of Thomas Stieltjes   "
+},
+{
+  "id": "FIGUREStieltjesDX",
+  "level": "2",
+  "url": "SUBSECTIONStieltjesInt.html#FIGUREStieltjesDX",
+  "type": "Figure",
+  "number": "12.3.2",
+  "title": "",
+  "body": " Interpreting geometrically.   The interval from 0 to 2, partitioned uniformly into subintervals of length dx.   "
+},
+{
+  "id": "FIGUREStieltjesDY",
+  "level": "2",
+  "url": "SUBSECTIONStieltjesInt.html#FIGUREStieltjesDY",
+  "type": "Figure",
+  "number": "12.3.3",
+  "title": "",
+  "body": " Re interpreting . These intervals are all the same length, , despite appearances.   The interval from 0 to 2, partitioned into subintervals of length du, where du is longer closer to 2.   "
+},
+{
+  "id": "SUBSECTIONStieltjesInt-12",
+  "level": "2",
+  "url": "SUBSECTIONStieltjesInt.html#SUBSECTIONStieltjesInt-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "measure "
+},
+{
+  "id": "DEFINITIONStieljesIntegral",
+  "level": "2",
+  "url": "SUBSECTIONStieltjesInt.html#DEFINITIONStieljesIntegral",
+  "type": "Definition",
+  "number": "12.3.4",
+  "title": "The Stieltjes Integral.",
+  "body": " The Stieltjes Integral   Suppose is a monotonically increasing function on an interval then is called the Stieltjes Integral .   "
+},
+{
+  "id": "SUBSECTIONStieltjesInt-14",
+  "level": "2",
+  "url": "SUBSECTIONStieltjesInt.html#SUBSECTIONStieltjesInt-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Stieltjes Integral integration by substitution Stieltjes Integral "
+},
+{
+  "id": "SUBSECTIONStieltjesInt-15",
+  "level": "2",
+  "url": "SUBSECTIONStieltjesInt.html#SUBSECTIONStieltjesInt-15",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "measure measure Lebesgue Integral "
+},
+{
   "id": "SECTIONLebesgMeas",
   "level": "1",
   "url": "SECTIONLebesgMeas.html",
   "type": "Section",
-  "number": "12.3",
+  "number": "12.4",
   "title": "Henri Lebesgue: Measure and Integration",
-  "body": " Henri Lebesgue: Measure and Integration   Measure, Outer Measure, and Lesbesgue Measure  In our side comment, we noted that the mental image evoked by the word size isn t really appropriate when discussing infinite sets because two sets can have the same cardinality even though the first completely contains the second, with some left over. For example contains all of , and all of the negative integers as well.  We have a similar problem with the concept of length. Two intervals can have the same length even as one completely contains the other, with some left over. For example, contains all of the points in in addition to and . Moreover length is only applicable to intervals which are a very specific kind of set. We will need to be able to compute the length of more general sets. To avoid confusion we need to use a word other than length .  Historically, the word that has been chosen is measure . If is a set of real numbers then denotes the measure of .   The Definition of a Measure    is a measure on the real numbers if the following statements are true.   If is an interval of length then . (We include intervals with the same left and right endpoint: ).    If is a sequence of sets in then with equality when are disjoint.     is translation invariant. More precisely, if is a subset of , is any real number, and then ( is said to be shift invariant , meaning that if you shift every element of by some amount the measure of the set is unchanged.)       The purpose of the first and third statements should be clear. Since we are looking to generalize the concept of length the measure of an interval should be its length. For example, , and if  ,  The second statement is the Triangle Inequalty dressed up in the language of sets and measures.  The conditions given in are modeled on properties of lengths (of intervals) but if that s all we are interested in there is no need to make this definition. These properties are easily proven if is length and the only sets we measure are intervals. This definition is here because we want measure other kinds of sets in . For example using this definition we can compute , and . What would you guess each of these will be?  Notice that does not require that be unique. In fact many measure functions have been, and can be defined on , but for our purposes we only need to touch lightly on one of them, the Lebesgue measure , first introduced by Henri Lebesgue (1875-1941) in his doctoral dissertation Intégrale, longueur, aire (Integral, length, area) . By touch lightly we mean that we will only actually define the so calle outer measure from which Lebegue s measure follows. That will be enough for our purposes.   Henri Lebesgue  Portraits Lebesgue  Lebesgue, Henri portrait of   Portrait of Henri Lebesgue                                                                                                                                                                                                                                        To begin we will need the concept of an open cover a set.   Open Cover   Let be any set in , and let be the union of a collection of open intervals. Then is called an open cover of if and only if . (Our definition specifies that the collection of open intervals be countably infinite, but a cover is allowed to be a finite collection as well.)    Loosely speaking, and open cover of a set is a collection of open intervals which cover  (hence the name). Obviously every open interval is an open cover of itself.   Problems open covers   Construct two distinct open covers of each of the following sets. (There is more than one correct answer.)     The empty set: .                                         Lebesgue s Outer Measure   Let be a set and let be an open cover of . The outer measure of is given by where the sum is over all possible open covers of .     Problems outer measure   Compute the outer measure of each of the following sets.      where .       .                               That we called and outer measure suggests that there might be something called an inner measure and indeed there is. It is definition is given in .   Lebegue s Inner Measure   Let be a set, and let be its complement as in . The the inner measure of is given by .    A couple of observations regarding this notation will be helpful here.   Since and both represent numbers the first subtraction in equation is just ordinary subtraction.    The expression normally means the interval from to which means that the points in the interval are ordered, but we are abusing our notation a bit by thinking of it simply as an unordered set. In that case the expression represents set deletion rather than ordinary subtraction. It represents the set of points between and (inclusive) with the points in deleted.     The names of the inner and outer measures are descriptive. To compute we consider a set of numbers generated by a collection of sets which contain . To compute we consider a set of numbers generated by a collection of sets which are contained within . When these are the same we have the Lebesgue Measure .   Lebesgue Measure   Given a set if then their common value is the Lebesgue measure of , denoted .    Because the Lebesgue Measure depends on the notion of an infimum, the possibility of an non measureable set exists. The first non measurable set was described by Giuseppe Vitali (1875-1932) in . Creating such a set requires the use of something called the Axiom of Choice and delves deeply into a careful study of the theory of sets. We will see how complicated sets can be in the next section.   Giuseppe Vitali  Portraits Vitali  Vitali, Giuseppe portrait of    Portrait of Giuseppe Vitali    For the remainder of this section we will only be discussing and using the Outer Measure . This will be enough to give you a good intuitive feel for the Lebesgue Integral which we define below. We have included the definitions of Inner Measure and Lebesgue Measure for completeness.       You saw in parts (a) and (b) of that finite sets have outer measure equal to zero. So do some infinite sets.   measure zero  zero measure measure zero   Let be countably infinite set of real numbers. Let be given. There is a collection of open intervals with and   Such a set is said to have measure zero .     Problems measure zero    Observe that does not say that anything is equal to zero. Explain how we can still conclude that the set has measure zero .      Prove .    Consider the interval .]       The Lesbegue Integral  A primary objective of this text is to convey to you, the student, an appreciation for, and an understanding of, the need for rigor. That objective remains in force. However, in this section we are at the edge of very deep mathematical waters. Until we start the next section we will only be wading in the shallows. We will thus relax our relentless emphasis on rigor for now.  For the rest of this section we will set rigor to the side and instead appeal to your intuition by the use of sketches. We will also reason by analogy rather than precisely (e.g., using ) and .  In addition, for the remainder of this section we will assume that all of the functions we will consider are positive so that we can safely engage your strong intuitive understanding of area. We do this because our goal here is only to give you a sense of how Lesbegue broadened Cauchy s definition of the integral. In particular we will not develop Lebesgue s integral in detail. Should you desire a deeper understanding than you ll get here a second course in Real Analysis is highly recommended.   Recall from that the Dirichlet Function  is not Riemann (Cauchy, Darboux) integrable. Dirichlet invented his function as an example of a non integrable function. For our purposes it has no importance beyond that. However the existence of non (Riemann)integrable functions suggests the question: Can the integral be defined in such a way as to capture all of the intuitive features of (Riemann) integration known to th century mathematicians and which also allows us to integrate something as seemingly bizarre as the Dirichlet Function?  The answer, of course, is yes. Otherwise we wouldn t have asked. Lebesgue defined such an integral at he turn of the twentieth century.  Speaking very loosely, if we want to compute where using the Riemann (Cauchy) integral we partition the axis into adjacent intervals with width and then construct (infinitesimal) rectangles with area from each differential. Summing these areas computing  provides the value of the definite integral.           Lebesgue s idea was to find all rectangles with a common height first, gather them together, and sum those areas. In letter to a colleague he described his process as follows:    I have to pay a certain sum, which I have collected in my pocket. I take the bills and coins out of my pocket and give them to the creditor in the order I find them until I have reached the total sum. This is the Riemann integral. But I can proceed differently. After I have taken all the money out of my pocket I order the bills and coins according to identical values and then I pay the several heaps one after the other to the creditor. This is my integral.            To see how this worked suppose we want to integrate from to as seen in below.   In Lebesgue s integral we find the area of each colored region first. Notice that there are regions, including the two very thin red regions and three regions with zero height located at , , and .      In a Riemann integral we start at , compute the first blue area, add to that the first green area, and so on, until we reach where we add in the last blue area. Notice that area of the first blue rectangle is the height of multiplied by the measure of interval on the axis which corresponds to the interval on the axis. We ll designate that area with . Similarly represents the measure of the base of the first green rectangle, and so on for all regions. (Don t forget the thin red regions. We ll get back to those in a bit.)  But nothing says we must add the areas in this order. This is just a convention. Lebesgue s ideas was to compute the area of all of the blue regions together, then all of the green regions, then the orange, and so on. By rearranging the sum this way the total are of the blue regions is, or . The expression then represents the total measure of the bases on the axis of the blue regions which we designate . is the Lebesgue measure of the base of all of the blue regions. Similarly the Lebesgue measure of the dark green, orange, light green, purple, yellow, and red regions are , , , , , and respectively.  Our integral is thus   But wait a minute! What about the two thin red regions and the ones at , , and ? Why did we leave them out?  It should be clear that the measure of these regions must be zero. Do you see why? The only places on our graph where are at the two maxima, and the base of any rectangle constructed there will have measure zero, . This is clear from the sketch. Moreover in light of part (a) of . A single point on the axis has measure zero. Thus the area of those regions will be . Those points in the domain of our function contribute nothing to the integral.  The same is true of the rectangles constructed at , , and . The measures of their bases will be zero. (Their heights will also be zero but that is irrelevant.)                     In Lebesgue s scheme there is always the possibility that after rearranging our rectangles the measure of the base of a region might be zero. shows two ways that can happen but there are many others. In particular, shows that it is possible for an infinite set to have measure zero. This has repurcussions for the integral of Dirichlet s function, which we will explore next.  For our later convenience we define the following notations.  Let represent the set of irrational numbers in the interval .  Let be the set of rational numbers in the same interval.    Since takes on only two values, and , we need only partition the axis in two places, and . Gathering all of the rectangles together in the same way we did above we see that    The Lebesgue Integral of Dirichlet s Function  Problems Dirichlet s Function Lebesgue integral of  Dirichlet s Function Lebesgue integral of  Use and equation to show that .                                                                "
+  "body": " Henri Lebesgue: Measure and Integration   Measure, Outer Measure, and Lesbesgue Measure  In our side comment, we noted that the mental image evoked by the word size isn t really appropriate when discussing infinite sets because two sets can have the same cardinality even though the first completely contains the second, with some left over. For example contains all of , and all of the negative integers as well.  We have a similar problem with the concept of length. Two intervals can have the same length even as one completely contains the other, with some left over. For example, contains all of the points in in addition to and . Moreover length is only applicable to intervals which are a very specific kind of set. We will need to be able to compute the length of more general sets. To avoid confusion we need to use a word other than length .  Historically, the word that has been chosen is measure . If is a set of real numbers then denotes the measure of .   The Definition of a Measure    is a measure on the real numbers if the following statements are true.   If is an interval of length then . (We include intervals with the same left and right endpoint: ).    If is a sequence of sets in then with equality when are disjoint.     is translation invariant. More precisely, if is a subset of , is any real number, and then ( is said to be shift invariant , meaning that if you shift every element of by some amount the measure of the set is unchanged.)       The purpose of the first and third statements should be clear. Since we are looking to generalize the concept of length the measure of an interval should be its length. For example, , and if  ,  The second statement is the Triangle Inequalty dressed up in the language of sets and measures.  The conditions given in are modeled on properties of lengths (of intervals) but if that s all we are interested in there is no need to make this definition. These properties are easily proven if is length and the only sets we measure are intervals. This definition is here because we want measure other kinds of sets in . For example using this definition we can compute , and . What would you guess each of these will be?  Notice that does not require that be unique. In fact many measure functions have been, and can be defined on , but for our purposes we only need to touch lightly on one of them, the Lebesgue measure , first introduced by Henri Lebesgue (1875-1941) in his doctoral dissertation Intégrale, longueur, aire (Integral, length, area) . By touch lightly we mean that we will only actually define the so calle outer measure from which Lebegue s measure follows. That will be enough for our purposes.   Henri Lebesgue  Portraits Lebesgue  Lebesgue, Henri portrait of   Portrait of Henri Lebesgue    To begin we will need the concept of an open cover a set.   Open Cover   Let be any set in , and let be the union of a collection of open intervals. Then is called an open cover of if and only if . (Our definition specifies that the collection of open intervals be countably infinite, but a cover is allowed to be a finite collection as well.)    Loosely speaking, and open cover of a set is a collection of open intervals which cover  (hence the name). Obviously every open interval is an open cover of itself.   Problems open covers   Construct two distinct open covers of each of the following sets. (There is more than one correct answer.)     The empty set: .                                         Lebesgue s Outer Measure   Let be a set and let be an open cover of . The outer measure of is given by where the sum is over all possible open covers of .     Problems outer measure   Compute the outer measure of each of the following sets.      where .       .                               That we called and outer measure suggests that there might be something called an inner measure and indeed there is. It is definition is given in .   Lebegue s Inner Measure   Let be a set, and let be its complement as in . The the inner measure of is given by .    A couple of observations regarding this notation will be helpful here.   Since and both represent numbers the first subtraction in equation is just ordinary subtraction.    The expression normally means the interval from to which means that the points in the interval are ordered, but we are abusing our notation a bit by thinking of it simply as an unordered set. In that case the expression represents set deletion rather than ordinary subtraction. It represents the set of points between and (inclusive) with the points in deleted.     The names of the inner and outer measures are descriptive. To compute we consider a set of numbers generated by a collection of sets which contain . To compute we consider a set of numbers generated by a collection of sets which are contained within . When these are the same we have the Lebesgue Measure .   Lebesgue Measure   Given a set if then their common value is the Lebesgue measure of , denoted .    Because the Lebesgue Measure depends on the notion of an infimum, the possibility of an non measureable set exists. The first non measurable set was described by Giuseppe Vitali (1875-1932) in . Creating such a set requires the use of something called the Axiom of Choice and delves deeply into a careful study of the theory of sets. We will see how complicated sets can be in the next section.   Giuseppe Vitali  Portraits Vitali  Vitali, Giuseppe portrait of    Portrait of Giuseppe Vitali    For the remainder of this section we will only be discussing and using the Outer Measure . This will be enough to give you a good intuitive feel for the Lebesgue Integral which we define below. We have included the definitions of Inner Measure and Lebesgue Measure for completeness.       You saw in parts (a) and (b) of that finite sets have outer measure equal to zero. So do some infinite sets.   measure zero  zero measure measure zero   Let be countably infinite set of real numbers. Let be given. There is a collection of open intervals with and   Such a set is said to have measure zero .     Problems measure zero    Observe that does not say that anything is equal to zero. Explain how we can still conclude that the set has measure zero .      Prove .    Consider the interval .]       The Lesbegue Integral  A primary objective of this text is to convey to you, the student, an appreciation for, and an understanding of, the need for rigor. That objective remains in force. However, in this section we are at the edge of very deep mathematical waters. Until we start the next section we will only be wading in the shallows. We will thus relax our relentless emphasis on rigor for now.  For the rest of this section we will set rigor to the side and instead appeal to your intuition by the use of sketches. We will also reason by analogy rather than precisely (e.g., using ) and .  In addition, for the remainder of this section we will assume that all of the functions we will consider are positive so that we can safely engage your strong intuitive understanding of area. We do this because our goal here is only to give you a sense of how Lesbegue broadened Cauchy s definition of the integral. In particular we will not develop Lebesgue s integral in detail. Should you desire a deeper understanding than you ll get here a second course in Real Analysis is highly recommended.   Recall from that the Dirichlet Function  is not Riemann (Cauchy, Darboux) integrable. Dirichlet invented his function as an example of a non integrable function. For our purposes it has no importance beyond that. However the existence of non (Riemann)integrable functions suggests the question: Can the integral be defined in such a way as to capture all of the intuitive features of (Riemann) integration known to th century mathematicians and which also allows us to integrate something as seemingly bizarre as the Dirichlet Function?  The answer, of course, is yes. Otherwise we wouldn t have asked. Lebesgue defined such an integral at he turn of the twentieth century.  Speaking very loosely, if we want to compute where using the Riemann (Cauchy) integral we partition the axis into adjacent intervals with width and then construct (infinitesimal) rectangles with area from each differential. Summing these areas computing  provides the value of the definite integral.           Lebesgue s idea was to find all rectangles with a common height first, gather them together, and sum those areas. In letter to a colleague he described his process as follows:    I have to pay a certain sum, which I have collected in my pocket. I take the bills and coins out of my pocket and give them to the creditor in the order I find them until I have reached the total sum. This is the Riemann integral. But I can proceed differently. After I have taken all the money out of my pocket I order the bills and coins according to identical values and then I pay the several heaps one after the other to the creditor. This is my integral.            To see how this worked suppose we want to integrate from to as seen in below.   In Lebesgue s integral we find the area of each colored region first. Notice that there are regions, including the two very thin red regions and three regions with zero height located at , , and .      In a Riemann integral we start at , compute the first blue area, add to that the first green area, and so on, until we reach where we add in the last blue area. Notice that area of the first blue rectangle is the height of multiplied by the measure of interval on the axis which corresponds to the interval on the axis. We ll designate that area with . Similarly represents the measure of the base of the first green rectangle, and so on for all regions. (Don t forget the thin red regions. We ll get back to those in a bit.)  But nothing says we must add the areas in this order. This is just a convention. Lebesgue s ideas was to compute the area of all of the blue regions together, then all of the green regions, then the orange, and so on. By rearranging the sum this way the total are of the blue regions is, or . The expression then represents the total measure of the bases on the axis of the blue regions which we designate . is the Lebesgue measure of the base of all of the blue regions. Similarly the Lebesgue measure of the dark green, orange, light green, purple, yellow, and red regions are , , , , , and respectively.  Our integral is thus   But wait a minute! What about the two thin red regions and the ones at , , and ? Why did we leave them out?  It should be clear that the measure of these regions must be zero. Do you see why? The only places on our graph where are at the two maxima, and the base of any rectangle constructed there will have measure zero, . This is clear from the sketch. Moreover in light of part (a) of . A single point on the axis has measure zero. Thus the area of those regions will be . Those points in the domain of our function contribute nothing to the integral.  The same is true of the rectangles constructed at , , and . The measures of their bases will be zero. (Their heights will also be zero but that is irrelevant.)                     In Lebesgue s scheme there is always the possibility that after rearranging our rectangles the measure of the base of a region might be zero. shows two ways that can happen but there are many others. In particular, shows that it is possible for an infinite set to have measure zero. This has repurcussions for the integral of Dirichlet s function, which we will explore next.  For our later convenience we define the following notations.  Let represent the set of irrational numbers in the interval .  Let be the set of rational numbers in the same interval.    Since takes on only two values, and , we need only partition the axis in two places, and . Gathering all of the rectangles together in the same way we did above we see that    The Lebesgue Integral of Dirichlet s Function  Problems Dirichlet s Function Lebesgue integral of  Dirichlet s Function Lebesgue integral of  Use and equation to show that .                                                                "
 },
 {
   "id": "SECTIONLebesgMeas-2-4",
@@ -4856,7 +4928,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SECTIONLebesgMeas.html#DEFINITIONMeasureFunction",
   "type": "Definition",
-  "number": "12.3.1",
+  "number": "12.4.1",
   "title": "The Definition of a Measure.",
   "body": " The Definition of a Measure    is a measure on the real numbers if the following statements are true.   If is an interval of length then . (We include intervals with the same left and right endpoint: ).    If is a sequence of sets in then with equality when are disjoint.     is translation invariant. More precisely, if is a subset of , is any real number, and then ( is said to be shift invariant , meaning that if you shift every element of by some amount the measure of the set is unchanged.)      "
 },
@@ -4883,7 +4955,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SECTIONLebesgMeas.html#FIGURELebesgue",
   "type": "Figure",
-  "number": "12.3.2",
+  "number": "12.4.2",
   "title": "",
   "body": " Henri Lebesgue  Portraits Lebesgue  Lebesgue, Henri portrait of   Portrait of Henri Lebesgue   "
 },
@@ -4901,7 +4973,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SECTIONLebesgMeas.html#DEFINITIONOpenCover",
   "type": "Definition",
-  "number": "12.3.3",
+  "number": "12.4.3",
   "title": "Open Cover.",
   "body": " Open Cover   Let be any set in , and let be the union of a collection of open intervals. Then is called an open cover of if and only if . (Our definition specifies that the collection of open intervals be countably infinite, but a cover is allowed to be a finite collection as well.)   "
 },
@@ -4919,7 +4991,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SECTIONLebesgMeas.html#PROBLEMOpenCovers",
   "type": "Problem",
-  "number": "12.3.4",
+  "number": "12.4.4",
   "title": "",
   "body": " Problems open covers   Construct two distinct open covers of each of the following sets. (There is more than one correct answer.)     The empty set: .                                       "
 },
@@ -4928,7 +5000,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SECTIONLebesgMeas.html#DEFINITIONOuterMeasure",
   "type": "Definition",
-  "number": "12.3.5",
+  "number": "12.4.5",
   "title": "Lebesgue’s Outer Measure.",
   "body": " Lebesgue s Outer Measure   Let be a set and let be an open cover of . The outer measure of is given by where the sum is over all possible open covers of .   "
 },
@@ -4937,7 +5009,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SECTIONLebesgMeas.html#PROBLEMOuterMeasure1",
   "type": "Problem",
-  "number": "12.3.6",
+  "number": "12.4.6",
   "title": "",
   "body": " Problems outer measure   Compute the outer measure of each of the following sets.      where .       .                              "
 },
@@ -4955,7 +5027,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SECTIONLebesgMeas.html#DEFINITIONInnerMeasure",
   "type": "Definition",
-  "number": "12.3.7",
+  "number": "12.4.7",
   "title": "Lebegue’s Inner Measure.",
   "body": " Lebegue s Inner Measure   Let be a set, and let be its complement as in . The the inner measure of is given by .   "
 },
@@ -4973,7 +5045,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SECTIONLebesgMeas.html#DEFINITIONLebesgueMeasure",
   "type": "Definition",
-  "number": "12.3.8",
+  "number": "12.4.8",
   "title": "Lebesgue Measure.",
   "body": " Lebesgue Measure   Given a set if then their common value is the Lebesgue measure of , denoted .   "
 },
@@ -4991,7 +5063,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SECTIONLebesgMeas.html#FIGUREGiuseppeVitali",
   "type": "Figure",
-  "number": "12.3.9",
+  "number": "12.4.9",
   "title": "",
   "body": " Giuseppe Vitali  Portraits Vitali  Vitali, Giuseppe portrait of    Portrait of Giuseppe Vitali   "
 },
@@ -5009,7 +5081,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SECTIONLebesgMeas.html#THEOREMMeasureZero",
   "type": "Theorem",
-  "number": "12.3.10",
+  "number": "12.4.10",
   "title": "",
   "body": " measure zero  zero measure measure zero   Let be countably infinite set of real numbers. Let be given. There is a collection of open intervals with and   Such a set is said to have measure zero .   "
 },
@@ -5018,7 +5090,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SECTIONLebesgMeas.html#SECTIONLebesgMeas-2-27",
   "type": "Problem",
-  "number": "12.3.11",
+  "number": "12.4.11",
   "title": "",
   "body": " Problems measure zero    Observe that does not say that anything is equal to zero. Explain how we can still conclude that the set has measure zero .      Prove .    Consider the interval .]    "
 },
@@ -5036,7 +5108,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SECTIONLebesgMeas.html#FIGURELebegInt1",
   "type": "Figure",
-  "number": "12.3.12",
+  "number": "12.4.12",
   "title": "",
   "body": " In Lebesgue s integral we find the area of each colored region first. Notice that there are regions, including the two very thin red regions and three regions with zero height located at , , and .     "
 },
@@ -5045,7 +5117,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SECTIONLebesgMeas.html#SECTIONLebesgMeas-3-21",
   "type": "Problem",
-  "number": "12.3.13",
+  "number": "12.4.13",
   "title": "The Lebesgue Integral of Dirichlet’s Function.",
   "body": " The Lebesgue Integral of Dirichlet s Function  Problems Dirichlet s Function Lebesgue integral of  Dirichlet s Function Lebesgue integral of  Use and equation to show that .  "
 },
@@ -5054,7 +5126,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "BackToFourier-CantorsTheorem.html",
   "type": "Section",
-  "number": "12.4",
+  "number": "12.5",
   "title": "Cantor’s Theorem and Its Consequences",
   "body": " Cantor s Theorem and Its Consequences  After employing his ideas on infinite sets of real numbers to study trigonometric series, Cantor gravitated toward applying his ideas to sets in general. For example, once he showed that there were two types of infinity (countable and uncountable), the following question was natural, Do all uncountable sets have the same cardinality?   Just like not all non dogs are cats, there is, a priori , no reason to believe that all uncountable sets should be the same size. However constructing uncountable sets of different sizes is not as easy as it sounds.    Dedekind, Richard    Cantor, Georg  unit interval and unit square have equal cardinalty  For example, what about the line segment represented by the interval and the square represented by the set . Certainly the two dimensional square must be a larger infinite set than the one dimensional line segment. Remarkably, Cantor showed that these two sets were the same cardinality. In his 1877 correspondence of this result to his friend and fellow mathematician, Richard Dedekind , (1831 1915) even Cantor remarked, I see it, but I don t believe it!    Richard Dedekind  Dedekind, Richard portrait of  Portraits Dedekind   Portrait of Richard Dedekind    The following argument illustrates the idea of Cantor s proof. Cantor devised the following function . First, we represent the coordinates of any point by their decimal representations and . Even terminating decimals can be written this way as we could write . We can then define by .  This relatively simple idea has some technical difficulties in it related to the following result.   Problems Geometric series  series Geometric series  converges to   Consider the sequence . Determine that this sequence converges and, in fact, it converges to . This suggests that .    Similarly, we have , etc. To make the decimal representation of a real number in unique, we must make a consistent choice of writing a terminating decimal as one that ends in an infinite string of zeros or an infinite string of nines [with the one exception ]. No matter which choice we make, we could never make this function onto. For example, would have as its pre-image which would be a mix of the two conventions.  Cantor was able to overcome this technicality and demonstrate a one to one correspondence, but rather than go into that we will simply assert that using either convention it is possible to show that the function is one to one. As a result the set has the same cardinality as some which is an uncountable subset of .  That they both have the same cardinality as itself is something we will come back to. But first we ll try construct an uncountable set which does not have the same cardinality as . To address this issue, Cantor proved the following in .   Cantor s Theorem   Cantor, Georg  Cantor s Theorem    Let be any set. Then there is no one to one correspondence between and , the set of all subsets of .    It is clear that can be put into one to one correspondence with a subset of (why?), which means that is at least as large as itself. In the finite case is strictly greater than as the following problem shows. It also demonstrates why is called the power set of .   Problems power set  sets power set  sets cardinality of a power set  cardinality of a power set   Prove: If , then .    Let . Consider the following correspondence between the elements of and the set of all -tuples of yes (Y) or no (N):   How many elements are in      Problems Cantor s Theorem  Cantor, Georg Cantor s Theorem   Remarkably, Cantor s Theorem holds for infinite sets as well.  Prove Cantor s Theorem .    Assume for contradiction, that there is a one to one correspondence . Consider . Since is onto, then there is such that . Is or is     Actually it turns out that and have the same cardinality. This can be seen in a roundabout way using some of the ideas from . Specifically, let be the set of all sequences of zeros or ones.     The half open interval has the same cardinality as and we can show that it has the same cardinality as as well by expressing them in binary form. Specifically every real number in can be written as where . We have to account for the fact that binary representations such as and represent the same real number (say that no representations will end in an infinite string of zeros), then we can see that has the same cardinality as , where is the set of all sequences ending in an infinite string of zeros. It turns out that itself is a countable set.   Problems countable union of finite sets    countable sets countable union of finite sets Let . Show that for each , is finite and use this to conclude that is countably infinite.    The above problems say that , , , and all have the same cardinality. The following two problems show that deleting a countable set from an uncountable set does not change its cardinality.   Problems countably infinite subsets    sets countably infinite subsets Let be an infinite set. Prove that contains a countably infinite subset.     Problems deleting a countable subset from an uncountable set  uncountable sets deleting a countable subset   Suppose is an uncountable set and is countably infinite.        Prove that and have the same cardinality.    Let . Since is an infinite set, then by the previous problem it contains a countably infinite set . Likewise since is infinite it also contains a countably infinite set . Again, since is a countably infinite set then it contains a countably infinite set , etc. For , let be a one to one correspondence and define by .  Show that is one to one and onto.     Cantor, Georg As we indicated before, Cantor s work on infinite sets had a profound impact on mathematics in the beginning of the twentieth century. For example, in examining the proof of Cantor s Theorem, the eminent logician Bertrand Russell (1872 1970) devised his famous paradox in 1901.   Bertrand Russell  Portraits Russell  Russell, Bertrand portrait of   Portrait of Bertrand Russell    Through the work of Cantor and others, sets were becoming a central object of study in mathematics. Mathematical concepts were being reformulated in terms of sets, as we saw in . The idea was that set theory was to be a unifying theme of mathematics but Russell s paradox set the mathematical world on its ear because it showed that the naive understanding of a set as just a collection of objects leads to logical difficulties.   Russell s Paradox  Consider the set of all sets which are not elements of themselves. We call this set and ask, Is Symbolically, this set is .  If , then by definition, . If , then by definition, .   The idea behind Russell s Paradox is essentially the same idea that gave us a contradiction in our proof of Cantor s Theorem .  To have such a contradiction occurring at the most basic level of mathematics was scandalous. It forced a number of mathematicians and logicians to carefully devise the axioms by which sets could be constructed. To be honest, most mathematicians still approach set theory from a naive point of view as the sets we typically deal with fall under the category of what we would call normal sets. In fact, such an approach is officially called Naive Set Theory (as opposed to Axiomatic Set Theory ). However, attempts to put set theory and logic on solid footing led to the modern study of symbolic logic and ultimately the design of computer (machine) logic.   Cantor, Georg Another place where Cantor s work had a profound influence in modern logic comes from something we alluded to before. We showed before that the unit square had the same cardinality as an uncountable subset of . In fact, Cantor showed that the unit square had the same cardinality as itself and was moved to advance the following in .   The Continuum Hypothesis  Continuum Hypothesis original   Every uncountable subset of has the same cardinality as .    Cantor was unable to prove or disprove the Continuum Hypothesis conjecture (along with every other mathematician at the time). In fact, proving or disproving the Continuum Hypothesis, was one of David Hilbert s famous 23 problems which he presented as a challenge for the mathematics community at the International Congress of Mathematicians in .   David Hilbert  Portraits Hilbert  Hilbert, David portrait of   Portrait of Hilbert    Since has the same cardinality as , the Continuum Hypothesis was generalized to the:   The Generalized Continuum Hypothesis  Continuum Hypothesis generalized   Given an infinite set , there is no infinite set which has a cardinality strictly between that of and its power set .    Efforts to prove or disprove were in vain and with good reason. In , the logician Kurt Gödel showed that the Continuum Hypothesis could not be disproved from the Zermelo-Fraenkel Axioms of set theory. In 1963, Paul Cohen (1934 2007) showed that the Continuum Hypothesis could not be proved using the Zermelo-Fraenkel Axioms, either. In other words, the Zermelo-Fraenkel Axioms do not contain enough information to decide the truth of the hypothesis.   The Zermelo-Fraenkel Axioms  One of the formal axiomatic approaches to set theory established by Ernst Zermelo in 1908 and revised by Abraham Fraenkel in 1921.      Kurt Gödel  Portraits Gödel  Gödel, Kurt portrait of   Portrait of Kurt Gödel     Paul Cohen  Portraits Cohen  Cohen, Paul portrait of   Portrait of Paul Cohen      We are willing to bet that at this point your head might be swimming a bit. If so, then know that these are the same feelings that the mathematical community experienced in the mid twentieth century. In the past, mathematics was seen as a model of logical certainty. It is disconcerting to find that there are statements that are undecidable . In fact, Gödel proved in that a consistent finite axiom system that contained the axioms of arithmetic would always contain undecidable statements which could neither be proved true nor false with those axioms. Mathematical knowledge would always be incomplete.  So by trying to put the foundations of Calculus on solid ground, we have come to a point where we can never obtain mathematical certainty. Does this mean that we should throw up our hands and concede defeat? Should we be paralyzed with fear of trying anything? Certainly not! As we mentioned before, most mathematicians do well by taking a pragmatic approach. We use the mathematics we know and understand to solve the problems we encounter as best we can. In fact, it is typically the problems that motivate the mathematics. It is true that we take chances that don t always pan out, but still we take those chances, often with success. Even when the successes lead to more questions, as they typically do, tackling those questions usually leads to a deeper understanding. At the very least, our incomplete understanding means we will always have more questions to answer, more problems to solve.                What else could a mathematician ask for?  "
 },
@@ -5063,7 +5135,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#BackToFourier-CantorsTheorem-5",
   "type": "Figure",
-  "number": "12.4.1",
+  "number": "12.5.1",
   "title": "",
   "body": " Richard Dedekind  Dedekind, Richard portrait of  Portraits Dedekind   Portrait of Richard Dedekind   "
 },
@@ -5072,7 +5144,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#BackToFourier-CantorsTheorem-8",
   "type": "Problem",
-  "number": "12.4.2",
+  "number": "12.5.2",
   "title": "",
   "body": " Problems Geometric series  series Geometric series  converges to   Consider the sequence . Determine that this sequence converges and, in fact, it converges to . This suggests that .   "
 },
@@ -5081,7 +5153,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#thm_CantorsTheorem",
   "type": "Theorem",
-  "number": "12.4.3",
+  "number": "12.5.3",
   "title": "Cantor’s Theorem.",
   "body": " Cantor s Theorem   Cantor, Georg  Cantor s Theorem    Let be any set. Then there is no one to one correspondence between and , the set of all subsets of .   "
 },
@@ -5099,7 +5171,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#prob_PowerSet",
   "type": "Problem",
-  "number": "12.4.4",
+  "number": "12.5.4",
   "title": "",
   "body": " Problems power set  sets power set  sets cardinality of a power set  cardinality of a power set   Prove: If , then .    Let . Consider the following correspondence between the elements of and the set of all -tuples of yes (Y) or no (N):   How many elements are in    "
 },
@@ -5108,7 +5180,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#BackToFourier-CantorsTheorem-15",
   "type": "Problem",
-  "number": "12.4.5",
+  "number": "12.5.5",
   "title": "",
   "body": " Problems Cantor s Theorem  Cantor, Georg Cantor s Theorem   Remarkably, Cantor s Theorem holds for infinite sets as well.  Prove Cantor s Theorem .    Assume for contradiction, that there is a one to one correspondence . Consider . Since is onto, then there is such that . Is or is    "
 },
@@ -5117,7 +5189,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#BackToFourier-CantorsTheorem-18",
   "type": "Problem",
-  "number": "12.4.6",
+  "number": "12.5.6",
   "title": "",
   "body": " Problems countable union of finite sets    countable sets countable union of finite sets Let . Show that for each , is finite and use this to conclude that is countably infinite.   "
 },
@@ -5126,7 +5198,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#BackToFourier-CantorsTheorem-20",
   "type": "Problem",
-  "number": "12.4.7",
+  "number": "12.5.7",
   "title": "",
   "body": " Problems countably infinite subsets    sets countably infinite subsets Let be an infinite set. Prove that contains a countably infinite subset.   "
 },
@@ -5135,7 +5207,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#BackToFourier-CantorsTheorem-21",
   "type": "Problem",
-  "number": "12.4.8",
+  "number": "12.5.8",
   "title": "",
   "body": " Problems deleting a countable subset from an uncountable set  uncountable sets deleting a countable subset   Suppose is an uncountable set and is countably infinite.        Prove that and have the same cardinality.    Let . Since is an infinite set, then by the previous problem it contains a countably infinite set . Likewise since is infinite it also contains a countably infinite set . Again, since is a countably infinite set then it contains a countably infinite set , etc. For , let be a one to one correspondence and define by .  Show that is one to one and onto.   "
 },
@@ -5144,7 +5216,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#FIGURERussellPortrait",
   "type": "Figure",
-  "number": "12.4.9",
+  "number": "12.5.9",
   "title": "",
   "body": " Bertrand Russell  Portraits Russell  Russell, Bertrand portrait of   Portrait of Bertrand Russell   "
 },
@@ -5153,7 +5225,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#RussellParadox",
   "type": "Russell’s Paradox",
-  "number": "12.4.10",
+  "number": "12.5.10",
   "title": "",
   "body": " Russell s Paradox  Consider the set of all sets which are not elements of themselves. We call this set and ask, Is Symbolically, this set is .  If , then by definition, . If , then by definition, .  "
 },
@@ -5171,7 +5243,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#ContinuumHypothesis",
   "type": "Conjecture",
-  "number": "12.4.11",
+  "number": "12.5.11",
   "title": "The Continuum Hypothesis.",
   "body": " The Continuum Hypothesis  Continuum Hypothesis original   Every uncountable subset of has the same cardinality as .   "
 },
@@ -5180,7 +5252,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#FIGUREHilbertPortrait",
   "type": "Figure",
-  "number": "12.4.12",
+  "number": "12.5.12",
   "title": "",
   "body": " David Hilbert  Portraits Hilbert  Hilbert, David portrait of   Portrait of Hilbert   "
 },
@@ -5189,7 +5261,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#GenContHyp",
   "type": "Conjecture",
-  "number": "12.4.13",
+  "number": "12.5.13",
   "title": "The Generalized Continuum Hypothesis.",
   "body": " The Generalized Continuum Hypothesis  Continuum Hypothesis generalized   Given an infinite set , there is no infinite set which has a cardinality strictly between that of and its power set .   "
 },
@@ -5198,7 +5270,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#BackToFourier-CantorsTheorem-36-1-1",
   "type": "Figure",
-  "number": "12.4.14",
+  "number": "12.5.14",
   "title": "",
   "body": " Kurt Gödel  Portraits Gödel  Gödel, Kurt portrait of   Portrait of Kurt Gödel   "
 },
@@ -5207,7 +5279,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "BackToFourier-CantorsTheorem.html#FIGURECohenPortrait",
   "type": "Figure",
-  "number": "12.4.15",
+  "number": "12.5.15",
   "title": "",
   "body": " Paul Cohen  Portraits Cohen  Cohen, Paul portrait of   Portrait of Paul Cohen   "
 },

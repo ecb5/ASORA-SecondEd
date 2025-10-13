@@ -316,7 +316,7 @@
       </statement>
     </problem>
 
-    <problem>
+    <problem xml:id="PROBLEMMonomialsOnUnitInterval">
       <idx><h>Problems</h><h sortby="polynomial"><m>x^n</m> converges pointwise on <m>[0,1]</m></h></idx>
 
       <idx><h>pointwise convergence</h></idx>
@@ -407,41 +407,46 @@
         only pointwise, as illustrated by the following.
       </p>
 
-      <problem>
+      <problem xml:id="PROBLEMPtwConvNoCommute">
         <idx><h>Problems</h><h>pointwise convergence</h></idx>
 
         <idx><h>convergence</h><h>pointwise convergence</h></idx>
         <idx><h>convergence</h><h>uniform convergence</h></idx>
         <idx><h>convergence</h><h>pointwise vs. uniform convergence</h></idx>
-
-        <statement>
+        <introduction>
           <p>
             Consider the sequence of functions <m>\left(f_n\right)</m>
             given by
             <me>
               f_n(x)= \begin{cases}n\amp \text{ if } x\in\left(0,\frac{1}{n}\right)\\ 0\amp \text{ otherwise } \end{cases} 
               </me>.
-              <ol marker="(a)">
-                <li>
-                  <p>
-                    Show that <m>f_n\ptwise 0</m> on <m>[0,1],</m> but
-                    <m>\limit{n}{\infty}{\int_{x=0}^1f_n(x)\dx{
-                    x}\neq\int_{x=0}^10\dx{ x}.}</m>
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    Can the convergence be uniform?  Explain.
-                  </p>
-                </li>
-              </ol>
           </p>
-        </statement>
+        </introduction>
+        <task>
+          <statement>
+
+            <p>
+              Show that <m>f_n\ptwise 0</m> on <m>[0,1],</m> but
+              <me>
+                \limit{n}{\infty}{\left( \int_{x=0}^1f_n(x)\dx{
+                x}\right) \neq\int_{x=0}^10\dx{ x}}
+                </me>.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+
+            <p>
+              Can the convergence be uniform?  Explain.
+            </p>
+          </statement>
+</task>
       </problem>
 
       <p>
-        Applying this result to power series we have the following.
+        Applying the result of <xref ref="PROBLEMPtwConvNoCommute"
+        ></xref> to power series we have the following.
       </p>
 
       <!-- <aside> -->
@@ -1402,18 +1407,24 @@
       <task>
         <statement>
           <p>
-            <m>\displaystyle\sum_{n=1}^\infty\frac{\left(x^n-x^{n-1}\right)}{n^2}</m>
+            <m>
+            \displaystyle
+            \sum_{n=1}^\infty\frac{\left(x^n-x^{n-1}\right)}{n^2}
+            </m>
           </p>
         </statement>
       </task>
     </problem>
 
     <p>
-      Using the Weierstrass-<m>M</m> test, we can prove the following
-      result.
+      Using the Weierstrass<ndash/><m>M</m> test, we can prove the
+      following result.
     </p>
 
     <theorem xml:id="thm_PowerSeriesConvergeUniformly">
+      <title>
+        Power Series Converge Uniformly
+      </title>
 
       <idx><h>power series</h><h>converge uniformly on their interval of convergence</h></idx>
 

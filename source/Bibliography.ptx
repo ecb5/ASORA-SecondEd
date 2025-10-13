@@ -1,5 +1,20 @@
 <references>
   <title>Bibliography</title>
+  <biblio type="raw" xml:id="Gordon_Integrals">
+    Russell Gordon
+    <pubtitle>
+      The integrals of Lebesgue, Denjoy, Perron, and Henstock
+    </pubtitle>
+  </biblio>
+
+  <biblio type="raw" xml:id="Bartle_Riemann_Integral">
+    Robert G. Bartle
+    <pubtitle>Return to the Riemann Integral</pubtitle>.
+    The American Mathematical Monthly, Oct. 1996, Vol. 103, No. 8
+    Taylor \amp{} Francis, Ltd. on behalf of the Mathematical Association of
+    America
+  </biblio>
+
   <biblio type="raw" xml:id="bradley09__cauch_cours">
     Robert E. Bradley and C. Edward Sandifer.
     <pubtitle><foreign>Cauchy<rsq/>s Cours d<rsq/>analyse</foreign>: An Annotated Translation</pubtitle>.

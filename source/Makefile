@@ -26,4 +26,7 @@ deploy: jing
 
 LocalDeploy: *.ptx  Makefile
 	scp -r /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/output/web/* leto:/var/www/html/ASORA
+	# scp -r /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/output/web/knowl leto:/var/www/html/ASORA
+	# scp -r /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/output/web/external leto:/var/www/html/ASORA
+	# scp -r /home/ecb5/Dropbox/Books/MyBooks/ASORA-SecondEdition/output/web/_static leto:/var/www/html/ASORA
 

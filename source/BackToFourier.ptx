@@ -2691,7 +2691,7 @@
 
 <section xml:id="SECTIONLebesgueIntegration">
   <title>
-    Switching Limits and Integration: The Road to Lebesgue Integration
+The Road to Lebesgue Integration
   </title>
   <p>
     <xref ref="th_UniformIntegralConvergence" ></xref> states that if
@@ -2730,7 +2730,7 @@
     </p>
         <figure  xml:id="FIGUREPolynomGraphs">
           <caption></caption>
-          <image source="images/PolynomGraphs.png" width="50%">
+          <image source="images/PolynomGraphs.png" width="60%">
             <shortdescription>Graphs of x raised to the zeroth,
             second, fifth, tenth, and one hundredth
             power. </shortdescription>

@@ -496,10 +496,10 @@
       For example, a set of real numbers <m>S</m> (not necessarily an
       interval) is called closed if it contains all of its limit
       points. Notice how similar this is to the definition of a closed
-      interval. Since a closed interval contains all of its limit
-      points (the endpoints), it is also a closed set.  To see this,
-      we will show that any point not in <m>S=[a,b]</m> is not a limit
-      point of <m>S</m>. 
+      interval. Since a closed interval contains its endpoints, it
+      would seem to contain all of its limits points and is therefore
+      closed.  To see this, we will show that any point not in
+      <m>S=[a,b]</m> is not a limit point of <m>S</m>.
       <!-- First, suppose <m>c\notin [a,b]</m>.  If -->
       <!-- <m>c\lt a</m>, then if we let <m>\eps =a-c\gt0</m>, then -->
       <!-- <me>\left(c-\eps ,c+\eps \right)\cap -->
@@ -738,6 +738,9 @@
     </definition>
 
     <problem  xml:id="PROBLEMTopoDefCont">
+      <title>
+        Topological Definition of Continuity
+      </title>
       <idx><h>Problems</h><h>continuity</h><h> via set theory</h></idx>
 
       <p>
@@ -754,14 +757,14 @@
       <!-- </p> -->
     </problem>
 
-    <p>
-      We can use the results of <xref ref="PROBLEMTopoDefCont"
-      ></xref>, and <xref ref="DEFINITIONOpenByPreImage" ></xref> to
-      give a <term>topological</term> definition of continuity in
-      terms of open sets.  (Notice that in <xref
-      ref="PROBLEMTopoDefCont" ></xref>, <m>f\left(U\right)\subset
-      V</m> can be expressed as <m>U\subset f^{-1}(V)</m>.)
-    </p>
+    <!-- <p> -->
+    <!--   The statement  of <xref ref="PROBLEMTopoDefCont" -->
+    <!--   ></xref> is actually the  <term>topological</term> definition of continuity in -->
+    <!--   terms of open sets.  -->
+    <!--   <!-\- (Notice that in <xref -\-> -->
+    <!--   <!-\- ref="PROBLEMTopoDefCont" ></xref>, <m>f\left(U\right)\subset -\-> -->
+    <!--   <!-\- V</m> can be expressed as <m>U\subset f^{-1}(V)</m>.) -\-> -->
+    <!-- </p> -->
     <!-- <p> -->
     <!--   With these definitions we have the following result -->
     <!-- </p> -->
@@ -789,22 +792,20 @@
 
     <!-- </p> -->
 
-    <definition xml:id="DEFINITIONTopoDefCont">
-      <title>
-        Topological Definition of Continuity
-      </title>
+    <!-- <problem xml:id="PROBLEMTopoDefCont"> -->
 
-      <statement>
+    <!--   <statement> -->
 
-        <p>
-          A function  <m>f</m> is continuous on <m>D\subset \RR{}</m> if and only if
-          <m>f</m> satisfies the following condition: for any open set
-          of real numbers <m>V\subset D</m>, <m>f^{-1}(V)</m> is also open.
+    <!--     <p> -->
+    <!--       Show that <m>f</m> is continuous on <m>D</m> if and only if -->
+    <!--       <m>f</m> satisfies the following condition: for any open set -->
+    <!--       of real numbers <m>V\subset D</m>, <m>f^{-1}(V)</m> is also -->
+    <!--       open. -->
 
-        </p>
+    <!--     </p> -->
 
-      </statement>
-    </definition>
+    <!--   </statement> -->
+    <!-- </problem> -->
 
 
     <p>
@@ -902,19 +903,23 @@
     text="custom">NIP</xref> and will be very handy later.  It is a
     slightly weaker version of the NIP which says that the
     intersection of a sequence of nested closed intervals will be
-    non<ndash/>empty intersection even if their lengths do not
+    non<ndash/>empty  even if their lengths do not
     converge to zero.
   </p>
 
   <theorem xml:id="thm_WeakNIP">
+    <title>
+      Weak Nested Interval Property
+    </title>
 
     <idx><h>Nested Interval Property</h><h>weak form</h></idx>
 
     <statement>
       <p>
-        Let <m>\left(\left[a_n, b_n\right]\right)_{n=1}^\infty</m>
-        be a sequence of nested intervals such that
-        <m>\limit{n}{\infty}{\abs{b_n-a_n}}>0</m>.  Then there is at
+        Let <m>\left(\left[a_n, b_n\right]\right)_{n=1}^\infty</m> be
+        a sequence of closed, nested intervals which satisfy the first
+        three conditions of the <xref ref="NIP"
+        text="custom">NIP</xref> but not the fourth.  Then there is at
         least one <m>c\in\RR</m> such that <m>c\in\left[a_n,
         b_n\right]</m> for all <m>n\in\NN</m>.
       </p>
@@ -1233,13 +1238,17 @@
 
     With these two definitions in place we can see that <xref
     ref="thm_NoSeriesContainsAllReals"></xref> is nothing more nor
-    less than the statement that <m>\RR{}</m> is not countably
-    infinite since it is certainly not finite and the subscripts
-    identify a one<ndash/>to<ndash/>one correspondence. In that case
-    we say that the set of real numbers is <term>uncountably
-    infinite</term> or just <term>uncountable</term>. Speaking
-    loosely we say that <m>\RR </m> is <q>bigger</q> than the
-    natural numbers.
+    less than the statement that <m>\RR</m> is not countably
+    infinite, for if it were then a one<ndash/>to<ndash/>one
+    correspondence with <m>\NN </m> would enable the entire set <m>\RR
+    </m> to be written as a sequence, violating <xref ref="thm_NoSeriesContainsAllReals" ></xref>. 
+
+    <!-- since it is certainly not finite and the subscripts -->
+    <!-- identify a one<ndash/>to<ndash/>one correspondence. In that case -->
+    <!-- we say that the set of real numbers is <term>uncountably -->
+    <!-- infinite</term> or just <term>uncountable</term>.  -->
+    <!-- Therefore  <m>\RR</m> is  uncountable.  Speaking  loosely we  say that -->
+    <!-- <m>\RR </m> is <q>bigger</q> than the natural numbers. -->
   </p>
 
   <aside xml:id="SizeVsCardinality">
@@ -1256,20 +1265,20 @@
     </p>
   </aside>
 
-  <p>
-    To see this let us suppose first that each real number appears
-    in the sequence <m>(s_n)_{n=1}^\infty</m> at least once.  In
-    that case the indexing of our sequence is really just a
-    one<ndash/>to<ndash/>one correspondence between the elements of
-    the sequence and <m>\NN:</m>
-    <md>
-      <mrow>1\amp \leftrightarrow s_1</mrow>
-      <mrow>2\amp \leftrightarrow s_2</mrow>
-      <mrow>3\amp \leftrightarrow s_3</mrow>
-      <mrow>4\amp \leftrightarrow s_4</mrow>
-      <mrow>\amp \ \ \ \vdots</mrow>
-    </md>
-  </p>
+  <!-- <p> -->
+  <!--   To see this let us suppose first that each real number appears -->
+  <!--   in the sequence <m>(s_n)_{n=1}^\infty</m> at least once.  In -->
+  <!--   that case the indexing of our sequence is really just a -->
+  <!--   one<ndash/>to<ndash/>one correspondence between the elements of -->
+  <!--   the sequence and <m>\NN:</m> -->
+  <!--   <md> -->
+  <!--     <mrow>1\amp \leftrightarrow s_1</mrow> -->
+  <!--     <mrow>2\amp \leftrightarrow s_2</mrow> -->
+  <!--     <mrow>3\amp \leftrightarrow s_3</mrow> -->
+  <!--     <mrow>4\amp \leftrightarrow s_4</mrow> -->
+  <!--     <mrow>\amp \ \ \ \vdots</mrow> -->
+  <!--   </md> -->
+  <!-- </p> -->
 
   <!-- <p> -->
   <!--   If some real numbers are repeated in our sequence then all of -->
@@ -1278,12 +1287,12 @@
   <!--   ref="prob_countable_sets_unions_of"></xref>. -->
   <!-- </p> -->
 
-  <p>
-    Therefore <m>\left(s_n\right)_{n=1}^\infty </m> is countable.
-    But <xref ref="thm_NoSeriesContainsAllReals" ></xref> says that
-    no sequence in <m>\RR</m> includes all of <m>\RR</m>.  Therefore
-    <m>\RR</m> is uncountable.
-  </p>
+  <!-- <p> -->
+  <!--   Therefore <m>\left(s_n\right)_{n=1}^\infty </m> is countable. -->
+  <!--   But <xref ref="thm_NoSeriesContainsAllReals" ></xref> says that -->
+  <!--   no sequence in <m>\RR</m> includes all of <m>\RR</m>.  Therefore -->
+  <!--   <m>\RR</m> is uncountable. -->
+  <!-- </p> -->
 
 
   <problem xml:id="PROBLEMCountableDrills">
@@ -2691,7 +2700,7 @@
 
 <section xml:id="SECTIONLebesgueIntegration">
   <title>
-The Road to Lebesgue Integration
+    The Road to Lebesgue Integration
   </title>
   <p>
     <xref ref="th_UniformIntegralConvergence" ></xref> states that if

@@ -737,19 +737,32 @@
 
     </definition>
 
+    <aside>
+      <title>
+        Preimage
+      </title>
+      <p>
+        The <term>preimage</term> <m>(f^{-1})</m> of a set
+        <m>T</m> under the function <m>f(x)</m>, is the set of all
+        points, <m>x</m> for which <m>f(x)\in T</m>. In particular,
+        this notation does not represent an inverse function,
+        although it is related. The notation <m>f^{-1}</m> is a
+        set<ndash/>theoretic construct, so in this context the
+        notation <m>f^{-1}(T)</m> represents a set, not a function
+        evaluation.
+      </p>
+    </aside>
     <problem  xml:id="PROBLEMTopoDefCont">
       <title>
         Topological Definition of Continuity
       </title>
       <idx><h>Problems</h><h>continuity</h><h> via set theory</h></idx>
 
-      <p>
-        Show that a function <m>f(x)</m> is continuous at <m>x=a</m>
-        if and only if for every open set <m>V</m> containing
-        <m>f(a)</m> there is an open set <m>U</m> containing <m>a</m>
-        with <m>f(U)\subset{V}</m>.
+      <p> 
+        Show that a function <m>f(x)</m> is continuous on a set
+        <m>D\subset \RR </m> if and only if for every open set of real
+        numbers <m>V\subset D </m>, the preimage of <m>V</m> is open.
       </p>
-
       <!-- <p> -->
       <!--   Show that <m>f</m> is continuous on <m>D</m> if and only if -->
       <!--   <m>f</m> satisfies the following condition: for any open set -->
@@ -809,8 +822,8 @@
 
 
     <p>
-      The value of this reformulation of continuity (and similar
-      definitions involving limits) in terms of open sets is that
+      The value of the  reformulation of continuity in <xref ref="PROBLEMTopoDefCont" ></xref>  in terms of open sets (and similar
+      definitions involving limits) is that
       the concept of continuity can be generalized beyond the realm
       of real numbers to sets where the distance between points is
       either irrelevant or not even possible to determine. In
@@ -3586,21 +3599,7 @@
             symbols, <m>s^{-1}\left(\left\{a_j\right\}\right)</m> is
             measurable.
           </p>
-          <aside>
-            <title>
-              Inverse Image
-            </title>
-            <p>
-              The <term>inverse image</term> <m>(s^{-1})</m> of a point <m>(a)</m> under
-              the function <m>s(x)</m>,
-              is the set of all points, <m>x</m> for
-              which <m>s(x)=a</m>. In particular, although it is
-              related to the idea of an inverse function this is a
-              set<ndash/>theoretic construct. That is, in this context
-              the notation <m>s^{-1}(a)</m> represents a set, not a
-              function evaluation.
-            </p>
-          </aside>
+
         </li>
       </ol>
 

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="LimDerivIntFTC">
   <title>Limits, Derivatives, Integrals, and the Fundamental Theorem of Calculus</title>
 
@@ -2625,10 +2626,10 @@
         partitions of <m>[a,b]</m> is a non<ndash/>empty set of real
         numbers which is bounded above.  Therefore by <xref ref="thm_LUB" ></xref>  it has a least upper
         bound.  We define the lower (Darboux) integral by
-        <me>
-          \underline{\int^b_{x=a}}{f(x)}\dx{x}=\sup_{P}
-          \left(L(P)\right)
-        </me>
+        <men xml:id="EQUATIONLowerDarbInt">b 
+        \underline{\int^b_{x=a}}{f(x)}\dx{x}=\sup_{P}
+        \left(L(P)\right)
+        </men>
       </p>
 
       <p>
@@ -2637,9 +2638,9 @@
         greatest lower bound. We define the upper (Darboux) integral
         as the greatest lower bound of this set
 
-        <me>
+        <men xml:id="EQUATIONUpperDarbInt">
           \overline{\int^{b}_{x=a}}{f(x)\dx{x}}=\inf_{P} \left(U(P)\right)
-        </me>
+        </men>
       </p>
 
       <problem>

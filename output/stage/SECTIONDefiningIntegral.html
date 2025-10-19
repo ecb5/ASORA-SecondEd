@@ -103,14 +103,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.13';
+eBookConfig.runestone_version = '7.9.14';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.9f7f6b353cd8c357.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.629fdbd852876870.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.cc8d78735f870736.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.29d986501a531379.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -528,20 +528,21 @@ U(\Pi{})
 </div></details></div>
 <div class="autopermalink" data-description="Problem 10.4.6"><a href="#PROBLEMPartitionIneq1" title="Copy heading and permalink for Problem 10.4.6" aria-label="Copy heading and permalink for Problem 10.4.6">🔗</a></div></article><div class="para logical" id="SUBSECTIONDarbouxIntegral-10">
 <div class="para">Next observe  that the set of lower sums over all partitions of <span class="process-math">\([a,b]\)</span> is a non–empty set of real numbers which is bounded above.  Therefore by <a href="IVTandEVT-SupremumAndEVT.html#thm_LUB" class="xref" data-knowl="./knowl/xref/thm_LUB.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.4.3: The Least Upper Bound Property (LUBP)">Theorem 9.4.3</a>  it has a least upper bound.  We define the lower (Darboux) integral by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm_LUB.html">
-\begin{equation*}
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm_LUB.html" id="EQUATIONLowerDarbInt">
+\begin{equation}
+b 
 \underline{\int^b_{x=a}}{f(x)}\dx{x}=\sup_{P}
-\left(L(P)\right)
-\end{equation*}
+\left(L(P)\right)\tag{18}
+\end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SUBSECTIONDarbouxIntegral-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="SUBSECTIONDarbouxIntegral-11">
 <div class="para">Similarly, the set of all upper sums is a non–empty set of real numbers which is bounded below and therefore has a greatest lower bound. We define the upper (Darboux) integral as the greatest lower bound of this set</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\overline{\int^{b}_{x=a}}{f(x)\dx{x}}=\inf_{P} \left(U(P)\right)
-\end{equation*}
+<div class="displaymath process-math" id="EQUATIONUpperDarbInt">
+\begin{equation}
+\overline{\int^{b}_{x=a}}{f(x)\dx{x}}=\inf_{P} \left(U(P)\right)\tag{19}
+\end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SUBSECTIONDarbouxIntegral-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -664,14 +665,14 @@ D(x)=
 <div class="para">Let <span class="process-math">\(\eps \gt 0\)</span> be given.  Since <span class="process-math">\(f\left(x\right)\)</span> is continuous at each point in <span class="process-math">\([a,b]\text{,}\)</span> we can choose a <span class="process-math">\(\delta &gt;0\)</span> such that if</div>
 <div class="displaymath process-math" id="EQUATIONUniContFlaw1">
 \begin{equation}
-\left|x-y\right|\lt \delta \text{,}\tag{18}
+\left|x-y\right|\lt \delta \text{,}\tag{20}
 \end{equation}
 </div>
 <div class="para">then</div>
 <div class="displaymath process-math" id="EQUATIONUniContFlaw2">
 \begin{equation}
 \left|f\left(x\right)-f\left(y\right)\right|\lt
-\frac{\eps }{b-a} \text{.}\tag{19}
+\frac{\eps }{b-a} \text{.}\tag{21}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#THEOREMContImpIntProof-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>

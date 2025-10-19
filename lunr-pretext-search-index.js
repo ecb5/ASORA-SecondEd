@@ -4570,7 +4570,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.1",
   "title": "The Rise of Set Theory",
-  "body": " The Rise of Set Theory  Cantor s work was instrumental in the re examination of the foundations of mathematics, whereby mathematical ideas were recast in the language of sets. Nowadays we do this naturally, so it doesn t seem profound, but recasting mathematics in terms of Set Theory has fundamentally shaped our modern approach. We ve already seen this in , , and where we recast Cantor s definition of a limit point into set theoretic terms.  It turns out that we can also rewrite concepts such as limits and continuity in terms of sets. This led to a subject known as point set topology. We will not present all of the ideas from topology as this would require an entire new course with an entire new book. But we can give you a brief look at how analysis concepts are recast in set theoretic form.  For example, a set of real numbers (not necessarily an interval) is called closed if it contains all of its limit points. Notice how similar this is to the definition of a closed interval. Since a closed interval contains its endpoints, it would seem to contain all of its limits points and is therefore closed. To see this, we will show that any point not in is not a limit point of .        Problems a closed interval is a closed set   Prove that a closed interval, is also a closed set.       First suppose that . There are two cases:   Case 1       Case 2   .        Problems a closed set is not (necessarily) a closed inteval  The converse of is not true. That is, not every closed set is also a closed interval. Convince yourself that each of the sets below is closed.    ,     ,     ,     ,    any finite set,              the union of two closed sets      At this point you ve probably guessed that the definition of an open set can be modeled on the definition of open interval. That is true, but is easier to use.   Open Sets  Definition open set  open set definition of   A set of real numbers is open if its complement is closed.     Problems open sets   Show that a set is open if and only if for all there is an such that     Notice that if is closed then is not a limit point of . What does tell you?     Problems open intervals are not the only open sets  Open intervals are not the only open sets. Convince yourself that each of the following are also open sets.         where each is an open set.      Problems sets that are neither open nor closed  Of course, there are sets which are neither open nor closed.  Convince yourself that these sets are neither open nor closed.   ,   ,        Again, we could spend an entire course delving into these concepts, but for our introduction we will only show how the concept of continuity can be repackaged into a statement involving sets. To keep things simple we will restrict our attention to functions whose domain is an open set of real numbers. The following notation will be helpful.   Definition image  Definition image pre image  image definition  image definition pre image  pre image definition  pre image definition image      Let , we define the image of by     For any , we define the preimage of by         Topological Definition of Continuity  Problems continuity via set theory  Show that a function is continuous at if and only if for every open set containing there is an open set containing with .                                                 The value of this reformulation of continuity (and similar definitions involving limits) in terms of open sets is that the concept of continuity can be generalized beyond the realm of real numbers to sets where the distance between points is either irrelevant or not even possible to determine. In , Felix Hausdorff (1868 1942) defined the concept of a topology on a set . His definition is based solely on sets and does not use the notion of distance or length which we have relied on hitherto. (The and that appeared in almost all of our convergence proofs measure a distance of some sort.)   Felix Hausdorff   Portrait of Felix Hausdorff    Given an arbitrary nonempty set , we define a topology on to be a collection of subsets of (which we designate to be the open sets). The modern rendition of Hausdorff s definition of a topology says that must satisfy the following axioms.    and must be in .    An arbitrary union of open sets in must also be in .    The intersection of any finite number of open sets in must also be in .     Hausdorff actually added an extra separation axiom .     For any two elements of , there must exist two disjoint open sets and with and .     Nowadays, a topological space (that is a set with a topology defined on it) which has this extra property is called a Hausdorff space .  This relatively simple idea generalizes our notion of open intervals in the real numbers and can be applied to a wide range of sets. We won t go into this very deeply, but we note that if we have a function from one topological space into another, we can define concepts like continuity by insisting that the preimage of any open set in the topology on must be open in the topology on . It would be hard to overstate the impact of generalizaions of this sort on modern mathematics.  "
+  "body": " The Rise of Set Theory  Cantor s work was instrumental in the re examination of the foundations of mathematics, whereby mathematical ideas were recast in the language of sets. Nowadays we do this naturally, so it doesn t seem profound, but recasting mathematics in terms of Set Theory has fundamentally shaped our modern approach. We ve already seen this in , , and where we recast Cantor s definition of a limit point into set theoretic terms.  It turns out that we can also rewrite concepts such as limits and continuity in terms of sets. This led to a subject known as point set topology. We will not present all of the ideas from topology as this would require an entire new course with an entire new book. But we can give you a brief look at how analysis concepts are recast in set theoretic form.  For example, a set of real numbers (not necessarily an interval) is called closed if it contains all of its limit points. Notice how similar this is to the definition of a closed interval. Since a closed interval contains its endpoints, it would seem to contain all of its limits points and is therefore closed. To see this, we will show that any point not in is not a limit point of .        Problems a closed interval is a closed set   Prove that a closed interval, is also a closed set.       First suppose that . There are two cases:   Case 1       Case 2   .        Problems a closed set is not (necessarily) a closed inteval  The converse of is not true. That is, not every closed set is also a closed interval. Convince yourself that each of the sets below is closed.    ,     ,     ,     ,    any finite set,              the union of two closed sets      At this point you ve probably guessed that the definition of an open set can be modeled on the definition of open interval. That is true, but is easier to use.   Open Sets  Definition open set  open set definition of   A set of real numbers is open if its complement is closed.     Problems open sets   Show that a set is open if and only if for all there is an such that     Notice that if is closed then is not a limit point of . What does tell you?     Problems open intervals are not the only open sets  Open intervals are not the only open sets. Convince yourself that each of the following are also open sets.         where each is an open set.      Problems sets that are neither open nor closed  Of course, there are sets which are neither open nor closed.  Convince yourself that these sets are neither open nor closed.   ,   ,        Again, we could spend an entire course delving into these concepts, but for our introduction we will only show how the concept of continuity can be repackaged into a statement involving sets. To keep things simple we will restrict our attention to functions whose domain is an open set of real numbers. The following notation will be helpful.   Definition image  Definition image pre image  image definition  image definition pre image  pre image definition  pre image definition image      Let , we define the image of by     For any , we define the preimage of by         Preimage  The preimage  of a set under the function , is the set of all points, for which . In particular, this notation does not represent an inverse function, although it is related. The notation is a set theoretic construct, so in this context the notation represents a set, not a function evaluation.    Topological Definition of Continuity  Problems continuity via set theory  Show that a function is continuous on a set if and only if for every open set of real numbers , the preimage of is open.                                                 The value of the reformulation of continuity in in terms of open sets (and similar definitions involving limits) is that the concept of continuity can be generalized beyond the realm of real numbers to sets where the distance between points is either irrelevant or not even possible to determine. In , Felix Hausdorff (1868 1942) defined the concept of a topology on a set . His definition is based solely on sets and does not use the notion of distance or length which we have relied on hitherto. (The and that appeared in almost all of our convergence proofs measure a distance of some sort.)   Felix Hausdorff   Portrait of Felix Hausdorff    Given an arbitrary nonempty set , we define a topology on to be a collection of subsets of (which we designate to be the open sets). The modern rendition of Hausdorff s definition of a topology says that must satisfy the following axioms.    and must be in .    An arbitrary union of open sets in must also be in .    The intersection of any finite number of open sets in must also be in .     Hausdorff actually added an extra separation axiom .     For any two elements of , there must exist two disjoint open sets and with and .     Nowadays, a topological space (that is a set with a topology defined on it) which has this extra property is called a Hausdorff space .  This relatively simple idea generalizes our notion of open intervals in the real numbers and can be applied to a wide range of sets. We won t go into this very deeply, but we note that if we have a function from one topological space into another, we can define concepts like continuity by insisting that the preimage of any open set in the topology on must be open in the topology on . It would be hard to overstate the impact of generalizaions of this sort on modern mathematics.  "
 },
 {
   "id": "SECTIONRiseSetTheory-2",
@@ -4645,18 +4645,27 @@ var ptx_lunr_docs = [
   "body": " Definition image  Definition image pre image  image definition  image definition pre image  pre image definition  pre image definition image      Let , we define the image of by     For any , we define the preimage of by       "
 },
 {
+  "id": "SECTIONRiseSetTheory-14-2",
+  "level": "2",
+  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-14-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "preimage "
+},
+{
   "id": "PROBLEMTopoDefCont",
   "level": "2",
   "url": "SECTIONRiseSetTheory.html#PROBLEMTopoDefCont",
   "type": "Problem",
   "number": "12.1.8",
   "title": "Topological Definition of Continuity.",
-  "body": " Topological Definition of Continuity  Problems continuity via set theory  Show that a function is continuous at if and only if for every open set containing there is an open set containing with .       "
+  "body": " Topological Definition of Continuity  Problems continuity via set theory  Show that a function is continuous on a set if and only if for every open set of real numbers , the preimage of is open.       "
 },
 {
-  "id": "SECTIONRiseSetTheory-15",
+  "id": "SECTIONRiseSetTheory-16",
   "level": "2",
-  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-15",
+  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-16",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4672,9 +4681,9 @@ var ptx_lunr_docs = [
   "body": " Felix Hausdorff   Portrait of Felix Hausdorff   "
 },
 {
-  "id": "SECTIONRiseSetTheory-20",
+  "id": "SECTIONRiseSetTheory-21",
   "level": "2",
-  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-20",
+  "url": "SECTIONRiseSetTheory.html#SECTIONRiseSetTheory-21",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4687,7 +4696,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.2",
   "title": "Infinite Sets",
-  "body": " Infinite Sets  Cantor s work with Fourier series prompted him to study the sizes of various infinite sets. The following theorem follows directly from our previous work with the NIP and will be very handy later. It is a slightly weaker version of the NIP which says that the intersection of a sequence of nested closed intervals will be non empty even if their lengths do not converge to zero.   Weak Nested Interval Property  Nested Interval Property weak form   Let be a sequence of closed, nested intervals which satisfy the first three conditions of the NIP but not the fourth. Then there is at least one such that for all .     By of , we know that a bounded increasing sequence such as converges, say to . Since for and , then for any fixed , . This says for all .    Problems Nested Interval Property weak form  Nested Interval Property weak form   Suppose . Show that there are at least two points, and , such that and for all .    Our next theorem says that in a certain, very technical sense there are more real numbers than there are counting numbers . This probably does not seem terribly significant. After all, there are real numbers which are not counting numbers. What will make this so startling is that the same cannot be said about all sets which strictly contain the counting numbers. We will get into the details of this after the theorem is proved.   Cantor, (1874)   Cantor, Georg  first proof that is uncountable     is uncountable  Cantor s first proof    Let be a sequence of real numbers. There is a real number , which is not in .   Abuse of Notation  To streamline things, we are abusing notation here as we are letting denote both the sequence (which is ordered) and the underlying (unordered) set of entries in the sequence. Which usage is meant will be clear from the context.      For the sake of obtaining a contradiction assume that the sequence contains every real number; that is, . As usual we will build a sequence of nested intervals .  Let be the smaller of the first two distinct elements of , let be the larger and take to be the first interval.           Next we assume that has been constructed and build as follows. Observe that there are infinitely many elements of in since . Let and be the first two distinct elements of such that with . Then is the th interval.       From the way we constructed them it is clear that .  Therefore by there is a real number, say , such that .  In fact, since it is clear that .  We will show that is the number we seek. That the inequalities in formula are strict will play a crucial role.  To see that we suppose that and derive a contradiction.  So, suppose that for some . Then only appear before in the sequence . Since each is taken from it follows that only finitely many elements of the sequence appear before in the sequence as well.  Let be the last element of which appears before in the sequence and consider . The way it was constructed, was one of the first two distinct terms in the sequence strictly between and , the other being . Since does not appear before in the sequence and , it follows that either or . However, this gives us a contradiction as we know from formula that .  Thus is not an element of .   So how does this theorem show that there are more real numbers than counting numbers? Before we address that question we need to be very careful about the meaning of the word more when we re talking about infinite sets.  First let s consider two finite sets, say How do we know that is the bigger set? One way is to simply count the number of elements in both sets. Clearly is bigger since and and . But we have no way of counting the number of elements of an infinite set. Indeed, it isn t even clear what the phrase the number of elements might mean when applied to an infinite set. So we need to find another way.  When we count the number of elements in a finite set we are matching up the elements of the set with a set of consecutive positive integers, starting at . Thus since we see that . Moreover, the order of the match up is unimportant. Since it is clear that the elements of and the set can be matched up as well. And it doesn t matter what order either set is in. They both have elements.   cardinality definition Such a match up is called a one to one correspondence. In general, if two sets can be put in one to one correspondence then they are the same size. Of course the word size has lots of connotations that will begin to get in the way when we talk about infinite sets, so instead we will say that the two sets have the same cardinality . Speaking loosely, this just means that they are the same size.  More precisely, if a given set can be put in one to one correspondence with a finite set of consecutive integers beginning at , say , then we say that the cardinality of the set is . But again, the precise statement is that both sets have the same cardinality. It is this notion of one to one correspondence, along with the next two definitions, which will allow us to compare the sizes (cardinalities) of infinite sets.   Definition countable sets  countable sets definition  cardinality countable sets  countable sets defintion of   Any set which can be put into one to one correspondence with is called a countably infinite set. Any set which is either finite or countably infinite is said to be countable .     Cantor, Georg Since is an infinite set, we have no symbol to designate its cardinality so we have to invent one. The symbol used by Cantor and adopted by mathematicians ever since is . Thus the cardinality of any countably infinite set is .   :   is the first letter of the Hebrew alphabet and is pronounced aleph.  is pronounced aleph null.   We have already given the following definition informally. We include it formally here for later reference.   cardinality definition  Definition cardinality   If two sets can be put into one to one correspondence then they are said to have the same cardinality .     infinite sets uncountable With these two definitions in place we can see that is nothing more nor less than the statement that is not countably infinite, for if it were then a one to one correspondence with would enable the entire set to be written as a sequence, violating .         Size vs. Cardinality  It is natural to use the word size in the context of infinite sets but size conjures up a mental image that really doesn t apply. This is why we use cardinality . For example all of the sets in have the same cardinality. Would you say they are the same size?                              Problems countable sets  countable sets countable sets drill, 5 parts   Most of the sets you have encountered so far in your life have been countable. Show that each of the following sets is countable.                          The set of prime numbers             Problems countable sets unions and intersections of  countable sets unions and intersections of   If we start with one or more countable sets it is rather difficult to use it to build anything but another countable set.  Let be a collection of countable sets. Show that each of the following sets is also countable:     Any subset of .                                 It seems that no matter what we do the only example we can find of an uncountably infinite set is .  But wait! Remember the rational numbers? They were similar to the real numbers in many ways. Perhaps they are uncountably infinite too?  Alas, no. The rational numbers turn out to be countable too.   is countable    is countable.     Sketch of Proof  Explain how you know that all of the non negative rational numbers are in this (doubly infinite) array:        Clearly there is some duplication in the array above. To handle this, apply part (a) of . Does this complete the proof?    Problems is countable  is countable   Prove .                 All of our efforts to build an uncountable set from a countable one have come to nothing. In fact many sets that at first feel like they should be uncountable are not. This makes the uncountability of all the more remarkable.   The failure is in the methods we ve used so far. It is possible to build an uncountable set using just two symbols if we re clever enough, but this would take us too far away from our main topic so we won t pursue it. Do you see how it might be done?   On the other hand if we start with an uncountable set it is relatively easy to build others from it.   Problems intervals are uncountable  sets intervals are uncountable    Let and be two open intervals of real numbers. Show that these two sets have the same cardinality by constructing a one to one onto function between them.    A linear function should do the trick.      Show that any open interval of real numbers has the same cardinality as .    Consider the interval .      Show that and have the same cardinality.    If let correspond to itself. Note that and are both countable.         Show that and have the same cardinality.     "
+  "body": " Infinite Sets  Cantor s work with Fourier series prompted him to study the sizes of various infinite sets. The following theorem follows directly from our previous work with the NIP and will be very handy later. It is a slightly weaker version of the NIP which says that the intersection of a sequence of nested closed intervals will be non empty even if their lengths do not converge to zero.   Weak Nested Interval Property  Nested Interval Property weak form   Let be a sequence of closed, nested intervals. Then .     By of , we know that a bounded increasing sequence such as converges, say to . Since for and , then for any fixed , . This says for all .    Problems Nested Interval Property weak form  Nested Interval Property weak form   Suppose . Show that there are at least two points, and , such that and for all .    Our next theorem says that in a certain, very technical sense there are more real numbers than there are counting numbers . This probably does not seem terribly significant. After all, there are real numbers which are not counting numbers. What will make this so startling is that the same cannot be said about all sets which strictly contain the counting numbers. We will get into the details of this after the theorem is proved.   Cantor, (1874)   Cantor, Georg  first proof that is uncountable     is uncountable  Cantor s first proof    Let be a sequence of real numbers. There is a real number , which is not in .   Abuse of Notation  To streamline things, we are abusing notation here as we are letting denote both the sequence (which is ordered) and the underlying (unordered) set of entries in the sequence. Which usage is meant will be clear from the context.      For the sake of obtaining a contradiction assume that the sequence contains every real number; that is, . As usual we will build a sequence of nested intervals .  Let be the smaller of the first two distinct elements of , let be the larger and take to be the first interval.           Next we assume that has been constructed and build as follows. Observe that there are infinitely many elements of in since . Let and be the first two distinct elements of such that with . Then is the th interval.       From the way we constructed them it is clear that .  Therefore by there is a real number, say , such that .  In fact, since it is clear that .  We will show that is the number we seek. That the inequalities in formula are strict will play a crucial role.  To see that we suppose that and derive a contradiction.  So, suppose that for some . Then only appear before in the sequence . Since each is taken from it follows that only finitely many elements of the sequence appear before in the sequence as well.  Let be the last element of which appears before in the sequence and consider . The way it was constructed, was one of the first two distinct terms in the sequence strictly between and , the other being . Since does not appear before in the sequence and , it follows that either or . However, this gives us a contradiction as we know from formula that .  Thus is not an element of .   So how does this theorem show that there are more real numbers than counting numbers? Before we address that question we need to be very careful about the meaning of the word more when we re talking about infinite sets.  First let s consider two finite sets, say How do we know that is the bigger set? One way is to simply count the number of elements in both sets. Clearly is bigger since and and . But we have no way of counting the number of elements of an infinite set. Indeed, it isn t even clear what the phrase the number of elements might mean when applied to an infinite set. So we need to find another way.  When we count the number of elements in a finite set we are matching up the elements of the set with a set of consecutive positive integers, starting at . Thus since we see that . Moreover, the order of the match up is unimportant. Since it is clear that the elements of and the set can be matched up as well. And it doesn t matter what order either set is in. They both have elements.   cardinality definition Such a match up is called a one to one correspondence. In general, if two sets can be put in one to one correspondence then they are the same size. Of course the word size has lots of connotations that will begin to get in the way when we talk about infinite sets, so instead we will say that the two sets have the same cardinality . Speaking loosely, this just means that they are the same size. Speaking very loosley it means that they have the same number of elements.  More precisely, if a given set can be put in one to one correspondence with a finite set of consecutive integers beginning at , say , then we say that the cardinality of the set is . But again, the precise statement is that both sets have the same cardinality. It is this notion of one to one correspondence, along with the next two definitions, which will allow us to compare the sizes (cardinalities) of infinite sets.   Definition countable sets  countable sets definition  cardinality countable sets  countable sets defintion of   Any set which can be put into one to one correspondence with is called a countably infinite set. Any set which is either finite or countably infinite is said to be countable .     Cantor, Georg Since is an infinite set, we have no symbol to designate its cardinality so we have to invent one. The symbol used by Cantor and adopted by mathematicians ever since is . Thus the cardinality of any countably infinite set is .   :   is the first letter of the Hebrew alphabet and is pronounced aleph.  is pronounced aleph null.   We have already given the following definition informally. We include it formally here for later reference.   cardinality definition  Definition cardinality   If two sets can be put into one to one correspondence then they are said to have the same cardinality .     infinite sets uncountable With these two definitions in place we can see that is nothing more nor less than the statement that is not countably infinite, for if it were then a one to one correspondence with would enable the entire set to be written as a sequence, violating .         Size vs. Cardinality  It is natural to use the word size in the context of infinite sets but size conjures up a mental image that really doesn t apply. This is why we use cardinality . For example all of the sets in have the same cardinality. Would you say they are the same size?                              Problems countable sets  countable sets countable sets drill, 5 parts   Most of the sets you have encountered so far in your life have been countable. Show that each of the following sets is countable.                          The set of prime numbers             Problems countable sets unions and intersections of  countable sets unions and intersections of   If we start with one or more countable sets it is rather difficult to use it to build anything but another countable set.  Let be a collection of countable sets. Show that each of the following sets is also countable:     Any subset of .          Warning: It is easy to assume, implicitly, that . Don t do that.                          In we see several examples where the union of finitely many countably infinite sets yields another set which is also countably infinite . But what about a countably infinite union of countably infinite sets? surely that will yield an uncountably infinite set.  Alas, no. The next problem shows that even a countably infinite union of countably infinite set only yields another countably infinite set.    Let be the set laid out in an infinite array in the following diagram.   A doubly subscripted array or generic elements with red arrows point up an to the right through diagonal rows.   Use this diagram to show that a countably infinite union of countably infinite sets will also be countably infinite.              In case the sets are not disjoint you may need to use part (a) of     It seems that no matter what we do the only example we can find of an uncountably infinite set is .  But wait! Remember the rational numbers? They were similar to the real numbers in many ways. Perhaps they are uncountably infinite too?  Alas, no. The rational numbers turn out to be countable too.   is countable    is countable.     Sketch of Proof  Explain how you know that all of the non negative rational numbers are in this (doubly infinite) array:        Clearly there is some duplication in the array above. To handle this, apply part (a) of . Does this complete the proof?    Problems is countable  is countable   Prove .    For let , and apply .                 All of our efforts to build an uncountable set from a countable one have come to nothing. In fact many sets that at first feel like they should be uncountable are not. This makes the uncountability of all the more remarkable.   The failure is in the methods we ve used so far. It is possible to build an uncountable set using just two symbols if we re clever enough, but this would take us too far away from our main topic so we won t pursue it. Do you see how it might be done?   On the other hand if we start with an uncountable set it is relatively easy to build others from it.   Problems intervals are uncountable  sets intervals are uncountable    Let and be two open intervals of real numbers. Show that these two sets have the same cardinality by constructing a one to one onto function between them.    A linear function should do the trick.      Show that any open interval of real numbers has the same cardinality as .    Consider the interval .      Show that and have the same cardinality.    If let correspond to itself. Note that and are both countable.         Show that and have the same cardinality.     "
 },
 {
   "id": "thm_WeakNIP",
@@ -4696,7 +4705,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "12.2.1",
   "title": "Weak Nested Interval Property.",
-  "body": " Weak Nested Interval Property  Nested Interval Property weak form   Let be a sequence of closed, nested intervals which satisfy the first three conditions of the NIP but not the fourth. Then there is at least one such that for all .   "
+  "body": " Weak Nested Interval Property  Nested Interval Property weak form   Let be a sequence of closed, nested intervals. Then .   "
 },
 {
   "id": "BackToFourier-InfiniteSets-4",
@@ -4771,47 +4780,65 @@ var ptx_lunr_docs = [
   "body": " Problems countable sets  countable sets countable sets drill, 5 parts   Most of the sets you have encountered so far in your life have been countable. Show that each of the following sets is countable.                          The set of prime numbers           "
 },
 {
-  "id": "prob_countable_sets_unions_of",
+  "id": "PROBLEMFiniteUnionCountableSets",
   "level": "2",
-  "url": "BackToFourier-InfiniteSets.html#prob_countable_sets_unions_of",
+  "url": "BackToFourier-InfiniteSets.html#PROBLEMFiniteUnionCountableSets",
   "type": "Problem",
   "number": "12.2.7",
   "title": "",
-  "body": " Problems countable sets unions and intersections of  countable sets unions and intersections of   If we start with one or more countable sets it is rather difficult to use it to build anything but another countable set.  Let be a collection of countable sets. Show that each of the following sets is also countable:     Any subset of .                                "
+  "body": " Problems countable sets unions and intersections of  countable sets unions and intersections of   If we start with one or more countable sets it is rather difficult to use it to build anything but another countable set.  Let be a collection of countable sets. Show that each of the following sets is also countable:     Any subset of .          Warning: It is easy to assume, implicitly, that . Don t do that.                         "
+},
+{
+  "id": "BackToFourier-InfiniteSets-23",
+  "level": "2",
+  "url": "BackToFourier-InfiniteSets.html#BackToFourier-InfiniteSets-23",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "countably infinite countably infinite countably infinite uncountably infinite "
+},
+{
+  "id": "PROBLEMCountUnionCountSets",
+  "level": "2",
+  "url": "BackToFourier-InfiniteSets.html#PROBLEMCountUnionCountSets",
+  "type": "Problem",
+  "number": "12.2.8",
+  "title": "",
+  "body": "  Let be the set laid out in an infinite array in the following diagram.   A doubly subscripted array or generic elements with red arrows point up an to the right through diagonal rows.   Use this diagram to show that a countably infinite union of countably infinite sets will also be countably infinite.              In case the sets are not disjoint you may need to use part (a) of    "
 },
 {
   "id": "thm_QisCountable",
   "level": "2",
   "url": "BackToFourier-InfiniteSets.html#thm_QisCountable",
   "type": "Theorem",
-  "number": "12.2.8",
+  "number": "12.2.9",
   "title": "",
   "body": " is countable    is countable.   "
 },
 {
-  "id": "BackToFourier-InfiniteSets-27",
+  "id": "BackToFourier-InfiniteSets-30",
   "level": "2",
-  "url": "BackToFourier-InfiniteSets.html#BackToFourier-InfiniteSets-27",
+  "url": "BackToFourier-InfiniteSets.html#BackToFourier-InfiniteSets-30",
   "type": "Proof",
   "number": "12.2.3",
   "title": "Sketch of Proof.",
   "body": " Sketch of Proof  Explain how you know that all of the non negative rational numbers are in this (doubly infinite) array:        Clearly there is some duplication in the array above. To handle this, apply part (a) of . Does this complete the proof?  "
 },
 {
-  "id": "BackToFourier-InfiniteSets-28",
+  "id": "BackToFourier-InfiniteSets-31",
   "level": "2",
-  "url": "BackToFourier-InfiniteSets.html#BackToFourier-InfiniteSets-28",
-  "type": "Problem",
-  "number": "12.2.9",
-  "title": "",
-  "body": " Problems is countable  is countable   Prove .   "
-},
-{
-  "id": "BackToFourier-InfiniteSets-32",
-  "level": "2",
-  "url": "BackToFourier-InfiniteSets.html#BackToFourier-InfiniteSets-32",
+  "url": "BackToFourier-InfiniteSets.html#BackToFourier-InfiniteSets-31",
   "type": "Problem",
   "number": "12.2.10",
+  "title": "",
+  "body": " Problems is countable  is countable   Prove .    For let , and apply .   "
+},
+{
+  "id": "BackToFourier-InfiniteSets-35",
+  "level": "2",
+  "url": "BackToFourier-InfiniteSets.html#BackToFourier-InfiniteSets-35",
+  "type": "Problem",
+  "number": "12.2.11",
   "title": "",
   "body": " Problems intervals are uncountable  sets intervals are uncountable    Let and be two open intervals of real numbers. Show that these two sets have the same cardinality by constructing a one to one onto function between them.    A linear function should do the trick.      Show that any open interval of real numbers has the same cardinality as .    Consider the interval .      Show that and have the same cardinality.    If let correspond to itself. Note that and are both countable.         Show that and have the same cardinality.    "
 },
@@ -4822,12 +4849,12 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.3",
   "title": "The Road to Lebesgue Integration",
-  "body": " The Road to Lebesgue Integration   states that if (Riemann) integrable functions converge uniformly to a function on then limit evaluation and integration are commutative operations: . Thus we can integrate a power series term by term because as we saw in all power series converge uniformly on their intervals of convergence. However the converse of is not true.   Necessary vs. Sufficient Conditions  With respect to the validity of swapping integration with limit evaluation we say that uniform convergence is a sufficient but not a necessary condition.   In you showed that . This is also intuitively clear from .     Graphs of x raised to the zeroth, second, fifth, tenth, and one hundredth power.    In fact is an example of a function which is the pointwise limit of continuous functions where integration and limit evaluation commute. We did not comment on it at the time because we weren t prepared to talk about integration yet. Now we are.     As in let . Use and to show that .    Let and show that any partition of can be refined so that the contribution of the subinterval containing to the value of the integral is less than .      Use the result of part (a) to conclude that .     As a result of we have one example of a pointwise limit where integration and limit evaluation commute, thus affirming that uniform convergence is not a necessary condition. A natural question to ask at this point is, What is necessary? In other words, can we find weaker conditions on the convergence that still allow commutativity? The next problem begins to address but does not fully answer that question.     Suppose is a bounded, continuous function on the interval and let .   Generalize your solution of to show that .    We know that is bounded. Let be a bound, so that . Now generalize your solution to .          Extend your result in part (a) to show that the integral of is unchanged if there are finitely many discontinuities: .      Extend your result in part (b) to show that the integral of is unchanged even if the number of discontinuities is countably infinite.      Do you think the integral of will remain unchanged when the set of discontinuities is uncountably infinite? Explain.      Next consider the two functions We saw in and respectively, that both and converge pointwise to the zero function. Yet we can commute integration and limit evaluation for but not for . Why?  The answer comes from the following theorem due to Cesare Arzelà (1847 1912).   Cesare Arzelà   Portrait of Cesare Arzelà      Arzelà s Bounded Convergence Theorem (1885)  Assume is a sequence of Riemann integrable functions which converges pointwise to a Riemann integrable function on . Assume also that this sequence is uniformly bounded, namely, that there is a real number with for all and for all . Then .    Why does the example in not violate Arzelà s Bounded Convergence Theorem?    It is not necessarily true that the limit function in Arzelà s Bounded Convergence Theorem will be Riemann integrable. To see this consider the following example.  Since the rational numbers are a countably infinite set, they can be written sequentially (and in no particular order) as , so we define the function as follows .  Show that converges pointwise to the Dirichlet Function which is not Riemann integrable as we saw in .    Lebesgue Measure and Integration  We will not provide a direct analytic proof of Arzelà s Bounded Convergence Theorem . Instead we will show that it is a special case of a more general result involving a more general formulation of integration which emphasized sets and set theory, which was quite novel when it was formulated. Earlier in this chapter we saw how the concepts of continuity and the limit could be restated in terms of sets and set theory.  Set theory also played a role in generalizing the notion of an integral. As we said before, the story of integration is complex with many entry points. To provide a full accounting would take another course (and another book) so we will provide only a glimpse into this story and see how it relates to the swapping of limits and integrals. In what follows many of the details will be glossed over in favor of a larger view.  As an entry point into this world, consider the Dirichlet Function again. Recall from that the Dirichlet Function  is not Riemann (Cauchy, Darboux) integrable. Dirichlet invented his function as an example of a non integrable function. For our purposes it has no importance beyond that. However the existence of non (Riemann)integrable functions suggests the question: Can the integral be defined in such a way as to capture all of the intuitive features of (Riemann) integration known to th century mathematicians and which also allows us to integrate something as seemingly bizarre as the Dirichlet Function?  Cantor s work on the cardinality of infinite sets provides some insight. Recall that the set of rational numbers is countably infinite, whereas the set of irrational numbers must be uncountable. A countable set like the rational numbers is smaller (in Cantor s sense) than an uncountable set like the rational numbers but we haven t previously tried to express how much smaller because didn t have any way to measure either set in order to compare them numerically. In a sense we will make clear shortly a countable set is miniscule compared to an uncountable set. Thus the values that a function takes on such a miniscule set should be irrelevant. After all, in a Riemann integral, the value the function takes on a finite set does not affect the value of the integral.  There has to be a way to measure sets to account for the fact that countable set should be negligible. Henri Lebesgue (1875 1941) devised such a measure in order to extend the notion of an integral. His ideas were later generalized to measuring subsets of more general sets and led to a subject called measure theory . Again, we will focus on defining Lebesgue measure and the Lebesgue integral.   Henri Lebesgue  Portraits Lebesgue  Lebesgue, Henri portrait of   Portrait of Henri Lebesgue    Lebesgue determined that a measure  of sets of real numbers should have the following properties   If is an interval of length then . (We include intervals with the same left and right endpoint: ).    If is a sequence of sets in then with equality when are disjoint.     is translation invariant. More precisely, if is a subset of , is any real number, and then ( is said to be shift invariant , meaning that if you shift every element of by some amount the measure of the set is unchanged.)     The purpose of the first and third statements should be clear. Since we are looking to generalize the concept of length the measure of an interval should be its length. For example, , and if  ,  The second statement is the Triangle Inequalty dressed up in the language of sets and measures.  The conditions given above are modeled on the properties of lengths (of intervals) but if that s all we are interested in there is no need to make this definition. These properties are easily proven if is length and the only sets we measure are intervals. This definition is here because we want measure other kinds of sets in . For example using this definition we can compute , and . What would you guess each of these will be?  Defining such a measure is actually more delicate than it might appear to be as we shall later see, but this is enough to serve our purposes at present. We will focus on what Lebesgue introduced in his doctoral dissertation Intégrale, longueur, aire (Integral, length, area) which is now known as Lebesgue Measure .   Open Cover   Suppose is a collection of open sets in and let be any set in . Then is called an open cover of if and only if every element of is contained in one of the open sets in . If contains only finitely many open sets then is called a finite open cover of .    Loosely speaking, and open cover of a set is a collection of open intervals which cover  (hence the name). Obviously every open interval is an open cover of itself.   Problems open covers   Construct two distinct open covers of each of the following sets. (There is more than one correct answer.)     The empty set: .                                         Lebesgue s Outer Measure   Let be a set and let be an open cover of . The outer measure of is given by where the sum is over all possible open covers of .     Problems outer measure   Compute the outer measure of each of the following sets.      where .       .                               That we called and outer measure suggests that there might be something called an inner measure and indeed there is. It is definition is given in .   Lebegue s Inner Measure   Let be a set, and let be its complement as in . The the inner measure of is given by .    A couple of observations regarding this notation will be helpful here.   Since and both represent numbers the first subtraction in equation is just ordinary subtraction.    The expression normally means the interval from to which means that the points in the interval are ordered, but we are abusing our notation a bit by thinking of it simply as an unordered set. In that case the expression represents set deletion rather than ordinary subtraction. It represents the set of points between and (inclusive) with the points in deleted.     The names of the inner and outer measures are descriptive. To compute we consider a set of numbers generated by a collection of sets which contain . To compute we consider a set of numbers generated by a collection of sets which are contained within . When these are the same we have the Lebesgue Measure .   Lebesgue Measure   Given a set if then their common value is the Lebesgue measure of , denoted .    All seems pretty straightforward at this point, but here is where one of the difficulties lies. For a given set, there is no guarantee that the inner and outer measures must be equal. In fact, there are such sets. The first non measurable set was described by Giuseppe Vitali (1875-1932) in . Creating such a set requires the use of something called the Axiom of Choice and delves deeply into a careful study of the theory of sets. We will see how complicated sets can be in the next section.   Giuseppe Vitali  Portraits Vitali  Vitali, Giuseppe portrait of    Portrait of Giuseppe Vitali    From a practical point of view, almost every set you encounter will likely be (Lebesgue) measurable. In summary, the collection of measurable sets has the following properties.   Every interval is measurable and is equal to the length of .   A set can have an infinite measure. For example .   If is measurable then is also measurable.    If are all measurable then is measurable.     For the remainder of this section we will only be discussing and using the Outer Measure . This will be enough to give you a good intuitive feel for the Lebesgue Integral which we define below. We have included the definitions of Inner Measure and Lebesgue Measure for completeness.  You saw in parts (a) and (b) of that finite sets have outer measure equal to zero. So do some infinite sets.   measure zero  zero measure measure zero   Let be countably infinite set of real numbers. Let be given. There is a collection of open intervals with and   Such a set is said to have measure zero .     Problems measure zero    Observe that does not say that anything is equal to zero. Explain how we can still conclude that the set has measure zero .      Prove .    Consider the interval .]     Despite the existence of non measurable sets of real numbers, Lebesgue was able to generalize the idea of a Riemann integral in a meaningful way. Here is an overall look at his ideas.  Speaking very loosely, if we want to compute where using the Riemann (Cauchy) integral we partition the axis into adjacent intervals with width and then construct (infinitesimal) rectangles with area from each differential. Summing these areas computing  provides the value of the definite integral.  Lebesgue s idea was to find all rectangles with a common height first, gather them together, and sum those areas. In letter to a colleague he described his process as follows:    I have to pay a certain sum, which I have collected in my pocket. I take the bills and coins out of my pocket and give them to the creditor in the order I find them until I have reached the total sum. This is the Riemann integral. But I can proceed differently. After I have taken all the money out of my pocket I order the bills and coins according to identical values and then I pay the several heaps one after the other to the creditor. This is my integral.    To apply Lebesgue's idea, we need the concept of a simple function .   Simple Function   A simple function  defined on a measurable set has two properties.   The range of is finite. In symbols,     The inverse image of each is measurable. In symbols, is measurable.   Inverse Image  The inverse image  of a point under the function , is the set of all points, for which . In particular, although it is related to the idea of an inverse function this is a set theoretic construct. That is, in this context the notation represents a set, not a function evaluation.        An example of a simple function on is given by . The graph of is seen in the figure below .   The graph of a simple function   Graph of s(x)    For a simple function on with we would define the Lebesgue integral of on by For the example above      Show that the Dirichlet function is a simple function on .      Compute the Lebesgue integral: .   Indices in the Lebesgue Integral  When we work with the Lebesgue Integral we modify our notation to: instead of because the Lebesgue Integral is meaningful even when the domain over which it is computed is not necessarily an interval. For example it is meaningful to compute a Lebesgue integral of some function over only the rational numbers in an interval . In that case we d express the integral as .      In order to define the Lebesgue integral of a more general function we proceed much as we did in when we defined the upper and lower Darboux integrals in .   Upper and Lower Lebesgue Integrals   Suppose is a bounded function defined on a measurable set with . We define the upper and lower Lebesgue integrals , respectively, by where is simple and , , and where is simple and , . We say that is Lebesgue integrable provided and define the Lebesgue integral  by their common value.    Any bounded function which is Riemann (Darboux) integrable on a finite interval is automatically Lebesgue integrable and the values of the integrals are the same. The reason for this is straightforward: An upper Darboux sum is the integral of a simple function greater than or equal to and a lower Darboux sum is the Lebesgue integral of a simple function less than or equal to .   Use the above observation to show that and use this to explain why a bounded function which is Riemann (Darboux) integrable must also be Lebesgue integrable and the values of the integrals are equal.   The Lebesgue Integral is more general than the Riemann Integral as there are functions which are Lebesgue integrable but are not Riemann integrable, namely the Dirichlet function . The Lebesgue integral also shares the typical properties of a Riemann integral: integral of a sum equals sum of the integrals, etc. But we will not prove these facts.  There is also a precise characterization for when a function is Lebesgue integrable which we will not get into. For our purposes, we have the following result.   Theorem. Lebesgue's Dominated Convergence Theorem (1904)  Suppose is a measurable set with and is a sequence of Lebesgue integrable functions on which converges pointwise to on except possibly on a set of measure 0. If there is a Lebesgue integrable function such that for all and for all , then is Lebesgue integrable and .   Again, we will not prove Lebesgue s Dominated Convergence Theorem but notice that, unlike Arzelà s Bounded Convergence Theorem , we did not need the assumption that was integrable. In fact, Lebesgue s theorem is stronger than Arzelà s in the sense that Arzelà s result follows from Lebesgue s.    Explain how Arzelà s Bounded Convergence Theorem is a consequence of Lebesgue s Dominated Convergence Theorem .    In the interest of conserving space we have presented a stripped down view of the modern development of integration theory, but road from a Riemann integral to a more modern measure theoretic one was neither straight nor smooth. In addition to Cauchy, Riemann and Darboux many others along the way developed their own ideas for the rigorous formulation of the integral concept.  If you are interested in learning more, you can begin by reading about Thomas Jan Stietles , Arnaud Denjoy , Oskar Perron , and Émile Borel , to name a few. You might also find the book and the article interesting. The latter describes an integral definition independently developed in the 's by Jaroslav Kurzwell and Ralph Henstock which is more general than the Lebesgue integral and is arguably easier to teach and understand.  But that is another story.   "
+  "body": " The Road to Lebesgue Integration   Swapping Limits and Integrals   states that if (Riemann) integrable functions converge uniformly to an integrable function on then limit evaluation and integration are commutative operations: . Thus we can integrate a power series term by term because as we saw in all power series converge uniformly on any closed interval contained insider their intervals of convergence . However the converse of is not true.   Necessary vs. Sufficient Conditions  With respect to the validity of swapping integration with limit evaluation we say that uniform convergence is a sufficient but not a necessary condition.   In other words, there are sequences of functions converging pointwise to for which equation still holds true.  In you showed that . This is also intuitively clear from .     Graphs of x raised to the zeroth, second, fifth, tenth, and one hundredth power.    In fact is an example of a function which is the pointwise limit of continuous functions where integration and limit evaluation commute. We did not comment on it at the time because we weren t prepared to talk about integration yet. Now we are.     As in let . Use   to show that .       Notice that for any partition the lower sum , so the lower Darboux integral is . To find the upper Darboux integral, let and use the partition to show that the upper Darboux integral is less than . Be sure to explain how the conclusion follows from this observation.      Use the result of part (a) to conclude that .     As a result of we have one example of a pointwise limit where integration and limit evaluation commute, thus affirming that uniform convergence is not a necessary condition. A natural question to ask at this point is, What is necessary? In other words, can we find weaker conditions on the convergence that still allow commutativity? The next problem begins to address but does not fully answer that question.     Suppose is a continuous function on the interval and let .   Generalize your solution of to show that .    Suppose that . You can use an argument similar to the one in part (a) of to show that , but this time use a partition with a subinterval containing with length equal to .  A similar argument will work if .            Extend your result in part (a) to show that the integral of is unchanged if there are finitely many discontinuities: .    This is just an extension of the technique used in part (a).      Extend your result in part (b) to show that the integral of is unchanged even if the number of discontinuities is countably infinite.    This is also an extension of the technique used in part (a), but it s harder to see how to make the upper Darboux integral less than .  Recall that .      Do you think the integral of will remain unchanged when the set of discontinuities is uncountably infinite? Explain.  To be clear, you do not know enough about uncountably infinite sets to prove this either way. We are not asking you for a proof. Just explain what your intuition is telling you. There is no right or wrong answer. Yet.      Next consider the two functions We know from that for the sequence , we can commute integration and limit evaluation. But by we cannot do this for the sequence . What is the difference between the two? Explain.        The answer comes from the following theorem due to Cesare Arzelà (1847 1912).   Cesare Arzelà   Portrait of Cesare Arzelà      Arzelà s Bounded Convergence Theorem (1885)  Assume is a sequence of Riemann integrable functions which converges pointwise to a Riemann integrable function on . Assume also that this sequence is uniformly bounded, namely, that there is a real number with for all and for all . Then .    Why does the example in not violate Arzelà s Bounded Convergence Theorem?    It is not necessarily true that the limit function in Arzelà s Bounded Convergence Theorem will be automatically Riemann integrable. To see this consider the following example.  Since the rational numbers are a countably infinite set, they can be written sequentially (and in no particular order) as , so we define the function as follows .  Show that the sequence converges pointwise to the Dirichlet Function which is not Riemann integrable as we saw in .     Lebesgue Measure and Integration  We will not provide a direct analytic proof of Arzelà s Bounded Convergence Theorem . Instead we will show that it is a special case of a more general result involving a more general formulation of integration which emphasized sets and set theory, which was quite novel when it was formulated. Earlier in this chapter we saw how the concepts of continuity and the limit could be restated in terms of sets and set theory.  Set theory also played a role in generalizing the notion of an integral. As we said before, the story of integration is complex with many entry points. To provide a full accounting would take another course (and another book) so we will provide only a glimpse into this story and see how it relates to the swapping of limits and integrals. In what follows many of the details will be glossed over in favor of a larger view.  As an entry point into this world, consider the Dirichlet Function again. Recall from that the Dirichlet Function  is not Riemann (Cauchy, Darboux) integrable. Dirichlet invented his function as an example of a non integrable function. For our purposes it has no importance beyond that. However the existence of non (Riemann)integrable functions suggests the question: Can the integral be defined in such a way as to capture all of the intuitive features of (Riemann) integration known to th century mathematicians and which also allows us to integrate something as seemingly bizarre as the Dirichlet Function?  Cantor s work on the cardinality of infinite sets provides some insight. Recall that the set of rational numbers is countably infinite, whereas the set of irrational numbers must be uncountable. A countable set like the rational numbers is smaller (in Cantor s sense) than an uncountable set like , but we haven t previously tried to express how much smaller because we didn t have any way to measure the size either set in order to compare them numerically. In a sense we will make clear shortly a countable set is miniscule compared to an uncountable set. Thus the values that a function takes on such a miniscule set should be irrelevant. After all, in a Riemann integral, the value the function takes on a finite set does not affect the value of the integral.  There has to be a way to measure sets to account for the fact that countable set should be negligible. Henri Lebesgue (1875 1941) devised such a measure in order to extend the notion of an integral. His ideas were later generalized to measuring subsets of more general sets and led to a subject called measure theory . Again, we will focus on defining Lebesgue measure and the Lebesgue integral.   Henri Lebesgue  Portraits Lebesgue  Lebesgue, Henri portrait of   Portrait of Henri Lebesgue    Lebesgue determined that a measure  of sets of real numbers should have the following properties   If is an interval of length then . (We include intervals with the same left and right endpoint: ).    If is a sequence of sets in then with equality when are pairwise disjoint i.e, .     is translation invariant. More precisely, if is a subset of , is any real number, and then ( is said to be shift invariant , meaning that if you shift every element of by some amount the measure of the set is unchanged.)     The purpose of the first and third statements should be clear. Since we are looking to generalize the concept of length the measure of an interval should be its length. For example, , and if  ,  The second statement is the Triangle Inequalty dressed up in the language of sets and measures.  The conditions given above are modeled on the properties of lengths (of intervals) but if that s all we are interested in there is no need to make this definition. These properties are easily proven if is length and the only sets we measure are intervals. This definition is here because we want measure other kinds of sets in . For example using this definition we can compute , and . What would you guess each of these will be?  Defining such a measure is actually more delicate than it might appear to be as we shall later see, but this is enough to serve our purposes at present. We will focus on what Lebesgue introduced in his doctoral dissertation Intégrale, longueur, aire (Integral, length, area) which is now known as Lebesgue Measure .   Open Cover   Suppose is a collection of open sets in and let be any set in . Then is called an open cover of if and only if every element of is contained in one of the open sets in . If contains only finitely many open sets then is called a finite open cover of .    Loosely speaking, and open cover of a set is a collection of open intervals which cover  (hence the name). Obviously every open interval is an open cover of itself.   Problems open covers   Construct two distinct open covers of each of the following sets. (There is more than one correct answer.)     The empty set: .                                         Lebesgue s Outer Measure   Let be a set (allowing for the possibility that the left and right endpoints might be or , respectively) and let be the collection of all open covers of .    The outer measure of is given by where the sum is over all countable open covers of .     Problems outer measure   Compute the outer measure of each of the following sets.      where .       .                               That we called an outer measure suggests that there might be something called an inner measure and indeed there is. It s definition is given in .   Lebegue s Inner Measure   Let be a set, and let be its complement as in . The the inner measure of is given by where is closed and bounded.                             The names of the inner and outer measures are descriptive. To compute we consider a set of numbers generated by a collection of sets which contain . To compute we consider a set of numbers generated by a collection of sets which are contained within . When these are the same we have the Lebesgue Measure .   Lebesgue Measure   Given a set (allowing for the possibility that the left and right endpoints might be or , respectively) if then their common value is the Lebesgue measure of , denoted .    All seems pretty straightforward at this point, but here is where one of the difficulties lies. For a given set, there is no guarantee that the inner and outer measures must be equal. In fact, there are such sets. The first non measurable set was described by Giuseppe Vitali (1875-1932) in . Creating such a set requires the use of something called the Axiom of Choice and delves deeply into a careful study of the theory of sets. We will see how complicated sets can be in the next section.   Giuseppe Vitali  Portraits Vitali  Vitali, Giuseppe portrait of    Portrait of Giuseppe Vitali    From a practical point of view, almost every set you encounter will likely be (Lebesgue) measurable. In summary, the collection of measurable sets has the following properties.   Every interval is measurable and is equal to the length of .   A set can have an infinite measure. For example .   If is measurable then is also measurable.    If are all measurable then is measurable.     For the remainder of this section we will only be discussing and using the Outer Measure . This will be enough to give you a good intuitive feel for the Lebesgue Integral which we define below. We have included the definitions of Inner Measure and Lebesgue Measure for completeness.  You saw in parts (a) and (b) of that finite sets have outer measure equal to zero. So do some infinite sets.   measure zero  zero measure measure zero   Let be countably infinite set of real numbers. Let be given. There is a collection of open intervals with and   Such a set is said to have measure zero .     Problems measure zero    Prove .    Consider the interval .]      Observe that does not say that anything is equal to zero. Explain how we can still conclude in that the set has measure zero .     Despite the existence of non measurable sets of real numbers, Lebesgue was able to generalize the idea of a Riemann integral in a meaningful way. Here is an overall look at his ideas.  Speaking very loosely, if we want to compute where using the Riemann (Cauchy) integral we partition the axis into adjacent intervals with width and then construct (infinitesimal) rectangles with area from each differential. Summing these areas computing  provides the value of the definite integral.  Lebesgue s idea was to find all rectangles with a common height first, gather them together, and sum those areas. In letter to a colleague he described his process as follows:    I have to pay a certain sum, which I have collected in my pocket. I take the bills and coins out of my pocket and give them to the creditor in the order I find them until I have reached the total sum. This is the Riemann integral. But I can proceed differently. After I have taken all the money out of my pocket I order the bills and coins according to identical values and then I pay the several heaps one after the other to the creditor. This is my integral.    To apply Lebesgue's idea, we need the concept of a simple function .   Simple Function   A simple function  defined on a measurable set has two properties.   The range of is finite. In symbols,     The inverse image of each is measurable. In symbols, is measurable.       An example of a simple function on is given by . The graph of is seen in the figure below .   The graph of a simple function   Graph of s(x)    For a simple function on with we would define the Lebesgue integral of on by For the example above      Show that the Dirichlet function is a simple function on .      Compute the Lebesgue integral: .   Indices in the Lebesgue Integral  When we work with the Lebesgue Integral we modify our notation to: instead of because the Lebesgue Integral is meaningful even when the domain over which it is computed is not necessarily an interval. For example it is meaningful to compute a Lebesgue integral of some function over only the rational numbers in an interval . In that case we d express the integral as .      In order to define the Lebesgue integral of a more general function we proceed much as we did in when we defined the upper and lower Darboux integrals in .   Upper and Lower Lebesgue Integrals   Suppose is a bounded function defined on a measurable set with . We define the upper and lower Lebesgue integrals , respectively, by where is simple and , , and where is simple and , . We say that is Lebesgue integrable provided and define the Lebesgue integral  by their common value.    Any bounded function which is Riemann (Darboux) integrable on a finite interval is automatically Lebesgue integrable and the values of the integrals are the same. The reason for this is straightforward: An upper Darboux sum is the integral of a simple function greater than or equal to and a lower Darboux sum is the Lebesgue integral of a simple function less than or equal to .   Use the above observation to show that and use this to explain why a bounded function which is Riemann (Darboux) integrable must also be Lebesgue integrable and the values of the integrals are equal.   The Lebesgue Integral is more general than the Riemann Integral as there are functions which are Lebesgue integrable but are not Riemann integrable, namely the Dirichlet function . The Lebesgue integral also shares the typical properties of a Riemann integral: integral of a sum equals sum of the integrals, etc. But we will not prove these facts.  There is also a precise characterization for when a function is Lebesgue integrable which we will not get into. For our purposes, we have the following result.   Theorem. Lebesgue's Dominated Convergence Theorem (1904)  Suppose is a measurable set with and is a sequence of Lebesgue integrable functions on which converges pointwise to on except possibly on a set of measure 0. If there is a Lebesgue integrable function such that for all and for all , then is Lebesgue integrable and .   Again, we will not prove Lebesgue s Dominated Convergence Theorem but notice that, unlike Arzelà s Bounded Convergence Theorem , we did not need the assumption that was integrable. In fact, Lebesgue s theorem is stronger than Arzelà s in the sense that Arzelà s result follows from Lebesgue s.    Explain how Arzelà s Bounded Convergence Theorem is a consequence of Lebesgue s Dominated Convergence Theorem .    In the interest of conserving space we have presented a stripped down view of the modern development of integration theory, but road from a Riemann integral to a more modern measure theoretic one was neither straight nor smooth. In addition to Cauchy, Riemann and Darboux many others along the way developed their own ideas for the rigorous formulation of the integral concept.  If you are interested in learning more, you can begin by reading about Thomas Jan Stietles , Arnaud Denjoy , Oskar Perron , and Émile Borel , to name a few. You might also find the book and the article interesting. The latter describes an integral definition independently developed in the 's by Jaroslav Kurzwell and Ralph Henstock which is more general than the Lebesgue integral and is arguably easier to teach and understand.  But that is another story.   "
 },
 {
-  "id": "SECTIONLebesgueIntegration-3-2",
+  "id": "SECTIONLebesgueIntegration-2-3-2",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-2",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-2-3-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4849,12 +4876,12 @@ var ptx_lunr_docs = [
   "type": "Problem",
   "number": "12.3.2",
   "title": "",
-  "body": "   As in let . Use and to show that .    Let and show that any partition of can be refined so that the contribution of the subinterval containing to the value of the integral is less than .      Use the result of part (a) to conclude that .    "
+  "body": "   As in let . Use   to show that .       Notice that for any partition the lower sum , so the lower Darboux integral is . To find the upper Darboux integral, let and use the partition to show that the upper Darboux integral is less than . Be sure to explain how the conclusion follows from this observation.      Use the result of part (a) to conclude that .    "
 },
 {
-  "id": "SECTIONLebesgueIntegration-8",
+  "id": "SECTIONLebesgueIntegration-2-9",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-8",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-2-9",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4867,16 +4894,16 @@ var ptx_lunr_docs = [
   "type": "Problem",
   "number": "12.3.3",
   "title": "",
-  "body": "   Suppose is a bounded, continuous function on the interval and let .   Generalize your solution of to show that .    We know that is bounded. Let be a bound, so that . Now generalize your solution to .          Extend your result in part (a) to show that the integral of is unchanged if there are finitely many discontinuities: .      Extend your result in part (b) to show that the integral of is unchanged even if the number of discontinuities is countably infinite.      Do you think the integral of will remain unchanged when the set of discontinuities is uncountably infinite? Explain.    "
+  "body": "   Suppose is a continuous function on the interval and let .   Generalize your solution of to show that .    Suppose that . You can use an argument similar to the one in part (a) of to show that , but this time use a partition with a subinterval containing with length equal to .  A similar argument will work if .            Extend your result in part (a) to show that the integral of is unchanged if there are finitely many discontinuities: .    This is just an extension of the technique used in part (a).      Extend your result in part (b) to show that the integral of is unchanged even if the number of discontinuities is countably infinite.    This is also an extension of the technique used in part (a), but it s harder to see how to make the upper Darboux integral less than .  Recall that .      Do you think the integral of will remain unchanged when the set of discontinuities is uncountably infinite? Explain.  To be clear, you do not know enough about uncountably infinite sets to prove this either way. We are not asking you for a proof. Just explain what your intuition is telling you. There is no right or wrong answer. Yet.    "
 },
 {
-  "id": "SECTIONLebesgueIntegration-10",
+  "id": "SECTIONLebesgueIntegration-2-11",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-10",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-2-11",
   "type": "Example",
   "number": "12.3.4",
   "title": "",
-  "body": " Next consider the two functions We saw in and respectively, that both and converge pointwise to the zero function. Yet we can commute integration and limit evaluation for but not for . Why?  The answer comes from the following theorem due to Cesare Arzelà (1847 1912).   Cesare Arzelà   Portrait of Cesare Arzelà    "
+  "body": " Next consider the two functions We know from that for the sequence , we can commute integration and limit evaluation. But by we cannot do this for the sequence . What is the difference between the two? Explain.        The answer comes from the following theorem due to Cesare Arzelà (1847 1912).   Cesare Arzelà   Portrait of Cesare Arzelà    "
 },
 {
   "id": "THEOREMArzealBddConv",
@@ -4888,45 +4915,45 @@ var ptx_lunr_docs = [
   "body": " Arzelà s Bounded Convergence Theorem (1885)  Assume is a sequence of Riemann integrable functions which converges pointwise to a Riemann integrable function on . Assume also that this sequence is uniformly bounded, namely, that there is a real number with for all and for all . Then .  "
 },
 {
-  "id": "SECTIONLebesgueIntegration-12",
+  "id": "SECTIONLebesgueIntegration-2-13",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-12",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-2-13",
   "type": "Problem",
   "number": "12.3.7",
   "title": "",
   "body": " Why does the example in not violate Arzelà s Bounded Convergence Theorem?  "
 },
 {
-  "id": "SECTIONLebesgueIntegration-13",
+  "id": "SECTIONLebesgueIntegration-2-14",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-13",
-  "type": "Example",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-2-14",
+  "type": "Problem",
   "number": "12.3.8",
   "title": "",
-  "body": " It is not necessarily true that the limit function in Arzelà s Bounded Convergence Theorem will be Riemann integrable. To see this consider the following example.  Since the rational numbers are a countably infinite set, they can be written sequentially (and in no particular order) as , so we define the function as follows .  Show that converges pointwise to the Dirichlet Function which is not Riemann integrable as we saw in .  "
+  "body": " It is not necessarily true that the limit function in Arzelà s Bounded Convergence Theorem will be automatically Riemann integrable. To see this consider the following example.  Since the rational numbers are a countably infinite set, they can be written sequentially (and in no particular order) as , so we define the function as follows .  Show that the sequence converges pointwise to the Dirichlet Function which is not Riemann integrable as we saw in .  "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-4",
+  "id": "SECTIONLebesgueIntegration-3-4",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-4",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Dirichlet Function Dirichlet Function "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-5",
+  "id": "SECTIONLebesgueIntegration-3-5",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-5",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "measure "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-6",
+  "id": "SECTIONLebesgueIntegration-3-6",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-6",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4942,27 +4969,27 @@ var ptx_lunr_docs = [
   "body": " Henri Lebesgue  Portraits Lebesgue  Lebesgue, Henri portrait of   Portrait of Henri Lebesgue   "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-8",
+  "id": "SECTIONLebesgueIntegration-3-8",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-8",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-8",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "measure shift invariant "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-9",
+  "id": "SECTIONLebesgueIntegration-3-9",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-9",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-9",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "measure "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-12",
+  "id": "SECTIONLebesgueIntegration-3-12",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-12",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-12",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4978,9 +5005,9 @@ var ptx_lunr_docs = [
   "body": " Open Cover   Suppose is a collection of open sets in and let be any set in . Then is called an open cover of if and only if every element of is contained in one of the open sets in . If contains only finitely many open sets then is called a finite open cover of .   "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-14",
+  "id": "SECTIONLebesgueIntegration-3-14",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-14",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-14",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5002,7 +5029,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "12.3.12",
   "title": "Lebesgue’s Outer Measure.",
-  "body": " Lebesgue s Outer Measure   Let be a set and let be an open cover of . The outer measure of is given by where the sum is over all possible open covers of .   "
+  "body": " Lebesgue s Outer Measure   Let be a set (allowing for the possibility that the left and right endpoints might be or , respectively) and let be the collection of all open covers of .    The outer measure of is given by where the sum is over all countable open covers of .   "
 },
 {
   "id": "PROBLEMOuterMeasure1",
@@ -5014,9 +5041,9 @@ var ptx_lunr_docs = [
   "body": " Problems outer measure   Compute the outer measure of each of the following sets.      where .       .                              "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-18",
+  "id": "SECTIONLebesgueIntegration-3-18",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-18",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-18",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5029,12 +5056,12 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "12.3.14",
   "title": "Lebegue’s Inner Measure.",
-  "body": " Lebegue s Inner Measure   Let be a set, and let be its complement as in . The the inner measure of is given by .   "
+  "body": " Lebegue s Inner Measure   Let be a set, and let be its complement as in . The the inner measure of is given by where is closed and bounded.    "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-21",
+  "id": "SECTIONLebesgueIntegration-3-20",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-21",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-20",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5047,12 +5074,12 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "12.3.15",
   "title": "Lebesgue Measure.",
-  "body": " Lebesgue Measure   Given a set if then their common value is the Lebesgue measure of , denoted .   "
+  "body": " Lebesgue Measure   Given a set (allowing for the possibility that the left and right endpoints might be or , respectively) if then their common value is the Lebesgue measure of , denoted .   "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-23",
+  "id": "SECTIONLebesgueIntegration-3-22",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-23",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-22",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5068,9 +5095,9 @@ var ptx_lunr_docs = [
   "body": " Giuseppe Vitali  Portraits Vitali  Vitali, Giuseppe portrait of    Portrait of Giuseppe Vitali   "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-26",
+  "id": "SECTIONLebesgueIntegration-3-25",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-26",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-25",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5086,18 +5113,18 @@ var ptx_lunr_docs = [
   "body": " measure zero  zero measure measure zero   Let be countably infinite set of real numbers. Let be given. There is a collection of open intervals with and   Such a set is said to have measure zero .   "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-29",
+  "id": "SECTIONLebesgueIntegration-3-28",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-29",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-28",
   "type": "Problem",
   "number": "12.3.18",
   "title": "",
-  "body": " Problems measure zero    Observe that does not say that anything is equal to zero. Explain how we can still conclude that the set has measure zero .      Prove .    Consider the interval .]    "
+  "body": " Problems measure zero    Prove .    Consider the interval .]      Observe that does not say that anything is equal to zero. Explain how we can still conclude in that the set has measure zero .    "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-34",
+  "id": "SECTIONLebesgueIntegration-3-33",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-34",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-33",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5110,7 +5137,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "12.3.19",
   "title": "Simple Function.",
-  "body": " Simple Function   A simple function  defined on a measurable set has two properties.   The range of is finite. In symbols,     The inverse image of each is measurable. In symbols, is measurable.   Inverse Image  The inverse image  of a point under the function , is the set of all points, for which . In particular, although it is related to the idea of an inverse function this is a set theoretic construct. That is, in this context the notation represents a set, not a function evaluation.       "
+  "body": " Simple Function   A simple function  defined on a measurable set has two properties.   The range of is finite. In symbols,     The inverse image of each is measurable. In symbols, is measurable.      "
 },
 {
   "id": "FIGURESimpleFuntion1",
@@ -5122,9 +5149,9 @@ var ptx_lunr_docs = [
   "body": " The graph of a simple function   Graph of s(x)   "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-39",
+  "id": "SECTIONLebesgueIntegration-3-38",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-39",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-38",
   "type": "Problem",
   "number": "12.3.21",
   "title": "",
@@ -5140,18 +5167,18 @@ var ptx_lunr_docs = [
   "body": " Upper and Lower Lebesgue Integrals   Suppose is a bounded function defined on a measurable set with . We define the upper and lower Lebesgue integrals , respectively, by where is simple and , , and where is simple and , . We say that is Lebesgue integrable provided and define the Lebesgue integral  by their common value.   "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-43",
+  "id": "SECTIONLebesgueIntegration-3-42",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-43",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-42",
   "type": "Problem",
   "number": "12.3.23",
   "title": "",
   "body": " Use the above observation to show that and use this to explain why a bounded function which is Riemann (Darboux) integrable must also be Lebesgue integrable and the values of the integrals are equal.  "
 },
 {
-  "id": "SECTIONLebesgueIntegration-14-44",
+  "id": "SECTIONLebesgueIntegration-3-43",
   "level": "2",
-  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-14-44",
+  "url": "SECTIONLebesgueIntegration.html#SECTIONLebesgueIntegration-3-43",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",

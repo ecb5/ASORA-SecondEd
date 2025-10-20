@@ -319,7 +319,7 @@ eBookConfig.enable_chatcodes =  false;
 \begin{equation}
 \limit{n}{\infty}{\left(\int_{x=a}^b f_n(x)\dx{
 x}\right)}=\int_{x=a}^b \limit{n}{\infty}{\left(f_n(x)\right)
-\dx{ x}}=\int_{x=a}^bf(x)\dx{x}\text{.}\tag{24}
+\dx{ x}}=\int_{x=a}^bf(x)\dx{x}\text{.}\tag{25}
 \end{equation}
 </div>
 <div class="para">Thus we can integrate a power series term–by–term because as we saw in <a href="PowerSeriesRedux-RadiusOfConv.html#thm_PowerSeriesConvergeUniformly" class="xref" data-knowl="./knowl/xref/thm_PowerSeriesConvergeUniformly.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 11.3.9: Power Series Converge Uniformly">Theorem 11.3.9</a> all power series converge uniformly on any closed interval <span class="process-math">\([-b,b]\)</span> contained insider their intervals of convergence <span class="process-math">\((-r,
@@ -330,7 +330,7 @@ r)\text{.}\)</span>  However the converse of <a href="PowerSeriesRedux-UnifConv-
 <span class="type">Aside<span class="colon heading-divison-mark heading-divison-mark__colon">:</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Necessary vs. Sufficient Conditions.</span>
 </h4></summary><aside class="aside aside-like knowl__content"><div class="para" id="SECTIONLebesgueIntegration-2-3-2">With respect to the validity of swapping integration with limit evaluation we say that uniform convergence is a <dfn class="terminology">sufficient</dfn> but not a <dfn class="terminology">necessary</dfn> condition.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></aside></details><div class="para" id="SECTIONLebesgueIntegration-2-4">In other words, there are sequences of functions <span class="process-math">\(\left(
-f_n\right) \)</span> converging pointwise to <span class="process-math">\(f\)</span> for which <a href="SECTIONLebesgueIntegration.html#EQUATIONLimIntSwap" class="internal" title="Equation 24">equation (24)</a> still holds true.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+f_n\right) \)</span> converging pointwise to <span class="process-math">\(f\)</span> for which <a href="SECTIONLebesgueIntegration.html#EQUATIONLimIntSwap" class="internal" title="Equation 25">equation (25)</a> still holds true.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="SECTIONLebesgueIntegration-2-5">
 <div class="para">In  <a href="PowerSeriesRedux-UnifConv.html#PROBLEMMonomialsOnUnitInterval" class="xref" data-knowl="./knowl/xref/PROBLEMMonomialsOnUnitInterval.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 11.1.8">Problem 11.1.8</a> you showed that</div>
@@ -702,7 +702,7 @@ S_j=\emptyset{}\text{.}\)</span>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/DEFINITIONOpenSet.html" id="EQUATIONInnerMeasure">
 \begin{equation}
 \mu_i\left(S\right)=\sup
-\left(\mu_o(K)\right)\tag{25}
+\left(\mu_o(K)\right)\tag{26}
 \end{equation}
 </div>
 <div class="para">where <span class="process-math">\(K\subset S\)</span> is closed and bounded. </div>
@@ -908,40 +908,166 @@ D\left(x\right)=
 <div class="para">Suppose <span class="process-math">\(f\)</span> is a bounded function defined on a measurable set <span class="process-math">\(E\)</span> with <span class="process-math">\(\mu \left(E\right)\lt{}\infty \text{.}\)</span>  We define the <dfn class="terminology">upper and lower Lebesgue integrals</dfn>, respectively, by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-I^*=\inf\left\{ \int_E s(x)\dx{\mu}\right\} 
+I^*=\inf\left\{ \int_E s(x)\dx{\mu}\right\}
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(s\)</span> is simple and <span class="process-math">\(s(x)\ge f(x)\text{,}\)</span> <span class="process-math">\(\forall\ x\in E\text{,}\)</span> and</div>
 <div class="displaymath process-math">
 \begin{equation*}
-I_*=\sup \left\{\int_E s(x)\dx{\mu}\right\} 
+I_*=\sup \left\{\int_E s(x)\dx{\mu}\right\}
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(s\)</span> is simple and <span class="process-math">\(s(x)\le f(x)\text{,}\)</span> <span class="process-math">\(\forall\
-x\in E\text{.}\)</span> We say that <span class="process-math">\(f\)</span> is <dfn class="terminology">Lebesgue integrable</dfn> provided <span class="process-math">\(I^*=I_*\)</span> and define the <dfn class="terminology">Lebesgue integral</dfn> <span class="process-math">\(\int_E{f\left(x\right)\dx{\mu} }\)</span> by their common value.</div>
+x\in E\text{.}\)</span>
+</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#DEFINITIONUpAndLowLebesgueIntegrals-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 12.3.22: Upper and Lower Lebesgue Integrals"><a href="#DEFINITIONUpAndLowLebesgueIntegrals" title="Copy heading and permalink for Definition 12.3.22: Upper and Lower Lebesgue Integrals" aria-label="Copy heading and permalink for Definition 12.3.22: Upper and Lower Lebesgue Integrals">🔗</a></div></article><div class="para" id="SECTIONLebesgueIntegration-3-41">Any bounded function which is Riemann (Darboux) integrable on a finite interval <span class="process-math">\([a,b]\)</span> is automatically Lebesgue integrable and the values of the integrals are the same.  The reason for this is straightforward: An upper Darboux sum <span class="process-math">\(U(P)\)</span> is the integral of a simple function greater than or equal to <span class="process-math">\(f\)</span> and a lower Darboux sum <span class="process-math">\(L(P)\)</span> is the Lebesgue integral of a simple function less than or equal to <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-41" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<article class="problem example-like" id="SECTIONLebesgueIntegration-3-42"><h4 class="heading">
-<span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
-<div class="para logical" id="SECTIONLebesgueIntegration-3-42-1">
-<div class="para">Use the above observation to show that</div>
-<div class="displaymath process-math">
+<div class="autopermalink" data-description="Definition 12.3.22: Upper and Lower Lebesgue Integrals"><a href="#DEFINITIONUpAndLowLebesgueIntegrals" title="Copy heading and permalink for Definition 12.3.22: Upper and Lower Lebesgue Integrals" aria-label="Copy heading and permalink for Definition 12.3.22: Upper and Lower Lebesgue Integrals">🔗</a></div></article><div class="para logical" id="SECTIONLebesgueIntegration-3-41">
+<div class="para">Just as with the upper and lower Darboux integrals (<a href="SECTIONDefiningIntegral.html#PROBLEMUpLowDarboux" class="xref" data-knowl="./knowl/xref/PROBLEMUpLowDarboux.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 10.4.7: Upper and Lower Darboux Integrals">Problem 10.4.7</a>), we should be able to show that <span class="process-math">\(I_*\le I^*\text{.}\)</span>  To see this, we must show that for any simple functions, <span class="process-math">\(s(x)\)</span> and <span class="process-math">\(t(x)\)</span> defined on <span class="process-math">\(E\)</span> with <span class="process-math">\(s\left(x\right)\le t(x)\)</span> for all <span class="process-math">\(x\in E\text{,}\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/PROBLEMUpLowDarboux.html">
 \begin{equation*}
-\int^b_{\underline{\ x=a\ \ }}{f\left(x\right)\dx{x}\le }I_*\le I^*\le \overline{\int^{b}_{x=a}}{f\left(x\right)\dx{x}}
+\int_E{s\left(x\right)\dx{\mu} }\le \int_E t(x)\dx{\mu}
 \end{equation*}
 </div>
-<div class="para">and use this to explain why a bounded function which is Riemann (Darboux) integrable must also be Lebesgue integrable and the values of the integrals are equal.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-42-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-41" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 12.3.23"><a href="#SECTIONLebesgueIntegration-3-42" title="Copy heading and permalink for Problem 12.3.23" aria-label="Copy heading and permalink for Problem 12.3.23">🔗</a></div></article><div class="para" id="SECTIONLebesgueIntegration-3-43">The <dfn class="terminology">Lebesgue Integral</dfn> is more general than the <dfn class="terminology">Riemann Integral</dfn> as there are functions which are Lebesgue integrable but are not Riemann integrable, namely the Dirichlet function <span class="process-math">\(D(x)\text{.}\)</span>  The Lebesgue integral also shares the typical properties of a Riemann integral: integral of a sum equals sum of the integrals, etc. But we will not prove these facts.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-43" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="SECTIONLebesgueIntegration-3-42">
+<div class="para">To facilitate this, we will introduce the following notation. Let <span class="process-math">\(S\subset \RR \text{.}\)</span>  Consider the function <span class="process-math">\(\chi_S\)</span> defined by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\chi_S(x)=
+\begin{cases}
+1 \amp{}\text{ if }\ x\in S  \\
+0 \amp{}\text{ if }\ x\notin S
+\end{cases}
+\end{equation*}
 </div>
-<div class="para" id="SECTIONLebesgueIntegration-3-44">There is also a precise characterization for when a function is Lebesgue integrable which we will not get into.  For our purposes, we have the following result.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-44" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">
+<span class="process-math">\(\chi_S\)</span> is called the <dfn class="terminology">characteristic function</dfn> of <span class="process-math">\(S\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-42" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="SECTIONLebesgueIntegration-3-43"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="SECTIONLebesgueIntegration-3-43-1">Observe that the <a href="SECTIONDefiningIntegral.html#EQUATIONDirichletsFunction" class="xref" data-knowl="./knowl/xref/EQUATIONDirichletsFunction.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 20">Dirichlet function</a> is <span class="process-math">\(\chi_
+{\left\{\QQ \cap [0,1]\right\}}(x) \text{,}\)</span> the <dfn class="terminology">characteristic function</dfn> of the rational numbers in the unit interval.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-43-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 12.3.23"><a href="#SECTIONLebesgueIntegration-3-43" title="Copy heading and permalink for Example 12.3.23" aria-label="Copy heading and permalink for Example 12.3.23">🔗</a></div></article><div class="para" id="SECTIONLebesgueIntegration-3-44">Note that if <span class="process-math">\(S=S_1\cup S_2\)</span> where <span class="process-math">\(S_1\cap
+S_2=\emptyset \text{,}\)</span> then <span class="process-math">\({\chi }_S={\chi }_{S_1}+{\chi
+}_{S_2}\text{.}\)</span>  This can be extended to more than two sets, namely if <span class="process-math">\(S=\bigcup^n_{j=1}{S_j}\)</span> where <span class="process-math">\(S_j\)</span> are pairwise disjoint, then <span class="process-math">\({\chi }_S=\sum^n_{j=1}{{\chi
+}_{S_j}}\text{.}\)</span>  This observation will be useful in what is to come.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-44" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="SECTIONLebesgueIntegration-3-45">
+<div class="para">With this notation we can write a simple function on <span class="process-math">\(E\)</span> as follows</div>
+<div class="displaymath process-math">
+\begin{equation*}
+s\left(x\right)=\sum^n_{j=1}{a_j{\chi }_{E_j}\left(x\right)}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(E_j=s^{-1}\left(\left\{a_j\right\}\right)\text{.}\)</span> Note that with this notation, <span class="process-math">\(E=\bigcup^n_{j=1}{E_j}\)</span> where <span class="process-math">\(E_j\)</span> are pairwise disjoint.  With this new notation suppose we have two simple functions <span class="process-math">\(s\left(x\right)\le t(x)\)</span> defined on a measurable set <span class="process-math">\(E\)</span> with <span class="process-math">\(\mu \left(E\right)\lt{}\infty \text{.}\)</span>  Using the notation we developed, we can write these simple functions as</div>
+<div class="displaymath process-math" id="SECTIONLebesgueIntegration-3-45-9">
+\begin{align*}
+s(x)=\sum^n_{j=1}a_j\chi_{E_j}(x)\amp{}\amp{}
+\text{ and }\amp{}\amp{}
+t\left(x\right)=\sum^m_{i=1}b_i{\chi
+}_{F_i}\left(x\right).
+\end{align*}
+</div>
+<div class="para"> Notice that for each <span class="process-math">\(j\text{,}\)</span> we can write</div>
+<div class="displaymath process-math" id="SECTIONLebesgueIntegration-3-45-11">
+\begin{align*}
+E_j\amp{}=E_j\cap E\amp{}\\
+\amp{}=E_j\cap \left(F_1\cup F_2\cup \dots \cup
+F_m\right)\\
+\amp{}=\left(E_j\cap F_1\right)\cup \left(E_j\cap
+F_2\right)\cup \dots \cup (E_j\cap F_m)
+\end{align*}
+</div>
+<div class="para">and since these last sets are pairwise disjoint we see that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mu(E_j) = \mu \left( \left(E_j\cap F_1\right)\cup \left(E_j\cap
+F_2\right)\cup \dots \cup (E_j\cap F_m)\right)
+=  \sum^m_{i=1}\chi_{E_j\cap F_i}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-45" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="SECTIONLebesgueIntegration-3-46">
+<div class="para">Thus, we have</div>
+<div class="displaymath process-math" id="SECTIONLebesgueIntegration-3-46-1">
+\begin{align*}
+s\amp{}=\sum^n_{j=1}{a_j{\chi
+}_{E_j}} \\
+\amp{}=\sum^n_{j=1}{\left(a_j\sum^m_{i=1}{{\chi }_{E_j\cap
+F_i}}\right)}\\
+\amp{}=\sum^{n,m}_{j=1,i=1}{a_j{\chi }_{E_j\cap F_i}}.
+\end{align*}
+</div>
+<div class="para">In a similar fashion we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+t=\sum^{n,m}_{j=1,i=1}{b_i{\chi }_{E_j\cap F_i}}
+\end{equation*}
+</div>
+<div class="para">But on <span class="process-math">\(E_j\cap F_i\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_j=s\left(x\right)\le t\left(x\right)=b_i
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-46" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="problem example-like" id="SECTIONLebesgueIntegration-3-47"><h4 class="heading">
+<span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<article class="task exercise-like" id="SECTIONLebesgueIntegration-3-47-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="SECTIONLebesgueIntegration-3-47-1-1-1">
+<div class="para">Use the above ideas to show that if <span class="process-math">\(s\left(x\right),\ t(x)\)</span> are two simple functions defined on a measurable set <span class="process-math">\(E\)</span> with <span class="process-math">\(\mu
+\left(E\right)\lt\infty \)</span> with <span class="process-math">\(s\left(x\right)\le t(x)\text{,}\)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_E{s\left(x\right)\dx{\mu} }\le \int_E{t\left(x\right)\dx{\mu} }
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-47-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 12.3.24.a"><a href="#SECTIONLebesgueIntegration-3-47-1" title="Copy heading and permalink for Task 12.3.24.a" aria-label="Copy heading and permalink for Task 12.3.24.a">🔗</a></div></article><article class="task exercise-like" id="SECTIONLebesgueIntegration-3-47-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="SECTIONLebesgueIntegration-3-47-2-1-1">Show that for a bounded function <span class="process-math">\(f\)</span> on <span class="process-math">\(E\text{,}\)</span> <span class="process-math">\(I_*\le I^*\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-47-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 12.3.24.b"><a href="#SECTIONLebesgueIntegration-3-47-2" title="Copy heading and permalink for Task 12.3.24.b" aria-label="Copy heading and permalink for Task 12.3.24.b">🔗</a></div></article><div class="autopermalink" data-description="Problem 12.3.24"><a href="#SECTIONLebesgueIntegration-3-47" title="Copy heading and permalink for Problem 12.3.24" aria-label="Copy heading and permalink for Problem 12.3.24">🔗</a></div></article><article class="definition definition-like" id="DEFINITIONLebesgueInt"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Lebesgue Integral.</span>
+</h4>
+<div class="para" id="DEFINITIONLebesgueInt-2-1">We say that <span class="process-math">\(f\)</span> is <dfn class="terminology">Lebesgue integrable</dfn> on a measurable set <span class="process-math">\(E\text{,}\)</span> provided that the <a href="SECTIONLebesgueIntegration.html#DEFINITIONUpAndLowLebesgueIntegrals" class="internal" title="Definition 12.3.22: Upper and Lower Lebesgue Integrals">Upper and Lower Lebesgue Integrals</a> are equal: <span class="process-math">\(I^*=I_*\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DEFINITIONLebesgueInt-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="DEFINITIONLebesgueInt-2-2">We define the <dfn class="terminology">Lebesgue integral</dfn>, denoted by <span class="process-math">\(\int_E{f\left(x\right)\dx{\mu} }\text{,}\)</span> to be their common value.<div class="autopermalink" data-description="Paragraph"><a href="#DEFINITIONLebesgueInt-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 12.3.25: The Lebesgue Integral"><a href="#DEFINITIONLebesgueInt" title="Copy heading and permalink for Definition 12.3.25: The Lebesgue Integral" aria-label="Copy heading and permalink for Definition 12.3.25: The Lebesgue Integral">🔗</a></div></article><article class="problem example-like" id="SECTIONLebesgueIntegration-3-49"><h4 class="heading">
+<span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.26</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="introduction" id="SECTIONLebesgueIntegration-3-49-1"><div class="para" id="SECTIONLebesgueIntegration-3-49-1-1">Any bounded function which is Riemann (Darboux) integrable on a finite interval <span class="process-math">\([a,b]\)</span> is automatically Lebesgue integrable and the values of the integrals are the same.  The reason for this is straightforward: An upper Darboux sum <span class="process-math">\(U(P)\)</span> is the integral of a simple function greater than or equal to <span class="process-math">\(f\)</span> and a lower Darboux sum <span class="process-math">\(L(P)\)</span> is the Lebesgue integral of a simple function less than or equal to <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-49-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="SECTIONLebesgueIntegration-3-49-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="SECTIONLebesgueIntegration-3-49-2-1-1">
+<div class="para">Use the observation above to show that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int^b_{\underline{x=a}}{f\left(x\right)\dx{x}\le }I_*\le
+I^*\le \overline{\int^{b}_{x=a}}{f\left(x\right)\dx{x}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-49-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 12.3.26.a"><a href="#SECTIONLebesgueIntegration-3-49-2" title="Copy heading and permalink for Task 12.3.26.a" aria-label="Copy heading and permalink for Task 12.3.26.a">🔗</a></div></article><article class="task exercise-like" id="SECTIONLebesgueIntegration-3-49-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="SECTIONLebesgueIntegration-3-49-3-1-1">Use the result in part (a) to explain why a bounded function which is Riemann (Darboux) integrable must also be Lebesgue integrable and the values of the integrals are equal.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-49-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 12.3.26.b"><a href="#SECTIONLebesgueIntegration-3-49-3" title="Copy heading and permalink for Task 12.3.26.b" aria-label="Copy heading and permalink for Task 12.3.26.b">🔗</a></div></article><div class="autopermalink" data-description="Problem 12.3.26"><a href="#SECTIONLebesgueIntegration-3-49" title="Copy heading and permalink for Problem 12.3.26" aria-label="Copy heading and permalink for Problem 12.3.26">🔗</a></div></article><div class="para" id="SECTIONLebesgueIntegration-3-50">The <dfn class="terminology">Lebesgue Integral</dfn> is more general than the <dfn class="terminology">Riemann Integral</dfn> as there are functions which are Lebesgue integrable but are not Riemann integrable, namely the Dirichlet function <span class="process-math">\(D(x)\text{.}\)</span>  The Lebesgue integral also shares the typical properties of a Riemann integral: integral of a sum equals sum of the integrals, etc. But we will not prove these facts.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-50" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="SECTIONLebesgueIntegration-3-51">There is also a precise characterization for when a function is Lebesgue integrable which we will not get into.  For our purposes, we have the following result.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-51" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="THEOREMLebDomConvThm"><h4 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem. Lebesgue’s Dominated Convergence Theorem (1904).</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem. Lebesgue’s Dominated Convergence Theorem (1904).</span>
 </h4>
 <div class="para logical" id="THEOREMLebDomConvThm-2">
 <div class="para">Suppose <span class="process-math">\(E\)</span> is a measurable set with <span class="process-math">\(\mu
@@ -954,18 +1080,18 @@ x\in E\text{.}\)</span> We say that <span class="process-math">\(f\)</span> is <
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#THEOREMLebDomConvThm-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 12.3.24: Theorem. Lebesgue’s Dominated Convergence Theorem (1904)"><a href="#THEOREMLebDomConvThm" title="Copy heading and permalink for Theorem 12.3.24: Theorem. Lebesgue’s Dominated Convergence Theorem (1904)" aria-label="Copy heading and permalink for Theorem 12.3.24: Theorem. Lebesgue’s Dominated Convergence Theorem (1904)">🔗</a></div></article><div class="para" id="SECTIONLebesgueIntegration-3-46">Again, we will not prove <a href="SECTIONLebesgueIntegration.html#THEOREMLebDomConvThm" class="internal" title="Theorem 12.3.24: Theorem. Lebesgue’s Dominated Convergence Theorem (1904)">Lebesgue’s Dominated Convergence Theorem</a> but notice that, unlike <a href="SECTIONLebesgueIntegration.html#THEOREMArzealBddConv" class="internal" title="Theorem 12.3.6: Arzelà’s Bounded Convergence Theorem (1885)">Arzelà’s Bounded Convergence Theorem 12.3.6</a>, we did not need the assumption that <span class="process-math">\(f\)</span> was integrable.  In fact, Lebesgue’s theorem is stronger than Arzelà’s in the sense that Arzelà’s result follows from Lebesgue’s.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-46" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Theorem 12.3.27: Theorem. Lebesgue’s Dominated Convergence Theorem (1904)"><a href="#THEOREMLebDomConvThm" title="Copy heading and permalink for Theorem 12.3.27: Theorem. Lebesgue’s Dominated Convergence Theorem (1904)" aria-label="Copy heading and permalink for Theorem 12.3.27: Theorem. Lebesgue’s Dominated Convergence Theorem (1904)">🔗</a></div></article><div class="para" id="SECTIONLebesgueIntegration-3-53">Again, we will not prove <a href="SECTIONLebesgueIntegration.html#THEOREMLebDomConvThm" class="internal" title="Theorem 12.3.27: Theorem. Lebesgue’s Dominated Convergence Theorem (1904)">Lebesgue’s Dominated Convergence Theorem</a> but notice that, unlike <a href="SECTIONLebesgueIntegration.html#THEOREMArzealBddConv" class="internal" title="Theorem 12.3.6: Arzelà’s Bounded Convergence Theorem (1885)">Arzelà’s Bounded Convergence Theorem 12.3.6</a>, we did not need the assumption that <span class="process-math">\(f\)</span> was integrable.  In fact, Lebesgue’s theorem is stronger than Arzelà’s in the sense that Arzelà’s result follows from Lebesgue’s.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-53" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="problem example-like" id="PROBLEMLebImplyArz"><h4 class="heading">
-<span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="PROBLEMLebImplyArz-1-1">Explain how <a href="SECTIONLebesgueIntegration.html#THEOREMArzealBddConv" class="internal" title="Theorem 12.3.6: Arzelà’s Bounded Convergence Theorem (1885)">Arzelà’s Bounded Convergence Theorem 12.3.6</a> is a consequence of <a href="SECTIONLebesgueIntegration.html#THEOREMLebDomConvThm" class="internal" title="Theorem 12.3.24: Theorem. Lebesgue’s Dominated Convergence Theorem (1904)">Lebesgue’s Dominated Convergence Theorem 12.3.24</a>.<div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMLebImplyArz-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="PROBLEMLebImplyArz-1-1">Explain how <a href="SECTIONLebesgueIntegration.html#THEOREMArzealBddConv" class="internal" title="Theorem 12.3.6: Arzelà’s Bounded Convergence Theorem (1885)">Arzelà’s Bounded Convergence Theorem 12.3.6</a> is a consequence of <a href="SECTIONLebesgueIntegration.html#THEOREMLebDomConvThm" class="internal" title="Theorem 12.3.27: Theorem. Lebesgue’s Dominated Convergence Theorem (1904)">Lebesgue’s Dominated Convergence Theorem 12.3.27</a>.<div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMLebImplyArz-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 12.3.25"><a href="#PROBLEMLebImplyArz" title="Copy heading and permalink for Problem 12.3.25" aria-label="Copy heading and permalink for Problem 12.3.25">🔗</a></div></article><div class="para" id="SECTIONLebesgueIntegration-3-48">In the interest of conserving space we have presented a stripped down view of the modern development of integration theory, but road from a Riemann integral to a more modern measure theoretic one was neither straight nor smooth. In addition to Cauchy, Riemann and  Darboux many others along the way developed their own ideas for the  rigorous formulation of the  integral concept.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-48" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Problem 12.3.28"><a href="#PROBLEMLebImplyArz" title="Copy heading and permalink for Problem 12.3.28" aria-label="Copy heading and permalink for Problem 12.3.28">🔗</a></div></article><div class="para" id="SECTIONLebesgueIntegration-3-55">In the interest of conserving space we have presented a stripped down view of the modern development of integration theory, but road from a Riemann integral to a more modern measure theoretic one was neither straight nor smooth. In addition to Cauchy, Riemann and  Darboux many others along the way developed their own ideas for the  rigorous formulation of the  integral concept.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-55" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONLebesgueIntegration-3-49">If you are interested in learning more, you can begin by reading about <a class="external" href="https://mathshistory.st-andrews.ac.uk/Biographies/Stieltjes/" target="_blank">Thomas Jan Stietles</a>, <a class="external" href="https://mathshistory.st-andrews.ac.uk/Biographies/Denjoy/" target="_blank">Arnaud Denjoy</a>, <a class="external" href="https://mathshistory.st-andrews.ac.uk/Biographies/Perron/" target="_blank">Oskar Perron</a>, and <a class="external" href="https://mathshistory.st-andrews.ac.uk/Biographies/Borel/" target="_blank">Émile Borel</a>, to name a few. You might also find the book <a href="ASORA-6-1.html#Gordon_Integrals" class="xref" data-knowl="./knowl/xref/Gordon_Integrals.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1">[1]</a> and the article <a href="ASORA-6-1.html#Bartle_Riemann_Integral" class="xref" data-knowl="./knowl/xref/Bartle_Riemann_Integral.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 2">[2]</a> interesting. The latter describes an integral definition independently developed in the <span class="process-math">\(1960\)</span>’s by Jaroslav Kurzwell and Ralph Henstock which is more general than the Lebesgue integral and is arguably easier to teach and understand.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-49" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONLebesgueIntegration-3-56">If you are interested in learning more, you can begin by reading about <a class="external" href="https://mathshistory.st-andrews.ac.uk/Biographies/Stieltjes/" target="_blank">Thomas Jan Stietles</a>, <a class="external" href="https://mathshistory.st-andrews.ac.uk/Biographies/Denjoy/" target="_blank">Arnaud Denjoy</a>, <a class="external" href="https://mathshistory.st-andrews.ac.uk/Biographies/Perron/" target="_blank">Oskar Perron</a>, and <a class="external" href="https://mathshistory.st-andrews.ac.uk/Biographies/Borel/" target="_blank">Émile Borel</a>, to name a few. You might also find the book <a href="ASORA-6-1.html#Gordon_Integrals" class="xref" data-knowl="./knowl/xref/Gordon_Integrals.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 1">[1]</a> and the article <a href="ASORA-6-1.html#Bartle_Riemann_Integral" class="xref" data-knowl="./knowl/xref/Bartle_Riemann_Integral.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 2">[2]</a> interesting. The latter describes an integral definition independently developed in the <span class="process-math">\(1960\)</span>’s by Jaroslav Kurzwell and Ralph Henstock which is more general than the Lebesgue integral and is arguably easier to teach and understand.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-56" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="SECTIONLebesgueIntegration-3-50">But that is another story.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-50" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="SECTIONLebesgueIntegration-3-57">But that is another story.<div class="autopermalink" data-description="Paragraph"><a href="#SECTIONLebesgueIntegration-3-57" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Paragraphs: Lebesgue Measure and Integration"><a href="#SECTIONLebesgueIntegration-3" title="Copy heading and permalink for Paragraphs: Lebesgue Measure and Integration" aria-label="Copy heading and permalink for Paragraphs: Lebesgue Measure and Integration">🔗</a></div></section><div class="autopermalink" data-description="Section 12.3: The Road to Lebesgue Integration"><a href="#SECTIONLebesgueIntegration" title="Copy heading and permalink for Section 12.3: The Road to Lebesgue Integration" aria-label="Copy heading and permalink for Section 12.3: The Road to Lebesgue Integration">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">

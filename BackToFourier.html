@@ -332,7 +332,7 @@ a_n=\frac{f^{(n)}(a)}{n!}  \text{.}
 <div class="para" id="BackToFourier-2-3"> But what can be said about the uniqueness of a trigonometric series?<div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="BackToFourier-2-4">
-<div class="para">Usin the techniques that he emplyed to solve the heat flow problem (see <a href="Interegnum.html" class="internal" title="Chapter 5: Joseph Fourier: The Man Who Broke Calculus">Chapter 5</a>), Fourier showed that if a “general” function <span class="process-math">\(f(x)\)</span> defined on the interval <span class="process-math">\([0,1]\)</span> could be expressed as a trigonometric series</div>
+<div class="para">Using the techniques that he employed to solve the heat flow problem (see <a href="Interegnum.html" class="internal" title="Chapter 5: Joseph Fourier: The Man Who Broke Calculus">Chapter 5</a>), Fourier showed that if a “general” function <span class="process-math">\(f(x)\)</span> defined on the interval <span class="process-math">\([0,1]\)</span> could be expressed as a trigonometric series</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/Interegnum.html">
 \begin{equation*}
 f(x) = \sum_{m=0}^\infty \left[ a_n\cos(2n \pi x) + b_n\sin (2n\pi
@@ -343,12 +343,12 @@ x)\right]
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/Interegnum.html" id="BackToFourier-2-4-6">
 \begin{align*}
 a_0\amp{}=\int_{x=0}^1 f(x)\dx{x}\\
-a_n\amp{}=\int_{x=0}^1f(x)\cos(2n\pi x) \dx{x},\amp{} n=1, 2, 3, \cdots{}\\
-b_n\amp{}=\int_{x=0}^1f(x)\sin(2n\pi x) \dx{x},\amp{} n=1, 2, 3, \cdots{}.
+a_n\amp{}=2\int_{x=0}^1f(x)\cos(2n\pi x) \dx{x},\amp{} n=1, 2, 3, \cdots{}\\
+b_n\amp{}=2\int_{x=0}^1f(x)\sin(2n\pi x) \dx{x},\amp{} n=0, 2, 3, \cdots{}.
 \end{align*}
 </div>
 <div class="para">                 If <span class="process-math">\(\sum_{m=0}^\infty \left[ a_n\cos(2n \pi x) + b_n\sin (2n\pi
-x)\right] \)</span> converges uniformly to <span class="process-math">\(f\)</span> on <span class="process-math">\([0, 1]\text{,}\)</span> then the Fourier’s term–by–term integration is perfectly legitimate and the coefficients will be as given above.</div>
+x)\right] \)</span> converges uniformly to <span class="process-math">\(f\)</span> on <span class="process-math">\([0, 1]\text{,}\)</span> then Fourier’s term–by–term integration is perfectly legitimate and the coefficients will be as given above.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="BackToFourier-2-5">However we have seen that the convergence of a Fourier series need not be uniform.  This does not mean that we cannot integrate term–by–term, but it does say that we can’t be sure that term–by–term integration of a Fourier series will yield the integral of the associated function.<div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -365,9 +365,10 @@ x)\right] \)</span> converges uniformly to <span class="process-math">\(f\)</spa
 <div class="para">To begin, let’s suppress the underlying function and suppose we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\sum_{n=0}^\infty(a_n\cos (2n\pi x)+b_n\sin (2n\pi x)) =
-\sum_{n=0}^\infty(a^\prime_n\cos (2n\pi x)+b^\prime_n\sin n\pi
-x) \text{.}
+\sum_{n=0}^\infty\left[{}a_n\cos (2n\pi x)+b_n\sin (2n\pi
+x)\right] =
+\sum_{n=0}^\infty\left[ a^\prime_n\cos (2n\pi x)+b^\prime_n\sin (2n\pi
+x)\right]  \text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -376,16 +377,16 @@ x) \text{.}
 <div class="para">We ask: If these two series are equal must it be true that <span class="process-math">\(a_n=a^\prime_n\)</span> and <span class="process-math">\(b_n=b^\prime_n\text{?}\)</span>  We can reformulate this uniqueness question as follows: Suppose</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\displaystyle\sum_{n=0}^\infty\left((a_n-a^\prime_n)\cos (2n\pi
-x) +(b_n-b^\prime_n)\sin (2n\pi x)\right) = 0 \text{.}
+\displaystyle\sum_{n=0}^\infty\left[(a_n-a^\prime_n)\cos (2n\pi
+x) +(b_n-b^\prime_n)\sin (2n\pi x)\right] = 0 \text{.}
 \end{equation*}
 </div>
 <div class="para">If we let <span class="process-math">\(c_n = a_n-a^\prime_n\)</span> and <span class="process-math">\(d_n =
 b_n-b^\prime_n\text{,}\)</span> then the question becomes: If</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\sum_{n=0}^\infty\left(c_n\cos (2n\pi x)+d_n\sin n\pi
-x\right) = 0\text{,}
+\sum_{n=0}^\infty\left[c_n\cos (2n\pi x)+d_n\sin (2n\pi
+x)\right] = 0\text{,}
 \end{equation*}
 </div>
 <div class="para">is it necessarily true that <span class="process-math">\(c_n=d_n=0\text{?}\)</span>
@@ -403,7 +404,7 @@ x\right) = 0\text{,}
 <div class="para">If the trigonometric series</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\sum_{n=0}^\infty\left(c_n\cos n\pi  x+d_n\sin (2n\pi x)\right) = 0\text{,}
+\sum_{n=0}^\infty\left[c_n\cos (2n\pi  x)+d_n\sin (2n\pi x)\right] = 0\text{,}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#thm_Cantor-uniqueness-of-trig-series-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -423,7 +424,7 @@ x\right) = 0\text{,}
 <div class="para">If the trigonometric series</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\sum_{n=0}^\infty\left(c_n\cos n\pi  x+d_n\sin (2n\pi x)\right) = 0\text{,}
+\sum_{n=0}^\infty\left[c_n\cos (2n\pi  x)+d_n\sin (2n\pi x)\right] = 0\text{,}
 \end{equation*}
 </div>
 <div class="para">for all <span class="process-math">\(x\in\RR\)</span> then all of its coefficients vanish.</div>
@@ -436,8 +437,8 @@ x\right) = 0\text{,}
 <div class="para">If the trigonometric series</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\sum_{n=0}^\infty\left(c_n\cos (2n\pi x)+d_n\sin (2n\pi
-x)\right) = 0 \text{,}
+\sum_{n=0}^\infty\left[c_n\cos (2n\pi x)+d_n\sin (2n\pi
+x)\right] = 0 \text{,}
 \end{equation*}
 </div>
 <div class="para">for all but finitely many <span class="process-math">\(x\in\RR\)</span> then all of its coefficients vanish.</div>

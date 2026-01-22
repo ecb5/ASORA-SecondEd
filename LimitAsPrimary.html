@@ -63,7 +63,7 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js/lib"
+      "pretext": "_static/pretext/js"
     }
   },
   "startup": {
@@ -81,7 +81,7 @@ window.MathJax = {
 <meta property="book:title" content="A Contextual Introduction to Real Analysis: How We Got From There To Here">
 <meta property="book:author" content="Robert Rogers">
 <meta property="book:author" content="Eugene Boman">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -103,16 +103,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.18';
+eBookConfig.runestone_version = '7.11.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.cefb0224014f3333.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c50cdcad467c8d3e.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.3dca4b99808f4053.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.80892ed1280c2803.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -308,10 +308,9 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main" style="background-image:url('data:image/svg+xml;charset=utf-8,&lt;svg version=&quot;1.1&quot; height=&quot;600&quot; width=&quot;600&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;text x=&quot;50%&quot; y=&quot;50%&quot; text-anchor=&quot;middle&quot; transform=&quot;rotate(-45,300,300)&quot; fill=&quot;rgb(204,204,204)&quot; style=&quot;font-family:sans-serif; font-size:2.5cm;&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;DRAFT&lt;/text&gt;&lt;/svg&gt;');background-position:center top;background-repeat:repeat-y;"><div id="ptx-content" class="ptx-content"><section class="section" id="LimitAsPrimary"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="LimitAsPrimary"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Limit as a Primary Tool</span>
 </h2>
-<p class="watermark">Watermark text: DRAFT</p>
 <div class="para" id="LimitAsPrimary-2">As you saw in the <a href="SeqRealNum.html" class="internal" title="Section 6.1: Sequences of Real Numbers">previous section</a> the formal definition of the convergence of a sequence is meant to capture rigorously our intuitive understanding of convergence.  However, the definition itself is an unwieldy tool. If only there were some way to be rigorous without having to run back to the definition each time.  Fortunately, there is a way.  If we can use the definition to prove some general rules about limits then we could use these rules whenever they apply and be assured that everything was still rigorous.  A number of these should look familiar from Calculus.<div class="autopermalink" data-description="Paragraph"><a href="#LimitAsPrimary-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="problem example-like" id="PROBLEMLimConst"><h3 class="heading">
@@ -330,7 +329,7 @@ eBookConfig.enable_chatcodes =  false;
 </dt>
 <dd><div class="para logical" id="TriangleIneq-2">
 <div class="para">Let <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> be real numbers. Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="TriangleIneq-2-3">
 \begin{equation*}
 \abs{a+b}\leq \abs{a}+\abs{b}\text{.}
 \end{equation*}
@@ -341,7 +340,7 @@ eBookConfig.enable_chatcodes =  false;
 </dt>
 <dd><div class="para logical" id="InvTriangleIneq-2">
 <div class="para">Let <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> be real numbers. Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="InvTriangleIneq-2-3">
 \begin{equation*}
 \abs{a}-\abs{b}\leq\abs{a-b}
 \end{equation*}
@@ -368,13 +367,13 @@ eBookConfig.enable_chatcodes =  false;
 <div class="solutions"><details id="Tri-RevTri-Ineq_prob-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
 <div class="para logical" id="Tri-RevTri-Ineq_prob-4-2-1">
 <div class="para">You want to show that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="Tri-RevTri-Ineq_prob-4-2-1-1">
 \begin{equation*}
 |a|-|b|\leq|a-b|
 \end{equation*}
 </div>
 <div class="para">and that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="Tri-RevTri-Ineq_prob-4-2-1-2">
 \begin{equation*}
 -\left(|a|-|b|\right)\leq|a-b|\text{.}
 \end{equation*}
@@ -388,7 +387,7 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <div class="para logical" id="thm_SumOfSequences-3-1">
 <div class="para">If <span class="process-math">\(\limitt{n}{\infty}{a_n}=a\)</span> and <span class="process-math">\(\limitt{n}{\infty}{b_n}=b\text{,}\)</span> then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="thm_SumOfSequences-3-1-3">
 \begin{equation*}
 \limit{n}{\infty}{\left(a_n+b_n\right)}=a+b\text{.}
 \end{equation*}
@@ -404,7 +403,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para logical" id="LimitAsPrimary-11">
 <div class="para">If we let <span class="process-math">\(\eps&gt;0\text{,}\)</span> then we want to find <span class="process-math">\(N\)</span> such that if <span class="process-math">\(n&gt;N\text{,}\)</span> then <span class="process-math">\(\abs{\left(a_n+b_n\right)-\left(a+b\right)}\lt \eps\text{.}\)</span> Since we know that <span class="process-math">\(\limit{n}{\infty}{a_n}=a\)</span> and <span class="process-math">\(\limit{n}{\infty}{b_n}=b\text{,}\)</span> we can make <span class="process-math">\(\abs{a_n-a}\)</span> and <span class="process-math">\(\abs{b_n-b}\)</span> as small as we wish, provided we make <span class="process-math">\(n\)</span> large enough.  Let’s look closely at our goal to see if we can close the gap between what we know and what we want.  We know, by the triangle inequality, that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="LimitAsPrimary-11-11">
 \begin{equation*}
 \abs{\left(a_n+b_n\right)-\left(a+b\right)}=\abs{\left(a_n-a\right)+\left(b_n-b\right)}\leq\abs{a_n-a}+\abs{b_n-b}\text{.}
 \end{equation*}
@@ -446,7 +445,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para logical" id="LimitAsPrimary-19">
 <div class="para">We could handle this as a separate case or we can do the following “slick trick.” Notice that we can add one more line to the above string of inequalities:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="LimitAsPrimary-19-2">
 \begin{equation*}
 \left|a_n\right|\left|b_n-b\right|+\left|b\right|\left|a_n-a\right|\lt
 \left|a_n
@@ -516,7 +515,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="thm_LimitOfQuotient-3-1">Suppose <span class="process-math">\(\limitt{n}{\infty}{a_n}=a\)</span> and <span class="process-math">\(\limitt{n}{\infty}{b_n}=b\text{.}\)</span> Also suppose <span class="process-math">\(b\neq 0\)</span> and <span class="process-math">\(b_n\neq 0, \forall n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm_LimitOfQuotient-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="thm_LimitOfQuotient-3-2">
 <div class="para">Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="thm_LimitOfQuotient-3-2-1">
 \begin{equation*}
 \limit{n}{\infty}{\left(\frac{a_n}{b_n}\right)}=\frac{a}{b}\text{.}
 \end{equation*}
@@ -531,7 +530,7 @@ eBookConfig.enable_chatcodes =  false;
 <dfn class="terminology">SCRAPWORK</dfn><div class="autopermalink" data-description="Paragraph"><a href="#LimitAsPrimary-31-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="LimitAsPrimary-31-3-3">
 <div class="para">It is helpful to look first at the special case</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm_LimitOfProduct.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm_LimitOfProduct.html" id="LimitAsPrimary-31-3-3-1">
 \begin{equation*}
 \limitt{n}{\infty}{\left(\frac{1}{b_n}\right)}=\frac{1}{b}\text{.}
 \end{equation*}
@@ -549,7 +548,7 @@ eBookConfig.enable_chatcodes =  false;
 <article class="task exercise-like" id="LimitAsPrimary-33-4"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para logical" id="LimitAsPrimary-33-4-1-1">
 <div class="para">Use the  theorems from this section  to prove that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="LimitAsPrimary-33-4-1-1-1">
 \begin{equation*}
 \limit{n}{\infty}{\frac{3n^3-100n+1}{5n^3+4n^2-7}} =
 \limit{n}{\infty}{\frac{n^3\left(3-\frac{100}{n^2}+\frac{1}{n^3}\right)}{n^3
@@ -560,7 +559,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>    <div class="autopermalink" data-description="Task 6.2.14.a"><a href="#LimitAsPrimary-33-4" title="Copy heading and permalink for Task 6.2.14.a" aria-label="Copy heading and permalink for Task 6.2.14.a">🔗</a></div></article><article class="task exercise-like" id="LimitAsPrimary-33-5"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para logical" id="LimitAsPrimary-33-5-1-1">
 <div class="para">Prove that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="LimitAsPrimary-33-5-1-1-1">
 \begin{equation*}
 \limit{n}{\infty}{\frac{a_0+a_1n+a_2n^2+
 \cdots+a_kn^k}{b_0+b_1n+b_2n^2+\cdots+b_kn^k}}=\frac{a_k}{b_k}\text{,}
@@ -629,19 +628,19 @@ t_n\)</span> only holds for sufficiently large <span class="process-math">\(n\te
 </h3>
 <div class="para logical" id="EXAMPLENotUseSquzTheorem-2">
 <div class="para">Look again at  <a href="LimitAsPrimary.html#example_SqzeEx" class="internal" title="Example 6.2.17">Example 6.2.17</a>. Notice that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example_SqzeEx.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example_SqzeEx.html" id="EXAMPLENotUseSquzTheorem-2-2">
 \begin{equation*}
 0\leq\frac{n+1}{n^2}\leq\frac{n+n}{n^2}=\frac{2}{n}\text{,}
 \end{equation*}
 </div>
 <div class="para">so</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example_SqzeEx.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example_SqzeEx.html" id="EXAMPLENotUseSquzTheorem-2-3">
 \begin{equation*}
 0=\limit{n}{\infty}{0} \leq \limit{n}{\infty}{\frac{n+1}{n^2}}\leq\limit{n}{\infty}{\frac{2}{n}}=0
 \end{equation*}
 </div>
 <div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example_SqzeEx.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example_SqzeEx.html" id="EXAMPLENotUseSquzTheorem-2-4">
 \begin{equation*}
 \limit{n}{\infty}{\frac{n+1}{n^2}}=0\text{.}
 \end{equation*}
@@ -655,16 +654,39 @@ t_n\)</span> only holds for sufficiently large <span class="process-math">\(n\te
 </h3>
 <div class="para logical" id="LimitAsPrimary-43-3-1">
 <div class="para">Prove that if the sequence <span class="process-math">\(\left(s_n\right)\)</span> is bounded then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="LimitAsPrimary-43-3-1-2">
 \begin{equation*}
 \limit{n}{\infty}{\left(\frac{s_n}{n}\right)}=0\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#LimitAsPrimary-43-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 6.2.19"><a href="#LimitAsPrimary-43" title="Copy heading and permalink for Problem 6.2.19" aria-label="Copy heading and permalink for Problem 6.2.19">🔗</a></div></article><div class="para" id="LimitAsPrimary-44">The general theorems we have seen in this section will allow us to rigorously explore convergence of power series in the next chapter without appealing directly to the definitions.  However there will still be times when we will need to apply the definition directly.<div class="autopermalink" data-description="Paragraph"><a href="#LimitAsPrimary-44" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Problem 6.2.19"><a href="#LimitAsPrimary-43" title="Copy heading and permalink for Problem 6.2.19" aria-label="Copy heading and permalink for Problem 6.2.19">🔗</a></div></article><article class="problem example-like" id="prob_RatioTest"><h3 class="heading">
+<span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Ratio Test.</span>
+</h3>
+<div class="introduction" id="prob_RatioTest-4"><div class="para logical" id="prob_RatioTest-4-1">
+<div class="para">Suppose <span class="process-math">\(\left(s_n\right)\)</span> is a sequence of positive numbers such that</div>
+<div class="displaymath process-math" id="prob_RatioTest-4-1-2">
+\begin{equation*}
+\limit{n}{\infty}{\left(\frac{s_{n+1}}{s_n}\right)}=L\text{.}
+\end{equation*}
 </div>
-<div class="para" id="LimitAsPrimary-45">But before we go into that let’s examine divergence a bit more closely.<div class="autopermalink" data-description="Paragraph"><a href="#LimitAsPrimary-45" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#prob_RatioTest-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="prob_RatioTest-5"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="prob_RatioTest-5-1-1">Prove that if <span class="process-math">\(L\lt 1\text{,}\)</span> then <span class="process-math">\(\limit{n}{\infty}{s_n}=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_RatioTest-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="prob_RatioTest-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="prob_RatioTest-5-2-1">Choose <span class="process-math">\(R\)</span> with <span class="process-math">\(L\lt R\lt 1\text{.}\)</span>  By the <a href="SeqRealNum.html#PROBLEMUpperLowerBndsForSequences" class="xref" data-knowl="./knowl/xref/PROBLEMUpperLowerBndsForSequences.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 6.1.18">Problem 6.1.18</a>, <span class="process-math">\(\exists\)</span> <span class="process-math">\(N\)</span> such that if <span class="process-math">\(n&gt;N\text{,}\)</span> then <span class="process-math">\(\frac{s_{n+1}}{s_n}\lt R\text{.}\)</span>  Let <span class="process-math">\(n_0&gt;N\)</span> be fixed and show <span class="process-math">\(s_{n_0+k}\lt R^ks_{n_0}\text{.}\)</span> Conclude that <span class="process-math">\(\limit{k}{\infty}{s_{n_0+k}}=0\)</span> and let <span class="process-math">\(n=n_0+k\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_RatioTest-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 6.2.20.a.1"><a href="#prob_RatioTest-5-2" title="Copy heading and permalink for Hint 6.2.20.a.1" aria-label="Copy heading and permalink for Hint 6.2.20.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 6.2.20.a"><a href="#prob_RatioTest-5" title="Copy heading and permalink for Task 6.2.20.a" aria-label="Copy heading and permalink for Task 6.2.20.a">🔗</a></div></article><article class="task exercise-like" id="prob_RatioTest-6"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="prob_RatioTest-6-1-1">Let <span class="process-math">\(c\)</span> be a positive real number.  Prove <span class="process-math">\(\limit{n}{\infty}{\left(\frac{c^n}{n!}\right)}=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_RatioTest-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.2.20.b"><a href="#prob_RatioTest-6" title="Copy heading and permalink for Task 6.2.20.b" aria-label="Copy heading and permalink for Task 6.2.20.b">🔗</a></div></article><div class="autopermalink" data-description="Problem 6.2.20: The Ratio Test"><a href="#prob_RatioTest" title="Copy heading and permalink for Problem 6.2.20: The Ratio Test" aria-label="Copy heading and permalink for Problem 6.2.20: The Ratio Test">🔗</a></div></article><div class="para" id="LimitAsPrimary-45">The general theorems we have seen in this section will allow us to rigorously explore convergence of power series in the next chapter without appealing directly to the definitions.  However there will still be times when we will need to apply the definition directly.<div class="autopermalink" data-description="Paragraph"><a href="#LimitAsPrimary-45" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="LimitAsPrimary-46">But before we go into that let’s examine divergence a bit more closely.<div class="autopermalink" data-description="Paragraph"><a href="#LimitAsPrimary-46" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Section 6.2: The Limit as a Primary Tool"><a href="#LimitAsPrimary" title="Copy heading and permalink for Section 6.2: The Limit as a Primary Tool" aria-label="Copy heading and permalink for Section 6.2: The Limit as a Primary Tool">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">

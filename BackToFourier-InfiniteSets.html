@@ -63,7 +63,7 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js/lib"
+      "pretext": "_static/pretext/js"
     }
   },
   "startup": {
@@ -81,7 +81,7 @@ window.MathJax = {
 <meta property="book:title" content="A Contextual Introduction to Real Analysis: How We Got From There To Here">
 <meta property="book:author" content="Robert Rogers">
 <meta property="book:author" content="Eugene Boman">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -103,16 +103,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.18';
+eBookConfig.runestone_version = '7.11.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.cefb0224014f3333.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c50cdcad467c8d3e.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.3dca4b99808f4053.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.80892ed1280c2803.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -308,10 +308,9 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main" style="background-image:url('data:image/svg+xml;charset=utf-8,&lt;svg version=&quot;1.1&quot; height=&quot;600&quot; width=&quot;600&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;text x=&quot;50%&quot; y=&quot;50%&quot; text-anchor=&quot;middle&quot; transform=&quot;rotate(-45,300,300)&quot; fill=&quot;rgb(204,204,204)&quot; style=&quot;font-family:sans-serif; font-size:2.5cm;&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;DRAFT&lt;/text&gt;&lt;/svg&gt;');background-position:center top;background-repeat:repeat-y;"><div id="ptx-content" class="ptx-content"><section class="section" id="BackToFourier-InfiniteSets"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="BackToFourier-InfiniteSets"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Infinite Sets</span>
 </h2>
-<p class="watermark">Watermark text: DRAFT</p>
 <div class="para" id="BackToFourier-InfiniteSets-2">Cantor’s work with Fourier series prompted him to study the sizes of various infinite sets. The following theorem follows directly from our previous work with the <a href="IVTandEVT-Completeness.html#NIP" class="xref" data-knowl="./knowl/xref/NIP.html" data-reveal-label="Reveal" data-close-label="Close" title="Axiom 9.1.1: Nested Interval Property of the Real Number System (NIP)">NIP</a> and will be very handy later.  It is a slightly weaker version of the NIP which says that the intersection of a sequence of nested closed intervals will be non–empty even if their lengths do not converge to zero.<div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-InfiniteSets-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="thm_WeakNIP"><h3 class="heading">
@@ -319,14 +318,14 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <div class="para logical" id="thm_WeakNIP-3-1">
 <div class="para">Let</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="thm_WeakNIP-3-1-1">
 \begin{equation*}
 [x_1, y_1] \supseteq [x_2, y_2]\supseteq [x_3,y_3]
 \supseteq \cdots  
 \end{equation*}
 </div>
 <div class="para">be a sequence of closed, nested intervals. Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="thm_WeakNIP-3-1-2">
 \begin{equation*}
 \bigcap_{n=1}^\infty [x_n,y_n] \neq 0\text{.}
 \end{equation*}
@@ -359,7 +358,7 @@ y_i\right]\right)_{i=1}^\infty\text{.}\)</span><div class="autopermalink" data-d
 </div>
 <div class="para logical" id="BackToFourier-InfiniteSets-8-3">
 <div class="para">Next we assume that <span class="process-math">\(\left[x_{n-1}, y_{n-1}\right]\)</span> has been constructed and build <span class="process-math">\(\left[x_n, y_n\right]\)</span> as follows.  Observe that there are infinitely many elements of <span class="process-math">\(S\)</span> in <span class="process-math">\(\left(x_{n-1}, y_{n-1}\right)\)</span> since <span class="process-math">\(S=\RR\text{.}\)</span>  Let <span class="process-math">\(x_n\)</span> and <span class="process-math">\(y_n\)</span> be the first two distinct elements of <span class="process-math">\(S\)</span> such that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="BackToFourier-InfiniteSets-8-3-9">
 \begin{equation*}
 x_n, y_n \in
 \left(x_{n-1}, y_{n-1}\right) 
@@ -371,7 +370,7 @@ y_n\right]\)</span> is the <span class="process-math">\(n\)</span>th interval.</
 </div>
 <div class="para logical" id="BackToFourier-InfiniteSets-8-4">
 <div class="para">From the way we constructed them it is clear that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="BackToFourier-InfiniteSets-8-4-1">
 \begin{equation*}
 \left[x_1, y_1\right] \supseteq \left[x_2, y_2\right]
 \supseteq \left[x_3, y_3\right] \supseteq \ldots \text{.}
@@ -381,7 +380,7 @@ y_n\right]\)</span> is the <span class="process-math">\(n\)</span>th interval.</
 </div>
 <div class="para logical" id="BackToFourier-InfiniteSets-8-5">
 <div class="para">Therefore by <a href="BackToFourier-InfiniteSets.html#thm_WeakNIP" class="internal" title="Theorem 12.2.1: Weak Nested Interval Property">Theorem 12.2.1</a> there is a real number, say <span class="process-math">\(c\text{,}\)</span> such that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm_WeakNIP.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/thm_WeakNIP.html" id="BackToFourier-InfiniteSets-8-5-3">
 \begin{equation*}
 c\in\left[x_n,
 y_n\right] \text{ for all } n\in\NN \text{.}
@@ -564,42 +563,42 @@ A_2=\emptyset{}\text{.}\)</span> Don’t do that.<div class="autopermalink" data
 </div></details></div>
 <div class="autopermalink" data-description="Problem 12.2.10"><a href="#BackToFourier-InfiniteSets-30" title="Copy heading and permalink for Problem 12.2.10" aria-label="Copy heading and permalink for Problem 12.2.10">🔗</a></div></article><div class="para" id="BackToFourier-InfiniteSets-31">All of our efforts to build an uncountable set from a countable one have come to nothing.  In fact many sets that at first “feel” like they should be uncountable are not. This makes the uncountability of <span class="process-math">\(\RR\)</span> all the more remarkable.<div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-InfiniteSets-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="BackToFourier-InfiniteSets-32">The failure is in the methods we’ve used so far.  It is possible to build an uncountable set using just two symbols if we’re clever enough. Give some thought to how this might be done.  We will return to this question in <a href="BackToFourier-CantorsTheorem.html#PROBLEMCountableUnionBinary" class="xref" data-knowl="./knowl/xref/PROBLEMCountableUnionBinary.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 12.4.6">Problem 12.4.6</a>.<div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-InfiniteSets-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="BackToFourier-InfiniteSets-32">The failure is in the methods we’ve used so far.  It is possible to build an uncountable set using just two symbols if we’re clever enough. Give some thought to how this might be done.  We will return to this question in <a href="BackToFourier-CantorsTheorem.html" class="internal" title="Section 12.4: Cantor’s Theorem and Its Consequences">Section 12.4</a>.<div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-InfiniteSets-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="BackToFourier-InfiniteSets-33">On the other hand if we start with an uncountable set like <span class="process-math">\(\RR \)</span> it is relatively easy to build others from it.<div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-InfiniteSets-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="problem example-like" id="BackToFourier-InfiniteSets-34"><h3 class="heading">
+<article class="problem example-like" id="PROBLEMCardinalityOfIntervals"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<article class="task exercise-like" id="BackToFourier-InfiniteSets-34-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="BackToFourier-InfiniteSets-34-3-1-1">Let <span class="process-math">\((a,b)\)</span> and <span class="process-math">\((c,d)\)</span> be two open intervals of real numbers.  Show that these two sets have the same cardinality by constructing a one–to–one onto function between them.<div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-InfiniteSets-34-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="PROBLEMCardinalityOfIntervals-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="PROBLEMCardinalityOfIntervals-3-1-1">Let <span class="process-math">\((a,b)\)</span> and <span class="process-math">\((c,d)\)</span> be two open intervals of real numbers.  Show that these two sets have the same cardinality by constructing a one–to–one onto function between them.<div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMCardinalityOfIntervals-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="BackToFourier-InfiniteSets-34-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="BackToFourier-InfiniteSets-34-3-2-1">A linear function should do the trick.<div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-InfiniteSets-34-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="solutions"><details id="PROBLEMCardinalityOfIntervals-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="PROBLEMCardinalityOfIntervals-3-2-1">A linear function should do the trick.<div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMCardinalityOfIntervals-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 12.2.11.a.1"><a href="#BackToFourier-InfiniteSets-34-3-2" title="Copy heading and permalink for Hint 12.2.11.a.1" aria-label="Copy heading and permalink for Hint 12.2.11.a.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 12.2.11.a.1"><a href="#PROBLEMCardinalityOfIntervals-3-2" title="Copy heading and permalink for Hint 12.2.11.a.1" aria-label="Copy heading and permalink for Hint 12.2.11.a.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 12.2.11.a"><a href="#BackToFourier-InfiniteSets-34-3" title="Copy heading and permalink for Task 12.2.11.a" aria-label="Copy heading and permalink for Task 12.2.11.a">🔗</a></div></article><article class="task exercise-like" id="BackToFourier-InfiniteSets-34-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="BackToFourier-InfiniteSets-34-4-1-1">Show that any open interval of real numbers has the same cardinality as <span class="process-math">\(\RR\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-InfiniteSets-34-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 12.2.11.a"><a href="#PROBLEMCardinalityOfIntervals-3" title="Copy heading and permalink for Task 12.2.11.a" aria-label="Copy heading and permalink for Task 12.2.11.a">🔗</a></div></article><article class="task exercise-like" id="PROBLEMCardinalityOfIntervals-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="PROBLEMCardinalityOfIntervals-4-1-1">Show that any open interval of real numbers has the same cardinality as <span class="process-math">\(\RR\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMCardinalityOfIntervals-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="BackToFourier-InfiniteSets-34-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="BackToFourier-InfiniteSets-34-4-2-1">Consider the interval <span class="process-math">\((-\pi/2,\pi/2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-InfiniteSets-34-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="solutions"><details id="PROBLEMCardinalityOfIntervals-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="PROBLEMCardinalityOfIntervals-4-2-1">Consider the interval <span class="process-math">\((-\pi/2,\pi/2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMCardinalityOfIntervals-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 12.2.11.b.1"><a href="#BackToFourier-InfiniteSets-34-4-2" title="Copy heading and permalink for Hint 12.2.11.b.1" aria-label="Copy heading and permalink for Hint 12.2.11.b.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 12.2.11.b.1"><a href="#PROBLEMCardinalityOfIntervals-4-2" title="Copy heading and permalink for Hint 12.2.11.b.1" aria-label="Copy heading and permalink for Hint 12.2.11.b.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 12.2.11.b"><a href="#BackToFourier-InfiniteSets-34-4" title="Copy heading and permalink for Task 12.2.11.b" aria-label="Copy heading and permalink for Task 12.2.11.b">🔗</a></div></article><article class="task exercise-like" id="BackToFourier-InfiniteSets-34-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="BackToFourier-InfiniteSets-34-5-1-1">Show that <span class="process-math">\((0,1]\)</span> and <span class="process-math">\((0,1)\)</span> have the same cardinality.<div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-InfiniteSets-34-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 12.2.11.b"><a href="#PROBLEMCardinalityOfIntervals-4" title="Copy heading and permalink for Task 12.2.11.b" aria-label="Copy heading and permalink for Task 12.2.11.b">🔗</a></div></article><article class="task exercise-like" id="PROBLEMCardinalityOfIntervals-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="PROBLEMCardinalityOfIntervals-5-1-1">Show that <span class="process-math">\((0,1]\)</span> and <span class="process-math">\((0,1)\)</span> have the same cardinality.<div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMCardinalityOfIntervals-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="BackToFourier-InfiniteSets-34-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="BackToFourier-InfiniteSets-34-5-2-1">If <span class="process-math">\(x\not\in \QQ{}\)</span> let <span class="process-math">\(x\)</span> correspond to itself. Note that  <span class="process-math">\(\QQ \cap (0,1)\)</span> and <span class="process-math">\(\QQ
-\cap (0,1]\)</span> are both countable.   <div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-InfiniteSets-34-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="solutions"><details id="PROBLEMCardinalityOfIntervals-5-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="PROBLEMCardinalityOfIntervals-5-2-1">If <span class="process-math">\(x\not\in \QQ{}\)</span> let <span class="process-math">\(x\)</span> correspond to itself. Note that  <span class="process-math">\(\QQ \cap (0,1)\)</span> and <span class="process-math">\(\QQ
+\cap (0,1]\)</span> are both countable.   <div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMCardinalityOfIntervals-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Hint 12.2.11.c.1"><a href="#BackToFourier-InfiniteSets-34-5-2" title="Copy heading and permalink for Hint 12.2.11.c.1" aria-label="Copy heading and permalink for Hint 12.2.11.c.1">🔗</a></div>
+<div class="autopermalink" data-description="Hint 12.2.11.c.1"><a href="#PROBLEMCardinalityOfIntervals-5-2" title="Copy heading and permalink for Hint 12.2.11.c.1" aria-label="Copy heading and permalink for Hint 12.2.11.c.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Task 12.2.11.c"><a href="#BackToFourier-InfiniteSets-34-5" title="Copy heading and permalink for Task 12.2.11.c" aria-label="Copy heading and permalink for Task 12.2.11.c">🔗</a></div></article><article class="task exercise-like" id="BackToFourier-InfiniteSets-34-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="BackToFourier-InfiniteSets-34-6-1-1">Show that <span class="process-math">\([0,1]\)</span> and <span class="process-math">\((0,1)\)</span> have the same cardinality.<div class="autopermalink" data-description="Paragraph"><a href="#BackToFourier-InfiniteSets-34-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 12.2.11.c"><a href="#PROBLEMCardinalityOfIntervals-5" title="Copy heading and permalink for Task 12.2.11.c" aria-label="Copy heading and permalink for Task 12.2.11.c">🔗</a></div></article><article class="task exercise-like" id="PROBLEMCardinalityOfIntervals-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="PROBLEMCardinalityOfIntervals-6-1-1">Show that <span class="process-math">\([0,1]\)</span> and <span class="process-math">\((0,1)\)</span> have the same cardinality.<div class="autopermalink" data-description="Paragraph"><a href="#PROBLEMCardinalityOfIntervals-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 12.2.11.d"><a href="#BackToFourier-InfiniteSets-34-6" title="Copy heading and permalink for Task 12.2.11.d" aria-label="Copy heading and permalink for Task 12.2.11.d">🔗</a></div></article><div class="autopermalink" data-description="Problem 12.2.11"><a href="#BackToFourier-InfiniteSets-34" title="Copy heading and permalink for Problem 12.2.11" aria-label="Copy heading and permalink for Problem 12.2.11">🔗</a></div></article><div class="autopermalink" data-description="Section 12.2: Infinite Sets"><a href="#BackToFourier-InfiniteSets" title="Copy heading and permalink for Section 12.2: Infinite Sets" aria-label="Copy heading and permalink for Section 12.2: Infinite Sets">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Task 12.2.11.d"><a href="#PROBLEMCardinalityOfIntervals-6" title="Copy heading and permalink for Task 12.2.11.d" aria-label="Copy heading and permalink for Task 12.2.11.d">🔗</a></div></article><div class="autopermalink" data-description="Problem 12.2.11"><a href="#PROBLEMCardinalityOfIntervals" title="Copy heading and permalink for Problem 12.2.11" aria-label="Copy heading and permalink for Problem 12.2.11">🔗</a></div></article><div class="autopermalink" data-description="Section 12.2: Infinite Sets"><a href="#BackToFourier-InfiniteSets" title="Copy heading and permalink for Section 12.2: Infinite Sets" aria-label="Copy heading and permalink for Section 12.2: Infinite Sets">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="SECTIONRiseSetTheory.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="SECTIONLebesgueIntegration.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
